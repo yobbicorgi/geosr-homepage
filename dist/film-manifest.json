@@ -1,0 +1,13 @@
+{
+  "revision": "preproduction-20260917",
+  "slots": [
+    {"id":"geosr-hero","mode":"loop","src":null,"approval":"pending","duration":24,"delivery":"assets/films/geosr-hero.mp4"},
+    {"id":"expertise-1","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-observation.mp4"},
+    {"id":"expertise-2","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-environment.mp4"},
+    {"id":"expertise-3","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-modelling.mp4"},
+    {"id":"expertise-4","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-satellite.mp4"},
+    {"id":"ax-detect","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-detect.mp4","platforms":["satellite"]},
+    {"id":"ax-predict","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-predict.mp4","platforms":["flood3d","surge","sealevel"]},
+    {"id":"ax-monitor","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-monitor.mp4","platforms":["buoy","env","rip"]}
+  ]
+}

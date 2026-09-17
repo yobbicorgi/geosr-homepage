@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.openai/local/
+.openai/execution-profile.json
+node_modules/
+*.log

@@ -40,7 +40,7 @@
     const dialog=document.querySelector('#credential-dialog');
     const stageTitle=document.querySelector('[data-credential-stage-title]');
     const stageStatus=document.querySelector('[data-credential-status]');
-    let category='cert',returnFocus=null;
+    let category='cert',returnFocus=null,changingCategory=false;
     function attachDocumentEvents(){
       rail.querySelectorAll('[data-document]').forEach(card=>card.addEventListener('click',()=>{
         const record=records[Number(card.dataset.document)];returnFocus=card;
@@ -57,12 +57,20 @@
       rail.dataset.category=category;
       rail.innerHTML=visible.map((record,index)=>`<button type="button" class="credential-card" data-document="${record.index}" aria-label="${E(T(record.title,record.titleEn||translations[record.id]||record.title))} — ${T('확대 보기','enlarge')}"><span class="credential-card-index">0${index+1} / ${E(T(record.classification,record.classificationEn))}</span><span class="credential-paper"><img src="${E(record.image)}" alt="${E(record.title)}" loading="lazy" draggable="false"></span><span class="credential-label"><strong>${E(T(record.title,record.titleEn||translations[record.id]||record.title))}</strong><small>${T('자료 보기','Open record')} ↗</small></span></button>`).join('');
       attachDocumentEvents();
-      if(!reduced.matches)rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,transform:'translate3d(0,24px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:620,delay:index*90,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'}));
+      if(!reduced.matches){
+        stageTitle.animate([{opacity:0,transform:'translate3d(0,6px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:420,easing:'cubic-bezier(.16,1,.3,1)'});
+        stageStatus.animate([{opacity:0,transform:'translate3d(0,4px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:360,delay:55,easing:'cubic-bezier(.16,1,.3,1)'});
+        rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,transform:'translate3d(0,24px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:620,delay:index*90,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'}));
+      }
     }
     document.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
-      const next=button.dataset.credentialCategory;if(next===category)return;category=next;
+      const next=button.dataset.credentialCategory;if(next===category||changingCategory)return;
+      changingCategory=true;
       document.querySelectorAll('[data-credential-category]').forEach(tab=>tab.setAttribute('aria-selected',String(tab===button)));
-      renderCredentialGroup();
+      const update=()=>{rail.getAnimations().forEach(animation=>animation.cancel());category=next;renderCredentialGroup();changingCategory=false};
+      if(reduced.matches){update();return}
+      const leave=rail.animate([{opacity:1,transform:'translate3d(0,0,0)',filter:'blur(0)'},{opacity:0,transform:'translate3d(0,-8px,0) scale(.99)',filter:'blur(2px)'}],{duration:180,easing:'cubic-bezier(.4,0,1,1)',fill:'both'});
+      leave.finished.catch(()=>{}).then(update);
     }));
     rail.addEventListener('keydown',event=>{
       const cards=[...rail.querySelectorAll('.credential-card')];if(!cards.length)return;

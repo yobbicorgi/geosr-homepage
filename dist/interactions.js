@@ -35,67 +35,46 @@
       'credential-registration-hydrographic-survey-20230725':'Hydrographic survey business registration',
       'credential-registration-weather-business-20230718':'Meteorological business registration'
     };
-    rail.innerHTML=records.map((record,index)=>`<button type="button" class="credential-card" data-document="${index}" aria-label="${E(T(record.title,record.titleEn||translations[record.id]||record.title))} — ${T('확대 보기','enlarge')} "><span class="credential-paper"><img src="${E(record.image)}" alt="${E(record.title)}" loading="lazy" draggable="false"></span><span class="credential-label"><small>${String(index+1).padStart(2,'0')} / ${E(T(record.classification,record.classificationEn))}</small><strong>${E(T(record.title,record.titleEn||translations[record.id]||record.title))}</strong></span></button>`).join('');
-    const cards=[...rail.querySelectorAll('.credential-card')];
-    const status=document.querySelector('#credential-status');
+    const categoryOf=record=>record.id.includes('patent')?'patent':record.id.includes('registration')?'license':'cert';
+    const categoryNames={cert:T('인증','Certification'),license:T('면허·등록','Registration'),patent:T('지식재산권','Intellectual property')};
     const dialog=document.querySelector('#credential-dialog');
-    let active=0,frame=0,returnFocus=null,moved=false;
-    rail.style.position='relative';
-    function updateGallery(){
-      frame=0;
-      const midpoint=rail.scrollLeft+rail.clientWidth/2;
-      let distance=Infinity;
-      cards.forEach((card,index)=>{
-        const delta=(card.offsetLeft+card.offsetWidth/2-midpoint)/(rail.clientWidth*.48);
-        const bounded=Math.max(-1,Math.min(1,delta));
-        const abs=Math.abs(bounded);
-        card.style.setProperty('--turn',`${-bounded*28}deg`);
-        card.style.setProperty('--rise',`${abs*19}px`);
-        card.style.setProperty('--size',String(1-abs*.10));
-        card.style.setProperty('--opacity',String(1-abs*.22));
-        if(Math.abs(delta)<distance){distance=Math.abs(delta);active=index}
-      });
-      status.textContent=`${String(active+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;
+    const stageTitle=document.querySelector('[data-credential-stage-title]');
+    const stageStatus=document.querySelector('[data-credential-status]');
+    let category='cert',returnFocus=null;
+    function attachDocumentEvents(){
+      rail.querySelectorAll('[data-document]').forEach(card=>card.addEventListener('click',()=>{
+        const record=records[Number(card.dataset.document)];returnFocus=card;
+        dialog.querySelector('h2').textContent=T(record.title,record.titleEn||translations[record.id]||record.title);
+        const preview=dialog.querySelector('img');preview.src=record.image;preview.alt=record.title;
+        dialog.querySelector('.document-modal-foot a').href=record.image;
+        dialog.showModal();document.body.style.overflow='hidden';
+      }));
     }
-    function schedule(){if(!frame)frame=requestAnimationFrame(updateGallery)}
-    function moveTo(index,instant=false){
-      const card=cards[Math.max(0,Math.min(cards.length-1,index))];
-      rail.scrollTo({left:card.offsetLeft-(rail.clientWidth-card.offsetWidth)/2,behavior:instant||reduced.matches?'instant':'smooth'});
-      schedule();
+    function renderCredentialGroup(){
+      const visible=records.map((record,index)=>({...record,index})).filter(record=>categoryOf(record)===category);
+      stageTitle.textContent=categoryNames[category];
+      stageStatus.textContent=String(visible.length).padStart(2,'0');
+      rail.dataset.category=category;
+      rail.innerHTML=visible.map((record,index)=>`<button type="button" class="credential-card" data-document="${record.index}" aria-label="${E(T(record.title,record.titleEn||translations[record.id]||record.title))} — ${T('확대 보기','enlarge')}"><span class="credential-card-index">0${index+1} / ${E(T(record.classification,record.classificationEn))}</span><span class="credential-paper"><img src="${E(record.image)}" alt="${E(record.title)}" loading="lazy" draggable="false"></span><span class="credential-label"><strong>${E(T(record.title,record.titleEn||translations[record.id]||record.title))}</strong><small>${T('자료 보기','Open record')} ↗</small></span></button>`).join('');
+      attachDocumentEvents();
+      if(!reduced.matches)rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,transform:'translate3d(0,24px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:620,delay:index*90,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'}));
     }
-    rail.addEventListener('scroll',schedule,{passive:true});
-    new ResizeObserver(schedule).observe(rail);
-    reduced.addEventListener('change',schedule);
-    document.querySelectorAll('[data-gallery-step]').forEach(button=>button.addEventListener('click',()=>moveTo((active+Number(button.dataset.galleryStep)+cards.length)%cards.length)));
-    rail.addEventListener('keydown',event=>{
-      if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
-      event.preventDefault();
-      const next=event.key==='Home'?0:event.key==='End'?cards.length-1:Math.max(0,Math.min(cards.length-1,active+(event.key==='ArrowRight'?1:-1)));
-      moveTo(next);cards[next].focus({preventScroll:true});
-    });
-    let pointer=null,startX=0,startScroll=0;
-    rail.addEventListener('pointerdown',event=>{
-      if(event.pointerType!=='mouse'||event.button!==0)return;
-      pointer=event.pointerId;startX=event.clientX;startScroll=rail.scrollLeft;moved=false;
-    });
-    rail.addEventListener('pointermove',event=>{
-      if(pointer!==event.pointerId)return;
-      if(Math.abs(event.clientX-startX)>5){moved=true;rail.classList.add('dragging');rail.setPointerCapture(pointer);rail.scrollLeft=startScroll-(event.clientX-startX)}
-    });
-    function endDrag(){pointer=null;rail.classList.remove('dragging');if(moved)moveTo(active)}
-    rail.addEventListener('pointerup',endDrag);rail.addEventListener('pointercancel',endDrag);
-    cards.forEach((card,index)=>card.addEventListener('click',event=>{
-      if(moved){event.preventDefault();moved=false;return}
-      const record=records[index];returnFocus=card;
-      dialog.querySelector('h2').textContent=T(record.title,record.titleEn||translations[record.id]||record.title);
-      const preview=dialog.querySelector('img');preview.src=record.image;preview.alt=record.title;
-      dialog.querySelector('.document-modal-foot a').href=record.image;
-      dialog.showModal();document.body.style.overflow='hidden';
+    document.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
+      const next=button.dataset.credentialCategory;if(next===category)return;category=next;
+      document.querySelectorAll('[data-credential-category]').forEach(tab=>tab.setAttribute('aria-selected',String(tab===button)));
+      renderCredentialGroup();
     }));
+    rail.addEventListener('keydown',event=>{
+      const cards=[...rail.querySelectorAll('.credential-card')];if(!cards.length)return;
+      const current=Math.max(0,cards.indexOf(document.activeElement));
+      if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();
+      const next=event.key==='Home'?0:event.key==='End'?cards.length-1:Math.max(0,Math.min(cards.length-1,current+(event.key==='ArrowRight'?1:-1)));
+      cards[next].focus();
+    });
     dialog.querySelector('[data-close-document]').addEventListener('click',()=>dialog.close());
-    dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});
+    dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close()}});
     dialog.addEventListener('close',()=>{document.body.style.overflow='';returnFocus?.focus({preventScroll:true})});
-    requestAnimationFrame(()=>moveTo(Math.min(3,cards.length-1),true));
+    renderCredentialGroup();
   }).catch(()=>{rail.innerHTML=`<p>${T('자료를 불러오지 못했습니다','Documents could not be loaded')} <a href="${U('company')}#credential-library">${T('자료 모음 보기','View document collection')} ↗</a></p>`}));
 
   const library=document.querySelector('.credential-grid');

@@ -46,7 +46,7 @@
  reduce.addEventListener('change',()=>{syncMotion();schedule()});
  document.addEventListener('visibilitychange',()=>hero.classList.toggle('motion-paused',document.hidden||manual||reduce.matches));
  const credentialHeading=document.querySelector('#credential-heading');
- if(credentialHeading)credentialHeading.innerHTML=T('연구가 쌓여<br><span>기술이 되다</span>','Research<br><span>made tangible</span>');
+ if(credentialHeading)credentialHeading.innerHTML=T('신뢰의 기록이<br><span>기술이 됩니다</span>','Evidence<br><span>builds trust</span>');
  frames.forEach((el,i)=>el.setAttribute('aria-hidden',String(i!==active)));
  document.addEventListener('geosr:films-ready',()=>{show(active,true);syncMotion();update()});
  syncMotion();update();

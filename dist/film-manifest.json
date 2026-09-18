@@ -6,6 +6,7 @@
     {"id":"expertise-2","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-environment.mp4"},
     {"id":"expertise-3","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-modelling.mp4"},
     {"id":"expertise-4","mode":"scroll","src":null,"approval":"pending","duration":6,"delivery":"assets/films/expertise-satellite.mp4"},
+    {"id":"ax-discover","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-discover.mp4","purpose":"Discover / 탐지 — satellite and observation evidence for locating and classifying change","recommendedMedia":["mp4","gif"]},
     {"id":"ax-detect","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-detect.mp4","platforms":["satellite"]},
     {"id":"ax-predict","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-predict.mp4","platforms":["flood3d","surge","sealevel"]},
     {"id":"ax-monitor","mode":"sequence","src":null,"approval":"pending","duration":6,"delivery":"assets/films/ax-monitor.mp4","platforms":["buoy","env","rip"]}

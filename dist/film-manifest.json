@@ -70,11 +70,11 @@
     {
       "id": "ax-discover",
       "mode": "sequence",
-      "src": "assets/films/ax-discover.mp4",
+      "src": "assets/films/ax-discover-fast.mp4",
       "approval": "approved",
-      "duration": 6.77,
+      "duration": 3.03,
       "delivery": "assets/films/ax-discover.mp4",
-      "purpose": "Discover / 탐지 — satellite and observation evidence for locating and classifying change",
+      "purpose": "Discover / 탐지 — satellite and observation evidence for locating and classifying change Actual 16:9 platform capture accelerated from its approved source for a concise product sequence",
       "recommendedMedia": [
         "mp4",
         "gif"
@@ -83,39 +83,42 @@
     {
       "id": "ax-detect",
       "mode": "sequence",
-      "src": "assets/films/ax-detect.mp4",
+      "src": "assets/films/ax-detect-fast.mp4",
       "approval": "approved",
-      "duration": 6.77,
+      "duration": 3.03,
       "delivery": "assets/films/ax-detect.mp4",
       "platforms": [
         "satellite"
-      ]
+      ],
+      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
     },
     {
       "id": "ax-predict",
       "mode": "sequence",
-      "src": "assets/films/ax-predict.mp4",
+      "src": "assets/films/ax-predict-fast.mp4",
       "approval": "approved",
-      "duration": 6.77,
+      "duration": 3.03,
       "delivery": "assets/films/ax-predict.mp4",
       "platforms": [
         "flood3d",
         "surge",
         "sealevel"
-      ]
+      ],
+      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
     },
     {
       "id": "ax-monitor",
       "mode": "sequence",
-      "src": "assets/films/ax-monitor.mp4",
+      "src": "assets/films/ax-monitor-fast.mp4",
       "approval": "approved",
-      "duration": 6.77,
+      "duration": 3.03,
       "delivery": "assets/films/ax-monitor.mp4",
       "platforms": [
         "buoy",
         "env",
         "rip"
-      ]
+      ],
+      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
     }
   ]
 }

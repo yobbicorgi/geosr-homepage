@@ -59,6 +59,8 @@
   selected=index;
   tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===index));tab.tabIndex=i===index?0:-1});
   panels.forEach((panel,i)=>{panel.hidden=i!==index;panel.inert=i!==index;window.GeoSRFilm.activate(panel.dataset.filmSlot,i===index)});
+  const active=panels[index],reel=active?.closest('.ax-reel');
+  if(reel&&active){reel.dataset.axActive=active.dataset.filmSlot.replace('ax-','');reel.querySelectorAll('[data-ax-context]').forEach(node=>{const key=node.dataset.axContext;if(key==='tags'){node.innerHTML=(active.dataset.axTags||'').split('|').filter(Boolean).map(tag=>`<i>${tag}</i>`).join('')}else if(key&&active.dataset[`ax${key[0].toUpperCase()}${key.slice(1)}`]!==undefined){node.textContent=active.dataset[`ax${key[0].toUpperCase()}${key.slice(1)}`]}})}
   if(focus)tabs[index].focus();
  }
  tabs.forEach((tab,i)=>{

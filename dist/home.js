@@ -9,8 +9,9 @@ const expertiseScenes = [
 function expertisePanel(i=0){const d=expertiseScenes[i];return `<div class="expertise-photo" data-production-slot="expertise-${i+1}"><img src="assets/${d.image}" alt="${E(T(d.k,d.e))} — ${d.source?T('GeoSR 원본 자료','GeoSR source material'):T('영상 가안','film concept')}" loading="lazy"><span class="media-note">${d.source?T('GEOSR 현장 자료','GEOSR FIELD REFERENCE'):T('기술 연출 가안 · 실제 해석 결과 아님','VISUAL CONCEPT · NOT A VERIFIED ANALYSIS')}</span></div><div class="expertise-details"><span class="scene-index">0${i+1} / 04</span><h3>${T(d.leadK,d.leadE)}</h3><p>${T(d.bodyK,d.bodyE).replaceAll('\n','<br>')}</p><div class="expertise-tags">${(en?d.tagsE:d.tagsK).map(t=>`<span>${t}</span>`).join('')}</div>${A(U(d.page,d.params||{}),'관련 기술 보기','Explore the technology','plain-arrow')}</div>`}
 
 function home(){return `
-<section class="landscape-hero" data-production-slot="geosr-hero" data-film-slot="geosr-hero">
+<section class="landscape-hero" data-production-slot="geosr-hero" data-film-slot="geosr-hero" data-motion-lab-hero>
  <img class="landscape-image" src="assets/estuary-hero-v4.png" alt="${T('서해안 조간대와 수로를 모티브로 한 영상 콘셉트','Film concept inspired by Korean west-coast tidal landscapes')}" fetchpriority="high">
+ <canvas class="motion-lab-canvas" data-motion-lab-canvas aria-hidden="true"></canvas>
  <div class="landscape-vignette"></div>
  <div class="hero-edition"><span>GEOSYSTEM RESEARCH</span><span>${T('관측에서 예측까지','FROM OBSERVATION TO PREDICTION')}</span></div>
  <div class="landscape-title"><p>SCIENCE BEYOND THE VISIBLE</p><h1>Beyond<br>the surface</h1></div>

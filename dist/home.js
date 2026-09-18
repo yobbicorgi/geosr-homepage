@@ -42,9 +42,9 @@ ${credentialGallery()}
 
 function axFilmReel(){
  const scenes=[
-  {id:'detect',name:'Detect',ko:'탐지',k:'위성영상 속 양식시설을 구분하는 과정',e:'Identifying aquaculture facilities in satellite imagery',platforms:'SATELLITE AI'},
-  {id:'predict',name:'Predict',ko:'예측',k:'태풍 시나리오에 따른 해수면과 연안 침수의 변화',e:'Sea-level and coastal inundation changes under typhoon scenarios',platforms:'FLOOD 3D · STORM SURGE · SEA LEVEL'},
-  {id:'monitor',name:'Monitor',ko:'모니터링',k:'관측 지점에서 해역까지 해양환경을 살피는 과정',e:'Following marine conditions from observation stations to regional waters',platforms:'OCEAN BUOY · OCEAN ENVIRONMENT · COASTAL SAFETY'}
+  {id:'detect',name:'Detect',ko:'탐지',k:'위성영상에서 시설물을 탐지하는 과정',e:'Detecting facilities in satellite imagery',platforms:'SATELLITE FACILITY DETECTION'},
+  {id:'predict',name:'Predict',ko:'예측',k:'태풍 시나리오에 따른 해수면과 연안 침수의 변화',e:'Sea-level and coastal inundation changes under typhoon scenarios',platforms:'FLOOD 3D · STORM SURGE · EXTREME SEA LEVEL'},
+  {id:'monitor',name:'Monitor',ko:'모니터링',k:'관측 지점에서 해역까지 해양환경을 살피는 과정',e:'Following marine conditions from observation stations to regional waters',platforms:'OCEAN BUOY · OCEAN ENVIRONMENT · RIP CURRENT'}
  ];
  return `<div class="ax-reel-wrap"><div class="ax-reel"><div class="ax-reel-heading"><span>AX / IN FOCUS</span><span>${T('영상 제작 대기','FILM IN PREPARATION')}</span></div><div class="ax-reel-viewport">${scenes.map((s,i)=>`<section class="ax-reel-panel" id="ax-panel-${s.id}" role="tabpanel" aria-labelledby="ax-tab-${s.id}" tabindex="0" data-film-slot="ax-${s.id}" data-motion-mode="${["slow-push","lateral-pan","detail-focus"][i]}" data-film-active="${i===0}" ${i?'hidden inert':''}><div class="ax-reel-placeholder"><small>0${i+1} / ${T('장면 구성안','SCENE OUTLINE')}</small><strong>${s.name}</strong><p>${T(s.k,s.e)}</p></div><div class="ax-reel-platforms">${s.platforms}</div><button class="ax-film-toggle" type="button" data-film-toggle="ax-${s.id}" aria-label="${T('영상 재생 또는 일시정지','Play or pause film')}" aria-pressed="false" hidden>Ⅱ</button></section>`).join('')}</div><div class="ax-reel-tabs" role="tablist" aria-label="${T('AX 영상 장면','AX film scenes')}">${scenes.map((s,i)=>`<button type="button" id="ax-tab-${s.id}" role="tab" aria-controls="ax-panel-${s.id}" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-ax-scene="${i}"><span>0${i+1}</span>${T(s.ko,s.name)}</button>`).join('')}</div></div><p class="ax-reel-note">${T('각 플랫폼의 실제 기능을 바탕으로 구성한 영상 자리입니다','Film slots based on the actual functions of each platform')}</p></div>`;
 }

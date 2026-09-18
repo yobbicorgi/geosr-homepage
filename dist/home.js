@@ -1,35 +1,34 @@
 /* GeoSR editorial homepage — concept imagery is replaced through documented media slots */
 const expertiseScenes = [
-  {k:'관측과 조사',e:'Observation & survey',leadK:'현장을 정밀하게',leadE:'Closer to the field',bodyK:'육상에서 하천과 해양까지\n측량과 현장 관측으로 환경의 기초 자료를 확보합니다',bodyE:'Precision surveys and observations\nacross land, rivers and oceans',image:'coastal-survey-source.png',source:true,tagsK:['육상·수로 측량','해양 관측','무인 관측'],tagsE:['Land & hydrographic surveys','Ocean observation','Uncrewed systems'],page:'equipment'},
-  {k:'환경과 생태',e:'Environment & ecology',leadK:'환경을 깊이 있게',leadE:'A deeper understanding',bodyK:'수질과 퇴적물의 화학분석부터 생태 조사까지\n다양한 관점에서 환경의 상태를 평가합니다',bodyE:'Chemical analysis and ecological surveys\nreveal the condition of aquatic environments',image:'analysis-concept.png',tagsK:['환경 분석','생태 조사','환경 평가'],tagsE:['Chemical analysis','Ecological surveys','Environmental assessment'],page:'business',params:{id:84}},
-  {k:'수치모델과 예측',e:'Modelling & prediction',leadK:'변화를 예측하다',leadE:'Understand what comes next',bodyK:'기상과 유역에서 하천과 연안까지\n수치모델로 환경 변화와 재해 영향을 분석합니다',bodyE:'Numerical models investigate environmental change\nand hazard impacts across watersheds and coasts',image:'coastal-model-v3.png',tagsK:['수환경 모델','재해 예측','영향 분석'],tagsE:['Aquatic models','Hazard prediction','Impact analysis'],page:'business',params:{id:46}},
-  {k:'AI와 원격탐사',e:'AI & remote sensing',leadK:'더 넓게 분석하다',leadE:'A wider perspective',bodyK:'위성영상과 환경 데이터에 AI를 적용해\n예측과 탐지의 가능성을 넓혀갑니다',bodyE:'AI and satellite imagery extend our ability\nto predict change and detect patterns',image:'satellite-layers-v3.png',tagsK:['환경 AI','위성영상','공간정보'],tagsE:['Environmental AI','Satellite imagery','Spatial information'],page:'business',params:{id:61}}
+  {k:'관측·공간정보',e:'Observation & spatial information',leadK:'현장의 기준을 세우다',leadE:'Establish a field reference',bodyK:'육상·수로 측량과 해양 관측으로 공간의 기준 자료를 확보합니다',bodyE:'Land, hydrographic and marine observations establish a spatial reference',image:'coastal-survey-source.png',source:true,tagsK:['육상 측량','수로·해양 관측','공간정보'],tagsE:['Land surveys','Hydrographic & marine observation','Spatial information'],page:'equipment'},
+  {k:'환경·생태 분석',e:'Environmental & ecological analysis',leadK:'환경의 상태를 확인하다',leadE:'Read environmental conditions',bodyK:'수질·퇴적물과 생태 조사 자료를 함께 검토해 환경 상태를 평가합니다',bodyE:'Water, sediment and ecological observations are reviewed together to assess environmental conditions',image:'coastal-survey-source.png',source:false,tagsK:['수질·퇴적물','생태 조사','환경 평가'],tagsE:['Water & sediment','Ecological surveys','Environmental assessment'],page:'business',params:{id:84}},
+  {k:'유역·연안 모델링',e:'Watershed & coastal modelling',leadK:'변화의 경로를 살피다',leadE:'Trace environmental change',bodyK:'지형과 관측 자료를 바탕으로 유역과 연안의 흐름과 변화를 분석합니다',bodyE:'Terrain and observations support analysis of change across watersheds and coasts',image:'coastal-model-v3.png',source:false,tagsK:['유역 모델','연안 모델','영향 분석'],tagsE:['Watershed models','Coastal models','Impact analysis'],page:'business',params:{id:46}},
+  {k:'위성·AI 해석',e:'Satellite & AI interpretation',leadK:'더 넓은 맥락을 읽다',leadE:'Read a wider context',bodyK:'위성·관측 자료의 패턴과 유효 영역을 비교해 환경 변화를 해석합니다',bodyE:'Satellite and observation data are compared to interpret environmental change',image:'satellite-layers-v3.png',source:false,tagsK:['위성영상','환경 AI','변화 해석'],tagsE:['Satellite imagery','Environmental AI','Change interpretation'],page:'business',params:{id:61}}
 ];
 
 function expertisePanel(i=0){const d=expertiseScenes[i];return `<div class="expertise-photo" data-production-slot="expertise-${i+1}"><img src="assets/${d.image}" alt="${E(T(d.k,d.e))} — ${d.source?T('GeoSR 원본 자료','GeoSR source material'):T('영상 가안','film concept')}" loading="lazy"><span class="media-note">${d.source?T('GEOSR 현장 자료','GEOSR FIELD REFERENCE'):T('기술 연출 가안 · 실제 해석 결과 아님','VISUAL CONCEPT · NOT A VERIFIED ANALYSIS')}</span></div><div class="expertise-details"><span class="scene-index">0${i+1} / 04</span><h3>${T(d.leadK,d.leadE)}</h3><p>${T(d.bodyK,d.bodyE).replaceAll('\n','<br>')}</p><div class="expertise-tags">${(en?d.tagsE:d.tagsK).map(t=>`<span>${t}</span>`).join('')}</div>${A(U(d.page,d.params||{}),'관련 기술 보기','Explore the technology','plain-arrow')}</div>`}
 
 function home(){return `
 <section class="landscape-hero" data-production-slot="geosr-hero" data-film-slot="geosr-hero" data-motion-lab-hero>
- <img class="landscape-image" src="assets/estuary-hero-v4.png" alt="${T('서해안 조간대와 수로를 모티브로 한 영상 콘셉트','Film concept inspired by Korean west-coast tidal landscapes')}" fetchpriority="high">
- <canvas class="motion-lab-canvas" data-motion-lab-canvas aria-hidden="true"></canvas>
+ <div class="landscape-film" data-production-slot="geosr-hero" data-film-slot="geosr-hero" data-higgsfield-slot="geosr-hero" aria-label="${T('메인 영상 자리','Main film slot')}"><div class="landscape-film-fallback"><span>${T('영상 제작 준비 중','FILM IN PREPARATION')}</span></div></div>
  <div class="landscape-vignette"></div>
- <div class="hero-edition"><span>GEOSYSTEM RESEARCH</span><span>${T('관측에서 예측까지','FROM OBSERVATION TO PREDICTION')}</span></div>
- <div class="landscape-title"><p>SCIENCE BEYOND THE VISIBLE</p><h1>Beyond<br>the surface</h1></div>
- <div class="landscape-caption"><p>${T('자연환경을 이해하는 기술<br>현장의 질문에서 새로운 해답까지','Engineering a deeper understanding<br>From real-world questions to new answers')}</p><a class="round-explore" href="#expertise" aria-label="${T('기술 소개로 이동','Explore our expertise')}">↓</a></div>
- <div class="landscape-footer"><span>LAND · WATER · OCEAN · SPACE</span><span>${T('영상 콘셉트 · 실제 지형 자료 아님','FILM CONCEPT · NOT GEOGRAPHIC DATA')}</span><button type="button" class="landscape-motion" aria-pressed="false">${T('모션 정지','Pause motion')} Ⅱ</button></div>
+ <div class="hero-edition"><span>GEOSYSTEM RESEARCH</span><span>${T('현장·연구·분석','FIELD · RESEARCH · ANALYSIS')}</span></div>
+ <div class="landscape-title"><p>ENVIRONMENTAL INTELLIGENCE</p><h1>Environmental<br>Intelligence</h1></div>
+ <div class="landscape-caption"><p>${T('현장에서 시작해<br>환경의 변화를 해석합니다','From field observation<br>to environmental insight')}</p><a class="round-explore" href="#expertise" aria-label="${T('기술 소개로 이동','Explore our expertise')}">↓</a></div>
+ <div class="landscape-footer"><span>GEOSR / FILM SLOT</span><span class="landscape-film-status">${T('영상 제작 준비 중','FILM IN PREPARATION')}</span><button type="button" class="landscape-motion" aria-pressed="false">${T('모션 정지','Pause motion')} Ⅱ</button></div>
 </section>
 <section class="science-intro" id="expertise">
  <div class="science-label"><span class="tiny-index">01 — GEOSR EXPERTISE</span><p>${T('현장에서 시작해<br>더 넓은 해답으로','From the field<br>to a bigger picture')}</p></div>
  <div class="science-statement"><h2>${T('현장을 관측하고<br><span>환경의 변화를 예측합니다</span>','Observe the present<br><span>Understand what comes next</span>')}</h2><div class="science-intro-bottom"><p>${T('육상과 하천에서 연안과 해양까지<br>조사와 분석에 수치모델과 AI를 더해<br>복잡한 환경 문제를 풀어갑니다','From land and rivers to coasts and oceans<br>We connect field research with modelling and AI<br>to address complex environmental challenges')}</p>${A(U('business'),'기술과 솔루션','Our expertise','ink-link')}</div></div>
 </section>
-<section class="field-story" aria-label="${T('관측에서 예측으로 이어지는 기술','From field observation to prediction')}">
+<section class="field-story" aria-label="${T('연구 흐름','Research flow')}" data-research-flow>
  <div class="field-stage">
-  <div class="field-story-top"><span>ONE CONNECTED PERSPECTIVE</span><span class="field-count">01 / 04</span></div>
-  <div class="field-frames">${expertiseScenes.map((d,i)=>`<div class="field-frame ${i===0?'is-active':''}" data-frame="${i}" data-film-slot="expertise-${i+1}" data-film-active="${i===0}"><img src="assets/${d.image}" alt="${E(T(d.k,d.e))} — ${d.source?T('회사 공개 자료','Company source'):T('기술 영상 가안','Film concept')}" loading="lazy"></div>`).join('')}</div>
+  <div class="field-story-top"><span>RESEARCH FLOW</span><span class="field-count">01 / 04</span></div>
+  <div class="field-frames">${expertiseScenes.map((d,i)=>`<div class="field-frame field-frame-${i+1} ${i===0?'is-active':''}" data-frame="${i}" data-film-slot="expertise-${i+1}" data-film-active="${i===0}"></div>`).join('')}</div>
   <div class="field-shade"></div>
   <div class="field-copy">${expertiseScenes.map((d,i)=>`<article class="field-chapter ${i===0?'is-active':''}" data-chapter="${i}" ${i?'inert':''}><span>0${i+1} / ${d.e.toUpperCase()}</span><h2>${T(d.k,d.e)}</h2><p>${T(d.bodyK,d.bodyE).replaceAll('\n','<br>')}</p>${A(U(d.page,d.params||{}),'관련 기술 살펴보기','Explore this discipline','field-link')}</article>`).join('')}</div>
-  <div class="field-navigator" role="group" aria-label="${T('기술 장면 선택','Choose a discipline')}">${expertiseScenes.map((d,i)=>`<button type="button" data-chapter-go="${i}" aria-pressed="${i===0}"><span>0${i+1}</span>${T(d.k,d.e)}<i></i></button>`).join('')}</div>
-  <small class="field-disclaimer">${T('회사 자료와 기술 연출 가안으로 구성 · 실제 해석 결과 아님','SOURCE IMAGERY & FILM CONCEPTS · NOT VERIFIED ANALYSIS')}</small>
+  <div class="field-navigator field-flow" role="group" aria-label="${T('연구 흐름 선택','Choose a research flow')}">${expertiseScenes.map((d,i)=>`<button type="button" data-chapter-go="${i}" aria-pressed="${i===0}"><span>0${i+1}</span>${T(d.k,d.e)}<i></i></button>`).join('')}</div>
+  <small class="field-disclaimer">${T('연구 흐름을 요약한 일반 설명 · 실제 해석 결과 아님','GENERAL RESEARCH FLOW · NOT VERIFIED ANALYSIS')}</small>
  </div>
 </section>
 <section class="digital-section" id="platforms">

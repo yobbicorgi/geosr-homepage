@@ -1,0 +1,250 @@
+[
+  {
+    "href": "https://www.bntsolution.com/",
+    "title": "(주)비엔티 - 대용량 데이터의 Data Visualization 선도기업",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "nav": [
+      "(주)비엔티",
+      "홈",
+      "회사 소개",
+      "OceanWatchAI",
+      "포트폴리오",
+      "프로젝트",
+      "고객사",
+      "오시는 길"
+    ],
+    "headings": [
+      "Massive Data Visualization을\n선도하는 기업",
+      "회사 소개",
+      "OceanWatchAI",
+      "포트폴리오",
+      "프로젝트",
+      "고객사",
+      "오시는 길"
+    ],
+    "videos": [],
+    "mediaQueries": 2,
+    "site": "bnt",
+    "view": "desktop",
+    "screenshot": "competitor-bnt-desktop.png"
+  },
+  {
+    "href": "https://www.bntsolution.com/",
+    "title": "(주)비엔티 - 대용량 데이터의 Data Visualization 선도기업",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "nav": [
+      "(주)비엔티",
+      "홈",
+      "회사 소개",
+      "OceanWatchAI",
+      "포트폴리오",
+      "프로젝트",
+      "고객사",
+      "오시는 길"
+    ],
+    "headings": [
+      "Massive Data Visualization을\n선도하는 기업",
+      "회사 소개",
+      "OceanWatchAI",
+      "포트폴리오",
+      "프로젝트",
+      "고객사",
+      "오시는 길"
+    ],
+    "videos": [],
+    "mediaQueries": 2,
+    "site": "bnt",
+    "view": "mobile",
+    "screenshot": "competitor-bnt-mobile.png"
+  },
+  {
+    "href": "https://all4land.com/main.do",
+    "title": "ALL4LAND",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "nav": [
+      "ALL4LAND",
+      "About Us",
+      "CEO Message",
+      "History",
+      "Vision",
+      "Partner & Client",
+      "CI",
+      "Location",
+      "Business",
+      "Digital Twin",
+      "Territory",
+      "Marine",
+      "Administration",
+      "Survey & Database",
+      "R&D",
+      "Maritime R&D",
+      "Global Business",
+      "Satellite",
+      "Platform & Service",
+      "AI",
+      "MapPrime Solution",
+      "LiveBus & D’ooh",
+      "ESG",
+      "ESG Management",
+      "Environmental",
+      "Human Rights",
+      "Safety & Health",
+      "Ethical",
+      "Communication Channel",
+      "Notice"
+    ],
+    "headings": [
+      "ALL4LAND",
+      "Alliance",
+      "Alliance",
+      "Neospectra",
+      "Ltmetric",
+      "MYUNGHWA GIS",
+      "BUSINESS",
+      "We provide GIS database production\ntechnology, key solutions,\nand convergence technologies\nfor the entire national territory.",
+      "BUSINESS",
+      "We provide GIS database production\ntechnology, key solutions,\nand convergence technologies\nfor the entire national territory.",
+      "Digital Twin",
+      "AI",
+      "Territory",
+      "Marine",
+      "Administration",
+      "Survey & DB",
+      "R&D",
+      "BUSINESS",
+      "We provide GIS database productiontechnology, key solutions,\n                            and convergence technologiesfor the entire national territory.",
+      "SOLUTION",
+      "OVERVIEW",
+      "The TOP company in the geospatial information industry",
+      "ALLFORLAND",
+      "ALL4LAND"
+    ],
+    "videos": [
+      {
+        "src": "https://all4land.com/assets/movie/all4land_opening-last.mp4",
+        "poster": "",
+        "autoplay": false
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-03.mp4",
+        "poster": "",
+        "autoplay": true
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-01.mp4?ver=1.2",
+        "poster": "",
+        "autoplay": true
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-02.mp4",
+        "poster": "",
+        "autoplay": true
+      }
+    ],
+    "mediaQueries": 8,
+    "site": "all4land",
+    "view": "desktop",
+    "screenshot": "competitor-all4land-desktop.png"
+  },
+  {
+    "href": "https://all4land.com/main.do",
+    "title": "ALL4LAND",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "nav": [
+      "ALL4LAND",
+      "About Us",
+      "CEO Message",
+      "History",
+      "Vision",
+      "Partner & Client",
+      "CI",
+      "Location",
+      "Business",
+      "Digital Twin",
+      "Territory",
+      "Marine",
+      "Administration",
+      "Survey & Database",
+      "R&D",
+      "Maritime R&D",
+      "Global Business",
+      "Satellite",
+      "Platform & Service",
+      "AI",
+      "MapPrime Solution",
+      "LiveBus & D’ooh",
+      "ESG",
+      "ESG Management",
+      "Environmental",
+      "Human Rights",
+      "Safety & Health",
+      "Ethical",
+      "Communication Channel",
+      "Notice"
+    ],
+    "headings": [
+      "ALL4LAND",
+      "Alliance",
+      "Alliance",
+      "Neospectra",
+      "Ltmetric",
+      "MYUNGHWA GIS",
+      "BUSINESS",
+      "We provide GIS database production \n                                        technology, key solutions,\n                                        and convergence technologies \n                                        for the entire national territory.",
+      "BUSINESS",
+      "We provide GIS database production \n                                technology, key solutions,\n                                and convergence technologies \n                                for the entire national territory.",
+      "Digital Twin",
+      "AI",
+      "Territory",
+      "Marine",
+      "Administration",
+      "Survey & DB",
+      "R&D",
+      "BUSINESS",
+      "We provide GIS database production\ntechnology, key solutions,\nand convergence technologies\nfor the entire national territory.",
+      "SOLUTION",
+      "OVERVIEW",
+      "The TOP company in the geospatial information industry",
+      "ALLFORLAND",
+      "ALL4LAND"
+    ],
+    "videos": [
+      {
+        "src": "https://all4land.com/assets/movie/all4land_opening-last.mp4",
+        "poster": "",
+        "autoplay": false
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-03.mp4",
+        "poster": "",
+        "autoplay": true
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-01.mp4?ver=1.2",
+        "poster": "",
+        "autoplay": true
+      },
+      {
+        "src": "https://all4land.com/assets/movie/clip-02.mp4",
+        "poster": "",
+        "autoplay": true
+      }
+    ],
+    "mediaQueries": 8,
+    "site": "all4land",
+    "view": "mobile",
+    "screenshot": "competitor-all4land-mobile.png"
+  }
+]

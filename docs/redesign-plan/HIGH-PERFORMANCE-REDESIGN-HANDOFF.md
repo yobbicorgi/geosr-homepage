@@ -1,9 +1,12 @@
 # 아스트라용 GeoSR 홈페이지 재설계 인계
 
+> 최상위 기준: [MASTER-REDESIGN-ANALYSIS.md](MASTER-REDESIGN-ANALYSIS.md)
+> 다음주 착수 순서: [NEXT-WEEK-START.md](NEXT-WEEK-START.md)
+
 작성일 2026-09-18
 상태: 디자인 재시작 전 인계
 기준 저장소: `https://github.com/yobbicorgi/geosr-homepage.git`
-기준 구현: `27fd4e6 Refine credential transitions and link cues`
+기준 구현: `4603187 Expand Astra redesign and film direction`
 문서 기준 커밋: 이 문서를 포함한 다음 커밋
 
 ## 작업의 출발점
@@ -223,7 +226,7 @@ AX 상단 콘셉트 영상 아래에는 각 플랫폼별 실제 화면 기록을
 
 # 6. 현재 상태
 
-- 마지막 구현 커밋은 `27fd4e6 Refine credential transitions and link cues`다
+- 마지막 구현 커밋은 `4603187 Expand Astra redesign and film direction`다
 - 메인 히어로 포스터 변경은 사용자 중단 요청에 따라 되돌린 상태다
 - `HIGH-PERFORMANCE-REDESIGN-HANDOFF.md`는 다음 아스트라 세션이 디자인부터 다시 시작하기 위한 기준 문서다
 - 영상 생성과 유료 Higgsfield 제작은 이 인계 시점에 실행하지 않았다

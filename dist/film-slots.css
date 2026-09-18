@@ -1,4 +1,12 @@
 .film-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity .5s}
+.route-film-frame{position:relative;display:block;aspect-ratio:16/9;min-height:220px;overflow:hidden;background:#071619;color:#edf2f4;border:1px solid #82cce233}
+.route-film-frame>.film-video{object-fit:contain;background:#071619}
+.route-film-fallback{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,5vw,58px);background:#071619;z-index:1}
+.route-film-fallback>span{font:11px InterGeo,'Noto Sans KR',sans-serif;letter-spacing:.13em;color:#a9c5d0;text-transform:uppercase}
+.route-film-fallback>strong{display:block;max-width:11ch;margin:18px 0 14px;font:650 clamp(30px,4.4vw,68px)/1.05 InterGeo,'Noto Sans KR',sans-serif;letter-spacing:-.055em}
+.route-film-fallback>p{max-width:470px;margin:0;color:#b9cbd4;font-size:14px;line-height:1.8}
+.route-film-frame>figcaption{z-index:2}
+.route-film-frame.film-loaded .route-film-fallback,.route-film-frame.film-loaded>figcaption{visibility:hidden}
 .film-loaded>.film-video{opacity:1}.landscape-hero>.film-video{z-index:-1}.landscape-hero.film-loaded>.landscape-image{visibility:hidden}
 .field-frame>img{width:100%;height:100%;object-fit:cover;display:block}.field-frame.film-loaded>img{visibility:hidden}
 .ax-reel{position:relative;background:#071619;border:1px solid #82cce233;color:#f1f5f7;border-radius:3px;overflow:hidden}
@@ -19,6 +27,7 @@
 .ax-reel-wrap{min-width:0;width:100%}.ax-reel-panel:focus-visible{outline:2px solid #82cce2;outline-offset:-5px}
 .field-navigator button[aria-pressed=true] i{transform-origin:left;transform:scaleX(var(--chapter-progress,1))}
 @media(max-width:820px){.ax-reel-viewport{min-height:300px;aspect-ratio:4/3}.ax-reel-heading{padding:16px;font-size:10px;gap:15px}.ax-reel-placeholder{padding:8%}.ax-reel-placeholder>strong{font-size:46px;margin:20px 0}.ax-reel-placeholder>p{font-size:14px}.ax-reel-platforms{font-size:10px;line-height:1.6;left:8%;bottom:18px}.ax-reel-tabs>button{padding:17px 16px;font-size:13px}.ax-reel-tabs>button[aria-selected=true]:after{left:16px;right:16px}.ax-reel-note{font-size:11px}.ax-film-toggle{right:15px;bottom:12px}}
+@media(max-width:820px){.route-film-frame{min-height:240px}.route-film-fallback{padding:28px}.route-film-fallback>strong{font-size:clamp(30px,9vw,48px);margin:15px 0 12px}.route-film-fallback>p{font-size:12px;line-height:1.7}}
 @media(prefers-reduced-motion:reduce){.film-video{transition:none}}
 /* One wide media stage instead of a small screen inside a two-column card */
 .home-page .digital-section{background:#f1f5f7;color:#202a31}

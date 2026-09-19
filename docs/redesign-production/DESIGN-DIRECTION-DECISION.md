@@ -1,6 +1,7 @@
 # Phase 3 — Design direction decision
 
-작성일: 2026-09-19  
+작성일: 2026-09-19
+
 상태: B 기반 하이브리드 선택 · vertical slice 검토용
 
 ## 비교 점수

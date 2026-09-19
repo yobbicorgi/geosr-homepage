@@ -1,10 +1,10 @@
 # Phase 1 — design-board evidence brief
 
-This brief hands verified material and known gaps to the main designer for three structurally different desktop/mobile boards. It does not select a direction or establish the visual system; the main designer owns composition, typography, page rhythm, tokens, and motion map.
+This brief hands verified material and known gaps to the main designer for three structurally different desktop boards. It does not select a direction or establish the visual system; the main designer owns composition, typography, page rhythm, tokens, and motion map. Mobile design is deferred and is not a constraint for this production pass.
 
 ## Shared comparison payload
 
-All three boards should use the same content facts and evidence so their differences are about hierarchy and experience, not unequal imagery. Show the complete eight-stage Home story at desktop scale plus a deliberately composed mobile adaptation. Keep the eight primary destinations, four technology categories, 21 source IDs, and distinct AX / GeoDAP roles.
+All three boards should use the same content facts and evidence so their differences are about hierarchy and experience, not unequal imagery. Show the complete eight-stage Home story at 1440, 1920 and 2560 CSS px desktop widths. The opening hero must fill the entire first viewport with edge-to-edge film or its reviewed poster; only the transparent header, short brand statement, production status and scroll cue may overlay it. No following section may enter the first fold. Keep the eight primary destinations, four technology categories, 21 source IDs, and distinct AX / GeoDAP roles.
 
 | Slot / page stage | Source-backed candidate | Status | Board-safe use | Gap before public use |
 |---|---|---|---|---|
@@ -20,15 +20,15 @@ All three boards should use the same content facts and evidence so their differe
 
 ## Three directions to compare
 
-The main designer should make A/B/C differ in information hierarchy, composition, and page rhythm, not just accent color. Each board includes desktop and mobile states and the same evidence payload above.
+The main designer should make A/B/C differ in information hierarchy, composition, and page rhythm, not just accent color. Each board includes the same desktop evidence payload above. Mobile states will be designed only in a later approved phase.
 
 | Direction | Board hypothesis | Evidence it can use | Main risk to test |
 |---|---|---|---|
-| **A — Cinematic Scientific** | Hero and field-to-analysis transitions lead; evidence modules arrive after the story | Verified coastal photo, pending film slots with authored preparation state, approved AX screen capture | Does motion/video dominate company identity, evidence access or mobile reading? |
+| **A — Cinematic Scientific** | A true full-viewport hero film and field-to-analysis transitions lead; evidence modules arrive only after the first scroll | Verified coastal photo, pending film slots with authored preparation state, approved AX screen capture | Does motion/video establish company identity while keeping overlay copy legible and later evidence accessible? |
 | **B — Spatial Editorial** | Large editorial typography and source-backed field imagery carry a calm, evidence-first story | Coastal-source image, real equipment after recheck, technology IDs and selected posts | Does the page feel specific and contemporary without resorting to generic concept imagery? |
 | **C — Interactive Technical** | A few purposeful, source-backed interaction moments explain observation, modelling and actual platform interfaces | Approved AX capture, one reverified model output, source IDs/metadata | Does interaction imply unavailable live data, falsely merge products, or burden performance/accessibility? |
 
-The existing execution plan gives an internal comparison rubric, not a user outcome: brand clarity 25%, factual/technical validity 25%, visual quality and rhythm 20%, information exploration 15%, motion/performance/accessibility 15%. Score only after all three desktop/mobile boards exist. The initial B-centered hypothesis is provisional; the main designer should explain evidence-based changes to it.
+The existing execution plan gives an internal comparison rubric, not a user outcome: brand clarity 25%, factual/technical validity 25%, visual quality and rhythm 20%, information exploration 15%, motion/performance/accessibility 15%. Score only after all three desktop boards exist. The initial B-centered hypothesis is provisional; the main designer should explain evidence-based changes to it.
 
 ## Shared content and visual guardrails
 
@@ -43,6 +43,6 @@ The existing execution plan gives an internal comparison rubric, not a user outc
 ## Handoff to board design
 
 1. Re-open primary source pages for the exact text/assets chosen for each board; resolve public-display permissions before implementation.
-2. Main designer supplies A/B/C desktop and mobile compositions, explains hierarchy/type/space/media strategy, and scores the three using the shared rubric.
+2. Main designer supplies A/B/C desktop compositions at the three target widths, explains hierarchy/type/space/media strategy, and scores them using the shared rubric. Mobile is deferred.
 3. Record recommendation and unresolved evidence gaps. Do not generate or embed media until the approved board establishes its intended frame and source needs.
 4. Use only the reviewed candidate list above. Pending film slots remain explicit placeholders; no fictional replacement imagery is needed to make a board complete.

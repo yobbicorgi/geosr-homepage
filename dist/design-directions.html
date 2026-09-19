@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06161d">
+  <meta name="description" content="GeoSR homepage redesign direction boards for internal review.">
+  <title>GeoSR — Design Directions</title>
+  <link rel="stylesheet" href="design-directions.css">
+  <script src="design-directions.js" defer></script>
+</head>
+<body data-direction="b" data-language="ko">
+  <a class="skip-link" href="#stage-01" data-copy data-ko="본문으로 건너뛰기" data-en="Skip to content">본문으로 건너뛰기</a>
+  <header class="review-bar">
+    <a class="review-brand" href="design-directions.html" aria-label="GeoSR design direction review">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span><strong>GeoSR</strong><small>DESIGN DIRECTIONS / INTERNAL REVIEW</small></span>
+    </a>
+    <nav class="direction-tabs" role="tablist" aria-label="Design direction" data-copy-aria-ko="디자인 방향 선택" data-copy-aria-en="Choose a design direction">
+      <button id="direction-tab-a" role="tab" aria-selected="false" aria-controls="direction-panel" tabindex="-1" type="button" data-direction-tab="a"><span>A</span><b>Cinematic</b></button>
+      <button id="direction-tab-b" role="tab" aria-selected="true" aria-controls="direction-panel" tabindex="0" type="button" data-direction-tab="b"><span>B</span><b>Editorial</b></button>
+      <button id="direction-tab-c" role="tab" aria-selected="false" aria-controls="direction-panel" tabindex="-1" type="button" data-direction-tab="c"><span>C</span><b>Technical</b></button>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language">
+      <button type="button" data-language-button="ko" aria-pressed="true">KO</button>
+      <button type="button" data-language-button="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="direction-panel" class="direction-panel" role="tabpanel" aria-labelledby="direction-tab-b" tabindex="-1">
+    <aside class="direction-note" aria-live="polite">
+      <div class="direction-note-title"><span class="eyebrow">BOARD <b data-direction-letter>B</b></span><span class="review-status" data-copy data-ko="비교 검토용 · 점수 미확정" data-en="For comparison · scoring pending">비교 검토용 · 점수 미확정</span></div>
+      <div class="direction-note-copy">
+        <h2 data-direction-title> B — Spatial Editorial</h2>
+        <p data-direction-description>현장 자료와 편집형 타이포그래피를 중심으로, 근거를 차분하게 살펴보는 구성입니다.</p>
+      </div>
+      <div class="direction-note-foot"><span data-copy data-ko="내부 비교 점수" data-en="Internal comparison score">내부 비교 점수</span><strong data-copy data-ko="메인 검토 전" data-en="Awaiting main review">메인 검토 전</strong></div>
+    </aside>
+
+    <section id="stage-01" class="board-section hero-stage" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="stage-kicker"><span>01 / IDENTITY</span><span data-copy data-ko="환경·해양·공학 연구" data-en="ENVIRONMENT · MARINE · ENGINEERING">환경·해양·공학 연구</span></div>
+        <p class="hero-overline" data-copy data-ko="현장 자료에서 과학적 판단으로" data-en="FROM FIELD EVIDENCE TO INFORMED DECISIONS">현장 자료에서 과학적 판단으로</p>
+        <h1 id="hero-title"><span data-copy data-ko="관측에서" data-en="From Observation">관측에서</span><span data-copy data-ko="예측까지" data-en="to Foresight">예측까지</span></h1>
+        <p class="hero-subcopy" data-copy data-ko="해양·환경 현장에서 얻은 데이터를 분석과 모델링 그리고 AI로 연결합니다" data-en="We connect data from marine and environmental fieldwork with analysis, modelling and AI.">해양·환경 현장에서 얻은 데이터를 분석과 모델링 그리고 AI로 연결합니다</p>
+        <div class="workflow-labels" aria-label="Homepage workflow">
+          <span>OBSERVE</span><i aria-hidden="true"></i><span>ANALYZE</span><i aria-hidden="true"></i><span>MODEL</span><i aria-hidden="true"></i><span>PREDICT</span><i aria-hidden="true"></i><span>DELIVER</span>
+        </div>
+      </div>
+      <figure class="hero-film film-frame" data-film-slot="geosr-hero" data-media-state="pending" aria-label="GeoSR hero film slot">
+        <div class="film-frame-inner"><span class="frame-index">GEOSR / FIELD FILM</span><div class="film-preparation"><span class="film-mark" aria-hidden="true"><i></i></span><b data-copy data-ko="영상 제작 준비 중" data-en="Film in preparation">영상 제작 준비 중</b><small data-copy data-ko="영상 슬롯 · 16:9 · 무음 우선" data-en="Film slot · 16:9 · silent-first">영상 슬롯 · 16:9 · 무음 우선</small></div><span class="frame-meta" data-copy data-ko="영상 미디어 미연결" data-en="No film connected">영상 미디어 미연결</span></div>
+      </figure>
+      <a class="scroll-cue" href="#stage-02"><span data-copy data-ko="현장 살펴보기" data-en="Explore the field">현장 살펴보기</span><b aria-hidden="true">↓</b></a>
+    </section>
+
+    <section id="stage-02" class="board-section field-stage reveal" aria-labelledby="field-title">
+      <div class="section-index"><span>02</span><span>FIELD / OBSERVATION</span></div>
+      <div class="section-heading">
+        <p class="eyebrow" data-copy data-ko="관측의 시작점" data-en="A FIELD REFERENCE">관측의 시작점</p>
+        <h2 id="field-title" data-copy data-ko="현장을 읽는<br>일은 여기서 시작됩니다" data-en="Read the field.<br>Start with what is there.">현장을 읽는<br>일은 여기서 시작됩니다</h2>
+        <p class="section-lead" data-copy data-ko="연안·하천·항만과 육상 환경에서 얻는 자료가 분석과 설계의 기준이 됩니다." data-en="Evidence from coasts, rivers, harbors and land provides a basis for analysis and engineering.">연안·하천·항만과 육상 환경에서 얻는 자료가 분석과 설계의 기준이 됩니다.</p>
+      </div>
+      <figure class="coastal-figure media-figure">
+        <img src="assets/coastal-survey-source.png" width="2048" height="1152" alt="Coastal landscape reference, with no people visible" data-alt-ko="사람이 보이지 않는 연안 공간 참조 이미지" data-alt-en="Coastal landscape reference, with no people visible" loading="lazy">
+        <figcaption><span data-copy data-ko="연안 공간 참조 이미지" data-en="Coastal spatial reference">연안 공간 참조 이미지</span><span data-copy data-ko="출처 사진 · 정확한 위치·촬영일 미확인" data-en="Source photo · exact location and capture date unverified">출처 사진 · 정확한 위치·촬영일 미확인</span></figcaption>
+      </figure>
+      <div class="field-evidence">
+        <span class="evidence-rule" aria-hidden="true"></span>
+        <p data-copy data-ko="측량과 해양 관측, 수질·퇴적물 시료, 생태 조사 등 목적에 맞는 방법을 연결합니다. 무인선은 여러 관측 수단 중 하나입니다." data-en="Methods are selected for the task: surveys, marine observations, water and sediment sampling, and ecological fieldwork. An unmanned vessel is one of several observation tools.">측량과 해양 관측, 수질·퇴적물 시료, 생태 조사 등 목적에 맞는 방법을 연결합니다. 무인선은 여러 관측 수단 중 하나입니다.</p>
+        <span class="source-status">SOURCE REFERENCE · PLACE / DATE OPEN</span>
+      </div>
+    </section>
+
+    <section id="stage-03" class="board-section understanding-stage reveal" aria-labelledby="understanding-title">
+      <div class="section-index"><span>03</span><span>FROM DATA TO UNDERSTANDING</span></div>
+      <div class="understanding-grid">
+        <div class="section-heading">
+          <p class="eyebrow" data-copy data-ko="자료에서 해석으로" data-en="FROM EVIDENCE TO INTERPRETATION">자료에서 해석으로</p>
+          <h2 id="understanding-title" data-copy data-ko="분석의 흐름을<br>분명하게 보여줍니다" data-en="Make the analytical path<br>clear and accountable.">분석의 흐름을<br>분명하게 보여줍니다</h2>
+          <p class="section-lead" data-copy data-ko="관측 자료와 환경 조건을 검토하고, 목적에 맞는 분석·모델링을 거쳐 결과의 범위를 설명합니다." data-en="Review observations and environmental conditions, apply analysis or modelling for the purpose, and explain the limits of each result.">관측 자료와 환경 조건을 검토하고, 목적에 맞는 분석·모델링을 거쳐 결과의 범위를 설명합니다.</p>
+        </div>
+        <div class="process-panel">
+          <div class="process-panel-head"><span data-copy data-ko="일반 연구 흐름" data-en="GENERAL RESEARCH FLOW">일반 연구 흐름</span><span data-copy data-ko="실제 분석 결과가 아닌 구조 설명" data-en="Process illustration, not an analysis result">실제 분석 결과가 아닌 구조 설명</span></div>
+          <div class="process-stepper" role="group" aria-label="Research process steps">
+            <button type="button" class="process-step is-current" aria-pressed="true" data-process-step="observe"><span>01</span><b>OBSERVE</b></button>
+            <button type="button" class="process-step" aria-pressed="false" data-process-step="analyze"><span>02</span><b>ANALYZE</b></button>
+            <button type="button" class="process-step" aria-pressed="false" data-process-step="model"><span>03</span><b>MODEL</b></button>
+            <button type="button" class="process-step" aria-pressed="false" data-process-step="predict"><span>04</span><b>PREDICT</b></button>
+            <button type="button" class="process-step" aria-pressed="false" data-process-step="deliver"><span>05</span><b>DELIVER</b></button>
+          </div>
+          <div class="process-detail" aria-live="polite"><span class="detail-label" data-process-label>OBSERVE</span><p data-process-copy data-ko="현장과 공간 자료를 목적에 맞게 확보하고 기준을 기록합니다." data-en="Collect field and spatial evidence for the purpose, and document the reference conditions.">현장과 공간 자료를 목적에 맞게 확보하고 기준을 기록합니다.</p></div>
+        </div>
+      </div>
+      <div class="method-ribbon" aria-label="Research workflow labels"><span>OBSERVE</span><span>ANALYZE</span><span>MODEL</span><span>PREDICT</span><span>DELIVER</span></div>
+    </section>
+
+    <section id="stage-04" class="board-section technology-stage reveal" aria-labelledby="technology-title">
+      <div class="section-index"><span>04</span><span>TECHNOLOGY / CAPABILITY</span></div>
+      <div class="technology-intro">
+        <div class="section-heading">
+          <p class="eyebrow" data-copy data-ko="기술로 이어지는 질문" data-en="QUESTIONS THAT GUIDE THE WORK">기술로 이어지는 질문</p>
+          <h2 id="technology-title" data-copy data-ko="필요한 전문성을<br>찾기 쉽게" data-en="Find the capability<br>for the question.">필요한 전문성을<br>찾기 쉽게</h2>
+        </div>
+        <p class="section-lead" data-copy data-ko="기존 공식 분류를 그대로 보존하고, 기술 기록과 관련 근거를 따라가도록 구성합니다." data-en="Keep the original official categories and connect each technology record to its supporting evidence.">기존 공식 분류를 그대로 보존하고, 기술 기록과 관련 근거를 따라가도록 구성합니다.</p>
+      </div>
+      <div class="technology-grid">
+        <article class="technology-group"><div class="group-top"><span>01</span><small>ORIGINAL CATEGORY</small></div><h3>수환경 보전</h3><p class="group-description" data-copy data-ko="하구·하천, 해양공간, 환경영향과 생태 보전" data-en="Estuaries and rivers, marine spatial planning, environmental assessment and ecology">하구·하천, 해양공간, 환경영향과 생태 보전</p><ul><li>하구·하천 과정 <small>ID 15</small></li><li>수환경 통합모델링 <small>ID 46</small></li><li>해양생태계 보전 및 모니터링 <small>ID 84</small></li></ul></article>
+        <article class="technology-group"><div class="group-top"><span>02</span><small>ORIGINAL CATEGORY</small></div><h3>수환경 건강성 회복</h3><p class="group-description" data-copy data-ko="연안 생태계와 해양환경의 건강성 회복" data-en="Coastal ecology and recovery of marine environmental health">연안 생태계와 해양환경의 건강성 회복</p><ul><li>해양쓰레기 및 미세플라스틱 <small>ID 50</small></li><li>살아 숨 쉬는 연안 <small>ID 51</small></li><li>생태계·적조·비브리오균·대장균 모델링 <small>ID 52</small></li></ul></article>
+        <article class="technology-group"><div class="group-top"><span>03</span><small>ORIGINAL CATEGORY</small></div><h3>재해예방</h3><p class="group-description" data-copy data-ko="연안 변화와 해양 재해 위험의 조사·평가" data-en="Coastal change and assessment of marine hazard risk">연안 변화와 해양 재해 위험의 조사·평가</p><ul><li>연안침식 모니터링 <small>ID 53</small></li><li>연안재해 감시 및 취약성 평가 <small>ID 54</small></li><li>재해·재난 예측 <small>ID 55</small></li></ul></article>
+        <article class="technology-group"><div class="group-top"><span>04</span><small>ORIGINAL CATEGORY</small></div><h3>스마트 기술</h3><p class="group-description" data-copy data-ko="위성·영상, 데이터, AI와 실시간 해양예측" data-en="Satellite and image analysis, data, AI and real-time ocean prediction">위성·영상, 데이터, AI와 실시간 해양예측</p><ul><li>인공위성 영상 처리 및 분석 <small>ID 56</small></li><li>인공지능 활용기술 <small>ID 61</small></li><li>실시간 해양예측시스템 <small>ID 65</small></li></ul></article>
+      </div>
+      <p class="metadata-note" data-copy data-ko="대표 원문 항목 · dist/content.json과 공식 사업 분류 대조 필요" data-en="Representative source titles · recheck against the current official directory">대표 원문 항목 · dist/content.json과 공식 사업 분류 대조 필요</p>
+    </section>
+
+    <section id="stage-05" class="board-section ax-stage reveal" aria-labelledby="ax-title">
+      <div class="section-index"><span>05</span><span>APPLIED INTELLIGENCE</span></div>
+      <div class="ax-heading">
+        <div class="section-heading"><p class="eyebrow">APPLIED INTELLIGENCE</p><h2 id="ax-title">AX Platform</h2><p class="section-lead" data-copy data-ko="목적별 환경·해양 플랫폼을 소개합니다. 각 항목은 별도 제품 맥락으로 다룹니다." data-en="An introduction to purpose-built marine and environmental platforms. Each remains a distinct product context.">목적별 환경·해양 플랫폼을 소개합니다. 각 항목은 별도 제품 맥락으로 다룹니다.</p></div>
+        <div class="ax-principles" aria-label="AX principles"><div><span>01</span><b>Discover</b><small>Satellite Facility Detection · Natural Phenomena News</small></div><div><span>02</span><b>Predict</b><small>Flood 3D · Storm Surge · Extreme Sea Level · Integrated Flood XAI <em data-copy data-ko="개발 중" data-en="in development">개발 중</em></small></div><div><span>03</span><b>Monitor</b><small>Ocean Buoy · Ocean Environment · Rip Current</small></div></div>
+      </div>
+      <figure class="ax-screen media-figure" data-motion-mode="slow-push">
+        <div class="screen-frame-label"><span data-copy data-ko="실제 화면 캡처 참조" data-en="CAPTURED INTERFACE REFERENCE">실제 화면 캡처 참조</span><span data-copy data-ko="정적 자료 · 현재 버전 확인 필요" data-en="Static reference · current version to verify">정적 자료 · 현재 버전 확인 필요</span></div>
+        <img src="assets/platforms/satellite-poster.webp" width="2560" height="1440" alt="Captured Satellite Facility Detection interface reference, static and not live" data-alt-ko="Satellite Facility Detection 제품 화면 캡처 참조. 정적 이미지이며 실시간 화면이 아닙니다." data-alt-en="Captured Satellite Facility Detection interface reference, static and not live" loading="lazy">
+        <figcaption><span>Satellite Facility Detection</span><span data-copy data-ko="캡처 화면 · 실시간 상태 아님" data-en="Captured screen · not a live state">캡처 화면 · 실시간 상태 아님</span></figcaption>
+      </figure>
+      <p class="metadata-note" data-copy data-ko="제품 관계와 원본 화면 버전은 공개 전 재검증" data-en="Recheck product relationships and capture version before publication">제품 관계와 원본 화면 버전은 공개 전 재검증</p>
+    </section>
+
+    <section id="stage-06" class="board-section geodap-stage reveal" aria-labelledby="geodap-title">
+      <div class="section-index"><span>06</span><span>INDEPENDENT DATA SERVICE</span></div>
+      <div class="geodap-layout">
+        <div class="section-heading"><p class="eyebrow">EARTH DATA PLATFORM</p><h2 id="geodap-title">GeoDAP</h2><p class="section-lead" data-copy data-ko="GeoDAP은 독립 서비스입니다. 아래 화면은 현재 서비스 화면이 아닐 수 있는 참고 캡처입니다." data-en="GeoDAP is an independent service. The screen below is a reference capture and may not show the current service.">GeoDAP은 독립 서비스입니다. 아래 화면은 현재 서비스 화면이 아닐 수 있는 참고 캡처입니다.</p><p class="geodap-value">Earth Data Intelligence</p><a class="text-link external-link" href="https://www.geo-dap.com/" target="_blank" rel="noopener noreferrer"><span data-copy data-ko="GeoDAP 공식 서비스" data-en="GeoDAP official service">GeoDAP 공식 서비스</span><span aria-hidden="true">↗</span></a></div>
+        <figure class="geodap-screen media-figure"><div class="screen-frame-label"><span data-copy data-ko="원본 비율 유지" data-en="NATIVE ASPECT RATIO">원본 비율 유지</span><span data-copy data-ko="현재성·사용 권리 확인 필요" data-en="Currentness and rights to verify">현재성·사용 권리 확인 필요</span></div><img src="assets/platform-geodap.png" width="2560" height="1440" alt="GeoDAP interface reference image, uncropped and not a live view" data-alt-ko="GeoDAP 화면 참고 이미지. 원본 비율이며 현재 서비스 화면을 뜻하지 않습니다." data-alt-en="GeoDAP interface reference image, uncropped and not a live view" loading="lazy"><figcaption><span>GeoDAP / EARTH DATA</span><span data-copy data-ko="참고 캡처 · 제품 상태 단정 금지" data-en="Reference capture · not a product-status claim">참고 캡처 · 제품 상태 단정 금지</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="stage-07" class="board-section evidence-stage reveal" aria-labelledby="evidence-title">
+      <div class="section-index"><span>07</span><span>EVIDENCE / CREDENTIALS</span></div>
+      <div class="evidence-heading"><div class="section-heading"><p class="eyebrow" data-copy data-ko="문서로 확인하는 기반" data-en="DOCUMENTED CREDENTIALS">문서로 확인하는 기반</p><h2 id="evidence-title" data-copy data-ko="자료가 신뢰를<br>뒷받침합니다" data-en="Evidence supports<br>the work.">자료가 신뢰를<br>뒷받침합니다</h2></div><p class="section-lead" data-copy data-ko="인증·면허·등록·지식재산권 자료를 서로 다른 분류로 보존합니다." data-en="Keep certifications, registrations and intellectual property in distinct groups.">인증·면허·등록·지식재산권 자료를 서로 다른 분류로 보존합니다.</p></div>
+      <div class="credential-rail" aria-label="Credential groups">
+        <article class="credential-card" data-document-card>
+          <div class="credential-card-top"><span>01 / CERTIFICATION</span><span data-copy data-ko="현행성 확인 필요" data-en="VALIDITY TO VERIFY">현행성 확인 필요</span></div>
+          <figure class="credential-document"><img src="assets/credentials/credential-01.png" width="640" height="452" alt="Copy of a GeoSR ISO 9001 certificate, status and publication rights to verify" data-alt-ko="GeoSR ISO 9001 인증서 사본 참조. 현행성과 공개 권리를 확인해야 합니다." data-alt-en="Copy of a GeoSR ISO 9001 certificate, status and publication rights to verify" loading="lazy"></figure>
+          <div class="credential-card-copy"><h3 data-copy data-ko="품질경영시스템 (ISO 9001)" data-en="품질경영시스템 (ISO 9001)">품질경영시스템 (ISO 9001)</h3><p data-copy data-ko="인증 · 원문 제목 유지" data-en="Certification · source title retained">인증 · 원문 제목 유지</p></div>
+        </article>
+        <article class="credential-card" data-document-card>
+          <div class="credential-card-top"><span>02 / REGISTRATION</span><span data-copy data-ko="현행성 확인 필요" data-en="VALIDITY TO VERIFY">현행성 확인 필요</span></div>
+          <figure class="credential-document"><img src="assets/credentials/credential-03.png" width="640" height="452" alt="Copy of a hydrographic survey business registration, status and publication rights to verify" data-alt-ko="수로측량 해양조사정보업 등록증 사본 참조. 현행성과 공개 권리를 확인해야 합니다." data-alt-en="Copy of a hydrographic survey business registration, status and publication rights to verify" loading="lazy"></figure>
+          <div class="credential-card-copy"><h3 data-copy data-ko="해양조사정보업 등록증 (수로측량)" data-en="해양조사정보업 등록증 (수로측량)">해양조사정보업 등록증 (수로측량)</h3><p data-copy data-ko="면허·등록 · 원문 제목 유지" data-en="Registration · source title retained">면허·등록 · 원문 제목 유지</p></div>
+        </article>
+        <article class="credential-card" data-document-card>
+          <div class="credential-card-top"><span>03 / INTELLECTUAL PROPERTY</span><span data-copy data-ko="권리 확인 필요" data-en="RIGHTS TO VERIFY">권리 확인 필요</span></div>
+          <figure class="credential-document"><img src="assets/credentials/credential-05.png" width="640" height="452" alt="Copy of a GeoSR marine forecasting patent, validity and publication rights to verify" data-alt-ko="해양예측 시스템 관련 특허 사본 참조. 정확한 명칭·권리와 공개 권리를 확인해야 합니다." data-alt-en="Copy of a GeoSR marine forecasting patent, validity and publication rights to verify" loading="lazy"></figure>
+          <div class="credential-card-copy"><h3 data-copy data-ko="해양예측 시스템 관련 특허" data-en="해양예측 시스템 관련 특허">해양예측 시스템 관련 특허</h3><p data-copy data-ko="지식재산권 · 세부 명칭은 원문 대조" data-en="Intellectual property · confirm exact title against source">지식재산권 · 세부 명칭은 원문 대조</p></div>
+        </article>
+      </div>
+      <div class="evidence-status"><span data-copy data-ko="자료 분류·원문 복사본 참조" data-en="Source record copies · classification reference">자료 분류·원문 복사본 참조</span><strong data-copy data-ko="공개 전 유효성 및 사용 권리 확인" data-en="Verify validity and usage rights before publication">공개 전 유효성 및 사용 권리 확인</strong></div>
+    </section>
+
+    <section id="stage-08" class="board-section company-stage reveal" aria-labelledby="company-title">
+      <div class="section-index"><span>08</span><span>COMPANY / CONTACT</span></div>
+      <div class="company-layout">
+        <div class="section-heading"><p class="eyebrow" data-copy data-ko="GeoSR · 2000년 설립" data-en="GEOSR · ESTABLISHED 2000">GeoSR · 2000년 설립</p><h2 id="company-title" data-copy data-ko="현장과 연구를<br>환경공학으로 연결합니다" data-en="Environmental engineering,<br>grounded in field and research.">현장과 연구를<br>환경공학으로 연결합니다</h2><p class="section-lead" data-copy data-ko="GeoSR은 해양·하구·하천을 포함한 환경 분야에서 조사와 분석, 모델링을 수행합니다." data-en="GeoSR works across environmental fields including marine, estuarine and river systems through investigation, analysis and modelling.">GeoSR은 해양·하구·하천을 포함한 환경 분야에서 조사와 분석, 모델링을 수행합니다.</p></div>
+        <div class="company-actions"><a class="text-link external-link" href="https://www.geosr.com/sub/company/aboutUs.asp" target="_blank" rel="noopener noreferrer"><span data-copy data-ko="공식 회사 소개" data-en="Official company profile">공식 회사 소개</span><span aria-hidden="true">↗</span></a><a class="text-link external-link" href="https://www.geosr.com/sub/company/contactUs.asp" target="_blank" rel="noopener noreferrer"><span data-copy data-ko="공식 문의 정보" data-en="Official contact information">공식 문의 정보</span><span aria-hidden="true">↗</span></a><p class="company-footnote" data-copy data-ko="주소·연락처는 공식 페이지에서 최신 정보를 확인합니다." data-en="Check the official pages for current office and contact details.">주소·연락처는 공식 페이지에서 최신 정보를 확인합니다.</p></div>
+      </div>
+      <footer class="board-footer"><span>GEOSYSTEM RESEARCH</span><span data-copy data-ko="디자인 방향 비교 보드 · 공개 페이지 아님" data-en="Design direction review board · not a public page">디자인 방향 비교 보드 · 공개 페이지 아님</span></footer>
+    </section>
+
+    <aside class="score-panel" aria-labelledby="score-title">
+      <div class="score-panel-heading"><div><p class="eyebrow">INTERNAL REVIEW</p><h2 id="score-title" data-copy data-ko="디자인 평가 메모" data-en="Design review notes">디자인 평가 메모</h2></div><span class="pending-score" data-copy data-ko="아직 채점 안 함" data-en="NOT SCORED">아직 채점 안 함</span></div>
+      <p class="score-direction-note" data-score-note>현장 자료와 편집형 타이포그래피를 중심으로, 근거를 차분하게 살펴보는 구성입니다.</p>
+      <dl class="score-criteria"><div><dt data-copy data-ko="브랜드 명확성 · 25%" data-en="Brand clarity · 25%">브랜드 명확성 · 25%</dt><dd data-copy data-ko="메인 검토 전" data-en="Pending">메인 검토 전</dd></div><div><dt data-copy data-ko="기술 사실성 · 25%" data-en="Technical validity · 25%">기술 사실성 · 25%</dt><dd data-copy data-ko="메인 검토 전" data-en="Pending">메인 검토 전</dd></div><div><dt data-copy data-ko="시각 완성도 · 20%" data-en="Visual quality · 20%">시각 완성도 · 20%</dt><dd data-copy data-ko="메인 검토 전" data-en="Pending">메인 검토 전</dd></div><div><dt data-copy data-ko="정보 탐색 · 15%" data-en="Information access · 15%">정보 탐색 · 15%</dt><dd data-copy data-ko="메인 검토 전" data-en="Pending">메인 검토 전</dd></div><div><dt data-copy data-ko="모션·성능·접근성 · 15%" data-en="Motion, performance and access · 15%">모션·성능·접근성 · 15%</dt><dd data-copy data-ko="메인 검토 전" data-en="Pending">메인 검토 전</dd></div></dl>
+      <p class="score-footnote" data-copy data-ko="점수는 세 보드 비교와 메인 검토 뒤에만 기록합니다." data-en="Scores are added only after all three boards are compared and reviewed by the main designer.">점수는 세 보드 비교와 메인 검토 뒤에만 기록합니다.</p>
+    </aside>
+  </main>
+</body>
+</html>

@@ -1,8 +1,8 @@
 # Keyframe generation log v2
 
-**Status:** Main review conditionally selected the two C02 satellite cutouts v2 and the two AX A01 v3 frames. C02 cutouts are generic concept assets for separate post-production compositing over the unchanged deterministic NASA Earth; they do not represent a specific satellite. AX A01 v3 is limited to an abstract A01 transition/poster and must not imply actual data or UI. All generated C03 geography is rejected; use only deterministic NASA frames. Rejected binaries were deleted; this log retains their filenames, versions, rejection reasons, and prompt summaries. Nothing is connected to the site or film manifest.
+**Status:** At the time of the v2 review, the C02 satellite cutouts and AX A01 v3 droplets/mist/points pair were conditionally selected; the AX A01 v3 pair has since been superseded by the main-reviewed v4 material pair. Keep the v3 originals in this folder as historical provenance only, not active selection or web assets. All generated C03 geography remains rejected; use only deterministic NASA frames.
 
-**Method:** OpenAI built-in ImageGen only. No image-generation CLI, API, upscaling, or post-generation repaint was used. The four current candidates are native ImageGen outputs, copied without pixel changes. Each is 1672 × 941 px (16:9 within rounding); this is the highest resolution returned for these requests, below the requested 4K target. Keep the left 38% quiet for headline placement. Rejected v1 and v2 binaries are deleted; their decision records remain below.
+**Method:** OpenAI built-in ImageGen only. No image-generation CLI, API, upscaling, or post-generation repaint was used. At the time of this v2 snapshot, four candidate outputs were native ImageGen outputs copied without pixel changes. Each is 1672 × 941 px (16:9 within rounding), below the requested 4K target. Rejected v1/v2 binaries are deleted; their decision records remain below.
 
 **Shared negative constraints:** No people, faces, hands, text, logos, labels, numbers, maps, charts, grids, UI, HUD, fabricated measurements, laser/observation beams, neon blue lines, sci-fi glow, excessive gloss, crowded particles, or artificial storms. For Earth scenes, do not invent or alter coastlines, islands, clouds, or surface features. Earth outputs remain concept images even when they appear plausible.
 
@@ -79,12 +79,12 @@ The binary files were deleted after review.
 
 **End prompt:** Edit the start frame with the same camera, studio, lighting, materials, and left title-safe space. Keep exactly the same droplets, mist ribbon, and small matte dots; add or remove nothing. Organize these same three materials on the right into three very shallow, separated, nearly parallel flows receding in depth: droplets in one, mist in one, soft-white dots in one. Keep their material identities visible and do not merge them. No stones, metal, glass, panels, dust, debris, map, UI, grid, text, people, beams, HUD, neon, or extra glow.
 
-**Review — CONDITIONALLY SELECTED:** Main review selected v3 for the A01 abstract transition/poster only. It contains no actual data or UI and must not be described as a platform output or measurement result. No rocks, glass panels, map, grid, numbers, people, text, beams, HUD, or neon were seen. Website wiring remains a separate decision.
+**Review at the time — CONDITIONALLY SELECTED:** Main review selected v3 for the A01 abstract transition/poster only. It contains no actual data or UI and must not be described as a platform output or measurement result. This pair was later superseded by the v4 data-planes pair; see ../keyframes-v3/AX-DATA-PLANES-IMAGEGEN-LOG.md. It is historical provenance, not active website selection.
 
 ## Shared acceptance limits and next handoff
 
-- `generated/` contains exactly four conditionally selected images: two C02 satellite cutouts v2 and two AX A01 v3 frames. Rejected binaries were deleted; only their file/version/reason/prompt summaries remain in this log.
+- At the time of this v2 snapshot, generated/ contained four conditionally selected images:
 - C02 cutouts are generic concept assets for separate post-production compositing over deterministic NASA Earth. They are not a claim about a specific satellite or verified hardware; preserve the Earth pixels.
 - C03 must use the accepted deterministic NASA 12/15/18-second frames. Do not generate or use an AI-rendered Earth surface for the Korean, Japanese, east-China, or northwest-Pacific geography.
-- AX A01 v3 is an abstract transition/poster only. It contains no actual data or UI and must not be presented as a measured output or product workflow.
+- AX A01 v3 was an abstract transition/poster only and is now superseded by the v4 pair; retain its originals as history, not active website or film selection.
 - For the later Higgsfield handoff, treat these as start/end timing and composition references only. Preserve the facts and source pixels from approved deterministic frames; any motion between them must not invent intermediate geography or environmental values.

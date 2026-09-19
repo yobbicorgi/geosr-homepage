@@ -6,7 +6,7 @@
 
 - 저장소: `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 브랜치: `redesign/production-2026-09-19`
-- 최신 커밋 기준: `58736d00554cf081038f9fbce072b6e025e26af5`
+- 최신 커밋 기준: `c4b246e3214f76a55d62fb041e078391e161c723`
 - Downloads junction: `C:\Users\user\Downloads\GeoSR_Homepage` → `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 공식 홈페이지: localhost의 [KO](http://127.0.0.1:18102/index.html?lang=ko) · [EN](http://127.0.0.1:18102/index.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/index.html?lang=ko) · [EN](http://192.168.6.85:18102/index.html?lang=en). AX 상세: localhost의 [KO](http://127.0.0.1:18102/ax-platform.html?lang=ko) · [EN](http://127.0.0.1:18102/ax-platform.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/ax-platform.html?lang=ko) · [EN](http://192.168.6.85:18102/ax-platform.html?lang=en). `dist/index.html`이 공식 홈 진입점이고 `redesign-preview.html`은 별도 디자인 미리보기다.
 - 최종 60초 회사 영상과 30초 AX 콘셉트 영상은 아직 생성·편집되지 않았다. `ax-*-fast.mp4`는 제품 UI 원본 클립이며 완성 필름을 뜻하지 않는다.
@@ -25,6 +25,8 @@
 ## 최신 연출 콘티 v3
 
 [FILM-STORYBOARD-DIRECTOR-v3.md](../redesign-production/FILM-STORYBOARD-DIRECTOR-v3.md)가 60초 회사 필름과 별도 30초 AX 필름의 유일한 story·timecode authority다. 아래 장면 구조와 검수 상태는 v3에 맞춘다. v2와 A/B 문서는 출처·검수 이력 및 선택적 과거 대안으로만 보존하며, A/B 중 사용자 선택은 기본 제작 경로의 blocker가 아니다. v3는 source가 확보되면 대응하는 shot만 교체하고 나머지 구성을 유지한다.
+
+**v3 기계 판독 준비표:** [FILM-GENERATION-READINESS-v3.json](../redesign-production/FILM-GENERATION-READINESS-v3.json) · [검증기](../../scripts/verify_film_readiness_v3.mjs).
 
 ## 현재 작업 우선순위
 
@@ -50,14 +52,14 @@
 | C02 | 05–09초 | 지구 관측 위성 진입. 위성은 생성 concept이며 특정 실제 임무나 기체가 아니다. | [위성 콘셉트 프레임](../../dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v4.png) |
 | C03 | 09–14초 | 결정적 NASA 기반 지리 frame으로 한반도·북서태평양에 접근. | [접근 frame 자료](../../dist/assets/concepts/corporate-film/hero-earth-10s-v1.png), [C04 source 기록](../redesign-production/keyframes/corporate-film-data-layers-crossfade-v1.md). 해안선은 생성·왜곡하지 않는다. |
 | C04 | 14–24초 | SST → salinity → chlorophyll 2D 관측 plate를 한 장씩 전환하고 연안으로 이동. | [SST](../../dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png) → [Aquarius salinity](../../dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png) → [MODIS chlorophyll-a](../../dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png). 겹쳐 쌓지 않는다. |
-| C05 | 24–30초 | 비식별 연안·항만 조사 배경에 실제 source-backed 근거 한 점을 짧고 작게 연결한다. | 기본 후보는 [공식 해누리호 원본](../../dist/assets/equipment-vessel.jpg): 공식 페이지 표기 19톤·측량조사선, 로컬 바이트 일치. 대안으로 공식 USV 원본 한 장을 선택할 수 있다. 같은 shot에 둘 다 보여주지 않는다. 사용권 pending. |
-| C06 | 30–34초 | 수면에서 수중으로 짧게 전환하며 검증된 장비 원본 한 점을 보조 근거로 보여준다. | [BlueROV2 원본](../../dist/assets/equipment-rov.png)은 공식 이미지와 SHA-256 일치. 작은 1초 안팎의 cutout/shot 후보이며 권리 pending. ROV·RBR 센서·계류선 배치를 한 설치처럼 합성하지 않는다. |
-| C07 | 34–40초 | 시료 분석 환경에서 예측 연결로 이동. | [실험실 concept reference](../../dist/assets/analysis-lab-v1.webp)는 실제 GeoSR 시설 근거가 아니다. concept plate QA 또는 권리 확인된 실제 source가 필요하다. |
+| C05 | 24–30초 | main-reviewed 비식별 concept background로 연안 공간 전환을 만든다. | 선택 배경: [c05-coast-end-v1.png](../../dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png). 실제 GeoSR 현장·한국 항만 증거가 아니다. 선택적 해누리호 또는 USV insert는 권리와 원본 픽셀/비율 확인 뒤 한 종류만 사용한다. |
+| C06 | 30–34초 | main-reviewed concept pair로 수면에서 수중으로 전환한다. | 선택 frame: [c06-waterline-start-v1.png](../../dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png) → [c06-underwater-end-v1.png](../../dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png). 실제 GeoSR 배치 증거가 아니다. 선택적 BlueROV2 insert는 권리와 원본 픽셀/비율 확인 뒤 사용하고, 센서·계류선과 한 설치로 주장하지 않는다. |
+| C07 | 34–40초 | main-approved 실험실 concept에서 분석 연결로 이동한다. | 선택 frame: [analysis-lab-v1.webp](../../dist/assets/analysis-lab-v1.webp). 실제 GeoSR 시설·장비·시료·결과 근거가 아니다. Concept disclosure와 slow-push/focus QA를 유지한다. |
 | C08 | 40–46초 | 짧은 타이포그래피로 분석을 예측·의사결정 지원에 연결. | 편집 단계의 navy slate와 검수된 문구. fake UI/data 없음. |
 | C09 | 46–55.5초 | Discover → Predict → Monitor 실제 화면을 각 약 3초씩 독립된 full-frame으로 순차 제시. | [Discover](../../dist/assets/films/ax-discover-fast.mp4) → [Predict](../../dist/assets/films/ax-predict-fast.mp4) → [Monitor](../../dist/assets/films/ax-monitor-fast.mp4). 원본 UI pixels 유지. |
 | C10 | 55.5–60초 | 첫 지구 frame으로 돌아와 exact loop. | [Earth loop frame](../../dist/assets/concepts/corporate-film/hero-earth-00s-v4.png). C01과 지리·crop·grade를 일치시킨다. |
 
-C05·C06 장비 이미지는 scene 중심이 아니다. 한 shot에서 하나만 짧게 사용하고, 가로세로 비율과 원본 픽셀을 보존한다. ImageGen은 주변 환경의 background plate만 생성한다. 장비를 새로 그리거나 복구·변형하지 않으며, source cutout이 깔끔하게 불가능하면 원본 전체 이미지를 보존한 짧은 insert로 바꾼다. 장비 자료와 권리 한계는 [equipment manifest](../redesign-production/equipment-source-manifest.md)와 [source pack](../redesign-production/equipment-sources/README.md)에 따른다. C05의 해누리호 외 별도 모델, USV 이미지별 모델·탑재체 및 C06의 현장·운용 배치 주장은 미확인이다.
+C05·C06의 main-reviewed background concept plates는 선택 상태이며 실제 현장 evidence가 아니다. 선택적 장비 이미지는 scene 중심이 아니며 한 shot에서 최대 하나만 짧게 사용하고, 권리와 가로세로 비율·원본 픽셀 보존을 확인한다. ImageGen은 장비를 새로 그리거나 복구·변형하지 않는다. source cutout이 깔끔하지 않으면 원본 전체 이미지를 유지한 짧은 insert로 바꾸거나 생략한다. 장비 자료와 권리 한계는 [equipment manifest](../redesign-production/equipment-source-manifest.md)와 [source pack](../redesign-production/equipment-sources/README.md)에 따른다. C05의 해누리호 외 별도 모델, USV 이미지별 모델·탑재체 및 C06의 현장·운용 배치 주장은 미확인이다.
 
 ## C04 NASA 자료의 정확성과 한계
 
@@ -85,7 +87,7 @@ C05·C06 장비 이미지는 scene 중심이 아니다. 한 shot에서 하나만
 
 ## v3의 C09·C10 및 실제 제품 화면
 
-- C07의 `analysis-lab-v1.webp`는 사람·손·라벨·분석값이 없는 lab concept reference다. 실제 GeoSR 연구실이라는 주장을 하지 않으며 concept plate QA 또는 rights-cleared original source가 필요하다.
+- C07의 `analysis-lab-v1.webp`는 main-approved generated lab concept다. 실제 GeoSR 연구실 주장을 하지 않고 concept disclosure를 유지하며 slow-push/focus motion을 검수한다.
 - C09에서는 `ax-discover-fast.mp4`, `ax-predict-fast.mp4`, `ax-monitor-fast.mp4`를 각 약 3초씩 독립적인 16:9 full-frame 컷으로 차례대로 보여준다. 동시 화면·picture-in-picture·가짜 workflow는 금지한다. C10은 55.5–60초 Earth frame으로 돌아가 C01과 정확히 loop한다.
 - 자세한 구간·전환·검수 기준은 [C09–C10 제작 기록](../redesign-production/imagegen-prompts/corporate-film-c09-c10-v1.md)과 [keyframe production package](../redesign-production/KEYFRAME-PRODUCTION-PACKAGE.md)을 따른다.
 
@@ -110,7 +112,7 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터
 - [메인 디자인 미리보기 HTML](../../dist/redesign-preview.html)은 별도 가안으로 보존한다. 공식 홈페이지의 현재 미디어와 라우팅 기준은 `index.html` 및 해당 renderer다. 내용을 복제해 별도 아키텍처를 만들거나 공식 연결을 미리보기 쪽으로 되돌리지 않는다.
 - 메인 페이지의 AX 콘셉트 필름은 실제 제품 증거 영역보다 먼저 오는 16:9 full-width pending slot이다. KO `영상 제작 준비 중` 라벨과 Discover/Predict/Monitor 실제 캡처 탭이 있다.
 - [AX 상세 페이지 shell](../../dist/ax-platform.html)은 콘텐츠를 [ax-v2.js](../../dist/ax-v2.js)가 렌더한다. 상단에는 100svh AX concept-film slot과 `AX CONCEPT FILM · 영상 제작 준비 중` 상태가 있고, 실제 제품 시퀀스와 아래 3열 원리 카드가 이어진다.
-- AX A01 v3 이미지는 현재 웹의 임시 poster로만 연결돼 있다. 이는 final film frame이나 최종 영상 승인 상태가 아니며, 실제 data/UI 결과를 나타내지 않는다.
+- AX A01 hero의 현재 임시 poster는 dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png다. [v4 pair 생성·검수 로그](../redesign-production/keyframes-v3/AX-DATA-PLANES-IMAGEGEN-LOG.md)를 참고한다. film manifest는 src=null, approval=pending, duration=30을 유지하므로 poster 연결은 final film 승인과 다르며 실제 data/UI 결과를 나타내지 않는다.
 - 이 상태 문구는 최종 승인 영상이 연결되고 로딩 확인되기 전까지 유지한다. 이미 존재하는 포스터나 AX fast clips를 완성 콘셉트 영상으로 표시하지 않는다.
 - 현재 미리보기 200 응답은 서버 연결만 확인한 것이다. 최종 업데이트 후 아래 QA를 다시 수행한다.
 - [웹 구현·자산 완료도 감사](../redesign-production/WEB-COMPLETION-AUDIT-v1.md)는 현재 구현 상태와 남은 검증 항목의 인계 자료다.
@@ -118,9 +120,9 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
 
-**기존 키프레임 상태 참고:** [ImageGen 키프레임 v2 기록](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)을 따른다. C02 위성 cutout 2장과 AX A01 v3 2장은 조건부 selected다. C03의 생성 지형은 거절됐으므로 결정론적 NASA frame만 사용한다. AX A01 v3는 임시 웹 poster이며 final film 승인이나 실제 data/UI 표현이 아니다. 이 자료의 존재가 현재 작업 우선순위를 앞당기지는 않는다.
+**키프레임 상태:** [AX v4 pair 생성·검수 로그](../redesign-production/keyframes-v3/AX-DATA-PLANES-IMAGEGEN-LOG.md)가 현재 A01 start/end 및 웹 poster 기준이다. 기존 droplets/mist/points A01 v3 pair는 superseded 처리하고 active selection에서 제외했으며, 원본은 keyframes-v2 기록에서 역사 provenance로만 보존한다. C02 위성 cutout과 C03 결정론적 NASA frame 상태는 v2 generation log를 따른다.
 
-**영상 생성 준비도:** [FILM-GENERATION-READINESS-v1.md](../redesign-production/FILM-GENERATION-READINESS-v1.md) · [기계 판독 JSON](../redesign-production/FILM-GENERATION-READINESS-v1.json). 현재 스토리와 타임코드는 v3를 따른다. 실제 미완료 항목은 C05–C07의 source 권리 확인 또는 concept plate QA, 회사·AX 최종 영상의 generation/editing, 그리고 production deployment다. 기존 장비 원본은 작은 process-evidence 후보이며 허가 전 사용이 승인된 것은 아니다.
+**영상 생성 준비도:** [현재 기계 판독 v3](../redesign-production/FILM-GENERATION-READINESS-v3.json)는 `generationReady=true`, `remainingPreGenerationGates=[]`다. 선택 프레임·source 경로와 15개 shot의 시간 연속성 검증이 완료되어 회사 60초와 AX 30초 영상 생성을 시작할 수 있다. 이는 최종 영상 생성·편집이나 공개 승인을 뜻하지 않는다. `releaseReady=false`, `productionReady=false`이며 post-generation gates에는 최종 motion/edit, 공개 source 권리·개인정보, film-manifest wiring 및 배포가 남아 있다. C05/C06 concept 배경과 C07 lab still은 main-reviewed selected 상태다. 선택 장비 권리는 실제 insert에 쓸 때만 확인하며 불확실하면 배경 경로를 유지한다. [v1 문서](../redesign-production/FILM-GENERATION-READINESS-v1.md)와 [v1 JSON](../redesign-production/FILM-GENERATION-READINESS-v1.json)은 과거 기록이다.
 
 **Legacy fallback reference:** [Corporate film fallback A/B](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.md) · [기계 판독 JSON](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.json)은 선택 가능한 과거 대안 기록이다. v3가 기본 제작 경로이며 A/B user choice는 진행 blocker가 아니다.
 
@@ -144,7 +146,7 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터
 
 ## 거절된 표현 — 다시 사용하지 않음
 
-- C05–C08의 생성 스틸은 composition study only — rejected for final equipment fidelity 상태이며 저장소에서 삭제했다. SHA-256 provenance는 각 prompt 기록에 남겼고, 최종 제작에 사용하지 않는다.
+- 과거 C05–C08 장비 composition-study stills는 equipment fidelity 불합격으로 삭제했다. 이 과거 후보 기록은 현재 main-reviewed C05/C06 background concept plates와 별개다. SHA-256 provenance는 각 prompt 기록에 남겼고, 삭제된 장비 study를 final equipment asset으로 사용하지 않는다.
 
 - C04의 SST·염분·chlorophyll 동시 적층 프레임. 한 장씩 교차 전환한다.
 - C05 composition study는 USV 색상·선체 형태가 공식 자료와 모순이라서가 아니라, 공식 source pixels와 확인된 모델·탑재체를 보존하지 않았고 해누리호도 재그림했기 때문에 final fidelity에서 거절됐다.

@@ -12,11 +12,13 @@
 
 **공통 금지:** 사람·얼굴·손·다이버·인물 반사, 생성 글자/로고, 가짜 지도·지명·지형, 가짜 데이터·결과·수치·그래프·UI, 과장된 네온·HUD·그리드, 실제처럼 보이는 미확인 설치·운용 관계. 실제 데이터나 UI에는 ImageGen/영상 모델을 적용하지 않고 원본 픽셀과 결측·비율을 보존한다.
 
-**단일 production path:** 아래 콘티를 A/B 선택 없이 진행한다. 실제 현장 footage가 없는 C05–C07은 비식별 환경 concept plate를 기본 배경으로 사용하고, GeoSR 실제 작업·특정 지역으로 주장하지 않는다. C05에는 권리 확인 뒤 해누리호 원본 또는 공식 USV 원본 중 하나, C06에는 권리 확인 뒤 BlueROV2 원본을 짧고 작은 보조 근거로 더할 수 있다. 권리가 확인되지 않으면 장비를 생략하고 concept plate QA로 진행한다.
+**단일 production path:** 아래 콘티를 A/B 선택 없이 진행한다. C05·C06은 main-reviewed 비식별 concept background plate를 선택했으며 실제 GeoSR 현장 footage나 특정 지역 증거가 아니다. C07은 승인된 lab concept still을 사용하며 실제 GeoSR 시설·장비·시료·결과 증거가 아니다. C05의 해누리호 또는 USV, C06의 BlueROV2는 별도 권리·원본 픽셀/비율 검토를 통과할 때만 작은 보조 insert로 쓸 수 있고, 아니면 생략한다.
 
 자연 풍경을 길게 나열하지 않는다. C05–C06은 연안 관측에서 수상·수중으로 이어지는 하나의 짧은 연결부이고, 바로 실험·분석으로 넘어간다. 각 환경 frame은 관측·공간 전환을 설명하는 역할을 해야 한다.
 
 **Readiness authority:** [FILM-GENERATION-READINESS-v1](FILM-GENERATION-READINESS-v1.md)와 [JSON](FILM-GENERATION-READINESS-v1.json)은 출처·권리·파일 상태의 이력이다. v3가 production timecode와 story authority다. 이전 [Corporate Film Fallback A/B](CORPORATE-FILM-FALLBACK-A-B-v1.md)와 [JSON](CORPORATE-FILM-FALLBACK-A-B-v1.json)의 `userChoiceRequired`는 그 대안안을 선택할 때의 조건이며 v3를 막지 않는다.
+
+**생성 준비 checkpoint:** [v3 readiness JSON](FILM-GENERATION-READINESS-v3.json)은 `generationReady=true`와 빈 `remainingPreGenerationGates`로 생성 시작 준비 완료를 표시한다. `releaseReady=false`와 `productionReady=false`는 최종 영상 생성·편집·공개 검수·배포가 아직 남았음을 뜻한다. 선택된 비식별 배경 경로가 있으므로 장비 insert 권리는 실제로 삽입할 때만 확인하면 되며 기본 생성 경로의 blocker가 아니다.
 
 ## 회사 메인 필름 — 00:00–01:00
 
@@ -65,30 +67,30 @@
 ### C05 · 00:24–00:30 — 연안·항만 조사 맥락과 짧은 현장 근거
 
 - **Visual purpose:** 해안 지리에서 실제 조사 맥락으로 전환한다. 자연 풍경만 이어지지 않도록 확인된 선박 또는 USV 원본 한 점을 짧고 작게 과정 증거로 넣는다. 제품 영웅 컷이나 장비 나열은 하지 않는다.
-- **Start / end frame:** `hero-earth-24s-v1.png` 연안 frame에서 비식별 temperate coast concept plate로 이동한다. 권리 확인 뒤 사용할 source-backed 후보는 `dist/assets/equipment-vessel.jpg` 한 장만 사용한다. 이 파일은 공식 해누리호 이미지와 SHA-256 바이트가 일치하며 공식 표기는 측량조사선, 19톤이다. 대안이 필요하면 공식 USV 원본 세트 중 한 장만 선택한다. 같은 shot에서 선박과 USV를 함께 보여주지 않으며, 권리가 pending이면 둘 다 쓰지 않는다.
-- **Camera / motion:** 넓고 안정된 해안 frame을 주로 유지한다. 선택한 원본 장비는 1초 안팎의 작은 과정 삽입 또는 원본 비율을 보존한 작은 합성 요소로 한 번만 보여준 뒤 해안 frame으로 돌아간다. 잘라내기나 마스킹으로 원본 픽셀을 변형해야 한다면 합성하지 말고 원본 전체 이미지를 비율 그대로 짧게 제시한다.
+- **Start / end frame:** `hero-earth-24s-v1.png`에서 main-reviewed 비식별 해안 concept plate [`c05-coast-end-v1.png`](../../dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png)로 이동한다. 이 배경은 실제 GeoSR 현장, 실제 한국 항만 또는 조사 증거가 아니다. 권리와 원본 픽셀/비율 보존을 별도로 확인한 경우에만 해누리호 또는 USV 중 하나를 작은 insert로 사용할 수 있다. 같은 shot에 둘 다 두지 않고, 확인 전에는 장비를 생략한다.
+- **Camera / motion:** 선택된 배경 plate에서 최종 편집의 느린 해안 방향 push를 검토한다. 선택적인 장비 insert는 별도 권리·픽셀 보존을 통과해야 하며, 통과하지 않으면 concept 배경만 사용한다.
 - **Web handoff:** 공식 홈 Observation panel은 교체 가능한 poster/source slot로 둔다. 실제 현장으로 오인되지 않는 concept 배경과 출처가 확인된 장비 원본을 구분해 관리한다.
 - **Source truth gate:** [장비 근거 manifest](equipment-source-manifest.md)에서 해누리호 표기·이미지 일치와 USV 페이지 원본을 확인한다. 해누리호의 제조사·별도 모델, USV 각 이미지의 모델·탑재체는 미확인이다. 위치, 촬영 시점, 실제 운용 및 구체적 선박/USV 조합을 주장하지 않는다. 두 선택지 모두 재사용·파생 사용권은 확인 전까지 pending이며 허가 후에만 사용한다.
-- **ImageGen prompt core:** “wide, quiet, non-identifiable temperate coast and harbor-edge background plate, neutral overcast daylight, documentary restraint, no vessel, no USV, no equipment, no people, no signage or readable text; leave clean negative space for one separately supplied original-source insert.”
+- **ImageGen prompt core:** 이미 선택된 `dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png`를 배경으로 사용하고 재생성하지 않는다. Prompt 및 시각 검수 기록은 [C05–C06 ImageGen log](keyframes-v3/C05-C06-IMAGEGEN-LOG.md)를 따른다.
 - **Negative constraints:** 장비의 AI 재생성·재그림·형상 보정·비율 변형, 두 장비를 한 장면에 함께 두기, 특정 한국 항만이나 설치 현장 주장, 지명·배 이름·번호·모델 추정, 인물·손, 지도·격자·가짜 survey result 금지.
 
 ### C06 · 00:30–00:34 — 수상에서 수중으로 이어지는 관측
 
 - **Visual purpose:** 수면에서 수중으로 공간을 짧게 연결한다. 권리가 확인된 경우에만 `dist/assets/equipment-rov.png`의 검증된 장비 원본을 한 번만 작은 source-backed 과정 증거로 보여준다. 제품 hero나 장비 카탈로그처럼 확대하지 않는다.
-- **Start / end frame:** 수면 위 물결의 넓은 frame에서 시작해 수면선을 지나는 match-cut으로 온대 해역의 녹청색 water column에 끝난다. 중간에 BlueROV2 공식 이미지와 SHA-256이 일치하는 로컬 원본을 1초 안팎의 작은 insert 또는 원본 픽셀을 유지한 cutout으로 한 번만 사용한다. RBR 센서나 계류선을 같은 배치로 추가하지 않는다.
-- **Camera / motion:** 수면선을 천천히 가로지르는 단일 축 이동. ROV 원본은 비율을 보존하고 재그림·warp·조명 재생성 없이 짧게 노출한다. 깨끗한 cutout이 불가능하면 원본 전체 이미지를 작은 16:9 삽입 화면으로 쓰고, 원본 장비 픽셀을 보존할 수 없으면 사용하지 않는다.
+- **Start / end frame:** [`c06-waterline-start-v1.png`](../../dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png)에서 [`c06-underwater-end-v1.png`](../../dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png)까지 수면선을 지나는 match-cut을 구성한다. 두 파일은 main-reviewed generic concept pair이며 실제 GeoSR 수중 운용을 나타내지 않는다. 권리와 픽셀 보존 검토를 통과한 경우에만 BlueROV2 원본을 작은 insert로 사용할 수 있다. RBR 센서나 계류선을 같은 배치로 추가하지 않는다.
+- **Camera / motion:** 선택된 두 concept frame 사이를 느린 단일 축으로 이동한다. 선택적인 ROV source insert는 비율·픽셀을 그대로 보존하고, 불가능하면 생략한다.
 - **Web handoff:** 실제 ROV/센서 제품 이미지나 AX UI로 자동 연결하지 않는다. 실제 플랫폼 탐색은 별도 manual UI 탭을 유지한다.
 - **Source truth gate:** [장비 근거 manifest](equipment-source-manifest.md)에서 BlueROV2 표기와 로컬 원본 일치를 확인한다. 정확한 실제 운용·장착물·배치·현장 및 재사용 권리는 미확인이다. 권리 확인 전 실제 필름 사용은 보류하며, 이 insert를 특정 GeoSR 운용 기록으로 주장하지 않는다.
-- **ImageGen prompt core:** “a calm, non-identifiable temperate coastal water surface transitions to a realistic muted green-blue water column, natural suspended particles, subdued daylight and neutral illumination, no identifiable location, no vehicle or instrument; reserve clean negative space for one separately supplied, unmodified original-source ROV insert.”
+- **ImageGen prompt core:** 선택된 `c06-waterline-start-v1.png` / `c06-underwater-end-v1.png`만 사용한다. 재생성하거나 장비를 추가하지 않는다. Prompt 및 시각 검수 기록은 [C05–C06 ImageGen log](keyframes-v3/C05-C06-IMAGEGEN-LOG.md)를 따른다.
 - **Negative constraints:** 생성형 ROV/센서, ROV와 센서를 하나의 장비처럼 융합, 가짜 계류 배치, 사람·다이버·손·열대어·산호·난파선·심해 생물, laser/grid/HUD, saturated neon, generated readings 금지.
 ### C07 · 00:34–00:40 — 실험과 분석
 
 - **Visual purpose:** 현장 관측과 해석 사이에 시료 분석 환경을 짧게 둔다.
-- **Start / end frame:** wide, people-free lab composition에서 조용한 instrument-area detail로 이동한다. `dist/assets/analysis-lab-v1.webp`는 현재 lighting/composition reference이며 실제 GeoSR 공간·모델을 주장하지 않는다.
-- **Camera / motion:** 느린 lateral push-in과 얕은 focus transition. 스크린은 꺼져 있거나 frame 밖에 둔다. 샘플 출처로 보이는 표식은 노출하지 않는다.
+- **Start / end frame:** `dist/assets/analysis-lab-v1.webp`를 start/end에 같은 기준 frame으로 사용한다. main-approved generated concept이며 실제 GeoSR 공간·모델을 주장하지 않는다. [승인 prompt/provenance](imagegen-prompts/homepage-lab-equipment-v1.md)를 따른다.
+- **Camera / motion:** 같은 still에서 느린 lateral push-in과 얕은 focus 전환만 만든다. 새 디테일·라벨·결과를 생성하지 않고, 화면과 시료 표식은 노출하지 않는다.
 - **Web handoff:** 공식 홈 Interpretation panel의 alt와 concept status를 유지한다. 실험실 영상을 실제 자료로 교체하려면 이 scene asset만 교체한다.
-- **Source truth gate:** 실험실 source가 없으면 외부 편집물에서 concept reconstruction임을 표시한다. 실제 공간/장비 명칭과 샘플·결과를 주장하려면 source와 권리가 필요하다.
-- **ImageGen prompt core:** “unidentified modern environmental laboratory, quiet wide-to-medium composition, instruments secondary and partly out of focus, neutral cool-white practical lighting, no people, no labels or readable display. Treat `dist/assets/analysis-lab-v1.webp` as a concept/composition reference only; do not claim a real GeoSR facility.”
+- **Source truth gate:** 이미지와 편집물에 generated-concept disclosure를 유지한다. 실제 공간/장비 명칭과 샘플·결과를 주장하려면 별도 source와 권리가 필요하다.
+- **ImageGen prompt core:** 새 생성이나 재생성은 하지 않는다. `dist/assets/analysis-lab-v1.webp`만 main-approved concept still로 사용한다. Prompt와 provenance는 [승인 기록](imagegen-prompts/homepage-lab-equipment-v1.md)에 있다.
 - **Negative constraints:** ICP-MS 등 특정 모델 복제, sample labels, values, charts, plots, readable text, people/hands, false result/ownership claim 금지.
 
 ### C08 · 00:40–00:46 — 분석을 예측과 의사결정으로 연결
@@ -127,43 +129,43 @@ AX는 입력 자료가 탐지·예측·모니터링으로 해석되는 개념 �
 
 ### A01 · 00:00–00:07 — 여러 입력의 시작
 
-- **Visual purpose:** 위성·현장·환경자료가 서비스로 들어오는 입력의 다양성을 추상적으로 보여준다.
-- **Start / end frame:** 웹 poster로 쓰이는 `dist/assets/concepts/ax-platform/ax-a01-flow-start-v3.png`에서 `docs/redesign-production/keyframes-v2/generated/ax-a01-flow-end-v3.png`로 이동하는 abstract plate. A01 v3 pair는 조건부 selected concept이며 실제 데이터나 UI가 아니다.
-- **Camera / motion:** 16:9 딥 네이비 공간에서 분리된 무채색 재료 면이 한 방향으로 느리게 이동한다. 00:07에는 다음 장면의 정돈된 frame 경계에서 멈춘다.
-- **Web handoff:** `ax-concept-film` 100svh hero는 이 첫 poster를 유지하고, 실제 영상 연결 전까지 KO/EN pending label을 둔다.
-- **Source truth gate:** 입력 종류의 표현은 개념 은유다. 특정 화면, dataset, coordinate, 실제 workflow에 연결됐다고 주장하지 않는다.
-- **ImageGen prompt core:** “minimal deep-navy cinematic space, three restrained matte translucent material forms enter separately and begin to align, subtle depth, no interface or map, wide 16:9 negative space.”
-- **Negative constraints:** 사람·문자·숫자·지도·coastline·grid·chart·button·menu·marker·HUD·neon 금지.
+- **Visual purpose:** 위성·현장·환경 입력의 다양성을 실제 자료로 그리지 않고 추상 재질면의 정렬로 소개한다.
+- **Start / end frame:** dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png에서 dist/assets/concepts/ax-platform-v4/ax-data-planes-aligned-v1.png로 이동한다. 조건부 승인된 v4 pair는 실제 데이터나 UI가 아니다.
+- **Camera / motion:** 16:9 딥 네이비 공간의 세 얇은 물질면이 분리된 상태에서 시작해 중심 우측에서 차분하게 정렬된다. 좌측 여백을 유지하고 00:07에 compact stack으로 멈춘다.
+- **Web handoff:** AX hero의 임시 poster는 v4 start 이미지다. 최종 필름 연결 전까지 100svh slot과 KO/EN pending label을 유지한다.
+- **Source truth gate:** 세 면은 입력 종류를 위한 비의미적 시각 은유다. 실제 dataset, 지도, 좌표, 분석 결과나 workflow를 나타내지 않는다. 이전 droplets/mist/points A01 v3 pair는 superseded이며 active selection에서 제외하고 keyframe log의 이력으로만 보존한다.
+- **ImageGen prompt core:** 이미 생성된 v4 start/end plate를 기준 frame으로 사용한다. 분리된 세 물질면이 절제된 움직임으로 정렬되게 하고 새 형상·문자·화면을 만들지 않는다.
+- **Negative constraints:** 사람·문자·숫자·지도·coastline·terrain·grid·chart·button·menu·marker·HUD·neon·추가 오브젝트 금지.
 
 ### A02 · 00:07–00:14 — Detect
 
-- **Visual purpose:** 입력이 탐지 관점으로 정리된다는 개념 전환 뒤 실제 Detect evidence를 보여준다.
-- **Start / end frame:** 00:07–00:11 abstract stage에서 시작해 빈 frame의 한 면에 빛이 정착한다. 00:11–00:14에는 actual `ax-discover-fast.mp4` 화면이 full 16:9로 재생된다.
-- **Camera / motion:** conceptual 4초는 느린 forward alignment만 사용한다. 실제 clip 3초에는 pan/zoom/scale/overlay를 얹지 않는다.
-- **Web handoff:** actual clip은 홈/상세 AX의 Detect/Discover manual panel 근거로 연결한다. manual tab semantics와 keyboard focus를 유지한다.
-- **Source truth gate:** 캡처는 Satellite Facility Detection 실제 화면이다. 후반 label은 `Detect · Satellite Facility Detection`으로 분리해 넣고, 캡처 내 날짜·지역·탐지 내용을 바꾸지 않는다.
-- **ImageGen prompt core:** “a neutral empty 16:9 editorial frame resolves from the supplied abstract plate; one soft plane settles into focus, no target icon or detection mark.”
-- **Negative constraints:** generated satellite image, map, pin, bounding box, detection badge, fake UI/text/value, UI movement, crop 금지.
+- **Visual purpose:** 같은 추상 material bridge를 짧게 재사용한 뒤 실제 Discover evidence로 hard cut한다.
+- **Start / end frame:** 00:07–00:11은 A01과 같은 dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png 및 ax-data-planes-aligned-v1.png pair를 shared base로 사용한다. 00:11에 실제 dist/assets/films/ax-discover-fast.mp4로 hard cut해 00:14까지 full 16:9로 재생한다.
+- **Camera / motion:** conceptual 4초는 세 면의 아주 얕은 depth shift만 허용한다. 00:11 cut 이후 실제 clip에는 pan·zoom·scale·overlay를 얹지 않는다.
+- **Web handoff:** actual clip은 홈/상세 AX의 수동 Discover panel 근거로 연결한다. keyboard focus와 manual tab semantics를 유지한다.
+- **Source truth gate:** 00:11–00:14 캡처는 Satellite Facility Detection 실제 UI다. 날짜·지역·내용·픽셀을 보존하고 concept frame과 실제 화면을 crossfade하지 않는다.
+- **ImageGen prompt core:** 동일한 v4 material pair만 concept bridge의 shared base로 사용한다. 빈 공간과 얕은 면 정렬만 움직이고 00:11에 source UI를 변경 없이 hard cut한다.
+- **Negative constraints:** generated satellite image, map, pin, bounding box, detection badge, fake UI/text/value, UI movement, crop, crossfade 금지.
 
 ### A03 · 00:14–00:21 — Predict
 
-- **Visual purpose:** 탐지 다음 예측 기능을 concept-to-evidence 순서로 분리해 보여준다.
-- **Start / end frame:** 00:14–00:18은 deep-navy abstract stage의 층 깊이가 부드럽게 바뀌는 conceptual frame. 00:18–00:21은 actual `ax-predict-fast.mp4` full-screen recording.
-- **Camera / motion:** conceptual stage에 얕은 parallax만 허용한다. 실측 지형처럼 보이는 변형은 금지한다. source UI는 정지된 frame에서 native playback한다.
-- **Web handoff:** 실제 Predict tab 화면으로만 아래 product sequence와 연결한다. 장면 cut이 같은 지역/사건에서 연속된 것처럼 보이지 않게 한다.
-- **Source truth gate:** source clip은 Flood 3D/예측 화면이다. 표시된 연구 시나리오·날짜·values는 촬영 당시 상태 그대로 유지하고 새 피해·수위·정확도를 주장하지 않는다.
-- **ImageGen prompt core:** “two abstract, smooth depth planes shift in light and shadow, hinting at comparing possible conditions without depicting terrain, maps, water levels, or numbers.”
-- **Negative constraints:** real Korean coastline, fabricated 3D terrain, flood extent, numerical results, graph, legend, chart, UI, glowing grid, neon, text 금지.
+- **Visual purpose:** 실제 Discover capture 뒤 같은 추상 material bridge를 재사용하고 실제 Predict evidence로 hard cut한다.
+- **Start / end frame:** 00:14–00:18은 A01/A02와 같은 v4 start/aligned pair를 shared base로 쓴다. 00:18에 실제 dist/assets/films/ax-predict-fast.mp4로 hard cut해 00:21까지 full 16:9 recording을 보여준다.
+- **Camera / motion:** concept 4초에는 같은 세 면의 깊이와 정렬만 매우 얕게 이동한다. 실측 지형처럼 보이는 변형은 금지하며, source UI는 crop·pan·zoom 없이 native playback한다.
+- **Web handoff:** 실제 Predict tab 화면으로만 아래 product sequence와 연결한다. 장면 cut이 같은 지역이나 사건의 연속처럼 보이지 않게 한다.
+- **Source truth gate:** 00:18–00:21 source clip은 Flood 3D/Predict 실제 UI다. 촬영 당시 연구 시나리오·날짜·값·픽셀을 유지하고 새로운 피해·수위·정확도를 주장하지 않는다.
+- **ImageGen prompt core:** 같은 v4 material pair를 shared bridge base로 유지한다. 추상 plate에만 약한 depth shift를 주고 00:18에 실제 Predict recording으로 hard cut한다.
+- **Negative constraints:** real Korean coastline, fabricated 3D terrain, flood extent, numerical results, graph, legend, chart, UI, glowing grid, neon, text, crossfade 금지.
 
 ### A04 · 00:21–00:28 — Monitor
 
-- **Visual purpose:** 관측망과 환경 변화가 시간의 흐름 속에서 이어지는 개념을 제시하고 실제 Monitor 화면으로 증명한다.
-- **Start / end frame:** 00:21–00:25에는 어두운 층 사이를 부드럽게 지나가는 차분한 light passage. 00:25–00:28은 actual `ax-monitor-fast.mp4` 16:9 recording. 필요할 경우 `buoy-poster.webp` 또는 `env-poster.webp`를 frame 확인 reference로만 쓴다.
-- **Camera / motion:** concept 구간은 한 번의 매우 느린 horizontal drift. 실제 recording은 편집·확대 없이 고정한다.
-- **Web handoff:** actual Monitor capture는 아래 실제 product panel의 source 증거다. website는 autoplay가 아니라 수동 선택으로 동작한다.
-- **Source truth gate:** clip에 나타난 날짜, station, variable, observation state는 capture 당시 값이다. 현재값·실시간 연결로 표시하지 않는다.
-- **ImageGen prompt core:** “quiet navy material with a soft light passage moving once across two translucent layers, abstract continuity only, no plotted timeline or data.”
-- **Negative constraints:** time-series graph, value, buoy icon, map, named station, fake live status, text, dashboard, grid, neon, human 금지.
+- **Visual purpose:** A01부터 이어 온 동일한 추상 material pair를 짧게 재사용한 뒤 실제 Monitor evidence로 hard cut한다.
+- **Start / end frame:** 00:21–00:25은 v4 start/aligned pair를 같은 shared base로 사용한다. 00:25에 실제 dist/assets/films/ax-monitor-fast.mp4로 hard cut해 00:28까지 full 16:9 recording을 보여준다. 필요하면 buoy-poster.webp 또는 env-poster.webp는 별도의 frame 확인 reference로만 쓴다.
+- **Camera / motion:** concept 구간은 같은 세 면에 한 번의 아주 느린 horizontal drift만 적용한다. 00:25 hard cut 이후 recording은 편집·확대 없이 고정한다.
+- **Web handoff:** actual Monitor capture는 아래 실제 product panel의 source evidence다. website는 autoplay가 아니라 수동 선택으로 동작한다.
+- **Source truth gate:** clip의 날짜·station·variable·observation state는 capture 당시 값이다. 현재값이나 실시간 연결로 표시하지 않으며, concept frame과 UI는 crossfade하지 않는다.
+- **ImageGen prompt core:** shared v4 material pair에서 restrained light/depth passage만 만든 뒤 00:25에 actual Monitor clip으로 hard cut한다. plotted timeline이나 새 data는 생성하지 않는다.
+- **Negative constraints:** time-series graph, value, buoy icon, map, named station, fake live status, text, dashboard, grid, neon, human, crossfade 금지.
 
 ### A05 · 00:28–00:30 — 실제 AX로 인계
 
@@ -181,9 +183,9 @@ AX는 입력 자료가 탐지·예측·모니터링으로 해석되는 개념 �
 - [ ] 모든 shot에 start/end frame source, 실제·concept 구분, negative prompt, 카메라 속도, in/out match point를 지정한다. 새 source가 들어오면 해당 shot만 교체한다.
 - [ ] C01/C03/C04 지도·데이터 픽셀, C09 및 AX 실제 UI pixels, 날짜·단위·coverage·원본 비율을 frame-by-frame 대조한다.
 - [ ] 실제 footage의 source, 권리, 공개 사용 조건, 촬영지/시각, 개인정보·계정·내부 IP·third-party content를 확인한다. 불명확하면 관련 장면의 factual claim을 낮추고 다른 scene의 구조는 유지한다.
-- [ ] C05에서는 해누리호 원본 또는 공식 USV 원본 중 하나만 선택해 짧고 작게 사용하고, 원본 픽셀·비율을 보존하며 권리 확인을 마친다. ImageGen은 배경 plate만 만들며 선박/USV를 생성하거나 재그리지 않는다.
+- [ ] C05 배경은 main-reviewed `dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png`를 사용한다. 선택적 해누리호/USV insert는 권리와 원본 픽셀·비율 검토를 통과할 때만 한 종류를 사용하며, 미확인 시 생략한다.
 - [ ] 16:9 contact sheet와 장면별 start/end pair, camera/motion test를 먼저 main review에 공유한다. 사용자가 수정할 수 있는 checkpoint를 두고 승인 전 유료 생성하지 않는다.
-- [ ] C06에서는 `dist/assets/equipment-rov.png`를 권리 확인 후 한 번만 짧고 작게 source-backed insert/cutout 후보로 사용한다. 원본 장비 픽셀을 보정·재그림·변형하지 않으며 ROV-센서 배치 주장을 만들지 않는다.
+- [ ] C06 배경은 main-reviewed `dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png` 및 `c06-underwater-end-v1.png`를 사용한다. 선택적 `dist/assets/equipment-rov.png` insert는 권리와 원본 픽셀·비율 검토를 통과할 때만 쓴다. ROV-센서 배치 주장을 만들지 않는다.
 - [ ] ImageGen은 허용된 concept/background plate만 만든다. 실제 지형, 데이터, 플랫폼 화면, 장비 외형은 생성·수정하지 않는다.
 - [ ] Higgsfield에는 shot 하나씩 승인된 start/end reference와 이 문서의 camera/motion 제한을 전달한다. 원본 대상물이 morph하거나 위치·구성이 달라지지 않는지 확인한다.
 - [ ] 최종 rough cut에서 영상 길이, loop, UI trim, no-people, no-fake-geo/data/UI, caption/credit, KO/EN 및 웹 pending-label 교체를 검수한다.
@@ -198,4 +200,4 @@ AX는 입력 자료가 탐지·예측·모니터링으로 해석되는 개념 �
 - [AX concept film 준비안과 actual UI 원칙](imagegen-prompts/ax-concept-film-a01-a06-v1.md).
 - [공식 홈 renderer](../../dist/home.js), [AX renderer](../../dist/ax-v2.js), [홈 cinematic CSS](../../dist/cinematic.css), [AX CSS](../../dist/ax-v2.css), [film slot CSS](../../dist/film-slots.css).
 
-**현재 상태:** v3 storyboard baseline은 확정된 기본 경로다. 완성된 회사 60초 영상과 AX 30초 영상은 아직 없으며, C05–C07은 source 권리 확인 또는 concept plate 검수가 남아 있다. 미확인 장비는 생성하지 않고, 사용할 경우 승인된 원본 픽셀을 작은 과정 증거로만 보존한다. 이 문서 작성은 영상 생성, 배포, 최종 승인을 뜻하지 않는다.
+**현재 상태:** v3 storyboard baseline은 확정된 기본 경로다. C05·C06의 concept background와 C07 lab concept는 main-reviewed selected 상태이며 실제 GeoSR 현장 증거가 아니다. C05/C06의 선택적 장비 insert는 권리와 픽셀 보존 검토가 남아 있고, 모든 장면의 최종 motion/edit 및 회사 60초·AX 30초 영상은 아직 완료되지 않았다. 이 문서 작성은 배포나 최종 공개 승인을 뜻하지 않는다.

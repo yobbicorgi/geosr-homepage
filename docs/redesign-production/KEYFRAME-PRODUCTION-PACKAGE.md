@@ -18,12 +18,12 @@ Target duration is about 60 seconds. It explains GeoSR as one connected engineer
 | C02 | 06–12 | One observation satellite enters → points toward Earth without a visible beam → observation footprint is implied by camera direction | Verified generic Earth-observation spacecraft geometry; no logo, false mission identity, laser or neon scan |
 | C03 | 12–18 | Camera approaches East Asia → Korean Peninsula and adjacent seas resolve → orbital layer space opens above the map | Geography is a deterministic map/globe composite; AI must not redraw coastlines |
 | C04 | 18–24 | One verified 2D field appears → a second and third scientific layer separate by depth → camera passes through the stack toward the coast | Use only approved SST, salinity, chlorophyll or model fields with source, date, extent, variable and units; otherwise use neutral unlabeled material planes marked concept during review |
-| C05 | 24–31 | Korean coastal or harbour context appears → research vessel and USV perform distinct observation roles → wake and camera motion lead shoreward | Vessel and USV shapes and sensors come from approved GeoSR source photographs; no invented payload and no people |
-| C06 | 31–38 | Shoreline or harbour survey corridor appears → drone path and LiDAR coverage are revealed with restrained geometry → verified terrain or point-cloud material replaces the view | Drone type and survey method must match a documented case; no decorative grid, fake coordinates or impossible scan cone |
-| C07 | 38–44 | Offshore observation point emerges → buoy and mooring context become readable → camera follows the instrument line beneath the surface | Approved buoy and sensor references; no fabricated station ID, live value, chart or status |
-| C08 | 44–51 | Camera crosses the water surface → ROV and water-column sensor appear → the seabed observation direction leads toward the laboratory transition | Approved GeoSR ROV and underwater sensor source; confirm formal equipment name and configuration before generation |
-| C09 | 51–56 | Sample or sensor detail match-cuts to a sealed laboratory setup → analysis equipment becomes the subject → physical sample detail becomes a clean spatial field | Approved equipment and sample procedure; no people, hands, false sample label, result or measurement |
-| C10 | 56–60 | Spatial field resolves into modelling and AI interpretation → observation, model and analysis layers align → the blue atmospheric edge returns to the C01 lighting direction | Use verified output or an explicitly abstract transition; no fake dashboard, metric or claim; final frame must loop to C01 |
+| C05 | 24–31 | Korean coastal or harbour context appears → research vessel and USV perform distinct observation roles → wake and camera motion lead shoreward | The rejected generated composition study was discarded from the repository; its SHA-256 hash remains in the C05 prompt record. Preserve official vessel and USV photo pixels as cutouts; generate only the environment and composite in post. Confirm rights, source angle/resolution and device pairing. See [equipment accuracy gate](EQUIPMENT-ACCURACY-GATE.md). |
+| C06 | 31–38 | Use a verified FireFly6 source cutout over a separately generated coastal background → move camera toward the surface for C07 | The rejected generated composition study was discarded from the repository; its SHA-256 hash remains in the C06 prompt record. Preserve official FireFly6 geometry; do not attach LiDAR without pairing evidence. See [equipment accuracy gate](EQUIPMENT-ACCURACY-GATE.md). |
+| C07 | 38–44 | Offshore observation context emerges → camera follows a generic observation-process cue beneath the surface | The rejected generated composition study was discarded from the repository; its SHA-256 hash remains in the C07 prompt record. No official people-free buoy/mooring equipment photo was identified; a generic process illustration must be clearly labeled and make no GeoSR/model/site claims. See [equipment accuracy gate](EQUIPMENT-ACCURACY-GATE.md). |
+| C08 | 44–51 | Camera crosses the water surface → show separately verified ROV and sensor product imagery in independent shots → lead toward the laboratory transition | The rejected generated composition study was discarded from the repository; its SHA-256 hash remains in the C08 prompt record. Official materials do not establish a shared ROV/mooring deployment or the rendered Heavy configuration. Keep ROV and sensor separate unless actual deployment evidence exists. See [equipment accuracy gate](EQUIPMENT-ACCURACY-GATE.md). |
+| C09 | 51–54 | C08 sensor detail match-cuts to the approved people-free laboratory scene → hold on sample-analysis equipment around 52s → end on a clean instrument/sample detail that can cut to real platform evidence | Reuse `dist/assets/analysis-lab-v1.webp` as-is; no new image, hands, sample label, result, measurement, or generated spatial field |
+| C10 | 54–60 | 54–55.5 Discover full frame → 55.5–57 Predict full frame → 57–58.5 Monitor full frame → 58.5–60 pull back on the approved Earth frame and match the C01 first frame exactly | Use only `ax-discover-fast.mp4`, `ax-predict-fast.mp4`, `ax-monitor-fast.mp4` as separate sequential full-frame cuts; no simultaneous UI, crop, generated UI, AI graphic, fake result, or product-workflow claim. Final Earth frame uses `hero-earth-00s-v4.png`; preserve geography and seamless-loop framing. |
 
 ### Corporate frame count
 
@@ -35,24 +35,23 @@ Target duration is about 60 seconds. It explains GeoSR as one connected engineer
 
 ## AX Platform concept film
 
-Target duration is about 30 seconds. It shows how observations become a usable decision context. It stays separate from the corporate film and does not pretend that independent applications are one deployed end-to-end product.
+Target duration is 30 seconds. This film is separate from the corporate film and shows the AX Platform flow Discover → Predict → Monitor. The detailed shot, still, source, ImageGen and Higgsfield handoff is in [AX Platform concept film A01–A06 preparation](imagegen-prompts/ax-concept-film-a01-a06-v1.md). Actual UI remains source footage composited in post; ImageGen supplies background and spatial atmosphere only.
 
 | ID | Time | Start → middle → end | Required source and fact gate |
 |---|---:|---|---|
-| A01 | 00–05 | A source-backed Korean coast or harbour context appears → distinct observation inputs become visible → view moves into a neutral analysis space | Approved spatial source; no fake incident, alert or result |
-| A02 | 05–11 | Satellite, survey and sensor inputs remain distinct → relevant spatial objects are organised → the composition opens for Discover | Real source categories only; no invented product UI |
-| A03 | 11–16 | Discover question appears through object focus → candidate area becomes readable → transition points to Detect | No generated readable UI text inside the film; web copy supplies the label |
-| A04 | 16–21 | Detect context isolates a feature → evidence and uncertainty remain visually separate → camera carries the selected area into Predict | No fabricated bounding box, confidence score or classification claim |
-| A05 | 21–26 | Predict context introduces time and scenario depth → change is shown without false values → viewpoint settles into Monitor | Use approved model outputs or clearly abstract material states only |
-| A06 | 26–30 | Monitor context connects observation points and change → concept layers fold into one clean frame → actual AX capture below becomes the next visual object | End on a shape and camera angle that match the first approved real platform clip |
+| A01 | 00–05 | 실제 연안·항만·하구 공간을 소개 → 관측 입력을 별도 컷으로 제시 → AX 공간 개요로 정착 | `ax-overview`와 입력별 실제 포스터; 장소·위치 추정 및 허구 결과 금지 |
+| A02 | 05–10 | 서로 다른 입력이 공간 기준으로 정돈되는 흐름 → 단일 지도 구도로 수렴 | 실제 source 화면만 후반 합성; CRS·시간 정합 확인 전 원본 지도를 겹치지 않음 |
+| A03 | 10–15 | 위성 영상에서 시설물·현상 위치를 탐지 → 실제 Discover 캡처로 이어짐 | `satellite-poster`, `ax-discover-fast`; 캡처에 없는 마커·분류·정확도 금지 |
+| A04 | 15–20 | 실제 3D 지형과 수면 조건 시뮬레이션 → Predict 화면에서 상태를 확인 | `flood3d-poster`, `ax-predict-fast`; 원본 밖 침수 범위·수위·피해 금지 |
+| A05 | 20–25 | 부이·환경 관측 시계열과 지도를 함께 모니터링 → 실제 Monitor 캡처 유지 | `buoy-poster`, `env-poster`, `ax-monitor-fast`; 새 관측값·실시간 상태 생성 금지 |
+| A06 | 25–30 | 세 기능의 실제 화면이 같은 AX 프레임에서 차례로 수렴 → 아래 실제 Discover 시퀀스로 match-cut | 세 원본을 동시에 합성하거나 새 UI를 만들지 않음; 원본 16:9 비율과 캡처 내용 보존 |
 
 ### AX frame count
 
-- Six scenes
-- Three review states per scene
-- Shared boundary frames reduce the minimum unique set to 13 frames
-- The concept film ends before actual UI demonstration
-- The following website section uses real 16:9 screen recordings of each platform feature, usually about three seconds per selected interaction
+- Six scenes of five seconds each, 30 seconds total
+- Three review states per scene; shared boundaries reduce the minimum unique set to 13 frames
+- A03–A06 use exact, approved Discover, Predict and Monitor screen captures as post-composited footage; they are not generated or redrawn
+- The following website section retains manual tabs and actual 16:9 screen captures, usually about three seconds per feature
 
 ## Higgsfield handoff contents
 
@@ -91,3 +90,9 @@ Each accepted scene package contains:
 ## C02/C03 approach keyframes v1
 
 The 10s, 12s, 15s and 18s deterministic NASA-texture approach frames are accepted by main review as geography and camera-path references only. The 12s frame is shared by C02 and C03. The satellite motion remains a conceptual guide and requires a more natural Higgsfield pass; it is absent from the 15s and 18s frames. See [the keyframe record and contact sheet](keyframes/corporate-film-approach-v1.md).
+
+## C04 official data-layer references
+
+Main review approved the 20s SST reference and accepted the 24s deterministic coastline frame unchanged. The final-facing C04 direction is the approved 22s-a/b/c single-layer sequence: SST, Aquarius salinity, then MODIS L2 chlorophyll, connected by crossfades and camera approach motion in the film edit. Do not show the three plates simultaneously. The frames are internal factual data-plate references only; they are not finished film artwork or wired to the site. See [the approved sequence, source metadata, limitations, hashes, and contact sheet](keyframes/corporate-film-data-layers-crossfade-v1.md).
+
+The monthly SST and salinity composites and daily chlorophyll swath are not simultaneous observations. Keep chlorophyll's actual no-data gaps unfilled. Salinity's bilinear colorized display is a derived visual treatment only; it does not interpolate measurements or establish higher spatial resolution. V1–v4 simultaneous-stack compositions are rejected as final-facing visuals. V5's source and no-data handling remain documented in the crossfade record; its rejected image, contact sheet, render manifest, and renderer have been removed from active assets. Preserve the NASA geography, source footprint and no-data mask in any motion treatment.

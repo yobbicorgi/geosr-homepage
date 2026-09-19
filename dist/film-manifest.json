@@ -1,12 +1,12 @@
 {
-  "revision": "preproduction-20260919-r1",
+  "revision": "preproduction-20260919-r2",
   "slots": [
     {
       "id": "geosr-hero",
       "mode": "loop",
       "src": null,
       "approval": "pending",
-      "duration": 24,
+      "duration": 60,
       "delivery": "assets/films/geosr-hero.mp4"
     },
     {
@@ -125,7 +125,7 @@
       "mode": "loop",
       "src": null,
       "approval": "pending",
-      "duration": 24,
+      "duration": 30,
       "delivery": "assets/films/ax-concept-film.mp4",
       "purpose": "AX concept film — introductory 16:9 framing for separate platform examples; factual content and footage not yet prepared",
       "recommendedMedia": [

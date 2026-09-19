@@ -1,0 +1,169 @@
+{
+  "title": "GeoSR corporate film C04 source captures",
+  "status": "NASA GIBS standard-quality visualization pixel captures; internal review frames only",
+  "retrieved_utc": "2026-09-19T14:06:55.330312+00:00",
+  "service_endpoint": "https://gibs.earthdata.nasa.gov/wms/epsg4326/std/wms.cgi",
+  "service_capabilities_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/std/wms.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+  "request_common": {
+    "SERVICE": "WMS",
+    "VERSION": "1.1.1",
+    "REQUEST": "GetMap",
+    "SRS": "EPSG:4326",
+    "BBOX": "90,15,166,57.75",
+    "WIDTH": "2560",
+    "HEIGHT": "1440",
+    "FORMAT": "image/png",
+    "TRANSPARENT": "TRUE",
+    "TIME": "2012-08-01"
+  },
+  "bbox_semantics": "WMS 1.1.1 EPSG:4326 longitude_min,latitude_min,longitude_max,latitude_max; identical for all layers; 76° x 42.75° gives 16:9 ratio and covers C03/C04 camera views",
+  "requested_time": "2012-08-01",
+  "nearest_value": 0,
+  "captures": [
+    {
+      "key": "sst",
+      "layer": "MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly_v2019.0_STD",
+      "metadata": "MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly",
+      "colormap": "MODIS_Sea_Surface_Temperature",
+      "period": "Monthly (P1M)",
+      "units": "°C",
+      "domain": "2002-07-01/2022-10-01/P1M, 2023-01-01/2023-05-01/P1M, 2023-07-01/2023-09-01/P1M, 2023-11-01/2025-11-01/P1M, 2026-01-01/2026-04-01/P1M",
+      "file": "gibs-modis-aqua-sst-monthly-2012-08-01-epsg4326.png",
+      "metadata_file": "metadata-MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly.json",
+      "metadata_sources": [
+        {
+          "url": "https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly.json",
+          "file": "metadata-MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly.json",
+          "status": 200,
+          "content_type": "application/json",
+          "bytes": 558,
+          "sha256": "FFA2240256ACB7580E66D5877560F54985100F54D1A2F3ED9EAFEE63C57AB680"
+        },
+        {
+          "url": "https://gibs.earthdata.nasa.gov/colormaps/v1.3/MODIS_Sea_Surface_Temperature.xml",
+          "file": "colormap-MODIS_Sea_Surface_Temperature.xml",
+          "status": 200,
+          "content_type": "text/xml",
+          "bytes": 41124,
+          "sha256": "75B286C97942A9E149050C37352165A48C088DAE9F7424C8BCA6400F665F9A48"
+        }
+      ],
+      "colormap_file": "colormap-MODIS_Sea_Surface_Temperature.xml",
+      "wms_layer_identifier": "MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly_v2019.0_STD",
+      "aggregation": "Monthly (P1M)",
+      "units_from_gibs_colormap": "°C",
+      "wms_layer_domain": "2002-07-01/2022-10-01/P1M, 2023-01-01/2023-05-01/P1M, 2023-07-01/2023-09-01/P1M, 2023-11-01/2025-11-01/P1M, 2026-01-01/2026-04-01/P1M",
+      "nearestValue": "0",
+      "request_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/std/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A4326&BBOX=90%2C15%2C166%2C57.75&WIDTH=2560&HEIGHT=1440&FORMAT=image%2Fpng&TRANSPARENT=TRUE&TIME=2012-08-01&LAYERS=MODIS_Aqua_L3_SST_Thermal_4km_Day_Monthly_v2019.0_STD&STYLES=default",
+      "source_file": "gibs-modis-aqua-sst-monthly-2012-08-01-epsg4326.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "last_modified_header": null,
+      "dimensions": [
+        2560,
+        1440
+      ],
+      "mode": "RGBA",
+      "bytes": 743936,
+      "sha256": "A6555B3B28AB73B2237A8629379CEC50179737F44599BE0CCDF7F4F07B50C47A",
+      "alpha_coverage_fraction": 0.503468
+    },
+    {
+      "key": "sss",
+      "layer": "Aquarius_Sea_Surface_Salinity_L3_Monthly_v5_STD",
+      "metadata": "Aquarius_Sea_Surface_Salinity_L3_Monthly",
+      "colormap": "Aquarius_Sea_Surface_Salinity_L3_Monthly",
+      "period": "Monthly (P1M); endpoints include 7-day records",
+      "units": "psu",
+      "domain": "2011-08-25/2011-08-25/P7D, 2011-09-01/2015-05-01/P1M, 2015-06-01/2015-06-01/P7D",
+      "file": "gibs-aquarius-salinity-monthly-2012-08-01-epsg4326.png",
+      "metadata_file": "metadata-Aquarius_Sea_Surface_Salinity_L3_Monthly.json",
+      "metadata_sources": [
+        {
+          "url": "https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/Aquarius_Sea_Surface_Salinity_L3_Monthly.json",
+          "file": "metadata-Aquarius_Sea_Surface_Salinity_L3_Monthly.json",
+          "status": 200,
+          "content_type": "application/json",
+          "bytes": 513,
+          "sha256": "BBD0C71FF96AFA982BF443B6653B92D73FF8DAEF934FFF1F0F86A164108A28F1"
+        },
+        {
+          "url": "https://gibs.earthdata.nasa.gov/colormaps/v1.3/Aquarius_Sea_Surface_Salinity_L3_Monthly.xml",
+          "file": "colormap-Aquarius_Sea_Surface_Salinity_L3_Monthly.xml",
+          "status": 200,
+          "content_type": "text/xml",
+          "bytes": 49425,
+          "sha256": "33B24E1571D864A67CAF5B26175F737D3BBD2DB975E38491DBB5BC29B8BB4B77"
+        }
+      ],
+      "colormap_file": "colormap-Aquarius_Sea_Surface_Salinity_L3_Monthly.xml",
+      "wms_layer_identifier": "Aquarius_Sea_Surface_Salinity_L3_Monthly_v5_STD",
+      "aggregation": "Monthly (P1M); endpoints include 7-day records",
+      "units_from_gibs_colormap": "psu",
+      "wms_layer_domain": "2011-08-25/2011-08-25/P7D, 2011-09-01/2015-05-01/P1M, 2015-06-01/2015-06-01/P7D",
+      "nearestValue": "0",
+      "request_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/std/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A4326&BBOX=90%2C15%2C166%2C57.75&WIDTH=2560&HEIGHT=1440&FORMAT=image%2Fpng&TRANSPARENT=TRUE&TIME=2012-08-01&LAYERS=Aquarius_Sea_Surface_Salinity_L3_Monthly_v5_STD&STYLES=default",
+      "source_file": "gibs-aquarius-salinity-monthly-2012-08-01-epsg4326.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "last_modified_header": null,
+      "dimensions": [
+        2560,
+        1440
+      ],
+      "mode": "RGBA",
+      "bytes": 87442,
+      "sha256": "CF14274C6F72101A134C665DCBD3F78C1AC9A33E9EBA3BEAF5016BAD09F839FF",
+      "alpha_coverage_fraction": 0.467737
+    },
+    {
+      "key": "chlorophyll",
+      "layer": "MODIS_Aqua_L2_Chlorophyll_A_v2022.0_STD",
+      "metadata": "MODIS_Aqua_L2_Chlorophyll_A",
+      "colormap": "MODIS_Chlorophyll",
+      "period": "Daily (P1D), Level 2 regional swath visualization",
+      "units": "mg/m³",
+      "domain": "2002-07-04/2002-07-29/P1D, 2002-08-06/2007-12-01/P1D, 2007-12-03/2022-03-31/P1D, 2022-04-14/2022-04-14/P1D, 2022-04-16/2024-07-31/P1D, 2024-10-19/2024-10-30/P1D, 2024-11-26/2025-03-29/P1D, ...; selected 2012-08-01 lies inside 2007-12-03/2022-03-31/P1D",
+      "file": "gibs-modis-aqua-chlorophyll-l2-daily-2012-08-01-epsg4326.png",
+      "metadata_file": "metadata-MODIS_Aqua_L2_Chlorophyll_A.json",
+      "metadata_sources": [
+        {
+          "url": "https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/MODIS_Aqua_L2_Chlorophyll_A.json",
+          "file": "metadata-MODIS_Aqua_L2_Chlorophyll_A.json",
+          "status": 200,
+          "content_type": "application/json",
+          "bytes": 849,
+          "sha256": "6120F738F072CF5031E1035A85552B2B2471266614F7386D153D0C046D4A5947"
+        },
+        {
+          "url": "https://gibs.earthdata.nasa.gov/colormaps/v1.3/MODIS_Chlorophyll.xml",
+          "file": "colormap-MODIS_Chlorophyll.xml",
+          "status": 200,
+          "content_type": "text/xml",
+          "bytes": 49719,
+          "sha256": "991685347982201D6EDAA1672AEE758B79FEB71ACE8B7B939BC26866DAFBE674"
+        }
+      ],
+      "colormap_file": "colormap-MODIS_Chlorophyll.xml",
+      "wms_layer_identifier": "MODIS_Aqua_L2_Chlorophyll_A_v2022.0_STD",
+      "aggregation": "Daily (P1D), Level 2 regional swath visualization",
+      "units_from_gibs_colormap": "mg/m³",
+      "wms_layer_domain": "2002-07-04/2002-07-29/P1D, 2002-08-06/2007-12-01/P1D, 2007-12-03/2022-03-31/P1D, 2022-04-14/2022-04-14/P1D, 2022-04-16/2024-07-31/P1D, 2024-10-19/2024-10-30/P1D, 2024-11-26/2025-03-29/P1D, ...; selected 2012-08-01 lies inside 2007-12-03/2022-03-31/P1D",
+      "nearestValue": "0",
+      "request_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/std/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG%3A4326&BBOX=90%2C15%2C166%2C57.75&WIDTH=2560&HEIGHT=1440&FORMAT=image%2Fpng&TRANSPARENT=TRUE&TIME=2012-08-01&LAYERS=MODIS_Aqua_L2_Chlorophyll_A_v2022.0_STD&STYLES=default",
+      "source_file": "gibs-modis-aqua-chlorophyll-l2-daily-2012-08-01-epsg4326.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "last_modified_header": null,
+      "dimensions": [
+        2560,
+        1440
+      ],
+      "mode": "RGBA",
+      "bytes": 438143,
+      "sha256": "308C49B76318AF9409E777B5BDC502F49ACE266F72DEFE9E4E39E78BE98937C7",
+      "alpha_coverage_fraction": 0.107248
+    }
+  ],
+  "policy": "Original GIBS PNG response bytes are preserved. Later projection may only reposition source pixels with nearest-neighbor sampling; do not recolor, interpolate, fill no-data, or imply simultaneous observations across different aggregation periods."
+}

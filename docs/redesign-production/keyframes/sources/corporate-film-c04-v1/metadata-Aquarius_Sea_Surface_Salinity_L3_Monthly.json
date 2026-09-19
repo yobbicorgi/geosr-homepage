@@ -1,0 +1,18 @@
+{
+  "title": "Sea Surface Salinity (L3, Monthly)",
+  "subtitle": "SAC-D / Aquarius",
+  "ongoing": false,
+  "measurement": "Sea Surface Salinity",
+  "retentionPeriod": -1,
+  "conceptIds": [
+    {
+      "type": "STD",
+      "value": "C2491756442-POCLOUD",
+      "shortName": "AQUARIUS_L3_SSS_SMI_MONTHLY_V5",
+      "title": "Aquarius Official Release Level 3 Sea Surface Salinity Standard Mapped Image Monthly Data V5.0",
+      "version": "5.0",
+      "dataCenter": "POCLOUD"
+    }
+  ],
+  "layerPeriod": "Monthly"
+}

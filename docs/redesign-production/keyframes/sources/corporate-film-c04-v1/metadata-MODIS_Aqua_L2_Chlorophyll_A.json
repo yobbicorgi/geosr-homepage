@@ -1,0 +1,35 @@
+{
+  "title": "Chlorophyll a (L2)",
+  "subtitle": "Aqua / MODIS",
+  "ongoing": true,
+  "measurement": "Chlorophyll a",
+  "retentionPeriod": -1,
+  "daynight": [
+    "day"
+  ],
+  "orbitTracks": [
+    "OrbitTracks_Aqua_Ascending"
+  ],
+  "orbitDirection": [
+    "ascending"
+  ],
+  "conceptIds": [
+    {
+      "type": "NRT",
+      "value": "C3380708978-OB_CLOUD",
+      "shortName": "MODISA_L2_OC_NRT",
+      "title": "Aqua MODIS Level-2 Regional Ocean Color (OC) - Near Real-time (NRT) Data, version 2022.0",
+      "version": "2022.0",
+      "dataCenter": "OB_CLOUD"
+    },
+    {
+      "type": "STD",
+      "value": "C3380708980-OB_CLOUD",
+      "shortName": "MODISA_L2_OC",
+      "title": "Aqua MODIS Level-2 Regional Ocean Color (OC) Data, version 2022.0",
+      "version": "2022.0",
+      "dataCenter": "OB_CLOUD"
+    }
+  ],
+  "layerPeriod": "Daily"
+}

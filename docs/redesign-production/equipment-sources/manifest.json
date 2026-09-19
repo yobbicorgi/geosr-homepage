@@ -1,0 +1,204 @@
+{
+  "title": "GeoSR equipment source archive",
+  "revision": 1,
+  "purpose": "Reference-only archive of people-free equipment imagery exposed by official GeoSR equipment and technology pages.",
+  "reviewed_at": "2026-09-20",
+  "rights": {
+    "status": "unverified",
+    "notice": "Public availability on geosr.com does not grant reproduction, derivative-work, AI-reference, or publication rights. Obtain written permission from GeoSR and any third-party rightsholder before external or derivative use. Do not reproduce visible logos or text without permission."
+  },
+  "inspection_method": "For each listed official detail page, inspected its HTML img src, srcset, enclosing anchor href, onclick/lightbox attributes, and visible content image links. Archived only URLs actually exposed by the page. No guessed upload paths were tested.",
+  "people_hands_review": "All eight archived assets were visually reviewed; no people or hands are visible. The six-frame USV GIF was reviewed frame by frame.",
+  "assets": [
+    {
+      "id": "hanuri-ship-thumbnail",
+      "file": "originals/hanuri-ship-page-thumbnail.jpg",
+      "model_or_title": "해누리호 (측량조사)",
+      "official_page_claim": "19-tonne survey vessel; the maker field is shown as '-'.",
+      "page_url": "https://www.geosr.com/sub/equipment/ship.asp?bid=21&idx=1938&mode=view&page=1",
+      "source_url": "https://www.geosr.com/upload/thumb/20240711_131757824.jpg",
+      "source_exposure": "Page exposes this thumbnail in an img src. No linked full-resolution original, srcset, onclick, or lightbox target was exposed.",
+      "asset_role": "page-thumbnail-only",
+      "format": "JPEG",
+      "width": 440,
+      "height": 251,
+      "bytes": 23337,
+      "sha256": "9B41F4616C5CC022C53C7676292E15B198F7EE4157710A82511CE3A5F17FDEA3",
+      "visual_review": "No people or hands visible.",
+      "usage_note": "Useful as a source-backed silhouette reference for the GeoSR survey vessel. Do not infer details not visible in the thumbnail."
+    },
+    {
+      "id": "usv-usvcom-original",
+      "file": "originals/usv-usvcom-page-original.png",
+      "model_or_title": "USV image labelled usvCom.png",
+      "official_page_claim": "The page describes unmanned survey-vessel use cases; it does not tie a specific model/specification to this image.",
+      "page_url": "https://www.geosr.com/sub/business/conserve_view.asp?idx=63&s_cate=%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EA%B8%B0%EC%88%A0",
+      "source_url": "https://www.geosr.com/upload/usvCom.png",
+      "source_exposure": "Original-sized image URL appears directly as a page img src; the page also exposes a separate thumbnail.",
+      "asset_role": "page-exposed-original",
+      "format": "PNG",
+      "width": 1001,
+      "height": 601,
+      "bytes": 798260,
+      "sha256": "7C130EC5013B09F7997C0B2835601543BAD700F3B084E035C5146FDD386BCF8D",
+      "visual_review": "No people or hands visible; GeoSR mark/text appears in the image.",
+      "usage_note": "General USV visual reference only; do not assign an unverified model or specification."
+    },
+    {
+      "id": "usv-usv20s-original",
+      "file": "originals/usv-usv20s-page-original.png",
+      "model_or_title": "USV image labelled USV20S.png",
+      "official_page_claim": "The page describes unmanned survey-vessel use cases; the filename is not sufficient evidence of a model specification.",
+      "page_url": "https://www.geosr.com/sub/business/conserve_view.asp?idx=63&s_cate=%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EA%B8%B0%EC%88%A0",
+      "source_url": "https://www.geosr.com/upload/USV20S.png",
+      "source_exposure": "Original-sized image URL appears directly as a page img src; the page also exposes a separate thumbnail.",
+      "asset_role": "page-exposed-original",
+      "format": "PNG",
+      "width": 1771,
+      "height": 1068,
+      "bytes": 3592691,
+      "sha256": "53F5521E68EA7745A1BAFFE9FB3D388726EA902CD879F176E667EBB288614D22",
+      "visual_review": "No people or hands visible; GeoSR mark/text appears in the image.",
+      "usage_note": "Catamaran scene can inform generic scale/shape only. Do not claim a verified model from the filename alone."
+    },
+    {
+      "id": "usv-catamaran-animation",
+      "file": "originals/usv-catamaran-page-original.gif",
+      "model_or_title": "무인관측선(카타마란-타입).gif",
+      "official_page_claim": "The page describes unmanned survey-vessel use cases; no detailed model/specification is associated with the GIF.",
+      "page_url": "https://www.geosr.com/sub/business/conserve_view.asp?idx=63&s_cate=%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EA%B8%B0%EC%88%A0",
+      "source_url": "https://www.geosr.com/upload/%EB%AC%B4%EC%9D%B8%EA%B4%80%EC%B8%A1%EC%84%A0(%EC%B9%B4%ED%83%80%EB%A7%88%EB%9E%80-%ED%83%80%EC%9E%85).gif",
+      "source_exposure": "Original GIF URL appears directly as a page img src; the page also exposes a separate thumbnail.",
+      "asset_role": "page-exposed-original",
+      "format": "GIF",
+      "width": 1000,
+      "height": 608,
+      "frames": 6,
+      "bytes": 238866,
+      "sha256": "693FDE908A097721720741914FA4A1C15449CC1312D5407C7A0A8032C9FC1956",
+      "visual_review": "All six frames reviewed; no people or hands visible. The illustration contains GeoSR mark/text.",
+      "usage_note": "Stylized illustration reference, not a photograph or verified live vessel configuration."
+    },
+    {
+      "id": "firefly6-thumbnail-1",
+      "file": "originals/firefly6-page-thumbnail-01.png",
+      "model_or_title": "VTOL 무인항공기 (FireFly6), image 1",
+      "official_page_claim": "The detail page identifies FireFly6 and manufacturer BIRDSEYEVIEW; described for unmanned aerial photogrammetry and shoreline-change monitoring.",
+      "page_url": "https://www.geosr.com/sub/equipment/surveying.asp?mode=view&bid=18&s_type=&s_keyword=&s_cate=&s_addtext2=&idx=1312&page=1",
+      "source_url": "https://www.geosr.com/upload/thumb/33.fireFly6_1.png",
+      "source_exposure": "Only this thumbnail img src was exposed. No linked full-resolution original, srcset, onclick, or lightbox target was exposed.",
+      "asset_role": "page-thumbnail-only",
+      "format": "PNG",
+      "width": 440,
+      "height": 267,
+      "bytes": 8390,
+      "sha256": "A5206F62A976882E5EC112C0B70942336F6122908E9FAC1503D51842CAF4C706",
+      "visual_review": "No people or hands visible.",
+      "usage_note": "Reference for the page-identified hybrid VTOL shape; resolution is thumbnail-only."
+    },
+    {
+      "id": "firefly6-thumbnail-2",
+      "file": "originals/firefly6-page-thumbnail-02.png",
+      "model_or_title": "VTOL 무인항공기 (FireFly6), image 2",
+      "official_page_claim": "The detail page identifies FireFly6 and manufacturer BIRDSEYEVIEW; described for unmanned aerial photogrammetry and shoreline-change monitoring.",
+      "page_url": "https://www.geosr.com/sub/equipment/surveying.asp?mode=view&bid=18&s_type=&s_keyword=&s_cate=&s_addtext2=&idx=1312&page=1",
+      "source_url": "https://www.geosr.com/upload/thumb/33.fireFly6_2.png",
+      "source_exposure": "Only this thumbnail img src was exposed. No linked full-resolution original, srcset, onclick, or lightbox target was exposed.",
+      "asset_role": "page-thumbnail-only",
+      "format": "PNG",
+      "width": 440,
+      "height": 267,
+      "bytes": 14854,
+      "sha256": "6EADBD208F8FF55D77D013BAA6AA8013E629216FC6D615128797A3D45D6CFF69",
+      "visual_review": "No people or hands visible.",
+      "usage_note": "Reference for the page-identified hybrid VTOL shape; resolution is thumbnail-only."
+    },
+    {
+      "id": "bluerov2-thumbnail",
+      "file": "originals/bluerov2-page-thumbnail.png",
+      "model_or_title": "Stereo Camera Underwater Drone (BlueROV2)",
+      "official_page_claim": "The English detail page identifies BlueROV2, BlueRobotics & Sexton Co., and underwater structure/topography confirmation, video recording, and stereo measurement uses.",
+      "page_url": "https://www.geosr.com/en/sub/equipment/surveying.asp?bid=38&idx=2895&mode=view&page=1&s_addtext2=&s_cate=&s_keyword=&s_type=",
+      "source_url": "https://www.geosr.com/upload/thumb/en_BlueRov.png",
+      "source_exposure": "Only this thumbnail img src was exposed. No linked full-resolution original, srcset, onclick, or lightbox target was exposed.",
+      "asset_role": "page-thumbnail-only",
+      "format": "PNG",
+      "width": 440,
+      "height": 267,
+      "bytes": 13700,
+      "sha256": "C5A25FBF2DA863D662732261628E588753AA17B9CE410B6C6673F173B4195B61",
+      "visual_review": "No people or hands visible.",
+      "usage_note": "Page-provided thumbnail only; preserve model attribution to the source page."
+    },
+    {
+      "id": "rbr-solo-tu-thumbnail",
+      "file": "originals/rbr-solo-tu-page-thumbnail.png",
+      "model_or_title": "수온계 (RBR Solo-TU) page thumbnail",
+      "official_page_claim": "The Korean detail page names RBR Solo-TU, RBR Canada, and continuous in-situ temperature measurement at installation depth.",
+      "page_url": "https://www.geosr.com/sub/equipment/investigation.asp?mode=view&bid=13&s_type=&s_keyword=&s_cate=&s_addtext2=&idx=1246&page=1",
+      "source_url": "https://www.geosr.com/upload/thumb/10.%20%EC%88%98%EC%98%A8%EA%B3%84(RBR%20Solo-T).png",
+      "source_exposure": "Only this thumbnail img src was exposed. The filename says Solo-T while the page title says Solo-TU; no linked full-resolution original, srcset, onclick, or lightbox target was exposed.",
+      "asset_role": "page-thumbnail-only-model-variant-unresolved",
+      "format": "PNG",
+      "width": 440,
+      "height": 267,
+      "bytes": 6574,
+      "sha256": "A2AA349C2067002DC6908999A1EA2775892C1446562F60B0015C8EA2FD757004",
+      "visual_review": "No people or hands visible; product text is visible.",
+      "usage_note": "Do not assert the pictured unit's exact Solo-T versus Solo-TU variant. The page title and thumbnail filename conflict; exact image-to-variant mapping remains unresolved."
+    }
+  ],
+  "missing_sources": [
+    {
+      "id": "actual-buoy-mooring-photo",
+      "status": "missing",
+      "reason": "The reviewed official equipment inventory did not expose an actual buoy/mooring equipment photo. The GeoSR license/IP page exposes patent-document thumbnails with buoy/mooring titles; these are documents, not photographs of physical equipment.",
+      "pages_checked": [
+        "https://www.geosr.com/sub/equipment/investigation.asp",
+        "https://www.geosr.com/sub/company/license.asp"
+      ]
+    },
+    {
+      "id": "tprbm-photo-or-exact-model-source",
+      "status": "missing",
+      "reason": "No official physical-equipment photograph or page-exposed exact TPRBM model source was identified in the reviewed GeoSR pages. Do not infer a model from patent scans or unrelated sensors."
+    }
+  ],
+  "existing_asset_comparison": [
+    {
+      "file": "dist/assets/equipment-vessel.jpg",
+      "bytes": 23337,
+      "dimensions": "440x251",
+      "sha256": "9B41F4616C5CC022C53C7676292E15B198F7EE4157710A82511CE3A5F17FDEA3",
+      "comparison": "Byte-identical to the archived Hanuri page thumbnail."
+    },
+    {
+      "file": "dist/assets/equipment-rov.png",
+      "bytes": 13700,
+      "dimensions": "440x267",
+      "sha256": "C5A25FBF2DA863D662732261628E588753AA17B9CE410B6C6673F173B4195B61",
+      "comparison": "Byte-identical to the archived BlueROV2 page thumbnail."
+    },
+    {
+      "file": "dist/assets/usv.png",
+      "bytes": 21318,
+      "dimensions": "440x264",
+      "sha256": "5B7231F0C1F206EE39E7F1DAF223993DB893F392087F82FC892879A072EA12F2",
+      "comparison": "Byte-identical to the official usvCom thumbnail, not the page-exposed 1001x601 original."
+    },
+    {
+      "file": "dist/assets/usv-source.jpg",
+      "bytes": 157404,
+      "dimensions": "740x580",
+      "sha256": "2967130902E41A6EA67ADB6E8E0756CE950D3027FBD4F732EF43905D3A61DD73",
+      "comparison": "Not byte-identical to any inspected official USV image or thumbnail. Visual comparison suggests a crop/resize of the scene in official USV20S.png, but its lineage is unverified; do not treat it as a canonical source copy."
+    },
+    {
+      "file": "dist/assets/equipment-icp.png",
+      "bytes": 6910,
+      "dimensions": "440x267",
+      "sha256": "AC3D9759ECAE6604F8BAAFB7AEEAD91A16B627EC9DFE3422F503C3397FADBCBF",
+      "comparison": "Byte-identical to the official ICP-MS page thumbnail; comparison-only, not part of the equipment source archive."
+    }
+  ]
+}

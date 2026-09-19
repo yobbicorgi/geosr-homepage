@@ -30,7 +30,7 @@
 | C02 | 06–12초 | 관측 위성이 지구를 향한다. 관측 빔, 로고, 특정 임무 정체성은 만들지 않는다. | [위성 콘셉트 프레임](../../dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v4.png). 위성 형상은 생성 콘셉트이며 실기체나 임무 모델로 주장하지 않는다. |
 | C03 | 12–18초 | 결정적 지구·지도 텍스처를 사용해 한반도와 주변 해역으로 접근한다. | [10초](../../dist/assets/concepts/corporate-film/hero-earth-10s-v1.png), [12초](../../dist/assets/concepts/corporate-film/hero-earth-12s-v1.png), [15초](../../dist/assets/concepts/corporate-film/hero-earth-15s-v1.png), [18초](../../dist/assets/concepts/corporate-film/hero-earth-18s-v1.png). 실제 해안선은 AI로 다시 그리지 않는다. |
 | C04 | 18–24초 | 검증된 과학 레이어를 한 장씩 보여주고 교차 전환한다. 동시 관측인 것처럼 적층하지 않는다. | [20초 SST 참고](../../dist/assets/concepts/corporate-film/hero-earth-20s-v2.png), [22초 SST](../../dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png) → [Aquarius 염분](../../dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png) → [MODIS chlorophyll-a](../../dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png), [24초 결정적 연안 프레임](../../dist/assets/concepts/corporate-film/hero-earth-24s-v1.png). |
-| C05 | 24–31초 | 한국 연안 현장, 조사선과 USV를 서로 다른 관측 역할로 보여준다. 해상에서 shoreward 이동으로 C06에 잇는다. | The C05 composition study was discarded from the repository; its SHA-256 remains in the C05 prompt record. 실제 해누리호와 USV 원본 형상을 보존하지 못했고, USV는 공식 단일 선체와 다른 노란 쌍동선이다. 최종 필름 사용 금지. |
+| C05 | 24–31초 | 한국 연안 현장, 조사선과 USV를 서로 다른 관측 역할로 보여준다. 해상에서 shoreward 이동으로 C06에 잇는다. | C05 composition study는 USV 공식 source pixels와 확정 모델·탑재체를 보존하지 않았고 해누리호도 재그림해 final fidelity에서 거절됐다. 공식 USV 페이지의 복수 원본은 [source pack](../redesign-production/equipment-sources/README.md)에서 확인한다. |
 | C06 | 31–38초 | 공식 FireFly6 원본을 보존한 기체 cutout과 별도 해안 배경을 합성하고 C07 수면으로 이동한다. | The C06 composition study was discarded from the repository; its SHA-256 remains in the C06 prompt record. 메쉬는 제거했지만 기체 fidelity와 LiDAR 페어링은 검증되지 않았다. 최종 사용 금지. |
 | C07 | 38–44초 | 실제 장비 근거가 확보되기 전에는 일반 관측 과정으로만 표현한다. | The C07 composition study was discarded from the repository; its SHA-256 remains in the C07 prompt record. 공식 부이·계류 원본이 없고 생성된 하드웨어는 검증되지 않았다. 실제 장비 컷 금지; 일반 과정 삽화만 별도 검토. |
 | C08 | 44–51초 | 확인된 수중 장비를 각기 독립된 컷으로 보여주고 실험실로 넘긴다. | The C08 composition study was discarded from the repository; its SHA-256 remains in the C08 prompt record. ROV 구성과 센서의 계류선 배치가 확인되지 않았다. 하나의 실제 설치처럼 합성하지 않는다. |
@@ -55,7 +55,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 | 장면 | 자산 / prompt 기록 | 확인된 근거와 제한 | 검토 상태 |
 | --- | --- | --- | --- |
-| C05 | The C05 composition study was discarded from the repository; its SHA-256 remains in the C05 prompt record · [프롬프트 기록](../redesign-production/imagegen-prompts/corporate-film-c05-v1.md) | 공식 해누리호 자료는 19톤을 표기한다. 생성 그림은 원본 선체를 픽셀 보존하지 않고 비례·상부 구조를 다시 그렸으며, 공식 usv.png의 검정·적색 단일 선체와 달리 노란 쌍동선을 그렸다. USV 모델·탑재체와 usv-source.jpg의 계보는 미확인. | 거절: composition study only — rejected for final equipment fidelity. 최종 사용 금지. |
+| C05 | The C05 composition study was discarded from the repository; its SHA-256 remains in the C05 prompt record · [프롬프트 기록](../redesign-production/imagegen-prompts/corporate-film-c05-v1.md) | 공식 해누리호는 19톤으로 표기된다. USV 페이지는 usvCom, USV20S, catamaran GIF를 직접 노출하지만 각 이미지의 모델·사양은 확인되지 않는다. usv-source.jpg는 USV20S 장면의 crop/resize처럼 보이나 계보와 모델은 미확인. study는 공식 source pixels를 보존하지 않았고 해누리호도 재그림했다. | final equipment fidelity 거절. 근거는 [equipment source pack](../redesign-production/equipment-sources/README.md)과 [manifest](../redesign-production/equipment-sources/manifest.json). |
 | C06 | The C06 composition study was discarded from the repository; its SHA-256 remains in the C06 prompt record · [프롬프트 기록](../redesign-production/imagegen-prompts/corporate-film-c06-v1.md) | FireFly6 VTOL과 LiDAR 제품명은 확인되지만 생성된 기체는 원본 사진을 보존하지 않은 재그림이며 정확한 기하·부품 배치는 확정할 수 없다. 특정 FireFly6/LiDAR 페어링 근거도 없다. | 거절: clean base 여부와 무관하게 최종 장비 스틸로 사용 금지. |
 | C07 | The C07 composition study was discarded from the repository; its SHA-256 remains in the C07 prompt record · [프롬프트 기록](../redesign-production/imagegen-prompts/corporate-film-c07-v1.md) | 사람 없는 공식 부이·계류 사진이 없고 TPRBM도 미확인이다. 생성된 float, solar panel, mast, cable 및 sensor housings는 실제 장비 원본과 비교할 근거가 없다. | 실제 장비 장면으로 사용 금지. 명확한 일반 과정 삽화로 표시할 때만 별도 검토 가능. |
 | C08 | The C08 composition study was discarded from the repository; its SHA-256 remains in the C08 prompt record · [프롬프트·출처·검수 기록](../redesign-production/imagegen-prompts/corporate-film-c08-v1.md) | BlueROV2와 RBR Solo-TU 공식 항목은 각각 확인되지만, 공식 ROV 이미지는 Heavy 8-thruster 배치를 증명하지 않으며 센서가 특정 계류선에 붙었다는 자료도 없다. 생성 그림은 이들을 한 설치처럼 배치했다. | 거절: ROV·센서 같은 실제 배치로 합성 금지. 증거 전에는 독립된 제품 컷만 허용. |
@@ -113,7 +113,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - C05–C08의 생성 스틸은 composition study only — rejected for final equipment fidelity 상태이며 저장소에서 삭제했다. SHA-256 provenance는 각 prompt 기록에 남겼고, 최종 제작에 사용하지 않는다.
 
 - C04의 SST·염분·chlorophyll 동시 적층 프레임. 한 장씩 교차 전환한다.
-- C05의 큰 원양선과 공식 USV 이미지와 다른 노란 쌍동선. 네 장비 composition study는 fidelity가 승인되기 전까지 최종 스틸로 사용하지 않는다.
+- C05 composition study는 USV 색상·선체 형태가 공식 자료와 모순이라서가 아니라, 공식 source pixels와 확인된 모델·탑재체를 보존하지 않았고 해누리호도 재그림했기 때문에 final fidelity에서 거절됐다.
 - C06의 이미지에 구워 넣은(mesh/point-cloud) 삼각 스캔 오버레이. clean base에도 장비 fidelity 승인은 부여되지 않았으며 원본 기체 cutout부터 다시 제작한다.
 
 ## 보존된 참고 문서
@@ -123,6 +123,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - [C09 lab still prompt and main-approved candidate](../redesign-production/imagegen-prompts/homepage-lab-equipment-v1.md)
 - [Film slot implementation brief](FILM-SLOT-PRODUCTION-BRIEF.md)
 - [장비 출처·모델·사용권 감사](../redesign-production/equipment-source-manifest.md)
+- [equipment source pack README](../redesign-production/equipment-sources/README.md) · [manifest](../redesign-production/equipment-sources/manifest.json)
 - [C05–C08 장비 정확성 gate](../redesign-production/EQUIPMENT-ACCURACY-GATE.md)
 - Generated still files were discarded from the repository; their SHA-256 provenance remains in the shot prompt records.
 - [C04 NASA crossfade 근거와 한계](../redesign-production/keyframes/corporate-film-data-layers-crossfade-v1.md)

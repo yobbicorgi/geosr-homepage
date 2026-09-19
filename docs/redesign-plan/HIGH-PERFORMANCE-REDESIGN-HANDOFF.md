@@ -6,11 +6,11 @@
 
 - 저장소: `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 브랜치: `redesign/production-2026-09-19`
-- 최신 커밋 기준: `dec5340 Add deterministic C02 C03 orbital approach frames`
+- 최신 커밋 기준: `64f7a6b86650c925aead7f3584b716d193ce51e5`
 - Downloads junction: `C:\Users\user\Downloads\GeoSR_Homepage` → `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
-- 로컬 미리보기: [http://127.0.0.1:18102/redesign-preview.html?lang=ko](http://127.0.0.1:18102/redesign-preview.html?lang=ko). 현재 `dist`를 제공하는 `python -m http.server 18102 --directory dist`가 응답하며 KO URL은 HTTP 200이다.
-- 현재 코드·문서·스틸 일부는 미커밋 변경이다. 이 기준 확인 시점에 최종 60초 회사 영상과 30초 AX 콘셉트 영상은 아직 생성·편집되지 않았고 commit/push도 하지 않았다. `ax-*-fast.mp4`는 제품 UI 원본 클립이며 완성 필름을 뜻하지 않는다.
-- 이전 handoff의 “새 디자인 보드 세 개를 먼저 만들고 페이지를 다시 구현” 지시는 stale 상태다. 현재 웹 구현을 되돌리거나 초기화하지 말고, 남은 영상 제작과 검수로 이어간다.
+- 공식 홈페이지: localhost의 [KO](http://127.0.0.1:18102/index.html?lang=ko) · [EN](http://127.0.0.1:18102/index.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/index.html?lang=ko) · [EN](http://192.168.6.85:18102/index.html?lang=en). AX 상세: localhost의 [KO](http://127.0.0.1:18102/ax-platform.html?lang=ko) · [EN](http://127.0.0.1:18102/ax-platform.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/ax-platform.html?lang=ko) · [EN](http://192.168.6.85:18102/ax-platform.html?lang=en). `dist/index.html`이 공식 홈 진입점이고 `redesign-preview.html`은 별도 디자인 미리보기다.
+- 최종 60초 회사 영상과 30초 AX 콘셉트 영상은 아직 생성·편집되지 않았다. `ax-*-fast.mp4`는 제품 UI 원본 클립이며 완성 필름을 뜻하지 않는다.
+- 이전 handoff의 “새 디자인 보드 세 개를 먼저 만들고 페이지를 다시 구현” 지시는 stale 상태다. 현재 공식 홈 미디어 연결을 보존하고, 우선순위에 따라 콘티와 데스크톱 웹디자인·스크롤 리듬을 다듬은 뒤 제작·검수 단계로 간다.
 
 ## 확정된 디자인·브랜드 기준
 
@@ -25,6 +25,18 @@
 ## 최신 연출 콘티 v2
 
 [FILM-STORYBOARD-DIRECTOR-v2.md](../redesign-production/FILM-STORYBOARD-DIRECTOR-v2.md)는 60초 회사 메인 필름과 별도 30초 AX Platform 필름의 최신 연출 기준이다. 아래의 기존 C01–C10/A01–A06 표와 타이밍·숏 분할이 다르면 v2 콘티가 우선한다. 이 문서의 출처·권리·지리·실제 화면 검수 기준과 웹 구현 상태는 계속 유효하다. v2는 장비 모델을 확정하지 않고 실제 source가 확보될 때 각 `SHOT ASSET`을 교체하는 방식으로 정의한다.
+
+## 현재 작업 우선순위
+
+이 순서는 다음 작업을 고르는 기준이며, 어느 단계도 완료됐다고 간주하지 않는다.
+
+1. **회사·AX 콘티:** 회사 60초와 AX 30초의 이야기·장면 목적·시간·전환을 각각 정리하고 검토한다.
+2. **데스크톱 전체 화면 영상 중심 웹디자인:** 첫 화면의 100svh 미디어 무대와 교체 가능한 영상/poster slot을 중심으로 공식 홈과 AX 진입을 다듬는다.
+3. **스크롤·전환 리듬:** 장면별 메시지와 스크롤 진입·전환·여백의 리듬을 정리한다.
+4. **장비 사실성 검수:** 장비 자료는 콘티에 이미 있는 shot의 외형·모델·운용 관계를 확인하는 보조 자료로만 쓴다. **장비 카탈로그 작성이나 장비별 장면 확장은 하지 않는다.** 미확인 사항은 pending으로 남긴다.
+5. **ImageGen 키프레임·향후 Higgsfield:** 앞의 콘티와 웹 흐름이 검토된 다음, 기존 shot에 필요한 프레임과 motion prompt를 연결한다. ImageGen은 허용된 배경·공간 표현만 만들고, 유료 Higgsfield 제작은 사용자 결제와 검토 후 메인이 직접 수행한다.
+
+기존 장비 근거·정확성 문서는 4번의 사실 확인 자료로 보존한다. 해당 문서의 목록을 새 페이지나 장면 분량으로 확장하지 않는다.
 
 ## 보존된 제작 상태 자료 — 타임라인은 v2 우선
 
@@ -92,7 +104,9 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 ## 현재 웹 구현과 필름 슬롯
 
-- [메인 미리보기 HTML](../../dist/redesign-preview.html)은 transparent overlay header와 전체 화면 100vh/100svh hero를 유지한다. `geosr-hero`는 `pending`이며 KO `메인 필름 제작 준비 중` / EN `Main film in preparation` 라벨이 보인다.
+- 공식 홈페이지는 [index.html](../../dist/index.html)이 진입점이며 [home.js](../../dist/home.js)와 [cinematic.css](../../dist/cinematic.css)가 콘텐츠와 화면을 구성한다. 현재 변경은 `hero-earth-00s-v4.png`를 메인 hero와 첫 관측 장면에 연결하고, 네 장면을 `Observation → Interpretation → Prediction → Action`으로 구성한다. media slot/poster hook과 경로는 유지한다: `assets/concepts/corporate-film/hero-earth-00s-v4.png`, `assets/analysis-lab-v1.webp`, `assets/satellite-layers-v3.png`, `assets/coastal-model-v3.png`.
+- 공식 홈의 첫 메인 필름은 전체 화면 100vh/100svh hero slot이다. 최종 영상은 아직 pending이며 KO `메인 필름 제작 준비 중` / EN `Main film in preparation` 상태를 유지한다. 네 장면의 이미지는 승인 poster/source 연결 지점이며 실제 영상이나 분석 결과를 뜻하지 않는다.
+- [메인 디자인 미리보기 HTML](../../dist/redesign-preview.html)은 별도 가안으로 보존한다. 공식 홈페이지의 현재 미디어와 라우팅 기준은 `index.html` 및 해당 renderer다. 내용을 복제해 별도 아키텍처를 만들거나 공식 연결을 미리보기 쪽으로 되돌리지 않는다.
 - 메인 페이지의 AX 콘셉트 필름은 실제 제품 증거 영역보다 먼저 오는 16:9 full-width pending slot이다. KO `영상 제작 준비 중` 라벨과 Discover/Predict/Monitor 실제 캡처 탭이 있다.
 - [AX 상세 페이지 shell](../../dist/ax-platform.html)은 콘텐츠를 [ax-v2.js](../../dist/ax-v2.js)가 렌더한다. 상단에는 100svh AX concept-film slot과 `AX CONCEPT FILM · 영상 제작 준비 중` 상태가 있고, 실제 제품 시퀀스와 아래 3열 원리 카드가 이어진다.
 - AX A01 v3 이미지는 현재 웹의 임시 poster로만 연결돼 있다. 이는 final film frame이나 최종 영상 승인 상태가 아니며, 실제 data/UI 결과를 나타내지 않는다.
@@ -103,19 +117,20 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
 
-**현재 키프레임 결정:** [ImageGen 키프레임 v2 기록](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)을 따른다. C02 위성 cutout 2장과 AX A01 v3 2장은 조건부 selected다. C03의 생성 지형은 거절됐으므로 결정론적 NASA frame만 사용한다. AX A01 v3는 임시 웹 poster이며 final film 승인이나 실제 data/UI 표현이 아니다.
+**기존 키프레임 상태 참고:** [ImageGen 키프레임 v2 기록](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)을 따른다. C02 위성 cutout 2장과 AX A01 v3 2장은 조건부 selected다. C03의 생성 지형은 거절됐으므로 결정론적 NASA frame만 사용한다. AX A01 v3는 임시 웹 poster이며 final film 승인이나 실제 data/UI 표현이 아니다. 이 자료의 존재가 현재 작업 우선순위를 앞당기지는 않는다.
 
 **영상 생성 준비도:** [FILM-GENERATION-READINESS-v1.md](../redesign-production/FILM-GENERATION-READINESS-v1.md) · [기계 판독 JSON](../redesign-production/FILM-GENERATION-READINESS-v1.json). 회사 필름은 33초 internal edit ready, 27초 source pending이며, AX 30초는 Overview poster fallback 조건으로 편집을 시작할 수 있다. Generation-ready 판정은 실제 현장·장비 자료, 사용권, 사실성 검토가 모두 승인됐다는 뜻이 아니다.
 
 **Fallback only:** 원본 자료가 확보되지 않은 경우에만 [Corporate film fallback A/B](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.md) · [기계 판독 JSON](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.json)을 대안으로 검토하며, 사용자가 A/B를 선택하기 전에는 이미지를 생성하지 않는다.
 
-1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 source는 [사용자 자료 요청서](../redesign-production/USER-SOURCE-REQUEST-KO.md)로 수집하고, 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입한다. 시작/끝 프레임과 모션 프롬프트는 유료 생성 전에 검토한다.
-2. 사용자가 키프레임 세트, 장비 표현, 지리, 색감, 전환을 수정할 수 있도록 유료 생성 전에 review contact sheet와 motion plan을 제시한다. 승인 전에는 다음 장면 제작으로 넘어가지 않는다.
-3. Higgsfield 유료 생성은 사용자가 결제한 뒤 진행한다. **메인이 직접 제작**하며 shot별로 start/end reference와 해당 motion prompt를 넣어 타임라인 순서대로 생성한다. 스킬이나 agent에 생성 실행을 위임하지 않는다.
-4. 각 shot의 초안 영상을 사용자에게 보여주고, 인접 shot의 경계/매치컷 검토 후 수정한다. C04 과학 자료와 C05–C08 장비/현장은 원자료와 프레임 단위로 확인한다.
-5. 메인 60초 rough cut을 먼저 검토하고 C10 루프를 확인한다. 별도로 AX 30초 rough cut을 검토하고 A06 → 실제 Discover 제품 화면 연결을 확인한다. 사용자는 매 checkpoint에서 장면을 바꾸거나 제작을 보류할 수 있다.
-6. 실제 영상 연결 뒤 KO/EN 본문, pending label 전환, 영상 fallback, 키보드·탭, 저모션, 링크, 자산 경로를 최종 검수한다.
-7. 전체 QA와 사용자 검토가 끝난 뒤에만 변경 파일을 정리해 commit한다. push는 commit과 최종 승인 후 수행한다. 현 상태에서는 commit/push하지 않는다.
+1. 회사 60초와 AX 30초 콘티의 이야기·장면 목적·시간·전환을 별도로 검토한다. 사용자는 이 단계에서 장면과 표현을 수정할 수 있다.
+2. 공식 홈과 AX의 데스크톱 전체 화면 미디어 구성을 검토한다. hero는 100svh를 유지하고 영상·poster 슬롯, 제목, pending 상태를 분리한다. 공식 홈의 현재 이미지 경로와 `data-media-poster` 연결은 보존한다.
+3. 스크롤에 따른 장면 진입, 미디어 전환, 타이포 reveal, 섹션 간 여백과 속도를 조정한다. 각 화면에서 한 가지 메시지가 먼저 읽히는지 사용자가 검토한다.
+4. 장비는 이미 정해진 shot의 외형·모델·운용 사실만 확인한다. 새 장비 카탈로그를 만들거나 장비별 shot을 추가하지 않는다. 근거가 없으면 해당 부분을 pending으로 남기고 장면을 확장해 채우지 않는다.
+5. 앞선 콘티와 웹 연출을 검토한 뒤에만 필요한 기존 shot의 start/end frame 및 motion prompt를 준비한다. ImageGen은 허용된 배경·공간 콘셉트에 한정한다. 시작/끝 프레임과 매치컷 계획은 다음 단계 전에 사용자에게 보여준다.
+6. Higgsfield 유료 생성은 사용자가 결제하고 프레임·모션을 검토한 뒤 진행한다. **메인이 직접 제작**하며 두 필름을 분리해 순서대로 만든다. 스킬이나 agent에 생성 실행을 위임하지 않는다.
+7. rough cut을 사용자에게 보여주고 회사 60초와 AX 30초를 각기 검토한다. C04 자료의 정확성, C10 loop, 실제 Discover/Predict/Monitor 화면 비율과 개인정보를 확인한다. 사용자는 매 checkpoint에서 수정하거나 보류할 수 있다.
+8. 최종 영상 연결 뒤 KO/EN, pending label 전환, 키보드·탭, 저모션, 링크, 자산 경로, desktop 폭과 console/network를 검수한다. 전체 QA를 통과하면 허가된 작업 브랜치에 commit/push하고, 원격 동기화와 clean state를 재검증한다.
 
 ## 최종 QA 체크리스트
 
@@ -123,7 +138,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - C04 배경 지리·결측·층 순서 및 영상 60초 → 00초 완전 일치; C10 실제 UI 순차 컷; AX A06과 아래 Discover 연결.
 - 브라우저 콘솔 오류 0, 이미지/영상 broken reference 0, 영상 로딩/정지 포스터 fallback 확인.
 - `git diff --check`, 수정 JavaScript `node --check`, KO/EN 전환, keyboard tab semantics/focus, prefers-reduced-motion 확인.
-- diff와 작업 파일을 main review에 보여준 뒤 승인 대기. 그 전에 commit/push하지 않는다.
+- diff와 QA 결과를 main review에 공유한다. 필수 QA 통과 후 허가된 작업 브랜치에 commit/push한다.
 - 웹 메타데이터·접근성 QA: [감사 문서](../redesign-production/WEB-METADATA-ACCESSIBILITY-AUDIT-v1.md), [검증 스크립트](../../scripts/verify_metadata_accessibility.mjs).
 
 ## 거절된 표현 — 다시 사용하지 않음

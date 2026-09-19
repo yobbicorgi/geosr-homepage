@@ -106,7 +106,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 **영상 생성 준비도:** [FILM-GENERATION-READINESS-v1.md](../redesign-production/FILM-GENERATION-READINESS-v1.md) · [기계 판독 JSON](../redesign-production/FILM-GENERATION-READINESS-v1.json). 회사 필름은 33초 internal edit ready, 27초 source pending이며, AX 30초는 Overview poster fallback 조건으로 편집을 시작할 수 있다. Generation-ready 판정은 실제 현장·장비 자료, 사용권, 사실성 검토가 모두 승인됐다는 뜻이 아니다.
 
-1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입하고, 시작/끝 프레임과 모션 프롬프트를 사용자가 유료 생성 전에 검토한다.
+1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 source는 [사용자 자료 요청서](../redesign-production/USER-SOURCE-REQUEST-KO.md)로 수집하고, 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입한다. 시작/끝 프레임과 모션 프롬프트는 유료 생성 전에 검토한다.
 2. 사용자가 키프레임 세트, 장비 표현, 지리, 색감, 전환을 수정할 수 있도록 유료 생성 전에 review contact sheet와 motion plan을 제시한다. 승인 전에는 다음 장면 제작으로 넘어가지 않는다.
 3. Higgsfield 유료 생성은 사용자가 결제한 뒤 진행한다. **메인이 직접 제작**하며 shot별로 start/end reference와 해당 motion prompt를 넣어 타임라인 순서대로 생성한다. 스킬이나 agent에 생성 실행을 위임하지 않는다.
 4. 각 shot의 초안 영상을 사용자에게 보여주고, 인접 shot의 경계/매치컷 검토 후 수정한다. C04 과학 자료와 C05–C08 장비/현장은 원자료와 프레임 단위로 확인한다.

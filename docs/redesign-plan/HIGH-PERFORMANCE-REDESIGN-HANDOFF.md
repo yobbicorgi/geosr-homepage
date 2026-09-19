@@ -99,12 +99,15 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - 이 상태 문구는 최종 승인 영상이 연결되고 로딩 확인되기 전까지 유지한다. 이미 존재하는 포스터나 AX fast clips를 완성 콘셉트 영상으로 표시하지 않는다.
 - 현재 미리보기 200 응답은 서버 연결만 확인한 것이다. 최종 업데이트 후 아래 QA를 다시 수행한다.
 - [웹 구현·자산 완료도 감사](../redesign-production/WEB-COMPLETION-AUDIT-v1.md)는 현재 구현 상태와 남은 검증 항목의 인계 자료다.
+- canonical 및 og:image는 운영 URL과 crop-safe 공유 자산이 확정된 뒤에만 설정한다.
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
 
 **현재 키프레임 결정:** [ImageGen 키프레임 v2 기록](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)을 따른다. C02 위성 cutout 2장과 AX A01 v3 2장은 조건부 selected다. C03의 생성 지형은 거절됐으므로 결정론적 NASA frame만 사용한다. AX A01 v3는 임시 웹 poster이며 final film 승인이나 실제 data/UI 표현이 아니다.
 
 **영상 생성 준비도:** [FILM-GENERATION-READINESS-v1.md](../redesign-production/FILM-GENERATION-READINESS-v1.md) · [기계 판독 JSON](../redesign-production/FILM-GENERATION-READINESS-v1.json). 회사 필름은 33초 internal edit ready, 27초 source pending이며, AX 30초는 Overview poster fallback 조건으로 편집을 시작할 수 있다. Generation-ready 판정은 실제 현장·장비 자료, 사용권, 사실성 검토가 모두 승인됐다는 뜻이 아니다.
+
+**Fallback only:** 원본 자료가 확보되지 않은 경우에만 [Corporate film fallback A/B](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.md) · [기계 판독 JSON](../redesign-production/CORPORATE-FILM-FALLBACK-A-B-v1.json)을 대안으로 검토하며, 사용자가 A/B를 선택하기 전에는 이미지를 생성하지 않는다.
 
 1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 source는 [사용자 자료 요청서](../redesign-production/USER-SOURCE-REQUEST-KO.md)로 수집하고, 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입한다. 시작/끝 프레임과 모션 프롬프트는 유료 생성 전에 검토한다.
 2. 사용자가 키프레임 세트, 장비 표현, 지리, 색감, 전환을 수정할 수 있도록 유료 생성 전에 review contact sheet와 motion plan을 제시한다. 승인 전에는 다음 장면 제작으로 넘어가지 않는다.
@@ -121,6 +124,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - 브라우저 콘솔 오류 0, 이미지/영상 broken reference 0, 영상 로딩/정지 포스터 fallback 확인.
 - `git diff --check`, 수정 JavaScript `node --check`, KO/EN 전환, keyboard tab semantics/focus, prefers-reduced-motion 확인.
 - diff와 작업 파일을 main review에 보여준 뒤 승인 대기. 그 전에 commit/push하지 않는다.
+- 웹 메타데이터·접근성 QA: [감사 문서](../redesign-production/WEB-METADATA-ACCESSIBILITY-AUDIT-v1.md), [검증 스크립트](../../scripts/verify_metadata_accessibility.mjs).
 
 ## 거절된 표현 — 다시 사용하지 않음
 

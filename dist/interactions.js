@@ -63,15 +63,29 @@
         rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,transform:'translate3d(0,24px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:620,delay:index*90,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'}));
       }
     }
-    document.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
-      const next=button.dataset.credentialCategory;if(next===category||changingCategory)return;
+    const categoryTabs=[...document.querySelectorAll('[data-credential-category]')];
+    const categoryPanel=document.querySelector('#credential-stage');
+    function activateCategory(button){
+      if(changingCategory)return;
+      const next=button.dataset.credentialCategory;
+      categoryTabs.forEach(tab=>{const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1});
+      categoryPanel?.setAttribute('aria-labelledby',button.id);
+      if(next===category)return;
       changingCategory=true;
-      document.querySelectorAll('[data-credential-category]').forEach(tab=>tab.setAttribute('aria-selected',String(tab===button)));
       const update=()=>{rail.getAnimations().forEach(animation=>animation.cancel());category=next;renderCredentialGroup();changingCategory=false};
       if(reduced.matches){update();return}
       const leave=rail.animate([{opacity:1,transform:'translate3d(0,0,0)',filter:'blur(0)'},{opacity:0,transform:'translate3d(0,-8px,0) scale(.99)',filter:'blur(2px)'}],{duration:180,easing:'cubic-bezier(.4,0,1,1)',fill:'both'});
       leave.finished.catch(()=>{}).then(update);
-    }));
+    }
+    categoryTabs.forEach((button,index)=>{
+      button.addEventListener('click',()=>activateCategory(button));
+      button.addEventListener('keydown',event=>{
+        if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+        event.preventDefault();if(changingCategory)return;
+        const next=event.key==='Home'?0:event.key==='End'?categoryTabs.length-1:(index+(event.key==='ArrowRight'?1:categoryTabs.length-1))%categoryTabs.length;
+        categoryTabs[next].focus();activateCategory(categoryTabs[next]);
+      });
+    });
     rail.addEventListener('keydown',event=>{
       const cards=[...rail.querySelectorAll('.credential-card')];if(!cards.length)return;
       const current=Math.max(0,cards.indexOf(document.activeElement));

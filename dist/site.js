@@ -11,7 +11,7 @@ const disciplines=[['현장·정밀 관측','Precision observation','현장 조�
 const types=[['business','사업','Projects'],['research','연구','Research'],['academic','학술','Publications'],['notice','공지','Notices'],['press','언론','Media'],['newsletter','뉴스레터','Newsletters']];
 const posts=[['business-1994','business','2024-12-09','연안침식 정밀조사 용역','Detailed coastal erosion survey'],['research-3059','research','2026-04-08','한국형 연안재해 발생요인 예측기술 개발','Prediction technology for coastal hazard drivers in Korea'],['academic-3093','academic','2026-09-09','Establishment of the Erosion Control Line from Long-Term Beach Survey Data on the Macro-Tidal Coast','Establishment of the Erosion Control Line from Long-Term Beach Survey Data on the Macro-Tidal Coast'],['notice-3091','notice','2026-08-20','해양수산 신기술 인증','Marine and fisheries new technology certification'],['press-1440','press','2022-03-25','ICT로 먹이 주고 양식장 관리… “바다가 미래” 6000명 발길','ICT-powered aquaculture: “The ocean is the future”'],['newsletter-1542','newsletter','2023-05-19','GeoSR 뉴스레터 샘터 반기 특별판 vol.2','GeoSR Saemteo newsletter — special edition vol. 2']];
 types.forEach(([id,k,e])=>posts.push([`mock-${id}`,id,'—',`${k} 게시글 자리`,`${e} article placeholder`,true]));
-function head(){return `<a class="skip" href="#main">${T('본문으로 이동','Skip to content')}</a><header class="${route==='index'?'':'solid'}"><a class="brand" href="${U('index')}"><img src="assets/logo.png" alt="GeoSR"></a><nav aria-label="${T('주 메뉴','Main navigation')}">${nav.map(([r,k,e])=>`<a href="${U(r)}" ${route===r?'aria-current="page"':''}>${T(k,e)}</a>${r==='ax-platform'?'<a href="https://www.geo-dap.com/" target="_blank" rel="noopener">GeoDAP ↗</a>':''}` ).join('')}</nav><div class="header-actions"><button id="language" aria-label="${T('Switch to English','한국어로 전환')}">${T('EN','KR')}</button><a href="${U('contact')}" class="contact-link">${T('문의하기','Contact')}</a><button id="menu" aria-expanded="false" aria-label="${T('메뉴 열기','Open menu')}">☰</button></div></header>`}
+function head(){return `<a class="skip" href="#main">${T('본문으로 이동','Skip to content')}</a><header class="${route==='index'?'':'solid'}"><a class="brand" href="${U('index')}"><img src="assets/logo.png" alt="GeoSR"></a><nav id="primary-navigation" aria-label="${T('주 메뉴','Main navigation')}">${nav.map(([r,k,e])=>`<a href="${U(r)}" ${route===r?'aria-current="page"':''}>${T(k,e)}</a>${r==='ax-platform'?'<a href="https://www.geo-dap.com/" target="_blank" rel="noopener">GeoDAP ↗</a>':''}` ).join('')}</nav><div class="header-actions"><button id="language" aria-label="${T('영어로 전환','Switch to Korean')}">${T('EN','KR')}</button><a href="${U('contact')}" class="contact-link">${T('문의하기','Contact')}</a><button id="menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="${T('메뉴 열기','Open menu')}">☰</button></div></header>`}
 function foot(){return modernFooter()}
 
 function title(n,k,e,dk='',de=''){return `<section class="page-title"><p class="eyebrow">${n}</p><h1>${T(k,e)}</h1><p>${T(dk,de)}</p></section>`}
@@ -21,19 +21,65 @@ function archive(){const news=route==='news',allowed=news?['notice','press','new
 const eq=[['1937','survey','스테레오 카메라 수중 드론','Stereo-camera underwater drone','BlueROV2','equipment-rov.png'],['1176','lab','유도결합플라즈마 질량분석기','Inductively coupled plasma mass spectrometer','ICP-MS · iCAP-RQ','equipment-icp.png'],['1938','vessel','해누리호','Haenuri survey vessel','Haenuri','equipment-vessel.jpg']];
 function equipment(){const c=P.get('category')||'all';return `${title('FIELD CAPABILITIES','관측·분석 장비<br>및 조사선','Field capabilities.<br>Supporting the science.','관측·실험·선박의 대표 장비를 소개합니다','Representative survey equipment, laboratory instruments and vessels.')}<section class="section"><div class="filters">${[['all','전체','All'],['survey','조사','Survey'],['lab','실험','Laboratory'],['vessel','선박','Vessels']].map(v=>`<a class="${c===v[0]?'active':''}" href="${U('equipment',{category:v[0]})}">${T(v[1],v[2])}</a>`).join('')}</div><div class="equipment-grid">${eq.filter(v=>c==='all'||c===v[1]).map(v=>`<article>${img(v[5],T(v[2],v[3]))}<p class="eyebrow">${v[4]}</p><h2>${T(v[2],v[3])}</h2><details><summary>${T('장비 정보','Equipment information')}</summary><p>${v[4]}</p><p>${T('기존 홈페이지 소개 항목입니다 상세 제원은 원자료 확인 후 추가하는 목업 영역입니다','An entry from the existing website. Detailed specifications are reserved for verified source data.')}</p></details></article>`).join('')}</div></section>`}
 function contact(){return `${title('CONTACT','사업 및 기술 문의','Tell us about<br>your next question.','기술 협력부터 사업 상담까지','From technology collaboration to project enquiries.')}<section class="section contact-layout"><div><h2>${T('문의 안내','Connect with GeoSR.')}</h2><p><a href="mailto:admin@geosr.com">admin@geosr.com ↗</a><br><a href="tel:+823151805700">031–5180–5700</a></p><span class="badge">${T('양식 목업 · 전송되지 않습니다','DEMO FORM · NOTHING IS SENT')}</span></div><form id="enquiry"><label>${T('문의 유형','Enquiry type')}<select><option>${T('기술 협력','Technology collaboration')}</option><option>${T('사업 상담','Project enquiry')}</option><option>${T('기타','Other')}</option></select></label><div class="form-pair"><label>${T('이름','Name')}<input required autocomplete="name"></label><label>${T('회사·기관','Organisation')}<input autocomplete="organization"></label></div><label>${T('이메일','Email')}<input type="email" required autocomplete="email"></label><label>${T('문의 내용','Message')}<textarea rows="5" required></textarea></label><button class="dark-button">${T('목업 동작 확인','Preview form interaction')}</button><p role="status" id="form-status"></p></form></section>`}
-function browserTitle(){
- const pageTitles={index:['환경 인텔리전스','Environmental Intelligence'],business:['기술과 솔루션','Expertise'],research:['연구개발 및 주요 수행실적','Research and projects'],news:['GeoSR 소식','GeoSR News'],company:['GeoSR 소개','About GeoSR'],equipment:['관측·분석 장비 및 조사선','Survey equipment and vessels'],contact:['사업 및 기술 문의','Business and technology enquiries'],'ax-platform':['AX Platform','AX Platform'],platforms:['AX Platform','AX Platform']};
- let label=pageTitles[route]||['자연환경을 연구하는 기술','Environmental science and technology'];
- if(route==='business'&&P.has('id')){const id=String(P.get('id'));const item=tech.find(v=>v.id===Number(id));label=item?[item.k,item.e]:[`기술 상세 · ${id}`,`Technology detail · ${id}`]}
- if(['research','news'].includes(route)&&P.has('id')){const allowed=route==='news'?['notice','press','newsletter']:['business','research','academic'];const item=posts.find(v=>v[0]===P.get('id')&&allowed.includes(v[1]));label=item?[item[3],item[4]]:[T('자료를 찾을 수 없습니다','Content not found'),T('자료를 찾을 수 없습니다','Content not found')]}
- if(route==='equipment'&&P.has('category')){const categoryTitles={survey:['조사 장비','Survey equipment'],lab:['실험 장비','Laboratory equipment'],vessel:['조사선','Survey vessels']};label=categoryTitles[P.get('category')]||label}
- return `${T(...label)} | GeoSR`;
+const metadataConfig={
+ "index":{"title":["환경 인텔리전스","Environmental Intelligence"],"description":["해양·환경 분야의 관측, 분석, 예측 기술과 연구를 소개합니다.","Explore GeoSR expertise in observation, analysis and prediction across marine and environmental work."]},
+ "business":{"title":["기술과 솔루션","Expertise"],"description":["관측, 환경 분석, 수치모델, AI와 위성·공간정보 등 GeoSR의 전문 기술을 살펴봅니다.","Explore GeoSR capabilities in observation, environmental analysis, modelling, AI and satellite or spatial data."]},
+ "research":{"title":["연구개발 및 주요 수행실적","Research and projects"],"description":["GeoSR의 연구개발, 주요 수행실적과 학술 자료를 확인할 수 있습니다.","Explore GeoSR research, selected projects and publications."]},
+ "news":{"title":["GeoSR 소식","GeoSR News"],"description":["GeoSR의 공지, 언론 소식과 뉴스레터를 확인할 수 있습니다.","Read notices, media coverage and newsletters from GeoSR."]},
+ "company":{"title":["GeoSR 소개","About GeoSR"],"description":["GeoSR의 회사 개요, 전문 분야, 인증·면허·지식재산권과 기업 정보를 소개합니다.","Learn about GeoSR, its fields of expertise, credentials and company information."]},
+ "equipment":{"title":["관측·분석 장비 및 조사선","Survey and analysis equipment"],"description":["현장 관측과 환경 분석에 사용하는 대표 장비와 조사선을 소개합니다.","Explore selected equipment for field observation and environmental analysis."]},
+ "contact":{"title":["사업 및 기술 문의","Business and technical enquiries"],"description":["GeoSR 연락처와 사업·기술 문의 안내를 확인합니다.","Find GeoSR contact details and information for business and technical enquiries."]},
+ "ax-platform":{"title":["AX Platform","AX Platform"],"description":["해양·환경 분야의 변화를 탐지하고 예측하며 모니터링하는 GeoSR AX Platform을 소개합니다.","Discover GeoSR AX Platform for exploring change through discovery, prediction and monitoring in marine and environmental contexts."]},
+ "platforms":{"title":["AX Platform","AX Platform"],"description":["해양·환경 분야의 변화를 탐지하고 예측하며 모니터링하는 GeoSR AX Platform을 소개합니다.","Discover GeoSR AX Platform for exploring change through discovery, prediction and monitoring in marine and environmental contexts."]}
+};
+function resolvePageMetadata(){
+ const base=metadataConfig[route]||metadataConfig.index;
+ let titlePair=base.title,descriptionPair=base.description;
+ if(route==="business"&&P.has("id")){
+  const id=String(P.get("id")),item=tech.find(v=>v.id===Number(id));
+  if(item){titlePair=[item.k,item.e];descriptionPair=[item.dk,item.de]}
+  else{
+   const solution=window.siteContent?.solutions?.find(v=>v.id==="solution-"+id);
+   if(solution){titlePair=[solution.title,techEnglish[id]||"Technology detail "+id];descriptionPair=["GeoSR의 전문 기술과 관련 정보를 소개합니다.","An overview of GeoSR expertise and related information."]}
+   else{titlePair=["기술 상세 · "+id,"Technology detail "+id];descriptionPair=["GeoSR의 전문 기술 상세 정보를 확인합니다.","View details about this GeoSR capability."]}
+  }
+ }
+ if(["research","news"].includes(route)&&P.has("id")){
+  const allowed=route==="news"?["notice","press","newsletter"]:["business","research","academic"];
+  const item=posts.find(v=>v[0]===P.get("id")&&allowed.includes(v[1]));
+  if(item){titlePair=[item[3],item[4]];descriptionPair=item[5]?["게시글 콘텐츠를 위한 목업 자리입니다. 실제 본문 자료는 포함되지 않습니다.","This is a placeholder for article content; the full source record is not included."]:["선택한 GeoSR 연구·소식 자료의 게시 정보를 확인합니다.","View the selected GeoSR research or news record."]}
+  else{titlePair=["자료를 찾을 수 없습니다","Content not found"];descriptionPair=["요청한 자료를 찾을 수 없습니다.","The requested record could not be found."]}
+ }
+ if(route==="equipment"&&P.has("category")){
+  const categories={survey:[["조사 장비","Survey equipment"],["현장 조사와 관측에 활용하는 대표 조사 장비를 소개합니다.","Explore selected equipment used for field surveys and observation."]],lab:[["실험 장비","Laboratory equipment"],["환경 분석에 사용하는 대표 실험 장비를 소개합니다.","Explore selected equipment used in environmental analysis."]],vessel:[["조사선","Survey vessels"],["해양 현장 조사에 활용하는 조사선을 소개합니다.","Explore survey vessels used in marine field work."]]};
+  const category=categories[P.get("category")];
+  if(category){titlePair=category[0];descriptionPair=category[1]}
+ }
+ return {title:T(...titlePair)+" | GeoSR",description:T(...descriptionPair),locale:en?"en_US":"ko_KR"};
 }
-document.documentElement.lang=L;document.body.className=route==='index'?'home-page':(['ax-platform','platforms'].includes(route)&&!P.has('service')?'inner-page ax-home':'inner-page');document.title=browserTitle();document.body.innerHTML=head()+`<main id="main">${({index:home,business,research:archive,news:archive,platforms:window.axPage,'ax-platform':window.axPage,equipment,company:companyPage,contact}[route]||home)()}</main>`+foot();
-document.querySelector('#language').addEventListener('click',()=>{P.set('lang',en?'ko':'en');location.href=location.pathname+'?'+P+location.hash});document.querySelector('#menu').addEventListener('click',e=>{const b=e.currentTarget,o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);document.querySelector('nav').classList.toggle('open',o)});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('nav').classList.remove('open');document.querySelector('#menu').setAttribute('aria-expanded','false')}});
+function setMeta(attribute,name,value){
+ let meta=document.head.querySelector('meta['+attribute+'="'+name+'"]');
+ if(!meta){meta=document.createElement("meta");meta.setAttribute(attribute,name);document.head.append(meta)}
+ meta.content=value;
+}
+function applyPageMetadata(){
+ const metadata=resolvePageMetadata();
+ document.title=metadata.title;
+ setMeta("name","description",metadata.description);
+ setMeta("property","og:type","website");
+ setMeta("property","og:site_name","GeoSR");
+ setMeta("property","og:title",metadata.title);
+ setMeta("property","og:description",metadata.description);
+ setMeta("property","og:locale",metadata.locale);
+ setMeta("name","twitter:card","summary");
+ setMeta("name","twitter:title",metadata.title);
+ setMeta("name","twitter:description",metadata.description);
+}
+document.documentElement.lang=L;document.body.className=route==='index'?'home-page':(['ax-platform','platforms'].includes(route)&&!P.has('service')?'inner-page ax-home':'inner-page');document.body.innerHTML=head()+`<main id="main" tabindex="-1">${({index:home,business,research:archive,news:archive,platforms:window.axPage,'ax-platform':window.axPage,equipment,company:companyPage,contact}[route]||home)()}</main>`+foot();applyPageMetadata();
+document.querySelector('#language').addEventListener('click',()=>{P.set('lang',en?'ko':'en');location.href=location.pathname+'?'+P+location.hash});document.querySelector('#menu').addEventListener('click',e=>{const b=e.currentTarget,o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(o));b.setAttribute('aria-label',T(o?'메뉴 닫기':'메뉴 열기',o?'Close menu':'Open menu'));document.querySelector('#primary-navigation').classList.toggle('open',o)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const b=document.querySelector('#menu');if(b.getAttribute('aria-expanded')==='true'){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label',T('메뉴 열기','Open menu'));document.querySelector('#primary-navigation').classList.remove('open')}}});
 document.querySelector('#enquiry')?.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#form-status').textContent=T('목업 동작을 확인했습니다 · 내용은 전송·저장되지 않았습니다','Prototype interaction complete. Nothing has been sent or stored.')});
 const techEnglish={15:'Estuarine and river processes',46:'Integrated aquatic modelling',47:'Marine spatial planning',48:'Marine use consultation and impact assessment',84:'Marine ecosystem conservation and monitoring',50:'Marine litter and microplastics',51:'Living coastlines',52:'Ecosystem, harmful algal bloom and microbial modelling',53:'Coastal erosion monitoring',54:'Coastal hazard monitoring and vulnerability assessment',55:'Hazard and disaster prediction',56:'Satellite image processing and analysis',57:'Automated seismic survey data processing',58:'CCTV image processing and analysis',59:'Image-based marine organism detection',60:'Big data infrastructure',61:'Artificial intelligence',62:'Digital site information for offshore wind',63:'Uncrewed surface observation',64:'UAV photogrammetry and airborne LiDAR',65:'Real-time ocean forecasting systems'};
-fetch('content.json').then(r=>r.json()).then(data=>{window.siteContent=data;const target=document.querySelector('#tech-index');if(target){target.innerHTML=data.solutions.map(x=>{const id=String(x.id).replace('solution-','');return `<a href="${U('business',{id})}">${E(en?techEnglish[id]:x.title)} <span>${tech.some(v=>v.id===Number(id))?'↗':T('목업 ↗','DEMO ↗')}</span></a>`}).join('')}if(route==='business'&&P.has('id')&&!tech.some(x=>x.id===Number(P.get('id')))){const id=String(P.get('id'));const item=data.solutions.find(x=>x.id===`solution-${id}`);if(item){const label=en?(techEnglish[id]||`Technology detail · ${id}`):item.title;document.querySelector('.page-title h1').textContent=label;document.title=`${label} | GeoSR`}}}).catch(()=>{});
-document.querySelector('meta[name="description"]').content=T('현장 관측, 환경 분석, 수치모델, AI, 위성과 데이터 시스템을 연결하는 GeoSR의 기술과 연구','GeoSR expertise and research connecting field observation, environmental analysis, numerical modelling, AI, satellite imagery and data systems.');
+fetch('content.json').then(r=>r.json()).then(data=>{window.siteContent=data;const target=document.querySelector('#tech-index');if(target){target.innerHTML=data.solutions.map(x=>{const id=String(x.id).replace('solution-','');return `<a href="${U('business',{id})}">${E(en?techEnglish[id]:x.title)} <span>${tech.some(v=>v.id===Number(id))?'↗':T('목업 ↗','DEMO ↗')}</span></a>`}).join('')}if(route==='business'&&P.has('id')&&!tech.some(x=>x.id===Number(P.get('id')))){const id=String(P.get('id'));const item=data.solutions.find(x=>x.id===`solution-${id}`);if(item){const label=en?(techEnglish[id]||`Technology detail · ${id}`):item.title;document.querySelector('.page-title h1').textContent=label;applyPageMetadata()}}}).catch(()=>{});
+
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.section-heading,.spotlight-grid,.platform-copy,.research-home .records,.closing>div').forEach(el=>{el.classList.add('reveal');observer.observe(el)})}

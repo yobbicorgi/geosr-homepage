@@ -1,0 +1,760 @@
+{
+  "version": "1.0.0",
+  "status": "FALLBACK_ONLY_NOT_SELECTED",
+  "userChoiceRequired": true,
+  "totalFilmSeconds": 60,
+  "authority": "Fallback only for 27s C05–C10 gap. FILM-GENERATION-READINESS-v1 and FILM-STORYBOARD-DIRECTOR-v2 remain primary; these plans do not override source priority, rights or factual review.",
+  "gap": {
+    "startSeconds": 24,
+    "endSeconds": 51,
+    "durationSeconds": 27,
+    "scenes": [
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ]
+  },
+  "sharedRules": {
+    "format": "16:9 desktop",
+    "doNotGenerateUntilUserSelects": true,
+    "noPeople": true,
+    "noFakeUI": true,
+    "noFakeGeography": true,
+    "C03": "Deterministic NASA geography only.",
+    "C02": "Generic transparent concept cutout over unchanged NASA Earth.",
+    "UI": "Actual approved source clips only; preserve pixels, ratio and source speed.",
+    "loop": "C12 final frame must exactly match C01 H01 frame/crop/grade.",
+    "captions": "All captions/credit/concept labels added separately in post, never image-generated.",
+    "rights": "Internal readiness is not a publication license."
+  },
+  "planA": {
+    "name": "Source-based editorial fallback",
+    "fallbackOnly": true,
+    "summary": "Re-edit only deterministic NASA geography, the already approved official C04 data plates and actual AX clips. Explicitly disclose no field/lab footage in 24–51s; do not imply a real operation.",
+    "segments": [
+      {
+        "id": "C05",
+        "p": "Extend coastal geography reference without depicting a ship, USV or field operation.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-24s-v1.png"
+        ],
+        "edit": "Hold the exact 24s coastal frame for six seconds. Use at most a 1.5% center-safe editorial push; do not invent intermediate geography.",
+        "camera": "Full 16:9 frame; keep all important coast/islands inside central 90%, no crop.",
+        "in": "Short dissolve from C04d on the same accepted 24s coast frame.",
+        "out": "Hard cut to deterministic 15s camera anchor; state that the edit changes reference frame, not actual field location.",
+        "caption": "At 24.0–25.5 add separate post text: “현장 촬영 자료 없음 · NASA 지리자료·공식 환경자료·실제 AX 화면 재편집”. NASA image is historical geography, not a live view.",
+        "motion": "Edit supplied 24s NASA-derived frame for six seconds. Lock every coast and Earth pixel. Only a 0–1.5% center-safe push and short dissolve are allowed; no generated pixels, vessel or live observation.",
+        "negative": [
+          "No ship/USV, harbor operation, measurement, scan effect, invented site or live-satellite claim."
+        ],
+        "timecode": "24.0–30.0",
+        "startSeconds": 24,
+        "endSeconds": 30,
+        "internalReadiness": "READY_WITH_COMPOSITE"
+      },
+      {
+        "id": "C06",
+        "p": "Use deterministic Korea/NW Pacific camera-path references in place of field-sampling footage.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-15s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-18s-v1.png"
+        ],
+        "edit": "Hold the exact 15s frame 30.0–32.5, then hard-cut to the exact 18s frame 32.5–35.0. No synthetic in-between.",
+        "camera": "Full 2560×1440 in 16:9; no crop/warp. Keep Korea, Japan, east China coast and NW Pacific within central 90%.",
+        "in": "Hard cut from C05's coast frame; no claim of drone or surface movement.",
+        "out": "0.25s whole-frame dissolve into SST plate.",
+        "caption": "Separate label: “NASA 기반 결정론적 지리·카메라 reference”. Never call it field footage or a survey result.",
+        "motion": "Sequence the supplied 15s and 18s deterministic NASA-texture frames as independent source anchors. Hold, then hard-cut; no generated motion/geography or crop.",
+        "negative": [
+          "No spacecraft after the approach reference, vessel, UAV, field crew, new map, or observation result."
+        ],
+        "timecode": "30.0–35.0",
+        "startSeconds": 30,
+        "endSeconds": 35,
+        "internalReadiness": "READY_WITH_COMPOSITE"
+      },
+      {
+        "id": "C07",
+        "p": "Revisit the exact approved monthly SST plate as source visualization, not new measurement.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png"
+        ],
+        "edit": "Hold full frame five seconds; use 0.25s whole-frame opacity dissolves only. Data plate is a unit.",
+        "camera": "Locked BBOX, full 16:9 source, no crop/parallax/data movement.",
+        "in": "Dissolve from C06 geography anchor.",
+        "out": "Crossfade to Aquarius; no overlap showing both layers.",
+        "caption": "Post caption: “MODIS Aqua SST · monthly · 2012-08 · °C”. No new values or legend.",
+        "motion": "Show the exact approved SST source plate. Keep every pixel/color/coverage fixed; fade only the complete frame.",
+        "negative": [
+          "No temperature values, altered colormap, smoothing or generated result."
+        ],
+        "timecode": "35.0–40.0",
+        "startSeconds": 35,
+        "endSeconds": 40,
+        "internalReadiness": "READY_WITH_COMPOSITE"
+      },
+      {
+        "id": "C08",
+        "p": "Show the approved coarse Aquarius salinity visualization without disguising resolution.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png"
+        ],
+        "edit": "Hold exact full-frame plate four seconds and crossfade sequentially from SST and onward to chlorophyll. No added blur/interpolation.",
+        "camera": "Full 16:9, same BBOX/footprint; no crop, sharpening or additional smoothing.",
+        "in": "Single-layer crossfade from SST.",
+        "out": "Single-layer crossfade to chlorophyll.",
+        "caption": "Post caption: “Aquarius salinity · monthly · 2012-08 · psu”; note coarse source and derived color display, not measurement interpolation.",
+        "motion": "Present exact Aquarius source frame full-screen. Preserve native coarse pattern and mask; opacity transition only.",
+        "negative": [
+          "No fake high-resolution appearance, new isolines or invented salinity values."
+        ],
+        "timecode": "40.0–44.0",
+        "startSeconds": 40,
+        "endSeconds": 44,
+        "internalReadiness": "READY_WITH_COMPOSITE"
+      },
+      {
+        "id": "C09",
+        "p": "Show the official daily MODIS Aqua L2 chlorophyll swath with observed gaps intact.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png"
+        ],
+        "edit": "Hold exact approved plate four seconds; fade whole frame only and do not animate its mask.",
+        "camera": "Full 16:9 and original footprint; retain transparent no-data gaps.",
+        "in": "Crossfade from salinity, without layer stacking.",
+        "out": "Fade to actual AX clip sampler at 48.0.",
+        "caption": "Post caption: “MODIS Aqua L2 chlorophyll-a · daily swath · 2012-08-01 · mg/m³”; gaps mean unobserved coverage.",
+        "motion": "Hold the exact plate and source pixels fixed. Fade only the entire frame at its boundaries; fill nothing.",
+        "negative": [
+          "No filled gaps, simultaneous-observation claim or generated concentration field."
+        ],
+        "timecode": "44.0–48.0",
+        "startSeconds": 44,
+        "endSeconds": 48,
+        "internalReadiness": "READY_WITH_COMPOSITE"
+      },
+      {
+        "id": "C10",
+        "p": "Bridge with existing actual AX screen captures; no actual laboratory source is available.",
+        "assets": [
+          "dist/assets/films/ax-discover-fast.mp4",
+          "dist/assets/films/ax-predict-fast.mp4",
+          "dist/assets/films/ax-monitor-fast.mp4"
+        ],
+        "edit": "48–49 Discover source 0–1s; 49–50 Predict source 0–1s; 50–51 Monitor source 0–1s. C11 uses the non-overlapping 1–2.5s of each same clip.",
+        "camera": "Each exact 1280×720 source, full 16:9, native speed; no crop or overlays.",
+        "in": "Hard cut from data plate to actual capture. Use separate slate/voiceover for context, not text over UI.",
+        "out": "Continue to C11 with the later non-overlapping portions; these are separate examples.",
+        "caption": "No overlay on UI. External disclosure: “실제 AX 화면 캡처 · 표시 상태는 촬영 당시”.",
+        "motion": "Edit the first second of each approved source clip in Discover, Predict, Monitor order at native speed. Preserve every UI pixel, full frame and source motion; reserve source 1–2.5s for C11.",
+        "negative": [
+          "No generated UI, cursor, label, state, crop, retiming or repeated source frames in C11."
+        ],
+        "timecode": "48.0–51.0",
+        "startSeconds": 48,
+        "endSeconds": 51,
+        "internalReadiness": "READY"
+      }
+    ],
+    "sourceClipRanges": {
+      "C10": [
+        {
+          "clip": "dist/assets/films/ax-discover-fast.mp4",
+          "in": 0,
+          "out": 1
+        },
+        {
+          "clip": "dist/assets/films/ax-predict-fast.mp4",
+          "in": 0,
+          "out": 1
+        },
+        {
+          "clip": "dist/assets/films/ax-monitor-fast.mp4",
+          "in": 0,
+          "out": 1
+        }
+      ],
+      "C11": [
+        {
+          "clip": "dist/assets/films/ax-discover-fast.mp4",
+          "in": 1,
+          "out": 2.5
+        },
+        {
+          "clip": "dist/assets/films/ax-predict-fast.mp4",
+          "in": 1,
+          "out": 2.5
+        },
+        {
+          "clip": "dist/assets/films/ax-monitor-fast.mp4",
+          "in": 1,
+          "out": 2.5
+        }
+      ]
+    },
+    "fullTimeline": [
+      {
+        "id": "C01",
+        "startSeconds": 0,
+        "endSeconds": 5,
+        "basis": "Unchanged primary source reference.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png"
+        ]
+      },
+      {
+        "id": "C02",
+        "startSeconds": 5,
+        "endSeconds": 9,
+        "basis": "Generic satellite composite only over fixed NASA Earth.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png",
+          "docs/redesign-production/keyframes-v2/generated/corp-c02-satellite-cutout-small-v2.png",
+          "docs/redesign-production/keyframes-v2/generated/corp-c02-satellite-cutout-close-v2.png"
+        ]
+      },
+      {
+        "id": "C03",
+        "startSeconds": 9,
+        "endSeconds": 14,
+        "basis": "Deterministic NASA frames only; exact edit anchors derive from same renderer.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-12s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-15s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-18s-v1.png"
+        ]
+      },
+      {
+        "id": "C04a",
+        "startSeconds": 14,
+        "endSeconds": 17,
+        "basis": "Official SST source plate.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png"
+        ]
+      },
+      {
+        "id": "C04b",
+        "startSeconds": 17,
+        "endSeconds": 20,
+        "basis": "Official Aquarius source plate.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png"
+        ]
+      },
+      {
+        "id": "C04c",
+        "startSeconds": 20,
+        "endSeconds": 23,
+        "basis": "Official daily swath; gaps preserved.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png"
+        ]
+      },
+      {
+        "id": "C04d",
+        "startSeconds": 23,
+        "endSeconds": 24,
+        "basis": "Accepted coast-entry reference.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-24s-v1.png"
+        ]
+      },
+      {
+        "id": "C05",
+        "startSeconds": 24,
+        "endSeconds": 30,
+        "basis": "Extend coastal geography reference without depicting a ship, USV or field operation.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-24s-v1.png"
+        ]
+      },
+      {
+        "id": "C06",
+        "startSeconds": 30,
+        "endSeconds": 35,
+        "basis": "Use deterministic Korea/NW Pacific camera-path references in place of field-sampling footage.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-15s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-18s-v1.png"
+        ]
+      },
+      {
+        "id": "C07",
+        "startSeconds": 35,
+        "endSeconds": 40,
+        "basis": "Revisit the exact approved monthly SST plate as source visualization, not new measurement.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png"
+        ]
+      },
+      {
+        "id": "C08",
+        "startSeconds": 40,
+        "endSeconds": 44,
+        "basis": "Show the approved coarse Aquarius salinity visualization without disguising resolution.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png"
+        ]
+      },
+      {
+        "id": "C09",
+        "startSeconds": 44,
+        "endSeconds": 48,
+        "basis": "Show the official daily MODIS Aqua L2 chlorophyll swath with observed gaps intact.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png"
+        ]
+      },
+      {
+        "id": "C10",
+        "startSeconds": 48,
+        "endSeconds": 51,
+        "basis": "Bridge with existing actual AX screen captures; no actual laboratory source is available.",
+        "assets": [
+          "dist/assets/films/ax-discover-fast.mp4",
+          "dist/assets/films/ax-predict-fast.mp4",
+          "dist/assets/films/ax-monitor-fast.mp4"
+        ]
+      },
+      {
+        "id": "C11",
+        "startSeconds": 51,
+        "endSeconds": 55.5,
+        "basis": "Actual approved Discover/Predict/Monitor clips, sequential full-frame.",
+        "sourceRanges": [
+          {
+            "clip": "dist/assets/films/ax-discover-fast.mp4",
+            "in": 1,
+            "out": 2.5
+          },
+          {
+            "clip": "dist/assets/films/ax-predict-fast.mp4",
+            "in": 1,
+            "out": 2.5
+          },
+          {
+            "clip": "dist/assets/films/ax-monitor-fast.mp4",
+            "in": 1,
+            "out": 2.5
+          }
+        ]
+      },
+      {
+        "id": "C12",
+        "startSeconds": 55.5,
+        "endSeconds": 60,
+        "basis": "Exact H01 loop frame, same as C01 first frame.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png"
+        ]
+      }
+    ],
+    "continuityCheck": {
+      "startSeconds": 0,
+      "endSeconds": 60,
+      "gaps": [],
+      "overlaps": [],
+      "loop": {
+        "fromSeconds": 60,
+        "toSeconds": 0,
+        "asset": "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png",
+        "exactMatch": true
+      },
+      "passed": true
+    },
+    "captionPolicy": "At 24.0–25.5 show the no-field-footage disclosure. Label C05–C06 as NASA geography/camera references; C07–C09 with exact source, period and units; identify chlorophyll gaps and salinity coarse/derived display. Do not overlay UI; use separate slate or narration for capture-time disclosure.",
+    "sourceRightsStatus": "NASA/GIBS and approved AX screen assets are source-backed for internal editing; attribution, reuse rights, privacy and external publication clearance remain open.",
+    "segmentDurationSeconds": 27
+  },
+  "planB": {
+    "name": "Clearly labeled concept fallback",
+    "fallbackOnly": true,
+    "summary": "If selected, generate six people-free generic concept scenes. No specific GeoSR hardware/site/operation claim. Apply a separate visible concept tag across C05–C10 and switch to an actual-capture label at 51s.",
+    "segments": [
+      {
+        "id": "C05",
+        "p": "Illustrate generic vessel and small survey-craft concepts as separate shots, not a real paired GeoSR operation.",
+        "prompts": {
+          "start": "16:9 photorealistic illustrative concept, not GeoSR footage: one generic unbranded coastal research-vessel silhouette on calm temperate open water, high three-quarter view, intentionally non-identifiable hull, no specific equipment, location or coastline. Restrained natural slate light; no people.",
+          "end": "Independent second 16:9 concept still, not continuation: a small generic unbranded unmanned survey craft alone on open water, no recognizable model, payload, port or landform. Same subdued documentary grade; no people."
+        },
+        "motion": "Use two independent 3-second shots: slow lateral drift on generic vessel from 24–27s, hard-cut to separate small craft 27–30s. Never morph or imply joint operation. Keep external concept tag visible.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No vessel/USV together in one frame, named model, port, sensor mast, company mark, registration number or evidence of joint survey."
+        ],
+        "camera": "16:9; full craft in central 70%; no crop that changes proportions.",
+        "in": "Hard-cut from NASA coast and add post label “콘셉트 장면 · 실제 GeoSR 현장/장비 아님”.",
+        "out": "Cut to neutral field detail; no same-location claim.",
+        "caption": "External concept label; never generate typography.",
+        "timecode": "24.0–30.0",
+        "startSeconds": 24,
+        "endSeconds": 30,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      },
+      {
+        "id": "C06",
+        "p": "Illustrate generic sampling objects without people, location, label, measurement or result.",
+        "prompts": {
+          "start": "16:9 realistic concept still for illustration only, not a GeoSR field photo: unlabeled sealed clear sample bottles and a generic unbranded environmental meter on a neutral tray; indistinct soft background, no identifiable river/site/instrument model, natural muted light, no hands.",
+          "end": "Edit the same still to a slightly wider view; preserve object count and arrangement, keep site indistinct, no readable display or result. Concept only; no people."
+        },
+        "motion": "Slow macro slider across unchanged objects and neutral tray. No handling, measurement animation, inferred sample origin or newly added item. Keep external concept label.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No labels, digits, liquid result, worker, specific analyzer or named river/site."
+        ],
+        "camera": "16:9; full objects in central 80%; soft background.",
+        "in": "Cut from C05 open water to tray macro; not a sample from prior scene.",
+        "out": "Shape-match bottle rim to generic high-angle texture; editorial only.",
+        "caption": "“콘셉트 장면 · 실제 GeoSR 채수/현장 아님”.",
+        "timecode": "30.0–35.0",
+        "startSeconds": 30,
+        "endSeconds": 35,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      },
+      {
+        "id": "C07",
+        "p": "Suggest an aerial-survey category using only a non-identifiable high-angle environment transition.",
+        "prompts": {
+          "start": "16:9 high-angle realistic concept environment plate: abstract unlocated water and neutral concrete edge from far above, no recognizable coast, harbor, island pattern, road, landmark or map-like geography; no aircraft; muted natural light; no people.",
+          "end": "Edit the same anonymous environment slightly lower and nearer. Add no aircraft, road, structure, scan, mesh or landform; keep geography indistinct and concept-only."
+        },
+        "motion": "Slow downward camera drift over the same anonymous water/concrete texture. No UAV or measurement overlay; do not imply a real flight or site.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No aircraft, LiDAR/photogrammetry effect, point cloud, mesh, scan, named harbor, island or Korean terrain."
+        ],
+        "camera": "16:9, scene inside central 90%; no map-like coast.",
+        "in": "Cut from field-detail concept; no same location.",
+        "out": "Short dissolve toward generic waterline for C08.",
+        "caption": "“콘셉트 장면 · 특정 항만/측량 결과 아님”.",
+        "timecode": "35.0–40.0",
+        "startSeconds": 35,
+        "endSeconds": 40,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      },
+      {
+        "id": "C08",
+        "p": "Illustrate a generic buoy/mooring category with a partial silhouette, not a real device setup.",
+        "prompts": {
+          "start": "16:9 photorealistic illustrative concept, not GeoSR equipment: small anonymous marine observation float on quiet temperate water at waterline, simple unbranded body and short tether disappearing below frame; no model-specific mast/panel/sensor details, no coast or boat, no people.",
+          "end": "Slightly closer restrained split-level view of same anonymous float and only upper tether. Do not reveal or invent sensor count, anchor, deployment site or configuration; natural surface light, not aquarium-like."
+        },
+        "motion": "Very subtle surface bob and slow tilt along the existing tether. Do not extend cable or add a sensor/anchor. Keep visible concept tag.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No TPRBM/model claim, exact sensor count, giant mast, tower, anchor design, tropical reef, boat or readout."
+        ],
+        "camera": "16:9; float in central 80%; tether may leave lower edge only as a transition.",
+        "in": "Dissolve from anonymous high-angle surface, not same coast.",
+        "out": "Cut to independent underwater detail; no shared-deployment claim.",
+        "caption": "“콘셉트 장면 · 실제 부이/계류 구성 아님”.",
+        "timecode": "40.0–44.0",
+        "startSeconds": 40,
+        "endSeconds": 44,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      },
+      {
+        "id": "C09",
+        "p": "Show generic underwater sensor and ROV categories as two independent concept shots.",
+        "prompts": {
+          "start": "16:9 close-up concept still, illustration only: one plain unbranded cylindrical underwater environmental sensor on a neutral dark surface, blurred temperate water background, no connector layout, model dimensions, label, screen, number or reading; no people.",
+          "end": "Separate 16:9 concept still of a distant generic unbranded underwater ROV silhouette. Obscure propulsion layout; no exact thruster count, gripper, tether or sensor attached. This is a different shot, not a shared deployment."
+        },
+        "motion": "Use separate two-second shots with a hard cut at 46s: shallow focus on generic sensor, then minimal drift on distant nonspecific ROV. Do not morph, connect or pair them.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No BlueROV2 likeness, RBR/Solo mark, exact propulsion layout, sensor mount, tether operation, sonar UI or reading."
+        ],
+        "camera": "16:9; sensor fully framed first; ROV small and centered second.",
+        "in": "Cut from water to independent sensor macro.",
+        "out": "Shape-only editorial match from cylinder to lab vessel; no sample lineage.",
+        "caption": "“콘셉트 장면 · 실제 GeoSR ROV/센서 아님”.",
+        "timecode": "44.0–48.0",
+        "startSeconds": 44,
+        "endSeconds": 48,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      },
+      {
+        "id": "C10",
+        "p": "Bridge with an anonymous laboratory concept, never claiming a real GeoSR lab or analytical result.",
+        "prompts": {
+          "start": "16:9 photorealistic concept still, not a GeoSR laboratory: neutral clean bench with a few unlabeled sealed sample vessels, generic microscope case and plain analytical instrument with screen off/turned away. No people/hands, brand, label, readable display, result, impossible tubing or sci-fi light.",
+          "end": "Tighten slightly on the same static anonymous bench while preserving all objects. Display remains blank, vessels unlabelled; add no apparatus or result. Concept-only, no people."
+        },
+        "motion": "Use a restrained focus shift across the same bench objects. End on a neutral dark surface and hard-cut at 51s to actual Discover screen. Keep concept label until the cut.",
+        "negative": [
+          "No people, faces, hands, bodies, crews, silhouettes or human reflections.",
+          "No generated text, logo, readable labels, values, coordinates, legends, charts, UI, HUD or fake live status.",
+          "No real/recognizable Korean coastline, port, island layout, location label, map or imitation of the selected NASA Earth.",
+          "No identifiable GeoSR equipment/model, manufacturer form, logo, specific sensor payload or unverified device pairing.",
+          "No implied shared deployment for separate generic devices.",
+          "No neon beam, laser, electric-blue scan, fake point cloud, false mesh or excessive SF glow.",
+          "Concept images must never be presented as real GeoSR footage, equipment, place, measurement or result.",
+          "No facility/ICP-MS model claim, procedure, sample identity, graph, result, text, brand or actual AX UI."
+        ],
+        "camera": "16:9; apparatus central 80%; leave margin for post-added concept tag.",
+        "in": "Cut from unrelated underwater concept; no sample provenance.",
+        "out": "Hard-cut at 51.0 and switch post-caption to “실제 AX 화면 캡처”.",
+        "caption": "“콘셉트 장면 · 실제 GeoSR 실험실/분석 아님”.",
+        "timecode": "48.0–51.0",
+        "startSeconds": 48,
+        "endSeconds": 51,
+        "imageGenStatus": "PROMPT_DRAFT_ONLY_NOT_GENERATED_PENDING_USER_CHOICE",
+        "internalReadiness": "SOURCE_PENDING"
+      }
+    ],
+    "fullTimeline": [
+      {
+        "id": "C01",
+        "startSeconds": 0,
+        "endSeconds": 5,
+        "basis": "Unchanged primary source reference.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png"
+        ]
+      },
+      {
+        "id": "C02",
+        "startSeconds": 5,
+        "endSeconds": 9,
+        "basis": "Generic satellite composite only over fixed NASA Earth.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png",
+          "docs/redesign-production/keyframes-v2/generated/corp-c02-satellite-cutout-small-v2.png",
+          "docs/redesign-production/keyframes-v2/generated/corp-c02-satellite-cutout-close-v2.png"
+        ]
+      },
+      {
+        "id": "C03",
+        "startSeconds": 9,
+        "endSeconds": 14,
+        "basis": "Deterministic NASA frames only; exact edit anchors derive from same renderer.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-12s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-15s-v1.png",
+          "dist/assets/concepts/corporate-film/hero-earth-18s-v1.png"
+        ]
+      },
+      {
+        "id": "C04a",
+        "startSeconds": 14,
+        "endSeconds": 17,
+        "basis": "Official SST source plate.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png"
+        ]
+      },
+      {
+        "id": "C04b",
+        "startSeconds": 17,
+        "endSeconds": 20,
+        "basis": "Official Aquarius source plate.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png"
+        ]
+      },
+      {
+        "id": "C04c",
+        "startSeconds": 20,
+        "endSeconds": 23,
+        "basis": "Official daily swath; gaps preserved.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png"
+        ]
+      },
+      {
+        "id": "C04d",
+        "startSeconds": 23,
+        "endSeconds": 24,
+        "basis": "Accepted coast-entry reference.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-24s-v1.png"
+        ]
+      },
+      {
+        "id": "C05",
+        "startSeconds": 24,
+        "endSeconds": 30,
+        "basis": "Illustrate generic vessel and small survey-craft concepts as separate shots, not a real paired GeoSR operation.",
+        "assets": []
+      },
+      {
+        "id": "C06",
+        "startSeconds": 30,
+        "endSeconds": 35,
+        "basis": "Illustrate generic sampling objects without people, location, label, measurement or result.",
+        "assets": []
+      },
+      {
+        "id": "C07",
+        "startSeconds": 35,
+        "endSeconds": 40,
+        "basis": "Suggest an aerial-survey category using only a non-identifiable high-angle environment transition.",
+        "assets": []
+      },
+      {
+        "id": "C08",
+        "startSeconds": 40,
+        "endSeconds": 44,
+        "basis": "Illustrate a generic buoy/mooring category with a partial silhouette, not a real device setup.",
+        "assets": []
+      },
+      {
+        "id": "C09",
+        "startSeconds": 44,
+        "endSeconds": 48,
+        "basis": "Show generic underwater sensor and ROV categories as two independent concept shots.",
+        "assets": []
+      },
+      {
+        "id": "C10",
+        "startSeconds": 48,
+        "endSeconds": 51,
+        "basis": "Bridge with an anonymous laboratory concept, never claiming a real GeoSR lab or analytical result.",
+        "assets": []
+      },
+      {
+        "id": "C11",
+        "startSeconds": 51,
+        "endSeconds": 55.5,
+        "basis": "Actual approved Discover/Predict/Monitor clips, sequential full-frame.",
+        "sourceRanges": [
+          {
+            "clip": "dist/assets/films/ax-discover-fast.mp4",
+            "in": 0,
+            "out": 1.5
+          },
+          {
+            "clip": "dist/assets/films/ax-predict-fast.mp4",
+            "in": 0,
+            "out": 1.5
+          },
+          {
+            "clip": "dist/assets/films/ax-monitor-fast.mp4",
+            "in": 0,
+            "out": 1.5
+          }
+        ]
+      },
+      {
+        "id": "C12",
+        "startSeconds": 55.5,
+        "endSeconds": 60,
+        "basis": "Exact H01 loop frame, same as C01 first frame.",
+        "assets": [
+          "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png"
+        ]
+      }
+    ],
+    "continuityCheck": {
+      "startSeconds": 0,
+      "endSeconds": 60,
+      "gaps": [],
+      "overlaps": [],
+      "loop": {
+        "fromSeconds": 60,
+        "toSeconds": 0,
+        "asset": "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png",
+        "exactMatch": true
+      },
+      "passed": true
+    },
+    "captionPolicy": "Use separate post text “콘셉트 장면 · 실제 GeoSR 현장/장비 아님” on each C05–C10 shot. At 51s hard-cut and change caption to “실제 AX 화면 캡처”. Never bake text in generated frames or cover UI.",
+    "sourceRightsStatus": "No generated images exist yet. After a user selects B, concept outputs require review and usage/release approval; none may claim actual GeoSR equipment, site, operation or result.",
+    "segmentDurationSeconds": 27
+  },
+  "recordSchema": {
+    "type": "object",
+    "required": [
+      "version",
+      "status",
+      "userChoiceRequired",
+      "totalFilmSeconds",
+      "gap",
+      "sharedRules",
+      "planA",
+      "planB"
+    ],
+    "properties": {
+      "version": {
+        "type": "string"
+      },
+      "status": {
+        "const": "FALLBACK_ONLY_NOT_SELECTED"
+      },
+      "userChoiceRequired": {
+        "const": true
+      },
+      "totalFilmSeconds": {
+        "const": 60
+      },
+      "gap": {
+        "type": "object",
+        "required": [
+          "startSeconds",
+          "endSeconds",
+          "durationSeconds",
+          "scenes"
+        ]
+      },
+      "planA": {
+        "type": "object",
+        "required": [
+          "segments",
+          "sourceClipRanges",
+          "fullTimeline",
+          "continuityCheck"
+        ]
+      },
+      "planB": {
+        "type": "object",
+        "required": [
+          "segments",
+          "fullTimeline",
+          "continuityCheck"
+        ]
+      }
+    }
+  }
+}

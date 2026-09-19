@@ -2,16 +2,18 @@
 
 **Current selection:** The v4 pair is selected as an internal, source-backed orbital geography reference. It is not a final website poster or final cinematic artwork, and it is not connected to any page or manifest. Only its Earth base is NASA-derived; its satellite remains a conceptual, unverified element.
 
-**Version history:** v1 and v2 were rejected for inaccurate generated geography; v3 used accurate source geography but was rejected for snow-heavy framing and scale; v5 and v6 cloud composites were rejected because the cloud treatment looked dark or dirty. Keep those versions out of public pages.
+**Version history:** v1 and v2 were rejected for inaccurate generated geography; v3 used accurate source geography but was rejected for snow-heavy framing and scale; v5 and v6 cloud composites were rejected because the cloud treatment looked dark or dirty. Rejected version images are removed from `dist`.
 
-## Rejected v1 deliverables
+## Historical rejected v1 assets (removed)
 
-| Frame | File | Dimensions | SHA-256 | Intended use |
+| Frame | Historical file (removed) | Dimensions | SHA-256 | Intended use |
 |---|---|---:|---|---|
 | H01, 00s | dist/assets/concepts/corporate-film/hero-earth-00s-v1.png | 1672 × 941 | A422798E3727C5ADFE9AFF712424406C7886ABDA6DB54C3808CFD8E172AF96D4 | Earth emerging from dark space; no spacecraft |
 | H02, 07s | dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v1.png | 1672 × 941 | 736178AD264FBEE9C738D44C788CA14157DF7E922F52E15F88344BFD169C3858 | Same composition with one Earth-observation spacecraft |
 
 The pair is 16:9. H01 was edited from the corrected H02 output so the Earth, crop, stars, and illumination remain continuous. Neither image has been added to a page or manifest.
+
+These paths and hashes are retained only as historical records; the v1 PNG files are no longer present in `dist`. The v4 H01/H02 pair is the only current corporate-film orbital pair in `dist`.
 
 ## Source record
 
@@ -59,4 +61,4 @@ The selected composition keeps the globe center at 130°E, 30°N, with a 910 px 
 
 **Use gate:** v4 is the selected factual-geography continuity reference for the corporate-film opening, not a final poster, final film frame, or production-approved spacecraft depiction. Do not wire it into the website. Preserve its coastline geography, viewing axis, scale and crop in downstream motion work. Clouds or cinematic lighting may be added only as separate treatment that leaves coastlines unchanged; use source-backed layers and visually verify the Korean Peninsula, Japanese archipelago and adjacent coasts after each pass. No cloud overlay is included in the selected v4 pair.
 
-**Rejection record:** v2 had stronger visual appeal but generated inaccurate coasts; v3 preserved source geography but had excessive polar snow and a weak East Asia close-up; v5/v6 cloud overlays created dark or dirty-looking artifacts. These files were removed from `dist`; v4 remains the selected reference pair.
+**Rejection record:** v1 and v2 had generated inaccurate coasts; v3 preserved source geography but had excessive polar snow and a weak East Asia close-up; v5/v6 cloud overlays created dark or dirty-looking artifacts. All rejected image files were removed from `dist`; v4 remains the sole selected reference pair.

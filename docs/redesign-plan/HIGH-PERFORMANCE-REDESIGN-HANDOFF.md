@@ -22,7 +22,15 @@
 - 실제 장비는 승인된 GeoSR 원본으로 외형을 확인한다. 공개 게시 이미지의 저작권·파생 사용권은 별도 확인 전까지 미확정이다.
 - 검토 지점마다 사용자가 장면, 표현, 모델, 색, 카메라, 타이밍을 수정할 수 있다. 아직 유료 영상 생성에 들어가지 않았다.
 
-## 회사 메인 필름 C01–C10 최신 타임라인
+## 최신 연출 콘티 v2
+
+[FILM-STORYBOARD-DIRECTOR-v2.md](../redesign-production/FILM-STORYBOARD-DIRECTOR-v2.md)는 60초 회사 메인 필름과 별도 30초 AX Platform 필름의 최신 연출 기준이다. 아래의 기존 C01–C10/A01–A06 표와 타이밍·숏 분할이 다르면 v2 콘티가 우선한다. 이 문서의 출처·권리·지리·실제 화면 검수 기준과 웹 구현 상태는 계속 유효하다. v2는 장비 모델을 확정하지 않고 실제 source가 확보될 때 각 `SHOT ASSET`을 교체하는 방식으로 정의한다.
+
+## 보존된 제작 상태 자료 — 타임라인은 v2 우선
+
+아래 C01–C10/A01–A06 표와 이후 검수 메모는 이미 확보된 자산·제약·진행 상태를 보존한다. **최종 숏 분할과 타임코드는 최신 [v2 콘티](../redesign-production/FILM-STORYBOARD-DIRECTOR-v2.md)를 따른다.** 기존 파일명에 포함된 초 단위 표기는 reference의 원래 제작 시점을 뜻하며 v2 편집 시각을 확정하지 않는다.
+
+### 회사 메인 필름 자료 C01–C10
 
 | 장면 | 구간 | 내용과 연결 | 현재 기준 자산 |
 | --- | --- | --- | --- |
@@ -67,9 +75,9 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - C10에서는 `ax-discover-fast.mp4`, `ax-predict-fast.mp4`, `ax-monitor-fast.mp4`를 독립적인 16:9 전체 프레임 컷으로 차례대로 보여준다. 동시 화면·picture-in-picture·가짜 workflow는 금지한다. 58.5–60초 Earth frame의 지리 픽셀을 바꾸지 않고 C01과 정확히 루프한다.
 - 자세한 구간·전환·검수 기준은 [C09–C10 제작 기록](../redesign-production/imagegen-prompts/corporate-film-c09-c10-v1.md)과 [keyframe production package](../redesign-production/KEYFRAME-PRODUCTION-PACKAGE.md)을 따른다.
 
-## AX Platform 별도 30초 A01–A06 필름
+### AX Platform 별도 30초 자료 A01–A06
 
-회사 메인 영상과 독립된 제품 흐름이다. 핵심은 해양·환경 자료가 **Discover → Predict → Monitor**의 실제 제품 경험으로 이어지는 것이다. 장비 자랑 장면을 반복하지 않는다.
+이 기존 자료는 회사 메인 영상과 독립된 실제 제품 화면·출처를 기록한다. 최신 연출 순서와 timing은 v2 콘티를 따른다. Discover/Predict/Monitor 원본과 출처 제한은 계속 적용하며, 장비 자랑 장면을 반복하지 않는다.
 
 | 샷 | 구간 | 구성 기준 |
 | --- | --- | --- |
@@ -92,7 +100,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
 
-1. C01–C10 및 A01–A06 각 shot의 **start frame + end frame + 카메라/피사체/조명/시간 길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. C05–C08은 장비 원본 cutout을 기준으로 다시 설계하고 시작/끝 프레임과 모션 프롬프트를 사용자가 유료 생성 전에 검토한다.
+1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입하고, 시작/끝 프레임과 모션 프롬프트를 사용자가 유료 생성 전에 검토한다.
 2. 사용자가 키프레임 세트, 장비 표현, 지리, 색감, 전환을 수정할 수 있도록 유료 생성 전에 review contact sheet와 motion plan을 제시한다. 승인 전에는 다음 장면 제작으로 넘어가지 않는다.
 3. Higgsfield 유료 생성은 사용자가 결제한 뒤 진행한다. **메인이 직접 제작**하며 shot별로 start/end reference와 해당 motion prompt를 넣어 타임라인 순서대로 생성한다. 스킬이나 agent에 생성 실행을 위임하지 않는다.
 4. 각 shot의 초안 영상을 사용자에게 보여주고, 인접 shot의 경계/매치컷 검토 후 수정한다. C04 과학 자료와 C05–C08 장비/현장은 원자료와 프레임 단위로 확인한다.
@@ -118,6 +126,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 ## 보존된 참고 문서
 
+- [최신 필름 연출 콘티 v2 — 60초 기업 + 별도 30초 AX](../redesign-production/FILM-STORYBOARD-DIRECTOR-v2.md)
 - [Keyframe production package — C01–C10, A01–A06, 거절 기준](../redesign-production/KEYFRAME-PRODUCTION-PACKAGE.md)
 - [C01–C02 selected orbital reference and source record](../redesign-production/imagegen-prompts/corporate-film-opening-v4.md)
 - [C09 lab still prompt and main-approved candidate](../redesign-production/imagegen-prompts/homepage-lab-equipment-v1.md)

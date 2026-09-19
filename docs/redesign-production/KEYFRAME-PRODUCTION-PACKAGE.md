@@ -6,6 +6,8 @@ The current deliverable is a reviewable sequence of still frames rather than a g
 
 Google Flow is optional. It may be used for a low-resolution motion test when credits are available, but no acceptance gate depends on it.
 
+**연출·타임코드 우선순위:** [FILM-STORYBOARD-DIRECTOR-v2.md](FILM-STORYBOARD-DIRECTOR-v2.md)가 60초 회사 필름과 별도 30초 AX 필름의 최신 편집 구조와 시간표다. 아래 C01–C10/A01–A06 표는 source·continuity·검수 상태를 보존하는 기존 frame package이며, 숏 분할·타임코드·연출이 다르면 v2를 따른다. 기존 asset 이름의 초 표기는 그 reference의 과거 시점을 뜻할 뿐 v2 편집 시각이 아니다.
+
 All frames are 16:9 desktop compositions. No mobile crop is produced in this phase. The Home opening frame reserves a quiet title-safe field while the film itself fills the entire first viewport.
 
 ## Corporate film

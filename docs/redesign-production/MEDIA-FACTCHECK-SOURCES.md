@@ -1,8 +1,10 @@
 # Media fact-check and sources: corporate film opening
 
-**Status:** Internal concept previews only. Both images are AI-generated and are not verified satellite imagery, a verified map, or a record of an actual observation. Do not connect them to public pages until geography, spacecraft geometry, source rights, and brand-use checks are complete.
+**Current selection:** The v4 pair is selected as an internal, source-backed orbital geography reference. It is not a final website poster or final cinematic artwork, and it is not connected to any page or manifest. Only its Earth base is NASA-derived; its satellite remains a conceptual, unverified element.
 
-## Deliverables
+**Version history:** v1 and v2 were rejected for inaccurate generated geography; v3 used accurate source geography but was rejected for snow-heavy framing and scale; v5 and v6 cloud composites were rejected because the cloud treatment looked dark or dirty. Keep those versions out of public pages.
+
+## Rejected v1 deliverables
 
 | Frame | File | Dimensions | SHA-256 | Intended use |
 |---|---|---:|---|---|
@@ -37,3 +39,24 @@ NASA says its imagery is generally not subject to U.S. copyright, requires sourc
 ESA states that its website material is protected and that creating derivative works requires prior written authorization. Because the ESA image was supplied as a geometry reference, keep these outputs internal until rights review confirms whether the concept may be redistributed or published. See [ESA Terms and Conditions](https://www.esa.int/Services/Terms_and_conditions).
 
 **Required before public use:** final geography check; spacecraft/array check; NASA/ESA rights and attribution review; confirm no agency endorsement is implied; keep a visible internal-concept label in review materials. No verified fact or license approval is claimed by these drafts.
+
+## Selected v4 orbital reference (internal only)
+
+| Frame | File | Dimensions | SHA-256 | Status |
+|---|---|---:|---|---|
+| H01, 00s | `dist/assets/concepts/corporate-film/hero-earth-00s-v4.png` | 2560 × 1440 | `3D6117DC1E397DA56C815C299E8C84142BBBD9083CB5F01C60A2D20185130D5C` | Selected reference; no spacecraft |
+| H02, 07s | `dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v4.png` | 2560 × 1440 | `377D0D3A8CCC4EAA1A3FFF73D0B4645155599ABD8C8EF3C87CBFC7539421E0A6` | Selected reference; one conceptual spacecraft |
+
+The Earth in both frames is a deterministic orthographic render of NASA's August Blue Marble Next Generation monthly global true-color texture. The image uses the same mapped source pixels, camera, framing and crop in H01 and H02. H02 differs only by the spacecraft overlay. The base map is a historical monthly composite, not a live or current observation; no measurement, analysis layer or claim of real-time data is shown.
+
+| Source | Use and fact limits |
+|---|---|
+| [NASA Blue Marble Next Generation base map](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/) and [August 5400 × 2700 texture](https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-base/august/world.200408.3x5400x2700.jpg) | Deterministic source texture for the Earth surface and coastlines. NASA describes BMNG as a monthly, MODIS-derived global true-color dataset; it is not a live data layer. |
+| [NASA BMNG technical readme](https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74343/readme.pdf) | Projection and source-dataset reference. The renderer samples the source in its global Plate Carrée coordinates and projects it to an orthographic globe. |
+| Existing v2 generated spacecraft concept | Source for the cutout overlaid in H02 only. This is not a NASA, ESA or verified mission spacecraft; its body, dish and array configuration require hardware review before any factual or public use. |
+
+The selected composition keeps the globe center at 130°E, 30°N, with a 910 px radius centered at (1890, 745) on the 2560 × 1440 frame. East Asia, the Korean Peninsula, Japan and the northwest Pacific remain readable, while the left side stays dark for title use. The positions describe the render setup, not a claimed measured observation.
+
+**Use gate:** v4 is the selected factual-geography continuity reference for the corporate-film opening, not a final poster, final film frame, or production-approved spacecraft depiction. Do not wire it into the website. Preserve its coastline geography, viewing axis, scale and crop in downstream motion work. Clouds or cinematic lighting may be added only as separate treatment that leaves coastlines unchanged; use source-backed layers and visually verify the Korean Peninsula, Japanese archipelago and adjacent coasts after each pass. No cloud overlay is included in the selected v4 pair.
+
+**Rejection record:** v2 had stronger visual appeal but generated inaccurate coasts; v3 preserved source geography but had excessive polar snow and a weak East Asia close-up; v5/v6 cloud overlays created dark or dirty-looking artifacts. These files were removed from `dist`; v4 remains the selected reference pair.

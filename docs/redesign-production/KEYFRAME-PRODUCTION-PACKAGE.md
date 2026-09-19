@@ -79,3 +79,11 @@ Each accepted scene package contains:
 - Unexplained change of weather, coastline, object count, light direction or camera axis between adjacent frames
 - AI texture, duplicated structure, melted hardware, unreadable instrument geometry or synthetic storm pattern
 - Film frame that looks attractive but breaks the transition into the next verified scene
+
+## C01 selected orbital reference: v4
+
+- Use the v4 H01/H02 pair as the selected source-backed geography and camera-continuity reference. It is an internal reference only, not a final website poster or final cinematic artwork; it is not wired into any page.
+- The deterministic NASA BMNG Earth pixels, camera axis, 130°E / 30°N view center, scale and crop stay fixed through the next East Asia and Korean Peninsula move. Preserve coastlines exactly; do not ask a generative model to redraw or reinterpret them.
+- H02's satellite is a generated concept overlay, not verified hardware or a specific mission design. Keep it labeled as conceptual until equipment review approves a source-backed spacecraft reference.
+- Higgsfield may add or regenerate cinematic atmosphere, clouds, and lighting as separate treatments only when the Earth coastline pixels remain fixed. Inspect the Korean Peninsula, Japanese archipelago, China coast and northwest Pacific after every motion or compositing pass.
+- Do not use v2, v3, v5 or v6 as continuity sources: v2 geography was rejected, v3 framing was rejected, and v5/v6 cloud composites were rejected for dirty-looking artifacts.

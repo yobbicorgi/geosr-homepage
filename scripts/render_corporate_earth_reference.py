@@ -14,6 +14,7 @@ import argparse
 import hashlib
 import tempfile
 import urllib.request
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -29,6 +30,19 @@ SOURCE_URL = (
 W, H = 2560, 1440
 CENTER_LON, CENTER_LAT = 130.0, 30.0
 CENTER_X, CENTER_Y, RADIUS = 1890.0, 745.0, 910.0
+
+
+@dataclass(frozen=True)
+class Camera:
+    """Orthographic camera parameters for a 16:9 globe render."""
+
+    center_lon: float = CENTER_LON
+    center_lat: float = CENTER_LAT
+    center_x: float = CENTER_X
+    center_y: float = CENTER_Y
+    radius: float = RADIUS
+    width: int = W
+    height: int = H
 
 
 def sha256(path: Path) -> str:
@@ -52,17 +66,18 @@ def get_texture(path: Path | None) -> tuple[Path, tempfile.TemporaryDirectory[st
     return target, temp
 
 
-def render_globe(texture_path: Path) -> Image.Image:
+def render_globe(texture_path: Path, camera: Camera = Camera()) -> Image.Image:
+    w, h = camera.width, camera.height
     tex = np.asarray(Image.open(texture_path).convert("RGB"), dtype=np.float32)
     th, tw, _ = tex.shape
-    x = np.arange(W, dtype=np.float32)[None, :]
-    y = np.arange(H, dtype=np.float32)[:, None]
-    xe = (x - CENTER_X) / RADIUS
-    y_north = (CENTER_Y - y) / RADIUS
+    x = np.arange(w, dtype=np.float32)[None, :]
+    y = np.arange(h, dtype=np.float32)[:, None]
+    xe = (x - camera.center_x) / camera.radius
+    y_north = (camera.center_y - y) / camera.radius
     rho2 = xe * xe + y_north * y_north
     visible = rho2 <= 1.0
     z = np.sqrt(np.maximum(0.0, 1.0 - rho2))
-    phi0, lam0 = np.deg2rad(CENTER_LAT), np.deg2rad(CENTER_LON)
+    phi0, lam0 = np.deg2rad(camera.center_lat), np.deg2rad(camera.center_lon)
     px = z * np.cos(phi0) * np.cos(lam0) - xe * np.sin(lam0) - y_north * np.sin(phi0) * np.cos(lam0)
     py = z * np.cos(phi0) * np.sin(lam0) + xe * np.cos(lam0) - y_north * np.sin(phi0) * np.sin(lam0)
     pz = z * np.sin(phi0) + y_north * np.cos(phi0)
@@ -95,15 +110,15 @@ def render_globe(texture_path: Path) -> Image.Image:
     rim = np.asarray([128.0, 190.0, 218.0], dtype=np.float32)
     rgb = rgb * (1.0 - 0.16 * inner[..., None]) + rim * (0.16 * inner[..., None])
 
-    background = np.empty((H, W, 3), dtype=np.uint8)
+    background = np.empty((h, w, 3), dtype=np.uint8)
     background[:] = (1, 3, 8)
     base = Image.fromarray(background, "RGB")
     draw = ImageDraw.Draw(base)
     rng = np.random.default_rng(20260919)
     for _ in range(125):
-        sx = int(rng.integers(1060, W - 12))
-        sy = int(rng.integers(10, H - 10))
-        if ((sx - CENTER_X) / RADIUS) ** 2 + ((sy - CENTER_Y) / RADIUS) ** 2 < 1.025 ** 2:
+        sx = int(rng.integers(1060, w - 12))
+        sy = int(rng.integers(10, h - 10))
+        if ((sx - camera.center_x) / camera.radius) ** 2 + ((sy - camera.center_y) / camera.radius) ** 2 < 1.025 ** 2:
             continue
         radius = int(rng.choice([0, 0, 0, 1]))
         intensity = int(rng.integers(18, 48))
@@ -112,13 +127,13 @@ def render_globe(texture_path: Path) -> Image.Image:
             fill=(intensity, intensity + 2, intensity + 5),
         )
     glow_alpha = np.clip(np.exp(-((rho - 1.004) / 0.018) ** 2) * 11.0, 0, 11).astype(np.uint8)
-    glow = np.zeros((H, W, 4), dtype=np.uint8)
+    glow = np.zeros((h, w, 4), dtype=np.uint8)
     glow[..., :3] = (61, 120, 154)
     glow[..., 3] = glow_alpha
     base = Image.alpha_composite(base.convert("RGBA"), Image.fromarray(glow, "RGBA"))
-    earth_layer = np.zeros((H, W, 4), dtype=np.uint8)
+    earth_layer = np.zeros((h, w, 4), dtype=np.uint8)
     earth_layer[..., :3] = np.clip(rgb, 0, 255).astype(np.uint8)
-    edge_alpha = np.clip((1.0 - rho) * RADIUS + 0.5, 0.0, 1.0) * visible
+    edge_alpha = np.clip((1.0 - rho) * camera.radius + 0.5, 0.0, 1.0) * visible
     earth_layer[..., 3] = np.uint8(edge_alpha * 255.0)
     return Image.alpha_composite(base, Image.fromarray(earth_layer, "RGBA")).convert("RGB")
 

@@ -87,3 +87,7 @@ Each accepted scene package contains:
 - H02's satellite is a generated concept overlay, not verified hardware or a specific mission design. Keep it labeled as conceptual until equipment review approves a source-backed spacecraft reference.
 - Higgsfield may add or regenerate cinematic atmosphere, clouds, and lighting as separate treatments only when the Earth coastline pixels remain fixed. Inspect the Korean Peninsula, Japanese archipelago, China coast and northwest Pacific after every motion or compositing pass.
 - Do not use v2, v3, v5 or v6 as continuity sources: v2 geography was rejected, v3 framing was rejected, and v5/v6 cloud composites were rejected for dirty-looking artifacts.
+
+## C02/C03 approach keyframes v1
+
+The 10s, 12s, 15s and 18s deterministic NASA-texture approach frames are accepted by main review as geography and camera-path references only. The 12s frame is shared by C02 and C03. The satellite motion remains a conceptual guide and requires a more natural Higgsfield pass; it is absent from the 15s and 18s frames. See [the keyframe record and contact sheet](keyframes/corporate-film-approach-v1.md).

@@ -95,10 +95,13 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 - [메인 미리보기 HTML](../../dist/redesign-preview.html)은 transparent overlay header와 전체 화면 100vh/100svh hero를 유지한다. `geosr-hero`는 `pending`이며 KO `메인 필름 제작 준비 중` / EN `Main film in preparation` 라벨이 보인다.
 - 메인 페이지의 AX 콘셉트 필름은 실제 제품 증거 영역보다 먼저 오는 16:9 full-width pending slot이다. KO `영상 제작 준비 중` 라벨과 Discover/Predict/Monitor 실제 캡처 탭이 있다.
 - [AX 상세 페이지 shell](../../dist/ax-platform.html)은 콘텐츠를 [ax-v2.js](../../dist/ax-v2.js)가 렌더한다. 상단에는 100svh AX concept-film slot과 `AX CONCEPT FILM · 영상 제작 준비 중` 상태가 있고, 실제 제품 시퀀스와 아래 3열 원리 카드가 이어진다.
+- AX A01 v3 이미지는 현재 웹의 임시 poster로만 연결돼 있다. 이는 final film frame이나 최종 영상 승인 상태가 아니며, 실제 data/UI 결과를 나타내지 않는다.
 - 이 상태 문구는 최종 승인 영상이 연결되고 로딩 확인되기 전까지 유지한다. 이미 존재하는 포스터나 AX fast clips를 완성 콘셉트 영상으로 표시하지 않는다.
 - 현재 미리보기 200 응답은 서버 연결만 확인한 것이다. 최종 업데이트 후 아래 QA를 다시 수행한다.
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
+
+**현재 키프레임 결정:** [ImageGen 키프레임 v2 기록](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)을 따른다. C02 위성 cutout 2장과 AX A01 v3 2장은 조건부 selected다. C03의 생성 지형은 거절됐으므로 결정론적 NASA frame만 사용한다. AX A01 v3는 임시 웹 poster이며 final film 승인이나 실제 data/UI 표현이 아니다.
 
 1. v2 콘티의 각 shot에 **start frame + end frame + 카메라/피사체/조명/길이/match-cut motion prompt**를 한 세트로 고정한다. 두 필름의 프레임 세트를 섞지 않는다. 현장 장비는 `SHOT ASSET` source·권리 게이트가 통과할 때만 삽입하고, 시작/끝 프레임과 모션 프롬프트를 사용자가 유료 생성 전에 검토한다.
 2. 사용자가 키프레임 세트, 장비 표현, 지리, 색감, 전환을 수정할 수 있도록 유료 생성 전에 review contact sheet와 motion plan을 제시한다. 승인 전에는 다음 장면 제작으로 넘어가지 않는다.
@@ -128,6 +131,7 @@ C01·C02 v4는 내부 지리·연속성 참고다. C02의 위성은 실제 우�
 
 - [최신 필름 연출 콘티 v2 — 60초 기업 + 별도 30초 AX](../redesign-production/FILM-STORYBOARD-DIRECTOR-v2.md)
 - [Keyframe production package — C01–C10, A01–A06, 거절 기준](../redesign-production/KEYFRAME-PRODUCTION-PACKAGE.md)
+- [ImageGen keyframe v2 — conditional selections and rejected-history summary](../redesign-production/keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md)
 - [C01–C02 selected orbital reference and source record](../redesign-production/imagegen-prompts/corporate-film-opening-v4.md)
 - [C09 lab still prompt and main-approved candidate](../redesign-production/imagegen-prompts/homepage-lab-equipment-v1.md)
 - [Film slot implementation brief](FILM-SLOT-PRODUCTION-BRIEF.md)

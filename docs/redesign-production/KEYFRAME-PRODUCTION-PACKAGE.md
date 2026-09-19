@@ -93,6 +93,12 @@ Each accepted scene package contains:
 
 The 10s, 12s, 15s and 18s deterministic NASA-texture approach frames are accepted by main review as geography and camera-path references only. The 12s frame is shared by C02 and C03. The satellite motion remains a conceptual guide and requires a more natural Higgsfield pass; it is absent from the 15s and 18s frames. See [the keyframe record and contact sheet](keyframes/corporate-film-approach-v1.md).
 
+## ImageGen keyframe package v2 — conditional selections
+
+See the [v2 generation log](keyframes-v2/KEYFRAME-GENERATION-LOG-v2.md) for source, prompts, review decisions and hashes. `keyframes-v2/generated/` contains exactly four conditionally selected frames: two generic C02 satellite cutouts and the AX A01 v3 start/end pair. C02 cutouts are separate post-production overlays only; preserve the deterministic NASA Earth pixels and do not claim a specific satellite or mission. Generated C03 geography is rejected; C03 must use only the deterministic NASA 12s/15s/18s frames.
+
+AX A01 v3 is currently connected as a temporary web poster only. It is an abstract transition/poster candidate, not the final film frame or final film approval, and it must not be presented as actual data or UI.
+
 ## C04 official data-layer references
 
 Main review approved the 20s SST reference and accepted the 24s deterministic coastline frame unchanged. The final-facing C04 direction is the approved 22s-a/b/c single-layer sequence: SST, Aquarius salinity, then MODIS L2 chlorophyll, connected by crossfades and camera approach motion in the film edit. Do not show the three plates simultaneously. The frames are internal factual data-plate references only; they are not finished film artwork or wired to the site. See [the approved sequence, source metadata, limitations, hashes, and contact sheet](keyframes/corporate-film-data-layers-crossfade-v1.md).

@@ -213,3 +213,30 @@
  .ax-concept-hero-atmosphere,.ax-concept-hero-atmosphere::after { animation:none !important; }
  .ax-concept-hero-atmosphere::after { translate:0 0; opacity:.56; }
 }
+
+/* Reveal the actual AX screens and supporting content as they enter view. */
+@media (min-width:821px) and (prefers-reduced-motion:no-preference) {
+ html.has-ax-scroll-motion .ax-scroll-reveal { opacity:0; transform:translate3d(0,20px,0); transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .82s cubic-bezier(.2,.7,.2,1); transition-delay:var(--ax-reveal-delay,0ms); }
+ html.has-ax-scroll-motion .ax-scroll-reveal.is-in-view,
+ html.has-ax-scroll-motion .ax-scroll-reveal:focus-within { opacity:1; transform:none; }
+ html.has-ax-scroll-motion .ax-principle-card:nth-child(2) { --ax-reveal-delay:75ms; }
+ html.has-ax-scroll-motion .ax-principle-card:nth-child(3) { --ax-reveal-delay:150ms; }
+}
+
+/* Approved AX A01 concept still — a temporary 16:9 film poster, not product UI. */
+.ax-concept-hero > .ax-concept-poster {
+ position:absolute; inset:0; z-index:0; display:block; width:100%; height:100%;
+ object-fit:cover; object-position:right center; clip-path:inset(0 0 0 38%);
+ opacity:.94; transition:opacity .65s ease,visibility .65s ease;
+}
+.ax-concept-hero-atmosphere { z-index:1; }
+.ax-concept-poster-shade {
+ position:absolute; z-index:2; inset:0; pointer-events:none;
+ background:linear-gradient(90deg,#051a2a 0%,rgba(5,26,42,.99) 31%,rgba(5,26,42,.88) 48%,rgba(5,26,42,.42) 70%,rgba(5,26,42,.14) 100%),linear-gradient(0deg,rgba(5,26,42,.35),transparent 38%,rgba(5,26,42,.12));
+}
+.ax-concept-hero-content { z-index:3; }
+.ax-concept-hero.film-loaded > .ax-concept-poster,
+.ax-concept-hero.film-loaded > .ax-concept-poster-shade { opacity:0; visibility:hidden; }
+@media(prefers-reduced-motion:reduce) {
+ .ax-concept-hero > .ax-concept-poster { transition:none; opacity:.94; }
+}

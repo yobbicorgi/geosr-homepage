@@ -1,5 +1,5 @@
 {
-  "revision": "preproduction-20260918-r1",
+  "revision": "preproduction-20260919-r1",
   "slots": [
     {
       "id": "geosr-hero",
@@ -119,6 +119,19 @@
         "rip"
       ],
       "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
+    },
+    {
+      "id": "ax-concept-film",
+      "mode": "loop",
+      "src": null,
+      "approval": "pending",
+      "duration": 24,
+      "delivery": "assets/films/ax-concept-film.mp4",
+      "purpose": "AX concept film — introductory 16:9 framing for separate platform examples; factual content and footage not yet prepared",
+      "recommendedMedia": [
+        "mp4",
+        "gif"
+      ]
     }
   ]
 }

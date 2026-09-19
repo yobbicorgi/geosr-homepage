@@ -105,6 +105,55 @@
     if (event.matches) closeMenu();
   });
 
+  const platformTabList = document.querySelector('.platform-tabs');
+  const platformTabs = [...document.querySelectorAll('[data-platform-tab]')];
+  const platformPanels = [...document.querySelectorAll('.platform-example[role="tabpanel"]')];
+  if (platformTabList && platformTabs.length && platformPanels.length === platformTabs.length) {
+    const activatePlatform = (nextIndex, moveFocus = false) => {
+      const currentIndex = platformTabs.findIndex(tab => tab.getAttribute('aria-selected') === 'true');
+      if (currentIndex === nextIndex) {
+        if (moveFocus) platformTabs[nextIndex].focus();
+        return;
+      }
+      const direction = nextIndex < currentIndex ? 'backward' : 'forward';
+      platformTabs.forEach((tab, index) => {
+        const selected = index === nextIndex;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      platformPanels.forEach((panel, index) => {
+        const selected = index === nextIndex;
+        const video = panel.querySelector('video.platform-video');
+        if (!selected && video && !video.paused) video.pause();
+        panel.hidden = !selected;
+        panel.classList.remove('is-entering');
+        if (selected) {
+          panel.dataset.enterDirection = direction;
+          requestAnimationFrame(() => {
+            if (panel.hidden) return;
+            panel.classList.add('is-entering');
+          });
+        }
+      });
+      if (moveFocus) platformTabs[nextIndex].focus();
+    };
+    platformTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activatePlatform(index));
+      tab.addEventListener('keydown', event => {
+        let nextIndex = index;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % platformTabs.length;
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + platformTabs.length) % platformTabs.length;
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = platformTabs.length - 1;
+        else return;
+        event.preventDefault();
+        activatePlatform(nextIndex, true);
+      });
+    });
+    platformPanels.forEach((panel, index) => { panel.hidden = index !== 0; });
+    activatePlatform(0);
+  }
+
   const flowSteps = [...document.querySelectorAll('.flow-step')];
   flowSteps.forEach((step, index) => {
     step.open = index === 0;

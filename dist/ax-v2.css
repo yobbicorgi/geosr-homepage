@@ -240,3 +240,36 @@
 @media(prefers-reduced-motion:reduce) {
  .ax-concept-hero > .ax-concept-poster { transition:none; opacity:.94; }
 }
+
+/* Keep actual screen posters visible until an approved clip is truly playing. */
+.ax-reel-panel--poster { background:#030d14; }
+.ax-reel-panel--poster>.ax-reel-poster {
+ position:absolute; inset:0; z-index:0; display:block; width:100%; height:100%;
+ object-fit:cover; object-position:center; opacity:1; transition:opacity .32s ease,visibility .32s ease;
+}
+.ax-reel-panel--poster>.film-video { z-index:1; opacity:0; transition:opacity .32s ease; }
+.ax-reel-panel--poster.film-playing>.film-video { opacity:1; }
+.ax-reel-panel--poster.film-playing>.ax-reel-poster { opacity:0; visibility:hidden; }
+.ax-reel-panel--poster>.ax-reel-placeholder {
+ z-index:2; visibility:visible; opacity:1;
+ background:linear-gradient(90deg,rgba(4,14,22,.78),rgba(4,14,22,.48) 56%,rgba(4,14,22,.22));
+}
+.ax-reel-panel--poster.film-loaded:not(.film-playing)>.ax-reel-placeholder { visibility:visible; opacity:1; }
+.ax-reel-panel--poster.film-playing>.ax-reel-placeholder { visibility:hidden; opacity:0; }
+@media(prefers-reduced-motion:reduce) {
+ .ax-reel-panel--poster>.film-video,.ax-reel-panel--poster>.ax-reel-poster { transition:none; }
+}
+
+/* Compact the AX product handoff without reducing its 16:9 screen stage. */
+@media(min-width:1280px) {
+ .ax-overview { padding-top:42px; padding-bottom:46px; }
+ .ax-overview .ax-reel-wrap { width:min(100%,1380px); margin-inline:auto; }
+ .ax-overview .ax-reel-heading { padding-bottom:10px; }
+ .ax-overview .ax-reel-context { margin-bottom:10px; }
+ .ax-overview .ax-reel-sequence { margin-top:20px; }
+ .ax-overview .ax-reel-sequence button { padding-top:11px; padding-bottom:12px; }
+ .ax-overview .ax-reel-footer { margin-top:10px; padding-top:10px; }
+}
+@media(min-width:2200px) {
+ .ax-overview .ax-reel-wrap { width:min(100%,1500px); }
+}

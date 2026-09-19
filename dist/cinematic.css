@@ -79,3 +79,22 @@
 .dap-feature{background:#051a2a}
 .home-page .ax-feature .ax-reel{background:#071f31;border-color:#82cce233}
 .home-page .ax-feature .ax-reel-heading{background:#051a2a;color:#c7dfe5}
+
+/* Desktop pacing: carry the hero's navy into the pale editorial section, then shorten the research and AX lead-in. */
+@media (min-width:1280px) {
+ .home-page .science-intro {
+  background:linear-gradient(180deg,#071f31 0,#cad9e0 72px,#e8eef2 132px);
+ }
+ .home-page .field-story { height:160svh; }
+ .home-page .digital-section { padding-top:54px; }
+ .home-page .digital-title { padding-bottom:26px; }
+ .home-page .digital-feature.ax-feature { padding-top:40px; }
+ .home-page .digital-section .ax-feature .digital-copy { margin-bottom:34px; }
+ .home-page .digital-section .ax-feature .digital-copy>.tiny-index { margin-bottom:20px; }
+ .home-page .digital-section .ax-feature .digital-copy>.pill-link { margin-top:18px; }
+ .home-page .digital-section .ax-feature .ax-reel-heading { padding:12px 25px; }
+ .home-page .digital-section .ax-feature .ax-reel-cockpit { padding-top:38px; }
+}
+@media (min-width:1280px) and (prefers-reduced-motion:reduce) {
+ .home-page .field-story { height:auto; }
+}

@@ -16,7 +16,7 @@
 .hero-edition>span:last-child{font-family:'Noto Sans KR',sans-serif;font-size:14px;letter-spacing:.03em}
 .landscape-title{position:absolute;left:var(--gutter);top:29%;right:var(--gutter)}
 .landscape-title>p{font:12px InterGeo,sans-serif;letter-spacing:.15em;margin:0 0 26px}
-.landscape-title h1{font:780 clamp(92px,10.6vw,202px)/.91 InterGeo,Arial,sans-serif;letter-spacing:-.065em;margin:0;max-width:85%;text-wrap:nowrap}
+.landscape-title h1{font:780 clamp(88px,7.6vw,152px)/.96 InterGeo,Arial,sans-serif;letter-spacing:-.055em;margin:0;max-width:85%;text-wrap:nowrap}
 .landscape-caption{position:absolute;left:var(--gutter);right:var(--gutter);bottom:115px;display:flex;justify-content:space-between;align-items:end}
 .landscape-caption>p{font-size:19px;line-height:1.8;letter-spacing:-.025em;margin:0}
 .round-explore{display:grid;place-items:center;border:1px solid #ffffff88;width:64px;height:64px;border-radius:100%;font-size:27px;transition:background .25s,color .25s,transform .25s}

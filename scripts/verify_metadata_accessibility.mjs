@@ -49,7 +49,7 @@ for (const route of routes) {
   assert.equal(readMeta(html, "name", "twitter:title"), title, route + " Twitter title");
   assert.equal(readMeta(html, "name", "twitter:description"), description, route + " Twitter description");
   assert.match(html, /<html lang="ko">/, route + " static language default");
-  assert.match(html, /site\.js\?v=20260920-r2/, route + " current metadata script");
+  assert.match(html, /site\.js\?v=20260920-r3/, route + " current metadata script");
   assert.doesNotMatch(html, /rel="canonical"|property="og:image"|name="twitter:image"/i, route + " must not invent canonical or social image");
   assert.doesNotMatch(html, /(?:localhost|127\.0\.0\.1|192\.168\.\d+\.\d+)/i, route + " must not publish a local origin");
 

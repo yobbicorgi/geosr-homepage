@@ -182,6 +182,4 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 자료 �
 
 영상 drop-in 경로(dist 기준): assets/films/geosr-hero.mp4, expertise-observation.mp4, expertise-environment.mp4, expertise-modelling.mp4, expertise-satellite.mp4, business-environment.mp4, company-overview.mp4, ax-discover.mp4, ax-detect.mp4, ax-predict.mp4, ax-monitor.mp4, ax-concept-film.mp4. 회사 60초·AX 30초 최종 영상과 business/company insert는 미제작이다. 실제 플랫폼 화면의 최신성·출처·사용권 검증, 문서 이미지의 공개 권리/인증 현행성 검토도 남아 있다. 준비 영상은 승인된 로컬 파일이 없으면 요청하지 않고 slate를 표시한다.
 
-요청에 따라 현재 working tree는 미커밋 상태로 보존했고 commit/push하지 않았다.
-
-- 캡처 폴더에는 요청된 16장 외에 _contact-desktop.png와 _contact-mobile.png가 추가로 남아 있다. 파일 정리는 실행 정책에 막혀 수행하지 않았고 우회하지 않았다.
+웹 구현은 commit `fad8bc0`으로 `redesign/production-2026-09-19` 브랜치에 push했다. local HEAD와 origin이 일치하고 Downloads의 `GeoSR_Homepage` junction이 canonical repo를 가리키는 것을 확인했다.

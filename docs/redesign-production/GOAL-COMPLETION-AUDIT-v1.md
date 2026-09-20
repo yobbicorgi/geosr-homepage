@@ -6,9 +6,9 @@
 
 ## 현재 판정
 
-**IN PROGRESS.** 공식 사이트 구조와 인터랙션을 구현하고 8개 route에서 반복되는 시각 요소·자료 상태를 정리하고 있다. Detect/위성 시설물에는 검증된 16:9 캡처가 없어 16:9 준비 상태를 쓴다. Predict/Monitor의 기존 poster는 이 작업에서 새로 캡처한 화면이 아니며, 현재 출처·제품 버전·공개 권리를 확인하지 못해 대표 미리보기로만 표시한다. GeoDAP은 AX와 분리했고 검증되지 않은 GeoDAP 화면이나 `33 LIVE DATASETS` 수치를 쓰지 않는다. 메인·AX 60/30초 film slot과 generation-ready metadata는 보존한다.
+**WEB IMPLEMENTATION COMPLETE / EXTERNAL MEDIA PENDING.** 8개 KO/EN route의 사이트 구조와 인터랙션, 반응형 화면, 자료 상태 표기를 구현하고 검증했다. Detect/위성 시설물에는 검증된 16:9 캡처가 없어 준비 상태를 쓴다. GeoDAP은 AX와 분리했고 검증되지 않은 화면이나 수치는 사용하지 않는다. 메인·AX 60/30초 film slot과 generation-ready metadata는 보존한다.
 
-기준 작업 트리는 아직 미커밋이다. 사용자 승인에 따라 모든 검증 후 이 작업 브랜치에 commit/push한다. 완료 게이트와 위험은 아래에 기록하고 QA 종료 후 갱신한다.
+구현 결과는 `redesign/production-2026-09-19` 브랜치에 commit/push했고 Downloads junction과 origin 동기화를 확인했다. 최종 영상과 실제 플랫폼 캡처, 문의 backend는 별도 제작·검증 범위다.
 
 ## 구현·검수 상태
 
@@ -20,11 +20,11 @@
 | Home 5단계 업무 흐름 | IMPLEMENTATION_PASS | OBSERVE → ANALYZE → MODEL → PREDICT → DELIVER로 구현했다. AX의 Detect/Predict/Monitor와 의미를 섞지 않는다. |
 | 한국어 카피와 줄바꿈 | IMPLEMENTATION_PASS | [한국어 카피 검토](KOREAN-COPY-AUDIT-v1.md)에 1920/2560 KO 제목 줄바꿈과 변경 예시를 기록했다. 이관 후 새로 드러나는 원문 카피는 source audit와 함께 확인한다. |
 | Metadata·접근성 | IMPLEMENTATION_PASS | [metadata/accessibility audit](WEB-METADATA-ACCESSIBILITY-AUDIT-v1.md) 및 verifier가 KO/EN language, title, description, landmark, focus, tab·dialog와 reduced-motion 계약을 검사한다. 공용 renderer는 공식 도메인을 canonical/`og:url`로 설정하며 production에서 route·언어 매핑을 확인해야 한다. crop·rights 검토를 마친 공유 이미지가 없어 `og:image`/`twitter:image`는 생략한다. |
-| 공용 콘텐츠와 기록 이관 | CONTENT_PENDING | 대표 기록, 명시적 예시, 검색·상세 틀을 제공한다. `luna_asset_audit`의 공개 페이지 inventory/coverage 결과를 통합한 뒤 누락 자료와 이전 사이트 전체 coverage를 판정한다. 원문이 없는 placeholder는 그대로 표시한다. |
+| 공용 콘텐츠와 기록 이관 | STRUCTURE_PASS / FULL ARCHIVE DEFERRED | 공개 페이지 inventory와 coverage를 보존했고 대표 기록, 명시적 예시, 검색·상세 틀을 제공한다. 전체 게시물은 목업 단계에서 대량 노출하지 않는다. 원문이 없는 placeholder는 그대로 표시한다. |
 | 회사 자료·자격문서 | CONTENT_PENDING | 회사 연혁·조직·소개서·채용·주소 상세와 자격 문서의 현재 유효성 및 공개 권리를 원문으로 재확인해야 한다. 현재 확인한 연락처는 원문에서 옮긴 정보로 출처 안내를 붙였다. |
 | 문의 처리 | EXTERNAL_PENDING | 화면 확인용 form은 자료를 전송하지 않는다. 공개 전 수신 backend, 개인정보 안내, 오류/완료 상태가 필요하다. |
 | Final films·production deploy | EXTERNAL_PENDING | 기존 film preparation 문서와 manifest를 보존한다. 60초 회사 영상·30초 AX 영상은 생성/편집하지 않았고 운영 site에도 배포하지 않았다. |
-| GitHub·Downloads | PENDING | Downloads junction은 canonical repo를 가리킨다. 변경 완료와 QA 뒤 작업 브랜치에 commit/push하고 origin 동기화를 확인한다. |
+| GitHub·Downloads | PASS | commit `fad8bc0`을 origin의 `redesign/production-2026-09-19`에 push했고 Downloads junction이 canonical repo를 가리키는 것을 확인했다. |
 
 ## 검증 현황
 
@@ -49,6 +49,4 @@
 
 영상 drop-in 경로(dist 기준): assets/films/geosr-hero.mp4, expertise-observation.mp4, expertise-environment.mp4, expertise-modelling.mp4, expertise-satellite.mp4, business-environment.mp4, company-overview.mp4, ax-discover.mp4, ax-detect.mp4, ax-predict.mp4, ax-monitor.mp4, ax-concept-film.mp4. 회사 60초·AX 30초 최종 영상과 business/company insert는 미제작이며, 실제 플랫폼 화면의 출처·버전·사용권 및 문서 이미지의 공개 권리/인증 현행성은 검증이 남아 있다.
 
-캡처는 UI 검수 자료이며 verified product/field capture를 의미하지 않는다. 이 작업에서는 commit/push하지 않았고 브랜치의 working tree를 보존했다.
-
-- 캡처 폴더에는 요청된 16장 외에 _contact-desktop.png와 _contact-mobile.png가 추가로 남아 있다. 파일 정리는 실행 정책에 막혀 수행하지 않았고 우회하지 않았다.
+캡처는 UI 검수 자료이며 verified product/field capture를 의미하지 않는다. 구현은 commit `fad8bc0`으로 push했고 최종 검증 뒤 작업 트리가 깨끗한 상태임을 확인했다.

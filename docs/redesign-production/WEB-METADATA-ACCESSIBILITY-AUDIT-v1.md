@@ -6,7 +6,7 @@
 
 | 경로 | KO/EN 결과 | 내용 확인 |
 | --- | --- | --- |
-| `index.html` | PASS | 환경 인텔리전스 / Environmental Intelligence |
+| `index.html` | PASS | 지구 데이터 인텔리전스 / Geo Data Intelligence |
 | `business.html` | PASS | 기술과 솔루션 / Expertise |
 | `research.html` | PASS | 연구개발 및 주요 수행실적 / Research and projects |
 | `ax-platform.html` | PASS | AX Platform |
@@ -17,7 +17,7 @@
 
 16개 KO/EN 페이지 응답에서 `<html lang>`, 문서 제목, 설명, Open Graph 제목·설명·유형·locale, Twitter 카드·제목·설명을 확인했습니다. 각 페이지의 런타임 제목과 OG/Twitter 제목이 일치하고, 언어 버튼은 현재 언어와 반대 언어로 전환하도록 안내합니다. 사업 상세, 연구·소식 상세와 장비 분류는 각 상세 항목이나 필터에 맞는 메타데이터로 갱신됩니다.
 
-`canonical`과 `og:url`은 운영 URL이 확정되지 않아 만들지 않았습니다. `og:image`와 `twitter:image`도 검증된 공유용 자산을 찾지 못해 생략했습니다. 현재 포스터는 16:9 미디어 슬롯용으로 제작되어 소셜 미리보기에서 잘리지 않는다고 확인되지 않았으므로 임의로 지정하지 않았습니다. 모든 HTML 초기값은 KO이며 JS가 URL 언어에 맞춰 EN 메타데이터로 갱신합니다.
+공용 renderer는 기존 공식 도메인 `https://www.geosr.com`을 기준으로 현재 경로와 언어를 반영해 canonical과 `og:url`을 런타임에 설정합니다. 배포 시 이 도메인에서 각 경로와 KO/EN URL이 올바른 문서를 여는지 확인해야 합니다. 안전한 crop과 공개 권리를 확인한 공유 자산은 없어 `og:image`와 `twitter:image`는 생략했습니다. 포스터는 16:9 미디어 슬롯용이므로 소셜 미리보기 이미지로 임의 지정하지 않습니다. HTML 정적 초기값은 KO이며 공용 JavaScript가 URL 언어에 맞춰 EN 메타데이터로 갱신합니다.
 
 ## 접근성 확인
 

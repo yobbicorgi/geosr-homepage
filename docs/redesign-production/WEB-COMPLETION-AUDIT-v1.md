@@ -1,47 +1,54 @@
-# GeoSR 웹 전면 교체 경로·화면 완성도 감사
+# GeoSR 웹 구현·콘텐츠 이관 상태
 
-감사일: 2026-09-20
-브랜치: `redesign/production-2026-09-19`
-로컬 미리보기: `http://127.0.0.1:18102/`
+기준일: 2026-09-20<br>
+브랜치: `redesign/production-2026-09-19`<br>
+공식 진입점: [dist/index.html](../../dist/index.html) · AX: [dist/ax-platform.html](../../dist/ax-platform.html)<br>
+미리보기: `http://127.0.0.1:18102/`
 
-## 판정 기준과 범위
+## 페이지 구현 상태
 
-`IMPLEMENTATION_PASS`는 페이지 경로, 탐색 구조, 언어 처리, 인터랙션과 시각 구조가 동작함을 뜻합니다. 승인된 목업·빈 게시글·자료 자리표시는 이 구조의 실패로 판정하지 않습니다. `CONTENT_PENDING`은 최종 실제 콘텐츠나 승인된 미디어가 아직 들어오지 않은 상태, `EXTERNAL_PENDING`은 접수 backend 또는 외부 서비스 상태처럼 사이트 코드 밖의 연동이 남은 상태입니다. 깨진 route나 핵심 동작이 발견되면 `FAIL`로 기록합니다.
+`IMPLEMENTATION_PASS`는 경로·탐색·언어 전환·화면 구조가 동작함을 뜻한다. 사용자가 허용한 목업, 빈 게시물, 출처 검토 중인 자료 자리표시는 구현 실패가 아니다. 최종 회사 자료·게시물·미디어는 `CONTENT_PENDING`, 외부 서비스와 문의 접수 연동은 `EXTERNAL_PENDING`으로 별도 기록한다.
 
-데스크톱 1440×900에서 홈, 기술, 연구, 회사, 소식, 장비, 문의, AX 페이지를 한국어와 영어로 열고 브라우저 언어 전환도 시험했습니다. 로컬 미리보기에서 16개 URL 요청과 브라우저 렌더링을 확인했습니다. 홈/AX 외부 진입은 공유 렌더러인 `dist/site.js`의 경로 분기와 공용 header/footer를 함께 확인했습니다.
+| 경로 | 구현 | 별도 대기 | 현재 상태와 남은 일 |
+| --- | --- | --- | --- |
+| 홈 — [index.html](../../dist/index.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 100svh Earth poster hero, 다섯 단계 연구 흐름, AX/GeoDAP 독립 진입, 자격 자료·기록·문의 연결이 동작한다. 메인 60초 영상은 generation-ready이며 manifest `src:null`, `approval:pending` 상태다. 최종 영상 생성·편집·연결은 남아 있다. |
+| 기술 — [business.html](../../dist/business.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 분야별 랜딩과 기술 상세 URL·KO/EN 전환이 동작한다. 일부 상세 내용과 전체 기술 자료 이관을 기다린다. |
+| 연구 — [research.html](../../dist/research.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 자료 분류·검색·상세 route가 동작한다. 화면의 예시와 게시물 자리표시는 실제 자료와 구분하며, 전체 본문·첨부 이관을 기다린다. |
+| AX Platform — [ax-platform.html](../../dist/ax-platform.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 100svh 콘셉트 필름 stage와 수동 기능 탭이 동작한다. Discover는 검증된 화면 확보 전 16:9 준비 slate, Predict/Monitor는 출처·버전·권리 검토 중인 대표 미리보기다. 기존 포스터를 새로 캡처한 실제 화면으로 부르지 않는다. AX 30초 film은 `src:null`, `approval:pending`이다. |
+| GeoSR 소개 — [company.html](../../dist/company.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 회사 정보 구조, 자격 자료 분류·검색·확대, 사업장 안내가 동작한다. 연혁·조직·소개서·채용 자료와 자격 문서의 유효성·공개 권리 확인 및 이관을 기다린다. |
+| 소식 — [news.html](../../dist/news.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 공지·보도·뉴스레터 분류, 검색, 상세 화면이 동작한다. 기존 원문과 첨부를 확인해 전체 게시물을 옮긴다. |
+| 관측·장비 — [equipment.html](../../dist/equipment.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 분류·검색과 대표 항목 화면이 동작한다. 항목별 실물명·제원·사진 provenance·사용 권리를 확인한 뒤 자료를 보완한다. 장비 카탈로그 확장보다 회사·AX 콘티와 웹 디자인을 우선한다. |
+| 문의 — [contact.html](../../dist/contact.html) | IMPLEMENTATION_PASS | EXTERNAL_PENDING | 전화·이메일 링크와 미리보기 양식이 동작한다. 현재 양식은 입력을 저장·전송하지 않으므로 운영 접수 backend 또는 검증된 대체 경로가 필요하다. |
 
-## 페이지별 결과
+GeoDAP은 AX와 별개의 외부 서비스다. 홈과 공용 탐색에서는 독립 링크만 제공하며 검증되지 않은 GeoDAP 화면이나 `33 LIVE DATASETS` 수치를 사용하지 않는다. 외부 서비스의 현재 상태는 이 로컬 front-end 검사로 판단하지 않는다.
 
-| 페이지 | 구현 상태 | 콘텐츠·외부 대기 | 확인 결과 및 남은 작업 |
-|---|---|---|---|
-| 홈 — [index.html](../../dist/index.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | KO/EN, 첫 화면 영상 stage와 텍스트 계층이 동작합니다. 60초 영상은 이미 generation-ready 슬롯에 있으며 매니페스트 `src`가 `null`인 것이 현재 승인 대기 상태입니다. 영상 전달 뒤 연결·검수만 남았습니다. |
-| 기술·솔루션 — [business.html](../../dist/business.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 페이지·기술 상세 route와 KO/EN 전환이 작동합니다. 대표 상세 3개와 목업 상세 자리는 허용된 front-end structure입니다. 최종 기술 설명과 전체 자료 이관이 남았습니다. 근거: [site.js](../../dist/site.js#L19). |
-| 연구·성과 — [research.html](../../dist/research.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 분류, 검색, 상세 route 및 언어가 작동합니다. 대표 기록 외의 실제 게시글 본문·첨부 이관이 남았습니다. 목업 항목 자체는 구현 실패가 아닙니다. 근거: [site.js](../../dist/site.js#L20). |
-| AX Platform — [ax-platform.html](../../dist/ax-platform.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | KO/EN, 900px 높이 히어로, 실제 Discover/Predict/Monitor 탭, 방향키와 제품 클립 경로가 동작합니다. 별도 30초 콘셉트 영상은 generation-ready 슬롯이고 최종 media만 대기 중입니다. 근거: [ax-v2.js](../../dist/ax-v2.js#L29), [film-manifest.json](../../dist/film-manifest.json). |
-| GeoSR 소개 — [company.html](../../dist/company.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 페이지 앵커, 전문 분야 링크, 인증 자료 탐색과 거점 정보가 동작합니다. 실제 기업 연혁·조직·소개서·채용 및 인증 원본의 최종 확인·이관이 남았습니다. 목업 자료 자리표시는 허용된 상태입니다. 근거: [company-v2.js](../../dist/company-v2.js#L1), [interactions.js](../../dist/interactions.js#L30). |
-| 소식 — [news.html](../../dist/news.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 카테고리, 제목 검색, 상세 route와 KO/EN이 동작합니다. 최종 게시글·본문·첨부 전체 이관이 남았습니다. 근거: [site.js](../../dist/site.js#L20). |
-| 관측·장비 — [equipment.html](../../dist/equipment.html) | IMPLEMENTATION_PASS | CONTENT_PENDING | 조사·실험·선박 필터, 대표 장비 3개와 KO/EN이 동작하며 로컬 이미지 응답도 정상입니다. 실제 장비 범위와 검증된 제원 추가가 남았습니다. 근거: [site.js](../../dist/site.js#L21), [site.js](../../dist/site.js#L22). |
-| 문의 — [contact.html](../../dist/contact.html) | IMPLEMENTATION_PASS | EXTERNAL_PENDING | KO/EN, 전화·이메일 링크와 양식 UI가 동작합니다. 현재 양식은 제출 내용을 저장하지 않는 UI prototype입니다. 운영 접수 backend 또는 검증된 외부 문의 경로 연결이 남았습니다. 근거: [site.js](../../dist/site.js#L23). |
-| GeoDAP 외부 진입 | IMPLEMENTATION_PASS | EXTERNAL_PENDING | 상단·본문·footer에서 `https://www.geo-dap.com/`로 이동하며 새 창 링크에 `rel="noopener"`가 설정되어 있습니다. 외부 서비스 상태와 운영 도메인에서의 목적지는 이번 로컬 감사 범위 밖입니다. |
+## 데스크톱·접근성·기술 확인
 
-이 감사 범위의 로컬 페이지에서 404는 없었습니다. 홈에서 노출하는 `research`, `contact`, `equipment` 및 명시된 주요 route도 존재합니다. 따라서 front-end route 구현은 모두 `IMPLEMENTATION_PASS`이며, 콘텐츠·외부 연동 대기는 그 상태와 별도로 표기했습니다. 정적 스캔에서 37개 로컬 script/style/data/media 파일이 모두 2xx로 응답했습니다.
+- 8개 경로의 KO/EN을 1920×1080과 2560×1440에서 렌더해 32개 route/viewport/language 조합을 확인했다. 홈·AX hero는 각각 100svh이며 첫 화면에 뒤 섹션이 드러나지 않는다. 홈 hero의 `h1`은 두 줄로 유지되고 Earth frame과 겹치지 않는다.
+- 두 viewport에서 가로 넘침, 로드 완료 이미지의 broken reference, 브라우저 console error가 없었다. 16:9 AX media slot은 원본 비율을 보존한다. Detect는 준비 slate이고 기존 Predict/Monitor 자료는 대표 미리보기로만 설명한다.
+- reduced-motion 설정에서 poster는 유지되고 자동 모션이 정지된다. 공용 메뉴·언어 버튼, AX/연구 흐름/자격 자료의 키보드 상태와 focus-visible 표시를 확인했다.
+- `verify_redesign_routes.mjs`는 16개 KO/EN route 응답과 31개 local script/style/data/media 요청의 2xx 응답을 확인했다. 모든 `dist/*.js`에 `node --check`를 실행했고 `verify_metadata_accessibility.mjs`, `verify_film_readiness_v3.mjs`, `git diff --check`가 통과했다.
+- 현재 `dist/index.html`에는 외부 GSAP·Three CDN이나 `motion-lab.js`가 포함되지 않는다. 새 콘솔 경고·외부 런타임 의존을 만들지 않도록 페이지 효과는 현지 CSS/JS로 처리한다. 새로고침한 현재 로컬 홈에서 console/network 오류를 재현하지 못했다.
+- 공용 renderer는 공식 도메인 `https://www.geosr.com`을 기준으로 canonical과 `og:url`을 런타임에 생성한다. 배포 시 경로·언어 URL이 올바른 문서를 제공하는지 확인한다. 공개 권리와 crop-safe 비율을 확인한 공유 artwork가 없어 `og:image`와 `twitter:image`는 생략한다.
 
-## 공통 화면·언어·링크 점검
+## 남은 콘텐츠·출시 관문
 
-- 공용 header/footer는 모든 페이지에서 `site.js`가 렌더링합니다. 1440×900에서 같은 `Noto Sans KR, Arial, sans-serif` 글꼴 체계를 확인했고, 어두운 홈·AX 영역과 밝은 내부 페이지가 같은 탐색 구조를 유지합니다. 초기 HTML에 적힌 로딩 문구는 실행 후 모든 페이지에서 사라졌으며, 이전 디자인 셸은 보이지 않았습니다.
-- 8개 route를 KO와 EN으로 각각 열었고, 각 페이지의 언어 버튼을 왕복 조작했습니다. 경로와 `lang`이 보존됩니다. `business.html?id=15&lang=ko`에서 영어로 전환할 때 `id=15`도 보존되는 것을 확인했습니다.
-- 1440×900에서 가로 넘침과 로드 완료 이미지의 `naturalWidth=0`은 없었습니다. AX hero는 900px 높이였고, 탭은 `aria-selected`와 roving `tabindex`를 갱신했습니다.
-- 공용 arrow는 실제 내부 경로, 문서 열기, 메일/전화 동작, 외부 GeoDAP 진입에 붙어 있습니다. 다만 인증 문서 카드의 `자료 보기 ↗`는 버튼을 눌렀을 때 바로 새 페이지로 이동하지 않고 확대 모달을 엽니다. 같은 표식이 실제 이동인지 확대 동작인지 혼동될 수 있으므로 해당 버튼 표식을 확대 아이콘이나 동작 문구로 정리할 필요가 있습니다. 원문을 여는 모달 안의 외부 링크는 별도 `target="_blank" rel="noopener"`입니다. 근거: [interactions.js](../../dist/interactions.js#L45), [interactions.js](../../dist/interactions.js#L58).
-- 고유 document title은 [site.js](../../dist/site.js#L24)에서 KO/EN 페이지별로 설정합니다. `business`, `research`, `news` 상세 항목과 장비 카테고리 제목도 별도 처리하며, 로컬 1440×900 확인에서 `equipment`·`contact`의 일반 회사 제목 문제를 바로잡았습니다. 9개 route HTML의 `site.js` query도 새 key로 갱신해 이전 브라우저 캐시를 무효화했습니다.
-- [index.html](../../dist/index.html)은 GSAP, ScrollTrigger, Three.js를 jsDelivr CDN에서 불러옵니다. 콘솔 경고 source는 `dist/index.html`의 `https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js`입니다. 저장소에 Three.js 로컬 배포본이나 package manifest가 없고, [motion-lab.js](../../dist/motion-lab.js#L1)는 `window.THREE` 전역 UMD build를 쓰는 선택적 hero 효과와 GSAP reveal을 같은 classic script에서 초기화합니다. 지원되는 ESM 전환은 Three.js 로컬 의존성 도입 및 초기화 순서 변경을 요구합니다. 기존 효과를 깨뜨리거나 새 CDN 의존을 만들 위험이 있어 이번 범위에서는 코드를 변경하지 않았습니다. `motion-lab.js`는 Three 전역이 없을 때 3D 효과를 건너뛰는 fallback이 있으므로, 후속 검토는 선택적 Three 효과 제거 또는 프로젝트 차원의 로컬 ESM bundle 적용입니다.
-- `site.js`는 9개 진입 HTML에서 `?v=20260920-r1`로 갱신했습니다. 공통 CSS/다른 JS의 query 값은 entry별로 아직 다르므로, 운영 배포를 확정할 때 실제 적용 파일과 cache-busting 값을 함께 정렬합니다. 근거: [business.html](../../dist/business.html#L1), [index.html](../../dist/index.html#L1).
+- 회사 필름 60초와 AX 콘셉트 필름 30초는 키프레임·생성 준비 상태다. 최종 영상은 아직 생성·편집되지 않았고, `film-manifest.json`의 두 필름 slot은 `src:null`, `approval:pending`이다.
+- AX Predict/Monitor 자료와 로컬 AX clip의 캡처 URL·촬영 시점·제품 버전·공개 사용 권리를 검토한다. Satellite Facility Detect는 검증된 capture를 확보하기 전 16:9 준비 상태로 유지한다.
+- 회사 연혁·조직·회사 소개서·채용 자료, 자격 문서의 유효성·사용 권리, 연구·소식의 본문·첨부, 기술 설명 전체 이관을 완료한다. 현재까지 확인하지 못한 사실을 채우거나 실시간 상태로 표현하지 않는다.
+- 문의 backend를 연결하고 production 배포 후 route·언어·canonical 매핑, 실제 접수, 권한과 공개 자료를 최종 확인한다.
+- [공개 자료 이관 목록](../source-migration/README.md)은 별도 수집 작업에서 갱신 중이다. 수집 결과를 검토해 누락 자료와 route 분류를 통합한 뒤 최종 배포 QA를 수행한다.
 
-## 재현 가능한 검사
+## 재현 명령
 
 ```powershell
-node --check scripts/verify_redesign_routes.mjs
 node --check dist/site.js
+node --check dist/home.js
+node --check dist/ax-v2.js
+$env:REDESIGN_PREVIEW_URL='http://127.0.0.1:18102/'
 node scripts/verify_redesign_routes.mjs
+$env:REDESIGN_PREVIEW_URL='http://127.0.0.1:18103/'
+node scripts/verify_metadata_accessibility.mjs
+node scripts/verify_film_readiness_v3.mjs
+git diff --check
 ```
-
-`REDESIGN_PREVIEW_URL` 환경 변수로 미리보기 주소를 바꿀 수 있습니다. 스크립트는 8개 route의 KO/EN 응답, HTML에서 참조한 local CSS/JS, 코드에 명시된 media 경로, runtime `content.json`과 `film-manifest.json`의 실제 `src` 경로를 HTTP로 확인합니다. `delivery` 필드는 미래 납품 위치이므로 요청 대상으로 취급하지 않습니다. 브라우저에서 KO/EN 페이지 및 상세 제목, 언어 전환, 콘텐츠 렌더링, AX 탭·키보드 동작, overflow와 console/network 상태를 1440×900에서 확인했습니다.

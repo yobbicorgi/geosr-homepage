@@ -6,7 +6,7 @@
 
 - 저장소: `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 브랜치: `redesign/production-2026-09-19`
-- 최신 커밋 기준: `c4b246e3214f76a55d62fb041e078391e161c723`
+- 이번 구현을 시작한 기준 커밋: `7b259a6489d5fd172e8014e93a95833936291c3b`. 현재 진행 중인 변경은 아직 commit되지 않았다. 최종 검수 후 완료 시 실제 새 HEAD로 갱신한다.
 - Downloads junction: `C:\Users\user\Downloads\GeoSR_Homepage` → `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 공식 홈페이지: localhost의 [KO](http://127.0.0.1:18102/index.html?lang=ko) · [EN](http://127.0.0.1:18102/index.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/index.html?lang=ko) · [EN](http://192.168.6.85:18102/index.html?lang=en). AX 상세: localhost의 [KO](http://127.0.0.1:18102/ax-platform.html?lang=ko) · [EN](http://127.0.0.1:18102/ax-platform.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/ax-platform.html?lang=ko) · [EN](http://192.168.6.85:18102/ax-platform.html?lang=en). `dist/index.html`이 공식 홈 진입점이고 `redesign-preview.html`은 별도 디자인 미리보기다.
 - 최종 60초 회사 영상과 30초 AX 콘셉트 영상은 아직 생성·편집되지 않았다. `ax-*-fast.mp4`는 제품 UI 원본 클립이며 완성 필름을 뜻하지 않는다.
@@ -56,7 +56,7 @@
 | C06 | 30–34초 | main-reviewed concept pair로 수면에서 수중으로 전환한다. | 선택 frame: [c06-waterline-start-v1.png](../../dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png) → [c06-underwater-end-v1.png](../../dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png). 실제 GeoSR 배치 증거가 아니다. 선택적 BlueROV2 insert는 권리와 원본 픽셀/비율 확인 뒤 사용하고, 센서·계류선과 한 설치로 주장하지 않는다. |
 | C07 | 34–40초 | main-approved 실험실 concept에서 분석 연결로 이동한다. | 선택 frame: [analysis-lab-v1.webp](../../dist/assets/analysis-lab-v1.webp). 실제 GeoSR 시설·장비·시료·결과 근거가 아니다. Concept disclosure와 slow-push/focus QA를 유지한다. |
 | C08 | 40–46초 | 짧은 타이포그래피로 분석을 예측·의사결정 지원에 연결. | 편집 단계의 navy slate와 검수된 문구. fake UI/data 없음. |
-| C09 | 46–55.5초 | Discover → Predict → Monitor 실제 화면을 각 약 3초씩 독립된 full-frame으로 순차 제시. | [Discover](../../dist/assets/films/ax-discover-fast.mp4) → [Predict](../../dist/assets/films/ax-predict-fast.mp4) → [Monitor](../../dist/assets/films/ax-monitor-fast.mp4). 원본 UI pixels 유지. |
+| C09 | 46–55.5초 | Discover → Predict → Monitor 후보 화면을 약 3초씩 독립된 full-frame으로 순차 제시한다. | [Discover](../../dist/assets/films/ax-discover-fast.mp4) → [Predict](../../dist/assets/films/ax-predict-fast.mp4) → [Monitor](../../dist/assets/films/ax-monitor-fast.mp4). 로컬 clip은 이미 존재하지만 이 작업에서 새로 캡처한 자료가 아니며, live URL·촬영 시점·제품 버전·공개 사용 권리는 미확인이다. 출처를 검증한 뒤 원본 UI pixels와 16:9 비율을 그대로 사용하고, 검증 전에는 최종 증거 컷으로 취급하지 않는다. |
 | C10 | 55.5–60초 | 첫 지구 frame으로 돌아와 exact loop. | [Earth loop frame](../../dist/assets/concepts/corporate-film/hero-earth-00s-v4.png). C01과 지리·crop·grade를 일치시킨다. |
 
 C05·C06의 main-reviewed background concept plates는 선택 상태이며 실제 현장 evidence가 아니다. 선택적 장비 이미지는 scene 중심이 아니며 한 shot에서 최대 하나만 짧게 사용하고, 권리와 가로세로 비율·원본 픽셀 보존을 확인한다. ImageGen은 장비를 새로 그리거나 복구·변형하지 않는다. source cutout이 깔끔하지 않으면 원본 전체 이미지를 유지한 짧은 insert로 바꾸거나 생략한다. 장비 자료와 권리 한계는 [equipment manifest](../redesign-production/equipment-source-manifest.md)와 [source pack](../redesign-production/equipment-sources/README.md)에 따른다. C05의 해누리호 외 별도 모델, USV 이미지별 모델·탑재체 및 C06의 현장·운용 배치 주장은 미확인이다.
@@ -88,35 +88,37 @@ C05·C06의 main-reviewed background concept plates는 선택 상태이며 실�
 ## v3의 C09·C10 및 실제 제품 화면
 
 - C07의 `analysis-lab-v1.webp`는 main-approved generated lab concept다. 실제 GeoSR 연구실 주장을 하지 않고 concept disclosure를 유지하며 slow-push/focus motion을 검수한다.
-- C09에서는 `ax-discover-fast.mp4`, `ax-predict-fast.mp4`, `ax-monitor-fast.mp4`를 각 약 3초씩 독립적인 16:9 full-frame 컷으로 차례대로 보여준다. 동시 화면·picture-in-picture·가짜 workflow는 금지한다. C10은 55.5–60초 Earth frame으로 돌아가 C01과 정확히 loop한다.
+- C09는 검증된 Discover·Predict·Monitor source clip이 있을 때만 각 약 3초씩 독립적인 16:9 full-frame 컷으로 차례대로 보여준다. 현재 로컬 clip은 재사용 후보이며 새 live capture가 아니다. capture URL·제품 버전·촬영 시점·공개 권리를 확인하기 전에는 화면을 검증된 제품 증거라고 부르지 않고, 검증이 끝나지 않으면 C09는 16:9 준비 화면으로 둔다. 동시 화면·picture-in-picture·가짜 workflow는 금지한다. C10은 55.5–60초 Earth frame으로 돌아가 C01과 정확히 loop한다.
 - 자세한 구간·전환·검수 기준은 [C09–C10 제작 기록](../redesign-production/imagegen-prompts/corporate-film-c09-c10-v1.md)과 [keyframe production package](../redesign-production/KEYFRAME-PRODUCTION-PACKAGE.md)을 따른다.
 
 ### AX Platform 별도 30초 콘티 A01–A05
 
-AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터 → Detect → Predict → Monitor의 개념 장면 사이에 확인된 실제 16:9 화면을 각 기능별 약 3초씩 그대로 사용하고, 마지막에 실제 Overview로 인계한다. 실제 화면은 ImageGen으로 만들지 않는다.
+AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 자료 → Detect → Predict → Monitor의 개념 장면 사이에 출처·제품 버전·사용 권리를 검증한 16:9 화면을 기능별 약 3초씩 넣고, 마지막에 Overview로 인계한다. 현재 로컬 포스터와 clip은 새로 캡처한 자료가 아니며 출처를 확인하기 전까지 대표 미리보기/재사용 후보로만 취급한다. Satellite Facility Detect의 검증된 캡처는 아직 없으므로 화면을 꾸며 채우지 않고 16:9 준비 상태로 둔다. 실제 화면은 ImageGen으로 만들지 않는다.
 
 | 샷 | 구간 | 구성 기준 |
 | --- | --- | --- |
 | A01 | 00–07초 | 입력 종류를 추상 재료와 공간 전환으로 표현한다. 실제 데이터/UI처럼 보이지 않게 한다. |
-| A02 | 07–14초 | Detect 개념에서 실제 Discover 화면 약 3초로 연결한다. |
-| A03 | 14–21초 | Predict 개념에서 실제 Predict 화면 약 3초로 연결한다. |
-| A04 | 21–28초 | Monitor 개념에서 실제 Monitor 화면 약 3초로 연결한다. |
-| A05 | 28–30초 | 실제 Overview poster/frame로 짧게 인계한다. |
+| A02 | 07–14초 | Detect 개념 뒤, live source·버전·권리를 확인한 Discover 화면이 확보되면 약 3초 연결한다. 미확보 상태에서는 16:9 준비 화면을 유지한다. |
+| A03 | 14–21초 | Predict 개념 뒤 검증된 화면을 약 3초 연결한다. 기존 poster/clip은 미리보기·재사용 후보이며 검증 전에는 제품 증거로 부르지 않는다. |
+| A04 | 21–28초 | Monitor 개념 뒤 검증된 화면을 약 3초 연결한다. 기존 poster/clip은 미리보기·재사용 후보이며 검증 전에는 제품 증거로 부르지 않는다. |
+| A05 | 28–30초 | 출처가 확인된 Overview 화면이 확보되면 짧게 인계한다. 검증 전에는 기존 poster/frame을 실제 화면이라고 표기하지 않는다. |
 
 [AX A01–A06 ImageGen/Higgsfield 준비 문서](../redesign-production/imagegen-prompts/ax-concept-film-a01-a06-v1.md)는 이전 상세 shot 기록으로 보존한다. 현재 구조와 타이밍은 v3 콘티를 따른다. ImageGen은 화면 바깥의 배경·공간 분위기만 만든다. 지도, 실제 데이터, 지형, UI·문자·마커를 생성하거나 원본 UI pixels를 덮지 않는다.
 
 ## 현재 웹 구현과 필름 슬롯
 
-- 공식 홈페이지는 [index.html](../../dist/index.html)이 진입점이며 [home.js](../../dist/home.js)와 [cinematic.css](../../dist/cinematic.css)가 콘텐츠와 화면을 구성한다. 현재 변경은 `hero-earth-00s-v4.png`를 메인 hero와 첫 관측 장면에 연결하고, 네 장면을 `Observation → Interpretation → Prediction → Action`으로 구성한다. media slot/poster hook과 경로는 유지한다: `assets/concepts/corporate-film/hero-earth-00s-v4.png`, `assets/analysis-lab-v1.webp`, `assets/satellite-layers-v3.png`, `assets/coastal-model-v3.png`.
-- 공식 홈의 첫 메인 필름은 전체 화면 100vh/100svh hero slot이다. 최종 영상은 아직 pending이며 KO `메인 필름 제작 준비 중` / EN `Main film in preparation` 상태를 유지한다. 네 장면의 이미지는 승인 poster/source 연결 지점이며 실제 영상이나 분석 결과를 뜻하지 않는다.
+- 공식 홈페이지는 [index.html](../../dist/index.html)이 진입점이며 [home.js](../../dist/home.js)와 [cinematic.css](../../dist/cinematic.css)가 콘텐츠와 화면을 구성한다. Home story는 승인된 다섯 단계 `OBSERVE → ANALYZE → MODEL → PREDICT → DELIVER`다. 앞선 네 장면 `Observation → Interpretation → Prediction → Action`은 이전 버전이며 더 이상 story authority가 아니다. 현재 media slot에는 Earth poster, lab concept, satellite-layer concept, coastal-model concept, 마지막 타이포그래피 장면이 연결돼 있다. 마지막 세 개의 concept 이미지는 실측·예측 결과나 검증 지리 자료가 아니며 페이지에서도 개념 표현으로 고지한다.
+- 홈의 첫 화면은 사용자가 승인한 `Geo Data Intelligence` 정체성, Earth poster와 제작 준비 상태를 유지한다. 이 제목은 디자인 방향 문서의 이전 유사성 우려를 supersede한다. hero typography는 1920/2560 데스크톱에서 Earth 시각물의 주도권을 남기도록 축소했다.
+- AX 소개에서 Detect/위성 시설물은 검증 가능한 16:9 캡처가 없어 이미지 없이 준비 상태로 표시한다. Predict/Flood3D 및 Monitor/Buoy poster는 이 작업에서 새로 촬영·캡처된 자료가 아니다. 출처, 제품 버전, 공개 권리가 확인되지 않은 대표 미리보기로만 표시하고 검토 상태를 붙인다. 기존 16:9 포스터를 실제 제품 화면으로 부르지 않는다. AX 플랫폼 캡처 상세는 [source inventory](../redesign-production/SOURCE-INVENTORY.md)를 참고한다.
+- 공식 홈의 첫 메인 필름은 전체 화면 100vh/100svh hero slot이다. 최종 영상은 아직 pending이며 KO `메인 필름 제작 준비 중` / EN `Main film in preparation` 상태를 유지한다. hero Earth poster와 아래 다섯 단계의 media slot은 poster/source 연결 지점이며 실제 영상이나 분석 결과를 뜻하지 않는다.
 - [메인 디자인 미리보기 HTML](../../dist/redesign-preview.html)은 별도 가안으로 보존한다. 공식 홈페이지의 현재 미디어와 라우팅 기준은 `index.html` 및 해당 renderer다. 내용을 복제해 별도 아키텍처를 만들거나 공식 연결을 미리보기 쪽으로 되돌리지 않는다.
-- 메인 페이지의 AX 콘셉트 필름은 실제 제품 증거 영역보다 먼저 오는 16:9 full-width pending slot이다. KO `영상 제작 준비 중` 라벨과 Discover/Predict/Monitor 실제 캡처 탭이 있다.
-- [AX 상세 페이지 shell](../../dist/ax-platform.html)은 콘텐츠를 [ax-v2.js](../../dist/ax-v2.js)가 렌더한다. 상단에는 100svh AX concept-film slot과 `AX CONCEPT FILM · 영상 제작 준비 중` 상태가 있고, 실제 제품 시퀀스와 아래 3열 원리 카드가 이어진다.
+- 메인 페이지의 AX 콘셉트 필름은 제품 미리보기보다 먼저 오는 16:9 full-width pending slot이다. KO `영상 제작 준비 중` 상태를 유지한다. 기능 탭의 Discover는 16:9 준비 상태이며 Predict/Monitor의 기존 16:9 poster는 출처·버전·공개 권리를 검토 중인 대표 미리보기다.
+- [AX 상세 페이지 shell](../../dist/ax-platform.html)은 콘텐츠를 [ax-v2.js](../../dist/ax-v2.js)가 렌더한다. 상단에는 100svh AX concept-film slot과 `AX CONCEPT FILM · 영상 제작 준비 중` 상태가 있고, 그 아래에는 Discover 준비 상태 및 Predict/Monitor 대표 미리보기와 3열 원리 소개가 이어진다. 이 자료는 새로 캡처한 실제 제품 화면으로 표기하지 않는다.
 - AX A01 hero의 현재 임시 poster는 dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png다. [v4 pair 생성·검수 로그](../redesign-production/keyframes-v3/AX-DATA-PLANES-IMAGEGEN-LOG.md)를 참고한다. film manifest는 src=null, approval=pending, duration=30을 유지하므로 poster 연결은 final film 승인과 다르며 실제 data/UI 결과를 나타내지 않는다.
 - 이 상태 문구는 최종 승인 영상이 연결되고 로딩 확인되기 전까지 유지한다. 이미 존재하는 포스터나 AX fast clips를 완성 콘셉트 영상으로 표시하지 않는다.
 - 현재 미리보기 200 응답은 서버 연결만 확인한 것이다. 최종 업데이트 후 아래 QA를 다시 수행한다.
 - [웹 구현·자산 완료도 감사](../redesign-production/WEB-COMPLETION-AUDIT-v1.md)는 현재 구현 상태와 남은 검증 항목의 인계 자료다.
-- canonical 및 og:image는 운영 URL과 crop-safe 공유 자산이 확정된 뒤에만 설정한다.
+- 공용 renderer는 공식 호스트 `https://www.geosr.com`을 canonical 및 `og:url`로 생성한다. 실제 배포에서 route·언어별 URL이 의도한 페이지를 제공하는지 확인한다. crop-safe 비율과 공개 권리를 확인한 공유 자산은 아직 없어 `og:image`/`twitter:image`는 지정하지 않는다.
 
 ## 다음 제작 순서와 사용자 검토 checkpoint
 
@@ -132,13 +134,13 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터
 4. 장비는 이미 정해진 shot의 외형·모델·운용 사실만 확인한다. 새 장비 카탈로그를 만들거나 장비별 shot을 추가하지 않는다. 근거가 없으면 해당 부분을 pending으로 남기고 장면을 확장해 채우지 않는다.
 5. 앞선 콘티와 웹 연출을 검토한 뒤에만 필요한 기존 shot의 start/end frame 및 motion prompt를 준비한다. ImageGen은 허용된 배경·공간 콘셉트에 한정한다. 시작/끝 프레임과 매치컷 계획은 다음 단계 전에 사용자에게 보여준다.
 6. Higgsfield 유료 생성은 사용자가 결제하고 프레임·모션을 검토한 뒤 진행한다. **메인이 직접 제작**하며 두 필름을 분리해 순서대로 만든다. 스킬이나 agent에 생성 실행을 위임하지 않는다.
-7. rough cut을 사용자에게 보여주고 회사 60초와 AX 30초를 각기 검토한다. C04 자료의 정확성, C09 실제 Discover/Predict/Monitor 화면 비율과 개인정보, C10 Earth loop를 확인한다. 사용자는 매 checkpoint에서 수정하거나 보류할 수 있다.
+7. rough cut을 사용자에게 보여주고 회사 60초와 AX 30초를 각기 검토한다. C04 자료의 정확성, C09 source URL·제품 버전·권리·16:9 비율·개인정보, C10 Earth loop를 확인한다. 화면 출처를 확인하지 못하면 해당 증거 컷은 준비 상태로 남긴다. 사용자는 매 checkpoint에서 수정하거나 보류할 수 있다.
 8. 최종 영상 연결 뒤 KO/EN, pending label 전환, 키보드·탭, 저모션, 링크, 자산 경로, desktop 폭과 console/network를 검수한다. 전체 QA를 통과하면 허가된 작업 브랜치에 commit/push하고, 원격 동기화와 clean state를 재검증한다.
 
 ## 최종 QA 체크리스트
 
 - 1440, 1920, 2560 데스크톱 폭 및 1920×1080 FHD에서 메인/AX 상세 시각 검수. hero가 첫 viewport 전체를 차지하고 뒤 섹션이 미리 보이지 않는지 확인한다.
-- C04 배경 지리·결측·층 순서 및 영상 60초 → 00초 완전 일치; C09 실제 UI 순차 컷; C10 Earth loop; AX A05 Overview에서 아래 Discover로 연결.
+- C04 배경 지리·결측·층 순서 및 영상 60초 → 00초 완전 일치; C09는 검증된 UI만 순차 컷으로 사용하고 미검증이면 16:9 준비 상태 유지; C10 Earth loop; AX A05 Overview는 출처 확인 뒤 아래 Discover로 연결.
 - 브라우저 콘솔 오류 0, 이미지/영상 broken reference 0, 영상 로딩/정지 포스터 fallback 확인.
 - `git diff --check`, 수정 JavaScript `node --check`, KO/EN 전환, keyboard tab semantics/focus, prefers-reduced-motion 확인.
 - diff와 QA 결과를 main review에 공유한다. 필수 QA 통과 후 허가된 작업 브랜치에 commit/push한다.
@@ -171,3 +173,15 @@ AX는 회사 필름과 분리된 제품 콘셉트 흐름이다. 입력 데이터
 - [C09–C10 sequence and loop](../redesign-production/imagegen-prompts/corporate-film-c09-c10-v1.md)
 - [AX A01–A06 ImageGen/Higgsfield preparation](../redesign-production/imagegen-prompts/ax-concept-film-a01-a06-v1.md)
 - Previous analysis and execution notes are preserved in [MASTER-REDESIGN-ANALYSIS.md](MASTER-REDESIGN-ANALYSIS.md) and [EXECUTION-PLAN-2026-09-19.md](EXECUTION-PLAN-2026-09-19.md). They are background only where they conflict with this current handoff.
+
+## 2026-09-20 구현 상태
+
+8개 KO/EN route를 업데이트하고 공용 nav, research/news 상태 행, company 자격문서 rail, equipment 분류 탐색, contact 위치/문의 preview를 정리했다. 인증서 03/04는 얼굴 이미지 대신 검토 중 slate다. USV 원본 사진은 equipment의 ‘무인선 이용 관측’에만 사용하고 모델명을 추정하지 않는다.
+
+44개 viewport 상태 QA(1920 KO/EN, 390 KO, 768 KO, 2560 KO, English mobile 3개, reduced motion)를 완료했다. route/metadata 검사, 로컬 참조 2xx, 이미지·fragment·console·overflow 점검과 모바일 drawer keyboard 동작이 통과했다. 검수 캡처는 C:\Users\user\AppData\Local\Temp\geosr-fullsite-final에 KO desktop 8장과 mobile 8장(01-index부터 08-contact, 각 1920×1080/390×844)이다.
+
+영상 drop-in 경로(dist 기준): assets/films/geosr-hero.mp4, expertise-observation.mp4, expertise-environment.mp4, expertise-modelling.mp4, expertise-satellite.mp4, business-environment.mp4, company-overview.mp4, ax-discover.mp4, ax-detect.mp4, ax-predict.mp4, ax-monitor.mp4, ax-concept-film.mp4. 회사 60초·AX 30초 최종 영상과 business/company insert는 미제작이다. 실제 플랫폼 화면의 최신성·출처·사용권 검증, 문서 이미지의 공개 권리/인증 현행성 검토도 남아 있다. 준비 영상은 승인된 로컬 파일이 없으면 요청하지 않고 slate를 표시한다.
+
+요청에 따라 현재 working tree는 미커밋 상태로 보존했고 commit/push하지 않았다.
+
+- 캡처 폴더에는 요청된 16장 외에 _contact-desktop.png와 _contact-mobile.png가 추가로 남아 있다. 파일 정리는 실행 정책에 막혀 수행하지 않았고 우회하지 않았다.

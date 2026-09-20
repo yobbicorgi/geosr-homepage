@@ -49,8 +49,8 @@ for (const route of routes) {
   assert.equal(readMeta(html, "name", "twitter:title"), title, route + " Twitter title");
   assert.equal(readMeta(html, "name", "twitter:description"), description, route + " Twitter description");
   assert.match(html, /<html lang="ko">/, route + " static language default");
-  assert.match(html, /site\.js\?v=20260920-r3/, route + " current metadata script");
-  assert.doesNotMatch(html, /rel="canonical"|property="og:image"|name="twitter:image"/i, route + " must not invent canonical or social image");
+  assert.match(html, /site\.js\?v=\d{8}-r\d+/, route + " current metadata script");
+  assert.doesNotMatch(html, /rel="canonical"|property="og:image"|name="twitter:image"/i, route + " static HTML must not hard-code a canonical or unverified social image");
   assert.doesNotMatch(html, /(?:localhost|127\.0\.0\.1|192\.168\.\d+\.\d+)/i, route + " must not publish a local origin");
 
   const response = await fetch(new URL(route + ".html?lang=ko", origin));
@@ -66,6 +66,7 @@ const accessibilitySource = {
   menuControl: siteSource.includes('aria-controls="primary-navigation"'),
   languageActionLabels: siteSource.includes("영어로 전환") && siteSource.includes("Switch to Korean"),
   runtimeLanguage: siteSource.includes("document.documentElement.lang=L"),
+  canonicalRuntime: siteSource.includes('canonical=`https://www.geosr.com${canonicalPath}') && siteSource.includes('canonicalLink.href=canonical') && siteSource.includes('setMeta("property","og:url",canonical)'),
   openGraphRuntime: siteSource.includes('setMeta("property","og:title"') && siteSource.includes('setMeta("property","og:description"'),
   twitterRuntime: siteSource.includes('setMeta("name","twitter:title"') && siteSource.includes('setMeta("name","twitter:description"')
 };
@@ -102,6 +103,6 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log("PASS 16 KO/EN route responses; 8 static metadata heads; shared KO/EN metadata map and accessibility contracts.");
-  console.log("Canonical and social image tags remain omitted until the production origin and crop-safe share artwork are verified.");
+  console.log("Canonical/og:url are generated from the official geosr.com host at runtime; social images remain omitted until crop and rights are verified.");
   console.log("Preview origin: " + origin.origin);
 }

@@ -214,7 +214,7 @@
  .ax-concept-hero-atmosphere::after { translate:0 0; opacity:.56; }
 }
 
-/* Reveal the actual AX screens and supporting content as they enter view. */
+/* Reveal representative AX previews and supporting content as they enter view. */
 @media (min-width:821px) and (prefers-reduced-motion:no-preference) {
  html.has-ax-scroll-motion .ax-scroll-reveal { opacity:0; transform:translate3d(0,20px,0); transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .82s cubic-bezier(.2,.7,.2,1); transition-delay:var(--ax-reveal-delay,0ms); }
  html.has-ax-scroll-motion .ax-scroll-reveal.is-in-view,
@@ -273,3 +273,10 @@
 @media(min-width:2200px) {
  .ax-overview .ax-reel-wrap { width:min(100%,1500px); }
 }
+
+/* Source-unverified Discover uses a truthful 16:9 preparation slate, never an unverified capture. */
+.ax-principle-card .platform-preview--pending{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(24px,3vw,44px);background:linear-gradient(110deg,#071522,#102638 58%,#0a1b2b);color:#edf4f6}
+.platform-preview-pending-copy{display:flex;flex-direction:column;gap:14px}
+.platform-preview-pending-copy>span{color:#a7bdc9;font:10px InterGeo,'Noto Sans KR',sans-serif;letter-spacing:.14em}
+.platform-preview-pending-copy>strong{max-width:18ch;font:600 clamp(24px,2.5vw,40px)/1.2 InterGeo,'Noto Sans KR',sans-serif;letter-spacing:-.045em}
+.ax-principle-card .platform-preview--pending figcaption{position:absolute;right:0;bottom:0;left:0;padding:10px 12px;background:linear-gradient(transparent,rgba(4,16,24,.8));color:#c2d2da;font-size:9px}

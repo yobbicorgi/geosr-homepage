@@ -55,7 +55,7 @@
       stageTitle.textContent=categoryNames[category];
       stageStatus.textContent=String(visible.length).padStart(2,'0');
       rail.dataset.category=category;
-      rail.innerHTML=visible.map((record,index)=>`<button type="button" class="credential-card" data-document="${record.index}" aria-label="${E(T(record.title,record.titleEn||translations[record.id]||record.title))} — ${T('확대 보기','enlarge')}"><span class="credential-card-index">0${index+1} / ${E(T(record.classification,record.classificationEn))}</span><span class="credential-paper"><img src="${E(record.image)}" alt="${E(record.title)}" loading="lazy" draggable="false"></span><span class="credential-label"><strong>${E(T(record.title,record.titleEn||translations[record.id]||record.title))}</strong><small>${T('자료 보기','Open record')} ↗</small></span></button>`).join('');
+      rail.innerHTML=visible.map((record,index)=>`<button type="button" class="credential-card" data-document="${record.index}" aria-label="${E(T(record.title,record.titleEn||translations[record.id]||record.title))} — ${T('확대 보기','enlarge')}"><span class="credential-card-index">0${index+1} / ${E(T(record.classification,record.classificationEn))}</span><span class="credential-paper">${record.previewStatus==='review'?`<span class="credential-review-slate"><strong>${T('이미지 검토 중','PREVIEW UNDER REVIEW')}</strong><small>${T('개인정보 확인 전까지 공개하지 않습니다','WITHHELD PENDING PRIVACY REVIEW')}</small></span>`:`<img src="${E(record.image)}" alt="${E(record.title)}" loading="lazy" draggable="false">`}</span><span class="credential-label"><strong>${E(T(record.title,record.titleEn||translations[record.id]||record.title))}</strong><small>${T('자료 확대','Enlarge document')}</small></span></button>`).join('');
       attachDocumentEvents();
       if(!reduced.matches){
         stageTitle.animate([{opacity:0,transform:'translate3d(0,6px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:420,easing:'cubic-bezier(.16,1,.3,1)'});
@@ -108,11 +108,23 @@
       const term=query.value.trim().toLocaleLowerCase();
       const found=records.map((r,index)=>({...r,index})).filter(r=>(category==='all'||categoryOf(r)===category)&&`${r.title} ${r.titleEn}`.toLocaleLowerCase().includes(term));
       document.querySelector('.library-count').textContent=T(`대표 자료 ${found.length}건`,`Representative records: ${found.length}`);
-      library.innerHTML=found.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}"><span><img src="${E(r.image)}" alt="" loading="lazy"></span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong><i>↗</i></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 자리','Additional records')}</strong><small>${T('목업 · 전체 자료 이관 예정','PLACEHOLDER · FULL COLLECTION TO FOLLOW')}</small></div>`);
+      library.innerHTML=found.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}" aria-label="${E(T(r.title,r.titleEn))} — ${T('자료 확대','enlarge document')}"><span><img src="${E(r.image)}" alt="" loading="lazy"></span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 확인 중','Additional records')}</strong><small>${T('그 밖의 자료는 원문을 확인한 뒤 추가하겠습니다.','Additional records will be checked during migration.')}</small></div>`);
+      const dialog=document.querySelector('#credential-dialog');
       library.querySelectorAll('[data-library-document]').forEach(button=>button.addEventListener('click',()=>{
-        const original=document.querySelector(`[data-document="${button.dataset.libraryDocument}"]`);
-        if(original){original.click();document.querySelector('#credential-dialog').addEventListener('close',()=>button.focus({preventScroll:true}),{once:true})}
+        const record=records[Number(button.dataset.libraryDocument)];
+        dialog.querySelector('h2').textContent=T(record.title,record.titleEn);
+        const preview=dialog.querySelector('img'),link=dialog.querySelector('.document-modal-foot a'),footnote=dialog.querySelector('.document-modal-foot p');
+        let reviewNote=dialog.querySelector('.document-review-note');if(!reviewNote){reviewNote=document.createElement('p');reviewNote.className='document-review-note';preview.after(reviewNote)}
+        if(record.previewStatus==='review'){preview.hidden=true;preview.removeAttribute('src');preview.alt='';reviewNote.hidden=false;reviewNote.textContent=T('개인정보 검토를 위해 문서 이미지를 공개하지 않습니다. 검토 중입니다.','Document image withheld pending personal-information review.');footnote.textContent=T('개인정보 검토 중 · 문서 이미지 비공개','PRIVACY REVIEW · IMAGE WITHHELD');link.hidden=true;link.removeAttribute('href')}else{preview.hidden=false;preview.src=record.image;preview.alt=record.title;reviewNote.hidden=true;footnote.textContent=T('기존 홈페이지에 공개된 자료의 사본','A copy of the record published on the original website');link.hidden=false;link.href=record.image}
+        dialog.addEventListener('close',()=>button.focus({preventScroll:true}),{once:true});
+        dialog.showModal();document.body.style.overflow='hidden';
       }));
+      if(!dialog.dataset.libraryEvents){
+        dialog.dataset.libraryEvents='true';
+        dialog.querySelector('[data-close-document]').addEventListener('click',()=>dialog.close());
+        dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close()}});
+        dialog.addEventListener('close',()=>{document.body.style.overflow=''},{once:false});
+      }
     }
     document.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
       category=button.dataset.credentialCategory;

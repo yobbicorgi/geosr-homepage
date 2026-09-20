@@ -1,32 +1,33 @@
 # Phase 1 — content architecture for boards and vertical slice
 
-This structure keeps the original eight top-level destinations and the eight Home story stages from `docs/redesign-plan/MASTER-REDESIGN-ANALYSIS.md`. It is a content contract for design boards; page layouts and visual rhythm remain for the main designer to decide.
+This content contract preserves the eight top-level destinations. Its Home structure follows the approved five-stage research story in [FILM-STORYBOARD-DIRECTOR-v3.md](FILM-STORYBOARD-DIRECTOR-v3.md) and the current official route; older eight-stage plans are historical only. Visual rhythm is implemented in the current desktop site.
 
 ## Eight top-level pages
 
 | Page | Primary job | Required content/data | Important state or link rule |
 |---|---|---|---|
-| Home | State GeoSR’s full environmental and engineering scope and guide visitors into evidence | Eight stages below; concise company-wide value; selected field/technology/evidence modules | AX is introduced as a GeoSR platform; GeoDAP is separately named and linked to its external service. No unsupported counts/results. |
+| Home | State GeoSR’s marine and environmental engineering scope and guide visitors into relevant records | 100svh film slot; five-stage research story; separate AX and GeoDAP sections; credentials, research/news and contact | AX is introduced as a GeoSR platform; GeoDAP is separately named and linked to its external service. No unsupported counts/results. |
 | Business / Technology | Let a client find a relevant problem area, method and supporting evidence | Four original categories; 21 exact technology IDs/titles; business details and verified cross-links | Search/filter preserve category and source ID. Detail template shows source and related records only when verified. |
 | Research / Results | Search business records, research projects and academic publications | Board type, original ID, title, date, source/client/author/publisher where present, body, attachment, DOI, related technology | Search/filter by board, year, technology and source only with populated metadata. Empty/loading/error states stay distinct. |
-| Platform | Explain GeoSR platform products and actual capture evidence | AX principle groups and named applications; GeoDAP external service entry kept separate | AX is an introduction, not a service login/catalog link. Product screen slots use actual captures or clear preparation state. |
-| Observation / Equipment | Show field and lab capability by task | Five equipment classes (historical 80-item inventory); verified model, purpose and source visual | Do not treat the historical inventory count as live or imply equipment ownership without source. USV is one observation tool among several. |
+| Platform | Explain GeoSR platform products and distinguish verified evidence from pending previews | AX principle groups and named applications; GeoDAP external service entry kept separate | AX is an introduction, not a service login/catalog link. Use a verified capture or a clear preparation state; until poster provenance, version and rights are confirmed, label existing images only as representative previews. |
+| Observation / Equipment | Show equipment-led work through three clear groups | Survey, laboratory and vessel records; verified name, role and source image | Show only source-verified equipment images. Do not imply ownership or let one USV stand for all field capability. |
 | Company | Establish identity, governance, credentials and contact context | Approved company description/history, offices/organization, certifications, registrations/licenses, IP, brochures and careers | Certificates/registrations/IP are three separate groups. Verify validity and rights before showing scans. |
 | News | Provide official announcements, press and newsletters | Three board groups, original ID/title/date/body/attachments | Never use invented posts, sample dates or inflated counts. Keep mock entries labelled as mock. |
 | Contact | Make office and inquiry routes easy to verify and use | Current office addresses, contact details, inquiry and careers links | Do not show a successful submission unless network delivery exists; mock forms state that data was not sent. |
 
-## Home story — eight stages
+## Home story — current structure
 
-| # | Stage | Content payload | Evidence / guardrail |
+| Order | Section | Content payload | Evidence / guardrail |
 |---:|---|---|---|
-| 1 | Hero Film | GeoSR-wide identity and short value statement; 16:9 film slot/poster | Manifest `geosr-hero` is pending. Fallback is a designed preparation state, not a blank/error, fake map or fictitious output. |
-| 2 | Field / Observation | Korean coastal, river, harbor, land survey, sample and instrument context | Prefer rights-cleared, source-backed, people-free assets. USV may appear, but not as the only method. |
-| 3 | From Data to Understanding | Show how observations become interpretable environmental evidence | Use a single source-backed example with source and status. Do not add synthetic numbers or unlabeled data layers. |
-| 4 | Technology / Capability | Introduce four research/service flows and link to all 21 records through the hub | Keep detailed catalog off the hero. Preserve exact names, IDs, categories and source URLs. |
-| 5 | AX Platform | Explain Discover / Predict / Monitor and the actual platform applications | Actual preview or `ax-*` captured media only; don’t imply distinct products form one deployed end-to-end workflow. |
-| 6 | GeoDAP | Introduce GeoDAP as an independent Earth Data Intelligence service | Current screenshot/version is unverified; use a source-approved capture and external link only. Never fold GeoDAP into AX. |
-| 7 | Evidence | Selected business/research/academic posts and three credential groupings | Use rechecked records, original IDs and rights-cleared scans; label any design-only sample as a mock. |
-| 8 | Company / Contact | Company scope, offices and direct inquiry path | Use approved company-wide copy (not GeoDAP’s tagline). Verify contacts and privacy/form behavior. |
+| 1 | Hero | Geo Data Intelligence identity, short Korean-first copy and full viewport film slot | `geosr-hero` manifest source remains pending. Use the approved Earth poster as a temporary fallback with a small production status; it is not a finished film. |
+| 2 | Company introduction | Explain GeoSR’s field, research and analysis work in concrete language | Avoid a second slogan or unsupported company claims. |
+| 3 | Research flow | 관측 수집 → 분석 해석 → 수치모델 → 예측 판단 → 현장 적용; five stages show how observations inform work in the field | Use distinct visual and copy purposes. Never present concept imagery as measured results, real geography, model output, or operational UI. Label each reference or concept by scene. |
+| 4 | Digital platforms | Separate AX Platform from GeoDAP as sibling services | AX Detect has no verified 16:9 capture and shows a preparation state. Existing Predict/Monitor posters are representative previews pending source, version and rights review. The GeoDAP brand panel is a link to the separate service, not a captured interface or live data count. |
+| 5 | Credentials | Three groups: certifications, licences/registrations, intellectual property | Seven representative scans are available in the local prototype; active validity and display rights remain under review. Dialog actions enlarge or open the copied source document. |
+| 6 | Research and news | Selected business, research, academic and newsroom records | Distinguish source records from explicitly marked placeholders. Keep exact IDs/dates only where the source record is present. |
+| 7 | Contact and footer | Company contact details, inquiry form preview and route links | Contact details came from the existing public page. The form does not transmit or save data; company source migration and inquiry backend remain pending. |
+
+The 5-stage sequence supersedes the earlier four-stage “Observation / Interpretation / Prediction / Action” and original eight Home-stage outline. The AX subpage’s Detect / Predict / Monitor language is a separate product-capability taxonomy and does not replace the Home sequence.
 
 ## Query, detail and mockup behavior
 

@@ -1,16 +1,16 @@
 # GeoSR 홈페이지·필름 재설계 핸드오프
 
-> 2026-09-20 추가 요청 반영 — 다음 작업은 [콘텐츠별 표현 설계 v1](../redesign-production/CONTENT-PRESENTATION-PLAN-v1.md)을 먼저 기준으로 삼는다
-> 사용자는 목록·게시판·카드·영상·모션의 적용 대상을 먼저 설계하라고 요청했다
-> 내부 페이지의 현재 수정은 중간 상태이며 신규 모션 구현은 중단했다
-> 새 효과를 바로 추가하지 말고 콘텐츠별 구성과 정적 화면의 위계를 구체화한 뒤 상호작용을 구현한다
-> 검토된 제작 자료와 메인 첫 화면의 승인된 방향은 보존하며 아래 과거 완료·우선순위 표현은 최신 요청과 대조한다
+> 2026-09-20 최신 지시 — 영상 제작을 제외하고 설계안의 웹 구현과 검수를 완료한다
+> [웹 구현 완료 기록](../redesign-production/WEB-COMPLETION-20260920.md)이 현재 화면과 검증 범위의 기준이다
+> 홈과 세부 페이지에 콘텐츠별 표현을 적용했고 한글·영문 및 모바일 탐색을 검수했다
+> 영상은 제작하지 않았으며 [영상 연결 규격](../redesign-production/VIDEO-DELIVERY-CONTRACT.md)에 따라 이후 승인된 파일을 연결한다
+> 과거의 구현 중단 및 모바일 제외 지시는 더 이상 적용하지 않는다
 
 ## 현재 작업 위치와 상태
 
 - 저장소: `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 브랜치: `redesign/production-2026-09-19`
-- 이번 구현을 시작한 기준 커밋: `7b259a6489d5fd172e8014e93a95833936291c3b`. 현재 진행 중인 변경은 아직 commit되지 않았다. 최종 검수 후 완료 시 실제 새 HEAD로 갱신한다.
+- 이번 콘텐츠별 표현 구현의 기준 커밋: `f5a098d3462b3f8e05562f4f821c7823db59e8cb` — 최신 작업 결과는 현재 브랜치의 Git HEAD와 완료 기록에서 확인한다
 - Downloads junction: `C:\Users\user\Downloads\GeoSR_Homepage` → `C:\Users\user\Documents\Codex\Projects\geosr-homepage`
 - 공식 홈페이지: localhost의 [KO](http://127.0.0.1:18102/index.html?lang=ko) · [EN](http://127.0.0.1:18102/index.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/index.html?lang=ko) · [EN](http://192.168.6.85:18102/index.html?lang=en). AX 상세: localhost의 [KO](http://127.0.0.1:18102/ax-platform.html?lang=ko) · [EN](http://127.0.0.1:18102/ax-platform.html?lang=en), LAN의 [KO](http://192.168.6.85:18102/ax-platform.html?lang=ko) · [EN](http://192.168.6.85:18102/ax-platform.html?lang=en). `dist/index.html`이 공식 홈 진입점이고 `redesign-preview.html`은 별도 디자인 미리보기다.
 - 최종 60초 회사 영상과 30초 AX 콘셉트 영상은 아직 생성·편집되지 않았다. `ax-*-fast.mp4`는 제품 UI 원본 클립이며 완성 필름을 뜻하지 않는다.
@@ -18,7 +18,7 @@
 
 ## 확정된 디자인·브랜드 기준
 
-- 데스크톱 우선 범위: 1440, 1920, 2560 CSS px. 모바일은 새로 확장하지 않고 기존 fallback만 유지한다.
+- 데스크톱 우선으로 구현하고 모바일까지 대응한다 — 실제 검수한 화면 크기는 최신 완료 기록에 남긴다
 - 한국의 해양·환경 엔지니어링 기업답고 자연스러운 한글 문장과 자신 있는 톤을 유지한다. 회사의 실제 조사·관측·분석·예측 역량을 자연 환경 사진만으로 대체하지 않는다.
 - 메인 기업 필름은 정확히 60초, AX Platform 콘셉트 필름은 별도의 30초다. 두 영상의 목적과 편집은 섞지 않는다. GeoDAP도 AX와 별개의 서비스다.
 - 색은 검정, 딥 네이비, 블루그레이, 아이스 블루, 흰색을 중심으로 한다. 연두색, 과한 블루 네온, HUD·격자 장식을 피한다.

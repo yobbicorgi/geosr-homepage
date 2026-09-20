@@ -4,14 +4,16 @@
  const records=new Map();
  const automatic=()=>!reduced.matches&&!navigator.connection?.saveData&&!document.hidden;
  const localMedia=src=>typeof src==='string'&&/^assets\/films\/[a-z0-9_-]+\.(mp4|webm)$/i.test(src);
- let observer;
- function permitted(r){return r.visible&&r.host.dataset.filmActive!=='false'&&!r.manual&&!r.failed}
+ let observer,manifest;
+ const english=document.documentElement.lang==='en';
+ function permitted(r){return r.host.isConnected&&r.visible&&!r.host.closest('[hidden],[inert]')&&r.host.dataset.filmActive!=='false'&&!r.manual&&!r.failed}
  function seekTo(r){
   if(!r.video||!r.video.duration||!Number.isFinite(r.video.duration)||r.video.seeking||!permitted(r))return;
   const target=Math.min(r.video.duration-.04,Math.max(0,r.progress*r.video.duration));
   if(Math.abs(r.video.currentTime-target)>.065)r.video.currentTime=target;
  }
- function reveal(r){r.host.classList.add('film-loaded');r.host.dataset.filmState='ready'}
+ function updateButton(r,playing){if(!r.button)return;r.button.setAttribute('aria-pressed',String(playing));r.button.textContent=playing?'Ⅱ':'▶';r.button.setAttribute('aria-label',english?(playing?'Pause film':'Play film'):(playing?'영상 일시정지':'영상 재생'))}
+ function reveal(r){r.host.classList.add('film-loaded');r.host.dataset.filmState='ready';r.host.querySelector('[data-film-error]')?.remove()}
  function load(r){
   if(r.video||!r.allowed||r.failed)return;
   const v=document.createElement('video');r.video=v;
@@ -19,10 +21,10 @@
   v.addEventListener('loadedmetadata',()=>{if(r.plan.mode==='scroll'){seekTo(r)}else sync(r)});
   v.addEventListener('loadeddata',()=>{reveal(r);if(r.plan.mode==='scroll')seekTo(r)});
   v.addEventListener('seeked',()=>{if(r.plan.mode==='scroll')seekTo(r)});
-  v.addEventListener('playing',()=>{reveal(r);r.button?.setAttribute('aria-pressed','true')});
-  v.addEventListener('pause',()=>r.button?.setAttribute('aria-pressed','false'));
+  v.addEventListener('playing',()=>{reveal(r);updateButton(r,true)});
+  v.addEventListener('pause',()=>updateButton(r,false));
   v.addEventListener('ended',()=>document.dispatchEvent(new CustomEvent('geosr:film-ended',{detail:{id:r.plan.id}})));
-  v.addEventListener('error',()=>{r.failed=true;v.pause();r.host.classList.remove('film-loaded');r.host.dataset.filmState='error';if(r.button)r.button.hidden=true});
+  v.addEventListener('error',()=>{r.failed=true;v.pause();r.host.classList.remove('film-loaded');r.host.dataset.filmState='error';if(r.button)r.button.hidden=true;const note=document.createElement('span');note.dataset.filmError='';note.className='film-error-note';note.textContent=english?'Film unavailable · showing preview':'영상을 불러오지 못해 미리보기를 표시합니다';r.host.append(note)});
   r.host.append(v);v.src=r.plan.src;
  }
  function sync(r,explicit=false){
@@ -31,24 +33,35 @@
   if(r.plan.mode==='scroll'){r.video.pause();seekTo(r);return}
   r.video.play().catch(()=>{if(r.button){r.button.hidden=false;r.button.setAttribute('aria-pressed','false')}});
  }
+ function refresh(){
+  if(!manifest)return;
+  for(const [id,r] of records){if(!r.host.isConnected){observer?.unobserve(r.host);r.video?.pause();if(r.button&&r.onClick)r.button.removeEventListener('click',r.onClick);records.delete(id)}}
+  for(const plan of manifest.slots){
+   const host=document.querySelector(`[data-film-slot="${plan.id}"]`);if(!host||records.has(plan.id))continue;
+   let button=document.querySelector(`[data-film-toggle="${plan.id}"]`);
+   const allowed=plan.approval==='approved'&&localMedia(plan.src);
+   if(allowed&&!button){button=document.createElement('button');button.type='button';button.className='film-inline-toggle';button.dataset.filmToggle=plan.id;host.setAttribute('role','group');host.append(button)}
+   const r={plan,host,button,allowed,visible:!observer,manual:false,failed:false,video:null,progress:0};
+   records.set(plan.id,r);host.dataset.filmState=r.allowed?'approved':'pending';
+   if(button){button.hidden=!r.allowed;updateButton(r,false);r.onClick=()=>{const pausing=!!r.video&&!r.video.paused;r.manual=pausing;if(pausing)r.video.pause();else sync(r,true)};button.addEventListener('click',r.onClick)}
+   if(observer)observer.observe(host);else sync(r);
+  }
+  records.forEach(r=>sync(r));
+ }
  window.GeoSRFilm={
+  refresh,
   activate(id,on){const r=records.get(id);if(!r)return;r.host.dataset.filmActive=String(on);if(on&&r.video?.ended)r.video.currentTime=0;sync(r)},
   seek(id,progress){const r=records.get(id);if(!r||!automatic())return;r.progress=Math.max(0,Math.min(1,progress));sync(r)},
   pause(id,on){const r=records.get(id);if(!r)return;r.manual=on;sync(r)},
-  ready:fetch('film-manifest.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Film manifest unavailable');return r.json()}).then(manifest=>{
-   observer=new IntersectionObserver(entries=>entries.forEach(entry=>{const r=records.get(entry.target.dataset.filmSlot);if(r){r.visible=entry.isIntersecting;sync(r)}}),{threshold:.15});
-   for(const plan of manifest.slots){
-    const host=document.querySelector(`[data-film-slot="${plan.id}"]`);if(!host)continue;
-    const button=document.querySelector(`[data-film-toggle="${plan.id}"]`);
-    const r={plan,host,button,allowed:plan.approval==='approved'&&localMedia(plan.src),visible:false,manual:host.classList.contains('motion-paused'),failed:false,video:null,progress:0};
-    records.set(plan.id,r);host.dataset.filmState=r.allowed?'approved':'pending';
-    if(button){button.hidden=!r.allowed;button.addEventListener('click',()=>{const pausing=!!r.video&&!r.video.paused;r.manual=pausing;if(pausing)r.video.pause();else sync(r,true);button.textContent=pausing?'▶':'Ⅱ'})}
-    observer.observe(host);
-   }
+  ready:fetch('film-manifest.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Film manifest unavailable');return r.json()}).then(data=>{
+   manifest=data;
+   if('IntersectionObserver' in window)observer=new IntersectionObserver(entries=>entries.forEach(entry=>{const r=records.get(entry.target.dataset.filmSlot);if(r&&r.host===entry.target){r.visible=entry.isIntersecting;sync(r)}}),{threshold:.15});
+   refresh();
    document.dispatchEvent(new Event('geosr:films-ready'));
    return {count:records.size,approved:[...records.values()].filter(r=>r.allowed).length};
   }).catch(()=>{document.querySelectorAll('[data-film-slot]').forEach(host=>host.dataset.filmState='unavailable');return{count:0,approved:0}})
  };
+ document.addEventListener('geosr:media-updated',refresh);
  document.addEventListener('visibilitychange',()=>records.forEach(r=>sync(r)));
  reduced.addEventListener('change',()=>records.forEach(r=>sync(r)));
  navigator.connection?.addEventListener?.('change',()=>records.forEach(r=>sync(r)));

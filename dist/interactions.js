@@ -38,9 +38,10 @@
     const categoryOf=record=>record.id.includes('patent')?'patent':record.id.includes('registration')?'license':'cert';
     const categoryNames={cert:T('인증','Certification'),license:T('면허·등록','Registration'),patent:T('지식재산권','Intellectual property')};
     const dialog=document.querySelector('#credential-dialog');
-    const stageTitle=document.querySelector('[data-credential-stage-title]');
-    const stageStatus=document.querySelector('[data-credential-status]');
-    let category='cert',returnFocus=null,changingCategory=false;
+    const gallery=rail.closest('.credential-section');
+    const stageTitle=gallery.querySelector('[data-credential-stage-title]');
+    const stageStatus=gallery.querySelector('[data-credential-status]');
+    let category='cert',returnFocus=null,categoryRevision=0;
     function attachDocumentEvents(){
       rail.querySelectorAll('[data-document]').forEach(card=>card.addEventListener('click',()=>{
         const record=records[Number(card.dataset.document)];returnFocus=card;
@@ -48,6 +49,7 @@
         const preview=dialog.querySelector('img');
         const sourceLink=dialog.querySelector('.document-modal-foot a');
         const footnote=dialog.querySelector('.document-modal-foot p');
+        const reviewNote=dialog.querySelector('.document-review-note');if(reviewNote)reviewNote.hidden=true;
         if(record.previewStatus==='review'){
           preview.hidden=true;preview.removeAttribute('src');preview.alt='';
           footnote.textContent=T('개인정보 검토를 위해 문서 이미지를 공개하지 않습니다','Document image withheld pending personal-information review');
@@ -70,19 +72,19 @@
       if(!reduced.matches){
         stageTitle.animate([{opacity:0,transform:'translate3d(0,6px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:420,easing:'cubic-bezier(.16,1,.3,1)'});
         stageStatus.animate([{opacity:0,transform:'translate3d(0,4px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:360,delay:55,easing:'cubic-bezier(.16,1,.3,1)'});
-        rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,transform:'translate3d(0,24px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:620,delay:index*90,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'}));
+        rail.querySelectorAll('.credential-card').forEach((card,index)=>card.animate([{opacity:0,translate:'0 24px'},{opacity:1,translate:'0 0'}],{duration:620,delay:index*70,easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'}));
       }
     }
-    const categoryTabs=[...document.querySelectorAll('[data-credential-category]')];
-    const categoryPanel=document.querySelector('#credential-stage');
+    const categoryTabs=[...gallery.querySelectorAll('[data-credential-category]')];
+    const categoryPanel=gallery.querySelector('#credential-stage');
     function activateCategory(button){
-      if(changingCategory)return;
       const next=button.dataset.credentialCategory;
+      const revision=++categoryRevision;
+      rail.getAnimations().forEach(animation=>animation.cancel());
       categoryTabs.forEach(tab=>{const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1});
       categoryPanel?.setAttribute('aria-labelledby',button.id);
       if(next===category)return;
-      changingCategory=true;
-      const update=()=>{rail.getAnimations().forEach(animation=>animation.cancel());category=next;renderCredentialGroup();changingCategory=false};
+      const update=()=>{if(revision!==categoryRevision)return;rail.getAnimations().forEach(animation=>animation.cancel());category=next;renderCredentialGroup()};
       if(reduced.matches){update();return}
       const leave=rail.animate([{opacity:1,transform:'translate3d(0,0,0)',filter:'blur(0)'},{opacity:0,transform:'translate3d(0,-8px,0) scale(.99)',filter:'blur(2px)'}],{duration:180,easing:'cubic-bezier(.4,0,1,1)',fill:'both'});
       leave.finished.catch(()=>{}).then(update);
@@ -91,7 +93,7 @@
       button.addEventListener('click',()=>activateCategory(button));
       button.addEventListener('keydown',event=>{
         if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
-        event.preventDefault();if(changingCategory)return;
+        event.preventDefault();
         const next=event.key==='Home'?0:event.key==='End'?categoryTabs.length-1:(index+(event.key==='ArrowRight'?1:categoryTabs.length-1))%categoryTabs.length;
         categoryTabs[next].focus();activateCategory(categoryTabs[next]);
       });
@@ -112,13 +114,14 @@
   const library=document.querySelector('.credential-grid');
   if(library)contentReady.push(credentialRecords.then(records=>{
     let category='all';
-    const query=document.querySelector('#credential-query');
+    const collection=library.closest('#credential-library')||library.parentElement;
+    const query=collection.querySelector('#credential-query');
     const categoryOf=r=>r.id.includes('patent')?'patent':r.id.includes('registration')?'license':'cert';
     function renderLibrary(){
       const term=query.value.trim().toLocaleLowerCase();
       const found=records.map((r,index)=>({...r,index})).filter(r=>(category==='all'||categoryOf(r)===category)&&`${r.title} ${r.titleEn}`.toLocaleLowerCase().includes(term));
-      document.querySelector('.library-count').textContent=T(`대표 자료 ${found.length}건`,`Representative records: ${found.length}`);
-      library.innerHTML=found.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}" aria-label="${E(T(r.title,r.titleEn))} — ${T('자료 확대','enlarge document')}"><span><img src="${E(r.image)}" alt="" loading="lazy"></span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 확인 중','Additional records')}</strong><small>${T('그 밖의 자료는 원문을 확인한 뒤 추가하겠습니다.','Additional records will be checked during migration.')}</small></div>`);
+      collection.querySelector('.library-count').textContent=T(`대표 자료 ${found.length}건`,`Representative records: ${found.length}`);
+      library.innerHTML=found.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}" aria-label="${E(T(r.title,r.titleEn))} — ${T('자료 확대','enlarge document')}"><span>${r.previewStatus==='review'?`<span class="credential-review-slate"><strong>${T('이미지 검토 중','PREVIEW UNDER REVIEW')}</strong><small>${T('개인정보 확인 전까지 공개하지 않습니다','WITHHELD PENDING PRIVACY REVIEW')}</small></span>`:`<img src="${E(r.image)}" alt="" loading="lazy">`}</span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 확인 중','Additional records')}</strong><small>${T('그 밖의 자료는 원문을 확인한 뒤 추가하겠습니다','Additional records will be checked during migration')}</small></div>`);
       const dialog=document.querySelector('#credential-dialog');
       library.querySelectorAll('[data-library-document]').forEach(button=>button.addEventListener('click',()=>{
         const record=records[Number(button.dataset.libraryDocument)];
@@ -136,9 +139,9 @@
         dialog.addEventListener('close',()=>{document.body.style.overflow=''},{once:false});
       }
     }
-    document.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
+    collection.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
       category=button.dataset.credentialCategory;
-      document.querySelectorAll('[data-credential-category]').forEach(b=>b.setAttribute('aria-pressed',b===button));
+      collection.querySelectorAll('[data-credential-category]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
       renderLibrary();
     }));
     query.addEventListener('input',renderLibrary);renderLibrary();

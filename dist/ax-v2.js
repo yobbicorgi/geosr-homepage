@@ -63,5 +63,6 @@ function axPage(){
 
 function initAxStages(){}
 window.axPage=axPage;
+window.GeoSRAxV2=Object.freeze({services:axServices,translate:(...args)=>T(...args),escapeHtml:(...args)=>E(...args)});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initAxStages,{once:true});else initAxStages();
 })();

@@ -229,37 +229,42 @@
     }
     function renderSelectedMedia(index){
       if(!selectedMedia)return;
-      var mediaKey=index===2?"ecology-lab":"pending";
+      var examples=[
+        {src:"assets/equipment-usv-original.png",ko:"무인선 이용 관측",en:"Uncrewed surface observation",noteK:"기존 GeoSR 홈페이지에 소개된 무인선 관측 사진",noteE:"Uncrewed observation photograph from the GeoSR website"},
+        {src:"assets/platforms/env-full-temperature.jpg",ko:"해양환경 플랫폼의 해수면 온도 화면",en:"Sea surface temperature view in Ocean Environment",noteK:"해양환경 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Ocean Environment application example · actual interface capture"},
+        {src:"assets/generated/candidates-v2/flow-lab-ecology-v1.png",ko:"사람이 없는 실험대의 생성형 콘셉트 이미지",en:"Generated concept of an unoccupied laboratory bench",noteK:"실험·분석 영상 콘셉트 · 실제 GeoSR 시설이나 분석 결과가 아닙니다",noteE:"Laboratory film concept · not a GeoSR facility or an analytical result"},
+        {src:"assets/platforms/flood3d-poster.webp",ko:"3차원 침수 예측 플랫폼 화면",en:"Flood 3D platform interface",noteK:"침수 예측 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Flood 3D application example · actual interface capture"},
+        {src:"assets/platforms/satellite-poster.webp",ko:"위성 시설물 탐지 플랫폼 화면",en:"Satellite facility detection platform interface",noteK:"위성영상 분석 적용 예시 · 실제 인터페이스 캡처",noteE:"Satellite imagery application example · actual interface capture"}
+      ];
+      var example=examples[index];
+      var mediaKey=example.src;
       if(selectedMedia.dataset.mediaKey===mediaKey)return;
       selectedMedia.dataset.mediaKey=mediaKey;
       selectedMedia.classList.add("is-changing");
       selectedMedia.replaceChildren();
-      if(index===2){
         var image=document.createElement("img");
-        image.src="assets/generated/candidates-v2/flow-lab-ecology-v1.png";
-        image.width=2560;
-        image.height=1440;
+        image.src=example.src;
+        image.width=index===0?1771:1920;
+        image.height=index===0?1068:1080;
         image.loading="eager";
         image.decoding="async";
-        image.alt=language==="en"?"Generated concept image of an unoccupied lab bench; not a GeoSR facility or analytical result.":"사람이 없는 실험대의 생성형 콘셉트 이미지. 실제 GeoSR 시설이나 분석 결과가 아닙니다.";
+        image.alt=language==="en"?example.en:example.ko;
         selectedMedia.setAttribute("aria-label",image.alt);
         selectedMedia.appendChild(image);
-        if(sourceNote)sourceNote.textContent=language==="en"?"Technology titles follow the existing GeoSR index. Lab image is a generated concept, not a facility or result.":"기술명은 기존 홈페이지 자료에서 확인했습니다. 실험실 이미지는 생성형 콘셉트이며 실제 시설·결과가 아닙니다.";
-      }else{
-        var pending=document.createElement("span");
-        pending.textContent=language==="en"?"FIELD VIDEO IN PREPARATION":"분야 영상 준비 중";
-        selectedMedia.setAttribute("aria-label",pending.textContent);
-        selectedMedia.appendChild(pending);
-        if(sourceNote)sourceNote.textContent=language==="en"?"Technology titles are verified against the existing GeoSR index.":"기술명은 기존 홈페이지 자료에서 확인했습니다.";
-      }
+        if(sourceNote)sourceNote.textContent=language==="en"?example.noteE:example.noteK;
       window.requestAnimationFrame(function(){window.requestAnimationFrame(function(){selectedMedia.classList.remove("is-changing")})});
     }    function refreshSelection(){
       var index=activeIndex();
       renderSelectedMedia(index);
       axisButtons.forEach(function(button,i){
-        button.setAttribute("aria-pressed",String(i===index));
+        button.setAttribute("role","tab");
+        button.removeAttribute("aria-pressed");
+        button.setAttribute("aria-selected",String(i===index));
+        button.setAttribute("aria-controls","capability-detail");
+        button.tabIndex=i===index?0:-1;
         button.classList.toggle("is-preview",preview===i&&i!==selected);
       });
+      if(detail)detail.setAttribute("aria-labelledby",axisButtons[index].id);
       if(title)title.textContent=axisButtons[index].querySelector(".capability-axis-name").textContent;
       if(summary)summary.textContent=axisButtons[index].dataset.axisSummary||"";
       if(number)number.textContent="0"+(index+1)+" / 05";
@@ -284,31 +289,19 @@
     }
     axisButtons.forEach(function(button,index){
       button.addEventListener("click",function(){setSelection(index,true)});
-      button.addEventListener("pointerenter",function(event){
-        if(event.pointerType==="mouse"){preview=index;setSelection(index,false)}
-      });
-      button.addEventListener("pointerleave",function(event){
-        if(event.pointerType==="mouse"){preview=null;refreshSelection()}
-      });
-      button.addEventListener("focus",function(){preview=index;refreshSelection()});
-      button.addEventListener("blur",function(){
-        window.setTimeout(function(){
-          if(!root.contains(document.activeElement)){preview=null;refreshSelection()}
-        },0);
+      button.addEventListener("keydown",function(event){
+        if(!["ArrowLeft","ArrowRight","Home","End"].includes(event.key))return;
+        event.preventDefault();
+        var next=event.key==="Home"?0:event.key==="End"?axisButtons.length-1:(index+(event.key==="ArrowRight"?1:axisButtons.length-1))%axisButtons.length;
+        setSelection(next,true);axisButtons[next].focus({preventScroll:true});
       });
     });
     if(rail){
-      rail.addEventListener("wheel",function(event){
-        if(Math.abs(event.deltaY)>Math.abs(event.deltaX)){
-          rail.scrollLeft+=event.deltaY;
-          event.preventDefault();
-        }
-      },{passive:false});
       var pointerStart=null;
       var pointerOrigin=0;
       var moved=false;
       rail.addEventListener("pointerdown",function(event){
-        if(event.pointerType!=="mouse"||event.button!==0)return;
+        if(event.pointerType!=="mouse"||event.button!==0||rail.scrollWidth<=rail.clientWidth)return;
         pointerStart=event.clientX;
         pointerOrigin=rail.scrollLeft;
         moved=false;

@@ -87,7 +87,7 @@ const interactions = fs.readFileSync(path.join(dist, "interactions.js"), "utf8")
 if (!interactions.includes("tab.setAttribute('aria-selected',i===index)")) fail("home expertise roving tab state missing");
 if (!interactions.includes("const selected=tab===button;tab.setAttribute('aria-selected',String(selected))")) fail("home credential tab selected state missing");
 if (!interactions.includes("categoryTabs[next].focus();activateCategory(categoryTabs[next])")) fail("home credential keyboard tab navigation missing");
-if (!interactions.includes("b.setAttribute('aria-pressed',b===button)")) fail("company credential filter button state missing");
+if (!/b\.setAttribute\('aria-pressed',(?:String\()?b===button\)?\)/.test(interactions)) fail("company credential filter button state missing");
 const axSource = fs.readFileSync(path.join(dist, "ax-v2.js"), "utf8");
 if (!axSource.includes("prefers-reduced-motion: reduce")) fail("AX reduced-motion branch missing");
 

@@ -1,5 +1,5 @@
 {
-  "revision": "preproduction-20260919-r2",
+  "revision": "presentation-20260920",
   "slots": [
     {
       "id": "geosr-hero",
@@ -11,7 +11,7 @@
     },
     {
       "id": "expertise-1",
-      "mode": "scroll",
+      "mode": "loop",
       "src": null,
       "approval": "pending",
       "duration": 6,
@@ -19,7 +19,7 @@
     },
     {
       "id": "expertise-2",
-      "mode": "scroll",
+      "mode": "loop",
       "src": null,
       "approval": "pending",
       "duration": 6,
@@ -27,7 +27,7 @@
     },
     {
       "id": "expertise-3",
-      "mode": "scroll",
+      "mode": "loop",
       "src": null,
       "approval": "pending",
       "duration": 6,
@@ -35,7 +35,7 @@
     },
     {
       "id": "expertise-4",
-      "mode": "scroll",
+      "mode": "loop",
       "src": null,
       "approval": "pending",
       "duration": 6,

@@ -45,8 +45,18 @@
       rail.querySelectorAll('[data-document]').forEach(card=>card.addEventListener('click',()=>{
         const record=records[Number(card.dataset.document)];returnFocus=card;
         dialog.querySelector('h2').textContent=T(record.title,record.titleEn||translations[record.id]||record.title);
-        const preview=dialog.querySelector('img');preview.src=record.image;preview.alt=record.title;
-        dialog.querySelector('.document-modal-foot a').href=record.image;
+        const preview=dialog.querySelector('img');
+        const sourceLink=dialog.querySelector('.document-modal-foot a');
+        const footnote=dialog.querySelector('.document-modal-foot p');
+        if(record.previewStatus==='review'){
+          preview.hidden=true;preview.removeAttribute('src');preview.alt='';
+          footnote.textContent=T('개인정보 검토를 위해 문서 이미지를 공개하지 않습니다','Document image withheld pending personal-information review');
+          sourceLink.hidden=true;sourceLink.removeAttribute('href');
+        }else{
+          preview.hidden=false;preview.src=record.image;preview.alt=record.title;
+          footnote.textContent=T('기존 홈페이지에 공개된 자료의 사본','A copy of the record published on the original website');
+          sourceLink.hidden=false;sourceLink.href=record.image;
+        }
         dialog.showModal();document.body.style.overflow='hidden';
       }));
     }

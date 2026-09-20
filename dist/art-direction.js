@@ -216,7 +216,7 @@
           var arrow=document.createElement("span");
           arrow.className="actual-arrow";
           arrow.setAttribute("aria-hidden","true");
-          arrow.textContent="↗";
+          arrow.textContent="→";
           link.appendChild(arrow);
         }else{
           var status=document.createElement("small");
@@ -244,17 +244,16 @@
         image.alt=language==="en"?"Generated concept image of an unoccupied lab bench; not a GeoSR facility or analytical result.":"사람이 없는 실험대의 생성형 콘셉트 이미지. 실제 GeoSR 시설이나 분석 결과가 아닙니다.";
         selectedMedia.setAttribute("aria-label",image.alt);
         selectedMedia.appendChild(image);
-        if(sourceNote)sourceNote.textContent=language==="en"?"Technology titles follow the GeoSR index. Lab image is a generated concept, not a facility or result.":"기술명은 기존 홈페이지 자료에서 확인했습니다. 실험실 이미지는 생성형 콘셉트이며 실제 시설·결과가 아닙니다.";
+        if(sourceNote)sourceNote.textContent=language==="en"?"Technology titles follow the existing GeoSR index. Lab image is a generated concept, not a facility or result.":"기술명은 기존 홈페이지 자료에서 확인했습니다. 실험실 이미지는 생성형 콘셉트이며 실제 시설·결과가 아닙니다.";
       }else{
         var pending=document.createElement("span");
-        pending.textContent=language==="en"?"CONTENT IN PREPARATION":"콘텐츠 준비 중";
+        pending.textContent=language==="en"?"FIELD VIDEO IN PREPARATION":"분야 영상 준비 중";
         selectedMedia.setAttribute("aria-label",pending.textContent);
         selectedMedia.appendChild(pending);
         if(sourceNote)sourceNote.textContent=language==="en"?"Technology titles are verified against the existing GeoSR index.":"기술명은 기존 홈페이지 자료에서 확인했습니다.";
       }
       window.requestAnimationFrame(function(){window.requestAnimationFrame(function(){selectedMedia.classList.remove("is-changing")})});
-    }
-    function refreshSelection(){
+    }    function refreshSelection(){
       var index=activeIndex();
       renderSelectedMedia(index);
       axisButtons.forEach(function(button,i){
@@ -279,7 +278,7 @@
       if(detail){
         detail.classList.add("is-changing");
         window.clearTimeout(pendingTimer);
-        pendingTimer=window.setTimeout(function(){detail.classList.remove("is-changing")},450);
+        pendingTimer=window.setTimeout(function(){detail.classList.remove("is-changing")},240);
       }
       refreshSelection();
     }
@@ -360,7 +359,7 @@
     var modes=[
       {name:"Detect",copy:"위성·영상·센서에서 변화를 포착합니다",copyEn:"Detect change in satellite, video and sensor data",ids:["satellite","news"]},
       {name:"Predict",copy:"AI와 수치모델로 환경 변화와 위험을 예측합니다",copyEn:"Forecast environmental change and risk with AI and numerical models",ids:["flood3d","surge","sealevel","flood-xai"]},
-      {name:"Monitor",copy:"관측 상태와 분석 결과를 한 화면에서 관리합니다",copyEn:"Manage observation status and analysis results in one view",ids:["buoy","env","rip"]}
+      {name:"Monitor",copy:"관측 상태와 분석 결과를 살펴봅니다",copyEn:"Review observation status and analysis results",ids:["buoy","env","rip"]}
     ];
     var active=0;
     var queued=false;
@@ -412,17 +411,17 @@
         changeTimer=window.setTimeout(function(){capture.classList.remove("is-changing")},250);
       }
     }
-    if(reduced.matches||window.innerWidth<=1100){
-      root.classList.add("is-static");
-      return;
-    }
-    root.classList.remove("is-static");
+    var staticMode=true;
+    if(staticMode)root.classList.add("is-static");
+    else root.classList.remove("is-static");
     tabs.forEach(function(tab,index){
       tab.addEventListener("click",function(){
-        var bounds=root.getBoundingClientRect();
-        var travel=Math.max(0,root.offsetHeight-window.innerHeight);
-        var target=window.scrollY+bounds.top+travel*(index/2);
-        window.scrollTo({top:target,behavior:reduced.matches?"instant":"smooth"});
+        if(!staticMode){
+          var bounds=root.getBoundingClientRect();
+          var travel=Math.max(0,root.offsetHeight-window.innerHeight);
+          var target=window.scrollY+bounds.top+travel*(index/2);
+          window.scrollTo({top:target,behavior:reduced.matches?"instant":"smooth"});
+        }
         setMode(index);
       });
       tab.addEventListener("keydown",function(event){
@@ -432,6 +431,7 @@
         if(next!==null){tabs[next].focus();tabs[next].click();event.preventDefault()}
       });
     });
+    if(staticMode)return;
     function update(){
       queued=false;
       var bounds=root.getBoundingClientRect();

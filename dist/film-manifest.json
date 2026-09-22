@@ -1,29 +1,39 @@
 {
-  "revision": "presentation-20260920",
+  "revision": "editorial-r3-20260922",
   "slots": [
     {
       "id": "geosr-hero",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 60,
-      "delivery": "assets/films/geosr-hero.mp4"
+      "src": "assets/films/flow-c01-earth-draft.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
+      "delivery": "assets/films/geosr-hero.mp4",
+      "stage": "720p-draft",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
+      "reviewNote": "Only the Earth opening is connected; rejected 60s assembly is retained in review files",
+      "plannedDuration": 60,
+      "labelKo": "720p 오프닝 초안 · 본편 재구성 중",
+      "labelEn": "720p OPENING DRAFT · FULL FILM IN REVISION"
     },
     {
       "id": "expertise-1",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 6,
-      "delivery": "assets/films/expertise-observation.mp4"
+      "src": "assets/films/flow-usv-existing-draft.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
+      "delivery": "assets/films/expertise-observation.mp4",
+      "stage": "720p-draft",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
     },
     {
       "id": "expertise-2",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 6,
-      "delivery": "assets/films/expertise-environment.mp4"
+      "src": "assets/films/flow-c07-lab-draft.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
+      "delivery": "assets/films/expertise-environment.mp4",
+      "stage": "720p-draft",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
     },
     {
       "id": "expertise-3",
@@ -36,36 +46,43 @@
     {
       "id": "expertise-4",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 6,
-      "delivery": "assets/films/expertise-satellite.mp4"
+      "src": "assets/films/flow-c02-satellite-draft.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
+      "delivery": "assets/films/expertise-satellite.mp4",
+      "stage": "720p-draft",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
     },
     {
       "id": "business-environment",
       "mode": "sequence",
-      "src": null,
-      "approval": "pending",
-      "duration": 6,
+      "src": "assets/films/flow-c07-lab-draft.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
       "delivery": "assets/films/business-environment.mp4",
       "purpose": "Business expertise — people-free water, sediment and ecological analysis process frame",
       "recommendedMedia": [
         "mp4",
         "gif"
-      ]
+      ],
+      "stage": "720p-draft",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
     },
     {
       "id": "company-overview",
       "mode": "sequence",
       "src": null,
-      "approval": "pending",
-      "duration": 6,
+      "approval": "rework",
+      "duration": 60,
       "delivery": "assets/films/company-overview.mp4",
       "purpose": "Company overview — people-free observation and environmental analysis process frame",
       "recommendedMedia": [
         "mp4",
         "gif"
-      ]
+      ],
+      "stage": "continuity-redesign",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
+      "reviewNote": "60s assembly failed editorial quality review and is not published in this slot"
     },
     {
       "id": "ax-discover",
@@ -124,14 +141,41 @@
       "id": "ax-concept-film",
       "mode": "loop",
       "src": null,
-      "approval": "pending",
+      "approval": "rework",
       "duration": 30,
       "delivery": "assets/films/ax-concept-film.mp4",
-      "purpose": "AX concept film — introductory 16:9 framing for separate platform examples; factual content and footage not yet prepared",
+      "purpose": "Separate abstract AX concept draft, not actual UI or measured scientific data",
       "recommendedMedia": [
         "mp4",
         "gif"
-      ]
+      ],
+      "stage": "concept-redesign",
+      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
+      "reviewNote": "Repeated glass-panel assembly withdrawn pending function-specific concept keyframes"
+    },
+    {
+      "id": "platform-satellite",
+      "src": "assets/films/platform-satellite-preview.mp4",
+      "approval": "draft-reviewed",
+      "mode": "loop",
+      "duration": 3.8,
+      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
+    },
+    {
+      "id": "platform-flood3d",
+      "src": "assets/films/platform-flood3d-preview.mp4",
+      "approval": "draft-reviewed",
+      "mode": "loop",
+      "duration": 3.8,
+      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
+    },
+    {
+      "id": "platform-buoy",
+      "src": "assets/films/platform-buoy-preview.mp4",
+      "approval": "draft-reviewed",
+      "mode": "loop",
+      "duration": 3.8,
+      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
     }
   ]
 }

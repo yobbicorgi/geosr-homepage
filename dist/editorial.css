@@ -1,0 +1,156 @@
+/* GeoSR editorial compositions / 22 September 2026
+   Fluid rem scale is owned by desktop-system.css; no viewport zoom or transformed page */
+:root{--ed-ink:#102331;--ed-blue:#206cad;--ed-muted:#546877;--ed-rule:#d8e1e8;--ed-night:#061825}
+body{font-kerning:normal;text-rendering:optimizeLegibility}
+body h1,body h2,body h3{text-wrap:balance}
+body p{word-break:keep-all;overflow-wrap:break-word}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid #2c84cd;outline-offset:5px}
+/* Home expertise is one panorama, not a picture card beside a list */
+body.home-page .studio-expertise{padding:6rem 4.2% 5rem;background:#f5f7f8}
+body.home-page .studio-expertise>.studio-section-heading{padding:0 3.8%;margin-bottom:3.2rem}
+body.home-page .studio-expertise .studio-section-heading>div{grid-template-columns:1.35fr 1fr;gap:5rem}
+body.home-page .studio-expertise h2{font-size:3.15rem;font-weight:650;line-height:1.28;letter-spacing:-.055em}
+body.home-page .studio-field-stage{display:flex;flex-direction:column;gap:0}
+body.home-page .studio-field-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding:0 3.5%;margin:0 0 1.8rem}
+body.home-page .studio-field-tabs button{grid-template-columns:1.4rem 1fr;align-items:baseline;padding:1.1rem 0;color:#637683;border-bottom:1px solid #cdd8e0}
+body.home-page .studio-field-tabs button strong{font-size:1.25rem;font-weight:550}
+body.home-page .studio-field-tabs button small{font-size:.57rem;letter-spacing:.13em}
+body.home-page .studio-field-tabs button:before{top:auto;bottom:-1px;left:0;width:100%;height:2px;border-radius:0;transform-origin:left center;scale:0 1}
+body.home-page .studio-field-tabs button[aria-selected=true]{color:#1b5d95;padding-left:0}
+body.home-page .studio-field-tabs button[aria-selected=true]:before{scale:1}
+body.home-page .studio-field-panel{min-height:39rem;border-radius:0;background:#061825}
+body.home-page .studio-field-copy{min-height:39rem;max-width:57%;padding:3.6rem 4%;justify-content:flex-end}
+body.home-page .studio-field-copy h3{font-size:2.55rem;line-height:1.27;font-weight:600;max-width:15em}
+body.home-page .studio-field-copy>p:not(.eyebrow){font-size:1.06rem;color:#d9e2e9;max-width:30em}
+body.home-page .studio-field-copy ul{font-size:.8rem;gap:1.2rem;margin:1.4rem 0}
+body.home-page .studio-field-copy .plain-arrow{align-self:flex-start;margin:0;font-size:.9rem}
+body.home-page .studio-field-media:after{background:linear-gradient(90deg,#041422df 0%,#041422a3 36%,#04142218 72%),linear-gradient(0deg,#04142299,transparent 65%)}
+body.home-page .studio-field-media>img,body.home-page .studio-field-media>video{object-position:center 42%}
+body.home-page .studio-field-media figcaption{background:#091827b8;border:1px solid #ffffff35;right:2rem;top:1.5rem;border-radius:2px;font-size:.62rem}
+body.home-page .studio-explorer-foot{padding:1.3rem 3.5% 0}
+body.home-page .studio-projects{padding:5.5rem 8%;background:#fff;gap:5rem;grid-template-columns:1fr 1.8fr}
+body.home-page .studio-projects h2{font-size:2.7rem;line-height:1.3;max-width:8em}
+body.home-page .studio-project-record{padding:1.8rem 0}
+body.home-page .studio-project-record h3{font-size:1.48rem;line-height:1.5;font-weight:550}
+body.home-page .studio-project-type{font-size:.75rem;color:#23669f}
+body.home-page .studio-platforms>.studio-section-heading h2{font-size:3.3rem;line-height:1.2}
+body.home-page .studio-platform-panel--ax{min-height:38rem}
+body.home-page .studio-platform-copy h3{font-size:6rem}
+body.home-page .studio-platform-panel--dap{min-height:34rem}
+/* The contact close has a single typographic hierarchy and a clear destination */
+body .studio-contact{background:#e9eff3;color:var(--ed-ink);padding:4rem 8%}
+body .studio-contact:before{opacity:.16}
+body .studio-contact-statement h2{font-size:3.5rem;line-height:1.22;letter-spacing:-.05em;font-weight:600;color:#102b3e}
+body .studio-contact-cta{background:#154f7c;color:white;border:1px solid #154f7c;border-radius:3rem;padding:1rem 1.8rem;font-size:1rem;box-shadow:none}
+body .studio-contact-cta:hover{background:#0b3454;color:white;transform:translateY(-3px)}
+/* Technology atlas — editorial index + cinematic field + readable technical records */
+body.inner-page main>.business-atlas{max-width:none;width:100%;padding:0;margin:0;background:#f5f7f8;color:var(--ed-ink)}
+body.inner-page .business-atlas .capability-intro{padding:4.5rem 8% 3.5rem;margin:0;display:grid;grid-template-columns:1.2fr 1fr;gap:1.6rem 6rem;background:#fff}
+body.inner-page .business-atlas .capability-intro>.eyebrow{grid-column:1/-1;color:#2b699b;font-size:.72rem;letter-spacing:.15em;margin:0}
+body.inner-page .business-atlas .capability-intro h1{font-size:3.5rem;line-height:1.22;letter-spacing:-.05em;font-weight:600;margin:0;max-width:15em}
+body.inner-page .business-atlas .capability-intro>p:last-child{align-self:end;font-size:1.08rem;line-height:1.9;color:#516674;max-width:31em;margin:0}
+body.inner-page .business-atlas .capability-workspace{padding:3.5rem 8% 4.5rem;display:grid;grid-template-columns:24% minmax(0,1fr);grid-template-rows:auto auto;gap:2rem 4rem;position:relative}
+body.inner-page .business-atlas .capability-axis-rail{grid-column:1;grid-row:1/3;position:sticky;top:8rem;display:flex;flex-direction:column;align-self:start;gap:0;background:transparent;border:0;padding:0}
+body.inner-page .business-atlas .capability-axis{display:flex;align-items:baseline;justify-content:flex-start;gap:1rem;padding:1.55rem 0;min-height:0;border:0;border-bottom:1px solid #cbd7df;color:#70838f;text-align:left;background:transparent;transition:color .25s,padding .4s}
+body.inner-page .business-atlas .capability-axis-number{font-size:.72rem;letter-spacing:.05em;min-width:1.5rem}
+body.inner-page .business-atlas .capability-axis-name{font-size:1.35rem;line-height:1.4;font-weight:500;word-break:keep-all}
+body.inner-page .business-atlas .capability-axis[aria-selected=true]{color:#165f98;border-bottom:2px solid #216cab;padding-left:.55rem}
+body.inner-page .business-atlas .capability-selected-media{grid-column:2;grid-row:1;aspect-ratio:16/9;min-height:0;height:auto;width:100%;position:relative;overflow:hidden;border:0;border-radius:0;background:#061825;box-shadow:0 1rem 3rem #123b5510}
+body.inner-page .business-atlas .capability-selected-media img{display:block;width:100%;height:100%;object-fit:contain;transform:none}
+body.inner-page .business-atlas .capability-selected-media[data-media-key*="usv"] img,body.inner-page .business-atlas .capability-selected-media[data-media-key*="lab"] img{object-fit:cover}
+body.inner-page .business-atlas .capability-detail{grid-column:2;grid-row:2;position:relative;padding:0;background:transparent;border:0;min-height:0}
+body.inner-page .business-atlas .capability-detail-number{display:block;color:#2776ad;font-size:.7rem;letter-spacing:.1em;margin-bottom:.8rem}
+body.inner-page .business-atlas .capability-detail h2{font-size:2.45rem;line-height:1.25;letter-spacing:-.05em;font-weight:600;margin:0 0 1rem}
+body.inner-page .business-atlas .capability-detail>p:not(.capability-source-note){font-size:1.08rem;color:#516674;line-height:1.85;max-width:48em;margin:0 0 1.8rem}
+body.inner-page .business-atlas .capability-related-links{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+body.inner-page .business-atlas .capability-related-links a{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:3.5rem;padding:.8rem 0;border-top:1px solid #c9d6df;border-bottom:0;color:#19384d;font-size:.95rem;line-height:1.5}
+body.inner-page .business-atlas .capability-related-links a:hover{color:#176dae}
+body.inner-page .business-atlas .actual-placeholder{font-size:.62rem;color:#657b89;flex-shrink:0}
+body.inner-page .business-atlas .actual-arrow{color:#246c9f}
+body.inner-page .business-atlas .capability-source-note{margin-top:1.8rem;color:#617b8c;font-size:.7rem;line-height:1.7}
+body.inner-page .business-atlas>.technology-index{margin:0;padding:2rem 8% 4rem;border:0;background:white}
+body.inner-page .business-atlas>.technology-index>summary{font-size:1.3rem;padding:1.2rem 0;color:#1b4c6b;cursor:pointer;border-top:1px solid #d7e1e7}
+.atlas-index-storage[hidden]{display:none}
+/* AX is a product film stage followed by a precisely framed actual interface */
+body.inner-page.ax-home .ax-concept-hero{padding:0;min-height:calc(100svh - 5.5rem);display:block;position:relative;background:#061421;overflow:hidden}
+body.inner-page.ax-home .ax-concept-hero-inner{max-width:none;width:100%;min-height:calc(100svh - 5.5rem);display:block;margin:0;padding:0;position:relative;isolation:isolate}
+body.inner-page.ax-home .ax-concept-hero-copy{position:absolute;left:8%;top:24%;width:44%;z-index:3;pointer-events:none}
+body.inner-page.ax-home .ax-concept-kicker{color:#89b2d3;font-size:.72rem;letter-spacing:.18em;margin-bottom:2rem}
+body.inner-page.ax-home .ax-concept-hero h1{color:#f3f7fa;font-size:6.2rem;line-height:1;letter-spacing:-.07em;font-weight:600;margin:0 0 2rem}
+body.inner-page.ax-home .ax-concept-heading{color:#c7d8e5;font-size:1.7rem;line-height:1.5;font-weight:400;max-width:20em}
+body.inner-page.ax-home .ax-concept-film-stage{position:absolute;inset:0;margin:0;width:100%;height:100%;aspect-ratio:auto;border:0;background:transparent;box-shadow:none;overflow:hidden}
+body.inner-page.ax-home .ax-concept-film-stage>.film-video{left:22%;width:78%;height:100%;object-fit:contain}
+body.inner-page.ax-home .ax-concept-film-stage:after{content:'';position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#061421 0%,#061421bf 30%,transparent 72%);pointer-events:none}
+body.inner-page.ax-home .ax-concept-film-slate{position:absolute;right:6%;bottom:8%;z-index:3;padding:0;background:none}
+body.inner-page.ax-home .ax-concept-film-stage>.film-draft-badge{top:auto;bottom:2rem;right:3rem;z-index:5}
+body.inner-page.ax-home .ax-concept-film-stage>.film-inline-toggle{z-index:6;bottom:2rem;left:8%;right:auto}
+body.inner-page.ax-home .ax-platform-explorer{background:#f5f7f8;padding-top:5rem;padding-bottom:5rem}
+body.inner-page.ax-home .ax-category-tabs{gap:0;border-bottom:1px solid #c7d4de}
+body.inner-page.ax-home .ax-category-tab{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;padding:1.7rem 2rem;color:#6c8292}
+body.inner-page.ax-home .ax-category-tab[aria-selected=true]{background:transparent;color:#185a91;border-bottom-color:#185a91}
+body.inner-page.ax-home .ax-category-name{font-size:1.8rem;font-weight:550}
+body.inner-page.ax-home .ax-platform-workspace{margin-top:2.5rem}
+body.inner-page.ax-home .ax-capture-viewport{box-shadow:0 1.5rem 4rem #0d2d4b20;border:1px solid #d0dce5;border-radius:.3rem}
+body.inner-page.ax-home .ax-platform-tab{background:transparent;border:0;border-bottom:1px solid #d2dde5;border-radius:0}
+body.inner-page.ax-home .ax-platform-tab[aria-selected=true]{background:#e6eef4;color:#135d96}
+body.inner-page.ax-home .ax-platform-copy{border:0;background:transparent;padding:2rem 0 0}
+body.inner-page.ax-home .ax-platform-copy-heading h3{font-size:2.1rem;font-weight:600;letter-spacing:-.04em}
+/* Tablet and mobile keep the information order while removing sticky composition */
+@media(max-width:1000px){
+ body.home-page .studio-expertise h2{font-size:2.4rem}
+ body.home-page .studio-expertise .studio-section-heading>div{display:block}
+ body.home-page .studio-field-copy{max-width:76%}
+ body.inner-page .business-atlas .capability-intro{grid-template-columns:1fr;gap:1.4rem}
+ body.inner-page .business-atlas .capability-intro h1{font-size:2.8rem}
+ body.inner-page .business-atlas .capability-workspace{grid-template-columns:1fr;gap:2rem;padding:2rem 6% 3rem}
+ body.inner-page .business-atlas .capability-axis-rail{grid-column:1;grid-row:1;position:static;display:flex;flex-direction:row;overflow-x:auto;gap:1.5rem}
+ body.inner-page .business-atlas .capability-axis{flex:0 0 auto;padding:1rem 0}
+ body.inner-page .business-atlas .capability-axis-name{font-size:1rem}
+ body.inner-page .business-atlas .capability-selected-media{grid-column:1;grid-row:2}
+ body.inner-page .business-atlas .capability-detail{grid-column:1;grid-row:3}
+ body.inner-page.ax-home .ax-concept-hero h1{font-size:4.5rem}
+}
+@media(max-width:640px){
+ body.home-page .studio-expertise{padding:3rem 1.25rem}
+ body.home-page .studio-expertise>.studio-section-heading{padding:0;margin-bottom:2rem}
+ body.home-page .studio-expertise h2{font-size:2rem;line-height:1.3}
+ body.home-page .studio-field-tabs{grid-template-columns:1fr 1fr;gap:0 1rem;padding:0;margin-bottom:1.2rem}
+ body.home-page .studio-field-tabs button{padding:.9rem 0;gap:.25rem}
+ body.home-page .studio-field-tabs button strong{font-size:1rem}
+ body.home-page .studio-field-panel,body.home-page .studio-field-copy{min-height:34rem}
+ body.home-page .studio-field-copy{max-width:100%;padding:1.5rem}
+ body.home-page .studio-field-copy h3{font-size:1.65rem}
+ body.home-page .studio-field-copy>p:not(.eyebrow){font-size:.9rem}
+ body.home-page .studio-field-copy ul{font-size:.67rem;gap:.7rem}
+ body.home-page .studio-field-media:after{background:linear-gradient(0deg,#041422f5 0%,#041422c4 40%,transparent 90%)}
+ body.home-page .studio-projects{display:block;padding:3rem 1.25rem}
+ body.home-page .studio-projects h2{font-size:2rem;max-width:none}
+ body.home-page .studio-project-record h3{font-size:1.1rem}
+ body.home-page .studio-platforms>.studio-section-heading h2{font-size:2.25rem}
+ body.home-page .studio-platform-copy h3{font-size:4.5rem}
+ body .studio-contact{padding:3rem 1.25rem}
+ body .studio-contact-statement h2{font-size:2.1rem}
+ body.inner-page .business-atlas .capability-intro{padding:3rem 1.25rem 2rem}
+ body.inner-page .business-atlas .capability-intro h1{font-size:2.1rem}
+ body.inner-page .business-atlas .capability-intro>p:last-child{font-size:.93rem}
+ body.inner-page .business-atlas .capability-workspace{padding:1rem 1.25rem 2.5rem;gap:1.5rem}
+ body.inner-page .business-atlas .capability-axis-rail{gap:1.5rem}
+ body.inner-page .business-atlas .capability-axis{gap:.4rem}
+ body.inner-page .business-atlas .capability-detail h2{font-size:1.75rem}
+ body.inner-page .business-atlas .capability-detail>p:not(.capability-source-note){font-size:.93rem}
+ body.inner-page .business-atlas .capability-related-links{grid-template-columns:1fr}
+ body.inner-page .business-atlas>.technology-index{padding:1rem 1.25rem 2.5rem}
+ body.inner-page.ax-home .ax-concept-hero,body.inner-page.ax-home .ax-concept-hero-inner{min-height:42rem}
+ body.inner-page.ax-home .ax-concept-hero-copy{left:1.25rem;top:4rem;width:85%}
+ body.inner-page.ax-home .ax-concept-hero h1{font-size:3.8rem}
+ body.inner-page.ax-home .ax-concept-heading{font-size:1.3rem}
+ body.inner-page.ax-home .ax-concept-film-stage>.film-video{left:0;top:12rem;width:100%;height:70%}
+ body.inner-page.ax-home .ax-concept-film-stage:after{background:linear-gradient(180deg,#061421 0%,#06142199 35%,transparent 70%)}
+ body.inner-page.ax-home .ax-category-tab{padding:1.2rem .5rem}
+ body.inner-page.ax-home .ax-category-name{font-size:1.3rem}
+ body.inner-page.ax-home .ax-platform-copy-heading h3{font-size:1.6rem}
+}
+@media(prefers-reduced-motion:reduce){body .studio-contact-cta,body.inner-page .business-atlas .capability-axis{transition:none;transform:none}}
+body.inner-page.ax-home>header.solid nav a[aria-current="page"]{color:#a5cff0}
+body.inner-page.ax-home>header.solid nav a[aria-current="page"]:after{background:#a5cff0}

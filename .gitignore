@@ -4,3 +4,5 @@ Thumbs.db
 .openai/execution-profile.json
 node_modules/
 *.log
+__pycache__/
+*.py[cod]

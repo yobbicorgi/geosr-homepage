@@ -152,8 +152,10 @@
         var match=String(record.id).match(/(\d+)$/);
         return match?{data:record,id:match[1]}:null;
       }).filter(Boolean);
-      list.replaceChildren();
-      records.forEach(function(item){list.appendChild(makeTechnologyNode(item.data,item.id))});
+      if(list){
+        list.replaceChildren();
+        records.forEach(function(item){list.appendChild(makeTechnologyNode(item.data,item.id))});
+      }
       refreshSelection();
       requestDraw();
     }
@@ -204,7 +206,7 @@
         if(match)byId.set(match[1],item);
       });
       related.replaceChildren();
-      ids.slice(0,5).forEach(function(id){
+      ids.forEach(function(id){
         var item=byId.get(id);
         if(!item)return;
         var link=document.createElement("a");
@@ -240,7 +242,6 @@
       var mediaKey=example.src;
       if(selectedMedia.dataset.mediaKey===mediaKey)return;
       selectedMedia.dataset.mediaKey=mediaKey;
-      selectedMedia.classList.add("is-changing");
       selectedMedia.replaceChildren();
         var image=document.createElement("img");
         image.src=example.src;
@@ -252,7 +253,9 @@
         selectedMedia.setAttribute("aria-label",image.alt);
         selectedMedia.appendChild(image);
         if(sourceNote)sourceNote.textContent=language==="en"?example.noteE:example.noteK;
-      window.requestAnimationFrame(function(){window.requestAnimationFrame(function(){selectedMedia.classList.remove("is-changing")})});
+      if(!reduced.matches&&image.animate){
+        image.animate([{opacity:.2,transform:"scale(1.035)"},{opacity:1,transform:"scale(1)"}],{duration:760,easing:"cubic-bezier(.16,1,.3,1)"});
+      }
     }    function refreshSelection(){
       var index=activeIndex();
       renderSelectedMedia(index);
@@ -269,7 +272,7 @@
       if(summary)summary.textContent=axisButtons[index].dataset.axisSummary||"";
       if(number)number.textContent="0"+(index+1)+" / 05";
       var ids=new Set(groupIds[index]||[]);
-      list.querySelectorAll("[data-technology-id]").forEach(function(node){
+      if(list)list.querySelectorAll("[data-technology-id]").forEach(function(node){
         var selectedNode=ids.has(node.dataset.technologyId);
         node.classList.toggle("is-related",selectedNode);
         node.classList.toggle("is-selected",selectedNode);
@@ -280,19 +283,18 @@
     function setSelection(index,commit){
       index=clamp(index,0,axisButtons.length-1);
       if(commit){selected=index;preview=null}
-      if(detail){
-        detail.classList.add("is-changing");
-        window.clearTimeout(pendingTimer);
-        pendingTimer=window.setTimeout(function(){detail.classList.remove("is-changing")},240);
-      }
       refreshSelection();
+      if(detail&&!reduced.matches&&detail.animate){
+        detail.getAnimations().forEach(function(animation){animation.cancel()});
+        detail.animate([{opacity:.25,transform:"translateY(12px)"},{opacity:1,transform:"translateY(0)"}],{duration:640,easing:"cubic-bezier(.16,1,.3,1)"});
+      }
     }
     axisButtons.forEach(function(button,index){
       button.addEventListener("click",function(){setSelection(index,true)});
       button.addEventListener("keydown",function(event){
-        if(!["ArrowLeft","ArrowRight","Home","End"].includes(event.key))return;
+        if(!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Home","End"].includes(event.key))return;
         event.preventDefault();
-        var next=event.key==="Home"?0:event.key==="End"?axisButtons.length-1:(index+(event.key==="ArrowRight"?1:axisButtons.length-1))%axisButtons.length;
+        var next=event.key==="Home"?0:event.key==="End"?axisButtons.length-1:(index+(["ArrowRight","ArrowDown"].includes(event.key)?1:axisButtons.length-1))%axisButtons.length;
         setSelection(next,true);axisButtons[next].focus({preventScroll:true});
       });
     });

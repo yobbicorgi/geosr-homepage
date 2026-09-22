@@ -23,7 +23,9 @@ const source = await readFile(new URL('../dist/film-player.js', import.meta.url)
 const host = new Element(); host.dataset.filmSlot = 'geosr-hero';
 const pendingHost = new Element(); pendingHost.dataset.filmSlot = 'ax-concept-film';
 const unsafeHost = new Element(); unsafeHost.dataset.filmSlot = 'unsafe';
+const draftHost = new Element(); draftHost.dataset.filmSlot = 'draft';
 const hosts = new Map([['geosr-hero', host], ['ax-concept-film', pendingHost], ['unsafe', unsafeHost]]);
+hosts.set('draft', draftHost);
 const button = new Element();
 const doc = new EventTarget();
 doc.documentElement = { lang: 'ko' }; doc.hidden = false;
@@ -46,11 +48,16 @@ vm.runInNewContext(source, {
   fetch: async () => ({ ok: true, json: async () => ({ slots: [
     { id: 'geosr-hero', mode: 'loop', src: 'assets/films/geosr-hero.mp4', approval: 'approved' },
     { id: 'ax-concept-film', mode: 'loop', src: null, approval: 'pending' },
-    { id: 'unsafe', mode: 'loop', src: 'https://example.com/video.mp4', approval: 'approved' }
+    { id: 'unsafe', mode: 'loop', src: 'https://example.com/video.mp4', approval: 'approved' },
+    { id: 'draft', mode: 'loop', src: 'assets/films/flow-draft.mp4', approval: 'draft-reviewed' }
   ] }) })
 });
 const status = await win.GeoSRFilm.ready;
-assert.equal(status.approved, 1);
+assert.equal(status.approved, 2);
+assert.equal(draftHost.classList.contains('film-draft'), true);
+assert.equal(draftHost.children[0].textContent, '720p 콘셉트 초안');
+observer.visibility(draftHost, true);
+assert.equal(draftHost.children.find(x => x.className === 'film-video').paused, false);
 observer.visibility(pendingHost, true); observer.visibility(unsafeHost, true);
 assert.equal(pendingHost.children.length, 0, 'Pending media must make no video request');
 assert.equal(unsafeHost.children.length, 0, 'Only local delivery paths are allowed');

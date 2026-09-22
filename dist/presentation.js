@@ -20,7 +20,11 @@
     const changed=panel.hidden===selected;
     panel.hidden=!selected;
     panel.querySelectorAll('[data-film-slot]').forEach(host=>window.GeoSRFilm?.activate?.(host.dataset.filmSlot,selected));
-    if(selected&&changed){enter(panel.querySelector('.home-field-media'),12);enter(panel.querySelector('.home-field-copy'),24,80)}
+    if(selected&&changed){
+     const media=panel.querySelector('.studio-field-media');
+     if(media&&!reduced.matches)media.animate([{opacity:.2,clipPath:'inset(0 6% 0 0)',transform:'translateY(12px)'},{opacity:1,clipPath:'inset(0 0 0 0)',transform:'translateY(0)'}],{duration:760,easing:'cubic-bezier(.16,1,.3,1)'});
+     enter(panel.querySelector('.studio-field-copy'),24,100);
+    }
    });
    document.dispatchEvent(new CustomEvent('geosr:media-updated'));
    if(focus)tab.focus({preventScroll:true});
@@ -28,9 +32,9 @@
   tabs.forEach((tab,index)=>{
    tab.addEventListener('click',()=>activate(tab));
    tab.addEventListener('keydown',event=>{
-    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     event.preventDefault();
-    const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:tabs.length-1))%tabs.length;
+    const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:tabs.length-1))%tabs.length;
     activate(tabs[next],true);
    });
   });
@@ -66,7 +70,7 @@
    enter(entry.target,22);
    reveal.unobserve(entry.target);
   }),{threshold:.1});
-  document.querySelectorAll('.home-project-record,.home-platform-panel,.home-news-list,.company-story-block,.equipment-card').forEach(item=>reveal.observe(item));
+  document.querySelectorAll('.studio-project-record,.studio-platform-panel,.studio-news-list,.company-story-block,.equipment-card').forEach(item=>reveal.observe(item));
  }
 
  const milestones=[...document.querySelectorAll('[data-company-year]')];

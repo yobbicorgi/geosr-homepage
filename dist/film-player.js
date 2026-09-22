@@ -39,7 +39,9 @@
   for(const plan of manifest.slots){
    const host=document.querySelector(`[data-film-slot="${plan.id}"]`);if(!host||records.has(plan.id))continue;
    let button=document.querySelector(`[data-film-toggle="${plan.id}"]`);
-   const allowed=plan.approval==='approved'&&localMedia(plan.src);
+   const draft=plan.approval==='draft-reviewed';
+   const allowed=(plan.approval==='approved'||draft)&&localMedia(plan.src);
+   if(allowed&&draft){host.classList.add('film-draft');const badge=document.createElement('span');badge.className='film-draft-badge';badge.textContent=(english?plan.labelEn:plan.labelKo)||(plan.id.startsWith('platform-')?(english?'ACTUAL UI · EDITED PREVIEW':'실제 UI · 편집 초안'):(english?'720p CONCEPT DRAFT':'720p 콘셉트 초안'));host.append(badge)}
    if(allowed&&!button){button=document.createElement('button');button.type='button';button.className='film-inline-toggle';button.dataset.filmToggle=plan.id;host.setAttribute('role','group');host.append(button)}
    const r={plan,host,button,allowed,visible:!observer,manual:false,failed:false,video:null,progress:0};
    records.set(plan.id,r);host.dataset.filmState=r.allowed?'approved':'pending';

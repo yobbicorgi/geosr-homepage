@@ -27,6 +27,7 @@
     {id:"salinity",file:"env-full-salinity.jpg",width:1920,height:1080,ko:"표층 염분 분포",en:"Surface salinity",date:"2026-09-19"}
   ];
   const initialGroup=groups[0];
+  const motionCaptures=new Set(['satellite','flood3d','buoy']);
   const initialService=services.get(initialGroup.services[0]);
 
   function groupFor(serviceId){return groups.find(group=>group.services.includes(serviceId))||initialGroup}
@@ -83,7 +84,8 @@
     if(capture){
       const captureName=capture.frame?t(capture.frame.ko,capture.frame.en):serviceName(service);
       const alt=t(`${captureName} 실제 화면 캡처`,`${captureName} actual interface capture`);
-      return `<img class="ax-capture-visual" data-ax-capture-visual src="assets/platforms/${e(capture.file)}" width="${capture.width}" height="${capture.height}" alt="${e(alt)}" loading="lazy" decoding="async">`;
+      const image=`<img class="ax-capture-visual" data-ax-capture-visual src="assets/platforms/${e(capture.file)}" width="${capture.width}" height="${capture.height}" alt="${e(alt)}" loading="lazy" decoding="async">`;
+      return motionCaptures.has(service.id)?`<div class="ax-capture-visual ax-capture-film" data-ax-capture-visual data-film-slot="platform-${service.id}">${image.replace('data-ax-capture-visual','')}</div>`:image;
     }
     const pending=service.development
       ?t("개발 중 · 실제 화면 없음","In development · no actual screen")
@@ -156,6 +158,12 @@
       image.decoding="async";
       image.addEventListener("error",()=>{image.dataset.axCaptureFailure="true"},{once:true});
       image.src=`assets/platforms/${capture.file}`;
+      if(motionCaptures.has(service.id)){
+        const wrapper=document.createElement('div');
+        wrapper.className='ax-capture-visual ax-capture-film';
+        wrapper.dataset.axCaptureVisual='';wrapper.dataset.filmSlot=`platform-${service.id}`;
+        delete image.dataset.axCaptureVisual;wrapper.append(image);return wrapper;
+      }
       return image;
     }
     return createCaptureSlate(service);
@@ -307,9 +315,12 @@
         if(node!==previous)node.remove();
       });
       viewport.appendChild(incoming);
+      previous?.querySelectorAll('video').forEach(video=>video.pause());
+      document.dispatchEvent(new Event('geosr:media-updated'));
       if(caption)caption.textContent=failed?captureFailureDescription(service):captureDescription(service,capture);
       if(reduceQuery.matches||!animate||!previous||typeof incoming.animate!=="function"){
         if(previous)previous.remove();
+        document.dispatchEvent(new Event('geosr:media-updated'));
         return;
       }
 
@@ -325,6 +336,7 @@
       Promise.all([incomingAnimation.finished.catch(()=>{}),previousAnimation.finished.catch(()=>{})]).then(()=>{
         if(version!==transitionVersion)return;
         previous.remove();
+        document.dispatchEvent(new Event('geosr:media-updated'));
       });
     }
     function selectService(serviceId,animate=true){

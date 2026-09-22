@@ -518,7 +518,7 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
 
   /* Credential intro and the live document rail share one compact 30 / 70 stage. */
   body.home-page .credential-section--curated,
-  body.inner-page.route-company .credential-section--curated {
+  body.inner-page .credential-section--curated {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(0, 30fr) minmax(0, 70fr);
@@ -531,9 +531,9 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
     color: var(--ds-ink);
   }
   body.home-page .credential-section--curated .section-kicker,
-  body.inner-page.route-company .credential-section--curated .section-kicker { grid-column: 1 / -1; margin-bottom: 0; font-size: .75rem; }
+  body.inner-page .credential-section--curated .section-kicker { grid-column: 1 / -1; margin-bottom: 0; font-size: .75rem; }
   body.home-page .credential-section--curated .credential-intro,
-  body.inner-page.route-company .credential-section--curated .credential-intro {
+  body.inner-page .credential-section--curated .credential-intro {
     grid-column: 1;
     display: flex;
     flex-direction: column;
@@ -544,11 +544,11 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
     padding: 0;
   }
   body.home-page .credential-section--curated .credential-intro h2,
-  body.inner-page.route-company .credential-section--curated .credential-intro h2 { margin: 0 0 .5rem; font-size: 3rem; line-height: 1.2; font-weight: 650; }
+  body.inner-page .credential-section--curated .credential-intro h2 { margin: 0 0 .5rem; font-size: 3rem; line-height: 1.2; font-weight: 650; }
   body.home-page .credential-section--curated .credential-intro p,
-  body.inner-page.route-company .credential-section--curated .credential-intro p { margin: 0; color: var(--ds-muted); font-size: .875rem; }
+  body.inner-page .credential-section--curated .credential-intro p { margin: 0; color: var(--ds-muted); font-size: .875rem; }
   body.home-page .credential-section--curated .credential-category-tabs,
-  body.inner-page.route-company .credential-section--curated .credential-category-tabs {
+  body.inner-page .credential-section--curated .credential-category-tabs {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     width: 100%;
@@ -556,7 +556,7 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
     border-color: var(--ds-line);
   }
   body.home-page .credential-section--curated .credential-category-tabs button,
-  body.inner-page.route-company .credential-section--curated .credential-category-tabs button {
+  body.inner-page .credential-section--curated .credential-category-tabs button {
     display: flex;
     justify-content: space-between;
     gap: .75rem;
@@ -568,18 +568,18 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
   }
   body.home-page .credential-section--curated .credential-category-tabs button > span,
   body.home-page .credential-section--curated .credential-category-tabs button > small,
-  body.inner-page.route-company .credential-section--curated .credential-category-tabs button > span,
-  body.inner-page.route-company .credential-section--curated .credential-category-tabs button > small { font-size: .75rem; }
+  body.inner-page .credential-section--curated .credential-category-tabs button > span,
+  body.inner-page .credential-section--curated .credential-category-tabs button > small { font-size: .75rem; }
   body.home-page .credential-section--curated .credential-category-tabs button[aria-selected="true"],
-  body.inner-page.route-company .credential-section--curated .credential-category-tabs button[aria-selected="true"] { border-bottom-color: var(--ds-blue); background: var(--ds-deep); color: #fff; }
+  body.inner-page .credential-section--curated .credential-category-tabs button[aria-selected="true"] { border-bottom-color: var(--ds-blue); background: var(--ds-deep); color: #fff; }
   body.home-page .credential-section--curated .credential-stage,
-  body.inner-page.route-company .credential-section--curated .credential-stage { grid-column: 2; grid-row: 2; min-width: 0; margin: 0; padding: 0; border: 0; }
+  body.inner-page .credential-section--curated .credential-stage { grid-column: 2; grid-row: 2; min-width: 0; margin: 0; padding: 0; border: 0; }
   body.home-page .credential-section--curated .credential-stage-head,
-  body.inner-page.route-company .credential-section--curated .credential-stage-head { min-height: 2.75rem; gap: .75rem; padding: 0 0 .75rem; border-bottom: 1px solid var(--ds-line); font-size: .875rem; }
+  body.inner-page .credential-section--curated .credential-stage-head { min-height: 2.75rem; gap: .75rem; padding: 0 0 .75rem; border-bottom: 1px solid var(--ds-line); font-size: .875rem; }
   body.home-page .credential-section--curated .credential-stage-head p,
-  body.inner-page.route-company .credential-section--curated .credential-stage-head p { font-size: .75rem; }
+  body.inner-page .credential-section--curated .credential-stage-head p { font-size: .75rem; }
   body.home-page .credential-section--curated .credential-rail,
-  body.inner-page.route-company .credential-section--curated .credential-rail {
+  body.inner-page .credential-section--curated .credential-rail {
     grid-template-columns: none !important;
     grid-auto-flow: column;
     grid-auto-columns: 15rem;
@@ -589,7 +589,7 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
     padding: 1rem .25rem 1.125rem;
   }
   body.home-page .credential-section--curated .credential-card,
-  body.inner-page.route-company .credential-section--curated .credential-card {
+  body.inner-page .credential-section--curated .credential-card {
     width: 15rem;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto 18.75rem auto;
@@ -598,38 +598,38 @@ body.home-page .home-platforms { background: var(--ds-paper); color: var(--ds-in
     border-color: var(--ds-line);
   }
   body.home-page .credential-section--curated .credential-paper,
-  body.inner-page.route-company .credential-section--curated .credential-paper { width: 100%; height: 18.75rem; min-height: 0; background: #fff; }
+  body.inner-page .credential-section--curated .credential-paper { width: 100%; height: 18.75rem; min-height: 0; background: #fff; }
   body.home-page .credential-section--curated .credential-paper img,
-  body.inner-page.route-company .credential-section--curated .credential-paper img { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
+  body.inner-page .credential-section--curated .credential-paper img { width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
   body.home-page .credential-section--curated .credential-label strong,
-  body.inner-page.route-company .credential-section--curated .credential-label strong { font-size: .9375rem; }
+  body.inner-page .credential-section--curated .credential-label strong { font-size: .9375rem; }
   body.home-page .credential-section--curated .credential-label small,
-  body.inner-page.route-company .credential-section--curated .credential-label small { font-size: .875rem; }
+  body.inner-page .credential-section--curated .credential-label small { font-size: .875rem; }
   body.home-page .credential-section--curated .credential-bottom,
-  body.inner-page.route-company .credential-section--curated .credential-bottom { grid-column: 1 / -1; padding-top: .875rem; font-size: .875rem; }
+  body.inner-page .credential-section--curated .credential-bottom { grid-column: 1 / -1; padding-top: .875rem; font-size: .875rem; }
   body.home-page .credential-section--curated .credential-bottom p,
-  body.inner-page.route-company .credential-section--curated .credential-bottom p { font-size: .875rem; }
+  body.inner-page .credential-section--curated .credential-bottom p { font-size: .875rem; }
   body.home-page .credential-section--curated .credential-bottom a,
-  body.inner-page.route-company .credential-section--curated .credential-bottom a { color: var(--ds-blue); }
+  body.inner-page .credential-section--curated .credential-bottom a { color: var(--ds-blue); }
 
-  body.inner-page.route-company main > #credential-library { padding: 1.75rem 0 3rem; }
-  body.inner-page.route-company .credential-library-full { width: 100%; padding: 2rem 0; border-top-color: var(--ds-line); }
-  body.inner-page.route-company .credential-library-full-heading { gap: 1.25rem; margin-bottom: 1rem; }
-  body.inner-page.route-company .credential-library-full-heading h2 { font-size: 2rem; }
-  body.inner-page.route-company .credential-library-full-tools { grid-template-columns: auto minmax(12rem, 17.5rem) auto; gap: .625rem; }
-  body.inner-page.route-company .credential-library-full-tools label,
-  body.inner-page.route-company .credential-library-full-tools .library-count { font-size: .875rem; }
-  body.inner-page.route-company .credential-library-full-tools input { min-height: 2.75rem; font-size: 1rem; }
-  body.inner-page.route-company #credential-library .credential-library-full .credential-category-tabs { gap: 1.125rem; margin: .5rem 0 .875rem; }
-  body.inner-page.route-company #credential-library .credential-library-full .credential-category-tabs button { min-height: 2.75rem; font-size: .875rem; }
-  body.inner-page.route-company #credential-library .credential-grid { gap: .75rem; }
-  body.inner-page.route-company #credential-library .library-document { min-height: 14.375rem; gap: .5rem; padding: .625rem; }
-  body.inner-page.route-company #credential-library .library-document > span { height: 9rem; }
-  body.inner-page.route-company #credential-library .library-document > small { font-size: .75rem; }
-  body.inner-page.route-company #credential-library .library-document > strong { font-size: .875rem; }
-  body.inner-page.route-company #credential-library .credential-review-slate { padding: .75rem; background: #eef2f5; }
-  body.inner-page.route-company #credential-library .credential-review-slate strong { font-size: .875rem; }
-  body.inner-page.route-company #credential-library .credential-review-slate small { font-size: .75rem; }
+  body.inner-page main > #credential-library { padding: 1.75rem 0 3rem; }
+  body.inner-page .credential-library-full { width: 100%; padding: 2rem 0; border-top-color: var(--ds-line); }
+  body.inner-page .credential-library-full-heading { gap: 1.25rem; margin-bottom: 1rem; }
+  body.inner-page .credential-library-full-heading h2 { font-size: 2rem; }
+  body.inner-page .credential-library-full-tools { grid-template-columns: auto minmax(12rem, 17.5rem) auto; gap: .625rem; }
+  body.inner-page .credential-library-full-tools label,
+  body.inner-page .credential-library-full-tools .library-count { font-size: .875rem; }
+  body.inner-page .credential-library-full-tools input { min-height: 2.75rem; font-size: 1rem; }
+  body.inner-page #credential-library .credential-library-full .credential-category-tabs { gap: 1.125rem; margin: .5rem 0 .875rem; }
+  body.inner-page #credential-library .credential-library-full .credential-category-tabs button { min-height: 2.75rem; font-size: .875rem; }
+  body.inner-page #credential-library .credential-grid { gap: .75rem; }
+  body.inner-page #credential-library .library-document { min-height: 14.375rem; gap: .5rem; padding: .625rem; }
+  body.inner-page #credential-library .library-document > span { height: 9rem; }
+  body.inner-page #credential-library .library-document > small { font-size: .75rem; }
+  body.inner-page #credential-library .library-document > strong { font-size: .875rem; }
+  body.inner-page #credential-library .credential-review-slate { padding: .75rem; background: #eef2f5; }
+  body.inner-page #credential-library .credential-review-slate strong { font-size: .875rem; }
+  body.inner-page #credential-library .credential-review-slate small { font-size: .75rem; }
 
   body.inner-page .equipment-hero { padding: 2.5rem 0 1rem; background: #fff; }
   body.inner-page .equipment-hero > div { max-width: none; }

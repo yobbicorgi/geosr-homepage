@@ -81,7 +81,7 @@
   const markCurrent=()=>{
    navFrame=0;
    const navStyle=getComputedStyle(companyNav);
-   const edge=(parseFloat(navStyle.top)||0)+companyNav.offsetHeight+80;
+   const edge=Math.max((parseFloat(navStyle.top)||0)+companyNav.offsetHeight+48,innerHeight*.3);
    let current=items[0];
    items.forEach(item=>{if(item.target.getBoundingClientRect().top<=edge)current=item});
    items.forEach(item=>{if(item===current)item.link.setAttribute('aria-current','location');else item.link.removeAttribute('aria-current')});

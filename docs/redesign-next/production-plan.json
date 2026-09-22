@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "continuation-r1-20260922",
+  "revision": "continuation-r2-image-base-20260922",
   "baselineCommit": "aea49aa",
   "status": "implementation-and-production-plan-not-quality-approval",
   "generationReady": false,
@@ -14,7 +14,7 @@
     "data": "docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json",
     "equipment": "docs/redesign-production/equipment-sources/manifest.json",
     "usv": "dist/assets/equipment-usv-original.png",
-    "lab": "dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png",
+    "lab": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
     "ax-detect-start": "dist/assets/concepts/ax-detection-v3/ax-detect-start.png",
     "ax-detect-end": "dist/assets/concepts/ax-detection-v3/ax-detect-end.png",
     "technology": "docs/redesign-production/TECHNOLOGY-MAP.md",
@@ -22,7 +22,10 @@
     "opening-review": "docs/redesign-production/OPENING-V4-REVIEW.md",
     "ax-review": "docs/redesign-production/AX-DETECTION-V3-REVIEW.md",
     "capture-review": "docs/redesign-production/PLATFORM-CAPTURE-20260920.md",
-    "geodap": "dist/assets/platform-geodap.png"
+    "geodap": "dist/assets/platform-geodap.png",
+    "lab-style": "dist/assets/analysis-lab-v1.webp",
+    "microscope": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
+    "rov": "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png"
   },
   "commonInstructions": {
     "image": "Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.",
@@ -245,7 +248,7 @@
         "equipment",
         "usv"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
+      "referenceStatus": "source-reviewed-for-concept-not-film-approval",
       "purpose": "풍경보다 장비가 수행하는 측량 행동이 먼저 보이는 컷",
       "frames": {
         "start": "선박 또는 무인선의 전체 윤곽과 수면 접점",
@@ -268,14 +271,24 @@
       "continuity": "진행 방향을 CF06의 부이 또는 관측 지점 접근과 맞춤",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "reviewed-concept-still-motion-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF05-start.png",
         "middle": "docs/redesign-next/keyframes/CF05-middle.png",
         "end": "docs/redesign-next/keyframes/CF05-end.png",
         "candidate": "docs/redesign-next/renders/CF05-take01.mp4",
         "review": "docs/redesign-next/reviews/CF05-take01.json"
-      }
+      },
+      "selectedStills": [
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png",
+          "attemptId": "CF05_WIDE",
+          "status": "selected-concept-still",
+          "review": "원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조",
+          "motionNext": "4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지"
+        }
+      ],
+      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
     },
     {
       "id": "CF06",
@@ -330,9 +343,10 @@
       "method": "imagegen-reference",
       "referenceIds": [
         "equipment",
-        "technology"
+        "technology",
+        "rov"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
+      "referenceStatus": "source-reviewed-for-concept-not-film-approval",
       "purpose": "수중 영상과 센서 기반 연구 역량을 정확한 스케일로 표현",
       "frames": {
         "start": "입자가 약간 있는 근해 수중 시야",
@@ -355,14 +369,24 @@
       "continuity": "수중 기록의 평면에서 CF08 측량 결과 평면으로 매치 컷 / 동일 장소 연속 주장 없음",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "reviewed-concept-still-motion-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF07-start.png",
         "middle": "docs/redesign-next/keyframes/CF07-middle.png",
         "end": "docs/redesign-next/keyframes/CF07-end.png",
         "candidate": "docs/redesign-next/renders/CF07-take01.mp4",
         "review": "docs/redesign-next/reviews/CF07-take01.json"
-      }
+      },
+      "selectedStills": [
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png",
+          "attemptId": "CF07",
+          "status": "selected-concept-still",
+          "review": "회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지",
+          "motionNext": "4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용"
+        }
+      ],
+      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
     },
     {
       "id": "CF08",
@@ -463,7 +487,7 @@
         "lab",
         "technology"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
+      "referenceStatus": "source-reviewed-for-concept-not-film-approval",
       "purpose": "좋은 실험 이미지의 분위기를 유지하며 장비 연결과 분석 단계 교정",
       "frames": {
         "start": "사람 없는 정돈된 실험대와 해수 시료 용기",
@@ -486,14 +510,31 @@
       "continuity": "시료 원형 디테일을 CF11 현미경 시야에 맞춤",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "reviewed-concept-still-motion-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF10-start.png",
         "middle": "docs/redesign-next/keyframes/CF10-middle.png",
         "end": "docs/redesign-next/keyframes/CF10-end.png",
         "candidate": "docs/redesign-next/renders/CF10-take01.mp4",
         "review": "docs/redesign-next/reviews/CF10-take01.json"
-      }
+      },
+      "selectedStills": [
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
+          "attemptId": "CF10",
+          "status": "selected-concept-still",
+          "review": "사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음",
+          "motionNext": "4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업"
+        },
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png",
+          "attemptId": "CF10_END",
+          "status": "selected-alternate-still-not-continuity-pair",
+          "review": "별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음",
+          "motionNext": "wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용"
+        }
+      ],
+      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
     },
     {
       "id": "CF11",
@@ -504,11 +545,10 @@
       "title": "생물과 플랑크톤 분석",
       "method": "imagegen-reference",
       "referenceIds": [
-        "lab",
-        "technology",
-        "migration"
+        "microscope",
+        "lab-style"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
+      "referenceStatus": "source-reviewed-for-concept-not-film-approval",
       "purpose": "화학 분석과 다른 생태·생물 연구 업무를 분명히 보여줌",
       "frames": {
         "start": "검증된 현미경과 시료 준비 구도",
@@ -529,14 +569,24 @@
       "continuity": "분석 결과의 의미가 CF12 입력과 관계있을 때만 데이터 전달 연출 / 없으면 연구 분야 간 컷",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "reviewed-concept-still-motion-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF11-start.png",
         "middle": "docs/redesign-next/keyframes/CF11-middle.png",
         "end": "docs/redesign-next/keyframes/CF11-end.png",
         "candidate": "docs/redesign-next/renders/CF11-take01.mp4",
         "review": "docs/redesign-next/reviews/CF11-take01.json"
-      }
+      },
+      "selectedStills": [
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
+          "attemptId": "CF11_FIX",
+          "status": "selected-concept-still",
+          "review": "대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인",
+          "motionNext": "4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음"
+        }
+      ],
+      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
     },
     {
       "id": "CF12",
@@ -1216,5 +1266,6 @@
     "blockedByCreditsNow": false,
     "nextAction": "실제 생성 직전에 잔액과 선택 모델 비용 확인 / 구독 구매 금지"
   },
-  "nextAction": "G1의3개 디자인 보드 제작 후 시각 검수 / 영상 생성은 source와frame gate 이후"
+  "nextAction": "G1의3개 디자인 보드 제작 후 시각 검수 / 영상 생성은 source와frame gate 이후",
+  "imageRebuildRegister": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json"
 }

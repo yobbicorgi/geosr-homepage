@@ -289,7 +289,7 @@ Composite exact rasters and small HTML/post labels for product and period. Month
 
 ## CF05 — 현장 관측과 측량
 
-편집 19–23초 / 4초 / imagegen-reference / planned-needs-source-and-frame-review
+편집 19–23초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
 
 풍경보다 장비가 수행하는 측량 행동이 먼저 보이는 컷
 
@@ -356,6 +356,14 @@ If verified multibeam data are available, add a brief separate cutaway of the un
 - end — `docs/redesign-next/keyframes/CF05-end.png`
 - candidate — `docs/redesign-next/renders/CF05-take01.mp4`
 - review — `docs/redesign-next/reviews/CF05-take01.json`
+
+### 실제 생성하고 검수한 이미지
+
+이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+
+- [CF05_WIDE](../../dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png) — selected-concept-still
+  - 검수 — 원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조
+  - 다음 모션 — 4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지
 
 ## CF06 — 수면에서 수층으로
 
@@ -428,7 +436,7 @@ Use source-based above/below-water plates if a single take distorts waterline ge
 
 ## CF07 — 수중 조사
 
-편집 26–30초 / 4초 / imagegen-reference / planned-needs-source-and-frame-review
+편집 26–30초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
 
 수중 영상과 센서 기반 연구 역량을 정확한 스케일로 표현
 
@@ -436,6 +444,7 @@ Use source-based above/below-water plates if a single take distorts waterline ge
 
 - [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
 - [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
+- [rov](../../docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — ROV 원본 또는 다른 검증된 수중 관측 장면 선택
 - 확인 필요 — 수중 시야·스케일·테더 검토
 
@@ -495,6 +504,14 @@ Keep the ROV footage source-grounded. Any inspection annotations are post-compos
 - end — `docs/redesign-next/keyframes/CF07-end.png`
 - candidate — `docs/redesign-next/renders/CF07-take01.mp4`
 - review — `docs/redesign-next/reviews/CF07-take01.json`
+
+### 실제 생성하고 검수한 이미지
+
+이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+
+- [CF07](../../dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png) — selected-concept-still
+  - 검수 — 회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지
+  - 다음 모션 — 4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용
 
 ## CF08 — 연안과 하구의 공간정보
 
@@ -637,13 +654,13 @@ Use actual research output where available. Without it, use an explicitly concep
 
 ## CF10 — 해수와 환경 시료 분석
 
-편집 40–44초 / 4초 / imagegen-reference / planned-needs-source-and-frame-review
+편집 40–44초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
 
 좋은 실험 이미지의 분위기를 유지하며 장비 연결과 분석 단계 교정
 
 ### 참조와 남은 확인
 
-- [lab](../../dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png) — 후보 또는 근거이며 최종 합격 아님
+- [lab](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png) — 후보 또는 근거이며 최종 합격 아님
 - [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — 여과 장치 사용 단계와 관 연결 검토
 - 확인 필요 — 회사 실제 실험실 사진으로 오인되지 않는 문맥
@@ -705,17 +722,27 @@ Keep actual lab identification out of the concept. Add sample context in HTML ra
 - candidate — `docs/redesign-next/renders/CF10-take01.mp4`
 - review — `docs/redesign-next/reviews/CF10-take01.json`
 
+### 실제 생성하고 검수한 이미지
+
+이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+
+- [CF10](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png) — selected-concept-still
+  - 검수 — 사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음
+  - 다음 모션 — 4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업
+- [CF10_END](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png) — selected-alternate-still-not-continuity-pair
+  - 검수 — 별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음
+  - 다음 모션 — wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용
+
 ## CF11 — 생물과 플랑크톤 분석
 
-편집 44–48초 / 4초 / imagegen-reference / planned-needs-source-and-frame-review
+편집 44–48초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
 
 화학 분석과 다른 생태·생물 연구 업무를 분명히 보여줌
 
 ### 참조와 남은 확인
 
-- [lab](../../dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png) — 후보 또는 근거이며 최종 합격 아님
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
-- [migration](../../docs/source-migration/migration-coverage.json) — 후보 또는 근거이며 최종 합격 아님
+- [microscope](../../dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png) — 후보 또는 근거이며 최종 합격 아님
+- [lab-style](../../dist/assets/analysis-lab-v1.webp) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — 실제 현미경 자료의 출처·배율 확인 또는 장비 컷으로 제한
 
 ### 구도
@@ -773,6 +800,14 @@ Microscopy imagery, species names and scale bars must come from reviewed source 
 - end — `docs/redesign-next/keyframes/CF11-end.png`
 - candidate — `docs/redesign-next/renders/CF11-take01.mp4`
 - review — `docs/redesign-next/reviews/CF11-take01.json`
+
+### 실제 생성하고 검수한 이미지
+
+이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+
+- [CF11_FIX](../../dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png) — selected-concept-still
+  - 검수 — 대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인
+  - 다음 모션 — 4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음
 
 ## CF12 — 모델과 예측
 

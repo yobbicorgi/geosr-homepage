@@ -74,6 +74,7 @@
 - 다음 세션의 단일 시작점은 `docs/redesign-next/00-START-HERE.md`이며 화면 설계·장면별 프롬프트·실행 계획을 먼저 읽는다
 - `production-plan.json`을 수정하면 `node scripts/render_continuation_prompts.mjs`로 복사용 카드를 갱신한다
 - 자산이나 runtime manifest를 변경하면 `node scripts/build_continuation_inventory.mjs`로 상태·hash 원장을 갱신하고 `node scripts/verify_continuation_package.mjs`를 실행한다
+- 이미지 재생성 현황은 `docs/redesign-next/05-IMAGE-REBUILD.md`와 `IMAGE-REBUILD-REGISTER.json`을 우선 확인한다 삭제 목록의 탈락 이미지를 복원하지 않으며 `selectedStills`를 영상 합격으로 취급하지 않는다 `scripts/build_flow_drafts.py`는 탈락 자료 사용으로 실행이 차단된 과거 편집기다
 - 과거 v1/v3 generationReady와 자체 디자인 점수 및 웹 완료 기록은 현재 품질 승인으로 사용하지 않는다
 - `docs/redesign-plan/HIGH-PERFORMANCE-REDESIGN-HANDOFF.md`
 - `docs/redesign-production/CONTENT-PRESENTATION-PLAN-v1.md`

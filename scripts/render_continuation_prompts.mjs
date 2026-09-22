@@ -28,6 +28,11 @@ for (const s of p.shots) {
   lines.push('', '### 계획 산출물 — 아직 생성된 파일이 아님', '');
   for (const [key,value] of Object.entries(s.plannedOutputs)) lines.push('- ' + key + ' — `' + value + '`');
   lines.push('');
+  if (s.selectedStills?.length) {
+    lines.push('### 실제 생성하고 검수한 이미지', '', '이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름', '');
+    for (const a of s.selectedStills) lines.push(`- [${a.attemptId}](../../${a.path}) — ${a.status}`, `  - 검수 — ${a.review}`, `  - 다음 모션 — ${a.motionNext}`);
+    lines.push('');
+  }
 }
 lines.push('## 실제 플랫폼 캡처 지시', '', '이 영역은 ImageGen과 영상 생성 모델을 사용하지 않음', '');
 for (const c of p.platformCaptures) {

@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-22",
+  "scope": "Video-base generated-image cleanup and regeneration; not full-site or film completion",
+  "reviewer": "main agent",
+  "reviewMethod": "Direct image inspection against source photos and cinematic role; not specialist certification",
+  "authoritativePlan": "docs/redesign-next/production-plan.json",
+  "attempts": [
+    {
+      "id": "CF10",
+      "file": "exec-93268fc0-a838-4418-a381-2b7ed1cea595.png",
+      "dest": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
+      "shot": "CF10",
+      "title": "해수 시료와 화학 분석",
+      "refs": [
+        "dist/assets/analysis-lab-v1.webp"
+      ],
+      "decision": "selected-concept-still",
+      "review": "사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음",
+      "next": "4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-93268fc0-a838-4418-a381-2b7ed1cea595.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one 16:9 cinema keyframe for GeoSR's marine environmental research website and future company film\nReference image: mood and material reference only, not a GeoSR facility photograph\nCreate a beautifully photographed, people-free seawater chemistry laboratory still. A quiet graphite laboratory bench, three closed borosilicate sample bottles with restrained cobalt caps and clear water, a small rack of clear sample vials, and one closed sample-compartment UV-visible spectrophotometer in the right background. This is the sample-preparation stage, not an instrument measuring with an open lid\nComposition: low bench-height three-quarter view with the analytical instrument and samples in the right two thirds, understated clear negative space in the left third for website text. Different bottle distances create real optical depth. Soft cool daylight from an off-frame window and a subtle warmer edge on glass, highly realistic glass thickness, menisci and grounded shadows. No visible coastal scenery through windows. Editorial scientific photography, restrained navy and neutral materials, believable premium research laboratory rather than a futuristic render. Crisp subject, natural shallow depth of field, no excessive blur\nAll caps and vessels have coherent geometry. No microscope, no vacuum filtration tubing, no decorative laboratory clutter. No hands, people, generated writing, logos, display numbers, glowing liquids, blue neon or fake graph. Produce only ONE full landscape frame, not a storyboard sheet or split view. Preserve true 16:9 if available\nThe image is a generated concept, not evidence of a real facility or analytical result",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "1175af2e5d3ab7029c42838a9bdaebaa6ce1def3504a00a81c58528f04765bf6",
+      "bytes": 1742320,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF11",
+      "file": "exec-00265870-95b9-4eef-98df-810869a15b9f.png",
+      "shot": "CF11",
+      "refs": [
+        "dist/assets/analysis-lab-v1.webp"
+      ],
+      "decision": "superseded-not-imported",
+      "review": "대물렌즈 간격과 밝은 발광점 수정 필요 / CF11_FIX로 대체",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-00265870-95b9-4eef-98df-810869a15b9f.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: one 16:9 film keyframe of environmental biological sample analysis\nUse the reference only for restrained laboratory mood. Create a precise editorial macro photograph of a conventional compound light microscope at a people-free laboratory bench. The microscope is in the right two thirds. Show a mechanically coherent revolving objective nosepiece, one objective aligned vertically over a thin glass slide held flat on the mechanical stage, condenser beneath the stage and illumination from below. The objective is close to the coverslip at a credible working distance. A small closed sample bottle and a covered shallow sample dish can remain softly in the rear, not a cluttered collection. The laboratory is clean but used, graphite bench and neutral white microscope body, restrained blue details, natural window sidelight. Left third is dark and quiet for web copy. Realistic machined metal, lens coatings and optical glass, natural depth of field, not a futuristic rendering\nThis is an establishing frame for a slow macro camera move toward the slide. No visible people or hands. No hovering slide, impossible lens arrangement, giant organisms, generated species imagery, labels, numbers, holograms, blue neon or text. ONE continuous full landscape image, no collage. A generic research concept, not a photograph claimed to depict the company's exact instrument",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "725e2bc3c4788999cc47cc44f304877379005859610ebdc4f5bb53d960c56f53",
+      "bytes": 1731200,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF05",
+      "file": "exec-625928a4-27ee-4f54-b665-0e03f09dec41.png",
+      "shot": "CF05",
+      "refs": [
+        "dist/assets/equipment-usv-original.png"
+      ],
+      "decision": "superseded-not-imported",
+      "review": "좁은 화면 비율을 수정 / CF05_WIDE로 대체",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-625928a4-27ee-4f54-b665-0e03f09dec41.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: one realistic 16:9 base frame for a marine engineering film\nEdit the supplied real GeoSR unmanned survey vessel photo into a clean cinematic concept composition\nPreserve the photographed yellow twin-hull craft: exactly the same front-left three-quarter viewpoint, hull shapes, grey tubular frame, deck arrangement, equipment mounts and recognizable existing markings. Do not redesign, add or delete hardware. Replace only the wooded shoreline setting and photographic lighting with calm open coastal seawater and a distant level hazy sea horizon without any visible port, breakwater or named landform\nComposition: the same vessel is in the right two thirds with a clear left third of open water. The boat moves toward the lower-left at a modest survey speed, a small physically plausible wake stays behind the stern on the right. Hull waterlines and displaced water must be credible. Natural late-morning light, authentic slightly green-blue temperate water, gentle surface detail, premium documentary cinematography without teal-orange grading\nNo additional vessels, no people, no visible laser or sonar beams, no glowing grid, no underwater cutaway, no invented equipment, no additional logos or text. This must remain identifiable as the reference craft rather than a different generic drone boat. One full landscape frame, not a montage. It is a generated setting around a source-referenced craft, not a new actual deployment photograph",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "3df880c8ceb9b6c991d86cd5c9c52efde05aeb289e25a799a5ae97886c5323fc",
+      "bytes": 2298646,
+      "width": 1615,
+      "height": 974
+    },
+    {
+      "id": "CF07",
+      "file": "exec-ac9a9331-0410-4e42-8592-fd928acdf026.png",
+      "dest": "dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png",
+      "shot": "CF07",
+      "title": "수중 조사",
+      "refs": [
+        "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png"
+      ],
+      "decision": "selected-concept-still",
+      "review": "회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지",
+      "next": "4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-ac9a9331-0410-4e42-8592-fd928acdf026.png",
+      "prompt": "Use case: compositing\nAsset type: a single cinematic underwater research film keyframe, landscape 16:9\nReference image is the exact ROV identity and front-facing geometry to preserve. Place this same compact blue and black ROV in a realistic Korean temperate coastal underwater environment. Preserve its two pale-blue top buoyancy blocks, central clear cylindrical camera dome, black open structural frame, visible thruster layout and lower rectangular instrument shown in the source. Do not add arms, propellers or fantasy sensors. Keep nearly the same frontal viewpoint so unobserved rear details need not be invented\nComposition: the ROV occupies the right half, suspended approximately one metre above a gently textured sand and small stone seabed; quiet darker water on the left third for text. Moderately turbid green-blue water, realistic attenuation and sparse suspended particles, restrained white task-light illumination only nearby. Upper corners of the frame reveal a subtle overhead water glow, not visible sky. A single orange tether recedes from the obscured rear of the vehicle toward the upper-right and out of frame with a smooth modest slack curve; it does not attach to the camera dome or pass through the front frame. This is a static inspection moment, no bubbles or jet propulsion effects\nNatural underwater engineering photography, very precise materials, no tropical corals, no schools of fish, no wreck fantasy, no people, no blue scanning laser, no generated text or logos. One full 16:9 frame, not a collage. This is a source-referenced generated concept, not an actual operation photograph",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "f522281d1dbc21c5f8fb563cd95c99f9f80de01335c448536eee0828d256f018",
+      "bytes": 2107568,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF01",
+      "file": "exec-9f1fcdde-8d5e-4205-a735-69f37d332c7b.png",
+      "shot": "CF01",
+      "refs": [
+        "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png"
+      ],
+      "decision": "rejected-not-imported",
+      "review": "조명은 개선됐으나 생성형 재도색으로 세부 해안선의 원본 동일성을 확인할 수 없음 / 지리 기준 마스터로 사용 금지 / 원본 텍스처 기반 합성으로 유지",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-9f1fcdde-8d5e-4205-a735-69f37d332c7b.png",
+      "prompt": "Use case: lighting-weather\nAsset type: one cinematic Earth opening film frame for GeoSR, exact landscape 16:9\nEdit only the illumination and atmospheric realism of the supplied source-backed Earth image. Preserve the exact land-water boundaries, orientation, continent proportions, Earth position and framing from the reference: India and Southeast Asia lower left, China centre, Korean Peninsula and Japan upper right, Taiwan below China, dark Pacific on right. Do not move, reshape, duplicate or remove any islands or countries. The left third stays near-black empty space for website type\nMake this flat and dim source render feel like a sophisticated realistic orbital photograph: subtle neutral sunlight from upper left, physically thin atmospheric scattering along the curved limb, natural ocean depth, subtle terrain relief from the original texture, and a small amount of realistic fine cloud over open ocean only. Korea, Japan, Taiwan and the coastlines must remain unobscured. Restrained photographic contrast and fine light detail, not a glowing sphere. Keep the space mostly black, no giant stars or nebulae. No satellite in this frame, no data overlays, no typography or labels\nDo not redesign the globe or make the Earth uniformly blue. One single image, same geographic frame, high visual quality with source geography preserved",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "4f52d2f6bcb3de1d64a8ffc332dd1a76f21360624d0d15c118b3a15aa6616465",
+      "bytes": 2068560,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF10_END",
+      "file": "exec-f8ce8cd7-a206-4ffc-bbad-90163a20f623.png",
+      "dest": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png",
+      "shot": "CF10",
+      "title": "화학 분석 디테일",
+      "refs": [
+        "attempt:CF10"
+      ],
+      "decision": "selected-alternate-still-not-continuity-pair",
+      "review": "별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음",
+      "next": "wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-f8ce8cd7-a206-4ffc-bbad-90163a20f623.png",
+      "prompt": "Use case: precise-object-edit\nCreate the end keyframe for a slow cinematic camera push into this exact people-free seawater chemistry laboratory scene. Keep the exact same three closed clear bottles with cobalt caps, their relative arrangement, the same closed UV-visible spectrophotometer and same small sample rack. Do not add, move, replace, open or remove any objects. The camera moves gently forward by about 12 percent, keeping the same viewing direction and lighting, bringing the glass bottles a little closer while retaining the complete analyzer. Preserve the quiet left third. All objects remain rigid and bottle caps stay closed. This is a preparatory still life, not an analysis in progress. No hands, people, text, logos, invented measurement, screens, blue lights, tubing or extra equipment. One landscape 16:9 photograph with the same exposure and time of day as the supplied start frame. Maintain physical bottle thickness and realistic refraction. This is a generated film concept, not a real GeoSR laboratory photograph.",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "319b44b0caf30709a32fffe75a44849a4c93d3771502e48233e2bedf70be4d0a",
+      "bytes": 1825980,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF05_WIDE",
+      "file": "exec-42dd8907-d4f1-4218-88e2-21d271a4d5a6.png",
+      "dest": "dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png",
+      "shot": "CF05",
+      "title": "무인선 관측",
+      "refs": [
+        "attempt:CF05",
+        "dist/assets/equipment-usv-original.png"
+      ],
+      "decision": "selected-concept-still",
+      "review": "원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조",
+      "next": "4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-42dd8907-d4f1-4218-88e2-21d271a4d5a6.png",
+      "prompt": "Use case: precise-object-edit\nReframe the supplied survey boat concept to a full 16:9 wide landscape film frame by EXTENDING the open water and distant empty sea horizon sideways. Preserve exactly the existing yellow twin-hull vessel and all its grey frame and mounted equipment, boat identity, position relative to the water, lighting and moderate wake. Do not repaint, redesign, enlarge or narrow the vessel. Do not change the camera viewing direction. Show the whole vessel in the right two thirds and clear open water in the left third. No shoreline, land, other craft, people, beams, typography or logos added. The final canvas MUST be wide 16:9 and NOT the reference's narrower aspect ratio. One photographic film keyframe, no borders or letterboxing, no collage. The setting is a generated concept around a source-referenced craft, not an actual deployment photograph.",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "fcab3b87cbdaab5a0560b9f71992c2a8cd14eb4f3a706ade29f625cfb153efb8",
+      "bytes": 2386969,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "CF11_FIX",
+      "file": "exec-bcf48cd7-458e-41d8-ba9b-859e1a6f4973.png",
+      "dest": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
+      "shot": "CF11",
+      "title": "생물 시료 관찰",
+      "refs": [
+        "attempt:CF11"
+      ],
+      "decision": "selected-concept-still",
+      "review": "대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인",
+      "next": "4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음",
+      "originalOutputPath": "C:/Users/user/.codex/generated_images/01a0ada2-01b2-79a2-bf1e-36176720ccfc/exec-bcf48cd7-458e-41d8-ba9b-859e1a6f4973.png",
+      "prompt": "Use case: precise-object-edit\nCorrect only the microscope optics in the supplied image while preserving the composition, microscope body, same stage, closed bottle, background, quiet left third and photographic lighting. The active vertical objective is currently too far above the coverslip and has an unrealistic bright glowing tip. Move the mechanical stage and condenser upward together so that the coverslip sits approximately 0.5 millimetres below the central objective front lens, with a tiny visible air gap, no contact with the glass. Keep the slide completely flat and supported by the stage. The condenser remains underneath. Replace the bright golden flare at the objective tip with faint neutral transmitted illumination confined to the specimen window beneath the slide. No starburst, glowing tip or visible laser beam. Remove invented or unreadable lettering from the objective barrels, keep only their small conventional coloured identification bands. All three objectives must stay rigidly attached to the same nosepiece and the central one remains precisely vertical above the slide. Do not add any apparatus, hands, people, giant cells or glowing organisms. One realistic landscape 16:9 macro laboratory photograph, generic concept apparatus rather than the company's exact model. Keep geometry physically credible.",
+      "generator": "built-in ImageGen",
+      "modelIdentifier": "not-exposed-by-tool",
+      "imageEditedAfterGeneration": false,
+      "filmApproval": false,
+      "sha256": "feb578091dce0a55ad565e4061dfbcf6d899bb063574957fcf414f3450433651",
+      "bytes": 1676984,
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "deletions": [
+    {
+      "path": "dist/assets/analysis-concept.png",
+      "reason": "손과 사람이 포함된 일반 실험 이미지 / 사람 없는 분석 장면 지시와 불일치",
+      "shot": "CF10",
+      "replacement": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "ef07b2bdbe010901925c01b1acf273822190f0041d7208beb78d8d1512b4afaf",
+      "bytes": 1604602
+    },
+    {
+      "path": "dist/assets/coastal-model-v3.png",
+      "reason": "사용자가 거부한 허구 해안·방파제 계열 / 네온 격자와 지형 오류",
+      "shot": "CF12",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "230d60a3b251459b6dba08a7a36c7e23e7ae93f3c40e7ed5cbe912ce9114ddde",
+      "bytes": 2794794
+    },
+    {
+      "path": "dist/assets/estuary-hero-v4.png",
+      "reason": "실제 위치가 검증되지 않은 하구와 과장된 수로 / 한국 현장 표현의 근거 부족",
+      "shot": "CF08",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "feac62f1825bf519f1a578732795c6d69544beee1132516f2be0d8a90b08876b",
+      "bytes": 2828269
+    },
+    {
+      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png",
+      "reason": "유리 패널만 보이고 플랫폼 기능과 자료의 의미가 없음",
+      "shot": "AX01",
+      "replacement": "dist/assets/concepts/ax-detection-v3/ax-detect-start.png",
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "de2ffc0465e89aa3325f189b702f925d50ef8ae508f8317840b821ee9655f668",
+      "bytes": 1582534
+    },
+    {
+      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-aligned-v1.png",
+      "reason": "유리 패널만 보이고 플랫폼 기능과 자료의 의미가 없음",
+      "shot": "AX05",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "6dc673876b958b654e05629d3ba4b613afa8d8c0f79e043e33b79dd2ae96340b",
+      "bytes": 1438623
+    },
+    {
+      "path": "dist/assets/concepts/flow-20260922/multibeam-cross-track-v2.png",
+      "reason": "음향 빔과 송수신 위치의 의미가 불명확 / 회사 조사선 원본과 다름",
+      "shot": "CF05",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "d17ce8e29c30ab57420cf95fcc1473d9adb5e9c1640712caa4159c42103e8d4b",
+      "bytes": 2107839
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png",
+      "reason": "시설물 위치 미검증 / 관측 과정이 없는 지형 장면",
+      "shot": "CF08",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "62567625afa56ba2d44eb40cc46da482e0a4ab566dc95162ebcb5cbc8baa4681",
+      "bytes": 1859116
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png",
+      "reason": "장비나 관측 행동 없이 수면만 보여주는 단절된 전환",
+      "shot": "CF06",
+      "replacement": null,
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "01d80aa00c1360b640e7973e41c6b6fa62dbafa5e85a1872aba3af1c1ff6416c",
+      "bytes": 1506566
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png",
+      "reason": "수중 장비 없는 일반 수중 장면 / CF07의 조사 주제 불명확",
+      "shot": "CF07",
+      "replacement": "dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png",
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "dcbcc0f74488e0aff0dfa0d27642a8d9d585c221a30356f0923657795909713a",
+      "bytes": 1733354
+    },
+    {
+      "path": "dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png",
+      "reason": "복합 장비와 배관의 분석 단계가 불명확 / 화학·생물 분석을 별도 구도로 교체",
+      "shot": "CF10",
+      "replacement": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
+      "action": "delete-from-active-checkout",
+      "recoverFromCommit": "483d86ce520c13925debb38016f65dc6223ecb7a",
+      "sha256": "386cdd2d326b76c9ac8d73ecef054fe5473dc341b74a1784c25ee28ca73a0c47",
+      "bytes": 7535411
+    }
+  ],
+  "preserved": [
+    "Original company equipment photographs",
+    "All actual UI captures",
+    "NASA source textures and data fields",
+    "analysis-lab-v1.webp as mood reference",
+    "satellite-layers-v3.png as user-liked concept reference only, not geographic truth"
+  ],
+  "scientificSources": [
+    {
+      "url": "https://bluerobotics.com/learn/bluerov2-operation/",
+      "use": "Tethered ROV operation and tether handling, not authentication of this generated frame"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/technology/sonar-multibeam/",
+      "use": "Multibeam acoustic fan principle; do not visualize an arbitrary stern surface laser"
+    }
+  ]
+}

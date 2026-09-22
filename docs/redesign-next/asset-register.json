@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T06:36:17.269Z",
+  "generatedAt": "2026-09-22T07:18:09.930Z",
   "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
-  "count": 88,
-  "runtimeRevision": "editorial-r4-20260922",
+  "count": 83,
+  "runtimeRevision": "image-base-review-20260922",
   "runtimeManifestHashEncoding": "lf-normalized-utf8",
-  "runtimeManifestSha256": "c26c98c4de332eef98c6d22de537b5b2e5a18c1754d73f793526f79516764eb6",
+  "runtimeManifestSha256": "f4ac292e1450cbd42bd8fdc72dc4969daef609b70dea6283b66b27ddf152122a",
   "note": "Text references can occur in inactive legacy functions; they do not prove live DOM usage. Runtime approved groups do not prove all named platforms have individual reviewed clips.",
   "archiveIndices": [
     "docs/source-migration/assets.jsonl",
@@ -29,31 +29,15 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [
         "dist/design-directions.css",
-        "dist/experience.css"
+        "dist/experience.css",
+        "dist/media-review.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
       "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/analysis-concept.png",
-      "bytes": 1604602,
-      "hashEncoding": "raw-bytes",
-      "sha256": "ef07b2bdbe010901925c01b1acf273822190f0041d7208beb78d8d1512b4afaf",
-      "classification": "source-or-concept-unverified",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF09"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
@@ -67,36 +51,16 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/redesign-preview.html",
-        "dist/site.js"
+        "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF10",
         "CF11"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/coastal-model-v3.png",
-      "bytes": 2794794,
-      "hashEncoding": "raw-bytes",
-      "sha256": "230d60a3b251459b6dba08a7a36c7e23e7ae93f3c40e7ed5cbe912ce9114ddde",
-      "classification": "source-or-concept-unverified",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF12"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "네온·허구 지형 지적 대상 계열 / 모델 대표로 자동 재사용 금지",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
@@ -112,6 +76,7 @@
         "dist/home.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX02"
       ],
@@ -129,103 +94,13 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/ax-explorer.js"
-      ],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "AX02"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-aligned-v1.png",
-      "bytes": 1438623,
-      "hashEncoding": "raw-bytes",
-      "sha256": "6dc673876b958b654e05629d3ba4b613afa8d8c0f79e043e33b79dd2ae96340b",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "AX01"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png",
-      "bytes": 1582534,
-      "hashEncoding": "raw-bytes",
-      "sha256": "de2ffc0465e89aa3325f189b702f925d50ef8ae508f8317840b821ee9655f668",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [
+        "dist/ax-explorer.js",
         "dist/ax-v2.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
-        "AX01"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png",
-      "bytes": 1859116,
-      "hashEncoding": "raw-bytes",
-      "sha256": "62567625afa56ba2d44eb40cc46da482e0a4ab566dc95162ebcb5cbc8baa4681",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF08"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "실제 지형 위치와 시설물 검증 전 후보",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png",
-      "bytes": 1733354,
-      "hashEncoding": "raw-bytes",
-      "sha256": "dcbcc0f74488e0aff0dfa0d27642a8d9d585c221a30356f0923657795909713a",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF07"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png",
-      "bytes": 1506566,
-      "hashEncoding": "raw-bytes",
-      "sha256": "01d80aa00c1360b640e7973e41c6b6fa62dbafa5e85a1872aba3af1c1ff6416c",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF06"
+        "AX02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -245,6 +120,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF01",
         "CF02",
@@ -265,6 +141,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF03"
       ],
@@ -283,6 +160,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF03"
       ],
@@ -301,6 +179,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF03"
       ],
@@ -319,6 +198,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF03"
       ],
@@ -337,6 +217,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF03"
       ],
@@ -355,6 +236,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF04"
       ],
@@ -373,6 +255,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF04"
       ],
@@ -391,6 +274,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF04"
       ],
@@ -409,6 +293,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF04"
       ],
@@ -427,6 +312,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF01",
         "CF02",
@@ -437,22 +323,111 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/concepts/flow-20260922/multibeam-cross-track-v2.png",
-      "bytes": 2107839,
+      "path": "dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png",
+      "bytes": 2386969,
       "hashEncoding": "raw-bytes",
-      "sha256": "d17ce8e29c30ab57420cf95fcc1473d9adb5e9c1640712caa4159c42103e8d4b",
+      "sha256": "fcab3b87cbdaab5a0560b9f71992c2a8cd14eb4f3a706ade29f625cfb153efb8",
       "classification": "concept-candidate",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "textualReferenceFiles": [
+        "dist/media-review.js"
+      ],
+      "visualAndScientificApproval": "selected-concept-still",
+      "reviewRecord": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
       "followUpPlanIds": [
         "CF05"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+      "issue": "원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조",
+      "nextAction": "4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지"
+    },
+    {
+      "path": "dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png",
+      "bytes": 2107568,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f522281d1dbc21c5f8fb563cd95c99f9f80de01335c448536eee0828d256f018",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/media-review.js"
+      ],
+      "visualAndScientificApproval": "selected-concept-still",
+      "reviewRecord": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
+      "followUpPlanIds": [
+        "CF07"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지",
+      "nextAction": "4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용"
+    },
+    {
+      "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png",
+      "bytes": 1825980,
+      "hashEncoding": "raw-bytes",
+      "sha256": "319b44b0caf30709a32fffe75a44849a4c93d3771502e48233e2bedf70be4d0a",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/media-review.js"
+      ],
+      "visualAndScientificApproval": "selected-alternate-still-not-continuity-pair",
+      "reviewRecord": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
+      "followUpPlanIds": [
+        "CF10"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음",
+      "nextAction": "wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용"
+    },
+    {
+      "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
+      "bytes": 1742320,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1175af2e5d3ab7029c42838a9bdaebaa6ce1def3504a00a81c58528f04765bf6",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js",
+        "dist/media-review.js",
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "selected-concept-still",
+      "reviewRecord": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
+      "followUpPlanIds": [
+        "CF10"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음",
+      "nextAction": "4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업"
+    },
+    {
+      "path": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
+      "bytes": 1676984,
+      "hashEncoding": "raw-bytes",
+      "sha256": "feb578091dce0a55ad565e4061dfbcf6d899bb063574957fcf414f3450433651",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/media-review.js"
+      ],
+      "visualAndScientificApproval": "selected-concept-still",
+      "reviewRecord": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
+      "followUpPlanIds": [
+        "CF11"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인",
+      "nextAction": "4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음"
     },
     {
       "path": "dist/assets/credentials/credential-01.png",
@@ -468,6 +443,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -488,6 +464,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -509,6 +486,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -529,6 +507,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -550,6 +529,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -570,6 +550,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -590,6 +571,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-DOCUMENT"
       ],
@@ -608,6 +590,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF10",
         "CF11"
@@ -627,6 +610,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF07"
       ],
@@ -648,6 +632,7 @@
         "dist/site.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF05"
       ],
@@ -666,29 +651,12 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF05"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/estuary-hero-v4.png",
-      "bytes": 2828269,
-      "hashEncoding": "raw-bytes",
-      "sha256": "feac62f1825bf519f1a578732795c6d69544beee1132516f2be0d8a90b08876b",
-      "classification": "source-or-concept-unverified",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF08"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "실제 위치·해안 시설물 출처 검수 전 후보",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
@@ -702,6 +670,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -727,6 +696,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX02"
       ],
@@ -745,6 +715,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX02"
       ],
@@ -770,6 +741,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -788,6 +760,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -813,6 +786,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -831,6 +805,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -856,6 +831,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -874,6 +850,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -899,6 +876,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX02",
         "AX01",
@@ -921,6 +899,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -939,6 +918,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -957,6 +937,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -975,6 +956,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1000,6 +982,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW",
         "CF01",
@@ -1038,6 +1021,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW",
         "CF02",
@@ -1058,6 +1042,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF05"
       ],
@@ -1076,6 +1061,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF07"
       ],
@@ -1090,30 +1076,18 @@
       "sha256": "225e694d12d919540fa76b39e38d82068fee90d93723322129e9f3820637d671",
       "classification": "film-candidate",
       "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "connected-see-runtime-status",
-      "runtimeSlots": [
-        {
-          "id": "expertise-2",
-          "approvalInRuntime": "draft-reviewed",
-          "actualDuration": 8,
-          "plannedDuration": null
-        },
-        {
-          "id": "business-environment",
-          "approvalInRuntime": "draft-reviewed",
-          "actualDuration": 8,
-          "plannedDuration": null
-        }
-      ],
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF10",
         "CF11"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
       "path": "dist/assets/films/flow-r3-opening-connected.mp4",
@@ -1126,6 +1100,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1140,24 +1115,17 @@
       "sha256": "114de17c99986ac010a8216290c67d109c53de325ef594a48f037343bc6009ae",
       "classification": "film-candidate",
       "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "connected-see-runtime-status",
-      "runtimeSlots": [
-        {
-          "id": "expertise-1",
-          "approvalInRuntime": "draft-reviewed",
-          "actualDuration": 8,
-          "plannedDuration": null
-        }
-      ],
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
-        "CF05",
-        "CF08"
+        "CF05"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
       "path": "dist/assets/films/geosr-hero-720p-draft.mp4",
@@ -1170,6 +1138,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1195,6 +1164,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1220,6 +1190,7 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1245,33 +1216,13 @@
       ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
       "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
-    },
-    {
-      "path": "dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png",
-      "bytes": 7535411,
-      "hashEncoding": "raw-bytes",
-      "sha256": "386cdd2d326b76c9ac8d73ecef054fe5473dc341b74a1784c25ee28ca73a0c47",
-      "classification": "concept-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/art-direction.js"
-      ],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "followUpPlanIds": [
-        "CF10",
-        "CF11"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "좋은 실험 분위기 / 튜브·장비 단계 재검수 / 실험실 실사진 아님",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
       "path": "dist/assets/logo.png",
@@ -1288,6 +1239,7 @@
         "dist/site.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1306,9 +1258,11 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [
         "dist/design-directions.html",
+        "dist/redesign-preview.html",
         "dist/site.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1329,6 +1283,7 @@
         "dist/site.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
@@ -1351,6 +1306,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "SOURCE-GEODAP"
       ],
@@ -1369,6 +1325,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX-ARCHIVE"
       ],
@@ -1387,6 +1344,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "AX-ARCHIVE"
       ],
@@ -1409,6 +1367,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-buoy"
       ],
@@ -1427,6 +1386,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-buoy"
       ],
@@ -1445,6 +1405,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-env"
       ],
@@ -1465,6 +1426,7 @@
         "dist/art-direction.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-env"
       ],
@@ -1483,6 +1445,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-env"
       ],
@@ -1501,6 +1464,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-env"
       ],
@@ -1524,6 +1488,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-flood3d"
       ],
@@ -1542,6 +1507,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-flood3d"
       ],
@@ -1560,6 +1526,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-news"
       ],
@@ -1578,6 +1545,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-news"
       ],
@@ -1596,6 +1564,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-rip"
       ],
@@ -1614,6 +1583,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-rip"
       ],
@@ -1636,6 +1606,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-satellite"
       ],
@@ -1654,6 +1625,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-satellite"
       ],
@@ -1672,6 +1644,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-sealevel"
       ],
@@ -1690,6 +1663,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-sealevel"
       ],
@@ -1708,6 +1682,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-surge"
       ],
@@ -1726,6 +1701,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "capture-surge"
       ],
@@ -1746,6 +1722,7 @@
         "dist/redesign-preview.html"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF04"
       ],
@@ -1764,6 +1741,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF05"
       ],
@@ -1782,6 +1760,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
       "followUpPlanIds": [
         "CF05"
       ],

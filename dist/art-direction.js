@@ -234,7 +234,7 @@
       var examples=[
         {src:"assets/equipment-usv-original.png",ko:"무인선 이용 관측",en:"Uncrewed surface observation",noteK:"기존 GeoSR 홈페이지에 소개된 무인선 관측 사진",noteE:"Uncrewed observation photograph from the GeoSR website"},
         {src:"assets/platforms/env-full-temperature.jpg",ko:"해양환경 플랫폼의 해수면 온도 화면",en:"Sea surface temperature view in Ocean Environment",noteK:"해양환경 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Ocean Environment application example · actual interface capture"},
-        {src:"assets/generated/candidates-v2/flow-lab-ecology-v1.png",ko:"사람이 없는 실험대의 생성형 콘셉트 이미지",en:"Generated concept of an unoccupied laboratory bench",noteK:"실험·분석 영상 콘셉트 · 실제 GeoSR 시설이나 분석 결과가 아닙니다",noteE:"Laboratory film concept · not a GeoSR facility or an analytical result"},
+        {src:"assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",ko:"사람이 없는 실험대의 생성형 콘셉트 이미지",en:"Generated concept of an unoccupied laboratory bench",noteK:"실험·분석 영상 콘셉트 · 실제 GeoSR 시설이나 분석 결과가 아닙니다",noteE:"Laboratory film concept · not a GeoSR facility or an analytical result"},
         {src:"assets/platforms/flood3d-poster.webp",ko:"3차원 침수 예측 플랫폼 화면",en:"Flood 3D platform interface",noteK:"침수 예측 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Flood 3D application example · actual interface capture"},
         {src:"assets/platforms/satellite-poster.webp",ko:"위성 시설물 탐지 플랫폼 화면",en:"Satellite facility detection platform interface",noteK:"위성영상 분석 적용 예시 · 실제 인터페이스 캡처",noteE:"Satellite imagery application example · actual interface capture"}
       ];

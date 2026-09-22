@@ -13,6 +13,18 @@ const runtime=JSON.parse(runtimeBytes);
 const errors=[];
 const check=(condition,message)=>{if(!condition) errors.push(message);};
 const exists=(rel)=>typeof rel==='string'&&!path.isAbsolute(rel)&&!rel.split(/[\\/]/).includes('..')&&fs.existsSync(path.join(root,rel));
+const rebuild=JSON.parse(fs.readFileSync(path.join(base,'IMAGE-REBUILD-REGISTER.json'),'utf8'));
+for(const asset of rebuild.attempts.filter(a=>a.dest)) {
+  check(exists(asset.dest),`Missing reviewed still: ${asset.dest}`);
+  if(exists(asset.dest))check(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,asset.dest))).digest('hex')===asset.sha256,`Reviewed still changed: ${asset.dest}`);
+  check(asset.prompt?.length>100&&asset.review?.length>10&&asset.next?.length>10,`Incomplete production receipt ${asset.id}`);
+  check(asset.filmApproval===false,`Still incorrectly promotes film approval: ${asset.id}`);
+}
+const runtimeText=fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|html|css|json)$/.test(f)).map(f=>fs.readFileSync(path.join(root,'dist',f),'utf8')).join('\n');
+for(const d of rebuild.deletions){
+  check(!exists(d.path),`Rejected image returned: ${d.path}`);
+  check(!runtimeText.includes(d.path.replace(/^dist\//,'')),`Rejected image still referenced by runtime: ${d.path}`);
+}
 check(p.generationReady===false&&p.releaseReady===false,'A planning package must not claim generation or release approval');
 for(const [id,rel] of Object.entries(p.sourceRegistry)) check(exists(rel),`Missing source ${id}: ${rel}`);
 const ids=new Set();
@@ -26,6 +38,7 @@ for(const s of p.shots){
   for(const key of ['start','middle','end']) check(Boolean(s.frames?.[key]),`Missing frame ${s.id}/${key}`);
   check(s.sourceRequirements?.length>0&&s.rejectIf?.length>0,`Missing source/rejection gates ${s.id}`);
   for(const id of s.referenceIds) check(Boolean(p.sourceRegistry[id]),`Unknown source ${s.id}/${id}`);
+  for(const a of s.selectedStills||[]) check(exists(a.path),`Missing shot still ${s.id}: ${a.path}`);
   for(const rel of Object.values(s.plannedOutputs)) check(rel.startsWith('docs/redesign-next/')&&!rel.includes('..'),`Unsafe planned path ${rel}`);
 }
 for(const [film,total,count] of [['company',60,13],['ax',30,5]]){
@@ -64,7 +77,7 @@ for(const file of ['FILM-GENERATION-READINESS-v1.json','FILM-GENERATION-READINES
   const historical=JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-production',file),'utf8'));
   check(historical.generationReady===false&&historical.supersededBy===p.authority,`Stale readiness: ${file}`);
 }
-for(const rel of ['00-START-HERE.md','01-DESIGN-SPEC.md','02-MEDIA-DIRECTION.md','03-EXECUTION-PLAN.md','04-AUDIT-RECEIPT.md','PROMPT-CARDS.md']){
+for(const rel of ['00-START-HERE.md','01-DESIGN-SPEC.md','02-MEDIA-DIRECTION.md','03-EXECUTION-PLAN.md','04-AUDIT-RECEIPT.md','05-IMAGE-REBUILD.md','PROMPT-CARDS.md']){
   const text=fs.readFileSync(path.join(base,rel),'utf8');
   for(const match of text.matchAll(/\]\(([^)]+)\)/g)){
     const target=match[1];if(/^https?:\/\//.test(target))continue;

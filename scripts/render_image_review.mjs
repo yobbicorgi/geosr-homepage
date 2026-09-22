@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const register=JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-next/IMAGE-REBUILD-REGISTER.json'),'utf8'));
+const order=['CF05_WIDE','CF07','CF10','CF10_END','CF11_FIX'];
+const frames=order.map(id=>register.attempts.find(a=>a.id===id)).map(a=>({id:a.id,shot:a.shot,title:a.title,src:a.dest.replace(/^dist\//,''),review:a.review,motion:a.next}));
+const script=`'use strict';
+const frames=${JSON.stringify(frames,null,2)};
+let selected=0;
+const byId=id=>document.getElementById(id);
+const nav=byId('frames');
+frames.forEach((frame,index)=>{const button=document.createElement('button');button.type='button';button.textContent=frame.title;button.addEventListener('click',()=>select(index));nav.append(button)});
+function select(index){selected=(index+frames.length)%frames.length;const frame=frames[selected];byId('frame').src=frame.src;byId('frame').alt=frame.title+' 영상 기반 생성 시안';byId('counter').textContent=String(selected+1).padStart(2,'0')+' / '+String(frames.length).padStart(2,'0');byId('shot').textContent=frame.shot+' / GENERATED CONCEPT';byId('title').textContent=frame.title;byId('review').textContent=frame.review;byId('motion').textContent='다음 영상 · '+frame.motion;byId('original').href=frame.src;[...nav.children].forEach((button,i)=>button.setAttribute('aria-pressed',String(i===selected)))}
+byId('previous').addEventListener('click',()=>select(selected-1));byId('next').addEventListener('click',()=>select(selected+1));
+byId('text-toggle').addEventListener('change',event=>{byId('overlay').hidden=!event.target.checked});
+select(0);
+`;
+fs.writeFileSync(path.join(root,'dist/media-review.js'),script);
+console.log('Wrote image review for '+frames.length+' selected stills');

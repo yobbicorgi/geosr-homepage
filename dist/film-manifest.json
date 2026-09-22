@@ -1,5 +1,5 @@
 {
-  "revision": "editorial-r4-20260922",
+  "revision": "image-base-review-20260922",
   "slots": [
     {
       "id": "geosr-hero",
@@ -18,22 +18,30 @@
     {
       "id": "expertise-1",
       "mode": "loop",
-      "src": "assets/films/flow-usv-existing-draft.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "rework",
       "duration": 8,
       "delivery": "assets/films/expertise-observation.mp4",
-      "stage": "720p-draft",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
+      "stage": "reviewed-still-motion-pending",
+      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
+      "heldSource": "assets/films/flow-usv-existing-draft.mp4",
+      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
+      "labelKo": "이미지 초안 · 영상 제작 준비 중",
+      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
     },
     {
       "id": "expertise-2",
       "mode": "loop",
-      "src": "assets/films/flow-c07-lab-draft.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "rework",
       "duration": 8,
       "delivery": "assets/films/expertise-environment.mp4",
-      "stage": "720p-draft",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
+      "stage": "reviewed-still-motion-pending",
+      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
+      "heldSource": "assets/films/flow-c07-lab-draft.mp4",
+      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
+      "labelKo": "이미지 초안 · 영상 제작 준비 중",
+      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
     },
     {
       "id": "expertise-3",
@@ -56,8 +64,8 @@
     {
       "id": "business-environment",
       "mode": "sequence",
-      "src": "assets/films/flow-c07-lab-draft.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "rework",
       "duration": 8,
       "delivery": "assets/films/business-environment.mp4",
       "purpose": "Business expertise — people-free water, sediment and ecological analysis process frame",
@@ -65,8 +73,12 @@
         "mp4",
         "gif"
       ],
-      "stage": "720p-draft",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
+      "stage": "reviewed-still-motion-pending",
+      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
+      "heldSource": "assets/films/flow-c07-lab-draft.mp4",
+      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
+      "labelKo": "이미지 초안 · 영상 제작 준비 중",
+      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
     },
     {
       "id": "company-overview",

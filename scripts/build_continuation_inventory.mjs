@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mf = JSON.parse(fs.readFileSync(path.join(root,'dist/film-manifest.json'),'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-next/production-plan.json'),'utf8'));
+const rebuild = JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-next/IMAGE-REBUILD-REGISTER.json'),'utf8'));
 const files = execFileSync('git',['ls-files','-z','dist/assets'],{cwd:root}).toString().split('\0').filter(Boolean);
 const sourceCode = fs.readdirSync(path.join(root,'dist')).filter(x=>/\.(js|css|html)$/.test(x))
   .map(x=>({path:'dist/'+x,text:fs.readFileSync(path.join(root,'dist',x),'utf8')}));
@@ -61,6 +62,7 @@ function replacementPlan(file) {
     {ids:['SOURCE-OR-SUPPORT-REVIEW'],policy:'출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지'};
 }
 const assets=files.map(file=>{
+  const reviewedStill = rebuild.attempts.find(a=>a.dest===file);
   const bytes=fs.readFileSync(path.join(root,file));
   const hashEncoding=file.endsWith('.svg')?'lf-normalized-utf8':'raw-bytes';
   const hashInput=hashEncoding==='raw-bytes'?bytes:bytes.toString('utf8').replace(/\r\n/g,'\n');
@@ -80,10 +82,11 @@ const assets=files.map(file=>{
   return {path:file,bytes:bytes.length,hashEncoding,sha256:crypto.createHash('sha256').update(hashInput).digest('hex'),
     classification,classificationBasis:'Path and existing production records; not independent source authentication',
     status,runtimeSlots,textualReferenceFiles:sourceCode.filter(s=>s.text.includes(file.replace(/^dist\//,''))).map(s=>s.path),
-    visualAndScientificApproval:'not-established-by-this-inventory',
-    followUpPlanIds:[...new Set([...replacement.ids,...mappedSlots])],generationPolicy:replacement.policy,
-    issue:reject.get(name)||concerns.get(name)||'출처·내용·최종 사용 문맥을 장면별로 검수',
-    nextAction:reject.has(name)?'비연결 유지 / 기록 보존':runtimeSlots.length?'초안 또는 기존 상태 유지 / 새 장면 기준 재검수':'실제 참조와 출처 확인 전 삭제·승인·연결하지 않음'};
+    visualAndScientificApproval:reviewedStill?reviewedStill.decision:'not-established-by-this-inventory',
+    reviewRecord:reviewedStill?'docs/redesign-next/IMAGE-REBUILD-REGISTER.json':null,
+    followUpPlanIds:reviewedStill?[reviewedStill.shot]:[...new Set([...replacement.ids,...mappedSlots])],generationPolicy:replacement.policy,
+    issue:reviewedStill?.review||reject.get(name)||concerns.get(name)||'출처·내용·최종 사용 문맥을 장면별로 검수',
+    nextAction:reviewedStill?.next||(reject.has(name)?'비연결 유지 / 기록 보존':runtimeSlots.length?'초안 또는 기존 상태 유지 / 새 장면 기준 재검수':'실제 참조와 출처 확인 전 삭제·승인·연결하지 않음')};
 });
 const result={schemaVersion:1,generatedAt:new Date().toISOString(),
   scope:'All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed',

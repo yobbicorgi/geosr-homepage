@@ -22,6 +22,11 @@ AX 영상은 30초 본편 대신 8초 탐지 콘셉트 초안이 연결되어 �
 4. [장면 원장](production-plan.json)과 [복사용 프롬프트](PROMPT-CARDS.md)
 5. [자산 원장](asset-register.json) 및 그 안에 연결된 원본·검수 기록
 6. [이번 직접 검토와 한계](04-AUDIT-RECEIPT.md)
+7. [이미지 정리와 재생성](05-IMAGE-REBUILD.md) 및 [실제 프롬프트·삭제 원장](IMAGE-REBUILD-REGISTER.json)
+
+2026-09-22 추가 작업에서 기존 생성 이미지 10개를 삭제하고 새 시안 5개를 저장
+홈과 사업 분야 및 회사 소개에 새 이미지를 연결했으며 해당 이전 영상 3개 슬롯은 재검수 보류
+영상 제작 전 `selectedStills`와 실제 생성 프롬프트를 확인해 동일 시안을 불필요하게 다시 만들지 않음
 
 현재 제작 지시의 단일 기준은 `docs/redesign-next/`임
 과거 `redesign-plan`과 `redesign-production`의 설계안은 조사 근거와 제작 이력으로 참고함

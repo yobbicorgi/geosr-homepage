@@ -1,4 +1,6 @@
 """Reproducible 720p editorial drafts from reviewed sources, without AI edits to data/UI."""
+if __name__ == '__main__':
+    raise SystemExit('RETIRED: this assembly used rejected image/video bases. Follow docs/redesign-next/production-plan.json and 05-IMAGE-REBUILD.md instead')
 from pathlib import Path
 import json
 import subprocess

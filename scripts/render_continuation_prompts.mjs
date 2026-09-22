@@ -33,6 +33,19 @@ for (const s of p.shots) {
     for (const a of s.selectedStills) lines.push(`- [${a.attemptId}](../../${a.path}) — ${a.status}`, `  - 검수 — ${a.review}`, `  - 다음 모션 — ${a.motionNext}`);
     lines.push('');
   }
+  if (s.sourceAudit) {
+    lines.push('### 실제 원본 대조에서 발견한 제한', '', s.sourceAudit.finding, '',
+      `- 원본 — [회사 보존 자료](../../${s.sourceAudit.localReference})`,
+      `- 제조사 — [제품 안내](${s.sourceAudit.manufacturer})`, '');
+  }
+  if (s.conceptFallback && typeof s.conceptFallback === 'object') {
+    const f=s.conceptFallback;
+    lines.push('### 현재 개념 이미지로 제작하는 대안 경로', '',
+      `참조 [검수한 개념 시안](../../${f.source}) / 편집 ${f.duration}초 / 실제 모델 결과 아님`, '',
+      '주 프롬프트의 실제 결과 경로와 아래 개념 경로 중 하나를 선택하며 혼합하지 않음', '',
+      '```text', p.commonInstructions.motion, '', f.motionInstruction, '```', '',
+      f.continuity, '', f.replaceWhen, '');
+  }
 }
 lines.push('## 실제 플랫폼 캡처 지시', '', '이 영역은 ImageGen과 영상 생성 모델을 사용하지 않음', '');
 for (const c of p.platformCaptures) {

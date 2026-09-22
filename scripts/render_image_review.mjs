@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const register=JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-next/IMAGE-REBUILD-REGISTER.json'),'utf8'));
-const order=['CF05_WIDE','CF07','CF10','CF10_END','CF11_FIX'];
+const order=['CF05_WIDE','CF07','CF10','CF10_END','CF11_FIX','CF12_WAVE'];
 const frames=order.map(id=>register.attempts.find(a=>a.id===id)).map(a=>({id:a.id,shot:a.shot,title:a.title,src:a.dest.replace(/^dist\//,''),review:a.review,motion:a.next}));
 const script=`'use strict';
 const frames=${JSON.stringify(frames,null,2)};

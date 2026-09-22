@@ -48,6 +48,10 @@
    frame=0;
    const bounds=rail.getBoundingClientRect();
    const flat=reduced.matches||innerWidth<=820;
+   const maxScroll=Math.max(0,rail.scrollWidth-rail.clientWidth);
+   document.querySelectorAll('[data-paper-step]').forEach(button=>{
+    button.disabled=Number(button.dataset.paperStep)<0?rail.scrollLeft<=1:rail.scrollLeft>=maxScroll-1;
+   });
    rail.querySelectorAll('.credential-card').forEach(card=>{
     const rect=card.getBoundingClientRect();
     const offset=Math.max(-1,Math.min(1,(rect.left+rect.width/2-bounds.left-bounds.width/2)/(bounds.width/2)));
@@ -57,6 +61,10 @@
   };
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update)};
   rail.addEventListener('scroll',schedule,{passive:true});
+  document.querySelectorAll('[data-paper-step]').forEach(button=>button.addEventListener('click',()=>{
+   const step=(rail.querySelector('.credential-card')?.getBoundingClientRect().width||220)+parseFloat(getComputedStyle(rail).columnGap||0);
+   rail.scrollBy({left:Number(button.dataset.paperStep)*step,behavior:reduced.matches?'instant':'smooth'});
+  }));
   addEventListener('resize',schedule,{passive:true});
   reduced.addEventListener('change',schedule);
   new MutationObserver(schedule).observe(rail,{childList:true});

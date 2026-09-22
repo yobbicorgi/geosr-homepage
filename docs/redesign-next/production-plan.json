@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "revision": "continuation-r2-image-base-20260922",
+  "revision": "continuation-r3-web-and-wave-20260922",
   "baselineCommit": "aea49aa",
-  "status": "implementation-and-production-plan-not-quality-approval",
+  "status": "web-review-complete-media-source-gates-open",
   "generationReady": false,
   "releaseReady": false,
   "authority": "docs/redesign-next/00-START-HERE.md",
@@ -25,7 +25,8 @@
     "geodap": "dist/assets/platform-geodap.png",
     "lab-style": "dist/assets/analysis-lab-v1.webp",
     "microscope": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
-    "rov": "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png"
+    "rov": "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png",
+    "wave-concept": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png"
   },
   "commonInstructions": {
     "image": "Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.",
@@ -315,11 +316,14 @@
       "rejectIf": [
         "케이블이 공중에서 시작",
         "계류가 부력·하중과 불일치",
-        "CTD와 채수기를 같은 기능으로 단정"
+        "CTD와 채수기를 같은 기능으로 단정",
+        "RBRsolo-T와 RBRsolo³ Tu를 같은 수온계로 취급",
+        "실물 근거 없는 TPRBM·부이 케이블 구조 생성"
       ],
       "sourceRequirements": [
         "부이 또는 수층장비 한 종류의 실물 구조 확인",
-        "장비 선택 전에는 생성하지 않음"
+        "장비 선택 전에는 생성하지 않음",
+        "회사 수온계 페이지의 RBRsolo-TU 표기와 Solo-T 이미지 파일명 충돌 확인 / 실제 계측 변수와 모델 식별 전 해당 기기를 온도·탁도 어느 쪽으로도 확정하지 않음"
       ],
       "continuity": "수면의 수직 방향을 CF07 수중 카메라 방향과 연결 / 같은 장비라고 단정하지 않음",
       "containsActualUI": false,
@@ -331,6 +335,13 @@
         "end": "docs/redesign-next/keyframes/CF06-end.png",
         "candidate": "docs/redesign-next/renders/CF06-take01.mp4",
         "review": "docs/redesign-next/reviews/CF06-take01.json"
+      },
+      "sourceAudit": {
+        "date": "2026-09-22",
+        "status": "needs-device-identity",
+        "localReference": "docs/redesign-production/equipment-sources/originals/rbr-solo-tu-page-thumbnail.png",
+        "manufacturer": "https://rbr-global.com/products/compact-loggers/rbrsolo-do-tu-par/",
+        "finding": "제조사 현행 RBRsolo³ Tu는 Seapoint 탁도 센서 계열 / 회사 과거 페이지의 수온계와 동일 제품임을 확인하지 못함 / 명칭만으로 생성 참조를 선택하지 않음"
       }
     },
     {
@@ -414,11 +425,13 @@
         "사용자 거부 해안 사용",
         "방파제·항로 재창작",
         "사진만 있는데 실측 점군이라고 주장",
-        "일반 LiDAR로 깊은 해저 탐사"
+        "일반 LiDAR로 깊은 해저 탐사",
+        "FireFly6 사진만으로 LiDAR 탑재를 단정"
       ],
       "sourceRequirements": [
         "위치 확인된 항공 원본",
-        "정사영상·점군 대응 자료 또는 개념 표시"
+        "정사영상·점군 대응 자료 또는 개념 표시",
+        "항공 사진측량 기체와 LiDAR 센서 탑재 구성을 구분하고 확인되지 않은 조합은 생성하지 않음"
       ],
       "continuity": "CF09에 동일 입력 자료를 넘겨 처리 관계가 읽히게 함",
       "containsActualUI": false,
@@ -631,6 +644,23 @@
         "end": "docs/redesign-next/keyframes/CF12-end.png",
         "candidate": "docs/redesign-next/renders/CF12-take01.mp4",
         "review": "docs/redesign-next/reviews/CF12-take01.json"
+      },
+      "selectedStills": [
+        {
+          "path": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png",
+          "attemptId": "CF12_WAVE",
+          "status": "selected-concept-still",
+          "review": "파랑의 연속된 자유수면과 그 표면을 따르는 국소 격자를 육안 확인 / 네온·가상 항구·허구 지형 없음 / 절단면은 개념적 도식이며 실제 물탱크나 특정 해역을 뜻하지 않음 / 격자는 생성형 설명 요소로 실제 모델 격자·결과·경계조건 검증 자료가 아님",
+          "motionNext": "4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체"
+        }
+      ],
+      "conceptFallback": {
+        "status": "web-selected-concept-not-model-output",
+        "source": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png",
+        "duration": 7,
+        "motionInstruction": "Use the supplied scientific cutaway concept as a single coherent volume. Over the first four seconds make a restrained lateral camera move no greater than five percent of the frame. Keep the water-surface topology and its local mesh registered. The vertical cut faces are an explanatory cross-section, not open falling water. Hold the composed relationship for the remaining three editorial seconds, or use deterministic post-edit timing. No shorelines, logos, measured values, falling water, disconnected grids or new devices. End on a stable composition for a clean editorial cut to the sourced Earth master in CF13. Do not morph the generic cutaway into a real Korean coast. This is explicitly a numerical-modelling concept, not a validated simulation or evidence of a GeoSR project.",
+        "continuity": "CF11 현미경 분석 → CF12 파랑 계산 개념은 명확한 컷 / CF12 → CF13 실제 지구 마스터도 컷 또는 노출 정합 디졸브 / 가상 파랑을 특정 지역으로 줌 변형 금지",
+        "replaceWhen": "검증한 회사 수치모델 결과와 조건이 확보되면 주 프롬프트의 source-composite 경로로 제작"
       }
     },
     {
@@ -1266,6 +1296,7 @@
     "blockedByCreditsNow": false,
     "nextAction": "실제 생성 직전에 잔액과 선택 모델 비용 확인 / 구독 구매 금지"
   },
-  "nextAction": "G1의3개 디자인 보드 제작 후 시각 검수 / 영상 생성은 source와frame gate 이후",
-  "imageRebuildRegister": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json"
+  "nextAction": "06-WEB-REVIEW.md로 웹 변경과 검수 범위를 확인한 뒤 CF06 장비 식별·CF08 실제 지형·CF12 원본 결과 등 장면별 source gate를 해소 / 18개 영상 프롬프트의 입력 프레임을 최종 검수한 뒤 영상 생성 / 현재 턴에서 새 영상 생성은 범위 제외",
+  "imageRebuildRegister": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
+  "webReview": "docs/redesign-next/06-WEB-REVIEW.md"
 }

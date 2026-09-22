@@ -377,6 +377,7 @@ If verified multibeam data are available, add a brief separate cutaway of the un
 - [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — 부이 또는 수층장비 한 종류의 실물 구조 확인
 - 확인 필요 — 장비 선택 전에는 생성하지 않음
+- 확인 필요 — 회사 수온계 페이지의 RBRsolo-TU 표기와 Solo-T 이미지 파일명 충돌 확인 / 실제 계측 변수와 모델 식별 전 해당 기기를 온도·탁도 어느 쪽으로도 확정하지 않음
 
 ### 구도
 
@@ -425,6 +426,8 @@ Use source-based above/below-water plates if a single take distorts waterline ge
 - 케이블이 공중에서 시작
 - 계류가 부력·하중과 불일치
 - CTD와 채수기를 같은 기능으로 단정
+- RBRsolo-T와 RBRsolo³ Tu를 같은 수온계로 취급
+- 실물 근거 없는 TPRBM·부이 케이블 구조 생성
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -433,6 +436,13 @@ Use source-based above/below-water plates if a single take distorts waterline ge
 - end — `docs/redesign-next/keyframes/CF06-end.png`
 - candidate — `docs/redesign-next/renders/CF06-take01.mp4`
 - review — `docs/redesign-next/reviews/CF06-take01.json`
+
+### 실제 원본 대조에서 발견한 제한
+
+제조사 현행 RBRsolo³ Tu는 Seapoint 탁도 센서 계열 / 회사 과거 페이지의 수온계와 동일 제품임을 확인하지 못함 / 명칭만으로 생성 참조를 선택하지 않음
+
+- 원본 — [회사 보존 자료](../../docs/redesign-production/equipment-sources/originals/rbr-solo-tu-page-thumbnail.png)
+- 제조사 — [제품 안내](https://rbr-global.com/products/compact-loggers/rbrsolo-do-tu-par/)
 
 ## CF07 — 수중 조사
 
@@ -525,6 +535,7 @@ Keep the ROV footage source-grounded. Any inspection annotations are post-compos
 - [migration](../../docs/source-migration/migration-coverage.json) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — 위치 확인된 항공 원본
 - 확인 필요 — 정사영상·점군 대응 자료 또는 개념 표시
+- 확인 필요 — 항공 사진측량 기체와 LiDAR 센서 탑재 구성을 구분하고 확인되지 않은 조합은 생성하지 않음
 
 ### 구도
 
@@ -574,6 +585,7 @@ CF09에 동일 입력 자료를 넘겨 처리 관계가 읽히게 함
 - 방파제·항로 재창작
 - 사진만 있는데 실측 점군이라고 주장
 - 일반 LiDAR로 깊은 해저 탐사
+- FireFly6 사진만으로 LiDAR 탑재를 단정
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -879,6 +891,30 @@ CF13 지역·지구 master와 같은 시야로 widen / 회사 본편 마지막�
 - end — `docs/redesign-next/keyframes/CF12-end.png`
 - candidate — `docs/redesign-next/renders/CF12-take01.mp4`
 - review — `docs/redesign-next/reviews/CF12-take01.json`
+
+### 실제 생성하고 검수한 이미지
+
+이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+
+- [CF12_WAVE](../../dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png) — selected-concept-still
+  - 검수 — 파랑의 연속된 자유수면과 그 표면을 따르는 국소 격자를 육안 확인 / 네온·가상 항구·허구 지형 없음 / 절단면은 개념적 도식이며 실제 물탱크나 특정 해역을 뜻하지 않음 / 격자는 생성형 설명 요소로 실제 모델 격자·결과·경계조건 검증 자료가 아님
+  - 다음 모션 — 4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체
+
+### 현재 개념 이미지로 제작하는 대안 경로
+
+참조 [검수한 개념 시안](../../dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png) / 편집 7초 / 실제 모델 결과 아님
+
+주 프롬프트의 실제 결과 경로와 아래 개념 경로 중 하나를 선택하며 혼합하지 않음
+
+```text
+Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+
+Use the supplied scientific cutaway concept as a single coherent volume. Over the first four seconds make a restrained lateral camera move no greater than five percent of the frame. Keep the water-surface topology and its local mesh registered. The vertical cut faces are an explanatory cross-section, not open falling water. Hold the composed relationship for the remaining three editorial seconds, or use deterministic post-edit timing. No shorelines, logos, measured values, falling water, disconnected grids or new devices. End on a stable composition for a clean editorial cut to the sourced Earth master in CF13. Do not morph the generic cutaway into a real Korean coast. This is explicitly a numerical-modelling concept, not a validated simulation or evidence of a GeoSR project.
+```
+
+CF11 현미경 분석 → CF12 파랑 계산 개념은 명확한 컷 / CF12 → CF13 실제 지구 마스터도 컷 또는 노출 정합 디졸브 / 가상 파랑을 특정 지역으로 줌 변형 금지
+
+검증한 회사 수치모델 결과와 조건이 확보되면 주 프롬프트의 source-composite 경로로 제작
 
 ## CF13 — 연구의 범위와 루프
 

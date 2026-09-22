@@ -1,0 +1,122 @@
+[
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/satellite-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "satellite",
+    "text": "실제 UI · 편집 초안\n▶",
+    "title": "위성 시설물 탐지"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/news-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "news",
+    "text": "",
+    "title": "자연현상 뉴스 분석"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/flood3d-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "flood3d",
+    "text": "실제 UI · 편집 초안\n▶",
+    "title": "3차원 침수범람 예측"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/surge-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "surge",
+    "text": "",
+    "title": "태풍·폭풍해일 예측"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/sealevel-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "sealevel",
+    "text": "",
+    "title": "극치해면고 예측"
+  },
+  {
+    "externalEntries": [],
+    "images": [],
+    "ratio": 1.777799398931915,
+    "selected": "flood-xai",
+    "text": "개발 상태\n개발 중 · 실제 화면 없음\n실제 화면은 제공되지 않습니다",
+    "title": "통합 침수 예측·분석"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/buoy-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "buoy",
+    "text": "실제 UI · 편집 초안\n▶",
+    "title": "해양부이 모니터링"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 1080,
+        "src": "assets/platforms/env-full-temperature.jpg",
+        "width": 1920
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "env",
+    "text": "",
+    "title": "해양환경 변화 모니터링"
+  },
+  {
+    "externalEntries": [],
+    "images": [
+      {
+        "height": 720,
+        "src": "assets/platforms/rip-poster.webp",
+        "width": 1280
+      }
+    ],
+    "ratio": 1.777799398931915,
+    "selected": "rip",
+    "text": "",
+    "title": "이안류 모니터링"
+  }
+]

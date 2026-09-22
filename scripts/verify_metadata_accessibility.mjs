@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const origin = new URL(process.env.REDESIGN_PREVIEW_URL || "http://127.0.0.1:18103/");
+const origin = new URL(process.env.REDESIGN_PREVIEW_URL || "http://127.0.0.1:18102/");
 const routes = ["index", "business", "research", "ax-platform", "company", "news", "equipment", "contact"];
 const failures = [];
 
@@ -88,8 +88,8 @@ if (!interactions.includes("tab.setAttribute('aria-selected',i===index)")) fail(
 if (!interactions.includes("const selected=tab===button;tab.setAttribute('aria-selected',String(selected))")) fail("home credential tab selected state missing");
 if (!interactions.includes("categoryTabs[next].focus();activateCategory(categoryTabs[next])")) fail("home credential keyboard tab navigation missing");
 if (!/b\.setAttribute\('aria-pressed',(?:String\()?b===button\)?\)/.test(interactions)) fail("company credential filter button state missing");
-const axSource = fs.readFileSync(path.join(dist, "ax-v2.js"), "utf8");
-if (!axSource.includes("prefers-reduced-motion: reduce")) fail("AX reduced-motion branch missing");
+const axSource = fs.readFileSync(path.join(dist, "ax-explorer.js"), "utf8");
+if (!axSource.includes("prefers-reduced-motion: reduce") || !axSource.includes('reduceQuery.matches||!animate')) fail("Active AX explorer reduced-motion branch missing");
 
 const indexHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8");
 const siteScript = indexHtml.match(/<script[^>]+src="([^"]*site\.js\?[^"]+)"/)?.[1] ?? null;

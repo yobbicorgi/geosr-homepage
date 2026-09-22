@@ -76,7 +76,7 @@
       if(!service)return "";
       const available=Boolean(captureFor(service,service.id==="env"?"temperature":null));
       const status=service.development?t("개발 중","IN DEVELOPMENT"):available?t("화면 확인","SCREEN PREVIEW"):t("화면 준비 중","SCREEN PENDING");
-      return `<button type="button" class="ax-platform-tab" role="tab" id="ax-platform-tab-${e(service.id)}" aria-controls="ax-platform-view" aria-selected="${id===selectedId}" tabindex="${id===selectedId?0:-1}" data-ax-platform="${e(id)}"><span class="ax-platform-tab-index">0${index+1}</span><span class="ax-platform-tab-name">${e(serviceName(service))}</span><span class="ax-platform-tab-status">${status}</span></button>`;
+      return `<button type="button" class="ax-platform-tab" role="tab" id="ax-platform-tab-${e(service.id)}" aria-controls="ax-platform-view" aria-selected="${id===selectedId}" tabindex="${id===selectedId?0:-1}" data-ax-platform="${e(id)}"><span class="ax-platform-tab-index">0${index+1}</span><span class="ax-platform-tab-name">${e(serviceName(service))}</span>${service.development?`<span class="ax-platform-tab-status">${status}</span>`:''}</button>`;
     }).join("");
   }
   function captureVisualMarkup(service,frameId){
@@ -168,7 +168,9 @@
     }
     return createCaptureSlate(service);
   }
-  function waitForImage(image){
+  function visualImage(visual){return visual instanceof HTMLImageElement?visual:visual.querySelector('img')}
+  function waitForImage(visual){
+    const image=visualImage(visual);
     if(!(image instanceof HTMLImageElement))return Promise.resolve();
     if(image.complete){
       if(image.naturalWidth===0)image.dataset.axCaptureFailure="true";
@@ -199,6 +201,8 @@
       if(next===null)return;
       event.preventDefault();
       tabs[next].focus({preventScroll:true});
+      const box=tabs[next].getBoundingClientRect(),edge=tablist.getBoundingClientRect();
+      if(box.left<edge.left||box.right>edge.right)tablist.scrollBy({left:box.left<edge.left?box.left-edge.left:box.right-edge.right,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
       if(activate)tabs[next].click();
     });
   }
@@ -223,17 +227,19 @@
     let copyAnimation=null;
     const reduceQuery=window.matchMedia("(prefers-reduced-motion: reduce)");
     const mobileQuery=window.matchMedia("(max-width: 700px)");
-    const syncPlatformOrientation=()=>platformTabs.setAttribute("aria-orientation",mobileQuery.matches?"horizontal":"vertical");
+    const syncPlatformOrientation=()=>platformTabs.setAttribute("aria-orientation","horizontal");
 
     function installInitialImageFallback(){
-      const image=viewport.querySelector('img[data-ax-capture-visual]');
+      const visual=viewport.querySelector('[data-ax-capture-visual]');
+      const image=visual&&visualImage(visual);
       if(!image)return;
       let handled=false;
       const fallback=()=>{
         if(handled)return;
         handled=true;
-        if(!image.parentNode)return;
-        image.replaceWith(createCaptureSlate(services.get(activeServiceId),true));
+        if(!image.parentNode||!viewport.contains(visual))return;
+        visual.replaceWith(createCaptureSlate(services.get(activeServiceId),true));
+        expandButton.disabled=true;
         if(caption)caption.textContent=captureFailureDescription(services.get(activeServiceId));
       };
       image.addEventListener("error",fallback,{once:true});
@@ -305,8 +311,10 @@
       const version=++transitionVersion;
       await waitForImage(incoming);
       if(version!==transitionVersion)return;
-      const failed=incoming instanceof HTMLImageElement&&(incoming.dataset.axCaptureFailure==="true"||incoming.naturalWidth===0);
+      const image=visualImage(incoming);
+      const failed=Boolean(image&&(image.dataset.axCaptureFailure==="true"||image.naturalWidth===0));
       if(failed)incoming=createCaptureSlate(service,true);
+      expandButton.disabled=failed||!capture;
 
       const existing=Array.from(viewport.querySelectorAll("[data-ax-capture-visual]"));
       const previous=existing[existing.length-1]||null;
@@ -324,10 +332,10 @@
         return;
       }
 
-      const options={duration:350,easing:"cubic-bezier(.22,.68,0,1.01)",fill:"none"};
+      const options={duration:620,easing:"cubic-bezier(.16,1,.3,1)",fill:"none"};
       const incomingAnimation=incoming.animate([
-        {opacity:.2,transform:"translateX(14px)"},
-        {opacity:1,transform:"translateX(0)"}
+        {opacity:.35,clipPath:"inset(0 8% 0 0)",transform:"translateY(8px)"},
+        {opacity:1,clipPath:"inset(0 0 0 0)",transform:"translateY(0)"}
       ],options);
       const previousAnimation=previous.animate([
         {opacity:1,transform:"translateX(0)"},
@@ -367,6 +375,25 @@
       selectService(activeGroup.services[0],true);
     }
 
+    // The enlarged view shows the original capture, with its ratio and provenance intact
+    const figure=root.querySelector('[data-ax-selected-capture]');
+    const toolbar=document.createElement('div');toolbar.className='ax-screen-toolbar';
+    const screenLabel=document.createElement('span');screenLabel.textContent='PLATFORM / ACTUAL INTERFACE';
+    const expandButton=document.createElement('button');expandButton.type='button';expandButton.dataset.axExpand='';
+    expandButton.textContent=t('화면 캡처 확대','Enlarge capture');expandButton.setAttribute('aria-haspopup','dialog');
+    toolbar.append(screenLabel,expandButton);figure.prepend(toolbar);
+    const dialog=document.createElement('dialog');dialog.className='ax-screen-dialog';dialog.setAttribute('aria-labelledby','ax-screen-dialog-title');
+    dialog.innerHTML=`<div class="ax-screen-dialog-bar"><h2 id="ax-screen-dialog-title"></h2><button type="button" aria-label="${e(t('닫기','Close'))}">×</button></div><img alt=""><p>${e(t('실제 화면 캡처 · 실시간 자료가 아닙니다','Actual interface capture · not live data'))}</p>`;
+    root.append(dialog);let previousOverflow='';
+    expandButton.addEventListener('click',()=>{
+      const service=services.get(activeServiceId),capture=captureFor(service,activeFrameId);if(!capture)return;
+      const image=dialog.querySelector('img');image.src=`assets/platforms/${capture.file}`;image.alt=serviceName(service);
+      dialog.querySelector('h2').textContent=serviceName(service)+(capture.frame?' / '+t(capture.frame.ko,capture.frame.en):'');
+      previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';dialog.showModal();
+    });
+    dialog.querySelector('button').addEventListener('click',()=>dialog.close());
+    dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close()}});
+    dialog.addEventListener('close',()=>{document.body.style.overflow=previousOverflow;expandButton.focus({preventScroll:true})});
     categoryTabs.addEventListener("click",event=>{
       const button=event.target.closest("[data-ax-category]");
       if(button)selectCategory(button.dataset.axCategory);

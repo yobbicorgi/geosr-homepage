@@ -1,5 +1,7 @@
 # 영상 제작 전 웹 개선 및 검수 기록
 
+이 문서는 이전 검수 이력이며 최신 결과는 [07-DYNAMIC-DESIGN-REVIEW.md](07-DYNAMIC-DESIGN-REVIEW.md)
+
 2026-09-22 · 메인 직접 수행 · 기준 URL `http://192.168.6.85:18102/`
 
 ## 적용한 변화

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T09:19:41.369Z",
+  "generatedAt": "2026-09-22T11:14:08.008Z",
   "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
   "count": 84,
   "runtimeRevision": "image-base-review-20260922",
@@ -438,6 +438,7 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
+        "dist/home.js",
         "dist/media-review.js"
       ],
       "visualAndScientificApproval": "selected-concept-still",

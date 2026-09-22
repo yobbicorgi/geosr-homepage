@@ -113,15 +113,21 @@
 
   const library=document.querySelector('.credential-grid');
   if(library)contentReady.push(credentialRecords.then(records=>{
-    let category='all';
+    let category='all',visibleLimit=4;
+    const compactLibrary=matchMedia('(max-width: 700px)');
     const collection=library.closest('#credential-library')||library.parentElement;
     const query=collection.querySelector('#credential-query');
     const categoryOf=r=>r.id.includes('patent')?'patent':r.id.includes('registration')?'license':'cert';
     function renderLibrary(){
       const term=query.value.trim().toLocaleLowerCase();
       const found=records.map((r,index)=>({...r,index})).filter(r=>(category==='all'||categoryOf(r)===category)&&`${r.title} ${r.titleEn}`.toLocaleLowerCase().includes(term));
+      const page=compactLibrary.matches?found.slice(0,visibleLimit):found;
       collection.querySelector('.library-count').textContent=T(`대표 자료 ${found.length}건`,`Representative records: ${found.length}`);
-      library.innerHTML=found.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}" aria-label="${E(T(r.title,r.titleEn))} — ${T('자료 확대','enlarge document')}"><span>${r.previewStatus==='review'?`<span class="credential-review-slate"><strong>${T('이미지 검토 중','PREVIEW UNDER REVIEW')}</strong><small>${T('개인정보 확인 전까지 공개하지 않습니다','WITHHELD PENDING PRIVACY REVIEW')}</small></span>`:`<img src="${E(r.image)}" alt="" loading="lazy">`}</span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 확인 중','Additional records')}</strong><small>${T('그 밖의 자료는 원문을 확인한 뒤 추가하겠습니다','Additional records will be checked during migration')}</small></div>`);
+      library.innerHTML=page.map(r=>`<button type="button" class="library-document" data-library-document="${r.index}" aria-label="${E(T(r.title,r.titleEn))} — ${T('자료 확대','enlarge document')}"><span>${r.previewStatus==='review'?`<span class="credential-review-slate"><strong>${T('이미지 검토 중','PREVIEW UNDER REVIEW')}</strong><small>${T('개인정보 확인 전까지 공개하지 않습니다','WITHHELD PENDING PRIVACY REVIEW')}</small></span>`:`<img src="${E(r.image)}" alt="" loading="lazy">`}</span><small>${E(T(r.classification,r.classificationEn))}</small><strong>${E(T(r.title,r.titleEn))}</strong></button>`).join('')+(term?(found.length?'':`<p class="library-empty">${T('검색 결과가 없습니다','No matching records')}</p>`):`<div class="library-placeholder"><span aria-hidden="true">+</span><strong>${T('추가 자료 확인 중','Additional records')}</strong><small>${T('그 밖의 자료는 원문을 확인한 뒤 추가하겠습니다','Additional records will be checked during migration')}</small></div>`);
+      let more=collection.querySelector('[data-library-more]');
+      if(!more){more=document.createElement('button');more.type='button';more.className='library-load-more';more.dataset.libraryMore='';library.after(more);more.addEventListener('click',()=>{const nextIndex=visibleLimit;visibleLimit+=4;renderLibrary();library.querySelectorAll('[data-library-document]')[nextIndex]?.focus({preventScroll:true})})}
+      more.hidden=!compactLibrary.matches||page.length===found.length;
+      more.textContent=T(`자료 더 보기 · ${page.length} / ${found.length}`,`More records · ${page.length} / ${found.length}`);
       const dialog=document.querySelector('#credential-dialog');
       library.querySelectorAll('[data-library-document]').forEach(button=>button.addEventListener('click',()=>{
         const record=records[Number(button.dataset.libraryDocument)];
@@ -141,10 +147,11 @@
     }
     collection.querySelectorAll('[data-credential-category]').forEach(button=>button.addEventListener('click',()=>{
       category=button.dataset.credentialCategory;
+      visibleLimit=4;
       collection.querySelectorAll('[data-credential-category]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
       renderLibrary();
     }));
-    query.addEventListener('input',renderLibrary);renderLibrary();
+    query.addEventListener('input',()=>{visibleLimit=4;renderLibrary()});compactLibrary.addEventListener('change',renderLibrary);renderLibrary();
   }).catch(()=>{library.textContent=T('자료를 불러오지 못했습니다','The collection could not be loaded')}));
 
   // Restore deep links once asynchronous content and font metrics are ready

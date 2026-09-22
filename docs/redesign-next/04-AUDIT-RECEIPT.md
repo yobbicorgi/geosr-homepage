@@ -13,7 +13,8 @@
 - 연구 페이지의 제목·대표 기록·검색 구조를 현재 브라우저에서 확인
 - 홈 전문 분야의 큰 제목·4개 탭·이미지 겹침·설명을 확인
 - AX 메인이8초 탐지 콘셉트이며 하단은 실제 화면 선택 구조인 것을 확인
-- 일반 브라우저 화면1280×720 조건의 [연구](audit-images/research-current-1280.png)와 [AX](audit-images/ax-current-1280.png) 저장
+- CSS viewport1280×720 / DPR1 조건의 [연구](audit-images/research-current-1280.png)와 [AX](audit-images/ax-current-1280.png) 저장
+- 도구가 저장한 PNG는1265×712 픽셀로 확인됨 CSS viewport와 캡처 픽셀 크기를 동일하다고 가정하지 않음 OS 배율은 이번에 별도 측정하지 않음
 - FHD·QHD·UHD 및 내부 페이지17장 검수는 기존 [실제 검수 기록](../redesign-production/FULL-SITE-REVIEW-20260922.md)과 `visual-review-r5`를 참고
 - 이번 인계에서는 화면 코드를 변경하지 않아 전체 반응형 검사를 다시 수행하지 않음
 

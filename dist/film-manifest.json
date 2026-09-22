@@ -1,5 +1,5 @@
 {
-  "revision": "editorial-r3-20260922",
+  "revision": "editorial-r4-20260922",
   "slots": [
     {
       "id": "geosr-hero",
@@ -140,18 +140,21 @@
     {
       "id": "ax-concept-film",
       "mode": "loop",
-      "src": null,
-      "approval": "rework",
-      "duration": 30,
+      "src": "assets/films/flow-ax-detect-v3.mp4",
+      "approval": "draft-reviewed",
+      "duration": 8,
       "delivery": "assets/films/ax-concept-film.mp4",
-      "purpose": "Separate abstract AX concept draft, not actual UI or measured scientific data",
+      "purpose": "AX facility detection concept chapter, not actual UI, a real location or measured scientific data",
       "recommendedMedia": [
         "mp4",
         "gif"
       ],
-      "stage": "concept-redesign",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
-      "reviewNote": "Repeated glass-panel assembly withdrawn pending function-specific concept keyframes"
+      "stage": "detection-chapter-draft",
+      "review": "docs/redesign-production/AX-DETECTION-V3-REVIEW.md",
+      "reviewNote": "Synthetic open-water facilities; no actual location or platform output claim",
+      "plannedDuration": 30,
+      "labelKo": "720p 탐지 콘셉트 초안 · 예측·모니터링 제작 중",
+      "labelEn": "720p DETECTION CONCEPT · OTHER CHAPTERS IN PRODUCTION"
     },
     {
       "id": "platform-satellite",

@@ -1,5 +1,11 @@
 # GeoSR 홈페이지·필름 재설계 핸드오프
 
+> **2026-09-22 현재 제작 기준** — [영상 연출 R3](../redesign-production/FILM-DIRECTION-R3.md)와 [Flow 제작 현황](../redesign-production/FLOW-PRODUCTION-TRACKER.md)이 아래의 오래된 v3/C09 계획보다 우선한다
+> 회사 60초에 AX UI나 AX 전용 콘셉트를 넣지 않는다 기존 회사 60초와 AX 30초 시험 편집본은 연결 해제했다 새 AX 탐지 V3 8초만 초안으로 연결했으며 본편 완성 상태가 아니다
+> 사용자가 제외한 coastal-survey-source.png는 홈페이지 및 모든 영상에 재사용하지 않는다
+> 기존 Flow 크레딧을 이용한 720p 영상 초안은 승인된 상태이며 유료 구독 구매와 Higgsfield 생성은 별도다
+
+
 > 2026-09-21 갱신 — 사용자가 현재 디자인의 색상·폰트·배치에 추가 개선을 요청했다
 > 이전 웹 구현 완료는 디자인 최종 승인이 아니다
 > [데스크톱 개선 기준](../redesign-production/DESKTOP-DESIGN-REVISION-20260921.md)과 저장소 루트 AGENTS.md를 적용한다

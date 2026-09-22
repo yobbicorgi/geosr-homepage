@@ -74,6 +74,21 @@
  }
 
  const milestones=[...document.querySelectorAll('[data-company-year]')];
+ const companyNav=document.querySelector('.company-anchor-nav');
+ if(companyNav){
+  const items=[...companyNav.querySelectorAll('a[href^="#"]')].map(link=>({link,target:document.querySelector(link.getAttribute('href'))})).filter(item=>item.target);
+  let navFrame=0;
+  const markCurrent=()=>{
+   navFrame=0;
+   const navStyle=getComputedStyle(companyNav);
+   const edge=(parseFloat(navStyle.top)||0)+companyNav.offsetHeight+80;
+   let current=items[0];
+   items.forEach(item=>{if(item.target.getBoundingClientRect().top<=edge)current=item});
+   items.forEach(item=>{if(item===current)item.link.setAttribute('aria-current','location');else item.link.removeAttribute('aria-current')});
+  };
+  const scheduleNav=()=>{if(!navFrame)navFrame=requestAnimationFrame(markCurrent)};
+  addEventListener('scroll',scheduleNav,{passive:true});addEventListener('resize',scheduleNav,{passive:true});scheduleNav();
+ }
  if(milestones.length&&'IntersectionObserver'in window){
   const observer=new IntersectionObserver(entries=>{
    const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>Math.abs(a.boundingClientRect.top-innerHeight*.42)-Math.abs(b.boundingClientRect.top-innerHeight*.42))[0];

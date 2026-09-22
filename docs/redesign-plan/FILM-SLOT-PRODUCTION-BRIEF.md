@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # GeoSR film slot production brief
 
 이 문서는 [`dist/film-manifest.json`](../../dist/film-manifest.json)의 9개 pending 슬롯을 위한 제작 기준이다. 현재 슬롯에는 실제 미디어를 연결하지 않으며, 모든 가안은 사람과 손을 제외한 사물·환경·화면 중심으로 만든다.

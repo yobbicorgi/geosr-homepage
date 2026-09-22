@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # Corporate film C09–C10 edit direction v1
 
 Status: **EDITING PLAN ONLY — no new image or video generated.** This closes the current 60-second corporate-film direction using one already approved laboratory still, three real AX screen captures, and the selected Earth continuity frame. C10 uses short, separate evidence cuts; it is not an AX product advertisement or a claim that the three AX examples form one product workflow.

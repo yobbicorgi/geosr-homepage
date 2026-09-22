@@ -481,19 +481,27 @@
       ]
     }
   ],
-  "generationReady": true,
+  "generationReady": false,
   "releaseReady": false,
   "readinessDefinitions": {
     "generationReady": "All 15 company and AX shots have selected available frames/sources, prompts and constraints, continuous timing, valid film slots, and no SOURCE_PENDING or REJECTED shots. This means pre-generation review is complete and production generation may begin; it does not mean a finished film exists.",
     "releaseReady": "Whether final generated/edited films have passed public-source, rights, privacy, factual, playback, and publication review. This remains false.",
     "productionReady": "Release/production completion only: final motion generation and editing, final export wiring, public approvals, deployment, and production-route verification. This remains false until the post-generation gates are complete."
   },
-  "remainingPreGenerationGates": [],
+  "remainingPreGenerationGates": [
+    "Use continuation production-plan instead of archived shot instructions",
+    "Review selected sources and start/middle/end frames",
+    "Resolve physics, geography, science and continuity issues"
+  ],
   "remainingPostGenerationGates": [
     "Generate final motion and edit/assemble the company 60-second film and AX 30-second film.",
     "Clear rights for optional vessel/USV/ROV inserts only if they are used; the selected background-only concept paths do not depend on these inserts.",
     "Complete public-source rights, attribution, privacy, third-party content, and actual-UI capture-state review.",
     "Wire only approved final exports into dist/film-manifest.json: geosr-hero (60 seconds) and ax-concept-film (30 seconds), currently src:null and approval:pending.",
     "Complete final factual, playback, framing, continuity, KO/EN, release checks, and production deployment/route verification."
-  ]
+  ],
+  "historicalGenerationReady": true,
+  "status": "historical-superseded-not-executable",
+  "supersededBy": "docs/redesign-next/00-START-HERE.md",
+  "supersededReason": "Current company film excludes AX footage; AX hero excludes actual UI; source and frame quality gates remain open"
 }

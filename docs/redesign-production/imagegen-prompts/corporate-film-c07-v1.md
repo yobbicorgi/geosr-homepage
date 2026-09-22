@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # Corporate film C07 observing-mooring keyframe v1
 
 Status: **composition study only — rejected for final equipment fidelity**. The generated study was discarded from the repository; its SHA-256 is retained here as provenance. It is not a website or final-film asset. See [the equipment accuracy gate](../EQUIPMENT-ACCURACY-GATE.md).

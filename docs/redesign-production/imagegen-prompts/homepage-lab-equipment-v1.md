@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # Homepage lab-equipment still — ImageGen v1
 
 Status: **main-approved candidate**. This remains a `GENERATED CONCEPT`, not documentary proof of a specific GeoSR lab, instrument inventory or procedure. Keep the generated original in the Codex generated-images store. The optimized derivative replaces the old image in the preview; remaining `analysis-concept.png` mentions are historical/source documentation, so the binary is retained until those records are reconciled.

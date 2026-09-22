@@ -865,5 +865,17 @@
     "Build A02 as an empty authored stage and animate A01 v3 only as abstract concept material.",
     "Edit approved AX and corporate UI clips sequentially at exact timecodes; preserve full frames and source speed.",
     "Review exact 60s/30s duration, C01/C12 loop, facts, crop safety and release authorization before publication."
+  ],
+  "historicalGenerationReady": null,
+  "generationReady": false,
+  "releaseReady": false,
+  "productionReady": false,
+  "status": "historical-superseded-not-executable",
+  "supersededBy": "docs/redesign-next/00-START-HERE.md",
+  "supersededReason": "Current company film excludes AX footage; AX hero excludes actual UI; source and frame quality gates remain open",
+  "remainingPreGenerationGates": [
+    "Use continuation production-plan instead of archived shot instructions",
+    "Review selected sources and start/middle/end frames",
+    "Resolve physics, geography, science and continuity issues"
   ]
 }

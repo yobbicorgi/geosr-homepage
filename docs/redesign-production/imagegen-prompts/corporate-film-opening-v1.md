@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # Corporate film opening: Earth reveal pair, v1
 
 **Workflow:** built-in ImageGen only. H02 was generated first, then received one targeted geography correction. H01 was created by editing the corrected H02 and removing only the spacecraft. These are internal concept previews; final geography and equipment verification is required.

@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # GeoSR 60초 기업 필름 · AX Platform 30초 필름 단일 제작 콘티 v3
 
 **기준:** 2026-09-20. v3는 회사 60초와 AX Platform 30초를 분리한 단일 기본 제작 경로다. v2의 연출 자료와 readiness source 상태를 참고하되, shot 순서·timecode·기본 production path는 이 문서를 따른다. 기존 Corporate Film Fallback A/B는 보존용 대안 기록이며 사용자 선택이 v3 착수 조건은 아니다. 이 문서는 영상이 제작됐거나 공개 권리 승인을 받았다는 뜻이 아니다.

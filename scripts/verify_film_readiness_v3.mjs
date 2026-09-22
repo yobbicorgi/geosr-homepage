@@ -128,6 +128,11 @@ function checkTimeline(shots, filmName, expectedPrefix, expectedCount, expectedD
 }
 
 const manifest = readJson(manifestPath, "v3 manifest");
+if (manifest?.supersededBy) {
+  console.error("ARCHIVED readiness contract — do not use it to approve production");
+  console.error("Read " + manifest.supersededBy + " and run node scripts/verify_continuation_package.mjs");
+  process.exit(1);
+}
 const filmManifest = readJson(filmManifestPath, "film-manifest");
 if (manifest) {
   if (manifest.schemaVersion !== "3.0.0") fail("schemaVersion must be 3.0.0.");

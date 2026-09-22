@@ -1,3 +1,10 @@
+> **역사 기록 — 현재 제작 지시 아님**
+> 2026-09-22 [현재 인계 기준](../redesign-next/00-START-HERE.md)으로 대체됨
+> 아래의 완료·자체 점수·generationReady·모바일 제외·회사/AX 혼합 지시는 현재 승인으로 사용하지 않음
+> 원본 근거와 실패·검수 이력만 보존
+
+---
+
 # Phase 1 — design-board evidence brief
 
 This brief hands verified material and known gaps to the main designer for three structurally different desktop boards. It does not select a direction or establish the visual system; the main designer owns composition, typography, page rhythm, tokens, and motion map. Mobile design is deferred and is not a constraint for this production pass.

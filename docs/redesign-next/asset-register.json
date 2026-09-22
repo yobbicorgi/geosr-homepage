@@ -1,0 +1,1793 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T06:36:17.269Z",
+  "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
+  "count": 88,
+  "runtimeRevision": "editorial-r4-20260922",
+  "runtimeManifestHashEncoding": "lf-normalized-utf8",
+  "runtimeManifestSha256": "c26c98c4de332eef98c6d22de537b5b2e5a18c1754d73f793526f79516764eb6",
+  "note": "Text references can occur in inactive legacy functions; they do not prove live DOM usage. Runtime approved groups do not prove all named platforms have individual reviewed clips.",
+  "archiveIndices": [
+    "docs/source-migration/assets.jsonl",
+    "docs/source-migration/inventory.json",
+    "docs/source-migration/migration-coverage.json",
+    "docs/redesign-production/equipment-sources/manifest.json"
+  ],
+  "separatelyRejected": {
+    "path": "docs/redesign-production/rejected-assets",
+    "reason": "Includes user-rejected coastal geography; never restore merely because the file exists"
+  },
+  "assets": [
+    {
+      "path": "dist/assets/InterVariable.woff2",
+      "bytes": 352240,
+      "hashEncoding": "raw-bytes",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "classification": "site-support-asset",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.css",
+        "dist/experience.css"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/analysis-concept.png",
+      "bytes": 1604602,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ef07b2bdbe010901925c01b1acf273822190f0041d7208beb78d8d1512b4afaf",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF09"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/analysis-lab-v1.webp",
+      "bytes": 206442,
+      "hashEncoding": "raw-bytes",
+      "sha256": "42dc146e8d12ac3e6a7226387d1a5493f9af0ce5d990c2d783be1067163c453f",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html",
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF10",
+        "CF11"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/coastal-model-v3.png",
+      "bytes": 2794794,
+      "hashEncoding": "raw-bytes",
+      "sha256": "230d60a3b251459b6dba08a7a36c7e23e7ae93f3c40e7ed5cbe912ce9114ddde",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF12"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "네온·허구 지형 지적 대상 계열 / 모델 대표로 자동 재사용 금지",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/ax-detection-v3/ax-detect-end.png",
+      "bytes": 2365069,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d5fa4c8cd06ffa5bf589b2d2cf40c324496e3f2bbd09f03b45fb1991620b52ab",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/home.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX02"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "탐지 개념 후보 / 실제 시설물·위치·분석 결과 아님",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/ax-detection-v3/ax-detect-start.png",
+      "bytes": 2474906,
+      "hashEncoding": "raw-bytes",
+      "sha256": "dd6f2b223cb4d296b92c6292454de040e21d5cc6b2be90e1f604621abfc15aae",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/ax-explorer.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX02"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-aligned-v1.png",
+      "bytes": 1438623,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6dc673876b958b654e05629d3ba4b613afa8d8c0f79e043e33b79dd2ae96340b",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX01"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/ax-platform-v4/ax-data-planes-start-v1.png",
+      "bytes": 1582534,
+      "hashEncoding": "raw-bytes",
+      "sha256": "de2ffc0465e89aa3325f189b702f925d50ef8ae508f8317840b821ee9655f668",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/ax-v2.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX01"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c05-coast-end-v1.png",
+      "bytes": 1859116,
+      "hashEncoding": "raw-bytes",
+      "sha256": "62567625afa56ba2d44eb40cc46da482e0a4ab566dc95162ebcb5cbc8baa4681",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF08"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "실제 지형 위치와 시설물 검증 전 후보",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c06-underwater-end-v1.png",
+      "bytes": 1733354,
+      "hashEncoding": "raw-bytes",
+      "sha256": "dcbcc0f74488e0aff0dfa0d27642a8d9d585c221a30356f0923657795909713a",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF07"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film-v3/c06-waterline-start-v1.png",
+      "bytes": 1506566,
+      "hashEncoding": "raw-bytes",
+      "sha256": "01d80aa00c1360b640e7973e41c6b6fa62dbafa5e85a1872aba3af1c1ff6416c",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF06"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-00s-v4.png",
+      "bytes": 1711847,
+      "hashEncoding": "raw-bytes",
+      "sha256": "3d6117dc1e397da56c815c299e8c84142bbbd9083cb5f01c60a2d20185130d5c",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/home.js",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF01",
+        "CF02",
+        "CF13"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-10s-v1.png",
+      "bytes": 1938732,
+      "hashEncoding": "raw-bytes",
+      "sha256": "18db897edf953de924b4e3cd405caea9a83b09f25f3334c25253d85e585a40f3",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF03"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-12s-v1.png",
+      "bytes": 2143835,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7b7545fb2bf0a0d2fab4acbf69c385ed135dc79ef8c49ce5b736eacdcc41ca1b",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF03"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-15s-v1.png",
+      "bytes": 2168943,
+      "hashEncoding": "raw-bytes",
+      "sha256": "58fad8c636327e1411593b774d6e1494e1836900b33c2783dde0d60cb61d05c7",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF03"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-18s-v1.png",
+      "bytes": 1872425,
+      "hashEncoding": "raw-bytes",
+      "sha256": "01705f49a88a8eecfc486fead06e801d1b22ea8e51eaeb253f810a667e15a9a7",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF03"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-20s-v2.png",
+      "bytes": 2265208,
+      "hashEncoding": "raw-bytes",
+      "sha256": "94dbbded8240981b2ce8573813d4940007e72919ee11e0519c68034e7645f570",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF03"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-22s-a-sst-v1.png",
+      "bytes": 2314498,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c104455f2f8533ac68a4179d1ac395cceaf3efef067da59072b197cc849164de",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF04"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-22s-b-salinity-v1.png",
+      "bytes": 1921340,
+      "hashEncoding": "raw-bytes",
+      "sha256": "296e44fc7881f9393663e10a41c55ec70408631872f31b48cd4e123b6b9d49a9",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF04"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-22s-c-chlorophyll-v1.png",
+      "bytes": 2104842,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a08b7b55395d9ac7639a9c36a4f0ddf0fa885472b60ad131a8fa0400e3134be6",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF04"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-24s-v1.png",
+      "bytes": 1529816,
+      "hashEncoding": "raw-bytes",
+      "sha256": "fd232ad9a2197512373ed70d0018afe9a9a84b8f2e6c2d52e3c5b3a9b2632797",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF04"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v4.png",
+      "bytes": 1743832,
+      "hashEncoding": "raw-bytes",
+      "sha256": "377d0d3a8ccc4eaa1a3fff73d0b4645155599abd8c8ef3c87cbfc7539421e0a6",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF01",
+        "CF02",
+        "CF13"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "지리 구도 참고 / 위성 입체감·광학 방향·강체 모션 재작업",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/concepts/flow-20260922/multibeam-cross-track-v2.png",
+      "bytes": 2107839,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d17ce8e29c30ab57420cf95fcc1473d9adb5e9c1640712caa4159c42103e8d4b",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-01.png",
+      "bytes": 42082,
+      "hashEncoding": "raw-bytes",
+      "sha256": "5e54d9b4eadb38c6f281e8c1fdd843b194fc975006958f8a967a75c718f62fd3",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.html",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-02.png",
+      "bytes": 33590,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e685c4740891ded54eec5066c66f8187fdb3c0a7b2926246a25463db6d618ac6",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-03.png",
+      "bytes": 22473,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d600668c87d3f6699f180e254572d61e6a3b4a03af88d5295bf7df6c4294fdea",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.html",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "개인정보 보호 동작 유지 / 원본 직접 노출 재검토",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-04.png",
+      "bytes": 23044,
+      "hashEncoding": "raw-bytes",
+      "sha256": "b84edb170fe02740ead5429d7a345d03bf3e41a561ed3a657f52d61078343c69",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "개인정보 보호 동작 유지 / 원본 직접 노출 재검토",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-05.png",
+      "bytes": 37694,
+      "hashEncoding": "raw-bytes",
+      "sha256": "98b6050a2ff7d64c8f9a3e1a25161e2f25323cb96416fdf33c18b0e2be1d7738",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.html",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-06.png",
+      "bytes": 34884,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4d651ec93b76c20e6979541c1ebb65d64f416b3a0a647ef9545379b193ded3df",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/credential-07.png",
+      "bytes": 25735,
+      "hashEncoding": "raw-bytes",
+      "sha256": "dcb4dba34c850043d6618519a75e084e19fe73e7a5643bb174d62d76f2ee260e",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/equipment-icp.png",
+      "bytes": 6910,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ac3d9759ecae6604f8baafb7aeead91a16b627ec9dfe3422f503c3397fadbcbf",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF10",
+        "CF11"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/equipment-rov.png",
+      "bytes": 13700,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c5a25fbf2da863d662732261628e588753aa17b9ce410b6c6673f173b4195b61",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF07"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/equipment-usv-original.png",
+      "bytes": 3592691,
+      "hashEncoding": "raw-bytes",
+      "sha256": "53f5521e68ea7745a1baffe9fb3d388726ea902cd879f176e667ebb288614d22",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js",
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/equipment-vessel.jpg",
+      "bytes": 23337,
+      "hashEncoding": "raw-bytes",
+      "sha256": "9b41f4616c5cc022c53c7676292e15b198f7ee4157710a82511ce3a5f17fdea3",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/estuary-hero-v4.png",
+      "bytes": 2828269,
+      "hashEncoding": "raw-bytes",
+      "sha256": "feac62f1825bf519f1a578732795c6d69544beee1132516f2be0d8a90b08876b",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF08"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "실제 위치·해안 시설물 출처 검수 전 후보",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/ax-concept-720p-draft.mp4",
+      "bytes": 5420653,
+      "hashEncoding": "raw-bytes",
+      "sha256": "9ff39d88cf892d4242ca8da97f2288bb89593ab56030657b5629b2bc4aaa2c70",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "rejected-do-not-connect",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "AX30초 완성본으로 연결 금지 / 재구성 필요",
+      "nextAction": "비연결 유지 / 기록 보존"
+    },
+    {
+      "path": "dist/assets/films/ax-detect-fast.mp4",
+      "bytes": 490387,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7f16c6da77a910d7f970b5d73b68e37278e0f210723602689976cb8f1c2fef20",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "ax-detect",
+          "approvalInRuntime": "approved",
+          "actualDuration": 3.03,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX02"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/ax-detect.mp4",
+      "bytes": 581616,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6f4a743e77b036ca816757a075928f2e1cee456025882746199eb31ae7ef0367",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX02"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/ax-discover-fast.mp4",
+      "bytes": 490387,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7f16c6da77a910d7f970b5d73b68e37278e0f210723602689976cb8f1c2fef20",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "ax-discover",
+          "approvalInRuntime": "approved",
+          "actualDuration": 3.03,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/ax-discover.mp4",
+      "bytes": 581616,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6f4a743e77b036ca816757a075928f2e1cee456025882746199eb31ae7ef0367",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/ax-monitor-fast.mp4",
+      "bytes": 180618,
+      "hashEncoding": "raw-bytes",
+      "sha256": "3df8be88ab21a53bc291d245461a3c0abef890dc99ed7bfe1ab4a1546f9d4fe1",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "ax-monitor",
+          "approvalInRuntime": "approved",
+          "actualDuration": 3.03,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/ax-monitor.mp4",
+      "bytes": 252424,
+      "hashEncoding": "raw-bytes",
+      "sha256": "aa45652d3195f9f21cdb3e3fc5f55baf82c41395302a5e12612aea683394172f",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/ax-predict-fast.mp4",
+      "bytes": 512492,
+      "hashEncoding": "raw-bytes",
+      "sha256": "349db6f1bdeb0658f2298658a27f0402daab5c5ef9d3890ab95be18b4790a7ad",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "ax-predict",
+          "approvalInRuntime": "approved",
+          "actualDuration": 3.03,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/ax-predict.mp4",
+      "bytes": 694229,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ab877b6bb2f3cd4c22da97d145e0c1043c1fa4ac57d2dfb2c1094dac777a1ba2",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/flow-ax-detect-v3.mp4",
+      "bytes": 5405239,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d6f69fd95c3cc9b25e2988a779a235c2ce90bbcef300cac1e8d62f7b2664bb42",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "ax-concept-film",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": 30
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX02",
+        "AX01",
+        "AX03",
+        "AX04",
+        "AX05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/flow-ax01-layers-draft.mp4",
+      "bytes": 1649304,
+      "hashEncoding": "raw-bytes",
+      "sha256": "bb611a5de0cd629bb86a93708fd4a8c15557791925888cc26890dce9cfe20490",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "일반 레이어 연출 / 구체적 기능 표현 부족",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/flow-ax02-analysis-draft.mp4",
+      "bytes": 3643631,
+      "hashEncoding": "raw-bytes",
+      "sha256": "9bbe7bef2dee9ad3559494fc86abf6639fb64b66dccfc01b22f63b9768123a38",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "rejected-do-not-connect",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "패널 증식과 내용 불명확 / 사용 제외",
+      "nextAction": "비연결 유지 / 기록 보존"
+    },
+    {
+      "path": "dist/assets/films/flow-ax02-analysis-r2-draft.mp4",
+      "bytes": 4209490,
+      "hashEncoding": "raw-bytes",
+      "sha256": "71b8c7cfd0b97e2b14de66790aeed4e8e4fdc6f081579b8d53ffc6166400a067",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "rejected-do-not-connect",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "전체 클립 재작업 판정 / 사용 제외",
+      "nextAction": "비연결 유지 / 기록 보존"
+    },
+    {
+      "path": "dist/assets/films/flow-ax03-monitor-draft.mp4",
+      "bytes": 2856720,
+      "hashEncoding": "raw-bytes",
+      "sha256": "8a25ea59332a8aa49c133a52db2c878eef02bec4e33570fe96150688a36fcbb2",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "실제 모니터링 맥락과 결과 설명 부족",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/flow-c01-earth-draft.mp4",
+      "bytes": 3273292,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e3f6abafd5ac167c185c269d9e04795d1ddfe75aa53360644cd52199c48e99b3",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "geosr-hero",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": 60
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW",
+        "CF01",
+        "CF02",
+        "CF03",
+        "CF04",
+        "CF05",
+        "CF06",
+        "CF07",
+        "CF08",
+        "CF09",
+        "CF10",
+        "CF11",
+        "CF12",
+        "CF13"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/flow-c02-satellite-draft.mp4",
+      "bytes": 2413624,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d98f2ea8780fd696940f333b64509520bec0753aeac1e5031bc2145f77f394a6",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "expertise-4",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW",
+        "CF02",
+        "CF04"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/flow-c05-multibeam-draft.mp4",
+      "bytes": 4136525,
+      "hashEncoding": "raw-bytes",
+      "sha256": "db41954c7ccaf187aa723d835ad624eeb21867eb53e41928f64c640548aa4aa5",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "빔 방향·장비 원본·관측 원리 확인 전 사용 금지",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/flow-c06-underwater-draft.mp4",
+      "bytes": 5616931,
+      "hashEncoding": "raw-bytes",
+      "sha256": "232b7cbf94900e519aafd656dd35a8614612223d2523336334c8890553f9842b",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF07"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "수중 전환 후보일 뿐 ROV·센서 기능 증거 아님",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/films/flow-c07-lab-draft.mp4",
+      "bytes": 2030513,
+      "hashEncoding": "raw-bytes",
+      "sha256": "225e694d12d919540fa76b39e38d82068fee90d93723322129e9f3820637d671",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "expertise-2",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": null
+        },
+        {
+          "id": "business-environment",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF10",
+        "CF11"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/flow-r3-opening-connected.mp4",
+      "bytes": 1191303,
+      "hashEncoding": "raw-bytes",
+      "sha256": "21a59a3f83f7e5cf7b9c6d8b98d12c54c4722f27302109abecd43f51ce3af7c5",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "rejected-do-not-connect",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "끝 프레임 연결 불일치 / 사용 제외",
+      "nextAction": "비연결 유지 / 기록 보존"
+    },
+    {
+      "path": "dist/assets/films/flow-usv-existing-draft.mp4",
+      "bytes": 4797711,
+      "hashEncoding": "raw-bytes",
+      "sha256": "114de17c99986ac010a8216290c67d109c53de325ef594a48f037343bc6009ae",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "expertise-1",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05",
+        "CF08"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/geosr-hero-720p-draft.mp4",
+      "bytes": 12290037,
+      "hashEncoding": "raw-bytes",
+      "sha256": "30c4efd3168209be341a8c2befa68233c2eb7b789fd01661503755c530bd46bc",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "rejected-do-not-connect",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "연속성·편집 품질 미달 / 회사60초 합격본으로 연결 금지",
+      "nextAction": "비연결 유지 / 기록 보존"
+    },
+    {
+      "path": "dist/assets/films/platform-buoy-preview.mp4",
+      "bytes": 222366,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c85de2b1af2706519f1e3623e508ca7d74ae324a0003627e9a6ddc9d8cc51382",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "platform-buoy",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 3.8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/platform-flood3d-preview.mp4",
+      "bytes": 440258,
+      "hashEncoding": "raw-bytes",
+      "sha256": "131611994c9f74990840d45eb4a1d918b52205582d65672a16ffe81d4aad6d83",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "platform-flood3d",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 3.8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/films/platform-satellite-preview.mp4",
+      "bytes": 475526,
+      "hashEncoding": "raw-bytes",
+      "sha256": "16365b1aeab2d244b5b7d42d68f8075bf00e3c01840e30931e37db8d9f20574d",
+      "classification": "film-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "platform-satellite",
+          "approvalInRuntime": "draft-reviewed",
+          "actualDuration": 3.8,
+          "plannedDuration": null
+        }
+      ],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
+    },
+    {
+      "path": "dist/assets/generated/candidates-v2/flow-lab-ecology-v1.png",
+      "bytes": 7535411,
+      "hashEncoding": "raw-bytes",
+      "sha256": "386cdd2d326b76c9ac8d73ecef054fe5473dc341b74a1784c25ee28ca73a0c47",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF10",
+        "CF11"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "좋은 실험 분위기 / 튜브·장비 단계 재검수 / 실험실 실사진 아님",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/logo.png",
+      "bytes": 32142,
+      "hashEncoding": "raw-bytes",
+      "sha256": "b81e1ca1ca97d06db1f5c690801abfd0ef81f430056dc6d73b5b36162815ad8d",
+      "classification": "site-support-asset",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/home.js",
+        "dist/redesign-preview.html",
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/media-pending.svg",
+      "bytes": 494,
+      "hashEncoding": "lf-normalized-utf8",
+      "sha256": "e98bb020739664375e529548c0445319b863f521ebb30e4d865b1b460fc32f17",
+      "classification": "site-support-asset",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.html",
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/notice.pdf",
+      "bytes": 100223,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0ab8252366bddb91503087143805dfc7a17b5fd705b438c3d867435c4c5cf160",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platform-geodap.png",
+      "bytes": 3076411,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c372b6807241808d79d8f0cd21baf14f3b0ed8a20f75b0f2719e36844856519f",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/design-directions.html",
+        "dist/home.js",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "SOURCE-GEODAP"
+      ],
+      "generationPolicy": "실제 GeoDAP 캡처만 사용 / 원본 전체 비율 유지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/ax-overview-poster.webp",
+      "bytes": 94570,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a554eb041951beefb9d10e4c17f0ea197cf05ac1bc61063935e638a20037ccd2",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX-ARCHIVE"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/ax-overview-preview.mp4",
+      "bytes": 606411,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1f3c99a674b8f42e8870d6158cd575955dd8c8f6ab3a96ca96bd8940aa2530b7",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "AX-ARCHIVE"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/buoy-poster.webp",
+      "bytes": 43834,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f6bbc0b6b042c52a8deea9bad3414472016fbac6f17b5b5c27a90b35d9475556",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/ax-v2.js",
+        "dist/home.js",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-buoy"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/buoy-preview.mp4",
+      "bytes": 252424,
+      "hashEncoding": "raw-bytes",
+      "sha256": "aa45652d3195f9f21cdb3e3fc5f55baf82c41395302a5e12612aea683394172f",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-buoy"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/env-full-salinity.jpg",
+      "bytes": 198680,
+      "hashEncoding": "raw-bytes",
+      "sha256": "45cc67df7ab71d11e211d81a4885dbb5c702a566e5a5be02c885c68149562ae5",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-env"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/env-full-temperature.jpg",
+      "bytes": 214578,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a55d861afadf24bcb6ff4c6e311eb73a19b6634c01c7c5e205abb84a3ef7d696",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-env"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/env-poster.webp",
+      "bytes": 34388,
+      "hashEncoding": "raw-bytes",
+      "sha256": "b8a0e6a276602fdc2be73254755908c10c3efb28c1491ed1fe0f5d066eb04e19",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-env"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "이전 대표 캡처의 검은 여백 / 새 FHD 캡처 우선",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/env-preview.mp4",
+      "bytes": 293078,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2ad0e1cc6c482a3fc3a7c73a05e767dee6a93ad68159ddeb8cb71c4c10012fcd",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-env"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "현재 환경 변수·전체16:9·로딩 상태 재검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/flood3d-poster.webp",
+      "bytes": 87184,
+      "hashEncoding": "raw-bytes",
+      "sha256": "873b3f62c05794fc1a24e8f35cc2462ea06c891e7c84aaab038db1cd133062a0",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js",
+        "dist/ax-v2.js",
+        "dist/home.js",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-flood3d"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/flood3d-preview.mp4",
+      "bytes": 694229,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ab877b6bb2f3cd4c22da97d145e0c1043c1fa4ac57d2dfb2c1094dac777a1ba2",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-flood3d"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/news-poster.webp",
+      "bytes": 44818,
+      "hashEncoding": "raw-bytes",
+      "sha256": "419887ef39a461d20691d466b627320dff11b91422f5e817acf5990376966d27",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-news"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/news-preview.mp4",
+      "bytes": 250895,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0e2d9802d12660483660969f79bf57b7df3fd82ed2f58fc3b23bc5d37db76af0",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-news"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/rip-poster.webp",
+      "bytes": 58144,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c373987ed46ff32f030adbce7243fdeff8dc0982276bbbb26e18dd23af66265b",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-rip"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/rip-preview.mp4",
+      "bytes": 499284,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f875d291f3d5c041b48e52d98b36db7f01ceeb7adbaf72f3de01b036ef4460d8",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-rip"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/satellite-poster.webp",
+      "bytes": 99540,
+      "hashEncoding": "raw-bytes",
+      "sha256": "3a3ef612935a99be4190b91daab045f3cb042158a1e13c17dadb9bd0aedbfc49",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/art-direction.js",
+        "dist/design-directions.html",
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-satellite"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/satellite-preview.mp4",
+      "bytes": 581616,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6f4a743e77b036ca816757a075928f2e1cee456025882746199eb31ae7ef0367",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-satellite"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/sealevel-poster.webp",
+      "bytes": 58948,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7162e11a9cf75db8408a16630e3530dcc92219019ef210050ba7f767b30c13d8",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-sealevel"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/sealevel-preview.mp4",
+      "bytes": 241933,
+      "hashEncoding": "raw-bytes",
+      "sha256": "26c86f9122fb2d983a0dad9fadf94724d88ab7dda2c3c40d641d3a1055c76a7f",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-sealevel"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/surge-poster.webp",
+      "bytes": 90268,
+      "hashEncoding": "raw-bytes",
+      "sha256": "deb4ef0ad31c62d419d089167872b28254badad94007d8e6d80afaad45d002e4",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-surge"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/platforms/surge-preview.mp4",
+      "bytes": 547340,
+      "hashEncoding": "raw-bytes",
+      "sha256": "bff7c49d4769713bd1ac2a32e56646f79ca31d7b64a60bdc949e1e8f84c3f1c0",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "capture-surge"
+      ],
+      "generationPolicy": "실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/satellite-layers-v3.png",
+      "bytes": 2614641,
+      "hashEncoding": "raw-bytes",
+      "sha256": "3563ab1d940ee8f6eb870b8fe60818e414c80a1f5d1b5f361fb1bd3ee825976e",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/redesign-preview.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF04"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "층별 지리·변수·기간·기하 검수 전 후보",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/usv-source.jpg",
+      "bytes": 157404,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2967130902e41a6ea67adb6e8e0756ce950d3027fbd4f732ef43905d3a61dd73",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/usv.png",
+      "bytes": 21318,
+      "hashEncoding": "raw-bytes",
+      "sha256": "5b7231f0c1f206ee39e7f1daf223993db893f392087f82fc892879a072ea12f2",
+      "classification": "equipment-reference-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "followUpPlanIds": [
+        "CF05"
+      ],
+      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    }
+  ]
+}

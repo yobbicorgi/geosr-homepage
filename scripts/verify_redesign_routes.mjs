@@ -3,7 +3,7 @@
 import path from 'node:path';
 
 const origin = new URL(process.env.REDESIGN_PREVIEW_URL || 'http://127.0.0.1:18102/');
-const routes = ['index', 'business', 'research', 'ax-platform', 'company', 'news', 'equipment', 'contact'];
+const routes = ['index', 'business', 'research', 'ax-platform', 'company', 'news', 'equipment', 'contact', 'source-archive'];
 const checked = new Set();
 const failures = [];
 const textExtensions = new Set(['.html', '.js', '.css', '.json']);
@@ -88,7 +88,7 @@ for (const route of routes) {
 }
 
 // The client fetches these documents at runtime rather than declaring them in HTML.
-for (const runtimeJson of ['content.json', 'film-manifest.json']) {
+for (const runtimeJson of ['content.json', 'film-manifest.json', 'source-archive.json']) {
   await checkUrl(new URL(runtimeJson, origin), 'runtime fetch');
 }
 

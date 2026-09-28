@@ -2,7 +2,7 @@ const P=new URLSearchParams(location.search),en=P.get('lang')==='en',L=en?'en':'
 const T=(k,e)=>String((en?e:k)??''),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const U=(p,o={})=>`${p}.html?${new URLSearchParams({...o,lang:L})}`;
 const route=location.pathname.split('/').pop().replace('.html','')||'index';
-const nav=[['business','기술과 솔루션','Expertise'],['research','연구와 성과','Research'],['ax-platform','AX Platform','AX Platform'],['company','GeoSR 소개','About GeoSR'],['news','소식','News']];
+const nav=[['business','기술과 솔루션','Expertise'],['research','연구와 성과','Research'],['ax-platform','AX Platform','AX Platform'],['company','GeoSR 소개','About GeoSR'],['news','소식','News'],['source-archive','원문 자료','Archive']];
 const A=(href,k,e,cl='link')=>{const external=/^https?:\/\//.test(href),contextual=/plain-arrow|ink-link|field-link|pill-link/.test(cl),icon=external?'↗':contextual?'→':'';return `<a class="${cl}" href="${href}"${external?' target="_blank" rel="noopener"':''}>${T(k,e)}${icon?` <span aria-hidden="true">${icon}</span>`:''}</a>`};
 const img=(src,alt,concept=false,cl='')=>`<figure class="visual ${cl}"><img src="assets/${src}" alt="${E(alt)}" loading="lazy">${concept?`<figcaption>${T('영상 가안 · IMAGEGEN','FILM CONCEPT · IMAGEGEN')}</figcaption>`:''}</figure>`;
 const filmSlot=(id,label,description='')=>`<figure class="visual route-film-frame" data-production-slot="${E(id)}" data-film-slot="${E(id)}" aria-label="${E(label)}"><div class="route-film-fallback"><span>${T('영상 자료 준비 중','VIDEO ASSET IN PREPARATION')}</span><strong>${E(label)}</strong>${description?`<p>${E(description)}</p>`:''}</div></figure>`;
@@ -33,6 +33,7 @@ const metadataConfig={
  "business":{"title":["기술과 솔루션","Expertise"],"description":["현장 관측부터 환경 분석과 공간정보 활용까지, GeoSR의 기술 분야를 살펴봅니다.","Explore GeoSR capabilities in field observation, environmental analysis, modelling, AI and spatial information."]},
  "research":{"title":["연구개발 및 주요 수행실적","Research and project records"],"description":["GeoSR의 연구개발, 주요 사업 실적과 학술 자료를 찾아볼 수 있습니다.","Browse GeoSR research, project records and academic publications."]},
  "news":{"title":["GeoSR 소식","GeoSR News"],"description":["GeoSR 공지와 언론 보도, 뉴스레터를 확인할 수 있습니다.","Read company announcements, media coverage and newsletters from GeoSR."]},
+ "source-archive":{"title":["원문 자료실","Source archive"],"description":["기존 지오시스템리서치 홈페이지의 회사, 사업, 연구, 학술, 공지와 장비 자료를 찾아볼 수 있습니다.","Browse preserved public GeoSR company, project, research, publication, news and equipment records."]},
  "company":{"title":["GeoSR 소개","About GeoSR"],"description":["지오시스템리서치의 사업 분야와 인증·면허·지식재산권 등 회사 정보를 소개합니다.","Learn about GeoSystem Research, its capabilities, credentials and company information."]},
  "equipment":{"title":["관측·분석 장비 및 조사선","Survey and analysis equipment"],"description":["현장 관측과 환경 분석에 사용하는 장비와 조사선을 소개합니다.","Browse selected equipment for field observation and environmental analysis."]},
  "contact":{"title":["사업 및 기술 문의","Business and technical enquiries"],"description":["사업, 기술, 연구 협력 문의를 위한 GeoSR 연락처를 안내합니다.","Contact GeoSR about business, technical and research collaboration."]},
@@ -75,7 +76,7 @@ function setMeta(attribute,name,value){
 }
 function applyPageMetadata(){
  const metadata=resolvePageMetadata();
- document.title=metadata.title;
+ document.title="GeoSR";
  setMeta("name","description",metadata.description);
  setMeta("property","og:type","website");
  setMeta("property","og:site_name","GeoSR");
@@ -97,7 +98,7 @@ function applyPageMetadata(){
  setMeta("name","twitter:title",metadata.title);
  setMeta("name","twitter:description",metadata.description);
 }
-document.documentElement.lang=L;document.body.className='design-2026 '+(route==='index'?'home-page':'inner-page')+' route-'+route+(['ax-platform','platforms'].includes(route)&&!P.has('service')?' ax-home':'');document.body.innerHTML=head()+`<main id="main" tabindex="-1">${({index:home,business,research:archive,news:archive,platforms:window.axPage,'ax-platform':window.axPage,equipment,company:companyPage,contact}[route]||home)()}</main>`+foot();applyPageMetadata();
+document.documentElement.lang=L;document.body.className='design-2026 '+(route==='index'?'home-page':'inner-page')+' route-'+route+(['ax-platform','platforms'].includes(route)&&!P.has('service')?' ax-home':'');document.body.innerHTML=head()+`<main id="main" tabindex="-1">${({index:home,business,research:archive,news:archive,'source-archive':window.GeoSRSourceArchivePage,platforms:window.axPage,'ax-platform':window.axPage,equipment,company:companyPage,contact}[route]||home)()}</main>`+foot();applyPageMetadata();
 document.querySelector('#language').addEventListener('click',()=>{P.set('lang',en?'ko':'en');location.href=location.pathname+'?'+P+location.hash});
 const menuButton=document.querySelector('#menu'),primaryNavigation=document.querySelector('#primary-navigation');let priorBodyOverflow='';
 function closeNavigation(restoreFocus=false){if(menuButton.getAttribute('aria-expanded')!=='true')return;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label',T('메뉴 열기','Open menu'));primaryNavigation.classList.remove('open');document.body.classList.remove('menu-open');document.body.style.overflow=priorBodyOverflow;if(restoreFocus)menuButton.focus({preventScroll:true})}
@@ -218,7 +219,7 @@ function companyPage(){
  const offices=[['군포 본사','Gunpo head office','경기도 군포시 엘에스로 172<br>한림휴먼타워 306호','306 Hanlim Human Tower<br>172 LS-ro, Gunpo-si, Gyeonggi-do'],['부산 사무소','Busan office','부산광역시 해운대구 세실로69번길 24 5층','5F, 24 Sesil-ro 69beon-gil<br>Haeundae-gu, Busan']];
  const fullLibrary=`<div class="credential-library-full" aria-labelledby="credential-library-heading"><div class="credential-library-full-heading"><div><p class="eyebrow">DOCUMENT LIBRARY</p><h2 id="credential-library-heading">${T('인증·면허·지식재산권','Credentials and intellectual property')}</h2></div><div class="credential-library-full-tools"><label for="credential-query">${T('자료 검색','Search documents')}</label><input id="credential-query" type="search" placeholder="${T('자료명을 입력하세요','Search by title')}"><p class="library-count" role="status" aria-live="polite">${T('자료를 불러오는 중','Loading records')}</p></div></div><nav class="credential-category-tabs" aria-label="${T('자료 분류','Document categories')}"><button type="button" data-credential-category="all" aria-pressed="true">${T('전체','All')}</button><button type="button" data-credential-category="cert" aria-pressed="false">${T('인증','Certification')}</button><button type="button" data-credential-category="license" aria-pressed="false">${T('면허·등록','Registration')}</button><button type="button" data-credential-category="patent" aria-pressed="false">${T('지식재산권','Intellectual property')}</button></nav><div class="credential-grid" aria-live="polite"></div></div>`;
  const companyFieldLinks=[U('business',{axis:0}),U('business',{axis:1}),U('business',{id:61}),U('business',{axis:2}),U('business',{axis:4}),U('business',{axis:4})];
- const fieldMedia=[homeFields[0],homeFields[2],homeFields[3],homeFields[1],homeFields[3],{image:'platform-geodap.png',altK:'GeoDAP 서비스 화면',altE:'GeoDAP service interface',noteK:'GeoDAP 실제 화면 캡처',noteE:'ACTUAL GEODAP INTERFACE'}];
+ const fieldMedia=[homeFields[0],homeFields[2],homeFields[3],homeFields[1],homeFields[3],{image:'geodap-workspace-public-preview-20260928.jpg',altK:'GeoDAP 공개 소개 페이지의 지도 작업화면 미리보기',altE:'GeoDAP public page workspace preview',noteK:'공개 소개 페이지의 작업화면 미리보기 · 실시간 서비스 화면 아님',noteE:'PUBLIC WORKSPACE PREVIEW · NOT LIVE SERVICE'}];
  const fieldLabels=[
   [['조사 영역','COVERAGE'],['관측 항목','OBSERVATIONS'],['확보 자료','OUTPUT']],
   [['모델 범위','COVERAGE'],['연계 방법','METHOD'],['연구 목적','PURPOSE']],

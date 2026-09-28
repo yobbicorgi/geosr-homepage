@@ -115,6 +115,13 @@
   surface.addEventListener('pointerdown',event=>{if(compact.matches&&event.pointerType==='touch')touchStart={x:event.clientX,y:event.clientY}});
   surface.addEventListener('pointercancel',()=>{touchStart=null});
   surface.addEventListener('pointerup',event=>{if(!touchStart)return;const dx=event.clientX-touchStart.x,dy=event.clientY-touchStart.y;touchStart=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)select(active+(dx<0?1:-1))});
+  let lastDeckWheel=0;
+  deck.addEventListener('wheel',event=>{
+   if(event.ctrlKey||Math.abs(event.deltaX)+Math.abs(event.deltaY)<12||event.timeStamp-lastDeckWheel<450)return;
+   lastDeckWheel=event.timeStamp;
+   const delta=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
+   select(active+(delta>0?1:-1));
+  },{passive:true});
   select(0);
  }
 
@@ -155,6 +162,14 @@
    const rect=card.getBoundingClientRect(),edge=rail.getBoundingClientRect();
    rail.scrollBy({left:rect.left+rect.width/2-edge.left-edge.width/2,behavior:reduced.matches?'instant':'smooth'});schedule();
   }));
+  let lastPaperWheel=0;
+  rail.addEventListener('wheel',event=>{
+   if(event.ctrlKey||Math.abs(event.deltaX)+Math.abs(event.deltaY)<12||event.timeStamp-lastPaperWheel<420)return;
+   lastPaperWheel=event.timeStamp;
+   const delta=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
+   const button=document.querySelector(`[data-paper-step="${delta>0?1:-1}"]`);
+   if(button&&!button.disabled)button.click();
+  },{passive:true});
   addEventListener('resize',schedule,{passive:true});
   reduced.addEventListener('change',schedule);
   new MutationObserver(()=>{activePaper=0;rail.scrollLeft=0;schedule()}).observe(rail,{childList:true});

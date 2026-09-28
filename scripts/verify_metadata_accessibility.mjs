@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const origin = new URL(process.env.REDESIGN_PREVIEW_URL || "http://127.0.0.1:18102/");
-const routes = ["index", "business", "research", "ax-platform", "company", "news", "equipment", "contact"];
+const routes = ["index", "business", "research", "ax-platform", "company", "news", "equipment", "contact", "source-archive"];
 const failures = [];
 
 function fail(message) {
@@ -25,6 +25,8 @@ const siteSource = fs.readFileSync(sitePath, "utf8");
 const configMatch = siteSource.match(/const metadataConfig=(\{[\s\S]*?\n\});/);
 assert(configMatch, "site.js must expose the shared JSON metadata map");
 const metadataConfig = JSON.parse(configMatch[1]);
+assert(siteSource.includes('document.title="GeoSR"'), "Runtime browser title must remain GeoSR");
+assert(fs.statSync(path.join(dist, "assets", "favicon.png")).size > 1000, "Official logo favicon must exist");
 
 for (const route of routes) {
   const config = metadataConfig[route];
@@ -38,15 +40,16 @@ for (const route of routes) {
   const html = fs.readFileSync(htmlPath, "utf8");
   const title = html.match(/<title>([^<]*)<\/title>/)?.[1] ?? null;
   const description = readMeta(html, "name", "description");
-  assert.equal(title, config.title[0] + " | GeoSR", route + " static KO title must match its route");
+  assert.equal(title, "GeoSR", route + " browser tab title must be brand only");
   assert.equal(description, config.description[0], route + " static KO description must match its route");
   assert.equal(readMeta(html, "property", "og:type"), "website", route + " OG type");
   assert.equal(readMeta(html, "property", "og:site_name"), "GeoSR", route + " OG site name");
-  assert.equal(readMeta(html, "property", "og:title"), title, route + " OG title");
+  assert.equal(readMeta(html, "property", "og:title"), config.title[0] + " | GeoSR", route + " OG title");
   assert.equal(readMeta(html, "property", "og:description"), description, route + " OG description");
   assert.equal(readMeta(html, "property", "og:locale"), "ko_KR", route + " default OG locale");
   assert.equal(readMeta(html, "name", "twitter:card"), "summary", route + " Twitter card type");
-  assert.equal(readMeta(html, "name", "twitter:title"), title, route + " Twitter title");
+  assert.equal(readMeta(html, "name", "twitter:title"), config.title[0] + " | GeoSR", route + " Twitter title");
+  assert.match(html, /<link rel="icon" type="image\/png" href="assets\/favicon\.png\?v=20260928-r1">/, route + " official logo icon");
   assert.equal(readMeta(html, "name", "twitter:description"), description, route + " Twitter description");
   assert.match(html, /<html lang="ko">/, route + " static language default");
   assert.match(html, /site\.js\?v=\d{8}-r\d+/, route + " current metadata script");
@@ -88,8 +91,8 @@ if (!interactions.includes("tab.setAttribute('aria-selected',i===index)")) fail(
 if (!interactions.includes("const selected=tab===button;tab.setAttribute('aria-selected',String(selected))")) fail("home credential tab selected state missing");
 if (!interactions.includes("categoryTabs[next].focus();activateCategory(categoryTabs[next])")) fail("home credential keyboard tab navigation missing");
 if (!/b\.setAttribute\('aria-pressed',(?:String\()?b===button\)?\)/.test(interactions)) fail("company credential filter button state missing");
-const axSource = fs.readFileSync(path.join(dist, "ax-explorer.js"), "utf8");
-if (!axSource.includes("prefers-reduced-motion: reduce") || !axSource.includes('reduceQuery.matches||!animate')) fail("Active AX explorer reduced-motion branch missing");
+const axSource = fs.readFileSync(path.join(dist, "ax-source-gallery.js"), "utf8");
+if (!axSource.includes("prefers-reduced-motion: reduce") || !axSource.includes('if(reduced.matches)')) fail("Active AX gallery reduced-motion branch missing");
 
 const indexHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8");
 const siteScript = indexHtml.match(/<script[^>]+src="([^"]*site\.js\?[^"]+)"/)?.[1] ?? null;
@@ -102,7 +105,7 @@ if (failures.length) {
   for (const item of failures) console.error(" - " + item);
   process.exitCode = 1;
 } else {
-  console.log("PASS 16 KO/EN route responses; 8 static metadata heads; shared KO/EN metadata map and accessibility contracts.");
+  console.log(`PASS ${routes.length * 2} KO/EN route responses; ${routes.length} static metadata heads; shared KO/EN metadata map and accessibility contracts.`);
   console.log("Canonical/og:url are generated from the official geosr.com host at runtime; social images remain omitted until crop and rights are verified.");
   console.log("Preview origin: " + origin.origin);
 }

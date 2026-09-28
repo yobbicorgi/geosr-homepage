@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T02:19:57.787Z",
+  "generatedAt": "2026-09-28T03:43:36.550Z",
   "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
-  "count": 97,
+  "count": 99,
   "runtimeRevision": "higgsfield-transition-20260928",
   "runtimeManifestHashEncoding": "lf-normalized-utf8",
   "runtimeManifestSha256": "c9b1f42adcf5e27649c952fa83f62320fd5bd84d9b655e15933088fda3504c5f",
@@ -28,7 +28,6 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/design-directions.css",
         "dist/experience.css",
         "dist/media-review.html"
       ],
@@ -50,9 +49,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -110,9 +107,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/ax-embedded-gallery.js"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -170,7 +165,6 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/ax-embedded-gallery.js",
         "dist/home.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
@@ -328,9 +322,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/ax-explorer.js"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -349,9 +341,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -693,10 +683,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/design-directions.html",
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -715,9 +702,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -736,10 +721,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/design-directions.html",
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -758,9 +740,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -779,10 +759,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/design-directions.html",
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -801,9 +778,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -822,9 +797,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -911,6 +884,37 @@
         "CF05"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/favicon.png",
+      "bytes": 8835,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2bafe24171889a24fa574ef0f1324342f61c7b2a840f0f1232f2f1ef9a86edb9",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/ax-platform.html",
+        "dist/business.html",
+        "dist/company.html",
+        "dist/contact.html",
+        "dist/equipment.html",
+        "dist/index.html",
+        "dist/media-review.html",
+        "dist/news.html",
+        "dist/platforms.html",
+        "dist/research.html",
+        "dist/source-archive.html"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
@@ -1440,10 +1444,10 @@
       "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
     },
     {
-      "path": "dist/assets/hero-coastal-estuary-concept-20260928.webp",
-      "bytes": 160696,
+      "path": "dist/assets/geodap-workspace-public-preview-20260928.jpg",
+      "bytes": 87326,
       "hashEncoding": "raw-bytes",
-      "sha256": "744e116197ca4fa8f500c82a8c79dce46bfaeb66d1b94645873aa89dedb70024",
+      "sha256": "5111279c6aa98289bb6966bfea1571008a5773137aacabe53a1c621d3d1ca822",
       "classification": "source-or-concept-unverified",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -1454,10 +1458,31 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF08"
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/hero-coastal-estuary-concept-20260928.webp",
+      "bytes": 160696,
+      "hashEncoding": "raw-bytes",
+      "sha256": "744e116197ca4fa8f500c82a8c79dce46bfaeb66d1b94645873aa89dedb70024",
+      "classification": "concept-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/home.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "CF01"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "issue": "홈 화면 정지 콘셉트 / 실제 지역·GeoSR 사업지 아님 / 영상 프레임 아님",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
@@ -1471,7 +1496,6 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [
         "dist/home.js",
-        "dist/redesign-preview.html",
         "dist/site.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
@@ -1492,10 +1516,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/design-directions.html",
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -1533,11 +1554,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/design-directions.html",
-        "dist/home.js",
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -1595,9 +1612,7 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/ax-v2.js",
-        "dist/home.js",
-        "dist/redesign-preview.html"
+        "dist/ax-v2.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
@@ -1716,9 +1731,7 @@
       "runtimeSlots": [],
       "textualReferenceFiles": [
         "dist/art-direction.js",
-        "dist/ax-v2.js",
-        "dist/home.js",
-        "dist/redesign-preview.html"
+        "dist/ax-v2.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
@@ -1834,9 +1847,7 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/art-direction.js",
-        "dist/design-directions.html",
-        "dist/redesign-preview.html"
+        "dist/art-direction.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
@@ -1951,9 +1962,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/redesign-preview.html"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [

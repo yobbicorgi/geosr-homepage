@@ -81,13 +81,17 @@ const css = fs.readFileSync(path.join(dist, "design.css"), "utf8");
 if (!css.includes(":focus-visible")) fail("shared focus-visible rule missing");
 if (!css.includes("@media (prefers-reduced-motion: reduce)")) fail("shared reduced-motion fallback missing");
 const homeJs = fs.readFileSync(path.join(dist, "home.js"), "utf8");
+for (const marker of ['id="expertise"', 'id="projects"', 'id="platforms"', 'id="records"', 'id="news"', 'class="g-field-sequence"', 'class="g-project-list"', 'class="g-platform-screen"']) {
+  if (!homeJs.includes(marker)) fail("home composition missing: " + marker);
+}
+if (homeJs.includes('data-case-deck') || homeJs.includes('data-home-field')) fail("home still hides core sections inside legacy decks or tabs");
+if (!homeJs.includes('assets/ax-embedded/satellite.webp') || !homeJs.includes('assets/geodap-workspace-public-preview-20260928.jpg')) fail("independent platform previews missing");
 for (const marker of ['role="tablist"', 'role="tab"', 'aria-selected=', 'aria-controls=']) {
-  if (!homeJs.includes(marker)) fail("home AX tab semantics missing: " + marker);
+  if (!homeJs.includes(marker)) fail("credential category tab semantics missing: " + marker);
 }
 if (!homeJs.includes('id="credential-category-cert" role="tab" aria-controls="credential-stage"')) fail("home credential tabs need stable IDs and panel controls");
 if (!homeJs.includes('id="credential-stage" role="tabpanel" aria-labelledby="credential-category-cert" tabindex="0"')) fail("home credential panel needs a labelled tabpanel");
 const interactions = fs.readFileSync(path.join(dist, "interactions.js"), "utf8");
-if (!interactions.includes("tab.setAttribute('aria-selected',i===index)")) fail("home expertise roving tab state missing");
 if (!interactions.includes("const selected=tab===button;tab.setAttribute('aria-selected',String(selected))")) fail("home credential tab selected state missing");
 if (!interactions.includes("categoryTabs[next].focus();activateCategory(categoryTabs[next])")) fail("home credential keyboard tab navigation missing");
 if (!/b\.setAttribute\('aria-pressed',(?:String\()?b===button\)?\)/.test(interactions)) fail("company credential filter button state missing");
@@ -95,6 +99,8 @@ const axSource = fs.readFileSync(path.join(dist, "ax-source-gallery.js"), "utf8"
 if (!axSource.includes("prefers-reduced-motion: reduce") || !axSource.includes('if(reduced.matches)')) fail("Active AX gallery reduced-motion branch missing");
 
 const indexHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8");
+if (!indexHtml.includes('home.css?') || !indexHtml.includes('home-motion.js?')) fail("index route must load the rebuilt home layout and motion");
+if (/home-refinement|redesign-preview|design-directions|motion-lab|ax-explorer/.test(indexHtml)) fail("index route still loads a retired home layer");
 const siteScript = indexHtml.match(/<script[^>]+src="([^"]*site\.js\?[^"]+)"/)?.[1] ?? null;
 assert(siteScript, "index route must load site.js");
 const scriptResponse = await fetch(new URL(siteScript, origin));

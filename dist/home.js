@@ -1,50 +1,4 @@
-/* GeoSR editorial homepage — concept imagery is replaced through documented media slots */
-const expertiseScenes = [
-  {k:'현장과 연안에서 자료를 모읍니다',e:'Collect field and coastal observations',stage:'COLLECT',stageK:'관측 수집',leadK:'필요한 관측 자료를 모읍니다',leadE:'Gather observations',bodyK:'육상·수로와 연안에서 필요한 환경 자료를 조사하고 관측합니다.',bodyE:'Survey and observe environmental conditions across land, waterways and coasts. Images with unverified locations remain visual references only.',image:'media-pending.svg',width:1672,height:941,altK:'영상 자료 준비 중',altE:'Media in preparation',mediaNoteK:'영상 자료 준비 중',mediaNoteE:'MEDIA IN PREPARATION',source:true,tagsK:['현장 조사','환경 관측','연안 자료'],tagsE:['Field surveys','Environmental observations','Coastal data'],page:'business'},
-  {k:'자료를 분석해 의미를 읽습니다',e:'Interpret the evidence',stage:'INTERPRET',stageK:'분석 해석',leadK:'현장과 실험 자료를 함께 살핍니다',leadE:'Read field and laboratory evidence together',bodyK:'수질·퇴적물 분석과 생태 조사 자료를 함께 살펴 환경 상태를 읽습니다.',bodyE:'Water, sediment and ecological studies help describe environmental conditions. This generated image is not a GeoSR facility or an analytical result.',image:'analysis-lab-v1.webp',width:2048,height:1152,altK:'실험 장면을 표현한 생성형 콘셉트 이미지',altE:'Generated concept image representing a laboratory scene',mediaNoteK:'생성형 콘셉트 · 실제 시설·결과 아님',mediaNoteE:'GENERATED CONCEPT · NOT A REAL FACILITY OR RESULT',source:false,tagsK:['수질·퇴적물 분석','생태 조사','환경 평가'],tagsE:['Water and sediment analysis','Ecological surveys','Environmental assessment'],page:'business'},
-  {k:'수치모델로 환경을 계산합니다',e:'Model environmental conditions',stage:'MODEL',stageK:'수치모델',leadK:'환경의 흐름을 수치로 살핍니다',leadE:'Examine environmental processes with numerical models',bodyK:'관측 자료와 환경 조건을 바탕으로 수환경의 흐름과 변화를 계산합니다.',bodyE:'Numerical models use observations and environmental conditions to examine aquatic processes. This generated image is not real terrain or a model output.',image:'media-pending.svg',width:1672,height:941,altK:'수치모델 분야 영상 준비 중',altE:'Numerical modelling film in preparation',mediaNoteK:'생성형 콘셉트 · 실제 모델 결과 아님',mediaNoteE:'GENERATED CONCEPT · NOT A MODEL OUTPUT',source:false,tagsK:['수치모델','하천·연안','환경 조건'],tagsE:['Numerical models','Rivers and coasts','Environmental conditions'],page:'business',params:{id:46}},
-  {k:'예측을 업무 판단에 잇습니다',e:'Use forecasts to inform decisions',stage:'FORECAST',stageK:'예측 판단',leadK:'조건별 변화를 비교해 판단을 돕습니다',leadE:'Compare possible change to support decisions',bodyK:'관측과 모델 정보를 업무 목적과 현장 여건에 비춰 검토합니다.',bodyE:'Review observation and model information in the context of a task and its conditions. This scene does not show numerical or real forecast results.',image:null,width:0,height:0,altK:'실제 데이터가 포함되지 않은 예측·판단 개념 타이포그래피',altE:'Typographic concept for forecasting and decisions, without real data',mediaNoteK:'개념 타이포그래피 · 실제 예측값 아님',mediaNoteE:'TYPOGRAPHIC CONCEPT · NO FORECAST VALUES',mediaTitleK:'조건을 비교하고<br>판단을 준비합니다',mediaTitleE:'Compare conditions<br>Prepare a decision',source:false,tagsK:['변화 시나리오','예측 결과','업무 판단'],tagsE:['Change scenarios','Forecasts','Operational decisions'],page:'research'},
-  {k:'정보를 현장에 적용합니다',e:'Apply information in the field',stage:'APPLY',stageK:'현장 적용',leadK:'확인한 정보를 업무와 현장에 연결합니다',leadE:'Put reviewed information to work',bodyK:'분석과 예측 정보를 현장 여건과 사업 목적에 맞춰 업무에 적용합니다.',bodyE:'Use analysis and forecast information in relation to field conditions and project goals. Application details are described only when supported by source records.',image:null,width:0,height:0,altK:'실제 업무 결과를 주장하지 않는 현장 적용 개념 타이포그래피',altE:'Typographic concept for field application; it does not claim a project outcome',mediaNoteK:'업무 흐름 안내',mediaNoteE:'WORKFLOW GUIDE',mediaTitleK:'확인한 정보를<br>현장에 적용합니다',mediaTitleE:'Apply the information<br>in the field',source:false,tagsK:['업무 적용','연구 협력','기술 문의'],tagsE:['Practical use','Research partnerships','Technical enquiries'],page:'contact'}
-];
-
-function fieldMedia(d,i){return `<div class="field-typographic-frame ${i===3?'field-typographic-frame--forecast':''} ${i===4?'field-typographic-frame--apply':''}" role="img" aria-label="${E(T(d.altK,d.altE))}"><span>${i===3?'FORECAST / DECISION':i===4?'FIELD / APPLICATION':'FIELD / ANALYSIS'}</span><strong>${T(d.mediaTitleK||'관측 자료를<br>분석에 연결합니다',d.mediaTitleE||'Connect observations<br>to analysis')}</strong></div>`}
-function expertisePanel(i=0){const d=expertiseScenes[i];return `<div class="expertise-photo" data-production-slot="expertise-${i+1}">${d.image?`<img src="assets/${d.image}" alt="${E(T(d.altK,d.altE))}" width="${d.width}" height="${d.height}" loading="lazy">`:fieldMedia(d,i)}</div><span class="media-note">${T(d.mediaNoteK,d.mediaNoteE)}</span><div class="expertise-details"><span class="scene-index">${String(i+1).padStart(2,'0')} / ${String(expertiseScenes.length).padStart(2,'0')} · ${T(d.stageK,d.stage)}</span><h3>${T(d.leadK,d.leadE)}</h3><p>${T(d.bodyK,d.bodyE).replaceAll('\n','<br>')}</p><div class="expertise-tags">${(en?d.tagsE:d.tagsK).map(t=>`<span>${t}</span>`).join('')}</div>${A(U(d.page,d.params||{}),'관련 분야 보기','Explore related capabilities','plain-arrow')}</div>`}
-
-const researchStages=[
- {title:'관측',titleE:'Observation',description:'현장에서 데이터를 얻습니다',descriptionE:'Collect data in the field',technologies:['수심·지형','수질·생태','원격탐사'],technologiesE:['Bathymetry and terrain','Water quality and ecology','Remote sensing'],image:null,width:0,height:0,alt:'콘텐츠 준비 중',altE:'Content in preparation'},
- {title:'분석',titleE:'Analysis',description:'측정값에서 변화의 원인을 찾습니다',descriptionE:'Find the causes of change in measured data',technologies:['자료 품질관리','공간 분석','환경 평가'],technologiesE:['Data quality control','Spatial analysis','Environmental assessment'],image:'concepts/reviewed-20260922/cf10-chemistry-wide-v1.png',width:2560,height:1440,alt:'사람이 없는 실험대의 생성형 콘셉트 이미지. 실제 GeoSR 시설이나 분석 결과가 아닙니다.',altE:'Generated concept image of an unoccupied lab bench; not a GeoSR facility or analytical result.'},
- {title:'모델',titleE:'Model',description:'현실의 조건을 계산 가능한 모델로 옮깁니다',descriptionE:'Translate real-world conditions into a computable model',technologies:['수치모델','AI 분석','시나리오'],technologiesE:['Numerical models','AI analysis','Scenarios'],image:null,alt:'콘텐츠 준비 중',altE:'Content in preparation'},
- {title:'예측',titleE:'Forecast',description:'앞으로의 환경과 위험을 내다봅니다',descriptionE:'Anticipate future environmental conditions and risks',technologies:['해양 예측','재해 분석','위험도 평가'],technologiesE:['Ocean forecasting','Hazard analysis','Risk assessment'],image:null,width:0,height:0,alt:'콘텐츠 준비 중',altE:'Content in preparation'},
- {title:'적용',titleE:'Apply',description:'연구 결과를 현장의 판단에 씁니다',descriptionE:'Put research results to work in field decisions',technologies:['의사결정','운영 지원','정책 근거'],technologiesE:['Decision support','Operational support','Policy evidence'],image:null,alt:'콘텐츠 준비 중',altE:'Content in preparation'}
-];
-
-function researchMedia(stage,index,staticMode=false){
- const className=(staticMode?'flow-static-media':'research-flow-frame')+(index===1?' flow-media-analysis':'');
- if(!stage.image)return `<div class="${className} is-pending" role="img" aria-label="${T(stage.alt,stage.altE)}"><span>${T('콘텐츠 준비 중','CONTENT IN PREPARATION')}</span></div>`;
- return `<figure class="${className}" data-parallax-surface><img src="assets/${stage.image}" alt="${E(T(stage.alt,stage.altE))}" width="${stage.width}" height="${stage.height}" loading="${index===0?'eager':'lazy'}" decoding="async"></figure>`;
-}
-
-function researchCopy(stage,index,staticMode=false){
- const className=staticMode?'flow-static-copy':'research-flow-copy';
- return `<article class="${className} ${index===0&&!staticMode?'is-active':''}" data-flow-copy="${index}" ${!staticMode&&index?'aria-hidden="true" inert':''}><span class="flow-stage-number">0${index+1} / 05</span><h2>${T(stage.title,stage.titleE)}</h2><p>${T(stage.description,stage.descriptionE)}</p>${staticMode?`<ul class="flow-technology-list">${(en?stage.technologiesE:stage.technologies).map(name=>`<li>${T(name,name)}</li>`).join('')}</ul>`:''}</article>`;
-}
-
-function researchTechnologies(stage,index,staticMode=false){
- const className=staticMode?'flow-static-technologies':'research-flow-technologies';
- return `<ul class="${className}" data-flow-technologies="${index}" ${!staticMode&&index?'aria-hidden="true" inert':''}>${(en?stage.technologiesE:stage.technologies).map(name=>`<li>${T(name,name)}</li>`).join('')}</ul>`;
-}
-
-
-function axFilmReel(){
- const scenes=[
-  {id:'detect',name:'Detect',ko:'탐지',eyebrowK:'위성·공간 정보',eyebrowE:'SATELLITE · SPATIAL INTELLIGENCE',titleK:'변화를 먼저 찾습니다',titleE:'Find change before it spreads',summaryK:'위성 영상과 공간 정보를 함께 살펴 시설물의 위치와 분포를 파악합니다',summaryE:'A product view for reading imagery and spatial context together',platforms:'SATELLITE FACILITY DETECTION',poster:null,tagsK:['자료 통합','시설물 탐지','분포 확인'],tagsE:['Integrated data','Facility detection','Distribution review']},
-  {id:'predict',name:'Predict',ko:'예측',eyebrowK:'시나리오·수치 해석',eyebrowE:'SCENARIO · NUMERICAL ANALYSIS',titleK:'조건별 변화를 비교합니다',titleE:'Compare change across conditions',summaryK:'지형과 관측 자료를 바탕으로 침수·해양 재해 시나리오를 비교합니다',summaryE:'A product view for comparing coastal inundation and marine-hazard scenarios',platforms:'FLOOD 3D · STORM SURGE · EXTREME SEA LEVEL',poster:'assets/platforms/flood3d-poster.webp',tagsK:['3차원 침수','해일 시나리오','해수면 높이'],tagsE:['3D flood','Surge scenarios','Sea level']},
-  {id:'monitor',name:'Monitor',ko:'모니터링',eyebrowK:'관측망·환경 변화',eyebrowE:'OBSERVATION NETWORK · ENVIRONMENT',titleK:'상태와 흐름을 이어 봅니다',titleE:'Follow conditions as they evolve',summaryK:'관측 지점과 해역의 환경 정보를 함께 살펴 변화를 확인합니다',summaryE:'A product view that connects stations and marine environmental context',platforms:'OCEAN BUOY · OCEAN ENVIRONMENT · RIP CURRENT',poster:'assets/platforms/buoy-poster.webp',tagsK:['해양부이','환경 정보','이안류'],tagsE:['Ocean buoy','Environmental variables','Rip current']}
- ];
- const current=scenes[0], context=s=>`<div class="ax-reel-context" data-ax-reel-context><span data-ax-context="chapter">01 / 03</span><small data-ax-context="eyebrow">${T(s.eyebrowK,s.eyebrowE)}</small><strong data-ax-context="title">${T(s.titleK,s.titleE)}</strong><p data-ax-context="summary">${T(s.summaryK,s.summaryE)}</p><div class="ax-reel-tags" data-ax-context="tags">${(T(s.tagsK.join('|'),s.tagsE.join('|'))).split('|').map(tag=>`<i>${tag}</i>`).join('')}</div></div>`;
- return `<div class="ax-reel-wrap"><section class="ax-reel ax-reel--orchestrated" data-ax-active="detect"><div class="ax-reel-heading"><span>AX / CAPABILITY PREVIEWS</span><span>${T('대표 미리보기와 화면 준비 현황','PREVIEWS & SCREEN AVAILABILITY')}</span></div><div class="ax-reel-cockpit">${context(current)}<div class="ax-reel-media"><div class="ax-reel-viewport">${scenes.map((s,i)=>`<section class="ax-reel-panel ${s.poster?'ax-reel-panel--poster':'ax-reel-panel--pending'}" id="ax-panel-${s.id}" role="tabpanel" aria-labelledby="ax-tab-${s.id}" tabindex="0" data-preview-slot="ax-${s.id}" data-ax-chapter="0${i+1} / 03" data-ax-eyebrow="${E(T(s.eyebrowK,s.eyebrowE))}" data-ax-title="${E(T(s.titleK,s.titleE))}" data-ax-summary="${E(T(s.summaryK,s.summaryE))}" data-ax-tags="${E(T(s.tagsK.join('|'),s.tagsE.join('|')))}" ${i?'hidden inert':''}>${s.poster?`<img class="ax-reel-poster" src="${s.poster}" alt="" aria-hidden="true" width="1280" height="720">`:''}<div class="ax-reel-placeholder"><small>0${i+1} / ${T(s.poster?'대표 미리보기':'화면 준비 중',s.poster?'REPRESENTATIVE PREVIEW':'SCREEN IN PREPARATION')}</small><strong>${s.name}</strong><p>${s.poster?T(s.summaryK,s.summaryE):T('검증된 16:9 화면 캡처를 확보한 뒤 연결합니다.','A verified 16:9 screen capture will be connected when available.')}</p></div><div class="ax-reel-platforms">${s.platforms}</div><button class="ax-film-toggle" type="button" data-film-toggle="ax-${s.id}" aria-label="${T('영상 재생 또는 일시정지','Play or pause film')}" aria-pressed="false" hidden>Ⅱ</button></section>`).join('')}</div><div class="ax-reel-media-foot"><span>${T('예측·모니터링은 출처·버전·사용 권리를 확인 중인 대표 미리보기입니다. 탐지 화면은 검증된 16:9 캡처를 준비하고 있습니다.','Predict and Monitor are representative previews pending source, version and rights review. A verified Detect capture is in preparation.')}</span><span data-ax-context="chapter">01 / 03</span></div></div><nav class="ax-reel-sequence" role="tablist" aria-label="${T('AX 기능 미리보기','AX capability previews')}"><p>${T('세 가지 기능','THREE CAPABILITIES')}</p>${scenes.map((s,i)=>`<button type="button" id="ax-tab-${s.id}" role="tab" aria-controls="ax-panel-${s.id}" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-ax-scene="${i}"><span>0${i+1}</span><strong>${T(s.ko,s.name)}</strong><small>${s.name.toUpperCase()}</small><i aria-hidden="true"></i></button>`).join('')}</nav></div><footer class="ax-reel-footer"><span>${T('화면의 출처와 버전, 사용 권리를 확인 중입니다. 탐지 화면은 검증된 16:9 캡처를 확보한 뒤 공개합니다.','Interface source, version and usage rights are under review. Detect will be shown once a verified 16:9 capture is available.')}</span><span class="ax-reel-footer-status"><i></i>${T('대표 미리보기 2종 · 탐지 화면 준비 중','2 REPRESENTATIVE PREVIEWS · DETECT CAPTURE PENDING')}</span></footer></section></div>`;
-}
-
+/* Shared credentials, company field data, homepage and footer. */
 function credentialGallery(forCompany=false){return `<section class="credential-section credential-section--curated" id="credentials" aria-labelledby="credential-heading"><div class="section-kicker"><span>${forCompany?'CREDENTIALS':'04 / CREDENTIALS'}</span><span>RESEARCH THAT BUILDS</span></div><div class="credential-intro"><div><h2 id="credential-heading">${forCompany?T('인증·면허·지식재산권','Credentials'):T('인증·면허·지식재산권','Credentials')}</h2><p>${T('인증·면허와 지식재산권을 소개합니다','Certifications, registrations and intellectual property behind our work')}</p></div><button class="mobile-disclosure-button" type="button" data-credentials-toggle aria-expanded="false" aria-controls="credential-stage credential-category-tabs">${T('자료 살펴보기','Browse records')}<span aria-hidden="true">+</span></button><div id="credential-category-tabs" class="credential-category-tabs" role="tablist" aria-label="${T('자격 자료 분류','Credential categories')}"><button type="button" id="credential-category-cert" role="tab" aria-controls="credential-stage" aria-selected="true" tabindex="0" data-credential-category="cert"><span>01</span>${T('인증','Certification')}<small>02</small></button><button type="button" id="credential-category-license" role="tab" aria-controls="credential-stage" aria-selected="false" tabindex="-1" data-credential-category="license"><span>02</span>${T('면허·등록','Registration')}<small>02</small></button><button type="button" id="credential-category-patent" role="tab" aria-controls="credential-stage" aria-selected="false" tabindex="-1" data-credential-category="patent"><span>03</span>${T('지식재산권','Intellectual property')}<small>03</small></button></div></div><div class="credential-stage" id="credential-stage" role="tabpanel" aria-labelledby="credential-category-cert" tabindex="0"><div class="credential-stage-head"><span data-credential-stage-title>${T('인증','Certification')}</span><p>${T('대표 자료를 선택해 크게 볼 수 있습니다','Select a representative record for a closer view')}</p><div class="credential-stage-controls"><span data-credential-status aria-live="polite">02</span><button type="button" data-paper-step="-1" aria-label="${T('이전 문서','Previous document')}">‹</button><button type="button" data-paper-step="1" aria-label="${T('다음 문서','Next document')}">›</button></div></div><div class="credential-rail" tabindex="0" role="region" aria-label="${T('인증·면허·지식재산권 자료','Credential records')}" aria-describedby="credential-hint"><div class="credential-loading">${T('자료를 불러오는 중','Loading records')}</div></div></div><div class="credential-bottom"><p id="credential-hint">${T('분류를 선택하거나 문서를 눌러 확인하세요','Choose a category to transition between records · Select a document to enlarge')}</p><a href="${U('company')}#credential-library">${T('인증·면허·지식재산권 전체보기','Explore the document collection')}</a></div></section>${credentialDialog()}`}
 
 
@@ -64,37 +18,142 @@ const homeFields=[
  {id:'remote-sensing',labelK:'AI·원격탐사',labelE:'AI and remote sensing',titleK:'영상과 공간정보에서 변화를 찾습니다',titleE:'Process and analyse satellite and image data',bodyK:'위성 영상과 공간정보를 활용해 해양·환경 변화를 살펴봅니다',bodyE:'Use satellite imagery and spatial information to study marine and environmental change',image:'concepts/corporate-film/hero-earth-satellite-07s-v4.png',altK:'동아시아 지구 렌더링과 위성을 합성한 원격탐사 콘셉트 이미지',altE:'Remote-sensing concept combining an East Asia Earth render and an illustrative satellite',noteK:'원격탐사 콘셉트 · 실제 관측 장면 아님',noteE:'REMOTE-SENSING CONCEPT · NOT AN ACTUAL OBSERVATION',termsK:['위성 영상','영상 처리','공간 분석'],termsE:['Satellite imagery','Image processing','Spatial analysis'],axis:4}
 ];
 
-function home(){
- const realPosts=posts.filter(post=>!post[5]);
- const projectIds=['research-3059','business-1994','academic-3093'];
- const projects=projectIds.map(id=>realPosts.find(post=>post[0]===id)).filter(Boolean);
- const recentNews=realPosts.filter(post=>['notice','press','newsletter'].includes(post[1])).sort((a,b)=>b[2].localeCompare(a[2])).slice(0,3);
- const projectLink=post=>U('research',{id:post[0]});
- const typeName=post=>{const type=types.find(item=>item[0]===post[1]);return type?T(type[1],type[2]):''};
- const fieldPanels=homeFields.map((field,index)=>{
-  const slot=`expertise-${index+1}`;
-  const media=field.image
-   ?`<img src="assets/${E(field.image)}" alt="${E(T(field.altK,field.altE))}" width="${field.width||2560}" height="${field.height||1440}" loading="${index===0?'eager':'lazy'}" decoding="async">`
-   :`<div class="studio-field-slate" role="img" aria-label="${E(T(field.altK,field.altE))}"><span class="studio-field-slate-label">${index===2?'MODELLING / FORECAST':'AI / REMOTE SENSING'}</span><div class="studio-field-slate-terms">${(en?field.termsE:field.termsK).map((term,n)=>`<span><small>0${n+1}</small><strong>${E(term)}</strong></span>`).join('')}</div><small class="studio-field-ready">${T('분야 영상 준비 중','FIELD FILM IN PREPARATION')}</small></div>`;
-  return `<section class="studio-field-panel" id="home-field-panel-${field.id}" role="tabpanel" aria-labelledby="home-field-tab-${field.id}" data-home-panel="${field.id}" ${index?'hidden':''}><figure class="studio-field-media" data-production-slot="${slot}" data-film-slot="${slot}" data-film-loop="true">${media}${field.image?`<figcaption>${T(field.noteK,field.noteE)}</figcaption>`:''}</figure><div class="studio-field-copy"><h3>${E(T(field.titleK,field.titleE))}</h3><p>${E(T(field.bodyK,field.bodyE))}</p><ul>${(en?field.termsE:field.termsK).map(term=>`<li>${E(term)}</li>`).join('')}</ul>${A(U('business',{axis:field.axis}),'관련 기술 살펴보기','Explore related technologies','plain-arrow')}</div></section>`;
- }).join('');
- const caseHeadings=[['연안재해를<br>예측하는 연구','Forecasting<br>coastal hazards'],['해안의 변화를<br>꾸준히 기록합니다','Documenting<br>a changing coast'],['관측자료로<br>침식관리선을 연구합니다','Studying erosion<br>through observations']];
- const caseDeck=`<div class="research-deck" data-case-deck><div class="research-deck-stage">${projects.map((post,index)=>`<article class="research-case research-case--${index}" id="research-case-${index}" data-case-card="${index}" data-position="${index}" role="tabpanel" aria-labelledby="research-case-tab-${index}" aria-hidden="${index!==0}" ${index?'inert':''}><div class="research-case-visual" aria-hidden="true">${index===0?'<img src="assets/concepts/reviewed-20260922/cf12-wave-model-v1.png" alt="" loading="lazy">':`<span>${index===1?'COASTAL<br>SURVEY':'JMSE<br>2025'}</span>`}</div><div class="research-case-copy"><p class="eyebrow">0${index+1} / ${E(typeName(post))}</p><h3>${T(...caseHeadings[index])}</h3><p>${E(post[0]==='academic-3093'?T('장기 해빈 관측자료를 활용한 침식관리선 설정','Using long-term beach observations to study erosion management lines'):T(post[3],post[4]))}</p><a href="${projectLink(post)}">${T('자세히 보기','Read the story')} <span aria-hidden="true">↗</span></a></div><span class="research-case-foot">${index===0?T('수치모델 연구 콘셉트 · 실제 사업 결과 아님','MODELLING CONCEPT · NOT A PROJECT RESULT'):E(T(post[2]+' 홈페이지 게시','Posted '+post[2]))}</span></article>`).join('')}</div><div class="research-deck-tools"><div class="research-deck-tabs" role="tablist" aria-label="${T('연구 사례 선택','Select a research story')}">${projects.map((post,index)=>`<button id="research-case-tab-${index}" type="button" role="tab" data-case-tab="${index}" aria-controls="research-case-${index}" aria-selected="${index===0}" tabindex="${index===0?0:-1}"><span>0${index+1}</span>${E(typeName(post))}</button>`).join('')}</div><div class="research-deck-controls"><span data-case-status aria-live="polite">01 / 03</span><button type="button" data-case-step="-1" aria-label="${T('이전 연구 사례','Previous story')}">‹</button><button type="button" data-case-step="1" aria-label="${T('다음 연구 사례','Next story')}">›</button></div></div></div>`;
- return `
-<section class="landscape-hero" data-production-slot="geosr-hero" data-motion-lab-hero>
- <div class="landscape-film" data-production-slot="geosr-hero" data-film-slot="geosr-hero" data-higgsfield-slot="geosr-hero" data-parallax-surface aria-label="${T('광역 연안·하구 콘셉트 배경','Wide coastal estuary concept background')}"><img class="landscape-image" src="assets/hero-coastal-estuary-concept-20260928.webp" data-media-poster="assets/hero-coastal-estuary-concept-20260928.webp" width="1672" height="941" alt="${E(T('하구와 외해, 섬, 도시를 한눈에 담은 생성형 연안 콘셉트 이미지 · 실제 지역 아님','Generated coastal concept showing an estuary, open sea, islands and a city edge; not an actual location'))}" fetchpriority="high"></div>
- <div class="landscape-vignette" aria-hidden="true"></div>
- <div class="landscape-title"><p class="landscape-label">GEOSYSTEM RESEARCH</p><h1>Geo Data<br>Intelligence</h1><p class="landscape-message">${T('현장에서 관측하고 데이터로 해양·환경의 변화를 분석합니다','We observe the Earth and forecast change')}</p></div>
- <div class="home-progress" aria-label="${T('관측, 분석, 모델, 예측, 적용','Observation, analysis, model, forecast, apply')}"><span class="home-progress-line" aria-hidden="true"></span><ol>${researchStages.map(stage=>`<li>${T(stage.title,stage.titleE)}</li>`).join('')}</ol></div>
- <p class="landscape-film-status" role="status">${T('연안 콘셉트 · 실제 지역 아님 / 영상 준비 중','COASTAL CONCEPT · NOT A REAL LOCATION / FILM IN PREPARATION')}</p>
- <button type="button" class="landscape-motion" data-film-toggle="geosr-hero" aria-label="${T('영상 일시정지','Pause film')}" aria-pressed="false" hidden>Ⅱ</button>
-</section>
-<nav class="mobile-jump-nav" aria-label="${T('빠른 메뉴','Quick navigation')}">${[['business','기술','Expertise'],['ax-platform','플랫폼','Platforms'],['company','회사 소개','About'],['contact','문의','Contact']].map(x=>A(U(x[0]),x[1],x[2])).join('')}</nav>
-<section class="studio-expertise" id="expertise"><div class="studio-section-heading"><p class="eyebrow">01 / GEOSR EXPERTISE</p><div><h2>${T('현장에서 확인하고<br>데이터로 해석합니다','Observation <br>to prediction')}</h2><p>${T('해양·하천 현장 조사부터 실험 분석, 수치모델과 AI까지<br>문제에 맞는 방법을 연결합니다','We collect field data from marine and river environments and study them through analysis, modelling and AI')}</p></div>${A(U('business'),'기술과 솔루션','Explore our technologies','plain-arrow')}</div><div class="studio-field-stage"><div class="studio-field-tabs" role="tablist" aria-orientation="horizontal" aria-label="${T('전문 분야 선택','Select an area of expertise')}">${homeFields.map((field,index)=>`<button type="button" id="home-field-tab-${field.id}" role="tab" aria-controls="home-field-panel-${field.id}" aria-selected="${index===0}" tabindex="${index===0?0:-1}" data-home-field="${field.id}"><span>0${index+1}</span><strong>${T(field.labelK,field.labelE)}</strong><small>${['OBSERVE','ANALYSE','PREDICT','DISCOVER'][index]}</small></button>`).join('')}</div><div class="studio-field-panels">${fieldPanels}</div></div></section>
-<section class="studio-projects" id="projects"><div class="studio-section-heading"><p class="eyebrow">02 / RESEARCH & PROJECTS</p><div><h2>${T('주요 연구와 수행 사례','Selected research and projects')}</h2></div>${A(U('research'),'연구와 성과 보기','Browse research and results','plain-arrow')}</div>${caseDeck}</section>
-<section class="studio-platforms" id="platforms" data-product-showcase><div class="studio-section-heading"><p class="eyebrow">03 / DIGITAL PLATFORMS</p><div><h2>${T('분야별 데이터 플랫폼','Platforms for<br>environmental data')}</h2><p>${T('AX Platform의 분야별 분석 화면과<br>GeoDAP의 지구 환경 자료 탐색 기능을 소개합니다','AX Platform for specialist analysis<br>GeoDAP for exploring Earth data')}</p></div></div><div class="product-switch" role="tablist" aria-label="${T('플랫폼 소개 선택','Choose a platform')}"><button id="product-tab-ax" type="button" role="tab" data-product-tab="ax" aria-selected="true" aria-controls="product-panel-ax" tabindex="0"><span>AX Platform</span><small>${T('전문 분야별 분석','Specialist applications')}</small></button><button id="product-tab-dap" type="button" role="tab" data-product-tab="dap" aria-selected="false" aria-controls="product-panel-dap" tabindex="-1"><span>GeoDAP</span><small>${T('지구 환경 데이터 탐색','Explore Earth data')}</small></button></div><div class="studio-platform-grid"><article class="studio-platform-panel studio-platform-panel--ax" id="product-panel-ax" role="tabpanel" aria-labelledby="product-tab-ax" data-product-panel="ax"><div class="studio-platform-copy"><p class="eyebrow">APPLIED INTELLIGENCE</p><h3>AX<span>Platform</span></h3><p>${T('해양·환경 분야의 탐지와 예측을 지원합니다','Supports detection and forecasting for marine and environmental work')}</p><div class="product-capabilities"><div><span>01</span><strong>${T('탐지','Detect')}</strong><small>${T('위성영상·시설물','Satellite imagery and facilities')}</small></div><div><span>02</span><strong>${T('예측','Predict')}</strong><small>${T('해양·연안 재해','Marine and coastal hazards')}</small></div><div><span>03</span><strong>${T('모니터링','Monitor')}</strong><small>${T('해양 관측·환경','Marine observation and environment')}</small></div></div>${A(U('ax-platform'),'AX Platform 소개','Explore AX Platform','plain-arrow')}</div><figure class="studio-platform-visual studio-platform-visual--ax"><figcaption>AX PLATFORM / CAPABILITIES</figcaption><img src="assets/ax-embedded/satellite.webp" alt="${T('위성 시설물 탐지 플랫폼의 정적 화면 캡처','Static capture of the satellite facility detection platform')}" loading="lazy"><strong>Detect<br>Predict<br>Monitor</strong><small>${T('직원 제작 AX 화면 · 실시간 데이터 아님','TEAM AX SCREEN · NOT LIVE DATA')}</small></figure></article><article class="studio-platform-panel studio-platform-panel--dap" id="product-panel-dap" role="tabpanel" aria-labelledby="product-tab-dap" data-product-panel="dap" hidden><div class="studio-platform-copy"><p class="eyebrow">EARTH DATA PLATFORM</p><h3>GeoDAP</h3><p>Earth Data Intelligence</p><p>${T('흩어진 지구 환경 자료를 하나의 지도에서 탐색하고 분석합니다','Explore observation, model and satellite data in one map-based workspace')}</p><div class="product-capabilities"><div><span>01</span><strong>${T('자료 탐색','Discover data')}</strong><small>${T('관측·모델·위성·AI','Observation · model · satellite · AI')}</small></div><div><span>02</span><strong>${T('지도 기반 분석','Map-based exploration')}</strong><small>${T('다양한 자료를 같은 공간에서','Explore multiple sources in spatial context')}</small></div><div><span>03</span><strong>${T('연구 환경과 연결','Connect to your workflow')}</strong><small>OpenAPI · NetCDF · CSV</small></div></div><a class="plain-arrow" href="https://www.geo-dap.com/" target="_blank" rel="noopener">${T('GeoDAP 서비스 열기','Open GeoDAP')} <span aria-hidden="true">↗</span></a></div><a class="studio-platform-visual studio-platform-visual--dap" href="https://www.geo-dap.com/" target="_blank" rel="noopener" aria-label="${T('GeoDAP 서비스 열기','Open GeoDAP')}" ><img src="assets/geodap-workspace-public-preview-20260928.jpg" alt="${T('GeoDAP 공개 소개 페이지의 지도 작업화면 미리보기','GeoDAP public page workspace preview')}" loading="lazy" decoding="async"><span class="studio-platform-caption">${T('공개 소개 페이지의 작업화면 미리보기 · 실시간 서비스 화면 아님','PUBLIC WORKSPACE PREVIEW · NOT LIVE SERVICE')}</span></a></article></div></section>
-${credentialGallery(false)}
-<section class="studio-news" id="news"><div class="studio-section-heading"><p class="eyebrow">05 / NEWSROOM</p><div><h2>${T('GeoSR 소식','GeoSR News')}</h2></div>${A(U('news'),'GeoSR 소식 전체 보기','Browse all GeoSR news','plain-arrow')}</div><div class="studio-news-list">${recentNews.map(post=>`<a class="studio-news-record" href="${U('news',{id:post[0]})}"><span class="studio-news-type">${E(typeName(post))}</span><h3>${E(T(post[3],post[4]))}<small>${post[5]?T('목업','MOCKUP'):T('원문 기반','SOURCE RECORD')}</small></h3><time datetime="${E(post[2])}">${E(post[2])}</time><span class="studio-news-arrow" aria-hidden="true">→</span></a>`).join('')}</div></section>`;
+/* Home composition: each section remains readable without animation or tab state. */
+function home() {
+  const realPosts = posts.filter(post => !post[5]);
+  const projectIds = ['research-3059', 'business-1994', 'academic-3093'];
+  const projects = projectIds.map(id => realPosts.find(post => post[0] === id)).filter(Boolean);
+  const news = realPosts
+    .filter(post => ['notice', 'press', 'newsletter'].includes(post[1]))
+    .sort((a, b) => b[2].localeCompare(a[2]))
+    .slice(0, 3);
+  const postType = post => {
+    const type = types.find(item => item[0] === post[1]);
+    return type ? T(type[1], type[2]) : '';
+  };
+  const sectionHead = (number, label, titleKo, titleEn, introKo, introEn) => `
+    <div class="g-section-head">
+      <div class="g-section-index"><span>${number}</span><span>${label}</span></div>
+      <h2 id="g-${({ '01':'expertise', '02':'projects', '03':'platforms', '06':'news' })[number]}-title">${T(titleKo, titleEn)}</h2>
+      <p>${T(introKo, introEn)}</p>
+    </div>`;
+  const fieldScenes = homeFields.map((field, index) => `
+    <article class="g-field g-field--${field.id}" id="field-${field.id}">
+      <figure class="g-field-media" data-production-slot="expertise-${index + 1}" data-film-slot="expertise-${index + 1}">
+        <img src="assets/${E(field.image)}" width="${field.width || 2560}" height="${field.height || 1440}"
+          alt="${E(T(field.altK, field.altE))}" loading="lazy" decoding="async">
+        <figcaption>${T(field.noteK, field.noteE)}</figcaption>
+      </figure>
+      <div class="g-field-copy">
+        <span class="g-field-number">0${index + 1} / 04 <i></i> ${T(field.labelK, field.labelE)}</span>
+        <h3>${E(T(field.titleK, field.titleE))}</h3>
+        <p>${E(T(field.bodyK, field.bodyE))}</p>
+        <ul>${(en ? field.termsE : field.termsK).map(term => `<li>${E(term)}</li>`).join('')}</ul>
+        ${A(U('business', {axis: field.axis}), '관련 기술 보기', 'Explore this capability', 'g-text-link')}
+      </div>
+    </article>`).join('');
+  const projectNames = [
+    ['연안재해 예측', 'Coastal hazard forecasting'],
+    ['해안 변화 조사', 'Coastal change surveys'],
+    ['침식관리선 연구', 'Erosion management research']
+  ];
+  const projectList = projects.map((post, index) => `
+    <a class="g-project-row" href="${U('research', {id: post[0]})}">
+      <span class="g-row-index">0${index + 1}</span>
+      <span class="g-row-body"><small>${E(postType(post))} / ${E(post[2])}</small>
+      <strong>${E(T(projectNames[index][0], projectNames[index][1]))}</strong>
+      <em>${E(T(post[3], post[4]))}</em></span>
+      <span class="g-row-arrow" aria-hidden="true">↗</span>
+    </a>`).join('');
+  const newsList = news.map(post => `
+    <a class="g-news-row" href="${U('news', {id: post[0]})}">
+      <span>${E(postType(post))}</span><strong>${E(T(post[3], post[4]))}</strong>
+      <time datetime="${E(post[2])}">${E(post[2])}</time><span aria-hidden="true">↗</span>
+    </a>`).join('');
+
+  return `
+    <section class="g-hero" id="top" aria-labelledby="g-hero-title" data-production-slot="geosr-hero">
+      <div class="g-hero-film" data-film-slot="geosr-hero" data-higgsfield-slot="geosr-hero">
+        <img src="assets/hero-coastal-estuary-concept-20260928.webp"
+          data-media-poster="assets/hero-coastal-estuary-concept-20260928.webp"
+          width="1672" height="941" fetchpriority="high"
+          alt="${E(T('하구와 외해, 섬, 도시를 넓게 보여 주는 생성형 콘셉트 이미지. 실제 지역은 아닙니다', 'Generated wide estuary, open sea, island and city concept; not an actual location'))}">
+      </div>
+      <div class="g-hero-shade" aria-hidden="true"></div>
+      <div class="g-hero-copy">
+        <span class="g-overline">GEOSYSTEM RESEARCH <i></i> SEA · LAND · DATA</span>
+        <h1 id="g-hero-title">Geo Data<br>Intelligence<span class="g-hero-period">.</span></h1>
+        <p>${T('해양과 환경을 관측하고, 변화의 근거를 찾습니다', 'Observing marine environments. Making sense of change.')}</p>
+        <div class="g-hero-actions">
+          <a href="#expertise">${T('우리의 기술 살펴보기', 'Explore our expertise')} <span aria-hidden="true">↓</span></a>
+          ${A(U('company'), '회사 소개', 'About GeoSR')}
+        </div>
+      </div>
+      <div class="g-hero-bottom"><span>01 — 06</span><span>${T('연안 콘셉트 이미지 · 실제 지역 아님 · 메인 영상 준비 중', 'COASTAL CONCEPT · NOT AN ACTUAL LOCATION · FILM IN PREPARATION')}</span><a href="#expertise">SCROLL ↓</a></div>
+    </section>
+
+    <section class="g-intro" aria-label="${T('GeoSR의 연구 방식', 'How GeoSR works')}">
+      <p class="g-intro-marker">GEO / SYSTEM / RESEARCH</p>
+      <div><h2>${T('현장에서 얻은 자료를<br><span>이해할 수 있는 정보로.</span>', 'From field evidence<br><span>to usable understanding.</span>')}</h2>
+        <p>${T('지오시스템리서치는 해양·하천의 현장 조사, 환경 분석, 수치모델과 공간정보 기술을 연결해 문제를 살핍니다', 'GeoSR connects field surveys, environmental analysis, numerical models and spatial information to study marine and river challenges.')}</p>
+      </div>
+      <div class="g-intro-lines" aria-hidden="true"><span>OBSERVE</span><span>ANALYSE</span><span>MODEL</span><span>APPLY</span></div>
+    </section>
+
+    <section class="g-expertise" id="expertise" aria-labelledby="g-expertise-title">
+      ${sectionHead('01', 'OUR EXPERTISE', '현장부터 해석까지', 'From fieldwork to insight', '관측, 환경 분석, 수치모델, AI·원격탐사를 분야별 장면과 함께 소개합니다', 'Four connected disciplines, each grounded in a different way of working.')}
+      <div class="g-field-sequence">${fieldScenes}</div>
+      <div class="g-section-end">${A(U('business'), '기술과 솔루션 전체 보기', 'View all technologies', 'g-text-link')}</div>
+    </section>
+
+    <section class="g-projects" id="projects" aria-labelledby="g-projects-title">
+      ${sectionHead('02', 'RESEARCH & PROJECTS', '연구를 기록하고<br>결과를 공유합니다', 'Research with a record', '기존 홈페이지에 공개된 수행 사례와 연구 자료를 원문 기반으로 볼 수 있습니다', 'Explore project and research records published on the original GeoSR website.')}
+      <div class="g-project-layout">
+        <figure class="g-project-image"><img src="assets/concepts/reviewed-20260922/cf12-wave-model-v1.png" width="1672" height="941" loading="lazy" alt="${T('파랑과 계산 격자를 표현한 생성형 수치모델 콘셉트 이미지', 'Generated wave and computational mesh concept image')}"><figcaption>${T('수치모델 콘셉트 이미지 · 실제 연구 결과 아님', 'MODELLING CONCEPT · NOT AN ACTUAL RESULT')}</figcaption></figure>
+        <div class="g-project-list">${projectList}${A(U('research'), '연구·수행 사례 전체 보기', 'Browse research records', 'g-text-link')}</div>
+      </div>
+    </section>
+
+    <section class="g-platforms" id="platforms" aria-labelledby="g-platforms-title">
+      ${sectionHead('03', 'DIGITAL PLATFORMS', '데이터가 쓰이는 화면', 'Where data meets the screen', 'AX Platform과 GeoDAP을 각각의 목적과 실제 공개 화면으로 소개합니다', 'Two independent platforms, shown through their publicly available interfaces.')}
+      <article class="g-platform g-platform--ax">
+        <div class="g-platform-copy"><span>01 / APPLIED INTELLIGENCE</span><h3>AX <em>Platform</em></h3>
+          <p>${T('위성영상 분석, 재해 예측, 해양 관측 등 전문 분야별 화면을 살펴보세요', 'Explore specialist views for satellite analysis, hazard forecasting and marine observation.')}</p>
+          <div class="g-capability-list"><span>DETECT</span><span>PREDICT</span><span>MONITOR</span></div>
+          ${A(U('ax-platform'), 'AX Platform 살펴보기', 'Explore AX Platform', 'g-text-link')}
+        </div>
+        <a class="g-platform-screen" href="${U('ax-platform')}" aria-label="${T('AX Platform의 화면과 기능 살펴보기', 'Explore AX Platform interface and features')}">
+          <img src="assets/ax-embedded/satellite.webp" width="1280" height="720" loading="lazy" decoding="async" alt="${T('직원이 제작한 위성 시설물 탐지 플랫폼의 전체 정적 화면', 'Full static interface of the team-built satellite facility detection platform')}">
+          <span>${T('직원 제작 정적 화면 · 실시간 데이터 아님', 'TEAM-BUILT STATIC CAPTURE · NOT LIVE DATA')}</span>
+        </a>
+      </article>
+      <article class="g-platform g-platform--dap">
+        <div class="g-platform-copy"><span>02 / EARTH DATA PLATFORM</span><h3>GeoDAP</h3>
+          <p>${T('관측·모델·위성 자료를 지도에서 탐색하는 지구환경 데이터 플랫폼', 'A map-based workspace for exploring observation, model and satellite data.')}</p>
+          <div class="g-capability-list"><span>DISCOVER</span><span>EXPLORE</span><span>CONNECT</span></div>
+          <a class="g-text-link" href="https://www.geo-dap.com/" target="_blank" rel="noopener">${T('GeoDAP 서비스 열기', 'Open GeoDAP')}</a>
+        </div>
+        <a class="g-platform-screen g-platform-screen--dap" href="https://www.geo-dap.com/" target="_blank" rel="noopener" aria-label="${T('GeoDAP 공개 사이트 열기', 'Open GeoDAP public site')}">
+          <img src="assets/geodap-workspace-public-preview-20260928.jpg" width="1585" height="892" loading="lazy" decoding="async" alt="${T('GeoDAP 공개 소개 페이지의 지도 작업화면 미리보기', 'GeoDAP public page map workspace preview')}">
+          <span>${T('공개 소개 페이지의 미리보기 · 실시간 서비스 화면 아님', 'PUBLIC PAGE PREVIEW · NOT LIVE SERVICE')}</span>
+        </a>
+      </article>
+    </section>
+
+    ${credentialGallery(false)}
+
+    <section class="g-records" id="records" aria-labelledby="g-records-title">
+      <div><span class="g-small-label">05 / SOURCE ARCHIVE</span><h2 id="g-records-title">${T('기존 홈페이지의<br>공개 글을 찾아볼 수 있습니다', 'Explore the original public records')}</h2>
+        <p>${T('공지, 사업, 연구, 학술 자료와 회사 소개 원문을 분류와 검색으로 확인할 수 있습니다', 'Search the original news, project, research, publication and company records.')}</p>
+        ${A(U('source-archive'), '원문 자료실 열기', 'Open source archive', 'g-text-link')}
+      </div><div class="g-record-lines" aria-hidden="true"><span>NEWS</span><span>PROJECTS</span><span>RESEARCH</span><span>COMPANY</span></div>
+    </section>
+
+    <section class="g-news" id="news" aria-labelledby="g-news-title">
+      ${sectionHead('06', 'NEWSROOM', 'GeoSR 소식', 'News from GeoSR', '공지와 소식을 날짜순으로 볼 수 있습니다', 'Recent notices and published updates.')}
+      <div class="g-news-list">${newsList}</div>
+      <div class="g-section-end">${A(U('news'), '소식 전체 보기', 'Browse all news', 'g-text-link')}</div>
+    </section>`;
 }
 
 function modernFooter(){return `<section class="studio-contact" aria-labelledby="studio-contact-heading"><div class="studio-contact-top"><p class="eyebrow">CONTACT / GEOSR</p><span>BUSINESS · TECHNOLOGY · RESEARCH</span></div><div class="studio-contact-statement"><h2 id="studio-contact-heading">${T('사업과 연구를<br>함께 논의합니다',"Let’s work<br>together")}</h2><a class="studio-contact-cta" href="${U('contact')}">${T('문의하기','Get in touch')} <span aria-hidden="true">→</span></a></div><div class="studio-contact-bottom"><p>${T('사업 상담부터 기술 개발과 공동 연구까지','Projects, technology development and research partnerships')}</p><address class="studio-contact-contact-links"><a href="mailto:admin@geosr.com">admin@geosr.com</a><a href="tel:+823151805700">${T('031-5180-5700','+82 31 5180 5700')}</a></address></div></section><footer class="site-footer"><div class="footer-information"><div><a class="brand" href="${U('index')}"><img src="assets/logo.png" alt="GeoSR"></a><p>${T('지오시스템리서치','GeoSystem Research Corporation')}<br>${T('경기도 군포시 엘에스로 172 한림휴먼타워 306호','306 Hanlim Human Tower, 172 LS-ro, Gunpo-si, Korea')}</p><a href="tel:+823151805700">+82 31 5180 5700</a></div><div class="footer-navigation">${nav.map(n=>A(U(n[0]),n[1],n[2])).join('')}${A('https://www.geo-dap.com/','GeoDAP','GeoDAP')}</div><div class="footer-meta"><span>© GEOSYSTEM RESEARCH</span><a href="${U('equipment')}">${T('관측·분석 장비','Observation and analysis equipment')}</a><a href="${U('contact')}">${T('문의하기','Contact')}</a></div></div><div class="footer-wordmark" aria-hidden="true">GeoSR</div></footer>`}

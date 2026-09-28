@@ -7,65 +7,6 @@
   element.getAnimations().forEach(animation=>animation.cancel());
   element.animate([{opacity:0,translate:`0 ${distance}px`},{opacity:1,translate:'0 0'}],{duration:680,delay,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards'});
  };
- const tabs=[...document.querySelectorAll('[data-home-field]')];
- if(tabs.length){
-  const panels=new Map([...document.querySelectorAll('[data-home-panel]')].map(panel=>[panel.dataset.homePanel,panel]));
-  const activate=(tab,focus=false)=>{
-   tabs.forEach(item=>{
-    const selected=item===tab;
-    item.setAttribute('aria-selected',String(selected));
-    item.tabIndex=selected?0:-1;
-   });
-   panels.forEach((panel,id)=>{
-    const selected=id===tab.dataset.homeField;
-    const changed=panel.hidden===selected;
-    panel.hidden=!selected;
-    panel.querySelectorAll('[data-film-slot]').forEach(host=>window.GeoSRFilm?.activate?.(host.dataset.filmSlot,selected));
-    if(selected&&changed){
-     const media=panel.querySelector('.studio-field-media');
-     if(media&&!reduced.matches)media.animate([{opacity:.2,clipPath:'inset(0 6% 0 0)',transform:'translateY(12px)'},{opacity:1,clipPath:'inset(0 0 0 0)',transform:'translateY(0)'}],{duration:760,easing:'cubic-bezier(.16,1,.3,1)'});
-     enter(panel.querySelector('.studio-field-copy'),24,100);
-    }
-   });
-   document.dispatchEvent(new CustomEvent('geosr:media-updated'));
-   if(focus){
-    tab.focus({preventScroll:true});
-    const strip=tab.parentElement,box=tab.getBoundingClientRect(),edge=strip.getBoundingClientRect();
-    if(box.left<edge.left||box.right>edge.right)strip.scrollBy({left:box.left<edge.left?box.left-edge.left:box.right-edge.right,behavior:reduced.matches?'instant':'smooth'});
-   }
-  };
-  tabs.forEach((tab,index)=>{
-   tab.addEventListener('click',()=>activate(tab));
-   tab.addEventListener('keydown',event=>{
-    if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
-    event.preventDefault();
-    const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:tabs.length-1))%tabs.length;
-    activate(tabs[next],true);
-   });
-  });
- }
-
- // Independent products share an overview stage, while retaining separate destinations.
- const products=document.querySelector('[data-product-showcase]');
- if(products){
-  const choices=[...products.querySelectorAll('[data-product-tab]')];
-  const selectProduct=(button,focus=false)=>{
-   choices.forEach(choice=>{const selected=choice===button;choice.setAttribute('aria-selected',String(selected));choice.tabIndex=selected?0:-1});
-   products.querySelectorAll('[data-product-panel]').forEach(panel=>{
-    const selected=panel.dataset.productPanel===button.dataset.productTab;
-    panel.hidden=!selected;
-    panel.querySelectorAll('[data-film-slot]').forEach(host=>window.GeoSRFilm?.activate?.(host.dataset.filmSlot,selected));
-    if(selected)enter(panel,16);
-   });
-   document.dispatchEvent(new CustomEvent('geosr:media-updated'));
-   if(focus)button.focus({preventScroll:true});
-  };
-  choices.forEach((button,i)=>{
-   button.addEventListener('click',()=>selectProduct(button));
-   button.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();selectProduct(choices[event.key==='Home'?0:event.key==='End'?choices.length-1:(i+1)%choices.length],true)});
-  });
- }
-
  // Mobile starts with summaries; opening a section reveals the same source-backed content.
  const credentialToggle=document.querySelector('[data-credentials-toggle]');
  let credentialsExpanded=false;
@@ -93,36 +34,6 @@
   };
   buttons.forEach((button,index)=>{button.addEventListener('click',()=>showField(index));button.addEventListener('keydown',event=>{if(!['ArrowDown','ArrowUp','Home','End'].includes(event.key))return;event.preventDefault();showField(event.key==='Home'?0:event.key==='End'?buttons.length-1:(index+(event.key==='ArrowDown'?1:buttons.length-1))%buttons.length,true)})});
   select.addEventListener('change',()=>showField(Number(select.value)));
- }
-
- // A user-controlled research deck shares one stage without hiding source links in a timer.
- const deck=document.querySelector('[data-case-deck]');
- if(deck){
-  const cards=[...deck.querySelectorAll('[data-case-card]')],buttons=[...deck.querySelectorAll('[data-case-tab]')];let active=0;
-  const select=(index,focus=false)=>{
-   active=(index+cards.length)%cards.length;
-   cards.forEach((card,i)=>{card.dataset.position=String((i-active+cards.length)%cards.length);card.inert=i!==active;card.setAttribute('aria-hidden',String(i!==active))});
-   buttons.forEach((button,i)=>{button.setAttribute('aria-selected',String(i===active));button.tabIndex=i===active?0:-1});
-   deck.querySelector('[data-case-status]').textContent=`${String(active+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;
-   if(focus)buttons[active].focus({preventScroll:true});
-  };
-  buttons.forEach((button,i)=>{
-   button.addEventListener('click',()=>select(i));
-   button.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();select(event.key==='Home'?0:event.key==='End'?cards.length-1:active+(event.key==='ArrowRight'?1:-1),true)});
-  });
-  deck.querySelectorAll('[data-case-step]').forEach(button=>button.addEventListener('click',()=>select(active+Number(button.dataset.caseStep))));
-  const surface=deck.querySelector('.research-deck-stage');let touchStart=null;
-  surface.addEventListener('pointerdown',event=>{if(compact.matches&&event.pointerType==='touch')touchStart={x:event.clientX,y:event.clientY}});
-  surface.addEventListener('pointercancel',()=>{touchStart=null});
-  surface.addEventListener('pointerup',event=>{if(!touchStart)return;const dx=event.clientX-touchStart.x,dy=event.clientY-touchStart.y;touchStart=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)select(active+(dx<0?1:-1))});
-  let lastDeckWheel=0;
-  deck.addEventListener('wheel',event=>{
-   if(event.ctrlKey||Math.abs(event.deltaX)+Math.abs(event.deltaY)<12||event.timeStamp-lastDeckWheel<450)return;
-   lastDeckWheel=event.timeStamp;
-   const delta=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
-   select(active+(delta>0?1:-1));
-  },{passive:true});
-  select(0);
  }
 
  // Documents keep their front face; selection changes their angle, height and emphasis.

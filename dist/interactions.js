@@ -5,27 +5,6 @@
   const contentReady = [];
   let userNavigated = false;
   ['pointerdown','wheel','touchstart','keydown'].forEach(type=>addEventListener(type,()=>{userNavigated=true},{once:true,passive:true}));
-  const tabs = [...document.querySelectorAll('[data-expertise]')];
-  const panel = document.querySelector('#expertise-panel');
-  function selectExpertise(index, focus = false) {
-    if (!panel) return;
-    tabs.forEach((tab,i) => {tab.setAttribute('aria-selected',i===index);tab.tabIndex=i===index?0:-1});
-    panel.innerHTML=expertisePanel(index);
-    panel.setAttribute('aria-labelledby',`expertise-tab-${index}`);
-    panel.getAnimations().forEach(animation=>animation.cancel());
-    if(!reduced.matches) panel.animate([{opacity:.25,translate:'0 10px'},{opacity:1,translate:'0 0'}],{duration:430,easing:'cubic-bezier(.2,.6,.3,1)'});
-    if (focus) tabs[index].focus();
-  }
-  tabs.forEach((tab,index) => {
-    tab.addEventListener('click',()=>selectExpertise(index));
-    tab.addEventListener('keydown',event=>{
-      if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
-      event.preventDefault();
-      const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:tabs.length-1))%tabs.length;
-      selectExpertise(next,true);
-    });
-  });
-
   const rail=document.querySelector('.credential-rail');
   const credentialRecords = rail || document.querySelector('.credential-grid') ? fetch('credentials.json').then(response=>{if(!response.ok)throw Error('Documents unavailable');return response.json()}) : Promise.resolve([]);
   if (rail) contentReady.push(credentialRecords.then(records=>{

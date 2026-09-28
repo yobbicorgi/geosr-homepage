@@ -81,22 +81,24 @@ const css = fs.readFileSync(path.join(dist, "design.css"), "utf8");
 if (!css.includes(":focus-visible")) fail("shared focus-visible rule missing");
 if (!css.includes("@media (prefers-reduced-motion: reduce)")) fail("shared reduced-motion fallback missing");
 const homeJs = fs.readFileSync(path.join(dist, "home.js"), "utf8");
-for (const marker of ['id="expertise"', 'id="projects"', 'id="platforms"', 'id="records"', 'id="news"', 'class="g-field-sequence"', 'class="g-project-list"', 'class="g-platform-screen"']) {
+for (const marker of ['id="expertise"', 'id="platforms"', 'id="about"', 'id="news"', 'class="g-field-sequence"', 'class="g-platform-screen ']) {
   if (!homeJs.includes(marker)) fail("home composition missing: " + marker);
 }
+if (homeJs.includes('SELECTED WORK') || homeJs.includes('g-project-showcase')) fail('removed duplicate selected-work section returned');
 if (homeJs.includes('data-case-deck') || homeJs.includes('data-home-field')) fail("home still hides core sections inside legacy decks or tabs");
-if (!homeJs.includes('assets/ax-embedded/satellite.webp') || !homeJs.includes('assets/geodap-workspace-public-preview-20260928.jpg')) fail("independent platform previews missing");
-for (const marker of ['role="tablist"', 'role="tab"', 'aria-selected=', 'aria-controls=']) {
-  if (!homeJs.includes(marker)) fail("credential category tab semantics missing: " + marker);
+if (!homeJs.includes('assets/ax-embedded/satellite.webp') || !homeJs.includes('assets/geodap-home-public-preview-20260928.png')) fail("independent platform previews missing");
+const mainComposition = homeJs.slice(homeJs.indexOf('function home()'), homeJs.indexOf('function modernFooter()'));
+if (mainComposition.includes('credential-index') || mainComposition.includes('credential-category')) fail("long credential catalogue belongs on company page, not the homepage");
+const companyIndex = fs.readFileSync(path.join(dist, "credentials-index.js"), "utf8");
+if (!companyIndex.includes('credential-index-query') || !companyIndex.includes('credential-gallery-results') || !companyIndex.includes('data-credential-category')) fail("company credential gallery search/filter missing");
+const credentials = JSON.parse(fs.readFileSync(path.join(dist, 'credentials-index.json'), 'utf8')).records;
+if (credentials.length !== 127) fail('published credential title count changed');
+for (const record of credentials) {
+  if (record.image && !fs.existsSync(path.join(dist, record.image))) fail('missing credential image ' + record.id);
+  if (record.previewStatus === 'review' && (record.image || record.sourceImageUrl)) fail('review document URL exposed ' + record.id);
 }
-if (!homeJs.includes('id="credential-category-cert" role="tab" aria-controls="credential-stage"')) fail("home credential tabs need stable IDs and panel controls");
-if (!homeJs.includes('id="credential-stage" role="tabpanel" aria-labelledby="credential-category-cert" tabindex="0"')) fail("home credential panel needs a labelled tabpanel");
-const interactions = fs.readFileSync(path.join(dist, "interactions.js"), "utf8");
-if (!interactions.includes("const selected=tab===button;tab.setAttribute('aria-selected',String(selected))")) fail("home credential tab selected state missing");
-if (!interactions.includes("categoryTabs[next].focus();activateCategory(categoryTabs[next])")) fail("home credential keyboard tab navigation missing");
-if (!/b\.setAttribute\('aria-pressed',(?:String\()?b===button\)?\)/.test(interactions)) fail("company credential filter button state missing");
-const axSource = fs.readFileSync(path.join(dist, "ax-source-gallery.js"), "utf8");
-if (!axSource.includes("prefers-reduced-motion: reduce") || !axSource.includes('if(reduced.matches)')) fail("Active AX gallery reduced-motion branch missing");
+const axCss = fs.readFileSync(path.join(dist, "ax-embedded-gallery.css"), "utf8");
+if (!axCss.includes('@media(prefers-reduced-motion:reduce)')) fail("AX reduced-motion fallback missing");
 
 const indexHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8");
 if (!indexHtml.includes('home.css?') || !indexHtml.includes('home-motion.js?')) fail("index route must load the rebuilt home layout and motion");

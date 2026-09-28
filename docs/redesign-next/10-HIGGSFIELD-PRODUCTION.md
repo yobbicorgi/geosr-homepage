@@ -1,70 +1,52 @@
-# Higgsfield 회사 메인 영상 제작 카드 · 2026-09-28
+# Higgsfield 영상 제작·검수 절차 · 2026-09-28
 
-## 목표와 입력
+> **유료 생성 보류** — 사용자가 Plus를 결제했고 2026-09-28 잔액 1210크레딧을 확인했다. 집행 상한은 약 1200크레딧이다. 화면에서 확인한 Seedance 2.5 무음 5초 16:9 1080p 견적은 60크레딧이다. 이 값은 사전 견적이며 실제 비용·품질·완성을 보장하지 않는다.
 
-회사 홈페이지 첫 화면에서 시작하는 60초 무음 반복 영상의 초안을 제작한다. [09 메인 영상 방향](09-20260928-HOME-FILM-REVISION.md)의 13컷 편집안을 사용하되, 한 번의 생성으로 본편을 완성했다고 주장하지 않는다. 광역 해양·연안·하구·도시 장면을 주로 사용하고 관측·연구 장면은 짧게 배치한다. 실제 GeoSR 사업지와 특정 한국 해안을 생성 모델이 재현했다고 소개하지 않는다.
+## 먼저 확정할 것
 
-## 계정·비용·실행 기록
+- [회사 기술·실적·논문 근거](16-COMPANY-FILM-EVIDENCE-20260928.md)와 [60초 콘티](14-1080P-FILM-STORYBOARD-20260928.md)의 CF01–CF13을 대조한다.
+- 컷별로 실제 장소 또는 자료의 원본 ID, 촬영·관측 시각, 센서·장비 형상, 이용권, 첫·중간·마지막 프레임을 `production-plan.json`에 채운다.
+- 실제 자료를 화면 어디까지 쓰고 Higgsfield가 무엇을 보완할지 그려서 한 장의 시안으로 만든다. 서로 다른 장소와 시기를 한 번의 연속 촬영처럼 합치지 않는다.
+- 원본이 없는 모델 결과·AI 탐지 마스크·측선·장비 조작은 생성 금지다. 컷을 연출로 바꾸거나 출처 있는 자료를 확보할 때까지 대기한다.
+- CF01용 가상 하구·도시 이미지와 이전 생성 프롬프트는 철회했다. 현재 회사소개서 사진은 임시 웹 포스터이며 영상의 확정 시작 프레임이 아니다.
 
-2026-09-28 Higgsfield 개인 워크스페이스 `db63c999-4103-4429-b641-9bb0f9027562`: free 요금제, 10 크레딧. 제작 전용 프로젝트 `GeoSR Homepage Film 2026-09-28` ID `61b2be97-efd1-4f12-8280-0dcb73755da3`을 생성했다. 요금제 변경과 크레딧 구매는 하지 않았다.
+## 한 컷의 제출 카드
 
-| 모델 | 동일 조건 견적 | 상태 |
-| --- | ---: | --- |
-| Seedance 2.0 Mini | 5초·720p·16:9·무음 5크레딧 | CF01 요청이 `Requires basic plan or higher.`로 거절. 생성 작업 ID 없음 |
-| Kling 3.0 Turbo | 5초·720p·16:9 7.5크레딧 | 견적만 확인 |
-| Seedance 2.5 | 5초·720p·16:9·무음 35크레딧 | 견적만 확인 |
-| Cinema Studio 3.0 | 5초·720p·16:9·무음 25크레딧 | 견적만 확인 |
+`PROMPT-CARDS.md`는 계획에서 자동 생성된다. 각 카드의 공통 틀은 아래와 같고 컷별 실제 입력 파일과 권리가 채워지기 전에는 제출하지 않는다.
 
-첫 요청은 접수되지 않아 결과 영상과 검수 프레임이 없다. 차감이 있었다는 근거도 없다. 현재 `film-manifest.json`의 이전 생성 영상 연결은 해제하고 새 결과가 실제로 생성·검수될 때만 연결한다.
+1. **근거**: 회사 사업·논문 ID와 원본 파일 SHA-256
+2. **장면**: 실제 위치 또는 비자료 배경의 정체, 카메라 높이·방향, 빛·날씨
+3. **프레임**: 시작·중간·끝의 같은 지형·장비 형상·물리 연속성
+4. **한 가지 동작**: 전진, 측면 이동, 완만한 회전 중 하나
+5. **합성 경계**: 원본으로 보존할 지도·자료·UI·수치·표기
+6. **금지**: 가상 도시·해안, 빛나는 스캔 광선, 허구 탐지·예측, 뒤틀린 선체·부이·실험실 장비
+7. **비용**: 선택 모델과 1080p 설정에서 생성 버튼 전 표시되는 크레딧
+8. **검수**: 전체 재생과 시작·중간·끝 프레임, 정확도와 웹 배치
 
-## 현재 메인 화면의 정지 이미지
+## 생성 프롬프트의 공통 문장
 
-영상이 없는 동안 첫 화면에 사용할 광역 연안·하구 콘셉트 이미지를 내장 이미지 생성 도구로 만들었다. `dist/assets/hero-coastal-estuary-concept-20260928.webp` (1672×941, 160,696바이트, SHA-256 `744e116197ca4fa8f500c82a8c79dce46bfaeb66d1b94645873aa89dedb70024`)를 로컬 사이트에 연결했다. 데스크톱 내부 미리보기에서 제목 대비와 강·외해·섬·도시의 광역 구도를 확인했다. 이 이미지는 Higgsfield 영상 프레임이나 실제 GeoSR 사업지 사진이 아니다. 화면에도 콘셉트와 비실제 지역임을 표시한다.
+> Create a silent 16:9 cinematic transition at native 1920x1080 for the supplied GeoSR company-film shot card. Use the supplied documented real-world source frames for geography, equipment shape, scale and light. Perform only the single specified camera motion. Preserve the source coastline, islands, structures and water physics. Leave clean space for separately composited real scientific data and HTML text. Do not create a city, beach, harbor, satellite raster, sonar bathymetry, ADCP current, AI mask, bounding box, laboratory reading, forecast map, UI, number, Korean text or logo. No morphing landforms, floating cables, implausible wakes or watermarks.
 
-정지 이미지에 사용한 프롬프트:
+이 문장은 **템플릿**이다. 컷별 입력·동작·합성 경계가 비어 있으므로 생성 버튼에 바로 붙여넣을 최종 프롬프트가 아니다.
 
-```text
-Use case: photorealistic-natural. Asset type: GeoSR Korean technology company homepage hero image and visual direction plate for a later Higgsfield film. A majestic, believable real-world-scale view from a high stabilized drone over a broad estuary connecting a winding river, deep blue open sea, low coastal mountains, several islands and a small distant urban edge. Geographic relationships must look coherent and physically plausible, no identifiable real location. Premium cinematic atmosphere with rich navy and teal water, warm late-afternoon sun glints, atmospheric depth, crisp but natural texture, visually more vivid and technologically refined than a conventional corporate landscape film. Wide horizontal 16:9 composition, coastline and horizon clearly legible, darker uncluttered left third for HTML headline, important geography in center and right, usable cropping on desktop and mobile. Pure visual plate: no lettering, logo, frame, UI, grid, maps, contour lines, data labels, invented survey instrument, close-up, people, space-view Earth, or watermark. This is an illustrative unnamed landscape, not a documented GeoSR site.
-```
+## 단계별 크레딧 예산
 
-## 공통 생성 규칙
+| 용도 | 최대 크레딧 |
+| --- | ---: |
+| 회사 본편의 실제 자료로 해결되지 않는 전환·배경 6컷 | 360 |
+| AX·GeoDAP의 전환 3컷 | 180 |
+| 탈락 사유를 기록한 재시도 3컷 | 180 |
+| 예비분 | 480 |
+| 총 상한 | **1200** |
 
-- 화면비 16:9, 무음, 영상에 자막·로고·UI·수치·가짜 지도와 발광 격자를 굽지 않는다. 한영 문구는 HTML에서 관리한다.
-- 한 컷에서 카메라 움직임 하나만 요청한다. 지형·수평선·건물·선박·그림자·물의 연결성을 시작/중간/끝과 전체 재생으로 확인한다.
-- 넓은 실제 세계 같은 뷰가 우선이다. 지역을 특정할 근거가 없으면 `illustrative unnamed landscape`로만 표현한다.
-- 올포랜드는 구도 규모와 다중 뷰 편집 리듬의 참고다. 영상·프레임·식별 가능한 장소·그래픽을 복제하지 않는다.
-- 기술 그래픽은 검증된 관측·지형 자료가 있을 때 후반 작업으로만 더한다. 없으면 풍경을 깨끗하게 유지한다.
+한 장면의 시안이 통과하기 전에 다음 장면을 일괄 제출하지 않는다. 이미 가진 16:9 실사·지도·영상·UI를 편집해 해결되는 컷에는 크레딧을 쓰지 않는다. **생성 컷 수와 60초 본편 컷 수는 다르다.**
 
-## 생성 프롬프트
+## 최종 1080p 검수
 
-### CF01 · 하구에서 외해로 · 5초
+- 원본 출력의 실제 해상도·프레임률·길이·오디오 트랙·코덱과 SHA-256을 기록한다. 720p를 확대해 1080p 납품이라 부르지 않는다.
+- 시작·중간·끝 스틸을 100% 크기로 확인하고 전체 영상을 재생한다. 지형·그림자·물결·장비·부이 계류·실험 동작과 과학적 의미를 검수한다.
+- 실제 자료를 합성한 뒤 CF01→CF13의 빛·색·화면 방향과 24초 루프 접합을 확인한다. QHD 및 모바일에서 제목과 영상의 크롭을 별도로 확인한다.
+- 최종 인코딩은 웹 무음 자동재생용 H.264 MP4, 포스터 정지 이미지, 자동재생 실패 시 정지 화면을 마련한다. 재생 속도와 로딩은 실제 빌드에서 측정한다.
+- `docs/redesign-next/reviews/<ID>-takeNN.json`에 모델·설정·프롬프트 전문·크레딧 전후·원본 파일·프레임 검수·판정을 남긴다. 합격 컷만 `dist/film-manifest.json`에 연결한다.
 
-아래 문장을 Seedance 2.0 Mini에 720p, 16:9, 무음, 5초 조건으로 제출했으나 요금제 조건으로 거절됐다. 이후 재시도에는 모델·요금제·비용을 다시 확인한다.
-
-```text
-GeoSR corporate homepage film concept, one continuous five-second shot. A vast believable coastal estuary seen from a high stabilized drone: a broad river mouth joins the deep blue open sea; distant islands, low mountains, long natural shoreline, and a small distant city edge establish real-world scale. The camera advances smoothly and banks gently, revealing several environmental layers in one majestic view. Premium Korean technology-company cinema: rich ocean blues, luminous late-afternoon highlights, elegant contrast, crisp atmospheric depth, subtle sense of geospatial intelligence from camera choreography alone. Composition leaves the left third darker and uncluttered for later HTML title. Physically stable coast, water, buildings, shadows and horizon. This is an illustrative unnamed landscape, not a real GeoSR survey site. No people, close-up equipment, satellite in space, text, logo, UI, map, chart, grid, neon lines, fake measurements, copied landmark or watermark. Silent visual plate.
-```
-
-### CF02 · 강·도시·해안의 광역 연결 · 5초
-
-```text
-One continuous cinematic drone shot across a believable large river delta where the urban edge, broad waterway and open coast coexist in a single geographic space. Start high enough to see the whole relationship, then move gently forward and slightly sideways; stable bridges, districts, water and shoreline throughout. Deep marine blue with precise warm highlights, elegant atmospheric depth, premium technology-company visual quality. Leave usable dark negative space for later HTML copy. An unnamed illustrative place, not a documented GeoSR project site. No close-up, people, logos, text, UI, simulated measurements, fake map overlay, copied landmark or morphing geography. Silent 16:9 visual plate.
-```
-
-### CF03 · 섬과 연안 항공 · 5초
-
-```text
-A sweeping but physically credible high-altitude aerial over a wide coastal archipelago: multiple islands, open sea, distant mainland, a subtle port at the far horizon. Smooth lateral glide with one gentle reveal; no rapid zoom. Clear sense of regional scale, crisp marine atmosphere, cinematic contrast, luminous sunlight on water, technologically refined but never science-fiction. Preserve coastlines, horizon, vessels and shadows from start to finish. The setting is illustrative and unnamed. No identifiable real landmark, text, logo, interface, glowing grid, fabricated sensor readings or close-up apparatus. Silent 16:9 visual plate.
-```
-
-### CF04 · 관측 맥락의 넓은 해역 · 5초
-
-```text
-Wide real-world-like open-sea aerial with one small distant survey vessel moving steadily through an expansive marine environment. Keep the vessel secondary to coastline, horizon and water scale. Camera tracks gently parallel to the vessel; a coherent wake trails behind it, the hull shape remains stable, and the sea behaves naturally. Rich navy-blue water, restrained sun glints and cinematic atmosphere. This is a generic concept vessel, not GeoSR equipment or proof of a particular survey. No logo, close-up technical detail, invented instrument, people, text, UI, data overlay or fake Korean location. Silent 16:9 visual plate.
-```
-
-CF05 이후의 원본·장비·지리·자료 조건은 `production-plan.json`과 [복사용 장면 카드](PROMPT-CARDS.md)를 따른다. 장비나 실제 결과를 암시하는 컷은 근거 자료가 없으면 생성으로 대체하지 않는다.
-
-## 검수와 연결 조건
-
-영상이 실제 생성되면 모델·설정·작업 ID·크레딧 차감·원본 URL 또는 저장 파일·SHA-256·시작/중간/끝 프레임·전체 재생 판정을 컷별 기록에 남긴다. 불합격 출력은 이유를 남긴 뒤 제거한다. CF01 화면에서 `Geo Data Intelligence`의 한영 텍스트 대비와 모바일 자르기, 무음 반복 이음새까지 확인한 결과만 사이트에 연결한다.
+AX는 제공된 직원 저장소에서 삽입한 실제 제품 화면을 FHD 이상으로 다시 녹화하고 UI 픽셀을 유지한다. GeoDAP은 실제 공개 메인 화면을 먼저 보여준다. 제품별 영상은 회사 60초 본편과 별도의 편집물이다.

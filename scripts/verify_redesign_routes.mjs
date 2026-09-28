@@ -45,7 +45,9 @@ function collectReferences(body, kind) {
   if (attributePattern) {
     for (const match of body.matchAll(attributePattern)) refs.add(match[1]);
   }
-  for (const match of body.matchAll(/url\(\s*["']?([^"')]+)["']?\s*\)/gi)) refs.add(match[1]);
+  for (const match of body.matchAll(/url\(\s*["']?([^"')]+)["']?\s*\)/gi)) {
+    if (!match[1].includes('${')) refs.add(match[1]);
+  }
   const assetReferencePattern = /(?:assets\/|\.\.\/assets\/)[A-Za-z0-9_./@%+~-]+\.(?:png|jpe?g|webp|gif|svg|pdf|mp4|webm|json|woff2?|ttf|otf)(?:\?[^"'`\s)]*)?/gi;
   for (const match of body.matchAll(assetReferencePattern)) {
     refs.add(match[0].replace(/^\.\.\//, ''));

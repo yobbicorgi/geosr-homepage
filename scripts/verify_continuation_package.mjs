@@ -31,7 +31,7 @@ const ids=new Set();
 for(const s of p.shots){
   check(!ids.has(s.id),`Duplicate shot ${s.id}`);ids.add(s.id);
   check(s.end-s.start===s.duration&&s.duration>0,`Bad duration ${s.id}`);
-  check(s.containsActualUI===false,`Actual UI cannot enter company or AX concept ${s.id}`);
+  check(s.containsActualUI===(s.film==='ax'),`Company film cannot include AX UI and AX film must use source UI: ${s.id}`);
   check(s.generationReady===false,`Unreviewed shot marked ready ${s.id}`);
   check(['source-composite','imagegen-reference','higgsfield-concept'].includes(s.method),`Unknown method ${s.id}`);
   for(const key of ['imageInstruction','motionInstruction','compositingInstruction','continuity']) check(typeof s[key]==='string'&&s[key].length>25,`Missing ${key} ${s.id}`);

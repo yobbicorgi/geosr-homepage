@@ -1,0 +1,28 @@
+.tech-story{background:#f4f6f5;color:#102d42}
+.tech-story-top{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:2rem 5.2vw;border-bottom:1px solid #d4dcdf;color:#497186;font:600 .8rem/1.4 Arial,sans-serif;letter-spacing:.08em}
+.tech-story-back{color:#183b50;letter-spacing:0}
+.tech-story-header{display:grid;grid-template-columns:44% 56%;min-height:clamp(34rem,40vw,48rem);background:#dfe8e9}
+body.route-business .tech-story-header{position:relative;z-index:auto;top:auto;left:auto;right:auto;width:100%;height:auto;min-height:clamp(34rem,40vw,48rem);padding:0;border:0;background:#dfe8e9;color:#102d42}
+.tech-story-header>div{display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:clamp(3rem,6vw,8rem) 5.2vw}
+.tech-story-header .eyebrow{color:#457c9b;font-size:.8rem;letter-spacing:.1em}
+.tech-story-header h1{max-width:14ch;margin:1.5rem 0;font-size:clamp(2.3rem,3.2vw,4.5rem);font-weight:600;line-height:1.22;letter-spacing:-.06em}
+.tech-story-header>div>p:not(.eyebrow){max-width:34rem;margin:0;color:#46677a;font-size:clamp(1rem,1.12vw,1.3rem);line-height:1.75}
+.tech-story-header>div>a{display:inline-flex;gap:2rem;margin-top:3rem;padding:.65rem 0;border-bottom:1px solid currentColor;font-weight:600}
+.tech-story-header figure{position:relative;min-width:0;min-height:0;margin:0;overflow:hidden;background:#102b3f}
+.tech-story-header figure img{width:100%;height:100%;object-fit:cover}
+.tech-story-header figcaption{position:absolute;right:1.2rem;bottom:1.2rem;left:1.2rem;width:max-content;max-width:calc(100% - 2.4rem);padding:.45rem .65rem;background:#061a29ce;color:#f0f4f6;font-size:.72rem}
+.tech-story-body{padding:clamp(4rem,5vw,7rem) 5.2vw}
+.tech-story-intro{display:grid;grid-template-columns:27% minmax(0,1fr);gap:4vw;padding-bottom:clamp(3rem,5vw,6rem);border-bottom:1px solid #c6d2d7}
+.tech-story-body section>div>span,.tech-story-columns section>span{color:#377da5;font:700 .78rem/1.4 Arial,sans-serif;letter-spacing:.12em}
+.tech-story-body h2{margin:.9rem 0 0;font-size:clamp(1.8rem,2.2vw,3rem);font-weight:600;letter-spacing:-.05em}
+.tech-story-intro>div:last-child{max-width:65rem;color:#3d5869;font-size:clamp(1rem,1.02vw,1.18rem);line-height:1.9}
+.tech-story-intro>div:last-child p{margin:0 0 1.2em}
+.tech-story-columns{display:grid;grid-template-columns:1fr 1fr;gap:5vw;padding-top:clamp(3rem,5vw,6rem)}
+.tech-story-columns section{min-width:0}
+.tech-story-columns ul{list-style:none;padding:1.4rem 0 0;margin:1.7rem 0 0;border-top:1px solid #c6d2d7}
+.tech-story-columns li{padding:.9rem 0;border-bottom:1px solid #d7e0e2;color:#36576a;font-size:clamp(.93rem,.95vw,1.1rem);line-height:1.55}
+.tech-story-next{display:grid;grid-template-columns:1fr 1fr;background:#0d2e43}
+.tech-story-next a{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:2.5rem 5.2vw;color:#e6f3f8;font-size:clamp(1rem,1.2vw,1.5rem);font-weight:600}
+.tech-story-next a+a{border-left:1px solid #54708280}
+.tech-story-next a:hover{background:#19465e}
+@media(max-width:800px){.tech-story-header{grid-template-columns:1fr}body.route-business .tech-story-header{min-height:0}.tech-story-header>div{padding:3.5rem 6.5vw}.tech-story-header figure{height:auto;aspect-ratio:16/10}.tech-story-top{padding:1.4rem 6.5vw}.tech-story-body{padding:3.5rem 6.5vw}.tech-story-intro,.tech-story-columns{grid-template-columns:1fr;gap:2rem}.tech-story-next{grid-template-columns:1fr}.tech-story-next a{padding:1.7rem 6.5vw}.tech-story-next a+a{border-left:0;border-top:1px solid #54708280}}

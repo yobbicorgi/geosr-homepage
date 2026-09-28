@@ -1,0 +1,18 @@
+body.inner-page .company-records>[data-company-history]{grid-column:2}
+body.design-2026 .company-full-history{border-top:1px solid #b4c4ce;border-bottom:1px solid #b4c4ce;margin:0 0 2rem;padding:0}
+body.design-2026 .company-full-history>summary{display:flex;align-items:center;gap:1rem;padding:1.1rem 0;cursor:pointer;list-style:none;color:#1a4359;font-size:1rem;font-weight:600}
+body.design-2026 .company-full-history>summary::-webkit-details-marker{display:none}
+body.design-2026 .company-full-history>summary span{margin-left:auto;color:#688394;font-size:.78rem;font-weight:400}
+body.design-2026 .company-full-history>summary i{font-size:1.5rem;font-style:normal;font-weight:300}
+body.design-2026 .company-full-history[open]>summary i{transform:rotate(45deg)}
+body.design-2026 .company-history-years{max-height:42rem;overflow:auto;padding:1rem 1.2rem;background:#f3f7f8;scrollbar-color:#8eaebb transparent}
+body.design-2026 .company-history-years section{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:2rem;padding:1.1rem 0;border-top:1px solid #d5e0e4}
+body.design-2026 .company-history-years section:first-child{border-top:0}
+body.design-2026 .company-history-years h3{position:sticky;top:1rem;align-self:start;margin:0;color:#255e79;font-size:1.15rem}
+body.design-2026 .company-history-years ol{list-style:none;margin:0;padding:0}
+body.design-2026 .company-history-years li{display:grid;grid-template-columns:1.8rem minmax(0,1fr);gap:1rem;padding:.38rem 0;color:#2e4a5a;font-size:.86rem;line-height:1.55}
+body.design-2026 .company-history-years time{color:#6b8999;font-variant-numeric:tabular-nums}
+body.design-2026 .company-full-history>p{margin:.9rem 0 1.4rem;color:#647c8a;font-size:.74rem;line-height:1.6}
+body.design-2026 .studio-contact-contact-links a{color:#d1e1ee}
+@media(max-width:900px){body.inner-page .company-records>[data-company-history]{grid-column:1}}
+@media(max-width:650px){body.design-2026 .company-full-history>summary{font-size:.9rem}body.design-2026 .company-full-history>summary span{font-size:.65rem}body.design-2026 .company-history-years{padding:.7rem}body.design-2026 .company-history-years section{display:block}body.design-2026 .company-history-years h3{position:static;margin-bottom:.5rem}body.design-2026 .company-history-years li{font-size:.82rem}}

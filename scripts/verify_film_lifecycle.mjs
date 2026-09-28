@@ -71,6 +71,8 @@ doc.hidden = false; reduced.matches = true; reduced.dispatchEvent(new Event('cha
 assert.equal(video.paused, true, 'Reduced motion stops autoplay');
 button.dispatchEvent(new Event('click'));
 assert.equal(video.paused, false, 'Explicit play remains available');
+video.dispatchEvent(new Event('loadedmetadata'));
+assert.equal(video.paused, false, 'Metadata arrival must not cancel explicit playback under reduced motion');
 button.dispatchEvent(new Event('click'));
 reduced.matches = false; reduced.dispatchEvent(new Event('change'));
 assert.equal(video.paused, true, 'User pause survives environmental changes');

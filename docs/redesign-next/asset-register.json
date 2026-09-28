@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T03:43:36.550Z",
+  "generatedAt": "2026-09-28T07:40:13.571Z",
   "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
-  "count": 99,
-  "runtimeRevision": "higgsfield-transition-20260928",
+  "count": 205,
+  "runtimeRevision": "professional-visualisation-20260928",
   "runtimeManifestHashEncoding": "lf-normalized-utf8",
-  "runtimeManifestSha256": "c9b1f42adcf5e27649c952fa83f62320fd5bd84d9b655e15933088fda3504c5f",
+  "runtimeManifestSha256": "0404649f499975174f6aebe6dc5c9825cff2ce8058605e26d1845cbc17149a3e",
   "note": "Text references can occur in inactive legacy functions; they do not prove live DOM usage. Runtime approved groups do not prove all named platforms have individual reviewed clips.",
   "archiveIndices": [
     "docs/source-migration/assets.jsonl",
@@ -53,8 +53,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF10",
-        "CF11"
+        "CF09"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -69,7 +68,9 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [],
+      "textualReferenceFiles": [
+        "dist/home.js"
+      ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -107,7 +108,9 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [],
+      "textualReferenceFiles": [
+        "dist/home.js"
+      ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -165,6 +168,7 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
+        "dist/ax-embedded-gallery.js",
         "dist/home.js"
       ],
       "visualAndScientificApproval": "not-established-by-this-inventory",
@@ -345,9 +349,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF01",
-        "CF02",
-        "CF13"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -366,7 +368,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF03"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -385,7 +387,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF03"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -404,7 +406,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF03"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -423,7 +425,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF03"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -442,7 +444,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF03"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -461,7 +463,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF04"
+        "CF03"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -480,7 +482,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF04"
+        "CF03"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -499,7 +501,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF04"
+        "CF03"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -518,7 +520,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF04"
+        "CF03"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -537,9 +539,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF01",
-        "CF02",
-        "CF13"
+        "CF02"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "지리 구도 참고 / 위성 입체감·광학 방향·강체 모션 재작업",
@@ -662,7 +662,6 @@
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [
-        "dist/home.js",
         "dist/media-review.js"
       ],
       "visualAndScientificApproval": "selected-concept-still",
@@ -675,10 +674,10 @@
       "nextAction": "4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체"
     },
     {
-      "path": "dist/assets/credentials/credential-01.png",
-      "bytes": 42082,
+      "path": "dist/assets/credentials/gallery/document-001.webp",
+      "bytes": 21692,
       "hashEncoding": "raw-bytes",
-      "sha256": "5e54d9b4eadb38c6f281e8c1fdd843b194fc975006958f8a967a75c718f62fd3",
+      "sha256": "f9890c55e4795591c5021c4c6b0d1448bcb922bcb4fe8f849a0f26e2476ae655",
       "classification": "archived-document",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -694,10 +693,10 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/credentials/credential-02.png",
-      "bytes": 33590,
+      "path": "dist/assets/credentials/gallery/document-002.webp",
+      "bytes": 22704,
       "hashEncoding": "raw-bytes",
-      "sha256": "e685c4740891ded54eec5066c66f8187fdb3c0a7b2926246a25463db6d618ac6",
+      "sha256": "bdaf909e9375678ca76823c37b473a109e867c2c408308a5321b5d2cec636048",
       "classification": "archived-document",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -713,48 +712,10 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/credentials/credential-03.png",
-      "bytes": 22473,
+      "path": "dist/assets/credentials/gallery/document-003.webp",
+      "bytes": 21848,
       "hashEncoding": "raw-bytes",
-      "sha256": "d600668c87d3f6699f180e254572d61e6a3b4a03af88d5295bf7df6c4294fdea",
-      "classification": "archived-document",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-DOCUMENT"
-      ],
-      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
-      "issue": "개인정보 보호 동작 유지 / 원본 직접 노출 재검토",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/credentials/credential-04.png",
-      "bytes": 23044,
-      "hashEncoding": "raw-bytes",
-      "sha256": "b84edb170fe02740ead5429d7a345d03bf3e41a561ed3a657f52d61078343c69",
-      "classification": "archived-document",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-DOCUMENT"
-      ],
-      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
-      "issue": "개인정보 보호 동작 유지 / 원본 직접 노출 재검토",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/credentials/credential-05.png",
-      "bytes": 37694,
-      "hashEncoding": "raw-bytes",
-      "sha256": "98b6050a2ff7d64c8f9a3e1a25161e2f25323cb96416fdf33c18b0e2be1d7738",
+      "sha256": "ba088afe38e485dc1c2cf2c38310b5f111d21b3f0793e8079a0c1128b1ccd3c3",
       "classification": "archived-document",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -770,10 +731,10 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/credentials/credential-06.png",
-      "bytes": 34884,
+      "path": "dist/assets/credentials/gallery/document-004.webp",
+      "bytes": 28520,
       "hashEncoding": "raw-bytes",
-      "sha256": "4d651ec93b76c20e6979541c1ebb65d64f416b3a0a647ef9545379b193ded3df",
+      "sha256": "d24bf95650400e27ec3c1edb685fbc8bc29918ff02ee255a904a49ba75cd4322",
       "classification": "archived-document",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -789,10 +750,2290 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/credentials/credential-07.png",
-      "bytes": 25735,
+      "path": "dist/assets/credentials/gallery/document-005.webp",
+      "bytes": 21350,
       "hashEncoding": "raw-bytes",
-      "sha256": "dcb4dba34c850043d6618519a75e084e19fe73e7a5643bb174d62d76f2ee260e",
+      "sha256": "1b86c456f31fa5992821d0ac3be866b147febc1e8181013f36320294b4c2bf68",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-006.webp",
+      "bytes": 30058,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ae5962eb3b0d139ae5120cac1e400c4cbfed271e436484532c8eb066541b3eff",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-007.webp",
+      "bytes": 30158,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f8a1c204662e1253e2b76777ea7ac02277f94d1af80fcd085966cc02a5ddee0f",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-008.webp",
+      "bytes": 27422,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c800a908b38de17824aff5148f432a25ba8f6df19f9376a7f8f5a02647efc85b",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-009.webp",
+      "bytes": 25112,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6d473a924acfbfaed10ca2dc54e0488f4974e58ebeb72e1e2ee8cf4d319d3b3c",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-010.webp",
+      "bytes": 24028,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7b2d4a3ec7346270f4ad55a46a2d36661078db80869fd82798d0bab19fae72db",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-011.webp",
+      "bytes": 33390,
+      "hashEncoding": "raw-bytes",
+      "sha256": "30b1da06d000bc3a4499eca7122af0b3aa72feba06fa0f01e2ede290e02306a0",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-012.webp",
+      "bytes": 23486,
+      "hashEncoding": "raw-bytes",
+      "sha256": "59552c68c3d3f9e19ffb2195828e578cb1a60a5c96c2733772f6a875d31ae5e4",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-013.webp",
+      "bytes": 20580,
+      "hashEncoding": "raw-bytes",
+      "sha256": "8eaa7b4c9ac144f77aaa2ee199b5b3e8458eef193d61aabb7d7eb4bfe5ac5b43",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-014.webp",
+      "bytes": 21110,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0bd944ccdb750bdf5e4e46b0e10e376fb548f101b055c3437438b83620c603be",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-015.webp",
+      "bytes": 13028,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c01bcad85702bb758d89078d94feb3de1caf47cf2e097af41fdbe18125b50bdf",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-016.webp",
+      "bytes": 16030,
+      "hashEncoding": "raw-bytes",
+      "sha256": "5596066081e5ba663ab46643efaf70d06e6d9ac28e9f3c76da33ef08abeffa9b",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-017.webp",
+      "bytes": 16352,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6098f6df6359ffd76881a1866daa46b475755f52e231d4a5c982ec8cefc9b9cd",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-018.webp",
+      "bytes": 15164,
+      "hashEncoding": "raw-bytes",
+      "sha256": "85664b53797ded12a8bfcb4059f13822a884de63e4c9afa6cbfd17bf47f8b170",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-019.webp",
+      "bytes": 27386,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f6e25c2eaf9673191ae0ff97d5d4fd140438403493dce8d91f1be33d4bd3be5c",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-020.webp",
+      "bytes": 27052,
+      "hashEncoding": "raw-bytes",
+      "sha256": "eed2ed1dc56c863a9d1bd5f5af4234c5dcd443605237b4cd31f0d465459d0037",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-021.webp",
+      "bytes": 24466,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f9d02e04927dbf22c4b192e51ce972902e813b4e047ce6305d2263a6bb914518",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-022.webp",
+      "bytes": 26850,
+      "hashEncoding": "raw-bytes",
+      "sha256": "cbbc9ccf22f417918239fb63c4ea9aa4476b89f7d46168b7607411ce3d7631b8",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-023.webp",
+      "bytes": 27036,
+      "hashEncoding": "raw-bytes",
+      "sha256": "14ddc4a47072ec6b66aaad635e7686e9b4bb3810c44c4c811e3e760d4f92523d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-024.webp",
+      "bytes": 27012,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d2074175e154c0fa0a14b0044b0a19bbfcda82a5fbf65098153508e908d82635",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-025.webp",
+      "bytes": 26988,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2284d64ed2ff3596e72b95bc9bb77403e72e6fcb4fabd5473aeac34d63bd1134",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-026.webp",
+      "bytes": 24176,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ecb302b718dbe2c196b7f1f41374d371f2a3aee43fcd31e98a7e78c52b4cba5d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-027.webp",
+      "bytes": 16912,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4517838fac2686999530ce00be7cc41f580f747a58ef93dc930fa12f1d95c741",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-028.webp",
+      "bytes": 32488,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0019038bcaf822116a1cb2ca4acbc6924e97c3a4e8f8cbafcb31c53f96cf0ed4",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-029.webp",
+      "bytes": 32450,
+      "hashEncoding": "raw-bytes",
+      "sha256": "46cd40ea8fdc5120099844aa51ae02e0df87d68cb761ac12ffcc6276f8bbec3c",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-030.webp",
+      "bytes": 32522,
+      "hashEncoding": "raw-bytes",
+      "sha256": "b6d0f8529c8bdb45406e0431936aab87c3e601ac2166964082860d30d8a3e02c",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-031.webp",
+      "bytes": 33046,
+      "hashEncoding": "raw-bytes",
+      "sha256": "5872260f78cdaaa615d4fcf04584840d6f15f133228d145162d39dbfea6a2bdc",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-032.webp",
+      "bytes": 32474,
+      "hashEncoding": "raw-bytes",
+      "sha256": "46ca6b397276f7a5b61960f30734936f5d8cb17266856a13b0b72c77c42c61ef",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-033.webp",
+      "bytes": 32562,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7622594b0cdfc23d7e9cada9f3b1a9cb8f8a907af8dc7edaca25356adaaba1b2",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-034.webp",
+      "bytes": 32372,
+      "hashEncoding": "raw-bytes",
+      "sha256": "eaab34409f4b1242bea6641e332bfa8738f1510923ffd014dd4278158b07039e",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-035.webp",
+      "bytes": 23376,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a09052c895303bb65d91ee02e694c24d1b57140fc6b54c5aaacbbf3d03aab2cb",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-037.webp",
+      "bytes": 13782,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0b2a4777b9e8bc5882fd8e6dc0ad82adc17ba74970b0cb310b31a1bc4bfe4a8e",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-038.webp",
+      "bytes": 17830,
+      "hashEncoding": "raw-bytes",
+      "sha256": "5b7fd4b1904f5d191156d486e51ed1a024c7e0927b77fcd85945766b1c717404",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-039.webp",
+      "bytes": 13138,
+      "hashEncoding": "raw-bytes",
+      "sha256": "be75a3deab8024796a3d88fc6f2403666de2e9e763260d657de5316719c5e92b",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-040.webp",
+      "bytes": 23470,
+      "hashEncoding": "raw-bytes",
+      "sha256": "23c76996866da6f6725b4623d238b3b29e87825b4d3626d566dd8c5fcfe76dea",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-041.webp",
+      "bytes": 25628,
+      "hashEncoding": "raw-bytes",
+      "sha256": "239c7aab8a5e7ab57aa71ef423d1de5e2c755e6094010571844f5df25e4366a1",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-042.webp",
+      "bytes": 18010,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6aaa84f21a617231d5019dbe91f8f20f82868cb90f0616fd9373a60f382f5c3f",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-044.webp",
+      "bytes": 13968,
+      "hashEncoding": "raw-bytes",
+      "sha256": "94e09f0ffe21de35c2ddfb020158d5954ddefce9bdbf3af67c1d12ce8b75ad28",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-045.webp",
+      "bytes": 15050,
+      "hashEncoding": "raw-bytes",
+      "sha256": "cb541395c2c43fb77cd58fe37f0b28d8b9fa59bb6fb81d1524ef29b0005fd1d4",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-046.webp",
+      "bytes": 25118,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c85cd61e4f48962ea3c17012de062d6cf645e7a77f1a025dc10d7da054cc4bbf",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-047.webp",
+      "bytes": 14810,
+      "hashEncoding": "raw-bytes",
+      "sha256": "8b57fae7093bfec64109ab8f880c88d693e2f3d57e3de4fff9f1f0bbd5adc610",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-048.webp",
+      "bytes": 12090,
+      "hashEncoding": "raw-bytes",
+      "sha256": "f307bf8f92a3614497c3bfd23a18b986c45f764f2d2206a9e4df1c1d8bd018e9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-049.webp",
+      "bytes": 17086,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ee0f9527095320aa6c4e296bac2b9ba5206dbce4ceca7ae36ef753295118a941",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-050.webp",
+      "bytes": 18498,
+      "hashEncoding": "raw-bytes",
+      "sha256": "b03436fe4f97ff50ff50f1aa8a62a9bce3260a46db1d70d9cf4a6ecbe89891d2",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-051.webp",
+      "bytes": 16494,
+      "hashEncoding": "raw-bytes",
+      "sha256": "8903212490e1d7e1e86439b5ae15475705d794c81ffca29601a61d1e70288ad4",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-052.webp",
+      "bytes": 33474,
+      "hashEncoding": "raw-bytes",
+      "sha256": "617d22a7a993763d2831cc5a0710af292df8df0ce5002451e703c993c29dab10",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-053.webp",
+      "bytes": 31670,
+      "hashEncoding": "raw-bytes",
+      "sha256": "041e74fc962826616db85cd5e9faaacd5bf3af97ff4a78d553dd165c71d82e75",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-054.webp",
+      "bytes": 31848,
+      "hashEncoding": "raw-bytes",
+      "sha256": "824fda3c09530b9a64b4b496cb386cd39f5dd78f3c5ce0675dedc948ff09dbd5",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-055.webp",
+      "bytes": 30090,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7eca69960e71463ca7aa04a567c77c3b9ecebb98ab2f4af288a885823c00a8c7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-056.webp",
+      "bytes": 43762,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7734c23b331d4fc1f2bfae411d24b348c7c4963ef8fbb5339d2af13566a8c0bc",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-057.webp",
+      "bytes": 29134,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ce8a8632984a8ca412b358d6eff0ac86d864a006b56d8ef53b855bfc0715e5fe",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-058.webp",
+      "bytes": 28778,
+      "hashEncoding": "raw-bytes",
+      "sha256": "8e1d30ff76afe9cce63d057957d6072223bf349016ea240a0f89fcb190e72d18",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-059.webp",
+      "bytes": 25760,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d7c4cedd1762e604dbda6af4b1b1d37baced1de279f3d37d693a09a5aecfd7a9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-060.webp",
+      "bytes": 28724,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a3dd760bbc3b8d611f1f455887cc97f3d3c71cb9441ea126d572941810ed2e0d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-061.webp",
+      "bytes": 32954,
+      "hashEncoding": "raw-bytes",
+      "sha256": "197fa1335780d9de1ea9da44069d6dc0c6781e5b6b629a6776684cd1bcc3e664",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-062.webp",
+      "bytes": 34446,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ea381dd62336f2faf79314c0f415b7afe3f5e29d4291bc4bf51d2103fe180e5f",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-063.webp",
+      "bytes": 38246,
+      "hashEncoding": "raw-bytes",
+      "sha256": "fc4585acafc1fd013b20c9221fb6637096f560a300a12d578a39d7dd02207e86",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-064.webp",
+      "bytes": 28932,
+      "hashEncoding": "raw-bytes",
+      "sha256": "437f2c9c12738f44617dd630f428cf8c4b8343ecfb7b0ca9d5b3d17e3c322706",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-065.webp",
+      "bytes": 44818,
+      "hashEncoding": "raw-bytes",
+      "sha256": "095dc3dcbff6bd09352f4e045a116db1d93fb5f91948d92cd502f4975b156c76",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-066.webp",
+      "bytes": 33784,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ed8eb28075f2b91cd593cdcd56aa83ca071bfc92a7436b646d0883d8c154bfa8",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-067.webp",
+      "bytes": 39122,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2fad5e81aa407ef3c25fa8b82bc97e1312395fcdab63d5414b025ac2a960fcce",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-068.webp",
+      "bytes": 40076,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0fb2fbe3f41f3cdff8ee030e8db0ab35c2bacf6efeb7395f2626e50b7c840d65",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-069.webp",
+      "bytes": 40702,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d859d876871456139ca63ec5ea8529ba36eb11dc1d6294ff5c1daa22ac496484",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-070.webp",
+      "bytes": 41862,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4d72de7ebbdca63ebe016a946727c6b03d8c8f52acd275957d6c2e5019c01cf9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-071.webp",
+      "bytes": 28714,
+      "hashEncoding": "raw-bytes",
+      "sha256": "94c4b96afad5b3dedb2e94b8720a751cfa1a24613dc190020a00efa24f7a1874",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-072.webp",
+      "bytes": 38164,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6cbc8a4029401cfdba98ddd64592f80f970cba84e88d5cbde3f8967da56991f1",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-073.webp",
+      "bytes": 34010,
+      "hashEncoding": "raw-bytes",
+      "sha256": "a51c006eb5b18f73fb885ff10741d3c76c5709898e5d2b20187308edbb1fc3c9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-074.webp",
+      "bytes": 33788,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d9324c9a52c046e0e9abf70f796a02f708d927ac38df9447e1a33b28219d1fc2",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-075.webp",
+      "bytes": 32332,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e7b585efa7efb54be984f83540bd77b80d1acf46a6d35c9e2b83f1262e13953b",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-076.webp",
+      "bytes": 38410,
+      "hashEncoding": "raw-bytes",
+      "sha256": "bbdd377cb1dc3247619b22628d681d9c3110ff12b7cc28dd4b4d5807667fd0f7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-077.webp",
+      "bytes": 28108,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4ee0d2806799dd085c27830125dcad5e3cac194a4bead1567599f6a155121ee7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-078.webp",
+      "bytes": 31218,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d929003b2d39715384dc5455fa7d855d1176f4a4e69d11c0c07236bd0feecbdb",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-079.webp",
+      "bytes": 40056,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6c4df0633d97678163b4f6fabf0b9a6a6f55f67a94346763d204a1286a3ecaad",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-080.webp",
+      "bytes": 39910,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0a1367f2722b6707218e6d9c72264e13637cddcd6f4fba28bc79eefb8480cc05",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-081.webp",
+      "bytes": 29880,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1c7c927fb781ba54b1a3e9c422667d0258e1131ad5a8ba308d0a4d9e004644d6",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-082.webp",
+      "bytes": 22804,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1c307bc2c9533925958cb2bc89ab7ac3c2aa8ff4d345d73365c1494257dca5d8",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-083.webp",
+      "bytes": 27660,
+      "hashEncoding": "raw-bytes",
+      "sha256": "df1446d00c56d5f0c218e9d08f86df6745b37b3978e4a3e88f49f9c7d95de0c1",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-084.webp",
+      "bytes": 26984,
+      "hashEncoding": "raw-bytes",
+      "sha256": "2f80a6aa3af2178669e0359f823d5e1209b0c04505daef3391e52907093070a7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-085.webp",
+      "bytes": 35520,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1c99d309c2881110fa39dc5d91e9e3219042717aa9ed611dc483e2b12e557e6b",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-086.webp",
+      "bytes": 22378,
+      "hashEncoding": "raw-bytes",
+      "sha256": "31e7a1648619d4d8e005d3ba9dfb96930c1d31f2d82e53b9c3b269cb87eedfb3",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-087.webp",
+      "bytes": 23552,
+      "hashEncoding": "raw-bytes",
+      "sha256": "874a70170ec83a5e0ecfa72bc3a373d7c62bad8f0e59eecce08922cd98998587",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-088.webp",
+      "bytes": 36796,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ccd7db076888cc1bec4f6f6df938c7ca579ffe6c5307033a82e3ff9c6cdef512",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-089.webp",
+      "bytes": 27444,
+      "hashEncoding": "raw-bytes",
+      "sha256": "88932aedb3ca0caef8d10b35bb07d9c63b009ebb9fddf056040590b3043d728c",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-090.webp",
+      "bytes": 34254,
+      "hashEncoding": "raw-bytes",
+      "sha256": "197e3a6b58c18769dc1e20c38e5ddaab7e584bfb358d81e26688ce63f1e76e2e",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-091.webp",
+      "bytes": 25310,
+      "hashEncoding": "raw-bytes",
+      "sha256": "45d4d3a4584dd564cdcce7d20d9e821fc3667ac1d67aeaa74936da3833705aee",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-092.webp",
+      "bytes": 23878,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d4b0bc2d54fdfbf8b9a119969ebce798a968c1ece7f9811ece0702588d315699",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-093.webp",
+      "bytes": 25630,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7cb3a23bb7739a488dee7a23db9bce4d4fe0124bde845f2993f9a0734c7a9b75",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-094.webp",
+      "bytes": 22066,
+      "hashEncoding": "raw-bytes",
+      "sha256": "3f1f3f6b22383c55aeb297b9d687e30d4bc1c710cda31000468da5ffe6f322b9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-095.webp",
+      "bytes": 24528,
+      "hashEncoding": "raw-bytes",
+      "sha256": "156343761759b97fab6803bfcb39792f1a0ba88166c3beeb045f9d638fce1398",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-096.webp",
+      "bytes": 30456,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0486ca57b26bae6d49c1bd9fe1b9559f99c756b960699d8d7f92b74ed24b8c85",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-097.webp",
+      "bytes": 34160,
+      "hashEncoding": "raw-bytes",
+      "sha256": "36ac7201868a23da50b4eb6a3087282eb0ca8224f2571b5b9f1d2a5bb03182b4",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-098.webp",
+      "bytes": 23586,
+      "hashEncoding": "raw-bytes",
+      "sha256": "aa116246017445fcca112159c4c8029d164dcb1c8836bbeebb98d6acbff420ea",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-099.webp",
+      "bytes": 25032,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7368e1c4d9e6780f5b1502b3eeadb271466c5efaeb918db409cb512fb52aba0d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-100.webp",
+      "bytes": 22722,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7d8dda3b85c171bf17158bc508a6069fbb728689b1ef791b1a63cf73786ba439",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-101.webp",
+      "bytes": 29738,
+      "hashEncoding": "raw-bytes",
+      "sha256": "dc1b4604ab2e43c484f70a51392432fc117319a657162bf9c25d032f24000711",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-102.webp",
+      "bytes": 36688,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ff8b80fe89935d7583ad542ca213d60ff481402c693053f802d540e22a1637f0",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-103.webp",
+      "bytes": 22474,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ee4194d8fddcb629b67cf2f0597b1db519bc7fdbfbdc6e305fa487e09ed3adda",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-104.webp",
+      "bytes": 18582,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7b94209d180f4a4f94b4606b3e3d0bc92f17d9ae08a0793c41d26433f804ff0a",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-105.webp",
+      "bytes": 17456,
+      "hashEncoding": "raw-bytes",
+      "sha256": "9818587b8cbdf4051fa979fa9c9bc00a474a2e5e4b72a979525eb26b0600b3f7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-106.webp",
+      "bytes": 19962,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4f09f67466a17fae181abae6e8530805c89c177f41b8207ca2a7dfeb87b2fe74",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-107.webp",
+      "bytes": 19282,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e3ce554e4a4d7d15e54baa5593dc0f87f8f91cda877a5ed7543c269ea3bdb3b6",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-108.webp",
+      "bytes": 18368,
+      "hashEncoding": "raw-bytes",
+      "sha256": "cb66af2adf33d6047ee20d46b4c52962c126a7246ed55d1907f16e54f8316d54",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-109.webp",
+      "bytes": 13688,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4f275aabe81c3d5917f49aafe503ba3a8f1e3f2521b343eb295eab2aaf3afeee",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-110.webp",
+      "bytes": 17642,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c6789b400757018a271492f4bd47ed47babe634a60eebaa18a96c529c1973f57",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-111.webp",
+      "bytes": 20008,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0b74ab43347021f663495648442c245775bf65e53d8673624571b23fccb8ebb7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-112.webp",
+      "bytes": 19250,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e9f702899cd3e1177ae2e80ddfc9d815088437e933b4bda1bd1a13b1690690d7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-113.webp",
+      "bytes": 20330,
+      "hashEncoding": "raw-bytes",
+      "sha256": "420336a450d881ad6df92325e00651c7483ca6c3fddd6acde43c99f22b7c90d8",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-114.webp",
+      "bytes": 19292,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ba2a7c6d6a1c5a87261b81b416ce80bac58e609ca77bcb9bf83cd1187a1ea526",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-115.webp",
+      "bytes": 20736,
+      "hashEncoding": "raw-bytes",
+      "sha256": "4088dfcd9fbe965f982a348fefd21eabd9e6166f838b5ecef34042f53c4e1928",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-116.webp",
+      "bytes": 23094,
+      "hashEncoding": "raw-bytes",
+      "sha256": "7e1ee337021b647a71254a5be59528bf9d708167c0d5fe23fa4ab48acfb0cc42",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-117.webp",
+      "bytes": 13166,
+      "hashEncoding": "raw-bytes",
+      "sha256": "6ce96622f276dd1b541038a7d358b14bba0f390dbf57e56aaaddda78d3e1cfa9",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-118.webp",
+      "bytes": 20936,
+      "hashEncoding": "raw-bytes",
+      "sha256": "01ea6a8f474c4b7f1027796ea5363b33ee9cb7e154b2c33b96651b0ab497b529",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-119.webp",
+      "bytes": 19842,
+      "hashEncoding": "raw-bytes",
+      "sha256": "d85b147f4b8ed1adaef748b0286fb58ae981e59b8947415951a06fc4a3a2081e",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-120.webp",
+      "bytes": 22268,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c649cff27c66f2d58e8ea8e3877af13ffb7efb6f085f0aa2d75439a20a04e14d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-121.webp",
+      "bytes": 20260,
+      "hashEncoding": "raw-bytes",
+      "sha256": "08f8c659600399abd51dc93cca098dc65f0610ac2410a51c7177afcb8d5b33b8",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-122.webp",
+      "bytes": 19312,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c96f943c11d5139f5738ee7954fc73d1021def7743c6490d6daad152f8623807",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-123.webp",
+      "bytes": 24524,
+      "hashEncoding": "raw-bytes",
+      "sha256": "0f0ada36727042b04916f91848240ca9fc86945777d3cc65861e63fd61461c6f",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-124.webp",
+      "bytes": 18602,
+      "hashEncoding": "raw-bytes",
+      "sha256": "12e1b93b917f0a8c5afa7154af9aac3a230dc10d0951acfe4ef838ec3a206e7d",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-125.webp",
+      "bytes": 19142,
+      "hashEncoding": "raw-bytes",
+      "sha256": "1d3dc680d72d31931875116c71b9dc73c670c2361eb1f4a70a280e6d05b371b7",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-126.webp",
+      "bytes": 19584,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e4217caa6aa5d01b354ff289d7170bc9cc7cc2ae746b057b7c5aace670897307",
+      "classification": "archived-document",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-DOCUMENT"
+      ],
+      "generationPolicy": "원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/credentials/gallery/document-127.webp",
+      "bytes": 19522,
+      "hashEncoding": "raw-bytes",
+      "sha256": "c5a223a9a78f651a9432ca319867c1481a9cd3728e360b7d0de088805ea2e27c",
       "classification": "archived-document",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
@@ -820,8 +3061,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF10",
-        "CF11"
+        "CF09"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -862,7 +3102,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF05"
+        "CF07"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -881,7 +3121,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF05"
+        "CF07"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -917,25 +3157,6 @@
       "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/films/ax-concept-720p-draft.mp4",
-      "bytes": 5420653,
-      "hashEncoding": "raw-bytes",
-      "sha256": "9ff39d88cf892d4242ca8da97f2288bb89593ab56030657b5629b2bc4aaa2c70",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
     },
     {
       "path": "dist/assets/films/ax-detect-fast.mp4",
@@ -1118,32 +3339,40 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/films/flow-ax-detect-v3.mp4",
-      "bytes": 5405239,
+      "path": "dist/assets/films/ocean-circulation-1080p.mp4",
+      "bytes": 20913127,
       "hashEncoding": "raw-bytes",
-      "sha256": "d6f69fd95c3cc9b25e2988a779a235c2ce90bbcef300cac1e8d62f7b2664bb42",
-      "classification": "retired-video-delete-blocked",
+      "sha256": "20903f55cf3d2e49ffeea5c3698cc662294cc904b851f006d8363e923cfb13f3",
+      "classification": "film-candidate",
       "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
+      "status": "connected-see-runtime-status",
+      "runtimeSlots": [
+        {
+          "id": "expertise-3",
+          "approvalInRuntime": "approved",
+          "actualDuration": 24,
+          "plannedDuration": null
+        }
+      ],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "AX02"
+        "SOURCE-OR-SUPPORT-REVIEW",
+        "CF12"
       ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
     },
     {
-      "path": "dist/assets/films/flow-ax01-layers-draft.mp4",
-      "bytes": 1649304,
+      "path": "dist/assets/films/ocean-circulation-poster.webp",
+      "bytes": 767872,
       "hashEncoding": "raw-bytes",
-      "sha256": "bb611a5de0cd629bb86a93708fd4a8c15557791925888cc26890dce9cfe20490",
-      "classification": "retired-video-delete-blocked",
+      "sha256": "a500564cbc47108bf6d7f848bc3de09f35e3c9341fc87f785b3848e6aae8a1ac",
+      "classification": "film-candidate",
       "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
+      "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
       "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
@@ -1152,218 +3381,8 @@
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
       "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-ax02-analysis-draft.mp4",
-      "bytes": 3643631,
-      "hashEncoding": "raw-bytes",
-      "sha256": "9bbe7bef2dee9ad3559494fc86abf6639fb64b66dccfc01b22f63b9768123a38",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-ax02-analysis-r2-draft.mp4",
-      "bytes": 4209490,
-      "hashEncoding": "raw-bytes",
-      "sha256": "71b8c7cfd0b97e2b14de66790aeed4e8e4fdc6f081579b8d53ffc6166400a067",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-ax03-monitor-draft.mp4",
-      "bytes": 2856720,
-      "hashEncoding": "raw-bytes",
-      "sha256": "8a25ea59332a8aa49c133a52db2c878eef02bec4e33570fe96150688a36fcbb2",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-c01-earth-draft.mp4",
-      "bytes": 3273292,
-      "hashEncoding": "raw-bytes",
-      "sha256": "e3f6abafd5ac167c185c269d9e04795d1ddfe75aa53360644cd52199c48e99b3",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-c02-satellite-draft.mp4",
-      "bytes": 2413624,
-      "hashEncoding": "raw-bytes",
-      "sha256": "d98f2ea8780fd696940f333b64509520bec0753aeac1e5031bc2145f77f394a6",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-c05-multibeam-draft.mp4",
-      "bytes": 4136525,
-      "hashEncoding": "raw-bytes",
-      "sha256": "db41954c7ccaf187aa723d835ad624eeb21867eb53e41928f64c640548aa4aa5",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "CF05"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-c06-underwater-draft.mp4",
-      "bytes": 5616931,
-      "hashEncoding": "raw-bytes",
-      "sha256": "232b7cbf94900e519aafd656dd35a8614612223d2523336334c8890553f9842b",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "CF07"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-c07-lab-draft.mp4",
-      "bytes": 2030513,
-      "hashEncoding": "raw-bytes",
-      "sha256": "225e694d12d919540fa76b39e38d82068fee90d93723322129e9f3820637d671",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "CF10",
-        "CF11"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-r3-opening-connected.mp4",
-      "bytes": 1191303,
-      "hashEncoding": "raw-bytes",
-      "sha256": "21a59a3f83f7e5cf7b9c6d8b98d12c54c4722f27302109abecd43f51ce3af7c5",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/flow-usv-existing-draft.mp4",
-      "bytes": 4797711,
-      "hashEncoding": "raw-bytes",
-      "sha256": "114de17c99986ac010a8216290c67d109c53de325ef594a48f037343bc6009ae",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "CF05"
-      ],
-      "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
-    },
-    {
-      "path": "dist/assets/films/geosr-hero-720p-draft.mp4",
-      "bytes": 12290037,
-      "hashEncoding": "raw-bytes",
-      "sha256": "30c4efd3168209be341a8c2befa68233c2eb7b789fd01661503755c530bd46bc",
-      "classification": "retired-video-delete-blocked",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "retired-delete-blocked",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-OR-SUPPORT-REVIEW"
-      ],
-      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단",
-      "nextAction": "사이트 비연결 유지 / 삭제 차단 해소 시 정리"
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
       "path": "dist/assets/films/platform-buoy-preview.mp4",
@@ -1444,6 +3463,27 @@
       "nextAction": "초안 또는 기존 상태 유지 / 새 장면 기준 재검수"
     },
     {
+      "path": "dist/assets/geodap-home-public-preview-20260928.png",
+      "bytes": 798087,
+      "hashEncoding": "raw-bytes",
+      "sha256": "e804b82cd20d040d2c4f08e0a704b8228dad0520e1c90bc8501ae5b69ff274d1",
+      "classification": "archived-platform-capture-candidate",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/home.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-GEODAP"
+      ],
+      "generationPolicy": "실제 GeoDAP 캡처만 사용 / 원본 전체 비율 유지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
       "path": "dist/assets/geodap-workspace-public-preview-20260928.jpg",
       "bytes": 87326,
       "hashEncoding": "raw-bytes",
@@ -1452,9 +3492,7 @@
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
-      "textualReferenceFiles": [
-        "dist/home.js"
-      ],
+      "textualReferenceFiles": [],
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
@@ -1465,11 +3503,11 @@
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
-      "path": "dist/assets/hero-coastal-estuary-concept-20260928.webp",
-      "bytes": 160696,
+      "path": "dist/assets/geosr-brochure-coast-2025.jpg",
+      "bytes": 1462674,
       "hashEncoding": "raw-bytes",
-      "sha256": "744e116197ca4fa8f500c82a8c79dce46bfaeb66d1b94645873aa89dedb70024",
-      "classification": "concept-candidate",
+      "sha256": "8f8d98e324482715cddd53c558e9fb22ff5496fe3ddb39df26e857615d45fa53",
+      "classification": "company-brochure-photo-temporary-poster",
       "classificationBasis": "Path and existing production records; not independent source authentication",
       "status": "not-currently-connected-by-film-manifest",
       "runtimeSlots": [],
@@ -1479,10 +3517,11 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF01"
+        "CF01",
+        "CF13"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
-      "issue": "홈 화면 정지 콘셉트 / 실제 지역·GeoSR 사업지 아님 / 영상 프레임 아님",
+      "issue": "회사소개서 2면의 실제 사진 / 촬영 장소·날짜 미확인 / 메인 임시 포스터만",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
     {
@@ -1542,25 +3581,6 @@
         "SOURCE-OR-SUPPORT-REVIEW"
       ],
       "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
-      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
-      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
-    },
-    {
-      "path": "dist/assets/platform-geodap.png",
-      "bytes": 3076411,
-      "hashEncoding": "raw-bytes",
-      "sha256": "c372b6807241808d79d8f0cd21baf14f3b0ed8a20f75b0f2719e36844856519f",
-      "classification": "archived-platform-capture-candidate",
-      "classificationBasis": "Path and existing production records; not independent source authentication",
-      "status": "not-currently-connected-by-film-manifest",
-      "runtimeSlots": [],
-      "textualReferenceFiles": [],
-      "visualAndScientificApproval": "not-established-by-this-inventory",
-      "reviewRecord": null,
-      "followUpPlanIds": [
-        "SOURCE-GEODAP"
-      ],
-      "generationPolicy": "실제 GeoDAP 캡처만 사용 / 원본 전체 비율 유지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },
@@ -1966,7 +3986,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF04"
+        "CF03"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "층별 지리·변수·기간·기하 검수 전 후보",
@@ -1985,7 +4005,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF05"
+        "CF07"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
@@ -2004,7 +4024,7 @@
       "visualAndScientificApproval": "not-established-by-this-inventory",
       "reviewRecord": null,
       "followUpPlanIds": [
-        "CF05"
+        "CF07"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",

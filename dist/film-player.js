@@ -28,7 +28,9 @@
   r.host.append(v);v.src=r.plan.src;
  }
  function sync(r,explicit=false){
-  if(!permitted(r)||(!automatic()&&!explicit)){r.video?.pause();return}
+  if(explicit)r.explicit=true;
+  if(!permitted(r)){r.explicit=false;r.video?.pause();return}
+  if(!automatic()&&!r.explicit){r.video?.pause();return}
   load(r);if(!r.video)return;
   if(r.plan.mode==='scroll'){r.video.pause();seekTo(r);return}
   r.video.play().catch(()=>{if(r.button){r.button.hidden=false;r.button.setAttribute('aria-pressed','false')}});
@@ -43,9 +45,9 @@
    const allowed=(plan.approval==='approved'||draft)&&localMedia(plan.src);
    if(allowed&&draft){host.classList.add('film-draft');const badge=document.createElement('span');badge.className='film-draft-badge';badge.textContent=(english?plan.labelEn:plan.labelKo)||(plan.id.startsWith('platform-')?(english?'ACTUAL UI · EDITED PREVIEW':'실제 UI · 편집 초안'):(english?'720p CONCEPT DRAFT':'720p 콘셉트 초안'));host.append(badge)}
    if(allowed&&!button){button=document.createElement('button');button.type='button';button.className='film-inline-toggle';button.dataset.filmToggle=plan.id;host.setAttribute('role','group');host.append(button)}
-   const r={plan,host,button,allowed,visible:!observer,manual:false,failed:false,video:null,progress:0};
+   const r={plan,host,button,allowed,visible:!observer,manual:false,explicit:false,failed:false,video:null,progress:0};
    records.set(plan.id,r);host.dataset.filmState=r.allowed?'approved':'pending';
-   if(button){button.hidden=!r.allowed;updateButton(r,false);r.onClick=()=>{const pausing=!!r.video&&!r.video.paused;r.manual=pausing;if(pausing)r.video.pause();else sync(r,true)};button.addEventListener('click',r.onClick)}
+   if(button){button.hidden=!r.allowed;updateButton(r,false);r.onClick=()=>{const pausing=!!r.video&&!r.video.paused;r.manual=pausing;if(pausing){r.explicit=false;r.video.pause()}else sync(r,true)};button.addEventListener('click',r.onClick)}
    if(observer)observer.observe(host);else sync(r);
   }
   records.forEach(r=>sync(r));
@@ -65,7 +67,7 @@
  };
  document.addEventListener('geosr:media-updated',refresh);
  document.addEventListener('visibilitychange',()=>records.forEach(r=>sync(r)));
- reduced.addEventListener('change',()=>records.forEach(r=>sync(r)));
+ reduced.addEventListener('change',()=>records.forEach(r=>{r.explicit=false;sync(r)}));
  navigator.connection?.addEventListener?.('change',()=>records.forEach(r=>sync(r)));
  const tabs=[...document.querySelectorAll('[data-ax-scene]')];
  const panels=[...document.querySelectorAll('.ax-reel-panel')];

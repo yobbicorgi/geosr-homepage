@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "revision": "higgsfield-wide-worldview-r2-20260928",
+  "revision": "company-evidence-and-ax-actual-ui-preflight-r5-20260928",
   "baselineCommit": "aea49aa",
-  "status": "higgsfield-brief-ready-generation-blocked-by-basic-plan; AX-local-embed-reviewed",
+  "status": "1210-credits-confirmed; no-paid-generation; evidence-and-source-frames-pending",
   "generationReady": false,
   "releaseReady": false,
   "authority": "docs/redesign-next/00-START-HERE.md",
-  "promptVersion": "home-wide-worldview-r1",
+  "promptVersion": "company-evidence-ax-source-ui-r5-frames-pending",
   "sourceRegistry": {
-    "coastal-hero": "dist/assets/hero-coastal-estuary-concept-20260928.webp",
+    "coastal-hero": "dist/assets/geosr-brochure-coast-2025.jpg",
     "data": "docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json",
     "equipment": "docs/redesign-production/equipment-sources/manifest.json",
     "usv": "dist/assets/equipment-usv-original.png",
@@ -20,23 +20,26 @@
     "opening-review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
     "ax-review": "docs/redesign-next/11-AX-EMBED-REVIEW.md",
     "capture-review": "docs/redesign-production/PLATFORM-CAPTURE-20260920.md",
-    "geodap": "dist/assets/platform-geodap.png",
+    "geodap": "dist/assets/geodap-home-public-preview-20260928.png",
     "lab-style": "dist/assets/analysis-lab-v1.webp",
     "microscope": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
     "rov": "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png",
-    "wave-concept": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png"
+    "wave-concept": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png",
+    "company-brochure": "docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf",
+    "source-archive": "dist/source-archive.json",
+    "company-evidence": "docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md"
   },
   "commonInstructions": {
-    "image": "Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.",
-    "motion": "Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.",
+    "image": "Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.",
+    "motion": "One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.",
     "negative": [
-      "No copied Allforland footage, landmarks, text or graphics",
-      "No invented Korean coastline or implied actual GeoSR site for a generated setting",
-      "No fabricated measurements, real-time UI or glowing data web",
-      "No unstable terrain, morphing hulls, implausible wake or disconnected cables",
-      "No generated actual AX platform interface or AX-only concept in the company film",
-      "No people in laboratory concepts",
-      "No previously rejected coastal-survey-source.png"
+      "No copied Allforland footage or design",
+      "No invented Korean coastline, city, harbor, beach or implied GeoSR site",
+      "No laser-like satellite or underwater sonar beams presented as observed light",
+      "No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI",
+      "No mixing multibeam depth with ADCP velocity or scenario forecasts with observations",
+      "No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus",
+      "No previously rejected coastal-estuary concept poster as an input frame"
     ],
     "gates": [
       "source identity and permitted context",
@@ -57,7 +60,7 @@
     {
       "id": "ax",
       "duration": 30,
-      "actualUIAllowed": false
+      "actualUIAllowed": true
     }
   ],
   "shots": [
@@ -67,30 +70,32 @@
       "start": 0,
       "end": 5,
       "duration": 5,
-      "title": "넓은 하구와 외해의 시작",
-      "method": "higgsfield-concept",
-      "referenceIds": [],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "넓은 바다와 하구가 한 프레임에 읽히는 실제 세계 같은 첫인상",
+      "title": "실제 연안의 광역 오프닝",
+      "method": "source-composite",
+      "referenceIds": [
+        "coastal-hero",
+        "company-brochure"
+      ],
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "실제 한국 연안에서 도시·해안·외해의 규모를 동시에 보여준다",
       "frames": {
-        "start": "넓은 해안·하구와 외해, 왼쪽 제목 여백",
-        "middle": "드론이 천천히 전진하며 강과 바다의 규모가 커짐",
-        "end": "수평선과 해안 형상을 유지한 채 다음 광역 컷으로 연결"
+        "start": "넓은 실사와 왼쪽 제목 여백",
+        "middle": "카메라가 느리게 측면 전진",
+        "end": "다음 위성 시점으로 올라갈 공간"
       },
-      "imageInstruction": "Generate a premium photoreal wide aerial of an unspecified coastal estuary and open sea. Broad river mouth, natural shorelines, distant islands and mountains, deep ocean blue and warm late-day light. No identifiable landmark or invented scientific overlay. Reserve the left third for HTML title.",
-      "motionInstruction": "One smooth forward drone move with a slight bank over five editorial seconds. Landforms and cloud shadows stay stable; no sudden geographic transformation.",
-      "compositingInstruction": "Add title in HTML only. If a geospatial overlay is desired, use a separately verified source layer after generation. Keep the conceptual-location label in review.",
+      "imageInstruction": "Use a source-approved real aerial. Match the real shoreline and leave the left third readable. The brochure photograph is only a temporary poster, not approved film footage.",
+      "motionInstruction": "One slow lateral aerial move. No new coastal geography.",
+      "compositingInstruction": "HTML title only; location label only after footage provenance check.",
       "rejectIf": [
-        "허구 해안을 실제 사업지로 제시",
-        "지형·수평선 변형"
+        "Reject fabricated or unstable coast"
       ],
       "sourceRequirements": [
-        "실제 공개 시 지형·촬영 출처 또는 생성 콘셉트 표기 결정"
+        "Need a dated, licensable native-1080p aerial and location identity"
       ],
-      "continuity": "CF13과 동일한 해역·빛으로 돌아오거나 명확한 컷으로 루프를 만든다.",
+      "continuity": "Different source locations receive editorial cuts.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF01-start.png",
         "middle": "docs/redesign-next/keyframes/CF01-middle.png",
@@ -105,30 +110,32 @@
       "start": 5,
       "end": 10,
       "duration": 5,
-      "title": "강·도시·해안의 광역 연결",
-      "method": "higgsfield-concept",
-      "referenceIds": [],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "현실 환경의 또 다른 큰 뷰로 사업 범위를 확장",
+      "title": "한반도 위성 관측 범위",
+      "method": "source-composite",
+      "referenceIds": [
+        "data",
+        "source-archive"
+      ],
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "진짜 한반도 지형에서 위성영상의 공간 범위로 시점을 이동한다",
       "frames": {
-        "start": "강과 도시가 해안으로 이어지는 넓은 시야",
-        "middle": "카메라가 강의 진행 방향을 따라 유려하게 이동",
-        "end": "수면 방향을 유지하며 다음 연안 광역 컷으로 편집"
+        "start": "실사에서 실제 한반도 지도로 컷",
+        "middle": "센서 범위 도식이 짧게 나타남",
+        "end": "검증된 위성 래스터로 전환"
       },
-      "imageInstruction": "Show a believable wide aerial where a river, city edge and coastline share one environment. Natural urban density, credible bridges, vast water and clear horizon. Cinematic blue-gold light; no famous skyline or exact Korean place claim.",
-      "motionInstruction": "A controlled drone move follows the water corridor; bridges and buildings remain rigid. Use a clean cut instead of pretending CF01 and CF02 are the same location.",
-      "compositingInstruction": "Technical accents may be added only from verified spatial data. Keep the generated city as an illustrative location, not a project record.",
+      "imageInstruction": "Use a documented real geography plate. Satellite silhouette can be generated as a separate illustrative layer only.",
+      "motionInstruction": "Controlled upward camera transition; coastline geometry stays fixed.",
+      "compositingInstruction": "Composite source satellite product, date, sensor and swath after generation.",
       "rejectIf": [
-        "유명 도시 복제",
-        "도로·건물 변형"
+        "Reject fake peninsula or laser scan"
       ],
       "sourceRequirements": [
-        "실사 대체 후보의 권리·위치 확인"
+        "Need a dated sensor/product and public rights"
       ],
-      "continuity": "CF01과 이동 방향·수평선 높이·노출을 맞춘 편집 컷이다.",
+      "continuity": "Cut on camera direction from CF01; do not pretend unrelated footage is one shot.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF02-start.png",
         "middle": "docs/redesign-next/keyframes/CF02-middle.png",
@@ -141,32 +148,34 @@
       "id": "CF03",
       "film": "company",
       "start": 10,
-      "end": 15,
-      "duration": 5,
-      "title": "연안·섬·항만의 규모",
-      "method": "higgsfield-concept",
-      "referenceIds": [],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "해양과 연안의 다층 환경을 한 화면에 제시",
+      "end": 14,
+      "duration": 4,
+      "title": "위성 제품과 자료 처리",
+      "method": "source-composite",
+      "referenceIds": [
+        "data",
+        "source-archive"
+      ],
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "하나의 실제 위성 제품에서 분석 가능한 해양 자료로 이어진다",
       "frames": {
-        "start": "바다·섬·연안 인프라가 넓게 보임",
-        "middle": "부드러운 선회로 육지와 외해의 관계를 드러냄",
-        "end": "조사선이 들어올 수 있는 바다 여백을 남김"
+        "start": "원래 위성영상과 결측 영역",
+        "middle": "한 제품의 검증된 자료층",
+        "end": "분석 대상으로 진입"
       },
-      "imageInstruction": "Create a wide, realistic aerial of open coastal water, distant islands and restrained port infrastructure. The sea occupies most of the frame and the scene feels like documentary drone footage. No invented named port or readable signage.",
-      "motionInstruction": "One slow aerial arc across the coast. Water motion and shore geometry remain coherent; no exaggerated speed or fantasy vessels.",
-      "compositingInstruction": "A later verified survey route can be composited sparingly, not generated as a false track.",
+      "imageInstruction": "Provide subtle ambient motion behind an authentic data plate; no map or raster generation.",
+      "motionInstruction": "Slow push toward a selected real analysis area.",
+      "compositingInstruction": "Keep product pixels, land mask, legend, unit and timestamp exact.",
       "rejectIf": [
-        "가짜 방파제 과장",
-        "건물·섬 형태 변형"
+        "Reject false multisensor simultaneity"
       ],
       "sourceRequirements": [
-        "항만이나 섬을 특정 지역으로 표시할 경우 실제 출처 확보"
+        "Need matched raw and processed raster with product metadata"
       ],
-      "continuity": "CF04의 선박 장면과 해수면 방향이 자연스럽게 이어지도록 컷한다.",
+      "continuity": "CF02 and CF03 use the same documented geographic extent or a clear cut.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF03-start.png",
         "middle": "docs/redesign-next/keyframes/CF03-middle.png",
@@ -178,36 +187,35 @@
     {
       "id": "CF04",
       "film": "company",
-      "start": 15,
-      "end": 20,
-      "duration": 5,
-      "title": "큰 해역 속 조사선",
-      "method": "higgsfield-concept",
+      "start": 14,
+      "end": 18,
+      "duration": 4,
+      "title": "검증된 AI 영상분석",
+      "method": "source-composite",
       "referenceIds": [
-        "equipment",
-        "usv"
+        "source-archive",
+        "company-evidence"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "현장 관측을 넓은 해양 환경 안에서 보여줌",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "실제 원영상과 실제 모델 출력을 한 사례로 읽게 한다",
       "frames": {
-        "start": "선박이 작은 비중으로 넓은 해역에 등장",
-        "middle": "카메라가 항적을 따라 이동하면서 관측 행동을 읽힘",
-        "end": "선박을 한 단계 가까이 보는 CF05로 연결"
+        "start": "원영상의 분석 대상",
+        "middle": "원본과 정합된 mask 또는 box",
+        "end": "결과를 1초 이상 유지"
       },
-      "imageInstruction": "A marine survey vessel or unmanned survey craft moves through broad open water. The credible hull is smaller than the environment, with modest wake and natural daylight. Match any visible GeoSR hardware only when source reference supports it.",
-      "motionInstruction": "Parallel drone tracking at plausible survey speed; a continuous wake trails behind. No hull morphing, extra sensors or dramatic acceleration.",
-      "compositingInstruction": "Use a concept label until vessel identity is verified. Do not imply a precise surveyed location or depth result.",
+      "imageInstruction": "Use the source video as the sole scene. No synthetic detection result.",
+      "motionInstruction": "The camera is stable while the verified output appears.",
+      "compositingInstruction": "Overlay only checked instance segmentation or detection data from the same model and frames.",
       "rejectIf": [
-        "선체 변화",
-        "항적 방향 오류"
+        "Reject fabricated predictions or false positives concealed as truth"
       ],
       "sourceRequirements": [
-        "선박 유형·원본 형상·사용 권리 대조"
+        "Need releasable source video, model output and class definitions"
       ],
-      "continuity": "CF05에서 같은 장비라고 주장할 경우 선체·방향을 실제로 일치시킨다.",
+      "continuity": "Do not merge marine-life boxes with trash masks.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF04-start.png",
         "middle": "docs/redesign-next/keyframes/CF04-middle.png",
@@ -219,36 +227,35 @@
     {
       "id": "CF05",
       "film": "company",
-      "start": 20,
-      "end": 24,
+      "start": 18,
+      "end": 22,
       "duration": 4,
-      "title": "현장 무인선과 측량 행동",
-      "method": "imagegen-reference",
+      "title": "해수욕장 드론 조사",
+      "method": "source-composite",
       "referenceIds": [
-        "equipment",
-        "usv"
+        "source-archive",
+        "company-brochure"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "넓은 바다 안의 실제 조사 수단을 짧게 보여줌",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "현실 해안의 넓은 비행 장면에서 정사영상 제작 맥락을 보여준다",
       "frames": {
-        "start": "바다 맥락과 선체 전체가 함께 보임",
-        "middle": "무인선의 일정 속도 이동과 작은 항적",
-        "end": "수면의 관측 지점을 CF06으로 넘김"
+        "start": "실제 해수욕장·해안 항공 뷰",
+        "middle": "드론 비행방향을 따라 해빈이 보임",
+        "end": "동일 장소 정사영상으로 컷"
       },
-      "imageInstruction": "Keep the source-referenced unmanned survey craft visible in a medium-wide ocean view, not a heroic close-up. Preserve hull, deck fittings and antenna positions only where source pixels verify them.",
-      "motionInstruction": "Track the craft at modest speed in one direction. Keep fittings rigid, wake behind the stern and draft consistent.",
-      "compositingInstruction": "No luminous sonar rays; any survey track is a source-controlled later overlay.",
+      "imageInstruction": "Use actual licensed coastal drone footage; generated camera interpolation is a candidate only after reference frames match.",
+      "motionInstruction": "One slow forward drone path at credible height.",
+      "compositingInstruction": "Correct orthophoto and DEM are source overlays, never invented imagery.",
       "rejectIf": [
-        "가짜 GeoSR 로고·장비",
-        "선체·항적 불일치"
+        "Reject drone scanning deep seabed"
       ],
       "sourceRequirements": [
-        "회사 장비 원본과 선택 스틸 상세 비교"
+        "Need dated drone source, orthophoto and matching location"
       ],
-      "continuity": "CF04와 동일 선박이 아니라면 명확한 다른 조사 컷으로 연결한다.",
+      "continuity": "Different location from CF04 requires an editorial cut.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF05-start.png",
         "middle": "docs/redesign-next/keyframes/CF05-middle.png",
@@ -270,35 +277,35 @@
     {
       "id": "CF06",
       "film": "company",
-      "start": 24,
-      "end": 28,
-      "duration": 4,
-      "title": "관측 지점이 놓인 바다",
-      "method": "imagegen-reference",
+      "start": 22,
+      "end": 27,
+      "duration": 5,
+      "title": "해안선 변화와 조사 범위",
+      "method": "source-composite",
       "referenceIds": [
-        "equipment"
+        "source-archive",
+        "company-evidence"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "장비보다 바다와 관측 맥락을 먼저 읽힘",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "해안선·해빈 단면과 수중 조사 영역의 경계를 분명히 한다",
       "frames": {
-        "start": "넓은 수면에 작은 관측 부이 또는 지점",
-        "middle": "잔잔한 파도와 부이의 물리적인 움직임",
-        "end": "수면 경계를 이용해 CF07 수중으로 연결"
+        "start": "실제 정사영상과 해안선",
+        "middle": "검증된 다른 시기 해안선 또는 단면",
+        "end": "조사선 측선으로 컷"
       },
-      "imageInstruction": "Show a broad ocean observation setting with a small source-verified buoy only if its model is identified. Otherwise use a wide water-level shot without detailed equipment.",
-      "motionInstruction": "One slow camera descent toward the surface. Buoy motion follows waves and any tether has a plausible load path.",
-      "compositingInstruction": "Do not invent sensor readouts or unsupported platform names.",
+      "imageInstruction": "Do not invent shoreline change or point clouds. Use source maps only.",
+      "motionInstruction": "Measured camera move over actual orthophoto.",
+      "compositingInstruction": "Separate beach DEM from bathymetric survey. Preserve date, datum and units.",
       "rejectIf": [
-        "불가능한 케이블",
-        "부이 과장"
+        "Reject morphing unmatched coastlines"
       ],
       "sourceRequirements": [
-        "센서·부이 모델과 계류 구조 확인"
+        "Need matched survey dates and shoreline geometry"
       ],
-      "continuity": "CF07 수중 컷으로 넘어갈 때 같은 위치라는 주장은 출처가 있어야 한다.",
+      "continuity": "Use a visible cut to CF07 marine survey.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF06-start.png",
         "middle": "docs/redesign-next/keyframes/CF06-middle.png",
@@ -317,36 +324,35 @@
     {
       "id": "CF07",
       "film": "company",
-      "start": 28,
-      "end": 33,
+      "start": 27,
+      "end": 32,
       "duration": 5,
-      "title": "수면에서 수중 환경으로",
-      "method": "imagegen-reference",
+      "title": "멀티빔 해저지형 조사",
+      "method": "source-composite",
       "referenceIds": [
-        "rov",
-        "equipment"
+        "equipment",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "넓은 환경에서 수중 조사로 시점을 바꿈",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "조사선 항해와 멀티빔 수심자료의 관계를 설명한다",
       "frames": {
-        "start": "수면 경계가 읽히는 넓은 수중 시야",
-        "middle": "카메라가 완만히 내려가며 해저 맥락을 보여줌",
-        "end": "수중 기록을 연안 자료의 평면으로 편집"
+        "start": "넓은 해역 속 실제 조사선",
+        "middle": "선저 음향 부채꼴 설명 도식",
+        "end": "실제 측선·수심점이 지형도로 구성"
       },
-      "imageInstruction": "A credible underwater view with water column, seafloor context and optional source-verified ROV. No fantasy lighting, invented species or cable disconnected from the vehicle.",
-      "motionInstruction": "One controlled descent, stable scale and water motion; if a ROV is present its rigid body and tether remain coherent.",
-      "compositingInstruction": "Treat generated seafloor as illustrative. Do not name it as a real surveyed site.",
+      "imageInstruction": "Real vessel photo or video and sensor geometry required. Do not generate branded vessel details.",
+      "motionInstruction": "Track survey vessel slowly; fixed transducer relation and credible wake.",
+      "compositingInstruction": "Sonar fan is a separate transparent explanatory graphic; bathymetry pixels are actual source data.",
       "rejectIf": [
-        "테더 단절",
-        "해저 지형 급변"
+        "Reject luminous underwater light or fake depth values"
       ],
       "sourceRequirements": [
-        "ROV 형상·테더·환경 스케일 원본 대조"
+        "Need vessel footage, sensor mounting and releasable bathymetry"
       ],
-      "continuity": "수중에서 지도 자료로 바뀔 때 기록→분석의 편집 컷을 쓴다.",
+      "continuity": "CF06 shoreline mapping and CF07 depth mapping remain distinct.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF07-start.png",
         "middle": "docs/redesign-next/keyframes/CF07-middle.png",
@@ -368,35 +374,35 @@
     {
       "id": "CF08",
       "film": "company",
-      "start": 33,
-      "end": 38,
-      "duration": 5,
-      "title": "연안 지형을 실제 자료로 읽기",
+      "start": 32,
+      "end": 36,
+      "duration": 4,
+      "title": "ADCP와 부이 관측",
       "method": "source-composite",
       "referenceIds": [
-        "migration"
+        "equipment",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "현실 풍경과 지도·측량 자료의 관계를 보여줌",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "수층별 유속과 부이 시계열을 각각의 관측으로 짧게 보여준다",
       "frames": {
-        "start": "출처 확인된 연안 항공 또는 정사영상",
-        "middle": "동일 좌표계의 측선·점군을 절제해 드러냄",
-        "end": "같은 자료 영역을 CF09의 원격탐사로 확장"
+        "start": "실제 관측 해역",
+        "middle": "ADCP 수층 유속 도식",
+        "end": "실제 부이 점검·설치 장면으로 컷"
       },
-      "imageInstruction": "Use documented real coastal imagery or orthophoto as an immutable base. Do not paint a new coast or replace breakwaters with generated geometry.",
-      "motionInstruction": "A gentle camera reframe over the source image. Source-registered points or lines may reveal in post but the ground image does not morph.",
-      "compositingInstruction": "Store imagery source, location, rights, projection and acquisition date. If any is missing, this remains a concept placeholder.",
+      "imageInstruction": "Use actual instrument and buoy reference; generation may supply only nontechnical ocean background.",
+      "motionInstruction": "One calm field move, then an explicit cut to the buoy.",
+      "compositingInstruction": "Velocity vectors and buoy observations use separate source-verified legends and dates.",
       "rejectIf": [
-        "가짜 해안",
-        "좌표 불일치"
+        "Reject invented mooring and confused depth-current graphic"
       ],
       "sourceRequirements": [
-        "실제 연안·항공 자료와 위치·사용 권리 확인"
+        "Need ADCP data and buoy footage with mooring configuration"
       ],
-      "continuity": "CF09와 동일 지역인 경우 extent·북쪽 방향·촬영 시기를 명시한다.",
+      "continuity": "Keep ADCP separate from CF07 depth soundings.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF08-start.png",
         "middle": "docs/redesign-next/keyframes/CF08-middle.png",
@@ -408,35 +414,35 @@
     {
       "id": "CF09",
       "film": "company",
-      "start": 38,
-      "end": 43,
+      "start": 36,
+      "end": 41,
       "duration": 5,
-      "title": "원격탐사와 관측의 관계",
+      "title": "채수와 환경화학 분석",
       "method": "source-composite",
       "referenceIds": [
-        "data"
+        "company-brochure",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "광역 해양 환경을 데이터로 이해하는 순간",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "시료 채취에서 한 가지 분석기로 이어지는 과정을 보여준다",
       "frames": {
-        "start": "실제 지도 또는 광역 해양 영상",
-        "middle": "서로 다른 관측 자료가 차례로 별도 표시",
-        "end": "자료 층을 연구 환경으로 명확히 컷"
+        "start": "수역 현장의 실제 시료 채취",
+        "middle": "시료 밀봉·준비",
+        "end": "실제 ICP-MS 또는 영양염 분석기"
       },
-      "imageInstruction": "Preserve actual satellite and observation rasters with their land masks, no-data holes, periods and variable identity. Show only source-backed layers over a verified regional extent.",
-      "motionInstruction": "Reveal layers sequentially with a stable camera. Do not generate colors that resemble new measurements or suggest one sensor captured all variables simultaneously.",
-      "compositingInstruction": "Post-label product, period, unit and limitations. Avoid unreadable floating panels and invented real-time indicators.",
+      "imageInstruction": "Use documented field and lab footage. Generative footage only when no false GeoSR lab identity is implied.",
+      "motionInstruction": "Edit three distinct actions; no implausible continuous morph.",
+      "compositingInstruction": "Match sample type to assay and remove private sample labels.",
       "rejectIf": [
-        "결측 채움",
-        "변수 혼용"
+        "Reject fake lab measurement or incorrect instrument"
       ],
       "sourceRequirements": [
-        "제품·기간·단위·결측·범례 확인"
+        "Need sample/lab releases and analyte-instrument mapping"
       ],
-      "continuity": "CF08과 동일 지역이 아니면 공간을 관통하는 가짜 원테이크를 쓰지 않는다.",
+      "continuity": "The sample process follows field observation without implying same site if unverified.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF09-start.png",
         "middle": "docs/redesign-next/keyframes/CF09-middle.png",
@@ -448,35 +454,35 @@
     {
       "id": "CF10",
       "film": "company",
-      "start": 43,
-      "end": 47,
+      "start": 41,
+      "end": 45,
       "duration": 4,
-      "title": "연구 환경과 시료 분석",
-      "method": "imagegen-reference",
+      "title": "갯벌 생태와 블루카본 조사",
+      "method": "source-composite",
       "referenceIds": [
-        "lab"
+        "company-brochure",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "광역 환경 다음에 분석 방법을 짧게 설명",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "넓은 실제 갯벌·염습지와 현장 조사구를 연결한다",
       "frames": {
-        "start": "사람 없는 연구실의 넓은 작업 환경",
-        "middle": "천천히 움직이는 카메라로 시료와 분석기 관계를 읽힘",
-        "end": "현미경 보조 컷으로 짧게 전환"
+        "start": "갯벌·염습지 광역 실사",
+        "middle": "방형구 또는 식생 조사",
+        "end": "조사 지점 지도로 종료"
       },
-      "imageInstruction": "Use a wide, clean marine chemistry lab composition. The bench and analysis equipment sit within a believable room; do not let bottles fill the frame. No people, invented result displays or false GeoSR facility claim.",
-      "motionInstruction": "A subtle lateral camera move for four editorial seconds. Equipment, bottles and vial rack remain stable with plausible reflections.",
-      "compositingInstruction": "This generated lab is a conceptual illustration, not a photograph of an actual GeoSR facility or result.",
+      "imageInstruction": "Use a real dated intertidal scene. Generated motion may only stabilize a source-led environmental transition.",
+      "motionInstruction": "Slow elevated movement maintaining tide and light continuity.",
+      "compositingInstruction": "Do not overlay species, carbon flux or habitat area without source data.",
       "rejectIf": [
-        "실제 시설로 오인",
-        "용기·장비 형태 변화"
+        "Reject invented species or carbon number"
       ],
       "sourceRequirements": [
-        "시료·용기·분석 단계의 물리 검토"
+        "Need real field photos and sampling method"
       ],
-      "continuity": "CF11과 분석 과정의 이어짐만 보여주고 실험 절차를 지어내지 않는다.",
+      "continuity": "A clear cut separates laboratory and ecosystem field scenes.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF10-start.png",
         "middle": "docs/redesign-next/keyframes/CF10-middle.png",
@@ -505,35 +511,35 @@
     {
       "id": "CF11",
       "film": "company",
-      "start": 47,
+      "start": 45,
       "end": 50,
-      "duration": 3,
-      "title": "생태 분석의 보조 컷",
-      "method": "imagegen-reference",
+      "duration": 5,
+      "title": "유동과 입자 확산 모델",
+      "method": "source-composite",
       "referenceIds": [
-        "microscope"
+        "data",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "분석의 다양성을 짧게 제시",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "실제 지형·관측 입력에서 하나의 변수별 모델 결과를 보여준다",
       "frames": {
-        "start": "현미경이 연구 공간 속에 보임",
-        "middle": "차분한 카메라 이동으로 관찰 행동을 암시",
-        "end": "결과를 특정 종으로 단정하지 않고 모델 장면으로"
+        "start": "연안 지형·관측 입력",
+        "middle": "계산 격자와 한 변수의 결과",
+        "end": "시간 변화가 읽히는 장면"
       },
-      "imageInstruction": "A brief medium-wide ecology-lab view centered on a source-referenced microscope and sample preparation area. No person, specimen identity or generated scientific labels.",
-      "motionInstruction": "One small camera movement, stable optical structure and sample positions. Do not animate impossible microscope use.",
-      "compositingInstruction": "No species identification or measured result may be inferred from generated imagery.",
+      "imageInstruction": "Use an atmospheric real-world coastal plate only. Model grid and result are source composites.",
+      "motionInstruction": "Keep camera nearly fixed while verified time steps change.",
+      "compositingInstruction": "Preserve land mask, time, units, run identity and legend.",
       "rejectIf": [
-        "가짜 종 설명",
-        "광학 구조 변형"
+        "Reject generic glowing particle field as prediction"
       ],
       "sourceRequirements": [
-        "현미경·시료 형태 검토"
+        "Need releasable model output with variables and timestamps"
       ],
-      "continuity": "CF12에 입력된 실제 분석 결과라는 직접 주장은 별도 근거가 있어야 한다.",
+      "continuity": "CF10 and CF11 relate through environmental question, not fake direct causality.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF11-start.png",
         "middle": "docs/redesign-next/keyframes/CF11-middle.png",
@@ -558,33 +564,32 @@
       "start": 50,
       "end": 56,
       "duration": 6,
-      "title": "지형 위 모델·시나리오의 광역 조망",
+      "title": "연안재해와 시계열 예측",
       "method": "source-composite",
       "referenceIds": [
-        "wave-concept",
-        "technology"
+        "data",
+        "source-archive"
       ],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "관측에서 계산과 판단으로 이어지는 회사 역량을 크게 보여줌",
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "파랑·해일·강우 조건의 실제 예측/검증 관계를 보여준다",
       "frames": {
-        "start": "출처가 있는 광역 연안·수면 지형",
-        "middle": "격자나 변수 층이 해역 위에 절제해 정렬",
-        "end": "결과를 단정하지 않고 다시 넓은 현실 뷰로"
+        "start": "실제 해안과 입력 조건",
+        "middle": "검증된 한 시나리오의 범위 변화",
+        "end": "그래프와 공간 결과가 같이 읽힘"
       },
-      "imageInstruction": "Use a documented coastal base and physically meaningful model grid. If only a generated wave concept exists, present it explicitly as a concept without results, values or forecast claims.",
-      "motionInstruction": "A measured aerial pullback over the source coast; source-aligned grid reveals in post. No generated flooding, currents or probabilities.",
-      "compositingInstruction": "Keep model variables, boundaries, units and time explicit when actual outputs are shown. Otherwise use the concept fallback only.",
+      "imageInstruction": "Real coast footage may underpin the scene; all hazard/model information is authentic post-production.",
+      "motionInstruction": "One slow pull-back reveals temporal result.",
+      "compositingInstruction": "Label scenario, forecast time, variable, vertical datum and verification clearly.",
       "rejectIf": [
-        "실제 예측처럼 보이는 허구 결과",
-        "격자 지형 불일치"
+        "Reject false live observation or fabricated inundation"
       ],
       "sourceRequirements": [
-        "실제 지형·모델 결과 또는 명시적 개념 경로 결정"
+        "Need approved scenario and validation plot"
       ],
-      "continuity": "CF13으로 장면 규모와 카메라 방향을 넓히며 명확하게 편집한다.",
+      "continuity": "Model prediction is not footage of an occurred disaster.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF12-start.png",
         "middle": "docs/redesign-next/keyframes/CF12-middle.png",
@@ -608,30 +613,32 @@
       "start": 56,
       "end": 60,
       "duration": 4,
-      "title": "넓은 바다로 돌아오는 루프",
+      "title": "광역 연안으로 귀환",
       "method": "source-composite",
-      "referenceIds": [],
-      "referenceStatus": "concept-or-source-reference-not-film-approved",
-      "purpose": "광역 환경의 첫인상으로 돌아와 회사 제목과 반복을 마무리",
+      "referenceIds": [
+        "coastal-hero",
+        "company-evidence"
+      ],
+      "referenceStatus": "documented-capability-but-shot-source-pending",
+      "purpose": "예측 장면을 정리하고 첫 실제 연안 화면으로 돌아온다",
       "frames": {
-        "start": "다시 넓어진 바다·연안",
-        "middle": "움직임이 서서히 안정되고 제목 여백 확보",
-        "end": "CF01의 환경·빛·수평선이 이어지는 끝 프레임"
+        "start": "CF12의 실제 예측 결과가 마무리되는 장면",
+        "middle": "출처가 확인된 광역 연안 영상으로 편집 컷",
+        "end": "CF01과 같은 실제 연안 뷰로 귀환"
       },
-      "imageInstruction": "Use the reviewed CF01 footage or a sourced companion shot to return to a broad ocean and coast view. Do not invent a matching coastline or imply two different sites are one.",
-      "motionInstruction": "A smooth pullback or editorial cut into the CF01 opening. Match exposure, horizon, water motion and directional flow at the loop seam.",
-      "compositingInstruction": "HTML title and any logo remain web layers. If no exact loop is possible, use a visible editorial cut rather than a geographic morph.",
+      "imageInstruction": "Return to the same documented coastal footage used at opening. No platform UI in the company film.",
+      "motionInstruction": "Use a clean editorial match cut to the opening footage.",
+      "compositingInstruction": "Keep forecast data on its source frame and the final title in HTML. AX and GeoDAP UI belong only in their separate films.",
       "rejectIf": [
-        "다른 지형을 한 장소로 변형",
-        "루프의 밝기 급변"
+        "Reject platform UI collage or inconsistent coast"
       ],
       "sourceRequirements": [
-        "CF01과 루프 연결 프레임·환경 비교"
+        "Need matching opening coastal source and approved CF12 ending frame"
       ],
-      "continuity": "CF01 시작과 컷 지점을 전체 재생과 반복 재생으로 검수한다.",
+      "continuity": "Final geography and direction match CF01 for a true web loop.",
       "containsActualUI": false,
       "generationReady": false,
-      "status": "planned-or-concept-candidate-needs-review",
+      "status": "evidence-mapped-source-frames-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/CF13-start.png",
         "middle": "docs/redesign-next/keyframes/CF13-middle.png",
@@ -644,37 +651,39 @@
       "id": "AX01",
       "film": "ax",
       "start": 0,
-      "end": 5,
-      "duration": 5,
-      "title": "서로 다른 입력 자료",
+      "end": 6,
+      "duration": 6,
+      "title": "실제 해역에서 AX 화면으로",
       "method": "source-composite",
       "referenceIds": [
-        "technology",
-        "ax-detect-start",
-        "data"
+        "coastal-hero",
+        "ax-review",
+        "capture-review"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
-      "purpose": "각 서비스가 다루는 입력 자료와 세 기능의 범위를 소개",
+      "referenceStatus": "actual-employee-ui-recording-pending",
+      "purpose": "현실 해역의 규모에서 직원 제작 AX 갤러리의 실제 화면으로 진입한다",
       "frames": {
-        "start": "상단45% 또는 좌측35% 타이틀 여백의 짙은 남색 공간",
-        "middle": "영상·지형·관측 지점의 세 실제 주제",
-        "end": "탐지 대상 영상이 중심에 남음"
+        "start": "출처를 확인한 실제 광역 해역",
+        "middle": "해역 이미지가 정리되며 실제 AX 제품 화면의 영역이 열림",
+        "end": "직원 제작 AX 갤러리의 첫 실제 화면이 읽힘"
       },
-      "imageInstruction": "Compose a high-end editorial concept stage with three genuinely different input types: a source aerial image of offshore facilities, a verified simplified terrain surface, and a sparse station-location field. These are independent analysis contexts, not glass browser windows. Use natural material and source map colors with restrained white structural accents. No actual application UI or imaginary dashboards. Make the facility imagery dominant toward the end so detection follows logically.",
-      "motionInstruction": "Three source panels enter with subtle depth parallax and settle without flipping. The facility input expands to the next shot while other contexts recede. No suggestion of data being automatically exchanged among existing GeoSR services.",
-      "compositingInstruction": "Use controlled source layers and preserve each context identity. The visual workspace is explicitly conceptual. Keep AX title in HTML.",
+      "imageInstruction": "Use only documented real coastal footage for the opening and direct capture of the employee AX interface. Never generate browser chrome, labels, controls, result pixels or a fictional map.",
+      "motionInstruction": "Use a restrained editorial transition from the coast to a full-resolution AX screen. Hold the real interface long enough for a viewer to recognize it.",
+      "compositingInstruction": "The final editor inserts the actual employee-built AX interface as source pixels; any Higgsfield transition is outside the UI boundary. Brand and title remain HTML.",
       "rejectIf": [
-        "내용 없는 유리 패널",
-        "실제 UI 사용",
-        "서로 다른 플랫폼 자동 연동 주장"
+        "생성된 가짜 UI",
+        "지역이나 사업지 오인",
+        "제품 첫 화면이 읽히지 않음"
       ],
       "sourceRequirements": [
-        "세 주제의 정확한 source·concept 분류"
+        "첫 해역 원본의 장소·권리·1080p 확인",
+        "직원 AX 갤러리 1920×1080 실제 녹화",
+        "제품 화면의 공개 가능 상태 확인"
       ],
-      "continuity": "AX02의 동일 facility plate로 확대",
-      "containsActualUI": false,
+      "continuity": "AX01 종료 화면의 동일한 실제 탐지 화면을 AX02 첫 프레임으로 사용한다",
+      "containsActualUI": true,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "actual-ui-capture-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/AX01-start.png",
         "middle": "docs/redesign-next/keyframes/AX01-middle.png",
@@ -686,39 +695,39 @@
     {
       "id": "AX02",
       "film": "ax",
-      "start": 5,
-      "end": 12,
-      "duration": 7,
-      "title": "탐지",
+      "start": 6,
+      "end": 14,
+      "duration": 8,
+      "title": "위성영상 탐지 화면",
       "method": "source-composite",
       "referenceIds": [
-        "ax-detect-start",
-        "ax-detect-end",
-        "ax-review"
+        "ax-review",
+        "capture-review"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
-      "purpose": "영상에서 시설물 대상을 추출하는 개념을 한눈에 전달",
+      "referenceStatus": "actual-employee-ui-recording-pending",
+      "purpose": "직원 제작 AX의 탐지 기능을 실제 화면 동작과 결과로 보여준다",
       "frames": {
-        "start": "세 시설물 그룹과 여백 / 현재 시작 이미지 후보",
-        "middle": "같은 시설 윤곽에 얇은 중성색 선이 등장",
-        "end": "대상만 정리된 결과 / 현재 종료 이미지 후보"
+        "start": "직원 갤러리의 실제 위성영상 탐지 화면",
+        "middle": "실제 슬라이드 또는 레이어 전환을 녹화한 장면",
+        "end": "검수된 탐지 결과가 화면에 남는 장면"
       },
-      "imageInstruction": "Use the existing AX detection concept references as a candidate plate, not a real facility survey. Keep a coherent small set of offshore facility groups on open water with physically plausible spacing and mooring context. The facility shapes remain identical from start to end. No coastline is introduced. Left third stays visually quiet for the page title. Thin ivory outlines may identify the same objects, but no fictional confidence values or invented class names.",
-      "motionInstruction": "A seven-second restrained detection reveal. Hold the image first, then trace the accepted object outlines without moving the facilities. Finish with an uncluttered result. No multiplied facilities, object disappearance or glowing scanning laser. Prefer deterministic outline animation over generating masks.",
-      "compositingInstruction": "Use only a newly reviewed Higgsfield visual plate or verified source material. Source geometry and conceptual status remain explicit. If objects are not physically plausible, replace the base plate before animating.",
+      "imageInstruction": "Record the actual employee-built detection interface at 1920x1080 or higher. Do not synthesize detection masks, facility shapes, labels, confidence or screen controls.",
+      "motionInstruction": "Capture one deliberate real UI interaction and let the resulting screen settle for at least two seconds. Use editorial crop or mask only when the full feature remains understandable.",
+      "compositingInstruction": "Preserve the actual UI pixels and original screen ratio. Higgsfield may provide only an external environmental bridge; do not send the UI frame for regeneration.",
       "rejectIf": [
-        "시설물 복제·소실",
-        "실제 위치·탐지 성과로 표기",
-        "네온 윤곽 과밀"
+        "기존 개념 시설 이미지를 실제 탐지로 오인",
+        "생성된 mask·box",
+        "화면 일부만 잘라 기능을 알 수 없음"
       ],
       "sourceRequirements": [
-        "시설물 구조·간격 검토",
-        "기존8초 후보 전체 재검수"
+        "탐지 서비스 실제 화면 및 동작 재캡처",
+        "마스크·시설물 표시의 실제 출처와 공개 여부",
+        "16:9 글자 가독성 검수"
       ],
-      "continuity": "분석 대상을 정리하는 동작에서 AX03의 다른 예측 문제로 명확한 컷",
-      "containsActualUI": false,
+      "continuity": "화면 전체가 닫힌 뒤 AX03의 별도 예측 서비스로 컷한다",
+      "containsActualUI": true,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "actual-ui-capture-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/AX02-start.png",
         "middle": "docs/redesign-next/keyframes/AX02-middle.png",
@@ -730,37 +739,39 @@
     {
       "id": "AX03",
       "film": "ax",
-      "start": 12,
-      "end": 19,
-      "duration": 7,
-      "title": "예측",
+      "start": 14,
+      "end": 22,
+      "duration": 8,
+      "title": "연안재해 예측 화면",
       "method": "source-composite",
       "referenceIds": [
-        "technology",
-        "migration"
+        "ax-review",
+        "capture-review"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
-      "purpose": "조건 변화가 결과에 미치는 영향을 공간적으로 설명",
+      "referenceStatus": "actual-employee-ui-recording-pending",
+      "purpose": "직원 제작 AX의 연안재해 예측 화면과 시나리오 전환을 실제 인터페이스로 보여준다",
       "frames": {
-        "start": "검증된 연안 지형과 기준 조건",
-        "middle": "같은 지형에서 시나리오 수위·범위 변화",
-        "end": "같은 카메라와 범례로 비교 결과 정리"
+        "start": "직원 갤러리의 실제 3D 또는 지도 기반 예측 화면",
+        "middle": "실제 가능한 시나리오·시점 전환의 녹화",
+        "end": "범례와 결과가 읽히는 정지 프레임"
       },
-      "imageInstruction": "Construct an AX prediction concept using a verified coastal terrain source or an explicitly simplified analytical surface. The land-water boundary and terrain elevations must be coherent. Show one scenario changing the affected water extent rather than a tsunami spectacle. Keep the rendering refined and legible, with natural land materials and restrained water treatment. No invented Korean port, no actual platform UI and no fake warning numbers.",
-      "motionInstruction": "Over seven seconds, hold a baseline, advance one reviewed scenario and settle into a comparison at the same camera angle. Water must not climb arbitrary disconnected hills. Do not substitute storm-surge, river flooding and tsunami causes for one another.",
-      "compositingInstruction": "Use source model outputs or a physically reviewed conceptual schematic. Camera animation and result layers are composited; the generator must not invent a fluid solution. Identify scenario status in surrounding copy.",
+      "imageInstruction": "Record the real employee-built flood or surge platform screen. Keep its real geography, interface, labels and scenario output unchanged. Generate no replacement water field or Korean text.",
+      "motionInstruction": "Show one actual control transition, then hold the result. Keep camera movement outside the screen capture and avoid zooming into unreadable texture.",
+      "compositingInstruction": "Use the captured AX screen as a protected source layer. The film must not imply a validated live forecast if the provided gallery is a static prototype.",
       "rejectIf": [
-        "육상 경계·높이 무시",
-        "실제 예측 정확도 암시",
-        "다른 재해 원인 혼용"
+        "개념 침수 영상을 실제 예측 결과처럼 사용",
+        "가짜 경보 수치",
+        "육상 경계가 어긋난 생성 장면"
       ],
       "sourceRequirements": [
-        "예측 주제 한 가지와 일치하는 지형·조건·결과 확보"
+        "예측 서비스 실제 화면 및 가능한 조작 확인",
+        "결과가 시뮬레이션인지 정적 캡처인지 표기",
+        "지형·범례·시나리오 공개 가능성 확인"
       ],
-      "continuity": "다른 서비스로 바뀜을 보여주는 컷 뒤 AX04 관측 지점",
-      "containsActualUI": false,
+      "continuity": "제품 종류가 바뀜을 분명히 한 뒤 AX04 관측 화면으로 편집한다",
+      "containsActualUI": true,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "actual-ui-capture-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/AX03-start.png",
         "middle": "docs/redesign-next/keyframes/AX03-middle.png",
@@ -772,39 +783,39 @@
     {
       "id": "AX04",
       "film": "ax",
-      "start": 19,
-      "end": 26,
-      "duration": 7,
-      "title": "모니터링",
+      "start": 22,
+      "end": 27,
+      "duration": 5,
+      "title": "관측 화면",
       "method": "source-composite",
       "referenceIds": [
-        "data",
-        "capture-review",
-        "technology"
+        "ax-review",
+        "capture-review"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
-      "purpose": "관측 지점과 시간 변화를 읽는 기능을 실제 UI와 구분된 콘셉트로 표현",
+      "referenceStatus": "actual-employee-ui-recording-pending",
+      "purpose": "직원 제작 AX의 관측·모니터링 화면을 실제 UI로 보여준다",
       "frames": {
-        "start": "출처 확인된 지역과 작은 관측 지점",
-        "middle": "한 지점을 선택하고 그 관측 맥락을 보여줌",
-        "end": "시간 변화와 공간 자료가 같은 지점 기준으로 정리"
+        "start": "직원 갤러리의 실제 관측 서비스 화면",
+        "middle": "실제 지점 또는 시간 전환을 녹화한 장면",
+        "end": "지점과 그래프의 관계가 읽히는 화면"
       },
-      "imageInstruction": "Build a restrained monitoring concept from documented station positions or explicitly schematic positions. A small set of discrete location markers sits on a source map. Selecting one location reveals one meaningful temporal view or source water-property field. Use clean typography only in post, no transparent dashboard proliferation. The marine field retains its real mask and source palette. Do not invent live status values.",
-      "motionInstruction": "Seven seconds: select one station, reveal its reviewed temporal context, then return attention to the spatial field. Use actual archived source dates when data appear. Keep the animation readable rather than flashing several charts too quickly.",
-      "compositingInstruction": "Source station data and map products are separately identified. If the scene uses different products, avoid implying they are directly co-located observations. Actual interface recording belongs below the hero, not here.",
+      "imageInstruction": "Capture the real monitoring screen from the employee repository. Preserve the displayed map, controls, chart and text exactly; do not fabricate live status or station values.",
+      "motionInstruction": "Use one real pointer or keyboard action to focus a station or time series. Hold the resulting interface without rapid montage.",
+      "compositingInstruction": "Source UI remains full-resolution and visually legible. An external transition can be generated but no UI element or value can be regenerated.",
       "rejectIf": [
         "가짜 실시간 상태",
-        "관측소 위치 임의 단정",
-        "같은 variable 색 혼동"
+        "관측소 위치 단정",
+        "그래프 수치 생성"
       ],
       "sourceRequirements": [
-        "관측 위치·시계열 출처 또는 도식 표시",
-        "데이터 기간과 단위 확인"
+        "부이·관측 화면 실제 녹화",
+        "표시된 시간·단위·관측 상태 확인",
+        "실시간 운영 주장 여부 검토"
       ],
-      "continuity": "관측 결과 면을 AX05의 세 기능 정리 화면 안에 같은 방향과 크기로 배치해 모니터링의 맥락 유지",
-      "containsActualUI": false,
+      "continuity": "실제 UI의 시각적 연결을 유지하며 AX05의 제품 전체 화면으로 마감한다",
+      "containsActualUI": true,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "actual-ui-capture-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/AX04-start.png",
         "middle": "docs/redesign-next/keyframes/AX04-middle.png",
@@ -816,38 +827,38 @@
     {
       "id": "AX05",
       "film": "ax",
-      "start": 26,
+      "start": 27,
       "end": 30,
-      "duration": 4,
-      "title": "세 기능과 브랜드",
+      "duration": 3,
+      "title": "AX 제품 마감",
       "method": "source-composite",
       "referenceIds": [
-        "ax-detect-end",
-        "technology"
+        "ax-review",
+        "capture-review"
       ],
-      "referenceStatus": "reference-only-not-final-approved",
-      "purpose": "탐지·예측·모니터링을 독립 기능으로 기억시키고 루프",
+      "referenceStatus": "actual-employee-ui-recording-pending",
+      "purpose": "세 분야의 실제 화면을 정돈해 AX 제품의 별도 영상으로 마무리한다",
       "frames": {
-        "start": "앞선 세 기능 결과의 정돈된 관계",
-        "middle": "타이틀 빈 공간이 넓어지고 결과는 배경으로",
-        "end": "AX01 시작 구도와 연결되는 배치"
+        "start": "AX02–04에서 검수한 실제 화면의 축약된 관계",
+        "middle": "직원 제작 갤러리의 실제 전체 프레임",
+        "end": "첫 화면과 접합되는 어두운 해역 또는 제품 화면"
       },
-      "imageInstruction": "Compose the three established results from AX02, AX03 and AX04 in one quiet editorial arrangement. Preserve their distinct domains and avoid a combined super-platform diagram. The central or left title-safe region is clear. Dark navy, realistic source textures and a small amount of blue accent, no new icons or generated branding.",
-      "motionInstruction": "A gentle four-second settle and return toward AX01 composition. No rapid card flips. End frame matches the beginning well enough for a seamless silent website loop.",
-      "compositingInstruction": "AX Platform and section labels remain live HTML. Retain separate source labels in the production provenance. Export the complete30s edit after a whole-film review.",
+      "imageInstruction": "Use only the three recorded employee-built screens. Do not generate a new unified dashboard or imply automatic data exchange between products.",
+      "motionInstruction": "A calm three-second editorial close with readable actual screen. Match brightness and direction to AX01 for the web loop.",
+      "compositingInstruction": "All product labels are source UI or editable postproduction layers. Deliver AX as a separate 30-second 1080p file after full-film review.",
       "rejectIf": [
-        "하나의 통합 서비스로 오인",
-        "또 다른 기능을 마지막에 갑자기 추가",
+        "새 통합 대시보드 발명",
+        "세 기능의 자동 연동 암시",
         "루프 점프"
       ],
       "sourceRequirements": [
-        "AX02–04 합격 결과",
-        "총30초와 시작·종료 seam 검토"
+        "AX02–04 합격 FHD 녹화",
+        "전체 30초 편집과 반복 접합 검토"
       ],
-      "continuity": "AX01 시작의 세 입력 배치와 밝기에 맞춰 종료하며 서로 독립된 서비스를 하나의 자동 처리망으로 연결하지 않음",
-      "containsActualUI": false,
+      "continuity": "AX05 종료 화면의 밝기와 동작 방향을 AX01 시작 화면에 맞춰 반복 접합을 확인한다",
+      "containsActualUI": true,
       "generationReady": false,
-      "status": "planned-needs-source-and-frame-review",
+      "status": "actual-ui-capture-pending",
       "plannedOutputs": {
         "start": "docs/redesign-next/keyframes/AX05-start.png",
         "middle": "docs/redesign-next/keyframes/AX05-middle.png",
@@ -1119,7 +1130,10 @@
       "shots": [
         "CF12"
       ],
-      "action": "검증된 모델 변수 한 가지6초 / 현재 pending 유지"
+      "action": "메인 기술 영역은 NASA SVS ECCO2 시각화 24초 발췌를 사용하며 출처를 표시함 회사 본편 CF12 제작 상태와 구분",
+      "currentMedia": "dist/assets/films/ocean-circulation-1080p.mp4",
+      "currentMediaKind": "external-scientific-visualisation",
+      "sourceUrl": "https://svs.gsfc.nasa.gov/5425/"
     },
     "expertise-4": {
       "target": "remote6",
@@ -1223,16 +1237,19 @@
     }
   ],
   "creditState": {
-    "lastObservedBalance": 10,
-    "observationSource": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+    "lastObservedBalance": 1210,
+    "observationSource": "Higgsfield balance tool",
     "isLive": false,
     "dailyResetConfirmed": false,
     "blockedByCreditsNow": false,
-    "blockedByPlanNow": true,
-    "planType": "free",
-    "nextAction": "Basic 이상 요금제 요구로 영상 생성 불가 / 요금제 변경 없이 프롬프트·웹 검수 진행"
+    "blockedByPlanNow": false,
+    "planType": "plus",
+    "nextAction": "콘티와 실제 원본 시안 검수 후 컷별 현재 비용을 확인하고 1080p로 생성",
+    "observationDate": "2026-09-28",
+    "spendingCap": 1200,
+    "spentThisRevision": 0
   },
-  "nextAction": "CF06 장비·CF08 지형·CF12 결과의 원본 근거와 모바일 확대·Safari를 확인 / Higgsfield 이용 가능해지면 광역 컷부터 생성·검수",
+  "nextAction": "현실적인 광역 회사 본편의 원본과 시안 준비를 완료한 컷부터 Higgsfield 1080p 생성과 품질 검수 진행",
   "imageRebuildRegister": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
   "webReview": "docs/redesign-next/06-WEB-REVIEW.md",
   "creativeDirection": {
@@ -1240,7 +1257,8 @@
     "referenceUse": "Camera scale, varied real-world views and editorial rhythm only; do not reuse reference footage, frames, landmarks or graphics.",
     "companyFilm": "Wide cinematic marine, coastal, estuary and city environments dominate. Strong ocean-blue contrast and tasteful source-backed technical overlays in post. Close laboratory and equipment views are brief supporting shots.",
     "shotRatio": "65-75 percent wide environments; 15-25 percent field/research; at most 10 percent close apparatus",
-    "higgsfield": "16:9 720p silent 5-second concept plates; generation currently blocked by Basic-plan requirement; review each output before runtime connection",
+    "higgsfield": "Native 1920x1080 silent 16:9 output; Plus confirmed with 1210 credits; user spending ceiling 1200 credits; submit only source-reviewed and cost-checked shots",
     "ax": "Retain the homepage AX introduction. Embed only AX gallery, content and assets from the supplied GitHub repository; do not import its company, research, careers or contact pages."
-  }
+  },
+  "storyboardAuthority": "docs/redesign-next/14-1080P-FILM-STORYBOARD-20260928.md"
 }

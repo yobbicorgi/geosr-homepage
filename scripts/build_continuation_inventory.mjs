@@ -16,7 +16,7 @@ const concerns = new Map([
  ['env-poster.webp','이전 대표 캡처의 검은 여백 / 새 FHD 캡처 우선'],
  ['env-preview.mp4','현재 환경 변수·전체16:9·로딩 상태 재검수'],
  ['coastal-model-v3.png','네온·허구 지형 지적 대상 계열 / 모델 대표로 자동 재사용 금지'],
- ['hero-coastal-estuary-concept-20260928.webp','홈 화면 정지 콘셉트 / 실제 지역·GeoSR 사업지 아님 / 영상 프레임 아님'],
+ ['geosr-brochure-coast-2025.jpg','회사소개서 2면의 실제 사진 / 촬영 장소·날짜 미확인 / 메인 임시 포스터만'],
  ['satellite-layers-v3.png','층별 지리·변수·기간·기하 검수 전 후보'],
  ['estuary-hero-v4.png','실제 위치·해안 시설물 출처 검수 전 후보'],
  ['c05-coast-end-v1.png','실제 지형 위치와 시설물 검증 전 후보'],
@@ -29,25 +29,25 @@ const concerns = new Map([
 function replacementPlan(file) {
   const name=path.basename(file);
   if (/\/credentials\//.test(file)) return {ids:['SOURCE-DOCUMENT'],policy:'원본 문서만 사용 / ImageGen 금지 / 문서 앞면 갤러리'};
-  if (name==='platform-geodap.png') return {ids:['SOURCE-GEODAP'],policy:'실제 GeoDAP 캡처만 사용 / 원본 전체 비율 유지'};
+  if (name==='geodap-home-public-preview-20260928.png') return {ids:['SOURCE-GEODAP'],policy:'실제 GeoDAP 캡처만 사용 / 원본 전체 비율 유지'};
   if (/\/platforms\//.test(file)) {
     const service=plan.platformCaptures.find(c=>name.startsWith(c.id+'-'));
     return {ids:[service?'capture-'+service.id:'AX-ARCHIVE'],policy:'실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조'};
   }
   const rules=[
-    [/hero-coastal-estuary-concept/,['CF01']],
-    [/hero-earth-00|hero-earth-satellite/,['CF01','CF02','CF13']],
-    [/hero-earth-22|hero-earth-24|satellite-layers/,['CF04']],
-    [/hero-earth-/,['CF03']],
+    [/geosr-brochure-coast/,['CF01','CF13']],
+    [/hero-earth-00|hero-earth-satellite/,['CF02']],
+    [/hero-earth-22|hero-earth-24|satellite-layers/,['CF03']],
+    [/hero-earth-/,['CF02']],
     [/ax-detect/,['AX02']],
     [/ax-data-planes/,['AX01']],
-    [/coastal-model/,['CF12']],
-    [/estuary|c05-coast/,['CF08']],
-    [/analysis-concept/,['CF09']],
-    [/lab|equipment-icp/,['CF10','CF11']],
+    [/coastal-model/,['CF11','CF12']],
+    [/estuary|c05-coast/,['CF01','CF10']],
+    [/analysis-concept/,['CF03','CF11']],
+    [/lab|equipment-icp/,['CF09']],
     [/underwater|equipment-rov/,['CF07']],
-    [/waterline/,['CF06']],
-    [/multibeam|usv|equipment-vessel/,['CF05']]
+    [/waterline/,['CF08']],
+    [/multibeam|usv|equipment-vessel/,['CF07']]
   ];
   const rule=rules.find(([rx])=>rx.test(name));
   return rule?{ids:rule[1],policy:'해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지'}:
@@ -64,8 +64,8 @@ const assets=files.map(file=>{
     .map(s=>({id:s.id,approvalInRuntime:s.approval,actualDuration:s.duration,plannedDuration:s.plannedDuration??null}));
   let classification='source-or-concept-unverified';
   if (/\/concepts\/|\/generated\//.test(file)) classification='concept-candidate';
-  if (/hero-coastal-estuary-concept/.test(file)) classification='concept-candidate';
-  if (/\/platforms\/|\/platform-geodap\./.test(file)) classification='archived-platform-capture-candidate';
+  if (/geosr-brochure-coast/.test(file)) classification='company-brochure-photo-temporary-poster';
+  if (/\/platforms\/|\/geodap-home-public-preview-/.test(file)) classification='archived-platform-capture-candidate';
   if (/\/credentials\//.test(file)) classification='archived-document';
   if (/\/equipment-|\/usv/.test(file)) classification='equipment-reference-candidate';
   if (/\/films\//.test(file)) classification='film-candidate';

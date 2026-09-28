@@ -1,43 +1,45 @@
-/* AX gallery interaction transplanted from the employee repository at 2533628.
-   Local screen captures replace remote endpoints; static screens are labelled as such. */
+/* Curved, persistent AX cells ported from the supplied employee repository,
+   portal/flutter-20260921/gallery.js at commit 2533628. Local screen assets only. */
 (() => {
  'use strict';
  const root=document.querySelector('#platform-browser');if(!root)return;
- const films=window.portalFilms,reduced=matchMedia('(prefers-reduced-motion: reduce)');if(!films?.length)return;
+ const films=window.portalFilms,reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const groups=['flood','sat','hazard','hazard','hazard','obs','obs','research','flood'];
  const filters=[['all','전체','All'],['flood','침수 예측','Flood prediction'],['sat','위성 분석','Satellite analysis'],['hazard','해양재해','Marine hazards'],['obs','관측·환경','Observation & environment'],['research','연구 지원','Research support']];
- let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ko',category='all',selected=0,mode='list',position=0,target=0,raf=0,last=0,drag=null,suppressClick=false,lastWheel=0;
+ let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ko',category='all',selected=0,mode='list',position=0,target=0,raf=0,last=0,drag=null,suppressClick=false;
  const t=(ko,en)=>lang==='ko'?ko:en,ids=()=>films.map((_,i)=>i).filter(i=>category==='all'||groups[i]===category),pad=n=>String(n+1).padStart(2,'0');
- root.innerHTML=`<div class="fw-intro"><p class="eyebrow">AX PLATFORM</p><h1></h1><p class="fw-lead"></p></div><div class="fw-tools"><div class="fw-filters" role="group"></div><button class="fw-view" type="button"></button></div><div class="fw-directory" role="group"></div><div class="fw-viewport" tabindex="0" role="region"><div class="fw-track"></div></div><div class="fw-navigation"><button class="fw-prev" type="button">←</button><span class="fw-counter" aria-live="polite"></span><button class="fw-next" type="button">→</button></div><div class="fw-selected"></div><p class="fw-disclosure"></p><dialog class="fw-screen-dialog" aria-labelledby="fw-screen-title"><div class="fw-screen-header"><h2 id="fw-screen-title"></h2><button class="fw-screen-close" type="button"></button></div><img alt=""><p></p></dialog>`;
+ root.innerHTML=`<div class="fw-intro"><p class="eyebrow">01 / AX PLATFORM</p><h2></h2><p class="fw-lead"></p></div><div class="fw-tools"><div class="fw-filters" role="group"></div><button class="fw-view" type="button"></button></div><div class="fw-directory" role="group"></div><div class="fw-viewport" tabindex="0" role="region"><div class="fw-track"></div></div><div class="fw-navigation"><button class="fw-prev" type="button">←</button><span class="fw-counter" aria-live="polite"></span><button class="fw-next" type="button">→</button></div><div class="fw-selected"></div><p class="fw-source"></p>`;
  const viewport=root.querySelector('.fw-viewport'),track=root.querySelector('.fw-track');
- root.insertBefore(root.querySelector('.fw-selected'),viewport);
+ root.querySelector('.fw-navigation').after(root.querySelector('.fw-directory'));
  const cards=films.map((f,i)=>{
   const card=document.createElement('article');card.className='fw-cell';card.dataset.index=i;
-  card.innerHTML=(f[0]?`<img src="assets/ax-embedded/${f[0]}.webp" alt="" draggable="false" decoding="async">`:'<div class="fw-development">Flood XAI</div>')+`<div class="fw-cell-copy"><span>${pad(i)} / ${f[1]}</span><h3></h3><p></p></div>`;
-  card.addEventListener('click',e=>{if(suppressClick){e.preventDefault();return}select(i);if(mode==='cards')setMode('list')});
+  card.innerHTML=(f[0]?`<div class="fw-cell-back" style="background-image:url('assets/ax-embedded/${f[0]}.webp')"></div><img src="assets/ax-embedded/${f[0]}.webp" alt="" draggable="false" decoding="async" loading="lazy">`:'<div class="fw-development">Flood XAI</div>')+`<div class="fw-cell-copy"><span>${pad(i)} / ${f[1]}</span><h3></h3><p></p></div>`;
+  card.onclick=e=>{if(suppressClick){e.preventDefault();return}if(selected===i){openScreen(i);return}select(i);if(mode==='cards')setMode('list')};
+  card.onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target===card){e.preventDefault();if(selected===i)openScreen(i);else select(i)}};
   track.append(card);return card;
  });
+ function openScreen(i){const f=films[i];if(!f[0])return;const dialog=document.querySelector('.ax-screen-dialog');dialog.querySelector('h2').textContent=`${f[1]} / ${f[2][lang]}`;const img=dialog.querySelector('img');img.src=`assets/ax-embedded/${f[0]}.webp`;img.alt=f[2][lang];dialog.showModal()}
  function render(){
   // With a short filtered list, keep the wrap point fully outside the viewport.
   viewport.style.maxWidth=mode==='list'&&ids().length<4?`calc((var(--cell-width) + var(--cell-gap)) * ${Math.max(1,ids().length-1)})`:'';
   viewport.style.marginInline='auto';
-  root.querySelector('.fw-intro h1').innerHTML=t('필요한 플랫폼을<br>찾아보세요','Find the platform<br>you need');
-  root.querySelector('.fw-lead').textContent=t('관측·분석·예측 플랫폼의 화면과 기능을 살펴보세요','Explore screens and capabilities for observation, analysis and forecasting');
+  root.querySelector('.fw-intro h2').textContent=t('분야별 플랫폼','Explore the platforms');
+  root.querySelector('.fw-lead').textContent=t('화면을 좌우로 움직여 각 플랫폼을 살펴보세요','Drag or scroll sideways to explore each platform');
+  root.querySelector('.fw-source').textContent=t('제공받은 AX 저장소의 정적 화면입니다 · 현재 운영 상태나 실시간 데이터는 표시하지 않습니다','Static screens from the supplied AX repository · No live data or service status is shown');
   root.querySelector('.fw-filters').setAttribute('aria-label',t('플랫폼 카테고리','Platform categories'));
   root.querySelector('.fw-filters').innerHTML=filters.map(f=>`<button type="button" data-filter="${f[0]}" aria-pressed="${category===f[0]}">${f[lang==='ko'?1:2]} <span>${f[0]==='all'?9:groups.filter(g=>g===f[0]).length}</span></button>`).join('');
   root.querySelector('.fw-view').textContent=mode==='list'?t('카드형 보기 ⊞','Card view ⊞'):t('목록형 보기 ≡','List view ≡');
   root.querySelector('.fw-view').setAttribute('aria-pressed',String(mode==='cards'));
   root.querySelector('.fw-directory').setAttribute('aria-label',t('전체 플랫폼 목록','Platform directory'));
   root.querySelector('.fw-directory').innerHTML=ids().map(i=>`<button type="button" data-select="${i}">${pad(i)} <span>${films[i][1]}</span></button>`).join('');
-  cards.forEach((c,i)=>{c.querySelector('h3').textContent=films[i][2][lang];c.querySelector('p').textContent=i===8?t('개발 중','In development'):t('화면과 기능 살펴보기','Explore the screen and features');c.setAttribute('aria-label',films[i][2][lang]);});
-  root.querySelector('.fw-disclosure').textContent=t('제공 저장소의 정적 화면 캡처입니다. 실시간 데이터나 서비스 운영 상태를 나타내지 않습니다.','Static screen captures from the supplied repository. They do not indicate live data or current service status.');
+  cards.forEach((c,i)=>{c.querySelector('h3').textContent=films[i][2][lang];c.querySelector('p').textContent=i===8?t('개발 중','In development'):t('클릭하여 화면 보기 ↗','Click to view screen ↗');c.setAttribute('aria-label',films[i][2][lang]);});
   viewport.setAttribute('aria-label',t('플랫폼 탐색 · 드래그 또는 좌우 방향키 사용','Explore platforms · Drag or use left and right arrows'));
   root.querySelector('.fw-prev').setAttribute('aria-label',t('이전 플랫폼','Previous platform'));root.querySelector('.fw-next').setAttribute('aria-label',t('다음 플랫폼','Next platform'));
   details(false);paint();
  }
  function details(animate=true){
   const f=films[selected],box=root.querySelector('.fw-selected');
-  box.innerHTML=`<div class="fw-description"><p class="eyebrow">${pad(selected)} / ${selected===8?t('개발 중','IN DEVELOPMENT'):t('플랫폼 화면','PLATFORM SCREEN')}</p><h3>${f[2][lang]}</h3><p>${f[3][lang]}</p><ul>${f[4][lang].map(x=>`<li>${x}</li>`).join('')}</ul>${f[0]?`<button class="fw-open-screen" type="button">${t('전체 화면 보기','View full screen')} ↗</button>`:''}</div>`;
+  box.innerHTML=`<div class="fw-description"><p class="eyebrow">${pad(selected)} / ${selected===8?t('개발 중','IN DEVELOPMENT'):t('정적 화면','STATIC SCREEN')}</p><h3>${f[2][lang]}</h3><p>${f[3][lang]}</p><ul>${f[4][lang].map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
   if(animate&&!reduced.matches){box.getAnimations().forEach(a=>a.cancel());box.animate([{opacity:.35,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,easing:'cubic-bezier(.16,1,.3,1)'})}
   root.querySelector('.fw-counter').textContent=`${pad(ids().indexOf(selected))} / ${String(ids().length).padStart(2,'0')}`;
   root.querySelectorAll('[data-select]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.select)===selected)));
@@ -63,23 +65,12 @@
  }
  function step(d){const active=ids();select(active[(active.indexOf(selected)+d+active.length)%active.length])}
  function setMode(value){mode=value;root.dataset.mode=value;cancelAnimationFrame(raf);raf=0;last=0;position=target=ids().indexOf(selected);render()}
- root.querySelector('.fw-prev').addEventListener('click',()=>step(-1));root.querySelector('.fw-next').addEventListener('click',()=>step(1));
- root.querySelector('.fw-view').addEventListener('click',()=>setMode(mode==='list'?'cards':'list'));
- root.querySelector('.fw-directory').addEventListener('click',e=>{const b=e.target.closest('[data-select]');if(b)select(Number(b.dataset.select))});
- root.querySelector('.fw-filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;category=b.dataset.filter;if(!ids().includes(selected))selected=ids()[0];setMode(mode)});
- const screenDialog=root.querySelector('.fw-screen-dialog');
- root.addEventListener('click',event=>{
-  if(!event.target.closest('.fw-open-screen'))return;
-  const film=films[selected];if(!film[0])return;
-  screenDialog.querySelector('h2').textContent=film[2][lang];
-  const image=screenDialog.querySelector('img');image.src=`assets/ax-embedded/${film[0]}.webp`;image.alt=t(`${film[2].ko} 플랫폼의 전체 정적 화면`,`Full static screen capture of ${film[2].en}`);
-  screenDialog.querySelector('p').textContent=t('정적 화면 캡처 · 실시간 데이터가 아닙니다','Static screen capture · not live data');
-  screenDialog.querySelector('.fw-screen-close').textContent=t('닫기','Close');
-  screenDialog.showModal();
- });
- screenDialog.querySelector('.fw-screen-close').addEventListener('click',()=>screenDialog.close());
- screenDialog.addEventListener('click',event=>{if(event.target===screenDialog)screenDialog.close()});
- viewport.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}});
+ root.querySelector('.fw-prev').onclick=()=>step(-1);root.querySelector('.fw-next').onclick=()=>step(1);
+ root.querySelector('.fw-view').onclick=()=>setMode(mode==='list'?'cards':'list');
+ root.querySelector('.fw-directory').onclick=e=>{const b=e.target.closest('[data-select]');if(b)select(Number(b.dataset.select))};
+ root.querySelector('.fw-filters').onclick=e=>{const b=e.target.closest('[data-filter]');if(!b)return;category=b.dataset.filter;if(!ids().includes(selected))selected=ids()[0];setMode(mode)};
+ viewport.onkeydown=e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}};
+ viewport.addEventListener('wheel',e=>{if(mode!=='list'||Math.abs(e.deltaX)<Math.abs(e.deltaY)||Math.abs(e.deltaX)<10)return;e.preventDefault();step(e.deltaX>0?1:-1)},{passive:false});
  viewport.addEventListener('pointerdown',e=>{if(mode!=='list'||e.button!==0||ids().length<2)return;drag={id:e.pointerId,x:e.clientX,y:e.clientY,start:position,moved:false};suppressClick=false});
  viewport.addEventListener('pointermove',e=>{
   if(!drag||drag.id!==e.pointerId)return;
@@ -92,13 +83,9 @@
  });
  function release(){if(!drag)return;const moved=drag.moved;drag=null;if(moved){suppressClick=true;const active=ids();target=Math.round(position);selected=active[((target%active.length)+active.length)%active.length];details();wake();setTimeout(()=>{suppressClick=false},0)}}
  viewport.addEventListener('pointerup',release);viewport.addEventListener('pointercancel',release);viewport.addEventListener('lostpointercapture',release);
- viewport.addEventListener('wheel',event=>{
-  if(mode!=='list'||ids().length<2||event.ctrlKey)return;
-  const delta=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
-  if(Math.abs(delta)<8||event.timeStamp-lastWheel<420)return;
-  lastWheel=event.timeStamp;step(delta>0?1:-1);
- },{passive:true});
- document.addEventListener('portal:language',e=>{lang=e.detail;render()});
+ const dialog=document.querySelector('.ax-screen-dialog');
+ dialog.querySelector('[data-ax-close]').onclick=()=>dialog.close();
+ dialog.onclick=e=>{if(e.target===dialog)dialog.close()};
  reduced.addEventListener('change',()=>{if(reduced.matches){cancelAnimationFrame(raf);raf=0;position=target;paint()}});
  setMode('list');
 })();

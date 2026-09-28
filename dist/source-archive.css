@@ -1,10 +1,10 @@
 body.route-source-archive{background:#f9faf9;color:#172b35}
-.source-archive{width:min(90%,1500px);margin:0 auto;padding:clamp(64px,7vw,120px) 0 110px}
-.source-archive-head{display:grid;grid-template-columns:minmax(180px,.35fr) minmax(0,1fr);gap:clamp(30px,7vw,140px);align-items:start;padding-bottom:72px;border-bottom:1px solid #bbc8cd}
+.source-archive{width:min(90%,1700px);margin:0 auto;padding:clamp(48px,5vw,82px) 0 100px}
+.source-archive-head{display:grid;grid-template-columns:minmax(160px,.3fr) minmax(0,1fr);gap:clamp(24px,5vw,100px);align-items:start;padding-bottom:46px;border-bottom:1px solid #bbc8cd}
 .source-archive-head .eyebrow{margin:12px 0 0;color:#4b7080;font-size:11px;letter-spacing:.13em}
 .source-archive-head h1{margin:0;color:#132c3b;font-size:clamp(38px,4vw,60px);font-weight:600;line-height:1.14;letter-spacing:-.055em}
 .source-archive-head p:not(.eyebrow){max-width:760px;margin:25px 0 0;color:#566a75;font-size:clamp(16px,1.2vw,19px);line-height:1.7}
-.source-archive-tools{display:grid;grid-template-columns:auto minmax(250px,1fr) auto;gap:18px;align-items:center;margin:40px 0 20px}
+.source-archive-tools{display:grid;grid-template-columns:auto minmax(250px,1fr) auto;gap:18px;align-items:center;margin:28px 0 18px}
 .source-archive-tools label{font-size:13px;color:#375467}
 .source-archive-tools input{width:100%;padding:12px 2px;border:0;border-bottom:1px solid #9cb0bc;background:transparent;color:#152d3b;font-size:16px;outline-offset:4px}
 .source-archive-count{font-size:13px;color:#647986;white-space:nowrap}
@@ -50,4 +50,30 @@ body.route-source-archive{background:#f9faf9;color:#172b35}
   .source-detail-back{margin-bottom:36px}
   .source-detail h1{font-size:31px}
   .source-detail-body{font-size:15px;padding:30px 0}
+}
+
+/* Large record sets use a compact, sortable-looking board rather than story cards. */
+.source-archive-board-head,.source-archive-row{display:grid;grid-template-columns:4.5rem 10rem minmax(0,1fr);gap:1.5rem;align-items:center}
+.source-archive-results--dated .source-archive-board-head,.source-archive-results--dated .source-archive-row{grid-template-columns:4.5rem 10rem minmax(0,1fr) 8.5rem}
+.source-archive-board-head{padding:1rem .8rem;border-top:2px solid #204b63;border-bottom:1px solid #bdccd4;background:#eaf0f2;color:#526f80;font-size:.75rem;font-weight:700}
+.source-archive-row{padding:1.12rem .8rem;border-bottom:1px solid #d3dfe3;transition:background .2s,color .2s}
+.source-archive-row:hover{padding-left:.8rem;background:#edf4f6}
+.source-archive-number{font-size:.78rem;color:#6e8999;font-variant-numeric:tabular-nums}
+.source-archive-kind{font-size:.8rem;color:#4e7790;line-height:1.45}
+.source-archive-title{min-width:0;color:#213a4b;font-size:clamp(.95rem,1.04vw,1.17rem);font-weight:550;line-height:1.5;letter-spacing:-.018em;overflow-wrap:anywhere}
+.source-archive-row time{text-align:right;color:#6c8795;font-size:.8rem;font-variant-numeric:tabular-nums}
+.source-archive-paging{gap:.3rem;margin-top:2rem}
+.source-archive-paging button{min-width:2.3rem;padding:.5rem .55rem;border:1px solid transparent;border-radius:2px;background:transparent}
+.source-archive-paging button[aria-current=page]{background:#173d55;border-color:#173d55;color:#fff}
+.source-archive-paging button:not(:disabled):hover:not([aria-current=page]){border-color:#9cb6c3;background:#edf3f5}
+.source-archive-paging span{padding:0 .4rem;color:#8ba0aa}
+@media(max-width:700px){
+ .source-archive-board-head{display:none}
+ .source-archive-row,.source-archive-results--dated .source-archive-row{grid-template-columns:2.3rem minmax(0,1fr);gap:.2rem .8rem;padding:1rem 0}
+ .source-archive-row:hover{padding-left:0}
+ .source-archive-number{grid-column:1;grid-row:1/3;align-self:start;padding-top:.2rem}
+ .source-archive-kind{grid-column:2;grid-row:1;font-size:.7rem}
+ .source-archive-title{grid-column:2;grid-row:2;font-size:1rem}
+ .source-archive-row time{grid-column:2;grid-row:3;text-align:left;font-size:.72rem}
+ .source-archive-paging{flex-wrap:wrap}
 }

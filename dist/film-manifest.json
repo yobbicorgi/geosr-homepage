@@ -1,5 +1,5 @@
 {
-  "revision": "higgsfield-transition-20260928",
+  "revision": "professional-visualisation-20260928",
   "slots": [
     {
       "id": "geosr-hero",
@@ -44,10 +44,19 @@
     {
       "id": "expertise-3",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 6,
-      "delivery": "assets/films/expertise-modelling.mp4"
+      "src": "assets/films/ocean-circulation-1080p.mp4",
+      "approval": "approved",
+      "duration": 24,
+      "delivery": "assets/films/ocean-circulation-1080p.mp4",
+      "stage": "external-scientific-visualisation",
+      "review": "docs/redesign-next/17-DESIGN-REFERENCES-20260928.md",
+      "reviewNote": "NASA SVS ECCO2 explanatory excerpt with source credit; not GeoSR model output or Higgsfield generation",
+      "sourceUrl": "https://svs.gsfc.nasa.gov/5425/",
+      "credit": "NASA's Scientific Visualization Studio",
+      "sourceIntervalSeconds": [
+        88,
+        112
+      ]
     },
     {
       "id": "expertise-4",

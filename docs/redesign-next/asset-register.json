@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-22T11:14:08.008Z",
+  "generatedAt": "2026-09-28T01:13:20.362Z",
   "scope": "All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed",
-  "count": 84,
+  "count": 88,
   "runtimeRevision": "image-base-review-20260922",
   "runtimeManifestHashEncoding": "lf-normalized-utf8",
   "runtimeManifestSha256": "f4ac292e1450cbd42bd8fdc72dc4969daef609b70dea6283b66b27ddf152122a",
@@ -60,6 +60,86 @@
         "CF11"
       ],
       "generationPolicy": "해당 장면 카드의 원본·검수·교체 지시 적용 / 자동 합격·자동 재생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/company/geosr-profile-en-2025.pdf",
+      "bytes": 12625946,
+      "hashEncoding": "raw-bytes",
+      "sha256": "dd54cffb61c85edcdf8f0212022d1a07dbffa83e359f13c2c7b071c9da129f6f",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/company/geosr-profile-ko-2025.pdf",
+      "bytes": 13626034,
+      "hashEncoding": "raw-bytes",
+      "sha256": "ec83671638d37f36edd11b6b2f03d8d87d19a06c1a3772ffdbb563bdbc49a19e",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [
+        "dist/site.js"
+      ],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/company/organization-2026-en.jpg",
+      "bytes": 211552,
+      "hashEncoding": "raw-bytes",
+      "sha256": "252b6dc97d6d356696fcf34964f580acce377293fd7d8f0f50f9d5d50719693a",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
+      "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
+      "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
+    },
+    {
+      "path": "dist/assets/company/organization-2026-ko.jpg",
+      "bytes": 141672,
+      "hashEncoding": "raw-bytes",
+      "sha256": "60f32e8449c23b2ea2f9e00fb03ead381e02a4747a3269f605a1374e8d381f52",
+      "classification": "source-or-concept-unverified",
+      "classificationBasis": "Path and existing production records; not independent source authentication",
+      "status": "not-currently-connected-by-film-manifest",
+      "runtimeSlots": [],
+      "textualReferenceFiles": [],
+      "visualAndScientificApproval": "not-established-by-this-inventory",
+      "reviewRecord": null,
+      "followUpPlanIds": [
+        "SOURCE-OR-SUPPORT-REVIEW"
+      ],
+      "generationPolicy": "출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지",
       "issue": "출처·내용·최종 사용 문맥을 장면별로 검수",
       "nextAction": "실제 참조와 출처 확인 전 삭제·승인·연결하지 않음"
     },

@@ -1,6 +1,8 @@
 # GeoSR 다음 세션 시작점
 
-2026-09-22 · 화면 리비전 20260922-r15 · 최신 웹 검수는 [07-DYNAMIC-DESIGN-REVIEW.md](07-DYNAMIC-DESIGN-REVIEW.md)
+2026-09-22 · 화면 리비전 20260922-r15 · 당시 웹 검수는 [07-DYNAMIC-DESIGN-REVIEW.md](07-DYNAMIC-DESIGN-REVIEW.md)
+
+2026-09-28의 회사 자료 연결과 다운로드 영상 정리는 [08-20260928-REVIEW.md](08-20260928-REVIEW.md)를 먼저 확인한다. 회사 자료는 국·영문 조직도와 소개서 PDF가 연결되어 있으며, Flow 다운로드 원본 13개는 `media-source/flow-downloads/`에 로컬 보관한다.
 
 ## 현재 상태
 

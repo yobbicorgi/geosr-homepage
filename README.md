@@ -1,9 +1,9 @@
 # GeoSR 홈페이지
 
-현재 작업 시작점은 [다음 세션 인계](docs/redesign-next/00-START-HERE.md)
+현재 작업 시작점은 [다음 세션 인계](docs/redesign-next/00-START-HERE.md)와 [2026-09-28 재점검 기록](docs/redesign-next/08-20260928-REVIEW.md)
 
 홈 전문 분야와 연구 사례 및 AX 실제 화면 탐색을 재구성했고 한영 50개 렌더 조건을 검수함
-최신 변경과 남은 범위는 [동적 디자인 검토서](docs/redesign-next/07-DYNAMIC-DESIGN-REVIEW.md)에 기록
+이번 변경과 남은 범위는 [2026-09-28 재점검 기록](docs/redesign-next/08-20260928-REVIEW.md), 이전 화면 검수는 [동적 디자인 검토서](docs/redesign-next/07-DYNAMIC-DESIGN-REVIEW.md)에 기록
 회사60초·AX30초 영상은 완성본이 아니며 최종 디자인 승인은 대기 상태
 기능 검사 성공과 디자인·미디어 품질 합격을 구분함
 
@@ -26,6 +26,7 @@
 
 현재 코드 책임과 CSS 로딩 충돌 주의사항은 실행 계획 G2에 기록
 실제 연결 영상의 기준은 `dist/film-manifest.json`
+다운로드에서 옮긴 Flow 원본 13개는 `media-source/flow-downloads/`에 로컬 보관하며 대응 파일과 SHA-256은 [다운로드 원장](media-source/download-inventory.json)에 기록
 원본 수집 자료는 `docs/source-migration`에 보존
 이전 설계·생성 시도·검수 기록은 `docs/redesign-plan`과 `docs/redesign-production`에 보존
 과거 완료·generationReady 표시는 현재 승인으로 사용하지 않음

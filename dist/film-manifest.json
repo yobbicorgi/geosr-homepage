@@ -1,47 +1,45 @@
 {
-  "revision": "image-base-review-20260922",
+  "revision": "higgsfield-transition-20260928",
   "slots": [
     {
       "id": "geosr-hero",
       "mode": "loop",
-      "src": "assets/films/flow-c01-earth-draft.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/geosr-hero.mp4",
-      "stage": "720p-draft",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
-      "reviewNote": "Only the Earth opening is connected; rejected 60s assembly is retained in review files",
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
       "plannedDuration": 60,
-      "labelKo": "720p 오프닝 초안 · 본편 재구성 중",
-      "labelEn": "720p OPENING DRAFT · FULL FILM IN REVISION"
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "expertise-1",
       "mode": "loop",
       "src": null,
-      "approval": "rework",
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/expertise-observation.mp4",
-      "stage": "reviewed-still-motion-pending",
-      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
-      "heldSource": "assets/films/flow-usv-existing-draft.mp4",
-      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
-      "labelKo": "이미지 초안 · 영상 제작 준비 중",
-      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "expertise-2",
       "mode": "loop",
       "src": null,
-      "approval": "rework",
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/expertise-environment.mp4",
-      "stage": "reviewed-still-motion-pending",
-      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
-      "heldSource": "assets/films/flow-c07-lab-draft.mp4",
-      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
-      "labelKo": "이미지 초안 · 영상 제작 준비 중",
-      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "expertise-3",
@@ -54,18 +52,21 @@
     {
       "id": "expertise-4",
       "mode": "loop",
-      "src": "assets/films/flow-c02-satellite-draft.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/expertise-satellite.mp4",
-      "stage": "720p-draft",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md"
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "business-environment",
       "mode": "sequence",
       "src": null,
-      "approval": "rework",
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/business-environment.mp4",
       "purpose": "Business expertise — people-free water, sediment and ecological analysis process frame",
@@ -73,18 +74,17 @@
         "mp4",
         "gif"
       ],
-      "stage": "reviewed-still-motion-pending",
-      "review": "docs/redesign-next/05-IMAGE-REBUILD.md",
-      "heldSource": "assets/films/flow-c07-lab-draft.mp4",
-      "reviewNote": "New still replaces the old image base; prior draft held until motion is reviewed against the new still",
-      "labelKo": "이미지 초안 · 영상 제작 준비 중",
-      "labelEn": "CONCEPT STILL · FILM IN PREPARATION"
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "company-overview",
       "mode": "sequence",
       "src": null,
-      "approval": "rework",
+      "approval": "pending",
       "duration": 60,
       "delivery": "assets/films/company-overview.mp4",
       "purpose": "Company overview — people-free observation and environmental analysis process frame",
@@ -92,9 +92,11 @@
         "mp4",
         "gif"
       ],
-      "stage": "continuity-redesign",
-      "review": "docs/redesign-production/FLOW-PRODUCTION-TRACKER.md",
-      "reviewNote": "60s assembly failed editorial quality review and is not published in this slot"
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "ax-discover",
@@ -152,8 +154,8 @@
     {
       "id": "ax-concept-film",
       "mode": "loop",
-      "src": "assets/films/flow-ax-detect-v3.mp4",
-      "approval": "draft-reviewed",
+      "src": null,
+      "approval": "pending",
       "duration": 8,
       "delivery": "assets/films/ax-concept-film.mp4",
       "purpose": "AX facility detection concept chapter, not actual UI, a real location or measured scientific data",
@@ -161,12 +163,12 @@
         "mp4",
         "gif"
       ],
-      "stage": "detection-chapter-draft",
-      "review": "docs/redesign-production/AX-DETECTION-V3-REVIEW.md",
-      "reviewNote": "Synthetic open-water facilities; no actual location or platform output claim",
+      "stage": "source-replacement-pending",
+      "review": "docs/redesign-next/11-AX-EMBED-REVIEW.md",
+      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
       "plannedDuration": 30,
-      "labelKo": "720p 탐지 콘셉트 초안 · 예측·모니터링 제작 중",
-      "labelEn": "720p DETECTION CONCEPT · OTHER CHAPTERS IN PRODUCTION"
+      "labelKo": "새 영상 제작 준비 중",
+      "labelEn": "NEW FILM IN PREPARATION"
     },
     {
       "id": "platform-satellite",

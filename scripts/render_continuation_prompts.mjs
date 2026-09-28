@@ -10,6 +10,7 @@ const lines = ['# 장면별 복사용 제작 카드', '',
   '**이 문서가 완비되어 있어도 생성물 검수가 끝난 것은 아님**', '',
   '`source-composite`는 원본 보존 합성 지시이며 ImageGen에 그대로 재도색 요청하지 않음', '',
   '`imagegen-reference`는 참조 파일을 실제로 확인하고 붙인 뒤 사용 / 생성 전에 sourceRequirements 해결', '',
+  '`higgsfield-concept`는 실제 장소·성과로 주장하지 않는 생성형 영상 후보 / 전체 재생과 지형·물리 검수 뒤에만 웹에 사용', '',
   '모션 프롬프트는 시작·중간·끝 keyframe 검수를 통과한 뒤 사용 / 비용은 실제 UI에서 확인', ''];
 for (const s of p.shots) {
   lines.push(`## ${s.id} — ${s.title}`, '',

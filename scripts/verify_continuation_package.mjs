@@ -33,7 +33,7 @@ for(const s of p.shots){
   check(s.end-s.start===s.duration&&s.duration>0,`Bad duration ${s.id}`);
   check(s.containsActualUI===false,`Actual UI cannot enter company or AX concept ${s.id}`);
   check(s.generationReady===false,`Unreviewed shot marked ready ${s.id}`);
-  check(['source-composite','imagegen-reference'].includes(s.method),`Unknown method ${s.id}`);
+  check(['source-composite','imagegen-reference','higgsfield-concept'].includes(s.method),`Unknown method ${s.id}`);
   for(const key of ['imageInstruction','motionInstruction','compositingInstruction','continuity']) check(typeof s[key]==='string'&&s[key].length>25,`Missing ${key} ${s.id}`);
   for(const key of ['start','middle','end']) check(Boolean(s.frames?.[key]),`Missing frame ${s.id}/${key}`);
   check(s.sourceRequirements?.length>0&&s.rejectIf?.length>0,`Missing source/rejection gates ${s.id}`);

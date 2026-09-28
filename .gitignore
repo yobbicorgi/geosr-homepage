@@ -7,3 +7,5 @@ node_modules/
 __pycache__/
 *.py[cod]
 media-source/flow-downloads/*.mp4
+.source-review/
+docs/redesign-next/keyframes/flow-review/

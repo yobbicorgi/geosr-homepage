@@ -8,68 +8,65 @@
 
 `imagegen-reference`는 참조 파일을 실제로 확인하고 붙인 뒤 사용 / 생성 전에 sourceRequirements 해결
 
+`higgsfield-concept`는 실제 장소·성과로 주장하지 않는 생성형 영상 후보 / 전체 재생과 지형·물리 검수 뒤에만 웹에 사용
+
 모션 프롬프트는 시작·중간·끝 keyframe 검수를 통과한 뒤 사용 / 비용은 실제 UI에서 확인
 
-## CF01 — 지구에서 시작
+## CF01 — 넓은 하구와 외해의 시작
 
-편집 0–4초 / 4초 / source-composite / planned-needs-source-and-frame-review
+편집 0–5초 / 5초 / higgsfield-concept / planned-or-concept-candidate-needs-review
 
-회사의 관측 범위를 먼저 보여주고 위성을 주인공보다 관측 수단으로 도입
+넓은 바다와 하구가 한 프레임에 읽히는 실제 세계 같은 첫인상
 
 ### 참조와 남은 확인
 
-- [earth](../../dist/assets/concepts/corporate-film/hero-earth-00s-v4.png) — 후보 또는 근거이며 최종 합격 아님
-- [opening-review](../../docs/redesign-production/OPENING-V4-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 지구 texture 원본 출처와 해상도 확인
-- 확인 필요 — 최종 조명·카메라 master 저장
+- 확인 필요 — 실제 공개 시 지형·촬영 출처 또는 생성 콘셉트 표기 결정
 
 ### 구도
 
-- 시작 — 동아시아가 읽히는 지구 우측70% / 좌측35% 제목 여백
-- 중간 — 같은 지구 표면의 미세한 접근
-- 종료 — CF02와 동일한 지구·구름·조명
+- 시작 — 넓은 해안·하구와 외해, 왼쪽 제목 여백
+- 중간 — 드론이 천천히 전진하며 강과 바다의 규모가 커짐
+- 종료 — 수평선과 해안 형상을 유지한 채 다음 광역 컷으로 연결
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 동아시아가 읽히는 지구 우측70% / 좌측35% 제목 여백
-FRAME MIDDLE: 같은 지구 표면의 미세한 접근
-FRAME END: CF02와 동일한 지구·구름·조명
+FRAME START: 넓은 해안·하구와 외해, 왼쪽 제목 여백
+FRAME MIDDLE: 드론이 천천히 전진하며 강과 바다의 규모가 커짐
+FRAME END: 수평선과 해안 형상을 유지한 채 다음 광역 컷으로 연결
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Use the existing East Asia Earth reference as a geographical anchor, not an invitation to repaint geography. Compose the curved Earth over the right two thirds, a thin realistic atmospheric rim and deep near-black space on the left. Natural ocean navy, restrained cloud whites, visible Korea only at its correct scale. No satellite in the opening still. Avoid toy-like globe relief and city-light fantasy. Improve depth through illumination and source resolution, not coastline alteration.
+Generate a premium photoreal wide aerial of an unspecified coastal estuary and open sea. Broad river mouth, natural shorelines, distant islands and mountains, deep ocean blue and warm late-day light. No identifiable landmark or invented scientific overlay. Reserve the left third for HTML title.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A very slow continuous camera approach over four editorial seconds. Earth remains a rigid sphere with the same cloud texture and light direction. No fast spin, stretching of countries or atmospheric pulse. Preserve the final camera and exposure for CF02.
+One smooth forward drone move with a slight bank over five editorial seconds. Landforms and cloud shadows stay stable; no sudden geographic transformation.
 ```
 
 ### 후반 합성과 연결
 
-Build one Earth master from a documented texture and a fixed camera. Reuse its exact transform in CF02 and CF13. Keep web title as HTML.
+Add title in HTML only. If a geospatial overlay is desired, use a separately verified source layer after generation. Keep the conceptual-location label in review.
 
-CF13 끝 프레임과 밝기·구도 동일 / CF02 첫 프레임과 무컷 연결
+CF13과 동일한 해역·빛으로 돌아오거나 명확한 컷으로 루프를 만든다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 한반도·일본 상대 위치 오류
-- 지구 표면이 젤리처럼 움직임
-- 검은 배경만 커지고 지구 디테일 부족
+- 허구 해안을 실제 사업지로 제시
+- 지형·수평선 변형
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -79,67 +76,61 @@ CF13 끝 프레임과 밝기·구도 동일 / CF02 첫 프레임과 무컷 연�
 - candidate — `docs/redesign-next/renders/CF01-take01.mp4`
 - review — `docs/redesign-next/reviews/CF01-take01.json`
 
-## CF02 — 위성의 관측
+## CF02 — 강·도시·해안의 광역 연결
 
-편집 4–8초 / 4초 / source-composite / planned-needs-source-and-frame-review
+편집 5–10초 / 5초 / higgsfield-concept / planned-or-concept-candidate-needs-review
 
-위성 등장과 관측 대상을 이해시키되 특정 센서가 모든 변수를 측정한다는 오해 방지
+현실 환경의 또 다른 큰 뷰로 사업 범위를 확장
 
 ### 참조와 남은 확인
 
-- [satellite](../../dist/assets/concepts/corporate-film/hero-earth-satellite-07s-v4.png) — 후보 또는 근거이며 최종 합격 아님
-- [opening-review](../../docs/redesign-production/OPENING-V4-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [earth](../../dist/assets/concepts/corporate-film/hero-earth-00s-v4.png) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 위성 구조·관측 방향을 검토할 원본 또는 검증된 모델 선택
-- 확인 필요 — 본체와 지구 분리 가능 상태 확보
+- 확인 필요 — 실사 대체 후보의 권리·위치 확인
 
 ### 구도
 
-- 시작 — CF01 마지막 지구 / 화면 우측 밖 위성
-- 중간 — 화면 우상단의 작은 위성 / 센서 지구 방향
-- 종료 — 위성이 가장자리를 지나고 지구가 시각 중심
+- 시작 — 강과 도시가 해안으로 이어지는 넓은 시야
+- 중간 — 카메라가 강의 진행 방향을 따라 유려하게 이동
+- 종료 — 수면 방향을 유지하며 다음 연안 광역 컷으로 편집
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: CF01 마지막 지구 / 화면 우측 밖 위성
-FRAME MIDDLE: 화면 우상단의 작은 위성 / 센서 지구 방향
-FRAME END: 위성이 가장자리를 지나고 지구가 시각 중심
+FRAME START: 강과 도시가 해안으로 이어지는 넓은 시야
+FRAME MIDDLE: 카메라가 강의 진행 방향을 따라 유려하게 이동
+FRAME END: 수면 방향을 유지하며 다음 연안 광역 컷으로 편집
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Prepare an isolated physically coherent Earth-observation spacecraft reference or verified spacecraft model. Rigid rectangular solar arrays, a stable central bus, plausible sensor aperture directed toward Earth. The craft is a small foreground accent in the upper-right region, not a giant fantasy space station. Match Earth illumination and cast shadows consistently. Do not imply a named real mission unless its configuration is verified.
+Show a believable wide aerial where a river, city edge and coastline share one environment. Natural urban density, credible bridges, vast water and clear horizon. Cinematic blue-gold light; no famous skyline or exact Korean place claim.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Translate the spacecraft smoothly across the upper-right over a near-constant depth range while the Earth camera continues CF01. Keep panel count, bus proportions and sensor orientation unchanged. A subtle observation footprint may appear only in the later source overlay. No visible laser beam. Use separate spacecraft and Earth layers if the generator changes shape.
+A controlled drone move follows the water corridor; bridges and buildings remain rigid. Use a clean cut instead of pretending CF01 and CF02 are the same location.
 ```
 
 ### 후반 합성과 연결
 
-Do not repeat the rejected opening-v4 one-pass animation. Animate an isolated rigid spacecraft layer or verified 3D model over the fixed Earth master. Add a restrained observation area in post only when sensor geometry is justified.
+Technical accents may be added only from verified spatial data. Keep the generated city as an illustrative location, not a project record.
 
-CF01 지구 master 공유 / CF03는 위성 이동 방향과 같은 방향의 지역 접근
+CF01과 이동 방향·수평선 높이·노출을 맞춘 편집 컷이다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 위성 크기·패널 수 변화
-- 센서가 우주를 보는데 지구 촬영으로 표현
-- SF 레이저
+- 유명 도시 복제
+- 도로·건물 변형
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -149,65 +140,61 @@ CF01 지구 master 공유 / CF03는 위성 이동 방향과 같은 방향의 지
 - candidate — `docs/redesign-next/renders/CF02-take01.mp4`
 - review — `docs/redesign-next/reviews/CF02-take01.json`
 
-## CF03 — 한반도와 북서태평양
+## CF03 — 연안·섬·항만의 규모
 
-편집 8–13초 / 5초 / source-composite / planned-needs-source-and-frame-review
+편집 10–15초 / 5초 / higgsfield-concept / planned-or-concept-candidate-needs-review
 
-글로벌 관측에서 국내 해양·환경 연구 영역으로 연결
+해양과 연안의 다층 환경을 한 화면에 제시
 
 ### 참조와 남은 확인
 
-- [regional](../../dist/assets/concepts/corporate-film/hero-earth-18s-v1.png) — 후보 또는 근거이며 최종 합격 아님
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 공통 지도 extent·projection·north 기준 기록
+- 확인 필요 — 항만이나 섬을 특정 지역으로 표시할 경우 실제 출처 확보
 
 ### 구도
 
-- 시작 — 동아시아가 보이는 구면 지구
-- 중간 — 한반도와 인근 해역 중심으로 완만히 접근
-- 종료 — 북서태평양 일부와 한국·일본이 포함된 지역 시야
+- 시작 — 바다·섬·연안 인프라가 넓게 보임
+- 중간 — 부드러운 선회로 육지와 외해의 관계를 드러냄
+- 종료 — 조사선이 들어올 수 있는 바다 여백을 남김
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 동아시아가 보이는 구면 지구
-FRAME MIDDLE: 한반도와 인근 해역 중심으로 완만히 접근
-FRAME END: 북서태평양 일부와 한국·일본이 포함된 지역 시야
+FRAME START: 바다·섬·연안 인프라가 넓게 보임
+FRAME MIDDLE: 부드러운 선회로 육지와 외해의 관계를 드러냄
+FRAME END: 조사선이 들어올 수 있는 바다 여백을 남김
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create the regional keyframes by camera movement and geographic projection of the same source Earth. Show the Korean Peninsula, Jeju, the Korea Strait, Japan and adjacent Northwest Pacific without inventing coastlines or exaggerating mountains. A clear oblique-to-near-plan transition, moderate cloud cover that does not hide the area of interest. Keep north orientation documented across frames.
+Create a wide, realistic aerial of open coastal water, distant islands and restrained port infrastructure. The sea occupies most of the frame and the scene feels like documentary drone footage. No invented named port or readable signage.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Five seconds of controlled camera approach. Ease the Earth curvature into a readable regional view without morphing land. End on a stable source-registered map plane for at least half a second. Do not dive through clouds into an unrelated generated coast.
+One slow aerial arc across the coast. Water motion and shore geometry remain coherent; no exaggerated speed or fantasy vessels.
 ```
 
 ### 후반 합성과 연결
 
-Use a geographic camera or source-image reprojection; manually verify landmarks at all keyframes. Derived map layers in CF04 share this extent and orientation.
+A later verified survey route can be composited sparingly, not generated as a false track.
 
-CF04의 모든 자료 평면은 CF03 종료 영역과 정합
+CF04의 선박 장면과 해수면 방향이 자연스럽게 이어지도록 컷한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 제주 누락 또는 한반도 형태 변형
-- 카메라 전환 중 일본 위치 이동
-- 다른 해역으로 숨은 점프
+- 가짜 방파제 과장
+- 건물·섬 형태 변형
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -217,67 +204,63 @@ CF04의 모든 자료 평면은 CF03 종료 영역과 정합
 - candidate — `docs/redesign-next/renders/CF03-take01.mp4`
 - review — `docs/redesign-next/reviews/CF03-take01.json`
 
-## CF04 — 관측자료의 분리와 해석
+## CF04 — 큰 해역 속 조사선
 
-편집 13–19초 / 6초 / source-composite / planned-needs-source-and-frame-review
+편집 15–20초 / 5초 / higgsfield-concept / planned-or-concept-candidate-needs-review
 
-수온·염분·클로로필의 서로 다른 정보를 여러 층으로 읽는 장면
+현장 관측을 넓은 해양 환경 안에서 보여줌
 
 ### 참조와 남은 확인
 
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [regional](../../dist/assets/concepts/corporate-film/hero-earth-18s-v1.png) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 실제 제품·관측 기간·범례·단위·결측 확인
-- 확인 필요 — 같은 extent 재투영과 coastline alignment 확인
+- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
+- [usv](../../dist/assets/equipment-usv-original.png) — 후보 또는 근거이며 최종 합격 아님
+- 확인 필요 — 선박 유형·원본 형상·사용 권리 대조
 
 ### 구도
 
-- 시작 — 지역 지도가 읽히는 한 평면
-- 중간 — 수온과 염분의 별도 자료 평면이 얕게 분리
-- 종료 — 세 변수의 평면이 같은 지역 위에 정렬 / 분석할 한 영역 강조
+- 시작 — 선박이 작은 비중으로 넓은 해역에 등장
+- 중간 — 카메라가 항적을 따라 이동하면서 관측 행동을 읽힘
+- 종료 — 선박을 한 단계 가까이 보는 CF05로 연결
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 지역 지도가 읽히는 한 평면
-FRAME MIDDLE: 수온과 염분의 별도 자료 평면이 얕게 분리
-FRAME END: 세 변수의 평면이 같은 지역 위에 정렬 / 분석할 한 영역 강조
+FRAME START: 선박이 작은 비중으로 넓은 해역에 등장
+FRAME MIDDLE: 카메라가 항적을 따라 이동하면서 관측 행동을 읽힘
+FRAME END: 선박을 한 단계 가까이 보는 CF05로 연결
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Compose three restrained two-dimensional scientific data planes over the same regional Earth view, using supplied SST, SSS and chlorophyll rasters without repainting them. Each plane retains identical geographic registration, land masks and missing-data holes. Physical separation is a visual metaphor only. Use the source palettes, a fine neutral edge and shallow perspective; no neon holographic glow. Allow only one or two planes to dominate at a time so the region stays legible.
+A marine survey vessel or unmanned survey craft moves through broad open water. The credible hull is smaller than the environment, with modest wake and natural daylight. Match any visible GeoSR hardware only when source reference supports it.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Over six editorial seconds, reveal SST first, separate SSS above it, then reveal chlorophyll. Hold the combined relationship briefly. A small source-backed region is then selected for an editorial cut to field observation. Do not animate one variable turning into another. No interpolated fake measurements.
+Parallel drone tracking at plausible survey speed; a continuous wake trails behind. No hull morphing, extra sensors or dramatic acceleration.
 ```
 
 ### 후반 합성과 연결
 
-Composite exact rasters and small HTML/post labels for product and period. Monthly SST, monthly SSS and daily chlorophyll currently have different sampling support; keep this difference in provenance and avoid any simultaneous-measurement claim. Preserve no-data regions. If labels cannot be readable, simplify the number of layers rather than invent certainty.
+Use a concept label until vessel identity is verified. Do not imply a precise surveyed location or depth result.
 
-해역 선택에서 CF05로 명확한 매치 컷 / 조사선의 실제 지역을 모르면 동일 위치 관통 전환 금지
+CF05에서 같은 장비라고 주장할 경우 선체·방향을 실제로 일치시킨다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 결측을 임의 보간
-- 염분장을 고해상도 연안 실측처럼 표현
-- 육지에 해양 자료 색칠
-- 하나의 센서가 세 변수를 직접 측정하는 서사
+- 선체 변화
+- 항적 방향 오류
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -287,67 +270,63 @@ Composite exact rasters and small HTML/post labels for product and period. Month
 - candidate — `docs/redesign-next/renders/CF04-take01.mp4`
 - review — `docs/redesign-next/reviews/CF04-take01.json`
 
-## CF05 — 현장 관측과 측량
+## CF05 — 현장 무인선과 측량 행동
 
-편집 19–23초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
+편집 20–24초 / 4초 / imagegen-reference / planned-or-concept-candidate-needs-review
 
-풍경보다 장비가 수행하는 측량 행동이 먼저 보이는 컷
+넓은 바다 안의 실제 조사 수단을 짧게 보여줌
 
 ### 참조와 남은 확인
 
 - [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
 - [usv](../../dist/assets/equipment-usv-original.png) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 사용 선체 참조 결정과 충분한 해상도
-- 확인 필요 — 실제 GeoSR 장비로 주장하려면 모델·원본 확인
+- 확인 필요 — 회사 장비 원본과 선택 스틸 상세 비교
 
 ### 구도
 
-- 시작 — 선박 또는 무인선의 전체 윤곽과 수면 접점
-- 중간 — 같은 선체가 일정 방향으로 이동 / 관측 행위 중심
-- 종료 — 이동 방향과 낮은 수평선 유지
+- 시작 — 바다 맥락과 선체 전체가 함께 보임
+- 중간 — 무인선의 일정 속도 이동과 작은 항적
+- 종료 — 수면의 관측 지점을 CF06으로 넘김
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 선박 또는 무인선의 전체 윤곽과 수면 접점
-FRAME MIDDLE: 같은 선체가 일정 방향으로 이동 / 관측 행위 중심
-FRAME END: 이동 방향과 낮은 수평선 유지
+FRAME START: 바다 맥락과 선체 전체가 함께 보임
+FRAME MIDDLE: 무인선의 일정 속도 이동과 작은 항적
+FRAME END: 수면의 관측 지점을 CF06으로 넘김
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create a low oblique engineering-documentary view of one source-referenced survey vessel or unmanned survey boat on Korean coastal water. Choose one hull from the reference, preserve its beam, deck arrangement and antenna positions. The boat occupies roughly the right half of the frame with enough water to read its modest wake. Natural daylight, credible draft and water displacement, no dramatic storm. Keep people absent. Do not invent a harbor or populate the scene with extra vessels. If detailed hardware is not visible in the source, use a wider view rather than inventing it.
+Keep the source-referenced unmanned survey craft visible in a medium-wide ocean view, not a heroic close-up. Preserve hull, deck fittings and antenna positions only where source pixels verify them.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A parallel tracking move follows the craft at a modest survey speed. Wake develops continuously behind the stern and matches the travel direction. The hull never stretches or changes fittings. Keep the device stable and let moving water convey operation. No vessel leap or abrupt acceleration.
+Track the craft at modest speed in one direction. Keep fittings rigid, wake behind the stern and draft consistent.
 ```
 
 ### 후반 합성과 연결
 
-If verified multibeam data are available, add a brief separate cutaway of the under-hull acoustic sampling fan and source bathymetry. It is an explanatory overlay, not visible light in water. Otherwise use a clean survey shot with no invented output.
+No luminous sonar rays; any survey track is a source-controlled later overlay.
 
-진행 방향을 CF06의 부이 또는 관측 지점 접근과 맞춤
+CF04와 동일 선박이 아니라면 명확한 다른 조사 컷으로 연결한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 원본과 다른 선체
-- 수면에 뜨지 않는 흘수
-- 소나 레이저
-- 새로 만든 해안·항만
+- 가짜 GeoSR 로고·장비
+- 선체·항적 불일치
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -365,69 +344,62 @@ If verified multibeam data are available, add a brief separate cutaway of the un
   - 검수 — 원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조
   - 다음 모션 — 4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지
 
-## CF06 — 수면에서 수층으로
+## CF06 — 관측 지점이 놓인 바다
 
-편집 23–26초 / 3초 / imagegen-reference / planned-needs-source-and-frame-review
+편집 24–28초 / 4초 / imagegen-reference / planned-or-concept-candidate-needs-review
 
-해수 관측과 물속 센서가 연결되는 수직 구조
+장비보다 바다와 관측 맥락을 먼저 읽힘
 
 ### 참조와 남은 확인
 
 - [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 부이 또는 수층장비 한 종류의 실물 구조 확인
-- 확인 필요 — 장비 선택 전에는 생성하지 않음
-- 확인 필요 — 회사 수온계 페이지의 RBRsolo-TU 표기와 Solo-T 이미지 파일명 충돌 확인 / 실제 계측 변수와 모델 식별 전 해당 기기를 온도·탁도 어느 쪽으로도 확정하지 않음
+- 확인 필요 — 센서·부이 모델과 계류 구조 확인
 
 ### 구도
 
-- 시작 — 부이 수면 접점 또는 검증된 채수·관측 장치
-- 중간 — 수면을 기준으로 계류 또는 케이블이 아래로 이어짐
-- 종료 — 어두운 수중 시야로 전환 준비
+- 시작 — 넓은 수면에 작은 관측 부이 또는 지점
+- 중간 — 잔잔한 파도와 부이의 물리적인 움직임
+- 종료 — 수면 경계를 이용해 CF07 수중으로 연결
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 부이 수면 접점 또는 검증된 채수·관측 장치
-FRAME MIDDLE: 수면을 기준으로 계류 또는 케이블이 아래로 이어짐
-FRAME END: 어두운 수중 시야로 전환 준비
+FRAME START: 넓은 수면에 작은 관측 부이 또는 지점
+FRAME MIDDLE: 잔잔한 파도와 부이의 물리적인 움직임
+FRAME END: 수면 경계를 이용해 CF07 수중으로 연결
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Prepare one modest-scale surface observation scene based on a verified buoy or deployed water-column instrument reference. Show a credible waterline and attachment geometry. For a buoy, the mooring leads downward from the appropriate submerged attachment; for a lowered instrument, one continuous load-bearing cable comes from a supported lifting point. Choose only one configuration. Natural water, restrained reflections, no people, no floating unsupported cables and no invented sensor name.
+Show a broad ocean observation setting with a small source-verified buoy only if its model is identified. Otherwise use a wide water-level shot without detailed equipment.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Three editorial seconds with slight wave-driven heave and continuous cable attachment. Move the camera toward the water surface, then make a clean cut beneath it. Do not ask the generator to transform a buoy into a CTD or a vehicle.
+One slow camera descent toward the surface. Buoy motion follows waves and any tether has a plausible load path.
 ```
 
 ### 후반 합성과 연결
 
-Use source-based above/below-water plates if a single take distorts waterline geometry. Keep CTD measurements separate from chemical sample analysis. No fabricated real-time display.
+Do not invent sensor readouts or unsupported platform names.
 
-수면의 수직 방향을 CF07 수중 카메라 방향과 연결 / 같은 장비라고 단정하지 않음
+CF07 수중 컷으로 넘어갈 때 같은 위치라는 주장은 출처가 있어야 한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 케이블이 공중에서 시작
-- 계류가 부력·하중과 불일치
-- CTD와 채수기를 같은 기능으로 단정
-- RBRsolo-T와 RBRsolo³ Tu를 같은 수온계로 취급
-- 실물 근거 없는 TPRBM·부이 케이블 구조 생성
+- 불가능한 케이블
+- 부이 과장
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -444,68 +416,63 @@ Use source-based above/below-water plates if a single take distorts waterline ge
 - 원본 — [회사 보존 자료](../../docs/redesign-production/equipment-sources/originals/rbr-solo-tu-page-thumbnail.png)
 - 제조사 — [제품 안내](https://rbr-global.com/products/compact-loggers/rbrsolo-do-tu-par/)
 
-## CF07 — 수중 조사
+## CF07 — 수면에서 수중 환경으로
 
-편집 26–30초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
+편집 28–33초 / 5초 / imagegen-reference / planned-or-concept-candidate-needs-review
 
-수중 영상과 센서 기반 연구 역량을 정확한 스케일로 표현
+넓은 환경에서 수중 조사로 시점을 바꿈
 
 ### 참조와 남은 확인
 
-- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
 - [rov](../../docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — ROV 원본 또는 다른 검증된 수중 관측 장면 선택
-- 확인 필요 — 수중 시야·스케일·테더 검토
+- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
+- 확인 필요 — ROV 형상·테더·환경 스케일 원본 대조
 
 ### 구도
 
-- 시작 — 입자가 약간 있는 근해 수중 시야
-- 중간 — 참조 ROV의 느린 조사 또는 검증된 고정 센서의 관측 맥락
-- 종료 — 관찰 대상이 화면 중심에 남음
+- 시작 — 수면 경계가 읽히는 넓은 수중 시야
+- 중간 — 카메라가 완만히 내려가며 해저 맥락을 보여줌
+- 종료 — 수중 기록을 연안 자료의 평면으로 편집
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 입자가 약간 있는 근해 수중 시야
-FRAME MIDDLE: 참조 ROV의 느린 조사 또는 검증된 고정 센서의 관측 맥락
-FRAME END: 관찰 대상이 화면 중심에 남음
+FRAME START: 수면 경계가 읽히는 넓은 수중 시야
+FRAME MIDDLE: 카메라가 완만히 내려가며 해저 맥락을 보여줌
+FRAME END: 수중 기록을 연안 자료의 평면으로 편집
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create a sober underwater engineering concept with a source-referenced ROV viewed three-quarter rear at modest distance. Preserve the actual frame, thruster arrangement and tether attachment from the accepted reference. A tether extends plausibly out of frame with slack consistent with motion. Moderate coastal turbidity, limited light range, believable scale against seabed texture. Do not add coral reefs, tropical fish or giant ruins. If using a fixed sensor instead, make a separate composition and use its verified mounting, never convert the vehicle into a sensor.
+A credible underwater view with water column, seafloor context and optional source-verified ROV. No fantasy lighting, invented species or cable disconnected from the vehicle.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A slow lateral inspection pass over four seconds with minimal suspended particles and fixed vehicle geometry. Lighting illuminates only a plausible nearby area. End on a stable inspected feature suitable for an image-record cut. No impossible high-speed underwater flight.
+One controlled descent, stable scale and water motion; if a ROV is present its rigid body and tether remain coherent.
 ```
 
 ### 후반 합성과 연결
 
-Keep the ROV footage source-grounded. Any inspection annotations are post-composited and explicitly conceptual unless an actual reviewed result is supplied. TPRBM identity remains unverified and must not be replaced with an assumed instrument.
+Treat generated seafloor as illustrative. Do not name it as a real surveyed site.
 
-수중 기록의 평면에서 CF08 측량 결과 평면으로 매치 컷 / 동일 장소 연속 주장 없음
+수중에서 지도 자료로 바뀔 때 기록→분석의 편집 컷을 쓴다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- ROV 테더 단절
-- 추진기 수 변화
-- 열대 수중 환경
-- 미확인 센서 모델 단정
+- 테더 단절
+- 해저 지형 급변
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -523,69 +490,62 @@ Keep the ROV footage source-grounded. Any inspection annotations are post-compos
   - 검수 — 회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지
   - 다음 모션 — 4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용
 
-## CF08 — 연안과 하구의 공간정보
+## CF08 — 연안 지형을 실제 자료로 읽기
 
-편집 30–35초 / 5초 / source-composite / planned-needs-source-and-frame-review
+편집 33–38초 / 5초 / source-composite / planned-or-concept-candidate-needs-review
 
-육상·연안 측량과 공간정보 구축을 보여줌
+현실 풍경과 지도·측량 자료의 관계를 보여줌
 
 ### 참조와 남은 확인
 
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
 - [migration](../../docs/source-migration/migration-coverage.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 위치 확인된 항공 원본
-- 확인 필요 — 정사영상·점군 대응 자료 또는 개념 표시
-- 확인 필요 — 항공 사진측량 기체와 LiDAR 센서 탑재 구성을 구분하고 확인되지 않은 조합은 생성하지 않음
+- 확인 필요 — 실제 연안·항공 자료와 위치·사용 권리 확인
 
 ### 구도
 
-- 시작 — 출처 확인된 한국 연안 또는 하구의 실제 항공 영상
-- 중간 — 같은 지형 위 부분 점군·촬영 범위가 나타남
-- 종료 — 정사영상 또는 지표면 모델이 정합된 상태
+- 시작 — 출처 확인된 연안 항공 또는 정사영상
+- 중간 — 동일 좌표계의 측선·점군을 절제해 드러냄
+- 종료 — 같은 자료 영역을 CF09의 원격탐사로 확장
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 출처 확인된 한국 연안 또는 하구의 실제 항공 영상
-FRAME MIDDLE: 같은 지형 위 부분 점군·촬영 범위가 나타남
-FRAME END: 정사영상 또는 지표면 모델이 정합된 상태
+FRAME START: 출처 확인된 연안 항공 또는 정사영상
+FRAME MIDDLE: 동일 좌표계의 측선·점군을 절제해 드러냄
+FRAME END: 같은 자료 영역을 CF09의 원격탐사로 확장
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Use a documented Korean coast or river-estuary aerial source and its own orthophoto or point cloud. Keep roads, shoreline, breakwaters and vegetation precisely registered. The concept finishing should feel like engineering visualization over reality: a localized white-to-muted-blue sampling reveal transitions to the actual measured surface. Do not generate a new harbor. A drone may be shown only from an accepted hardware reference and only when its presence explains the acquisition.
+Use documented real coastal imagery or orthophoto as an immutable base. Do not paint a new coast or replace breakwaters with generated geometry.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A slow aerial lateral move retains the shoreline. Reveal the source point cloud progressively across a limited region, then settle into the corresponding terrain surface. Five seconds, one region, one sensing method. Do not sweep a laser across deep water and reveal unsupported bathymetry.
+A gentle camera reframe over the source image. Source-registered points or lines may reveal in post but the ground image does not morph.
 ```
 
 ### 후반 합성과 연결
 
-Georeferenced data overlays are deterministic. Photogrammetry and ordinary topographic LiDAR concern visible terrain; bathymetric LiDAR requires a distinct verified system and suitable water conditions. If only a photograph exists, use it without manufacturing measured point-cloud evidence.
+Store imagery source, location, rights, projection and acquisition date. If any is missing, this remains a concept placeholder.
 
-CF09에 동일 입력 자료를 넘겨 처리 관계가 읽히게 함
+CF09와 동일 지역인 경우 extent·북쪽 방향·촬영 시기를 명시한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 사용자 거부 해안 사용
-- 방파제·항로 재창작
-- 사진만 있는데 실측 점군이라고 주장
-- 일반 LiDAR로 깊은 해저 탐사
-- FireFly6 사진만으로 LiDAR 탑재를 단정
+- 가짜 해안
+- 좌표 불일치
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -595,66 +555,62 @@ CF09에 동일 입력 자료를 넘겨 처리 관계가 읽히게 함
 - candidate — `docs/redesign-next/renders/CF08-take01.mp4`
 - review — `docs/redesign-next/reviews/CF08-take01.json`
 
-## CF09 — 자료에서 분석으로
+## CF09 — 원격탐사와 관측의 관계
 
-편집 35–40초 / 5초 / source-composite / planned-needs-source-and-frame-review
+편집 38–43초 / 5초 / source-composite / planned-or-concept-candidate-needs-review
 
-AI와 분석이 자료를 어떻게 해석하는지 과장 없는 시각으로 표현
+광역 해양 환경을 데이터로 이해하는 순간
 
 ### 참조와 남은 확인
 
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
-- [migration](../../docs/source-migration/migration-coverage.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 회사 연구 사례의 입력·출력 짝 확보
-- 확인 필요 — 없으면 개념 도식임을 명시
+- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
+- 확인 필요 — 제품·기간·단위·결측·범례 확인
 
 ### 구도
 
-- 시작 — CF08의 실제 입력 이미지 또는 별도 검증된 연구 입력
-- 중간 — 선택 영역과 검토한 중간 표현
-- 종료 — 실제 또는 명시된 개념 결과가 입력 옆에 정렬
+- 시작 — 실제 지도 또는 광역 해양 영상
+- 중간 — 서로 다른 관측 자료가 차례로 별도 표시
+- 종료 — 자료 층을 연구 환경으로 명확히 컷
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: CF08의 실제 입력 이미지 또는 별도 검증된 연구 입력
-FRAME MIDDLE: 선택 영역과 검토한 중간 표현
-FRAME END: 실제 또는 명시된 개념 결과가 입력 옆에 정렬
+FRAME START: 실제 지도 또는 광역 해양 영상
+FRAME MIDDLE: 서로 다른 관측 자료가 차례로 별도 표시
+FRAME END: 자료 층을 연구 환경으로 명확히 컷
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Build an editorial scientific analysis plate with one real input and one clearly related output. Use a documented GeoSR research example where input and result can be matched. Prefer a semantic segmentation boundary, quality mask or forecast comparison over floating code and neural-network spheres. Keep the input visible and the result spatially aligned. Use large clean fields with ample negative space, no application chrome and no AX-specific screen.
+Preserve actual satellite and observation rasters with their land masks, no-data holes, periods and variable identity. Show only source-backed layers over a verified regional extent.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A five-second deterministic sequence: identify an input region, reveal the reviewed result over that region, then separate the result slightly for comparison. Do not display fabricated neural activity or invented accuracy numbers. The process is a visual explanation, not a claim of live computation.
+Reveal layers sequentially with a stable camera. Do not generate colors that resemble new measurements or suggest one sensor captured all variables simultaneously.
 ```
 
 ### 후반 합성과 연결
 
-Use actual research output where available. Without it, use an explicitly conceptual unquantified processing diagram and keep it out of research-result claims. Post labels distinguish input and interpretation. Do not reassign AX facility detection footage to the company film.
+Post-label product, period, unit and limitations. Avoid unreadable floating panels and invented real-time indicators.
 
-결과 선택 영역의 원형 디테일에서 CF10 시료 디테일로 명확한 편집 컷
+CF08과 동일 지역이 아니면 공간을 관통하는 가짜 원테이크를 쓰지 않는다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 가짜 정확도
-- 입력과 무관한 결과
-- AX UI 또는 AX 전용 장면 유입
+- 결측 채움
+- 변수 혼용
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -664,67 +620,62 @@ Use actual research output where available. Without it, use an explicitly concep
 - candidate — `docs/redesign-next/renders/CF09-take01.mp4`
 - review — `docs/redesign-next/reviews/CF09-take01.json`
 
-## CF10 — 해수와 환경 시료 분석
+## CF10 — 연구 환경과 시료 분석
 
-편집 40–44초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
+편집 43–47초 / 4초 / imagegen-reference / planned-or-concept-candidate-needs-review
 
-좋은 실험 이미지의 분위기를 유지하며 장비 연결과 분석 단계 교정
+광역 환경 다음에 분석 방법을 짧게 설명
 
 ### 참조와 남은 확인
 
 - [lab](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png) — 후보 또는 근거이며 최종 합격 아님
-- [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 여과 장치 사용 단계와 관 연결 검토
-- 확인 필요 — 회사 실제 실험실 사진으로 오인되지 않는 문맥
+- 확인 필요 — 시료·용기·분석 단계의 물리 검토
 
 ### 구도
 
-- 시작 — 사람 없는 정돈된 실험대와 해수 시료 용기
-- 중간 — 검증된 여과 또는 시료 준비 장치의 근접
-- 종료 — 시료 용기와 분석 장비 사이 관계가 읽힘
+- 시작 — 사람 없는 연구실의 넓은 작업 환경
+- 중간 — 천천히 움직이는 카메라로 시료와 분석기 관계를 읽힘
+- 종료 — 현미경 보조 컷으로 짧게 전환
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 사람 없는 정돈된 실험대와 해수 시료 용기
-FRAME MIDDLE: 검증된 여과 또는 시료 준비 장치의 근접
-FRAME END: 시료 용기와 분석 장비 사이 관계가 읽힘
+FRAME START: 사람 없는 연구실의 넓은 작업 환경
+FRAME MIDDLE: 천천히 움직이는 카메라로 시료와 분석기 관계를 읽힘
+FRAME END: 현미경 보조 컷으로 짧게 전환
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create a people-free environmental chemistry laboratory concept inspired by the supplied laboratory image. Simplify it to a small group of seawater sample bottles and one physically coherent sample-preparation station. Realistic borosilicate glass, neutral benchtop, restrained stainless steel, soft side light. If vacuum filtration is included, show a continuous hose from the flask side arm to its appropriate downstream trap and pump with no floating ends. Do not show measurement taking place in an open-lid spectrometer. Keep the back of the bench uncluttered and left third available for web copy. No fake instrument labels.
+Use a wide, clean marine chemistry lab composition. The bench and analysis equipment sit within a believable room; do not let bottles fill the frame. No people, invented result displays or false GeoSR facility claim.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A gentle four-second macro dolly across a fixed sample bottle and prepared filtration apparatus. Only plausible tiny liquid movement and lighting variation. No spontaneous liquid transfer, moving hoses, invented pipetting or hands. Finish on a circular vial or optical opening for the next match cut.
+A subtle lateral camera move for four editorial seconds. Equipment, bottles and vial rack remain stable with plausible reflections.
 ```
 
 ### 후반 합성과 연결
 
-Keep actual lab identification out of the concept. Add sample context in HTML rather than generating text labels. If apparatus geometry remains uncertain, reduce the shot to verified closed sample vessels and documented equipment surfaces.
+This generated lab is a conceptual illustration, not a photograph of an actual GeoSR facility or result.
 
-시료 원형 디테일을 CF11 현미경 시야에 맞춤
+CF11과 분석 과정의 이어짐만 보여주고 실험 절차를 지어내지 않는다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 손·사람 생성
-- 튜브가 잘못 연결됨
-- 열린 장비에서 측정 광선
-- 가짜 실험 결과
+- 실제 시설로 오인
+- 용기·장비 형태 변화
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -745,65 +696,62 @@ Keep actual lab identification out of the concept. Add sample context in HTML ra
   - 검수 — 별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음
   - 다음 모션 — wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용
 
-## CF11 — 생물과 플랑크톤 분석
+## CF11 — 생태 분석의 보조 컷
 
-편집 44–48초 / 4초 / imagegen-reference / reviewed-concept-still-motion-pending
+편집 47–50초 / 3초 / imagegen-reference / planned-or-concept-candidate-needs-review
 
-화학 분석과 다른 생태·생물 연구 업무를 분명히 보여줌
+분석의 다양성을 짧게 제시
 
 ### 참조와 남은 확인
 
 - [microscope](../../dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png) — 후보 또는 근거이며 최종 합격 아님
-- [lab-style](../../dist/assets/analysis-lab-v1.webp) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 실제 현미경 자료의 출처·배율 확인 또는 장비 컷으로 제한
+- 확인 필요 — 현미경·시료 형태 검토
 
 ### 구도
 
-- 시작 — 검증된 현미경과 시료 준비 구도
-- 중간 — 실제 시료 영상의 제한된 시야
-- 종료 — 영상 분석 대상과 분류 맥락
+- 시작 — 현미경이 연구 공간 속에 보임
+- 중간 — 차분한 카메라 이동으로 관찰 행동을 암시
+- 종료 — 결과를 특정 종으로 단정하지 않고 모델 장면으로
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 검증된 현미경과 시료 준비 구도
-FRAME MIDDLE: 실제 시료 영상의 제한된 시야
-FRAME END: 영상 분석 대상과 분류 맥락
+FRAME START: 현미경이 연구 공간 속에 보임
+FRAME MIDDLE: 차분한 카메라 이동으로 관찰 행동을 암시
+FRAME END: 결과를 특정 종으로 단정하지 않고 모델 장면으로
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create a people-free microscope sample-preparation still with one realistic microscope, a slide or sample chamber in the correct stage position, and a small number of appropriate covered sample containers. Use the supplied lab image as tonal reference only. Do not generate species-specific organisms or claim specimen identification. Reserve a clean area for compositing a separately sourced, scale-documented microscopy image. Natural scientific photography rather than a glowing sci-fi laboratory.
+A brief medium-wide ecology-lab view centered on a source-referenced microscope and sample preparation area. No person, specimen identity or generated scientific labels.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-A controlled short push toward the microscope optical area followed by an editorial cut to the genuine microscopy plate. If no genuine plate is available, remain on the instrument and specimen-preparation context. Do not fabricate swimming behavior, cell division or automated species labels.
+One small camera movement, stable optical structure and sample positions. Do not animate impossible microscope use.
 ```
 
 ### 후반 합성과 연결
 
-Microscopy imagery, species names and scale bars must come from reviewed source material. A generic concept organism cannot serve as a biological finding. Use a clean match cut, not a physical flight through the microscope optics.
+No species identification or measured result may be inferred from generated imagery.
 
-분석 결과의 의미가 CF12 입력과 관계있을 때만 데이터 전달 연출 / 없으면 연구 분야 간 컷
+CF12에 입력된 실제 분석 결과라는 직접 주장은 별도 근거가 있어야 한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 생성 플랑크톤을 특정 종으로 표기
-- 과장된 생물 형태
-- 측정 배율 조작
+- 가짜 종 설명
+- 광학 구조 변형
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -821,68 +769,63 @@ Microscopy imagery, species names and scale bars must come from reviewed source 
   - 검수 — 대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인
   - 다음 모션 — 4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음
 
-## CF12 — 모델과 예측
+## CF12 — 지형 위 모델·시나리오의 광역 조망
 
-편집 48–55초 / 7초 / source-composite / planned-needs-source-and-frame-review
+편집 50–56초 / 6초 / source-composite / planned-or-concept-candidate-needs-review
 
-관측·분석에서 환경 변화 예측으로 확장하는 연구 역량
+관측에서 계산과 판단으로 이어지는 회사 역량을 크게 보여줌
 
 ### 참조와 남은 확인
 
+- [wave-concept](../../dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png) — 후보 또는 근거이며 최종 합격 아님
 - [technology](../../docs/redesign-production/TECHNOLOGY-MAP.md) — 후보 또는 근거이며 최종 합격 아님
-- [migration](../../docs/source-migration/migration-coverage.json) — 후보 또는 근거이며 최종 합격 아님
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 연구 사례와 결과 파일 및 시나리오 조건 대응
-- 확인 필요 — 없으면 개념 표현 범위 축소
+- 확인 필요 — 실제 지형·모델 결과 또는 명시적 개념 경로 결정
 
 ### 구도
 
-- 시작 — 확인된 연구 영역과 입력 자료
-- 중간 — 같은 영역에서 한 변수의 시간 변화
-- 종료 — 같은 범례를 가진 두 조건 또는 관측·모델 비교
+- 시작 — 출처가 있는 광역 연안·수면 지형
+- 중간 — 격자나 변수 층이 해역 위에 절제해 정렬
+- 종료 — 결과를 단정하지 않고 다시 넓은 현실 뷰로
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: 확인된 연구 영역과 입력 자료
-FRAME MIDDLE: 같은 영역에서 한 변수의 시간 변화
-FRAME END: 같은 범례를 가진 두 조건 또는 관측·모델 비교
+FRAME START: 출처가 있는 광역 연안·수면 지형
+FRAME MIDDLE: 격자나 변수 층이 해역 위에 절제해 정렬
+FRAME END: 결과를 단정하지 않고 다시 넓은 현실 뷰로
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Create a cinematic but scientifically controlled model-result composition from a documented GeoSR numerical study. Choose one physical quantity and one real domain: for example temperature dispersion, coastal water level or a reviewed transport case. Keep the source terrain, wet/dry mask, boundary treatment and palette intact. Use an oblique contextual base with a readable two-dimensional result layer rather than a report chart enlarged as wallpaper. No generic blue currents applied to every sea.
+Use a documented coastal base and physically meaningful model grid. If only a generated wave concept exists, present it explicitly as a concept without results, values or forecast claims.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Over seven editorial seconds, show source time steps with a visible distinction between observed input and model scenario. Reveal one meaningful change, then widen toward the regional context. Do not change the colormap between scenarios or animate unsupported forecasts between unrelated datasets.
+A measured aerial pullback over the source coast; source-aligned grid reveals in post. No generated flooding, currents or probabilities.
 ```
 
 ### 후반 합성과 연결
 
-Model rasters and vector outputs remain deterministic. Labels, time and scenario metadata are post-composited. If no validated output can be located, render a clearly marked conceptual scenario without measurements and do not present it as a company achievement.
+Keep model variables, boundaries, units and time explicit when actual outputs are shown. Otherwise use the concept fallback only.
 
-CF13 지역·지구 master와 같은 시야로 widen / 회사 본편 마지막까지 AX 제외
+CF13으로 장면 규모와 카메라 방향을 넓히며 명확하게 편집한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 모델링을 관측으로 표시
-- 해류·염분·침수를 혼합
-- 범례 변화로 성과 과장
-- 미확인 연구 수치
+- 실제 예측처럼 보이는 허구 결과
+- 격자 지형 불일치
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -900,82 +843,61 @@ CF13 지역·지구 master와 같은 시야로 widen / 회사 본편 마지막�
   - 검수 — 파랑의 연속된 자유수면과 그 표면을 따르는 국소 격자를 육안 확인 / 네온·가상 항구·허구 지형 없음 / 절단면은 개념적 도식이며 실제 물탱크나 특정 해역을 뜻하지 않음 / 격자는 생성형 설명 요소로 실제 모델 격자·결과·경계조건 검증 자료가 아님
   - 다음 모션 — 4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체
 
-### 현재 개념 이미지로 제작하는 대안 경로
+## CF13 — 넓은 바다로 돌아오는 루프
 
-참조 [검수한 개념 시안](../../dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png) / 편집 7초 / 실제 모델 결과 아님
+편집 56–60초 / 4초 / source-composite / planned-or-concept-candidate-needs-review
 
-주 프롬프트의 실제 결과 경로와 아래 개념 경로 중 하나를 선택하며 혼합하지 않음
-
-```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
-
-Use the supplied scientific cutaway concept as a single coherent volume. Over the first four seconds make a restrained lateral camera move no greater than five percent of the frame. Keep the water-surface topology and its local mesh registered. The vertical cut faces are an explanatory cross-section, not open falling water. Hold the composed relationship for the remaining three editorial seconds, or use deterministic post-edit timing. No shorelines, logos, measured values, falling water, disconnected grids or new devices. End on a stable composition for a clean editorial cut to the sourced Earth master in CF13. Do not morph the generic cutaway into a real Korean coast. This is explicitly a numerical-modelling concept, not a validated simulation or evidence of a GeoSR project.
-```
-
-CF11 현미경 분석 → CF12 파랑 계산 개념은 명확한 컷 / CF12 → CF13 실제 지구 마스터도 컷 또는 노출 정합 디졸브 / 가상 파랑을 특정 지역으로 줌 변형 금지
-
-검증한 회사 수치모델 결과와 조건이 확보되면 주 프롬프트의 source-composite 경로로 제작
-
-## CF13 — 연구의 범위와 루프
-
-편집 55–60초 / 5초 / source-composite / planned-needs-source-and-frame-review
-
-회사 전체 연구 범위를 조망하고 자연스러운 첫 장면 복귀
+광역 환경의 첫인상으로 돌아와 회사 제목과 반복을 마무리
 
 ### 참조와 남은 확인
 
-- [earth](../../dist/assets/concepts/corporate-film/hero-earth-00s-v4.png) — 후보 또는 근거이며 최종 합격 아님
-- [regional](../../dist/assets/concepts/corporate-film/hero-earth-18s-v1.png) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — CF01 master와 동일 프레임 사용
-- 확인 필요 — 합성 타임라인의 정확한60초 길이
+- 확인 필요 — CF01과 루프 연결 프레임·환경 비교
 
 ### 구도
 
-- 시작 — CF12 종료 지역 시야
-- 중간 — 지구 표면이 다시 읽히는 넓은 시야
-- 종료 — CF01 시작 master와 동일한 위치·밝기·구름
+- 시작 — 다시 넓어진 바다·연안
+- 중간 — 움직임이 서서히 안정되고 제목 여백 확보
+- 종료 — CF01의 환경·빛·수평선이 이어지는 끝 프레임
 
 ### 이미지 또는 원본 합성 지시
 
 아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
 
-FRAME START: CF12 종료 지역 시야
-FRAME MIDDLE: 지구 표면이 다시 읽히는 넓은 시야
-FRAME END: CF01 시작 master와 동일한 위치·밝기·구름
+FRAME START: 다시 넓어진 바다·연안
+FRAME MIDDLE: 움직임이 서서히 안정되고 제목 여백 확보
+FRAME END: CF01의 환경·빛·수평선이 이어지는 끝 프레임
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
-Use the exact CF01 Earth master and documented regional camera path in reverse editorial context. The ending frame must match the opening composition, atmosphere, exposure and cloud texture. Do not add AX product screens, corporate statistics or a giant rendered logo. Preserve space for the persistent HTML company title.
+Use the reviewed CF01 footage or a sourced companion shot to return to a broad ocean and coast view. Do not invent a matching coastline or imply two different sites are one.
 ```
 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
-Five-second calm pullback with the apparent speed easing to the initial CF01 speed. Use the identical opening frame as the final seam target. If the approach is not physically smooth, use a short controlled luminance-matched dissolve between identical Earth plates rather than a geographic morph.
+A smooth pullback or editorial cut into the CF01 opening. Match exposure, horizon, water motion and directional flow at the loop seam.
 ```
 
 ### 후반 합성과 연결
 
-Check the actual loop as ten repeated cycles at playback speed. Avoid repeated fade-to-black that makes the hero look like a video advert restart.
+HTML title and any logo remain web layers. If no exact loop is possible, use a visible editorial cut rather than a geographic morph.
 
-CF01 시작 master와 동일한 지구 위치·구름·밝기로 종료하고 반복 재생에서 속도와 노출 이음새 확인
+CF01 시작과 컷 지점을 전체 재생과 반복 재생으로 검수한다.
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
-- 마지막과 처음 지구 위치 점프
-- 갑작스러운 밝기 변화
-- 마지막에 AX 끼워넣기
+- 다른 지형을 한 장소로 변형
+- 루프의 밝기 급변
 
 ### 계획 산출물 — 아직 생성된 파일이 아님
 
@@ -1013,7 +935,7 @@ FRAME MIDDLE: 영상·지형·관측 지점의 세 실제 주제
 FRAME END: 탐지 대상 영상이 중심에 남음
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
 Compose a high-end editorial concept stage with three genuinely different input types: a source aerial image of offshore facilities, a verified simplified terrain surface, and a sparse station-location field. These are independent analysis contexts, not glass browser windows. Use natural material and source map colors with restrained white structural accents. No actual application UI or imaginary dashboards. Make the facility imagery dominant toward the end so detection follows logically.
 ```
@@ -1021,7 +943,7 @@ Compose a high-end editorial concept stage with three genuinely different input 
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
 Three source panels enter with subtle depth parallax and settle without flipping. The facility input expands to the next shot while other contexts recede. No suggestion of data being automatically exchanged among existing GeoSR services.
 ```
@@ -1034,14 +956,13 @@ AX02의 동일 facility plate로 확대
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
 - 내용 없는 유리 패널
 - 실제 UI 사용
 - 서로 다른 플랫폼 자동 연동 주장
@@ -1064,7 +985,7 @@ AX02의 동일 facility plate로 확대
 
 - [ax-detect-start](../../dist/assets/concepts/ax-detection-v3/ax-detect-start.png) — 후보 또는 근거이며 최종 합격 아님
 - [ax-detect-end](../../dist/assets/concepts/ax-detection-v3/ax-detect-end.png) — 후보 또는 근거이며 최종 합격 아님
-- [ax-review](../../docs/redesign-production/AX-DETECTION-V3-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
 - 확인 필요 — 시설물 구조·간격 검토
 - 확인 필요 — 기존8초 후보 전체 재검수
 
@@ -1083,7 +1004,7 @@ FRAME MIDDLE: 같은 시설 윤곽에 얇은 중성색 선이 등장
 FRAME END: 대상만 정리된 결과 / 현재 종료 이미지 후보
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
 Use the existing AX detection concept references as a candidate plate, not a real facility survey. Keep a coherent small set of offshore facility groups on open water with physically plausible spacing and mooring context. The facility shapes remain identical from start to end. No coastline is introduced. Left third stays visually quiet for the page title. Thin ivory outlines may identify the same objects, but no fictional confidence values or invented class names.
 ```
@@ -1091,27 +1012,26 @@ Use the existing AX detection concept references as a candidate plate, not a rea
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
 A seven-second restrained detection reveal. Hold the image first, then trace the accepted object outlines without moving the facilities. Finish with an uncluttered result. No multiplied facilities, object disappearance or glowing scanning laser. Prefer deterministic outline animation over generating masks.
 ```
 
 ### 후반 합성과 연결
 
-The existing 8s Flow candidate can provide base motion only after review; trim with handles to the 7s edit. Source geometry and conceptual status remain explicit. If objects are not physically plausible, replace the base plate before animating.
+Use only a newly reviewed Higgsfield visual plate or verified source material. Source geometry and conceptual status remain explicit. If objects are not physically plausible, replace the base plate before animating.
 
 분석 대상을 정리하는 동작에서 AX03의 다른 예측 문제로 명확한 컷
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
 - 시설물 복제·소실
 - 실제 위치·탐지 성과로 표기
 - 네온 윤곽 과밀
@@ -1151,7 +1071,7 @@ FRAME MIDDLE: 같은 지형에서 시나리오 수위·범위 변화
 FRAME END: 같은 카메라와 범례로 비교 결과 정리
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
 Construct an AX prediction concept using a verified coastal terrain source or an explicitly simplified analytical surface. The land-water boundary and terrain elevations must be coherent. Show one scenario changing the affected water extent rather than a tsunami spectacle. Keep the rendering refined and legible, with natural land materials and restrained water treatment. No invented Korean port, no actual platform UI and no fake warning numbers.
 ```
@@ -1159,7 +1079,7 @@ Construct an AX prediction concept using a verified coastal terrain source or an
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
 Over seven seconds, hold a baseline, advance one reviewed scenario and settle into a comparison at the same camera angle. Water must not climb arbitrary disconnected hills. Do not substitute storm-surge, river flooding and tsunami causes for one another.
 ```
@@ -1172,14 +1092,13 @@ Use source model outputs or a physically reviewed conceptual schematic. Camera a
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
 - 육상 경계·높이 무시
 - 실제 예측 정확도 암시
 - 다른 재해 원인 혼용
@@ -1221,7 +1140,7 @@ FRAME MIDDLE: 한 지점을 선택하고 그 관측 맥락을 보여줌
 FRAME END: 시간 변화와 공간 자료가 같은 지점 기준으로 정리
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
 Build a restrained monitoring concept from documented station positions or explicitly schematic positions. A small set of discrete location markers sits on a source map. Selecting one location reveals one meaningful temporal view or source water-property field. Use clean typography only in post, no transparent dashboard proliferation. The marine field retains its real mask and source palette. Do not invent live status values.
 ```
@@ -1229,7 +1148,7 @@ Build a restrained monitoring concept from documented station positions or expli
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
 Seven seconds: select one station, reveal its reviewed temporal context, then return attention to the spatial field. Use actual archived source dates when data appear. Keep the animation readable rather than flashing several charts too quickly.
 ```
@@ -1242,14 +1161,13 @@ Source station data and map products are separately identified. If the scene use
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
 - 가짜 실시간 상태
 - 관측소 위치 임의 단정
 - 같은 variable 색 혼동
@@ -1290,7 +1208,7 @@ FRAME MIDDLE: 타이틀 빈 공간이 넓어지고 결과는 배경으로
 FRAME END: AX01 시작 구도와 연결되는 배치
 
 ```text
-Create a restrained cinematic engineering concept still in landscape 16:9 with physically plausible materials, light, scale and apparatus. Match the supplied references for all verifiable objects. Keep a deliberate dark or uncluttered text-safe region where specified. No people or hands. Do not generate typography, logos, UI, measurement labels or numerical results. Scientific data, geography and exact device details must remain source-controlled layers rather than newly invented pixels. The image is a concept, not evidence of a real GeoSR deployment. When the method is source-composite this paragraph describes finishing intent only; preserve the supplied source pixels instead of sending the whole composition for generative repainting.
+Create a 16:9 cinematic company-film concept led by a broad, credible real-world-like environment. Preserve stable landforms, water, scale and lighting. Keep the left third usable for the HTML title when specified. Use deep ocean blues with natural warm highlights. No generated typography, logos, UI, numerical results or faux measurement maps. Imaginary locations remain labelled as concept footage, never as actual GeoSR project sites. For source-composite shots preserve all source geography and scientific data pixels.
 
 Compose the three established results from AX02, AX03 and AX04 in one quiet editorial arrangement. Preserve their distinct domains and avoid a combined super-platform diagram. The central or left title-safe region is clear. Dark navy, realistic source textures and a small amount of blue accent, no new icons or generated branding.
 ```
@@ -1298,7 +1216,7 @@ Compose the three established results from AX02, AX03 and AX04 in one quiet edit
 ### 모션 지시
 
 ```text
-Use the accepted start and end frames for this shot only. Preserve rigid object geometry, geographic topology and lighting direction. Perform one controlled camera move and the specified subject action. Do not morph between unrelated scenes or add objects to fill gaps. Keep foreground text-safe space stable. Data overlays and typography are composited deterministically after base motion. No music, narration or invented interface. Generate no batch until the references have passed review. If an exact endpoint cannot be preserved, use a clean editorial cut or a source-layer composite rather than disguising the mismatch.
+Use one deliberate camera motion per shot, with physically stable terrain, water, vessels and equipment. Prefer wide aerial movement and clear geographic context. Use a visible editorial cut between different locations. Add only provenance-backed data overlays in post; do not ask the video model to invent grids, coastlines or metrics. Review full playback and start, middle and end before use.
 
 A gentle four-second settle and return toward AX01 composition. No rapid card flips. End frame matches the beginning well enough for a seamless silent website loop.
 ```
@@ -1311,14 +1229,13 @@ AX01 시작의 세 입력 배치와 밝기에 맞춰 종료하며 서로 독립�
 
 ### 금지 및 재작업 조건
 
-- No blue neon webs or arbitrary flowing ocean lines
-- No invented Korean coastline, port, breakwater or mountain chain
-- No unsupported real-time metrics or performance claims
-- No geometry morphing or physically disconnected cables
-- No AI-generated actual platform interface
+- No copied Allforland footage, landmarks, text or graphics
+- No invented Korean coastline or implied actual GeoSR site for a generated setting
+- No fabricated measurements, real-time UI or glowing data web
+- No unstable terrain, morphing hulls, implausible wake or disconnected cables
+- No generated actual AX platform interface or AX-only concept in the company film
 - No people in laboratory concepts
 - No previously rejected coastal-survey-source.png
-- No source gap filling presented as measurement
 - 하나의 통합 서비스로 오인
 - 또 다른 기능을 마지막에 갑자기 추가
 - 루프 점프

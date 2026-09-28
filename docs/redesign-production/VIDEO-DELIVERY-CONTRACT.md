@@ -6,7 +6,7 @@
 이 문서는 홈페이지 구현과 별도로 진행할 영상 제작·교체 기준이다
 2026-09-22 사용자 승인으로 기존 Flow 크레딧을 사용한 720p 초안 생성·편집·반영을 진행한다 유료 업그레이드와 Higgsfield 결제는 포함하지 않는다
 검수한 초안은 approval을 draft-reviewed로 표시하고 웹에 720p 영상 초안 배지를 유지한다 최종본 승인과 구분한다
-현재 생산 및 이월 현황은 FLOW-PRODUCTION-TRACKER.md를 기준으로 확인한다
+현재 제작 상태는 `../redesign-next/10-HIGGSFIELD-PRODUCTION.md`를 기준으로 확인한다
 
 ## 교체 위치
 
@@ -57,6 +57,6 @@ AX 영상은 자료의 탐지·예측·모니터링 활용을 표현하며 별�
 
 `node scripts/verify_film_lifecycle.mjs`는 실제 재생 코드의 상태 전환을 검증한다
 최종 파일 교체 후에는 브라우저에서 시작·반복·정지·탭 이탈·재진입·오류 복귀를 실제 파일로 다시 확인한다
-2026-09-22 Flow 720p 초안을 생성하고 편집했다 현재 파일은 최종 품질 합격본이 아니다 생성·검수·반영 상태는 FLOW-PRODUCTION-TRACKER.md에 기록하고 과학적 한계와 재작업 항목은 FILM-SCIENTIFIC-REVIEW-20260922.md를 따른다
+이전 생성 초안은 2026-09-28의 도구 전환 결정으로 제거했다. 새 영상의 생성·검수·반영 상태는 `../redesign-next/10-HIGGSFIELD-PRODUCTION.md`에 기록하고 과학적 한계와 재작업 항목은 `FILM-SCIENTIFIC-REVIEW-20260922.md`를 따른다
 
 같은 날 재검수에서 회사 60초와 AX 30초 편집본은 연결을 해제했다 메인은 8초 오프닝 초안만 사용한다 위치와 방파제 형태가 확인되지 않은 coastal-survey-source.png는 공개 폴더에서 제외했으며 영상 참조로도 재사용하지 않는다

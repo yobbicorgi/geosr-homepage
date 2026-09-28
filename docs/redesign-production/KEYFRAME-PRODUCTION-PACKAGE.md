@@ -11,7 +11,7 @@
 
 The current deliverable is a reviewable sequence of still frames rather than a generated film. Every scene receives a start, middle and end state. Adjacent scenes share a transition frame where possible so geography, equipment, lighting and camera direction do not jump. Approved frames and the motion specification become the direct input package for later Higgsfield production.
 
-Google Flow is optional. It may be used for a low-resolution motion test when credits are available, but no acceptance gate depends on it.
+The earlier motion-test route has been retired. Current video prompts and execution status are recorded in [the Higgsfield production card](../redesign-next/10-HIGGSFIELD-PRODUCTION.md).
 
 **연출·타임코드 우선순위:** [FILM-STORYBOARD-DIRECTOR-v2.md](FILM-STORYBOARD-DIRECTOR-v2.md)가 60초 회사 필름과 별도 30초 AX 필름의 최신 편집 구조와 시간표다. 아래 C01–C10/A01–A06 표는 source·continuity·검수 상태를 보존하는 기존 frame package이며, 숏 분할·타임코드·연출이 다르면 v2를 따른다. 기존 asset 이름의 초 표기는 그 reference의 과거 시점을 뜻할 뿐 v2 편집 시각이 아니다.
 

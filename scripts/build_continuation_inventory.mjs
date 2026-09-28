@@ -11,21 +11,12 @@ const rebuild = JSON.parse(fs.readFileSync(path.join(root,'docs/redesign-next/IM
 const files = execFileSync('git',['ls-files','-z','dist/assets'],{cwd:root}).toString().split('\0').filter(Boolean);
 const sourceCode = fs.readdirSync(path.join(root,'dist')).filter(x=>/\.(js|css|html)$/.test(x))
   .map(x=>({path:'dist/'+x,text:fs.readFileSync(path.join(root,'dist',x),'utf8')}));
-const reject = new Map([
- ['geosr-hero-720p-draft.mp4','연속성·편집 품질 미달 / 회사60초 합격본으로 연결 금지'],
- ['ax-concept-720p-draft.mp4','AX30초 완성본으로 연결 금지 / 재구성 필요'],
- ['flow-ax02-analysis-draft.mp4','패널 증식과 내용 불명확 / 사용 제외'],
- ['flow-ax02-analysis-r2-draft.mp4','전체 클립 재작업 판정 / 사용 제외'],
- ['flow-r3-opening-connected.mp4','끝 프레임 연결 불일치 / 사용 제외']
-]);
+const reject = new Map();
 const concerns = new Map([
- ['flow-c05-multibeam-draft.mp4','빔 방향·장비 원본·관측 원리 확인 전 사용 금지'],
- ['flow-c06-underwater-draft.mp4','수중 전환 후보일 뿐 ROV·센서 기능 증거 아님'],
- ['flow-ax01-layers-draft.mp4','일반 레이어 연출 / 구체적 기능 표현 부족'],
- ['flow-ax03-monitor-draft.mp4','실제 모니터링 맥락과 결과 설명 부족'],
  ['env-poster.webp','이전 대표 캡처의 검은 여백 / 새 FHD 캡처 우선'],
  ['env-preview.mp4','현재 환경 변수·전체16:9·로딩 상태 재검수'],
  ['coastal-model-v3.png','네온·허구 지형 지적 대상 계열 / 모델 대표로 자동 재사용 금지'],
+ ['hero-coastal-estuary-concept-20260928.webp','홈 화면 정지 콘셉트 / 실제 지역·GeoSR 사업지 아님 / 영상 프레임 아님'],
  ['satellite-layers-v3.png','층별 지리·변수·기간·기하 검수 전 후보'],
  ['estuary-hero-v4.png','실제 위치·해안 시설물 출처 검수 전 후보'],
  ['c05-coast-end-v1.png','실제 지형 위치와 시설물 검증 전 후보'],
@@ -44,6 +35,7 @@ function replacementPlan(file) {
     return {ids:[service?'capture-'+service.id:'AX-ARCHIVE'],policy:'실제 UI 녹화만 사용 / 생성 프롬프트 없음 /9개 서비스 원장 참조'};
   }
   const rules=[
+    [/hero-coastal-estuary-concept/,['CF01']],
     [/hero-earth-00|hero-earth-satellite/,['CF01','CF02','CF13']],
     [/hero-earth-22|hero-earth-24|satellite-layers/,['CF04']],
     [/hero-earth-/,['CF03']],
@@ -62,6 +54,7 @@ function replacementPlan(file) {
     {ids:['SOURCE-OR-SUPPORT-REVIEW'],policy:'출처 또는 사이트 보조 자산으로 관리 / 용도 확인 전 새 생성 금지'};
 }
 const assets=files.map(file=>{
+  const retiredVideo=/\/films\/(?:flow-[^/]+|geosr-hero-720p-draft|ax-concept-720p-draft)\.mp4$/.test(file);
   const reviewedStill = rebuild.attempts.find(a=>a.dest===file);
   const bytes=fs.readFileSync(path.join(root,file));
   const hashEncoding=file.endsWith('.svg')?'lf-normalized-utf8':'raw-bytes';
@@ -71,12 +64,14 @@ const assets=files.map(file=>{
     .map(s=>({id:s.id,approvalInRuntime:s.approval,actualDuration:s.duration,plannedDuration:s.plannedDuration??null}));
   let classification='source-or-concept-unverified';
   if (/\/concepts\/|\/generated\//.test(file)) classification='concept-candidate';
+  if (/hero-coastal-estuary-concept/.test(file)) classification='concept-candidate';
   if (/\/platforms\/|\/platform-geodap\./.test(file)) classification='archived-platform-capture-candidate';
   if (/\/credentials\//.test(file)) classification='archived-document';
   if (/\/equipment-|\/usv/.test(file)) classification='equipment-reference-candidate';
   if (/\/films\//.test(file)) classification='film-candidate';
+  if (retiredVideo) classification='retired-video-delete-blocked';
   if (/\.(woff2|svg)$|\/logo\.png$/.test(file)) classification='site-support-asset';
-  const status=reject.has(name)?'rejected-do-not-connect':runtimeSlots.length?'connected-see-runtime-status':'not-currently-connected-by-film-manifest';
+  const status=retiredVideo?'retired-delete-blocked':reject.has(name)?'rejected-do-not-connect':runtimeSlots.length?'connected-see-runtime-status':'not-currently-connected-by-film-manifest';
   const replacement=replacementPlan(file);
   const mappedSlots=runtimeSlots.flatMap(s=>plan.slotPlan[s.id]?.shots||[]);
   return {path:file,bytes:bytes.length,hashEncoding,sha256:crypto.createHash('sha256').update(hashInput).digest('hex'),
@@ -85,8 +80,8 @@ const assets=files.map(file=>{
     visualAndScientificApproval:reviewedStill?reviewedStill.decision:'not-established-by-this-inventory',
     reviewRecord:reviewedStill?'docs/redesign-next/IMAGE-REBUILD-REGISTER.json':null,
     followUpPlanIds:reviewedStill?[reviewedStill.shot]:[...new Set([...replacement.ids,...mappedSlots])],generationPolicy:replacement.policy,
-    issue:reviewedStill?.review||reject.get(name)||concerns.get(name)||'출처·내용·최종 사용 문맥을 장면별로 검수',
-    nextAction:reviewedStill?.next||(reject.has(name)?'비연결 유지 / 기록 보존':runtimeSlots.length?'초안 또는 기존 상태 유지 / 새 장면 기준 재검수':'실제 참조와 출처 확인 전 삭제·승인·연결하지 않음')};
+    issue:retiredVideo?'이전 영상 초안 / 사이트 연결 해제 / 바이너리 삭제 자동 승인 차단':reviewedStill?.review||reject.get(name)||concerns.get(name)||'출처·내용·최종 사용 문맥을 장면별로 검수',
+    nextAction:retiredVideo?'사이트 비연결 유지 / 삭제 차단 해소 시 정리':reviewedStill?.next||(reject.has(name)?'비연결 유지 / 기록 보존':runtimeSlots.length?'초안 또는 기존 상태 유지 / 새 장면 기준 재검수':'실제 참조와 출처 확인 전 삭제·승인·연결하지 않음')};
 });
 const result={schemaVersion:1,generatedAt:new Date().toISOString(),
   scope:'All Git-tracked dist/assets files at this snapshot; source-migration archives are separately indexed',

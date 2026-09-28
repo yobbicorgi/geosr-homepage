@@ -49,7 +49,7 @@ vm.runInNewContext(source, {
     { id: 'geosr-hero', mode: 'loop', src: 'assets/films/geosr-hero.mp4', approval: 'approved' },
     { id: 'ax-concept-film', mode: 'loop', src: null, approval: 'pending' },
     { id: 'unsafe', mode: 'loop', src: 'https://example.com/video.mp4', approval: 'approved' },
-    { id: 'draft', mode: 'loop', src: 'assets/films/flow-draft.mp4', approval: 'draft-reviewed' }
+    { id: 'draft', mode: 'loop', src: 'assets/films/test-draft.mp4', approval: 'draft-reviewed' }
   ] }) })
 });
 const status = await win.GeoSRFilm.ready;

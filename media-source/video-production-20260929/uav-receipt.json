@@ -1,0 +1,67 @@
+{
+  "status": "reopened-user-approved-aesthetic-candidate",
+  "balanceBefore": 557.75,
+  "quotedCredits": 45,
+  "params": {
+    "model": "seedance_2_0",
+    "duration": 5,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "https://myrtle-contribute-advertiser-vernon.trycloudflare.com/assets/editorial/uav-coastal-native-20260929.webp"
+      }
+    ],
+    "prompt": "One continuous photoreal five-second aerial coastal photogrammetry shot beginning exactly from this reference frame. The ONE six-rotor survey drone is a real modest-sized unmanned aircraft close to the camera, with the broad temperate coastline far below. It actively flies along the beach toward the distant upper-center bay, traveling diagonally away from its initial right foreground position. In the first second the six rotors spin rapidly and the drone gently pitches into forward flight. Through seconds 1-5 it travels steadily several body lengths away, gradually becoming smaller, with the underslung survey camera stabilized downward toward the beach. Preserve the same six arms, landing legs, body and camera throughout. The filming camera advances smoothly forward on a parallel path at a slower speed; nearby dune vegetation and sand move downward out of frame while distant headlands change slowly, producing strong natural spatial parallax. Small waves roll onto the shore and white foam advances and retreats naturally. Wide landscape scale remains dominant and the drone remains fully inside frame. Smooth confident cinematic motion and realistic daylight, natural blue sea, sharp terrain texture. No cuts or dissolves, no fixed-image zoom, no hovering in place, no sudden yaw, no extra aircraft, no changing coastline, no laser, no floating grid, no labels or graphics. This is actual-looking survey flight, not a diagram or an abstract animation."
+  },
+  "submission": {
+    "results": [
+      {
+        "id": "7128a0e7-e8a0-46b6-80c6-4085bea8f2c9",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "One continuous photoreal five-second aerial coastal photogrammetry shot beginning exactly from this reference frame. The ONE six-rotor survey drone is a real modest-sized unmanned aircraft close to the camera, with the broad temperate coastline far below. It actively flies along the beach toward the distant upper-center bay, traveling diagonally away from its initial right foreground position. In the first second the six rotors spin rapidly and the drone gently pitches into forward flight. Through seconds 1-5 it travels steadily several body lengths away, gradually becoming smaller, with the underslung survey camera stabilized downward toward the beach. Preserve the same six arms, landing legs, body and camera throughout. The filming camera advances smoothly forward on a parallel path at a slower speed; nearby dune vegetation and sand move downward out of frame while distant headlands change slowly, producing strong natural spatial parallax. Small waves roll onto the shore and white foam advances and retreats naturally. Wide landscape scale remains dominant and the drone remains fully inside frame. Smooth confident cinematic motion and realistic daylight, natural blue sea, sharp terrain texture. No cuts or dissolves, no fixed-image zoom, no hovering in place, no sudden yaw, no extra aircraft, no changing coastline, no laser, no floating grid, no labels or graphics. This is actual-looking survey flight, not a diagram or an abstract animation.",
+          "aspect_ratio": "16:9",
+          "duration": 5,
+          "reference_images": [
+            "e1810a69-2f74-4a4d-a621-0885cd0b7ff1"
+          ],
+          "resolution": "1080p",
+          "mode": "std",
+          "generate_audio": false
+        }
+      }
+    ]
+  },
+  "actualCredits": 45,
+  "balanceAfter": 512.75,
+  "companyEvidence": "https://www.geosr.com/sub/business/conserve_view.asp?idx=64",
+  "boundary": "Generated illustrative photogrammetry flight, not an actual GeoSR acquisition or location",
+  "result": {
+    "path": "media-source/video-production-20260929/uav-seedance20-5s.mp4",
+    "fps": 24,
+    "audio": false,
+    "duration": 5.041667,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_074346_7128a0e7-e8a0-46b6-80c6-4085bea8f2c9.mp4",
+    "height": 1080,
+    "width": 1920,
+    "sha256": "9b55e8b90c6b4df0f3420073a9853d55d7763adc8cef62631e70be94a625f2e8",
+    "bytes": 10553670
+  },
+  "qa": {
+    "decision": "reopened-user-approved-aesthetic-candidate",
+    "limit": "Illustrative flight only; actual photo capture or orthomosaic is not shown",
+    "evidence": "uav-contact.jpg and uav-motion-contact.jpg",
+    "userReview": "User rejected simple flight without acquisition/analysis and fish translation without real swimming; no new generation authorized now",
+    "siteUse": false,
+    "parentPlacementPending": true,
+    "finalDisposition": "Latest user permits reuse as promotional flight scene; does not depict actual mapping output"
+  }
+}

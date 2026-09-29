@@ -1,0 +1,299 @@
+{
+  "updatedAt": "2026-09-29T04:20:39Z",
+  "id": "ax-estuary-seedance20-20260929",
+  "status": "rejected-after-frame-qa",
+  "authorization": "Latest user instruction relayed by parent: immediately convert vetted downloaded native ChatGPT originals with Seedance2.0, one scene at a time; no duplicate spending.",
+  "source": "media-source/editorial/ax-estuary-analysis-native-20260929.png",
+  "sourceSha256": "d0ee88dfbeae6fcd2b1ac1b9ce911ca8fb3dc24f25a5c1a5d067fced3aa08ad5",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "sourceReview": {
+    "reviewedAtOriginalSize": true,
+    "decision": "accepted-for-one-dynamic-model-field-attempt",
+    "subject": "Coherent connected river-estuary-sea domain, fixed native water-only mesh, native turquoise mouth plume.",
+    "action": "Existing plume advects from river mouth offshore, expands laterally and dilutes; field footprint materially changes.",
+    "restriction": "AX detail introduction only. Explanatory geography/model field, not actual software UI, site, data or calculation."
+  },
+  "intendedUniqueSlot": "ax-platform-intro",
+  "sourceMediaId": "ee2df93c-6b3a-4626-aae9-2621fbdbfcb3",
+  "jobId": "5880996e-6f0b-444b-8458-82112dd1dc3d",
+  "params": {
+    "model": "seedance_2_0",
+    "mode": "std",
+    "duration": 6,
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1,
+    "use_unlim": false,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "prompt": "Use the supplied original image as the exact first frame. Create one 6-second 16:9 scientific editorial shot of this SAME river estuary and its already visible cyan numerical-model mesh and turquoise concentration field. Subject: an illustrative water-quality plume being advected from the river into the open sea. The terrain, coast, sandbars, bridge, roads, fields and computational mesh stay geometrically fixed and registered to the original throughout; this is an evolving model field on a fixed geographic domain. At 0 seconds preserve the original compact bright plume at the river mouth. From 0 to 3 seconds a continuous supply travels down the existing river channel from upper left, exits the mouth toward the right and smoothly pushes the plume's leading edge farther offshore while the near-mouth core remains connected to the river. From 3 to 6 seconds the offshore plume visibly widens sideways through diffusion, its outer edge softens and becomes less concentrated while the elongated brighter core continues moving seaward. The final plume footprint must be clearly farther offshore and broader than at the start, with a coherent connected gradient rather than flicker or simple opacity pulsing. Keep the analytic color field strictly in water, never over dry land or bridge; keep every existing mesh line stable and readable from first through last frame. Orthographic overhead camera holds this complete domain so the change of the actual field extent and distribution is unmistakable; camera movement cannot substitute for field evolution. Retain the documentary satellite-like texture and restrained natural colors. This is an explanatory simulation concept, not an actual site or measured result. No new objects, text, labels, numeric metrics, controls, extra panels, scan beams or decorative particles. All internal analysis graphics are part of the generated video itself. Silent."
+  },
+  "preflight": {
+    "balance": {
+      "credits": 980.75,
+      "subscription_plan_type": "plus",
+      "pricing_url": "https://higgsfield.ai/mcp-pricing",
+      "free_trial": {
+        "status": "pending",
+        "eligible": false,
+        "offered_kind": null,
+        "kind": "mcp",
+        "trial_credits": 100,
+        "ends_at": null,
+        "unlim_available": false,
+        "unlim_remaining": null,
+        "unlim_expires_at": null
+      },
+      "free_gens": [
+        {
+          "job_set_types": [
+            "hf_mult_motion_control",
+            "hf_mult_replace_object"
+          ],
+          "remaining": 3,
+          "parameters": {
+            "resolution": [
+              "480p",
+              "720p"
+            ]
+          },
+          "max_duration": 30
+        },
+        {
+          "job_set_types": [
+            "viral_hub_video"
+          ],
+          "remaining": 1,
+          "parameters": {
+            "resolution": [
+              "480p",
+              "720p"
+            ]
+          },
+          "max_duration": null
+        }
+      ]
+    },
+    "model": {
+      "id": "seedance_2_0",
+      "name": "Seedance 2.0",
+      "provider_name": "Bytedance",
+      "description": "Reference-driven video with image/video/audio reference inputs, consistent identity, multi-SKU; optional generate_audio for native audio",
+      "output_type": "video",
+      "parameters": [
+        {
+          "name": "duration",
+          "required": "optional",
+          "type": "number",
+          "description": "Duration in seconds (4-15).",
+          "min": 4,
+          "max": 15,
+          "default": 5
+        },
+        {
+          "name": "resolution",
+          "required": "optional",
+          "type": "string",
+          "description": "Output resolution. 4k/1080p require mode='std'; mode='fast' supports 480p/720p only.",
+          "options": [
+            "480p",
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "default": "720p"
+        },
+        {
+          "name": "mode",
+          "required": "optional",
+          "type": "string",
+          "description": "'std' = higher quality, supports 480p/720p/1080p/4k; 'fast' = cheaper/faster, supports 480p/720p only.",
+          "options": [
+            "std",
+            "fast"
+          ],
+          "default": "std"
+        },
+        {
+          "name": "bitrate_mode",
+          "required": "optional",
+          "type": "string",
+          "description": "'standard' = normal output bitrate; 'high' = higher bitrate output.",
+          "options": [
+            "standard",
+            "high"
+          ],
+          "default": "standard"
+        },
+        {
+          "name": "genre",
+          "required": "optional",
+          "type": "string",
+          "description": "Cinematic genre hint.",
+          "options": [
+            "auto",
+            "action",
+            "horror",
+            "comedy",
+            "noir",
+            "drama",
+            "epic"
+          ],
+          "default": "auto"
+        },
+        {
+          "name": "generate_audio",
+          "required": "optional",
+          "type": "bool",
+          "description": "Generate native audio for the video. Set false for a silent video. Independent of audio_references.",
+          "default": true
+        }
+      ],
+      "medias": [
+        {
+          "name": "medias",
+          "type": "image",
+          "roles": [
+            "start_image",
+            "end_image",
+            "image_references",
+            "video_references",
+            "audio_references"
+          ]
+        }
+      ],
+      "aspect_ratios": [
+        "auto",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "1:1",
+        "21:9"
+      ],
+      "tags": [
+        "reference",
+        "identity",
+        "consistent",
+        "product",
+        "multi-sku",
+        "e-commerce",
+        "audio",
+        "audio-reference",
+        "video-reference",
+        "start-frame",
+        "end-frame",
+        "4k",
+        "high-resolution",
+        "unlim"
+      ],
+      "supports_unlim": true,
+      "free_gens": [
+        {
+          "job_set_types": [
+            "hf_mult_motion_control",
+            "hf_mult_replace_object"
+          ],
+          "remaining": 3,
+          "parameters": {
+            "resolution": [
+              "480p",
+              "720p"
+            ]
+          },
+          "max_duration": 30
+        },
+        {
+          "job_set_types": [
+            "viral_hub_video"
+          ],
+          "remaining": 1,
+          "parameters": {
+            "resolution": [
+              "480p",
+              "720p"
+            ]
+          },
+          "max_duration": null
+        }
+      ]
+    },
+    "settingsOnlyQuote": {
+      "cost": {
+        "credits": 54,
+        "credits_exact": 54
+      }
+    },
+    "finalInputQuote": {
+      "referenceMediaId": "ee2df93c-6b3a-4626-aae9-2621fbdbfcb3",
+      "cost": {
+        "credits": 54,
+        "credits_exact": 54
+      },
+      "checkedAt": "2026-09-29T04:16:40Z"
+    },
+    "submitted": true
+  },
+  "frames": {
+    "start": "Preserve original terrain, native water mesh and compact bright river-mouth plume.",
+    "middle": "Continuous plume extends farther offshore from river mouth, remaining connected to inflow.",
+    "end": "Clearly broader offshore footprint and softened diluted margins; terrain and water-only mesh fixed."
+  },
+  "semanticQA": {
+    "required": [
+      "Complete playback",
+      "First/middle/end inspection",
+      "All continuous frames around plume-front evolution",
+      "Fixed terrain and computational mesh throughout",
+      "No field over dry land/bridge",
+      "Materially changing field extent and distribution, not camera-only or opacity pulsing",
+      "No introduced text or measured-value claims"
+    ],
+    "status": "rejected",
+    "reviewScope": "All 145 frames decoded successfully; 24 evenly spaced frames at 0.25-second intervals inspected as a contact sheet, plus full-resolution frames at 0, 3 and about 5.8 seconds. No continuous playback acceptance claimed because these frames conclusively fail the motion contract.",
+    "contactSheet": "media-source/editorial/ax-estuary-seedance20-qa-contact-20260929.jpg",
+    "contactSheetSha256": "0d291a5e68e01c7a540fd07be0b18290d4db7c38f90792e1121b3a64cc928f82",
+    "keyFrames": {
+      "start": "At 0 seconds the bright turquoise field appears far upstream near the upper-left river, whereas the accepted input has its compact plume at the river mouth. The supplied image was confirmed correctly uploaded; the output does not preserve its initial field.",
+      "middle": "At 3 seconds the bright field occupies the lower river and mouth with a soft front; terrain, bridge and mesh remain broadly stable.",
+      "end": "At about 5.8 seconds a large rounded turquoise patch sits offshore and is visibly separated from the river mouth. The continuous advected and diluting gradient requested by the prompt is lost."
+    },
+    "confirmedPasses": "1920x1080 silent output; terrain and bridge broadly stable; mesh still present; no obvious color field over dry land.",
+    "failure": "The first-frame field changes location and the final offshore blob disconnects from the river-mouth source. This cannot represent coherent continuous plume advection and diffusion; do not place on site or retry automatically.",
+    "rootCauseAssessment": {
+      "confirmed": "The uploaded source CDN file is the same 1672x941 composition as the accepted original; mean absolute RGB channel difference about 0.88 after service recompression. The returned normalized submission lists reference_images despite requested start_image role. The video model changed the concentration field immediately and later disconnected it.",
+      "notProven": "The provider-side role mapping or internal reason for the field behavior is not observable; do not attribute failure solely to the reference_images label."
+    }
+  },
+  "blocker": null,
+  "internalGraphics": "Generated natively; no overlays or postproduction graphics permitted.",
+  "missingOriginalCandidates": [
+    "Main CTD candidate8: localOriginal null; browser QA only",
+    "Main model original candidate9/current viewer7: localOriginal null; browser QA only"
+  ],
+  "cost": {
+    "estimateCreditsExact": 54,
+    "paidSubmitted": true,
+    "balanceBefore": 980.75,
+    "balanceAfter": 926.75,
+    "chargedCredits": 54
+  },
+  "result": {
+    "status": "completed-but-rejected",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_041632_5880996e-6f0b-444b-8458-82112dd1dc3d.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 145,
+    "durationSeconds": 6.041667,
+    "audioStreams": 0,
+    "bytes": 4911995,
+    "sha256": "432bf82483a958f88a12bc3bae769c9fc7110d90d5359d7d32973c81b8de65a7",
+    "siteUse": false,
+    "localRawStatus": "Temporary downloaded QA copy remains at tmp/ax-estuary-qa/ax-estuary-seedance20.mp4. Automatic approval review blocked two PowerShell cleanup attempts. Remote result URL, hash and frame verdict are retained."
+  }
+}

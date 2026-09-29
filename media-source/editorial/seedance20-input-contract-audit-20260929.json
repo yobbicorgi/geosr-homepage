@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-09-29",
+  "model": "seedance_2_0",
+  "mcpAdvertisedMediaRoles": [
+    "start_image",
+    "end_image",
+    "image_references",
+    "video_references",
+    "audio_references"
+  ],
+  "mcpCanonicalInput": "medias: [{role: start_image, value: confirmed media UUID}]",
+  "officialApi": "https://open.higgsfield.ai/models/bytedance/seedance-2.0/image-to-video/api-reference",
+  "officialApiInput": {
+    "required": "image_url",
+    "optional": "end_image_url",
+    "durationRange": [
+      4,
+      15
+    ],
+    "resolutions": [
+      "480p",
+      "720p",
+      "1080p",
+      "4k"
+    ]
+  },
+  "officialHelp": "https://higgsfield.ai/creator-hub/help-center/ai-models/how-do-i-use-seedance",
+  "evidence": "MCP model metadata explicitly supports start_image and start-frame. Public API documents initial image URL for I2V. No MCP tool exposes raw provider payload. Returned reference_images is normalized result metadata and by itself cannot establish loss of first-frame control.",
+  "inputReview": "Original previously inspected at full size: all four jellyfish carry aligned boxes and masks; uploaded asset also verified with four boxes intact.",
+  "correctiveChange": "Keep same image, remove conflicting no UI/labels language, make exactly four rectangles and four masks visible throughout the primary action; no local overlays.",
+  "retryLimit": "One 4-second full std 1080p silent attempt, maximum 36 credits. If it fails no further automatic regeneration."
+}

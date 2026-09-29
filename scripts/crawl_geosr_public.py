@@ -244,7 +244,9 @@ def main():
             val=html.unescape(im["value"])
             vals=val.split(",") if im["attribute"]=="srcset" else [val]
             for v in vals:
-                rawsrc=v.strip().split(" ")[0]
+                # Only srcset has a trailing density/width descriptor
+                # Plain src values legitimately contain spaces in Korean filenames
+                rawsrc=v.strip().rsplit(" ",1)[0] if im["attribute"]=="srcset" else v.strip()
                 if not rawsrc or rawsrc.startswith("data:"): continue
                 absurl=norm_url(urljoin(final,rawsrc))
                 imgs.append({"url":absurl,"alt":im["alt"],"attribute":im["attribute"]})

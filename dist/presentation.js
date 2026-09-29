@@ -101,7 +101,7 @@
  const companyNav=document.querySelector('.company-anchor-nav');
  if(companyNav){
   const items=[...companyNav.querySelectorAll('a[href^="#"]')].map(link=>({link,target:document.querySelector(link.getAttribute('href'))})).filter(item=>item.target);
-  let navFrame=0;
+  let navFrame=0,activeLink=null;
   const markCurrent=()=>{
    navFrame=0;
    const navStyle=getComputedStyle(companyNav);
@@ -109,6 +109,11 @@
    let current=items[0];
    items.forEach(item=>{if(item.target.getBoundingClientRect().top<=edge)current=item});
    items.forEach(item=>{if(item===current)item.link.setAttribute('aria-current','location');else item.link.removeAttribute('aria-current')});
+   if(current&&activeLink!==current.link){
+    activeLink=current.link;
+    const bounds=companyNav.getBoundingClientRect(),linkBounds=activeLink.getBoundingClientRect();
+    if(linkBounds.left<bounds.left+12||linkBounds.right>bounds.right-12)companyNav.scrollTo({left:companyNav.scrollLeft+linkBounds.left-bounds.left-(bounds.width-linkBounds.width)/2,behavior:'instant'});
+   }
   };
   const scheduleNav=()=>{if(!navFrame)navFrame=requestAnimationFrame(markCurrent)};
   addEventListener('scroll',scheduleNav,{passive:true});addEventListener('resize',scheduleNav,{passive:true});scheduleNav();

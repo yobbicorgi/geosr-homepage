@@ -1,0 +1,295 @@
+{
+  "items": [
+    {
+      "id": "7128a0e7-e8a0-46b6-80c6-4085bea8f2c9",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "One continuous photoreal five-second aerial coastal photogrammetry shot beginning exactly from this reference frame. The ONE six-rotor survey drone is a real modest-sized unmanned aircraft close to the camera, with the broad temperate coastline far below. It actively flies along the beach toward the distant upper-center bay, traveling diagonally away from its initial right foreground position. In the first second the six rotors spin rapidly and the drone gently pitches into forward flight. Through seconds 1-5 it travels steadily several body lengths away, gradually becoming smaller, with the underslung survey camera stabilized downward toward the beach. Preserve the same six arms, landing legs, body and camera throughout. The filming camera advances smoothly forward on a parallel path at a slower speed; nearby dune vegetation and sand move downward out of frame while distant headlands change slowly, producing strong natural spatial parallax. Small waves roll onto the shore and white foam advances and retreats naturally. Wide landscape scale remains dominant and the drone remains fully inside frame. Smooth confident cinematic motion and realistic daylight, natural blue sea, sharp terrain texture. No cuts or dissolves, no fixed-image zoom, no hovering in place, no sudden yaw, no extra aircraft, no changing coastline, no laser, no floating grid, no labels or graphics. This is actual-looking survey flight, not a diagram or an abstract animation.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "e1810a69-2f74-4a4d-a621-0885cd0b7ff1",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/e1810a69-2f74-4a4d-a621-0885cd0b7ff1.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_074346_7128a0e7-e8a0-46b6-80c6-4085bea8f2c9.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/e1810a69-2f74-4a4d-a621-0885cd0b7ff1.png"
+      },
+      "createdAt": 1790667826.409106
+    },
+    {
+      "id": "be16f288-63c4-4207-9027-31f5a2673347",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "Create one continuous five-second photoreal corporate marine geophysics film. Use the supplied image as the vessel, temperate coastline, muted navy daylight and SINGLE grayscale seismic-section reference. This is an explanatory data visualization, not a physical wall. Wide oblique aerial camera; the whole modest survey vessel stays visible. The bow points LEFT, stern and wake RIGHT, throughout. 0-1s: vessel actively advances left along a straight survey line with a growing foamy wake and natural moving waves. Only a short translucent grayscale vertical data strip is initially visible below the track behind the stern. 1-4s: camera trucks smoothly left slightly slower than the vessel, creating visible vessel movement and real parallax against the distant coast. As the vessel advances, adjacent narrow grayscale seismic traces progressively append at the LEFT leading edge of the one flat section; acquired traces behind it remain spatially stable. A strong gently undulating seabed reflector with faint lower shallow reflectors becomes clearer as each adjacent trace is acquired. 4-5s: retain steady vessel movement, wake and camera tracking; finish showing the vessel plus a longer coherent acquired 2D section beneath its past track. The distant land geometry and vessel construction stay unchanged. Restrained elegant scientific visualization fully generated within this video. No cuts, no crossfade, no static photograph zoom, no physical solid curtain, no laser beam, no neon, no 3D geological volume, no extra planes, no text, no numbers, no logos. Keep the scene physically plausible, cinematic and readable silently.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "medias": [
+          {
+            "role": "image",
+            "data": {
+              "id": "2d70b253-7340-45cd-a0a0-0b0d05bec568",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/2d70b253-7340-45cd-a0a0-0b0d05bec568.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_073843_be16f288-63c4-4207-9027-31f5a2673347.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/2d70b253-7340-45cd-a0a0-0b0d05bec568.png"
+      },
+      "createdAt": 1790667523.544799
+    },
+    {
+      "id": "1ed7775c-dd67-41ef-97e4-1ea18c8688a6",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "ONE continuous 6-second 16:9 silent scientific-documentary aerial shot, one location, no cuts. @start_image fixes the exact invented estuary geometry: the same river enters from the upper right through the tidal channel to the broad sea on the left; the same sandbars, banks, low hills, foreground rocky headland and water-attached triangular computation mesh must persist without morphing. This is a qualitative explanatory hydrodynamic/salinity MODEL scene, not a real measured output. CAMERA: a real wide 28mm drone camera travels SIDEWAYS about 40 metres to camera-left along the offshore side of the foreground headland, slightly cranes upward, and counter-yaws gently to keep the river mouth near centre; constant distant framing, no forward approach, no digital zoom, no static pan. The close headland must slide visibly faster across frame than the far hills and coast, giving unmistakable depth parallax while the whole connected estuary remains visible. MODEL ACTION, timed and physically coherent: 0-2s hold the start state, small seaward flow arrows already on the channel and a narrow muted pale-cyan low-salinity tongue at the river outlet; 2-4s that same continuous tongue advects from the inner estuary toward the mouth along the actual wet channel, gradually broadens by mixing while the camera travels sideways; 4-6s its leading edge spreads only into adjacent nearshore water, fading smoothly into dark-blue open sea, while a few short flow arrows update smoothly in the SAME seaward direction along the local water paths. The arrows correspond to the same instant's current and never point simultaneously upstream. The mesh remains registered to the water surface and coastline, slightly finer at complex banks and coarser offshore; the land, dry flats, vegetation and buildings remain uncoloured and ungridded. Photographic water texture, waves and shadows stay natural beneath the restrained translucent field. No change of site, added island or channel, tidal reversal, detached floating mesh, glowing laser, map UI, legends, coordinates, numbers, labels, logos or exaggerated neon effects. Finish on the same coherent coast with clearly advanced water-only field and clear lateral parallax for the next cut to satellite processing.",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "62cdd8c1-2a58-4c27-b96c-7ab057f2aead",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/62cdd8c1-2a58-4c27-b96c-7ab057f2aead.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_061444_1ed7775c-dd67-41ef-97e4-1ea18c8688a6.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/62cdd8c1-2a58-4c27-b96c-7ab057f2aead.png"
+      },
+      "createdAt": 1790662484.524615
+    },
+    {
+      "id": "1b5e3ea6-16ba-4a9d-a588-a07fe282c7cd",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "ONE continuous 6-second 16:9 silent documentary drone shot. @start_image is the exact first frame and exact subject/gear/geography reference; @video is used ONLY as a camera-motion reference for its real lateral tracking, background/foreground parallax and smooth angular change. Do not copy the reference video's moving boat, beach, surf, lettering or subject motion. In the start-image coastal site, the same complete navy-and-white research vessel holds station in deep water, with two helmeted life-jacketed crew safe on deck and one connected rigid CTD rosette hanging from the A-frame top sheave. One physical observation action: the winch slowly lowers that same rosette about one metre into water over six seconds; one taut cable extends continuously, the cage stays intact, makes a small ripple and submerges. Simultaneously reproduce the reference video's clear SIDEWAYS travelling drone camera and layered parallax, but keep the vessel wholly within the right half at a wide constant scale, the left 45 percent open sea, and the low connected coast visible throughout. The camera's perspective and the shore position must change substantially by the final frame; it must not be a locked-off tripod, simple pan, forward push or digital zoom. Timed beats: 0-2s establish whole boat and coast; 2-4s lateral travel while cage descends; 4-6s finish the sideways move with a submerged cage and fading modest ripple. Natural daylight, realistic engineering and waves, no cuts, morphs, extra equipment or people, invented landforms, text, logos, graphics or values.",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "6b1d776e-790f-417e-aaff-676a65ea65d7",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/6b1d776e-790f-417e-aaff-676a65ea65d7.png"
+            }
+          },
+          {
+            "role": "video",
+            "data": {
+              "id": "5eb76588-4148-4c72-8aa0-02db57a03623",
+              "type": "video_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/5eb76588-4148-4c72-8aa0-02db57a03623.mp4"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_054718_1b5e3ea6-16ba-4a9d-a588-a07fe282c7cd.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/6b1d776e-790f-417e-aaff-676a65ea65d7.png"
+      },
+      "createdAt": 1790660838.010043
+    },
+    {
+      "id": "5880996e-6f0b-444b-8458-82112dd1dc3d",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "Use the supplied original image as the exact first frame. Create one 6-second 16:9 scientific editorial shot of this SAME river estuary and its already visible cyan numerical-model mesh and turquoise concentration field. Subject: an illustrative water-quality plume being advected from the river into the open sea. The terrain, coast, sandbars, bridge, roads, fields and computational mesh stay geometrically fixed and registered to the original throughout; this is an evolving model field on a fixed geographic domain. At 0 seconds preserve the original compact bright plume at the river mouth. From 0 to 3 seconds a continuous supply travels down the existing river channel from upper left, exits the mouth toward the right and smoothly pushes the plume's leading edge farther offshore while the near-mouth core remains connected to the river. From 3 to 6 seconds the offshore plume visibly widens sideways through diffusion, its outer edge softens and becomes less concentrated while the elongated brighter core continues moving seaward. The final plume footprint must be clearly farther offshore and broader than at the start, with a coherent connected gradient rather than flicker or simple opacity pulsing. Keep the analytic color field strictly in water, never over dry land or bridge; keep every existing mesh line stable and readable from first through last frame. Orthographic overhead camera holds this complete domain so the change of the actual field extent and distribution is unmistakable; camera movement cannot substitute for field evolution. Retain the documentary satellite-like texture and restrained natural colors. This is an explanatory simulation concept, not an actual site or measured result. No new objects, text, labels, numeric metrics, controls, extra panels, scan beams or decorative particles. All internal analysis graphics are part of the generated video itself. Silent.",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "ee2df93c-6b3a-4626-aae9-2621fbdbfcb3",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/ee2df93c-6b3a-4626-aae9-2621fbdbfcb3.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_041632_5880996e-6f0b-444b-8458-82112dd1dc3d.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/ee2df93c-6b3a-4626-aae9-2621fbdbfcb3.png"
+      },
+      "createdAt": 1790655392.005409
+    },
+    {
+      "id": "bc159dca-1ae7-4eb1-9ea6-66c428386796",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_0",
+      "params": {
+        "prompt": "Use the supplied annotated image as the exact first frame. Create a moving annotated marine-organism analysis video. The four existing cyan rectangular bounding boxes and four translucent cyan instance segmentation masks are essential visible subjects of this video. Preserve exactly FOUR complete closed cyan rectangles and exactly FOUR silhouette masks in EVERY frame, including the first and last frames. Every depicted jellyfish must continuously carry its own one box and one silhouette mask: top-left animal, large lower-centre animal, upper-right animal, and far-right animal. Each thin rectangular box fully encloses its own jellyfish body and short oral arms. Each faint cyan mask follows that same animal's silhouette. Keep all four rectangles and all four masks clearly visible throughout; their edges adjust gently with the corresponding animal's subtle motion. Preserve the input composition and all existing analysis graphics. The fixed sea camera stays completely locked. The four jellyfish remain separated at almost unchanged positions and scales, with a very slight gentle bell pulse. Natural surface light and sparse particles move subtly. One continuous silent four-second shot. Preserve the input water, seabed, anatomy and transparency. No added organisms, written text, numerical scores, logos, cuts or camera movement.",
+        "aspect_ratio": "16:9",
+        "duration": 4,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "ca12fd56-aa22-4752-8307-aa68f71a1276",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/ca12fd56-aa22-4752-8307-aa68f71a1276.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "mode": "std",
+        "model": "seedance_2_0",
+        "bitrate_mode": "standard"
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_024020_bc159dca-1ae7-4eb1-9ea6-66c428386796.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/ca12fd56-aa22-4752-8307-aa68f71a1276.png"
+      },
+      "createdAt": 1790649620.822545
+    },
+    {
+      "id": "4ba035ad-fb8d-4e36-a230-8e0498dd4386",
+      "type": "video",
+      "status": "completed",
+      "model": "seedance_2_5",
+      "params": {
+        "prompt": "Create a silent six-second premium cinematic ocean-modelling concept film from this original keyframe. Preserve the exact coastal landforms, estuary, islands, sky, morning lighting and realistic scale of the supplied image. This is an illustrative environmental-science brand film, not a measured forecast. One continuous high aerial camera move: a very slow steady forward glide over the open bay, less than 5 percent frame displacement. 0-1 seconds establish the immense ocean and distant coastal terrain. 1-5 seconds let thousands of fine existing pale blue particle traces advect smoothly along the coherent ocean-current paths and eddies already visible in the image. The flow field must stay registered to the water, the tiny points moving along continuous paths, not streaking through islands or exploding. Subtle natural wave shimmer and cloud motion only. 5-6 seconds settle into the same wide composition with ongoing calm particle motion, suitable for a discreet website loop crossfade. Terrain and structures do not morph, grow or change shape. Keep the fine foreground mesh subtle and anchored. Never turn the water into thick white foam, whirlpool funnels or painted neon stripes. No camera orbit or zoom jump, no cuts, no new objects, no satellite, no ship, no logos, no text, no numbers, no labels, no charts, no HUD, no musical track, no voice, no watermark. High-end restrained navy and silver-blue marine science art direction, crisp photoreal landscape with refined illustrative flow graphics. Native 1920x1080 output.",
+        "aspect_ratio": "16:9",
+        "duration": 6,
+        "medias": [
+          {
+            "role": "start_image",
+            "data": {
+              "id": "818357b3-e1e3-4446-9e66-90e3b4ddeef5",
+              "type": "media_input",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/818357b3-e1e3-4446-9e66-90e3b4ddeef5.png"
+            }
+          }
+        ],
+        "width": 1920,
+        "height": 1080,
+        "genre": "auto",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "multi_shots": false,
+        "multi_shot_mode": "custom",
+        "multi_prompt": [],
+        "speedramp": "auto",
+        "reference_elements": [],
+        "prompt_language": "en",
+        "model": "default",
+        "extension_mode": null,
+        "bitrate_mode": "high",
+        "draft": false,
+        "draft_job_id": null
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260928_075436_4ba035ad-fb8d-4e36-a230-8e0498dd4386.mp4",
+        "thumbnailUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/818357b3-e1e3-4446-9e66-90e3b4ddeef5.png"
+      },
+      "createdAt": 1790582076.81381
+    }
+  ],
+  "next_cursor": null
+}

@@ -1,0 +1,22 @@
+{
+  "sourceDocument": "dist/assets/company/geosr-profile-ko-2025.pdf",
+  "sourcePage": 18,
+  "printedPage": "34–35",
+  "embeddedImage": "Im6.jpg",
+  "records": [
+    {
+      "id": "observation-vessel-deployment",
+      "source": "media-source/company-profile/observation-vessel-deployment.png",
+      "web": "dist/assets/company/observation-vessel-deployment.webp",
+      "width": 750,
+      "height": 389,
+      "captionKo": "해양 관측 장비 설치 작업 · 회사소개서 수록 사진",
+      "captionEn": "Marine observation equipment installation · company profile photograph",
+      "actualCompanyPhoto": true,
+      "generated": false,
+      "sourceSha256": "608366cd3559818bc4df9b3b78df642fcf9dab1108452da9fec26dd12e8b9548",
+      "webSha256": "98ebe0726d55ff0cd0a917630a5199feb9feb758aaa1729ec4b96f22a9187047",
+      "usage": "관측 인프라 적용 분야 소개. 원문 출처를 함께 표시하고 실제 GeoSR 현장 자료로만 사용."
+    }
+  ]
+}

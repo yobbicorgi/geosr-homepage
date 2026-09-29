@@ -1,111 +1,18 @@
 {
-  "revision": "professional-visualisation-20260928",
+  "revision": "geosr-montage-20260929",
   "slots": [
     {
       "id": "geosr-hero",
       "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/geosr-hero.mp4",
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "plannedDuration": 60,
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
-      "id": "expertise-1",
-      "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/expertise-observation.mp4",
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
-      "id": "expertise-2",
-      "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/expertise-environment.mp4",
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
-      "id": "expertise-3",
-      "mode": "loop",
-      "src": "assets/films/ocean-circulation-1080p.mp4",
+      "src": "assets/films/geosr-hero-20260929-v4.mp4",
       "approval": "approved",
-      "duration": 24,
-      "delivery": "assets/films/ocean-circulation-1080p.mp4",
-      "stage": "external-scientific-visualisation",
-      "review": "docs/redesign-next/17-DESIGN-REFERENCES-20260928.md",
-      "reviewNote": "NASA SVS ECCO2 explanatory excerpt with source credit; not GeoSR model output or Higgsfield generation",
-      "sourceUrl": "https://svs.gsfc.nasa.gov/5425/",
-      "credit": "NASA's Scientific Visualization Studio",
-      "sourceIntervalSeconds": [
-        88,
-        112
-      ]
-    },
-    {
-      "id": "expertise-4",
-      "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/expertise-satellite.mp4",
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
-      "id": "business-environment",
-      "mode": "sequence",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/business-environment.mp4",
-      "purpose": "Business expertise — people-free water, sediment and ecological analysis process frame",
-      "recommendedMedia": [
-        "mp4",
-        "gif"
-      ],
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
-      "id": "company-overview",
-      "mode": "sequence",
-      "src": null,
-      "approval": "pending",
-      "duration": 60,
-      "delivery": "assets/films/company-overview.mp4",
-      "purpose": "Company overview — people-free observation and environmental analysis process frame",
-      "recommendedMedia": [
-        "mp4",
-        "gif"
-      ],
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
+      "delivery": "assets/films/geosr-hero-20260929-v4.mp4",
+      "duration": 27.5,
+      "stage": "reviewed-existing-clips-montage",
+      "review": "media-source/video-production-20260929/montage-handoff.md",
+      "reviewNote": "Seven concept scenes including satellite observation; jellyfish and rejected ADCP excluded",
+      "labelKo": "기술 소개 영상",
+      "labelEn": "Technology film"
     },
     {
       "id": "ax-discover",
@@ -161,25 +68,6 @@
       "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
     },
     {
-      "id": "ax-concept-film",
-      "mode": "loop",
-      "src": null,
-      "approval": "pending",
-      "duration": 8,
-      "delivery": "assets/films/ax-concept-film.mp4",
-      "purpose": "AX facility detection concept chapter, not actual UI, a real location or measured scientific data",
-      "recommendedMedia": [
-        "mp4",
-        "gif"
-      ],
-      "stage": "source-replacement-pending",
-      "review": "docs/redesign-next/11-AX-EMBED-REVIEW.md",
-      "reviewNote": "Previous generated video removed; new media requires full visual and source review before connection",
-      "plannedDuration": 30,
-      "labelKo": "새 영상 제작 준비 중",
-      "labelEn": "NEW FILM IN PREPARATION"
-    },
-    {
       "id": "platform-satellite",
       "src": "assets/films/platform-satellite-preview.mp4",
       "approval": "draft-reviewed",
@@ -202,6 +90,117 @@
       "mode": "loop",
       "duration": 3.8,
       "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
+    },
+    {
+      "id": "geosr-wave-bridge",
+      "mode": "loop",
+      "src": null,
+      "approval": "pending",
+      "stage": "needs-distinct-home-scene",
+      "review": "docs/redesign-next/CURRENT-DIRECTION.md",
+      "plannedDuration": 6,
+      "reviewNote": "A dedicated scene is required because all existing reviewed clips are present in the home montage.",
+      "delivery": "assets/films/geosr-wave-bridge.mp4",
+      "duration": 6.04,
+      "purpose": "Illustrative river-mouth transport in the water-research homepage passage"
+    },
+    {
+      "id": "technology-uav",
+      "mode": "loop",
+      "src": "assets/films/technology-uav.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-uav.mp4",
+      "duration": 5.04,
+      "purpose": "UAV coastal survey movement, illustrative spatial-data capability",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/user-seven-reuse.md",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
+    },
+    {
+      "id": "technology-seismic",
+      "mode": "loop",
+      "src": "assets/films/technology-seismic.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-seismic.mp4",
+      "duration": 5.04,
+      "purpose": "Vessel sub-bottom scanning, illustrative seismic capability",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/user-seven-reuse.md",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
+    },
+    {
+      "id": "technology-water-model",
+      "mode": "loop",
+      "src": "assets/films/technology-water-model.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-water-model.mp4",
+      "duration": 6.04,
+      "purpose": "Illustrative water-model computation and grid",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/user-seven-reuse.md",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
+    },
+    {
+      "id": "technology-estuary",
+      "mode": "loop",
+      "src": "assets/films/technology-estuary.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-estuary.mp4",
+      "duration": 6.04,
+      "purpose": "Illustrative estuary transport and diffusion",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/user-seven-reuse.md",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
+    },
+    {
+      "id": "technology-ocean-forecast",
+      "mode": "loop",
+      "src": "assets/films/technology-ocean-forecast.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-ocean-forecast.mp4",
+      "duration": 6.04,
+      "purpose": "Illustrative wide-area ocean circulation",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/user-seven-reuse.md",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
+    },
+    {
+      "id": "technology-ecosystem-model",
+      "mode": "loop",
+      "src": null,
+      "approval": "pending",
+      "purpose": "Ecosystem and harmful algal bloom modelling based on GeoSR technology 52",
+      "stage": "user-rejected-do-not-use",
+      "review": "media-source/video-production-20260929/",
+      "reviewNote": "Microscope concept rejected as unrelated to this modelling service; original forecast material remains until a relevant replacement is reviewed",
+      "labelKo": "영상 대체 예정",
+      "labelEn": "FILM TO FOLLOW"
+    },
+    {
+      "id": "technology-coastal-monitoring",
+      "mode": "loop",
+      "src": null,
+      "approval": "pending",
+      "delivery": "assets/films/technology-coastal-monitoring.mp4",
+      "purpose": "Shoreline survey and coastal monitoring",
+      "stage": "user-rejected-do-not-use",
+      "review": "media-source/video-production-20260929/",
+      "reviewNote": "Previous generated clip rejected by user; retain source receipt only and commission a different scene."
+    },
+    {
+      "id": "technology-satellite",
+      "mode": "loop",
+      "src": "assets/films/technology-satellite.mp4",
+      "approval": "approved",
+      "delivery": "assets/films/technology-satellite.mp4",
+      "duration": 5.04,
+      "purpose": "Illustrative broad-area satellite data analysis, not a spacecraft transit shot",
+      "stage": "reviewed-existing-clip",
+      "review": "media-source/video-production-20260929/",
+      "reviewNote": "Technical promotion concept only, not measured or validated data."
     }
   ]
 }
+
+
+

@@ -2,7 +2,7 @@
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const initialHash = location.hash;
-  const contentReady = [];
+  const contentReady = [window.GeoSRCompanyInformationReady,window.GeoSRCompanyHistoryReady,window.GeoSRCredentialsReady].filter(Boolean);
   let userNavigated = false;
   ['pointerdown','wheel','touchstart','keydown'].forEach(type=>addEventListener(type,()=>{userNavigated=true},{once:true,passive:true}));
   // Restore deep links once asynchronous content and font metrics are ready

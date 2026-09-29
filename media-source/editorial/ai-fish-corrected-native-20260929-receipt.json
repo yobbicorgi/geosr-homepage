@@ -1,0 +1,28 @@
+{
+  "id": "ai-fish-corrected-native-20260929",
+  "source": "media-source/editorial/ai-fish-corrected-native-20260929.png",
+  "web": "dist/assets/editorial/ai-fish-corrected-native-20260929.webp",
+  "sourceUrl": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "sourceMethod": "Native ChatGPT web image editing of generated five-fish original; selected image from ChatGPT Library, no Higgsfield image generation",
+  "originalSource": "media-source/editorial/ai-fish-native-20260929.png",
+  "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오후 03_03_25.png",
+  "width": 1672,
+  "height": 941,
+  "pngBytes": 2151084,
+  "pngSha256": "efaf4b67b826c9577f4194d96196a882cea415ad7392c972ba626d6894422cf8",
+  "webBytes": 196732,
+  "webSha256": "dfa96a62d8a4ad49e7d631df78cb96700ac9c318dae130a1fef3260256f4575a",
+  "companyEvidence": [
+    "GeoSR technology 59: video-based marine organism detection/tracking/classification and measurement concept",
+    "GeoSR academic 1933: YOLOv8-Seg fish detection and classification comparison; published figure supports fish bounding boxes and silhouette masks",
+    "GeoSR academic 2009: deep-learning marine organism detection and measurement"
+  ],
+  "qa": {
+    "decision": "candidate-passes-scientific-visual-QA; parent to approve site placement",
+    "review": "Five fish are fully visible. The anatomically implausible midwater flatfish is removed and replaced with a streamlined temperate bony fish near the lower-right seabed, in a plausible horizontal swimming posture. The four other fish remain in similar positions. Five thin blue detection boxes and five faint silhouette masks correspond one-to-one with fish and include fins and tails; the previous flatfish mask/box are absent. Background water, sandy bed, rocks and left-side text space remain coherent. No class labels, model scores or invented dimensions.",
+    "limitations": "Generated illustrative artwork. Fish species identification, actual GeoSR deployment, measured performance and live inference are not claimed. Masks are illustrative; do not caption as a recorded inference result.",
+    "siteUse": false
+  },
+  "altKo": "수중 어류 다섯 개체의 탐지 박스와 형상 마스크를 보여주는 생성 콘셉트",
+  "altEn": "Generated concept of five underwater fish with corresponding detection boxes and silhouette masks"
+}

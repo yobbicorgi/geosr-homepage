@@ -1,61 +1,126 @@
-<p align="center"><img src="dist/assets/logo.png" alt="GeoSR" width="190"></p>
+<p align="center"><img src="dist/assets/logo.png" alt="GeoSR" width="180"></p>
 
-# GeoSR 기업 홈페이지
+# Geo Data Intelligence
 
-해양·하천·연안 환경을 조사하고 분석하는 지오시스템리서치의 국·영문 홈페이지입니다. 메인은 대표 기술과 플랫폼을 보여 주고 연구개발·소식·장비·인증 자료는 각 페이지에서 검색할 수 있습니다.
+[전체 페이지 설계와 수정 기준](docs/redesign-next/MASTER-SITE-DESIGN.md)
 
-![GeoSR 메인 QHD 화면](docs/screenshots/home-qhd-20260928.jpg)
+지오시스템리서치의 국문·영문 기업 홈페이지
 
-## 화면 미리보기
+해양과 하천·호수·댐의 현장 업무와 인공지능·수치모델·공간정보 기술을 소개합니다
+메인에서는 대표 기술과 플랫폼을 보여주고 상세 페이지에서는 원문 자료와 실제 기술 사례를 확인할 수 있습니다
 
-![해양 순환 영상과 기술 분야 탐색](docs/screenshots/home-technology-qhd.jpg)
+![GeoSR 메인 첫 화면 · QHD 검수 캡처](docs/screenshots/20260929-design-review/home-qhd-ko.jpg)
 
-대표 기술 영역은 분야 선택과 미디어가 함께 전환됩니다. 수치모델 설명에는 [NASA SVS](https://svs.gsfc.nasa.gov/5425/)의 1080p 해양 순환 시각화를 사용하며 출처와 재생 제어를 제공합니다. AX 곡면형 가로 갤러리는 직원 제작 화면을 기반으로 유지합니다.
+*2026년 9월 29일 2560×1440 CSS viewport의 로컬 미리보기입니다. 당시 검수 화면이며 이후 영상과 회사 소개 이미지가 갱신되었습니다*
 
-| 사업 및 기술 | 연구개발 |
+> **현재 상태** · 메인에는 27.5초 1080p 무음 영상 7개 장면을 연결했습니다 위성 관측으로 시작하며 CTD 장면은 3초로 늘리고 해양 흐름 장면을 마지막에 배치했습니다 회사 소개에는 회사의 업무 전반을 표현한 다크 인포그래픽을 배치했습니다 AI 대표 장면은 어류 이미지로 유지하고 해파리 영상은 사용하지 않습니다. 기술 상세의 원문 지도·그래프·장비 사진은 자료 영역에 보존합니다. 국문과 영문 및 모바일 화면은 계속 감수 중이며 이 사이트는 공식 geosr.com 배포본이 아닙니다
+
+이미지마다 쓰임을 따로 정합니다. 넓은 첫 화면은 해당 업무 환경을 설명하는 콘셉트 장면으로 구성하고 실제 GeoSR 결과가 필요한 위치에는 원래 지도·그래프·장비 사진을 그대로 둡니다. 콘셉트와 원자료는 캡션과 배치로 구분하며 실제 자료는 임의로 자르거나 새로 그리지 않습니다.
+
+## 기술을 보여주는 화면
+
+![스크롤로 탐색하는 사업 및 기술 분야 · QHD](docs/screenshots/20260929-design-review/home-expertise-qhd-ko.jpg)
+
+메인에는 대표 분야 5개를 함께 보여주고 사업 페이지에는 전체 8개 분야와 21개 기술 상세를 둡니다
+메인 분야 카드는 데스크톱에서 펼쳐지고 모바일에서는 가로 스크롤로 살펴볼 수 있습니다. AX Platform의 곡면 갤러리는 휠과 드래그로 이동합니다
+대표 이미지는 설명용 콘셉트이며 실제 모델의 추론 결과나 관측 수치를 주장하지 않습니다
+
+| AX Platform | 무인항공 사진측량 상세 |
 | :--- | :--- |
-| [![사업 분야](docs/screenshots/business-desktop.webp)](docs/screenshots/business-desktop.webp) | [![연구개발](docs/screenshots/research-desktop.webp)](docs/screenshots/research-desktop.webp) |
-| AX Platform | 회사 소개 |
-| [![AX Platform](docs/screenshots/ax-platform-desktop.webp)](docs/screenshots/ax-platform-desktop.webp) | [![회사 소개](docs/screenshots/company-desktop.webp)](docs/screenshots/company-desktop.webp) |
+| [![AX Platform 곡면 갤러리](docs/screenshots/20260929-design-review/ax-gallery-qhd-ko.jpg)](docs/screenshots/20260929-design-review/ax-gallery-qhd-ko.jpg) | [![무인항공 사진측량 상세](docs/screenshots/20260929-design-review/technology-uav-qhd-ko.jpg)](docs/screenshots/20260929-design-review/technology-uav-qhd-ko.jpg) |
 
-[모바일 메인](docs/screenshots/home-mobile.webp) · [기술 상세](docs/screenshots/business-detail-desktop.webp) · [소식](docs/screenshots/news-desktop.webp) · [장비](docs/screenshots/equipment-desktop.webp) · [문의](docs/screenshots/contact-desktop.webp) · [자료실](docs/screenshots/records-desktop.webp)
+*AX Platform과 기술 상세의 내부 미리보기입니다. 실제 제품 화면과 설명용 도입 이미지를 구분해 사용합니다.*
 
-스크린샷은 `docs/screenshots/`에 페이지별로 보관합니다. 위 첫 화면은 2026-09-28 로컬 QHD 2560×1440 캡처이며 실제 이미지 폭은 스크롤바를 제외한 2545px입니다. 기존 페이지별 캡처는 화면 변경 후 다시 검수해야 합니다.
+![수백 건을 찾는 소식 게시판 · QHD](docs/screenshots/20260929-design-review/news-qhd-ko.jpg)
 
-## 사이트 구성
+[회사 소개](docs/screenshots/20260929-design-review/company-qhd-ko.jpg) · [연혁](docs/screenshots/20260929-design-review/company-history-qhd-ko.jpg) · [사업 분야](docs/screenshots/20260929-design-review/business-qhd-ko.jpg) · [연구개발](docs/screenshots/20260929-design-review/research-qhd-ko.jpg) · [보도자료](docs/screenshots/20260929-design-review/news-press-qhd-ko.jpg) · [장비](docs/screenshots/20260929-design-review/equipment-qhd-ko.jpg) · [채용](docs/screenshots/20260929-design-review/careers-qhd-ko.jpg) · [문의](docs/screenshots/20260929-design-review/contact-qhd-ko.jpg)
 
-| 페이지 | 내용 |
+AX Platform은 [직원 제작 저장소](https://github.com/123choigem-tech/geosr-homepage-ax-platforms)의 곡면 가로 갤러리와 제품 자료를 로컬에 삽입했습니다
+[GeoDAP](https://www.geo-dap.com/)은 실제 메인 화면을 잘림 없이 소개하는 별도 외부 서비스입니다
+
+## 모바일
+
+<p>
+  <img src="docs/screenshots/20260929-design-review/home-mobile-ko.jpg" alt="모바일 메인" width="220">
+  <img src="docs/screenshots/20260929/menu-mobile.png" alt="모바일 전체 메뉴" width="220">
+  <img src="docs/screenshots/20260928-current/technology-mobile-en.png" alt="모바일 영문 기술 상세" width="220">
+</p>
+
+최신 페이지별 캡처 조건과 검수 결과는 [2026년 9월 29일 화면 기록](docs/screenshots/20260929-design-review/README.md)에 보관합니다
+스크린샷은 진행 상태를 보여주며 전체 페이지의 최종 디자인 승인을 뜻하지 않습니다
+최근 상세 화면 점검은 [2026년 9월 29일 기록](docs/screenshots/20260929-detail-review/README.md)에서 확인할 수 있습니다
+
+분야별 이미지 선택과 원문 자료의 위치는 [미디어 배치표](docs/redesign-next/reviews/media-placement-matrix-20260929.md)에서 확인할 수 있습니다
+해상풍력 입지정보 페이지에는 전용 콘셉트 장면을 두고 원본 입지 지도와 해양 이용 자료는 기술 자료 영역에 보존합니다
+
+## 정보 구성
+
+| 메뉴 | 내용 |
 | :--- | :--- |
-| 메인 | 회사소개서의 실제 연안 사진을 임시 첫 화면으로 사용, 대표 사업 분야, AX Platform·GeoDAP, 회사 개요와 최신 소식 |
-| 사업 분야 | 다섯 영역과 21개 기술의 국·영문 상세 설명 |
-| 연구개발 | 국문 사업·연구·학술 기록 719건과 분야별 검색 |
-| AX Platform | [직원 제작 AX 저장소](https://github.com/123choigem-tech/geosr-homepage-ax-platforms)의 AX 관련 화면과 자료를 사이트에 삽입 |
-| 회사 소개 | 전문 분야, 연혁, 회사 자료, 인증·등록·지식재산권 명칭 127개와 사업장 정보 |
-| 소식·장비 | 공개 소식 384건, 장비·조사선 80건의 개별 검색 화면 |
+| 회사 소개 | 기업 개요 · 인사말 · 목표와 사명 · 연혁 · 조직 · 인증 · CI · 사업장 · 채용 |
+| 소식 | 공지와 언론 보도 384건 |
+| 연구개발 | 사업 406건 · 연구 82건 · 학술 231건 |
+| 사업 분야 | 8개 기술 분야 · 21개 기술 상세 · 6개 사업 적용 분야 |
+| 장비 | 관측 장비와 조사선 80건 |
+| AX Platform | 분야별 분석 플랫폼과 직원 제작 곡면 갤러리 |
+| GeoDAP | 외부 지구환경 데이터 플랫폼 |
 
-GeoDAP은 독립 서비스입니다. 메인에 [GeoDAP 공개 홈페이지](https://www.geo-dap.com/)의 실제 화면 캡처를 소개하고 해당 서비스로 이동합니다. AX 화면은 로컬 자산으로 삽입했으며 실시간 운영 화면으로 표시하지 않습니다.
+국문 원문을 기준으로 한영 화면의 기록 수와 첨부 자료를 맞춥니다
+기존 국문·영문 원문 2024건은 보존하며 번역은 원문 hash에 연결된 별도 파일로 관리합니다
+인증·등록·지식재산권 명칭 127개는 회사 소개의 문서 갤러리에서 제공합니다
+검토가 필요한 문서 이미지의 보호 상태와 현재 인증 유효성은 별도 확인 대상입니다
+
+화면 구성은 한화오션의 메뉴 전개와 전폭 미디어 및 스크롤 흐름을 가깝게 적용하고 GeoSR의 콘텐츠와 색상 및 자체 이미지로 완성합니다
+어떤 레이아웃 원리를 어디에 적용했는지는 [레퍼런스 대조표](docs/redesign-next/reviews/geosr-reference-crosswalk-20260928.md)에 기록합니다
+메인과 회사 안내·연혁·상선·혁신·R&D·뉴스 화면에서 직접 확인한 시각 검토는 [실시간 페이지 대조 기록](docs/redesign-next/reviews/hanwha-live-visual-review-20260929.md)에 적었습니다
+메인 오른쪽 구간 탐색은 스크롤 위치와 연결되어 회사 소개·기술 분야·AX·GeoDAP·수환경 연구·소식으로 바로 이동합니다. 화면을 밀어 넘기는 동작은 사용하지 않습니다
 
 ## 로컬 실행
-
-Python 환경에서 저장소 루트 기준:
 
 ```powershell
 python -m http.server 18102 --directory dist
 ```
 
-`http://127.0.0.1:18102/`에서 확인할 수 있습니다. 같은 네트워크에서는 현재 호스트의 LAN 주소 `http://192.168.6.85:18102/`로 볼 수 있습니다. 이 주소는 인터넷 공개 URL이 아닙니다. 배포 대상은 `dist/`의 정적 HTML·CSS·JavaScript·이미지입니다.
+[로컬 미리보기](http://127.0.0.1:18102/)에서 확인할 수 있습니다
+웹 배포 대상은 `dist/`이며 Python 서버는 로컬 미리보기 용도입니다
+문의 화면은 메일 작성 방식이며 서버에서 전송 완료를 보증하지 않습니다
 
-## 검수
+## 폴더 안내
+
+```text
+dist/                  웹 페이지와 런타임 데이터 및 웹용 에셋
+media-source/company-profile/ 회사소개서 원본에서 추출한 자료와 출처 기록
+media-source/editorial/ 생성 이미지 원본과 프롬프트 및 검토 기록
+media-source/editorial/unselected/ 미채택 이미지 원본
+media-source/video-production-20260929/ 영상 원본과 제작 기록
+docs/company-audit/     회사 원사이트와 소개서 조사 기록
+docs/screenshots/      페이지별 실제 브라우저 화면
+docs/source-migration/ 원문 이관과 번역 감수 및 미디어 대조 기록
+docs/redesign-next/    현재 작업 방향과 제작 관리
+scripts/               자료 구축과 검증 도구
+```
+
+## 검증
 
 ```powershell
 node scripts/build_business_details.mjs
-node scripts/build_credential_index.mjs
+python -X utf8 scripts/build_technology_media.py
+python -X utf8 scripts/build_business_areas.py
+python -X utf8 scripts/build_technology_relations.py
 node scripts/verify_redesign_routes.mjs
 node scripts/verify_metadata_accessibility.mjs
 node scripts/verify_film_lifecycle.mjs
-python scripts/verify_public_archive.py
+python -X utf8 scripts/verify_public_archive.py
+node scripts/build_continuation_inventory.mjs
+node scripts/verify_continuation_package.mjs
 ```
 
-원본 공개 글의 텍스트는 `dist/source-archive.json`에 보존했습니다. 원본 이미지·첨부파일과 현재 인증 유효 여부는 별도 확인 대상입니다. 회사 본편과 Higgsfield 요소별 영상은 제작 전이며 첫 화면에는 2025년 회사소개서에서 가져온 연안 사진을 임시로 표시합니다. 사진의 촬영 장소·일자는 아직 확인되지 않았습니다.
+자동 검증과 실제 화면 검수는 구분합니다
+현재 재생 영상과 정지 이미지의 구분은 `dist/film-manifest.json`으로 관리합니다. 설명용 장면은 관측값이나 검증된 예측 결과로 표시하지 않습니다
 
-설계·검수 기록은 [작업 시작 문서](docs/redesign-next/00-START-HERE.md), [현재 화면 결정](docs/redesign-next/13-HOME-REBUILD-20260928.md), [회사 업무 근거](docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md), [영상 콘티](docs/redesign-next/14-1080P-FILM-STORYBOARD-20260928.md)에 있습니다.
+[현재 디자인 기준](docs/redesign-next/CURRENT-DIRECTION.md) · [회사 조사](docs/company-audit/README.md) · [기술과 적용 분야](docs/company-audit/presentation-direction.md) · [이미지 제작 원장](media-source/editorial/manifest.json)
+
+## 에셋 정리 기록
+
+Downloads의 관련 에셋 20개를 대조해 원본이 보관된 중복 17개를 정리하고 신규 3개를 미채택 원본 폴더로 이동했습니다
+파일별 SHA256과 이동 위치는 [에셋 정리 기록](docs/redesign-next/reviews/downloads-asset-cleanup-20260929.json)에 보관합니다

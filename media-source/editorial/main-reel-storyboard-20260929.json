@@ -1,0 +1,64 @@
+{
+  "status": "storyboard-with-one-satellite-clip-technically-qualified-and-open-remaining-gates",
+  "date": "2026-09-29",
+  "publicationBoundary": "All generated scenes are illustrative editorial concepts, not actual GeoSR fieldwork, acquired imagery, measured detections, validated model outputs or named locations.",
+  "durationProposalSeconds": 30,
+  "assemblyRule": "Concatenate only accepted generated video clips with simple cuts or short transitions. Never substitute a still for a video slot or post-overlay analysis graphics/labels.",
+  "shots": [
+    {
+      "order": 1,
+      "seconds": "0-6",
+      "topic": "coastal field observation / physically moving first impression",
+      "asset": "first-screen opener STILL PENDING; start-only CTD job f623144a-0328-4247-851d-9299b0c46e2c is a technical observation insert candidate only",
+      "screenAction": "Real lateral drone travel with coast/near-wave parallax; one station-keeping research vessel lowers a connected CTD cage about one metre through the surface.",
+      "qa": "Whole hull/crane/cable/cage/2 PPE crew and coast remain consistent; no enlargement-only motion or full-frame pan.",
+      "cutOut": "Exit after ripple fades while left blue open sea still visible.",
+      "status": "unfilled: start-only CTD motion physically plausible but camera fixed, so main-opening rejected; see hero-ctd-startonly-seedance20-receipt-20260929.json"
+    },
+    {
+      "order": 2,
+      "seconds": "6-12",
+      "topic": "satellite/remote sensing processing",
+      "asset": "media-source/editorial/hero-satellite-technical-insert-seedance20-20260929.mp4",
+      "screenAction": "Top-down registered catchment mosaicking seam resolves; muted teal analytic field progresses from upstream river through mouth to connected offshore water.",
+      "qa": "Existing 145-frame audit passed fixed geographic registration and no land spill; its fixed camera is intentional for this processing insert, not representative opener.",
+      "cutIn": "Cut from open coastal water to the same blue-toned sea of top-down image.",
+      "status": "technical-pass; site placement still subject to root final reel review"
+    },
+    {
+      "order": 3,
+      "seconds": "12-18",
+      "topic": "AI floating-debris instance segmentation based on GeoSR 2026 RTD-YOLO research",
+      "asset": "new native ChatGPT CCTV river/estuary source original required; the existing ai-fish-native still is reserved for technology-59 detection still and is not evidence for fish pixel segmentation",
+      "screenAction": "A fixed CCTV view shows a small number of individually identifiable floating plastic/wood objects moving downstream; each object receives a generated instance mask that stays on its own outline while the actual water and reflections move.",
+      "qa": "Every visible mask corresponds to one same physical floating object throughout; no mask teleports to wake/reflection, no fabricated class score/count, no claim of live inference. Inspect every frame because a prior jellyfish annotation failed temporal tracking.",
+      "cutIn": "Registered water field cuts to a fixed river CCTV viewpoint; real moving objects explain why analysis is needed.",
+      "status": "new source original and exact source/mask QA pending; source basis docs/redesign-next/reviews/20260929-source-backed-visual-scenes.md academic 3065"
+    },
+    {
+      "order": 4,
+      "seconds": "18-24",
+      "topic": "tech-15 estuary numerical model: grid, salinity and flow direction",
+      "asset": "candidate media-source/editorial/hero-watermodel-native-20260929.png; this already displays an offshore field and is a mid-state, so prepare a clean early-state native original before submitting",
+      "screenAction": "On the same fixed geographic estuary image, a computational grid stays registered to the land-water boundary, while a modest salinity field and flow arrows evolve from river through mouth to adjacent sea in physically linked water.",
+      "qa": "Actual coast/river geometry and computational grid remain registered; salinity shading and vector directions agree temporally, field moves only in connected water, no upstream teleport, detached patch, land spill, new channel or invented numerical readings.",
+      "cutIn": "Underwater blue transitions to overhead river/sea field.",
+      "status": "source concept reviewed; early/end input pair still pending"
+    },
+    {
+      "order": 5,
+      "seconds": "24-30",
+      "topic": "inland spatial survey and reconstruction",
+      "asset": "new native ChatGPT original required; do not use older uncertain-provenance imagery",
+      "screenAction": "Inland river floodplain, bridge and low settlement seen by a moving survey drone; coherent parallax and a sparse survey point-cloud resolving to registered terrain only where the drone has passed.",
+      "qa": "Bridge/road/river alignment fixed, point cloud anchored, no fictional metrics/urban CG, clearly inland and spatial-data work rather than another sea panorama.",
+      "cutIn": "Overhead model river leads visually into inland river's real geometry.",
+      "status": "storyboard only; original/physics review before quote"
+    }
+  ],
+  "lowerHomeAfterMain": {
+    "topic": "wide natural surf/coastal hazard observation",
+    "requirement": "Separate video slot and unique accepted moving footage, not a repeat of hero or a static slide; new source and exact quote after main reel."
+  },
+  "innerMenusAfterLowerHome": "Produce by page priority only after main and lower-home have actual QA-passed clips."
+}

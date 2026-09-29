@@ -1,1362 +1,1845 @@
-# 장면별 복사용 제작 카드
+# 장면별 제작·검수 카드
 
-원본은 `production-plan.json`이며 이 파일은 `node scripts/render_continuation_prompts.mjs`로 다시 생성
+원본은 `production-plan.json`이며 `node scripts/render_continuation_prompts.mjs`로 생성합니다
 
-**이 문서가 완비되어 있어도 생성물 검수가 끝난 것은 아님**
+스키마 2 / company-film-scene-system-20260929-v3
 
-`source-composite`는 원본 보존 합성 지시이며 ImageGen에 그대로 재도색 요청하지 않음
+- 시작점 — [00-START-HERE](../../docs/redesign-next/00-START-HERE.md)
+- 현재 기준 — [CURRENT-DIRECTION](../../docs/redesign-next/CURRENT-DIRECTION.md)
+- 미디어 방향 — [02-MEDIA-DIRECTION](../../docs/redesign-next/02-MEDIA-DIRECTION.md)
+- 제작·실패 원장 — [미디어 인계 원장](../../media-source/editorial/media-production-handoff.json)
 
-`imagegen-reference`는 참조 파일을 실제로 확인하고 붙인 뒤 사용 / 생성 전에 sourceRequirements 해결
+**generationReady: false / releaseReady: false**
 
-`higgsfield-concept`는 실제 장소·성과로 주장하지 않는 생성형 영상 후보 / 전체 재생과 지형·물리 검수 뒤에만 웹에 사용
+The active main film is the approximately 48-second ten-subject sequence in activeMainFilmDirection. Satellite acquisition and analysis are two four-second clips within one subject. Older MAIN-CTD and MAIN-SPATIAL cards below are retained as historical slot references, not the current main cut or paid job authorization. Only accepted native 1080p clips may be assembled.
 
-모션 프롬프트는 시작·중간·끝 keyframe 검수를 통과한 뒤 사용 / 비용은 실제 UI에서 확인
+Latest user instruction resumes immediate Seedance2.0 video from vetted native originals one scene at a time. AX detail six-second single attempt authorized; no bulk generation or same-input jellyfish retry. Actual UI sources remain generationAllowed=false. Overall generationReady/releaseReady remain false until gates pass.
 
-## CF01 — 실제 연안의 광역 오프닝
+## 공통 제작 조건
 
-편집 0–5초 / 5초 / source-composite / evidence-mapped-source-frames-pending
+- 이미지 — Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
+- 영상 — Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
+- 편집 — Only join reviewed clips and add transitions. No postproduction boxes, masks, UI, grid, data graphics or other internal overlays. Faithful format export does not create approval.
 
-실제 한국 연안에서 도시·해안·외해의 규모를 동시에 보여준다
+분석 그래픽은 원본 생성 단계에 포함합니다 실제 제품 UI는 생성하지 않습니다 확정 정지와 영상 합격을 구분합니다
 
-### 참조와 남은 확인
+### 접수·배치 전 확인
 
-- [coastal-hero](../../dist/assets/geosr-brochure-coast-2025.jpg) — 후보 또는 근거이며 최종 합격 아님
-- [company-brochure](../../docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need a dated, licensable native-1080p aerial and location identity
+- Confirm subject and evidence
+- Download original and preserve metadata/hash
+- Original-resolution geometry and16:9composition QA
+- Start/middle/end plus critical-action semantic QA
+- Exact live balance/model/input cost before one approved submission
+- Complete playback and per-slot provenance before web integration
 
-### 구도
+## 슬롯과 장면 연결
 
-- 시작 — 넓은 실사와 왼쪽 제목 여백
-- 중간 — 카메라가 느리게 측면 전진
-- 종료 — 다음 위성 시점으로 올라갈 공간
+| 슬롯 | 장면 | 출처 | 상태 | 생성 허용 |
+|---|---|---|---|---|
+| geosr-hero | MAIN-SATELLITE · MAIN-CTD · MAIN-AI · MAIN-MODEL · MAIN-SPATIAL | native-chatgpt-concept | plan-only-originals-pending | false |
+| company-overview | COMPANY-ANALYSIS | native-chatgpt-concept | plan-only-originals-pending | false |
+| ax-discover | UI-AX-DISCOVER | actual-ui | source-not-reviewed | false |
+| ax-detect | UI-AX-DETECT | actual-ui | source-not-reviewed | false |
+| ax-predict | UI-AX-PREDICT | actual-ui | source-not-reviewed | false |
+| ax-monitor | UI-AX-MONITOR | actual-ui | source-not-reviewed | false |
+| ax-concept-film | AX-MAIN-CONCEPT | native-chatgpt-concept | plan-only-originals-pending | false |
+| platform-satellite | UI-PLATFORM-SATELLITE | actual-ui | source-not-reviewed | false |
+| platform-flood3d | UI-PLATFORM-FLOOD3D | actual-ui | source-not-reviewed | false |
+| platform-buoy | UI-PLATFORM-BUOY | actual-ui | source-not-reviewed | false |
+| geosr-wave-bridge | WAVE-ROCK · WAVE-OPEN | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-ai | EXP-AI | native-chatgpt-concept | accepted-still | false |
+| expertise-modelling | EXP-MODEL | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-satellite | EXP-SATELLITE | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-spatial | EXP-SPATIAL | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-observation | EXP-OBSERVATION | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-environment | EXP-ENVIRONMENT | native-chatgpt-concept | plan-only-originals-pending | false |
+| expertise-hazards | EXP-HAZARDS | native-chatgpt-concept | accepted-still | false |
+| expertise-systems | EXP-SYSTEMS | native-chatgpt-concept | plan-only-originals-pending | false |
+| ax-platform-intro | AX-DETAIL-FLOW | native-chatgpt-concept | source-reviewed-awaiting-reference-upload | true |
 
-### 이미지 또는 원본 합성 지시
+## MAIN-SATELLITE — 대공간 관측
 
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
+main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-FRAME START: 넓은 실사와 왼쪽 제목 여백
-FRAME MIDDLE: 카메라가 느리게 측면 전진
-FRAME END: 다음 위성 시점으로 올라갈 공간
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Large-area observation becomes an aligned environmental product
 
-Use a source-approved real aerial. Match the real shoreline and leave the left third readable. The brochure photograph is only a temporary poster, not approved film footage.
-```
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 모션 지시
+### 근거와 원본 상태
 
-```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New native satellite-data start/end pair; scenic coast candidate unsuitable
 
-One slow lateral aerial move. No new coastal geography.
-```
+### 시작·전개·종료
 
-### 후반 합성과 연결
+- 시작 — Registered true-colour satellite tiles with subtle seam
+- 전개 — Tile mosaic settles, then valid-water environmental layer resolves
+- 종료 — One coherent regional environmental image
+- 카메라 — Orthographic fixed data view preserves pixel registration; mosaic and environmental-layer changes provide the motion.
 
-HTML title only; location label only after footage provenance check.
-
-Different source locations receive editorial cuts.
-
-### 금지 및 재작업 조건
-
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject fabricated or unstable coast
-
-### 계획 산출물 — 아직 생성된 파일이 아님
-
-- start — `docs/redesign-next/keyframes/CF01-start.png`
-- middle — `docs/redesign-next/keyframes/CF01-middle.png`
-- end — `docs/redesign-next/keyframes/CF01-end.png`
-- candidate — `docs/redesign-next/renders/CF01-take01.mp4`
-- review — `docs/redesign-next/reviews/CF01-take01.json`
-
-## CF02 — 한반도 위성 관측 범위
-
-편집 5–10초 / 5초 / source-composite / evidence-mapped-source-frames-pending
-
-진짜 한반도 지형에서 위성영상의 공간 범위로 시점을 이동한다
-
-### 참조와 남은 확인
-
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need a dated sensor/product and public rights
-
-### 구도
-
-- 시작 — 실사에서 실제 한반도 지도로 컷
-- 중간 — 센서 범위 도식이 짧게 나타남
-- 종료 — 검증된 위성 래스터로 전환
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 실사에서 실제 한반도 지도로 컷
-FRAME MIDDLE: 센서 범위 도식이 짧게 나타남
-FRAME END: 검증된 위성 래스터로 전환
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use a documented real geography plate. Satellite silhouette can be generated as a separate illustrative layer only.
+Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Crisp orthographic satellite-data scene of a plausible temperate Korean coast, inland river, fields and hills. Large observation extent and authentic raster texture, not a perspective drone view. FIRST state: two adjacent true-colour tiles already have exactly matching coastlines and roads, with a subtle visible join. A small greyscale spectral inset depicts the SAME area. A faint incipient blue-teal water layer lies only inside valid water; a small cloud area stays visibly unclassified. No spacecraft, scan beam or coordinates. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Controlled upward camera transition; coastline geometry stays fixed.
+Six seconds. Two already registered satellite tiles settle into a seamless mosaic without changing land or coast. Then a restrained blue-teal environmental layer resolves across valid river/coastal-water pixels, precisely aligned to shore; cloud/no-data areas stay unclassified. Preserve the corresponding spectral inset. The changing data product is the subject, not zooming scenery. No beams, new geography, numbers or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Composite source satellite product, date, sensor and swath after generation.
+Blue-water match cut to physical field water
 
-Cut on camera direction from CF01; do not pretend unrelated footage is one shot.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject fake peninsula or laser scan
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reject if this constraint is violated: Identical coastline and raster alignment across tiles and spectral inset.
+- Reject if this constraint is violated: Derived field only on valid water; cloud/no-data stays unclassified.
+- Reject if this constraint is violated: Illustrative environmental product, no acquisition or measurement claim.
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## MAIN-CTD — 현장 취득
 
-- start — `docs/redesign-next/keyframes/CF02-start.png`
-- middle — `docs/redesign-next/keyframes/CF02-middle.png`
-- end — `docs/redesign-next/keyframes/CF02-end.png`
-- candidate — `docs/redesign-next/renders/CF02-take01.mp4`
-- review — `docs/redesign-next/reviews/CF02-take01.json`
+main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## CF03 — 위성 제품과 자료 처리
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 10–14초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+Completed water-column instrument deployment
 
-하나의 실제 위성 제품에서 분석 가능한 해양 자료로 이어진다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need matched raw and processed raster with product metadata
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — parent-browser-observed; local-original-unavailable; reference-only
+- candidateNumber — 8
+- sourceConversation — https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611
+- localDownload — original-missing
+- pixelReview — pending
+- preserveCandidate — true
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 원래 위성영상과 결측 영역
-- 중간 — 한 제품의 검증된 자료층
-- 종료 — 분석 대상으로 진입
+- 시작 — Whole CTD cage visibly above water, lower ring just above the surface, with a taut connected cable and full vessel/context still visible.
+- 전개 — Winch pays out cable continuously; the complete rigid cage progressively enters water, produces proportionate ripples, and lowers until the top ring is submerged.
+- 종료 — Top ring submerges; connected cable and causal ripples visible
+- 카메라 — A short broad oblique arc keeps the entire working vessel, load path and water context readable; do not finish in a device close-up. CTD is one6s field shot only.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 원래 위성영상과 결측 영역
-FRAME MIDDLE: 한 제품의 검증된 자료층
-FRAME END: 분석 대상으로 진입
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Provide subtle ambient motion behind an authentic data plate; no map or raster generation.
+Native ChatGPT original16:9 documentary wide coastal research scene. Keep entire modest research vessel in right third with broad water and distant low Korean coast. One plausible stern A-frame and taut cable connect to the central lifting bail of a compact12-bottle CTD rosette. The entire cage is clear above water with its lower ring just above the surface, ready for complete vertical lowering. Exactly2rear-facing crew in helmets and life jackets remain clear of the load. Preserve realistic boat, cage and cable scale. All intended analysis panels, if any, must be generated natively and must not obscure the load path. No fictional measured values, logos or company ownership claim. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Slow push toward a selected real analysis area.
+Six-second broad field-operation shot. One connected winch cable pays out smoothly, lowering the same rigid CTD rosette vertically from entirely above water. The cage progressively crosses the surface, creates a proportionate brief splash and outward ripples, then its top ring submerges while the connected cable remains visible. A short broad oblique arc keeps the entire vessel and water context in view. Preserve geometry, scale and2safe PPEcrew. No disconnected cables, duplicate gear, unsafe gestures, text or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Keep product pixels, land mask, legend, unit and timestamp exact.
+Cut from water entry to a fixed underwater camera without claiming same site
 
-CF02 and CF03 use the same documented geographic extent or a clear cut.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject false multisensor simultaneity
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reject if this constraint is violated: One rosette and taut connected hoist; cage rigid and vertical.
+- Reject if this constraint is violated: Cable pays out continuously; splash/ripples proportional to cage entry.
+- Reject if this constraint is violated: Crew remain clear with life jackets/helmets.
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## MAIN-AI — AI 분석
 
-- start — `docs/redesign-next/keyframes/CF03-start.png`
-- middle — `docs/redesign-next/keyframes/CF03-middle.png`
-- end — `docs/redesign-next/keyframes/CF03-end.png`
-- candidate — `docs/redesign-next/renders/CF03-take01.mp4`
-- review — `docs/redesign-next/reviews/CF03-take01.json`
+main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## CF04 — 검증된 AI 영상분석
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 14–18초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+Every target stays linked to one box and one silhouette mask
 
-실제 원영상과 실제 모델 출력을 한 사례로 읽게 한다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- [company-evidence](../../docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need releasable source video, model output and class definitions
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique TWO-fish pair; business five-fish and homepage jellyfish stay unchanged
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 원영상의 분석 대상
-- 중간 — 원본과 정합된 mask 또는 box
-- 종료 — 결과를 1초 이상 유지
+- 시작 — Two separated fish with complete boxes and silhouette masks
+- 전개 — Fish swim one body length in separate bands; annotations follow
+- 종료 — Different fish positions with all corresponding annotations still aligned
+- 카메라 — Fixed underwater camera is method-appropriate; fish travel and native annotation tracking provide the action.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 원영상의 분석 대상
-FRAME MIDDLE: 원본과 정합된 mask 또는 box
-FRAME END: 결과를 1초 이상 유지
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use the source video as the sole scene. No synthetic detection result.
+Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Fixed temperate underwater camera over sand. Exactly two plausible silver-grey fish, complete bodies visible: A in upper-left-middle facing right; B in lower-centre-right facing left. Both have clear swimming room and stay far from frame edges. Each fish carries exactly one thin complete blue box with modest margin and one faint blue silhouette mask including fins and tail. No other animals. Fish and analyses are prominent, not tiny. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-The camera is stable while the verified output appears.
+Six seconds. Fish A swims rightward one body length in the upper band; fish B swims leftward one body length in the separate lower band, propelled by natural tail beats. Exactly two native boxes and two silhouette masks continuously follow their corresponding fish, including every fin and tail, in every frame including first and last. Keep all subjects in frame and camera fixed. No extra targets, detached/static annotations, text or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Overlay only checked instance segmentation or detection data from the same model and frames.
+Clear cut from organism analysis to intentional numerical-model CG
 
-Do not merge marine-life boxes with trash masks.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject fabricated predictions or false positives concealed as truth
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reject if this constraint is violated: Exactly2fish,2boxes,2masks in all frames.
+- Reject if this constraint is violated: No target crossing, shape distortion or frame exit.
+- Reject if this constraint is violated: No static or detached annotations; reject rather than repair.
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## MAIN-MODEL — 수치예측
 
-- start — `docs/redesign-next/keyframes/CF04-start.png`
-- middle — `docs/redesign-next/keyframes/CF04-middle.png`
-- end — `docs/redesign-next/keyframes/CF04-end.png`
-- candidate — `docs/redesign-next/renders/CF04-take01.mp4`
-- review — `docs/redesign-next/reviews/CF04-take01.json`
+main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## CF05 — 해수욕장 드론 조사
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 18–22초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+A changing model-field distribution on unchanged geography
 
-현실 해안의 넓은 비행 장면에서 정사영상 제작 맥락을 보여준다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- [company-brochure](../../docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need dated drone source, orthophoto and matching location
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — parent-browser-qa-passed-editorial-model-introduction; original-download-and-pixel-qa-pending
+- candidateNumber — 9
+- sourceConversation — https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611
+- localDownload — original-missing
+- pixelReview — pending
+- preserveCandidate — true
+- currentViewerLabel — Generated image7
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 실제 해수욕장·해안 항공 뷰
-- 중간 — 드론 비행방향을 따라 해빈이 보임
-- 종료 — 동일 장소 정사영상으로 컷
+- 시작 — Use the candidate's existing river-estuary-sea mesh, arrows and teal field as the initial distribution, without substituting a different map or adding a section panel.
+- 전개 — 0-2s the existing upstream portion advects toward the estuary;2-4s the mouth/front widens into the open-water domain;4-6s the leading field extends farther toward the left-side sea and becomes broader and more diffuse. The spatial extent and concentration distribution change visibly.
+- 종료 — A visibly larger and differently distributed coastal/offshore field compared with the first frame, while every shore, sandbar, marsh and mesh location remains fixed.
+- 카메라 — A restrained broad oblique move may support spatial reading, but the entire connected river-estuary-sea domain remains inside frame. Camera motion alone does not satisfy the shot.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 실제 해수욕장·해안 항공 뷰
-FRAME MIDDLE: 드론 비행방향을 따라 해빈이 보임
-FRAME END: 동일 장소 정사영상으로 컷
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use actual licensed coastal drone footage; generated camera interpolation is a candidate only after reference frames match.
+Native ChatGPT original16:9 explanatory numerical-model scene, matching the selected reference direction: a continuous river from upper-right through a natural estuary with coherent marshes and sandbars to the sea on the left. Fine triangular cells near shore and coarser cells offshore are restricted to water. Restrained white flow arrows point consistently downstream and outward. A translucent teal dispersion field is integrated into the water surface. Preserve realistic connected terrain and make every water-domain element readable within the complete frame. No actual place identity, claimed calculation, numerical legend or extra section inset. All analysis graphics must be generated natively. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-One slow forward drone path at credible height.
+Six-second accelerated explanatory model evolution from the supplied river-estuary-sea image. First the existing upstream teal field advects toward the mouth. Then its front widens and spreads from the estuary into open water. Finally the leading field extends farther toward the left-side sea, becoming broader and more diffuse so its extent and distribution clearly differ from the first frame. Keep terrain, marshes, sandbars, shoreline and water-only mesh fixed. Existing white arrows remain coherently downstream and seaward. Preserve connected water boundaries; no land spill, disconnected tracer, new panels, numbers or sound. Any restrained broad camera move only supports the evolving field; a camera-only result fails. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Correct orthophoto and DEM are source overlays, never invented imagery.
+Cut from intentional model CG to a compatible real-terrain view; spatial point-cloud/surface construction closes the film at broad scale.
 
-Different location from CF04 requires an editorial cut.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject drone scanning deep seabed
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reject if this constraint is violated: Mesh remains confined to water and unchanged in position; shore-fine/offshore-coarse structure is preserved.
+- Reject if this constraint is violated: White arrows stay coherently oriented from upstream through the estuary toward open sea.
+- Reject if this constraint is violated: Teal field changes smoothly by transport and dispersion within connected wet areas; it never crosses dry land, teleports or appears as disconnected patches.
+- Reject if this constraint is violated: This is an accelerated explanatory sequence, not actual calculated output or literal6-second real transport.
+- Reject if this constraint is violated: No new section panels, numbers, labels or postproduction graphical additions.
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## MAIN-SPATIAL — 공간정보 구축
 
-- start — `docs/redesign-next/keyframes/CF05-start.png`
-- middle — `docs/redesign-next/keyframes/CF05-middle.png`
-- end — `docs/redesign-next/keyframes/CF05-end.png`
-- candidate — `docs/redesign-next/renders/CF05-take01.mp4`
-- review — `docs/redesign-next/reviews/CF05-take01.json`
+main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-### 실제 생성하고 검수한 이미지
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+Legible shape/elevation product suitable for mapping and spatial review
 
-- [CF05_WIDE](../../dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png) — selected-concept-still
-  - 검수 — 원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조
-  - 다음 모션 — 4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-## CF06 — 해안선 변화와 조사 범위
+### 근거와 원본 상태
 
-편집 22–27초 / 5초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native start/end pair required. The final wide view must depict the same terrain and features, not invented geometry beyond an unrelated starting image.
 
-해안선·해빈 단면과 수중 조사 영역의 경계를 분명히 한다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — A broad real-looking coastal and inland terrain view with coherent roads, bluff, low structures and a wide water boundary; a sparse registered point cloud is ready to resolve on the same visible surface.
+- 전개 — 0-2s the fixed real-world features become represented by a denser registered natural-colour point cloud; 2-4s that point cloud resolves into a continuous corresponding surface; 4-6s the camera rises and pulls back to reveal the broader connected land-and-water extent.
+- 종료 — A wide geographic closing view: the constructed surface remains visibly tied to real terrain, roads and coastline, with a readable regional extent rather than a desk or isolated floating model.
+- 카메라 — Begin at a broad oblique survey view, hold enough registration to read point-cloud-to-surface construction, then smoothly ascend and pull back to a wider regional framing. Reconstruction is the action; camera widening supplies the ending scale.
 
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- [company-evidence](../../docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need matched survey dates and shoreline geometry
-
-### 구도
-
-- 시작 — 실제 정사영상과 해안선
-- 중간 — 검증된 다른 시기 해안선 또는 단면
-- 종료 — 조사선 측선으로 컷
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 실제 정사영상과 해안선
-FRAME MIDDLE: 검증된 다른 시기 해안선 또는 단면
-FRAME END: 조사선 측선으로 컷
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Do not invent shoreline change or point clouds. Use source maps only.
+Create a high-quality original16:9 using native ChatGPT image generation. A broad oblique view of a plausible temperate Korean coast extending inland through a low wooded bluff, a modest road and ordinary low-rise structures. Sea, continuous shoreline and inland extent stay connected in one real-looking landscape. This is the FIRST construction state: most terrain is photographic, with a restrained sparse natural-colour point cloud precisely registered on one central bluff/road area. All points describe actual visible surface features, not decoration. Leave enough broad surrounding land and water for a later wider closing view. No isolated model plinth, floating land slab, scan beam, invented numbers, logos or purported measured result. Generate all analytical graphics natively. Fictional explanatory survey concept; highest available original download.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Measured camera move over actual orthophoto.
+Six-second geospatial construction sequence on the supplied unchanged landscape. First, a registered natural-colour point cloud becomes denser over the same bluff, road and structures. Then those points resolve into a continuous corresponding surface without changing any terrain or building shape. During the final two seconds ascend and pull back smoothly, revealing a broader connected coastal-and-inland extent while the reconstructed area remains registered and readable. End on the expansive geographic view. The surface construction is the central action, not camera motion alone. No floating terrain, arbitrary particles, scan beams, new buildings, invented values, text or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Separate beach DEM from bathymetric survey. Preserve date, datum and units.
+Cut from the model-domain scene to a real terrain view with compatible shoreline orientation. Finish wide and use a simple cut or short dissolve back to the opening regional satellite scene.
 
-Use a visible cut to CF07 marine survey.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject morphing unmatched coastlines
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reject if this constraint is violated: Natural terrain, roads, roofs and coastline stay in identical coordinates across photographic, point-cloud and surface representations.
+- Reject if this constraint is violated: Point density and surface continuity change; physical topography and building shapes do not morph.
+- Reject if this constraint is violated: A surface model may follow visible roofs and vegetation; do not claim validated bare-earth DEM or survey accuracy.
+- Reject if this constraint is violated: No floating terrain slabs, undersea cliff walls, scan beams or particles unrelated to actual surface points.
+- Reject if this constraint is violated: All point-cloud and surface graphics originate inside the generated image/video.
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-AI — 인공지능
 
-- start — `docs/redesign-next/keyframes/CF06-start.png`
-- middle — `docs/redesign-next/keyframes/CF06-middle.png`
-- end — `docs/redesign-next/keyframes/CF06-end.png`
-- candidate — `docs/redesign-next/renders/CF06-take01.mp4`
-- review — `docs/redesign-next/reviews/CF06-take01.json`
+expertise-ai / still / 확정 정지 · 영상 길이 미정
 
-### 실제 원본 대조에서 발견한 제한
+상태 **accepted-still** / generationReady **false** / generationAllowed **false**
 
-제조사 현행 RBRsolo³ Tu는 Seapoint 탁도 센서 계열 / 회사 과거 페이지의 수온계와 동일 제품임을 확인하지 못함 / 명칭만으로 생성 참조를 선택하지 않음
+Every target stays linked to one box and one silhouette mask
 
-- 원본 — [회사 보존 자료](../../docs/redesign-production/equipment-sources/originals/rbr-solo-tu-page-thumbnail.png)
-- 제조사 — [제품 안내](https://rbr-global.com/products/compact-loggers/rbrsolo-do-tu-par/)
+- 출처 — native-chatgpt-concept
+- 원본 — [로컬 보존 파일](../../media-source/editorial/ai-jellyfish-native-20260929.png)
+- 검수 웹 이미지 — [WebP](../../dist/assets/editorial/ai-jellyfish-native-20260929.webp)
 
-## CF07 — 멀티빔 해저지형 조사
+### 근거와 원본 상태
 
-편집 27–32초 / 5초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ai-jellyfish-native-20260929](../../media-source/editorial/ai-jellyfish-native-20260929.png) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — accepted-editorial-concept-still
+- width — 1672
+- height — 941
+- sha256 — d748b6ba5cc2239c8413a1245098dbb623e455cc4f23c756f19afc4415f49eb4
 
-조사선 항해와 멀티빔 수심자료의 관계를 설명한다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — Four distinct moon-jellyfish forms with disk-shaped bells, visible four-lobed gonads and short oral arms. All four boxes enclose the corresponding organism. Blue contours and translucent masks follow all four silhouettes. No unboxed organisms or empty-water boxes. Natural underwater background. Parent independently inspected the original
+- 전개 — Retain the accepted complete still; no automatic zoom/shake.
+- 종료 — Same final still; do not imply accepted tracking or a completed video.
 
-- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need vessel footage, sensor mounting and releasable bathymetry
-
-### 구도
-
-- 시작 — 넓은 해역 속 실제 조사선
-- 중간 — 선저 음향 부채꼴 설명 도식
-- 종료 — 실제 측선·수심점이 지형도로 구성
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 넓은 해역 속 실제 조사선
-FRAME MIDDLE: 선저 음향 부채꼴 설명 도식
-FRAME END: 실제 측선·수심점이 지형도로 구성
+### 검수 정지 보존 지시
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
-
-Real vessel photo or video and sensor geometry required. Do not generate branded vessel details.
+Preserve the reviewed native ChatGPT original unchanged. All internal boxes, masks or analysis marks are already in the original. No new generation or postproduction graphics.
 ```
 
-### 모션 지시
+### 영상 전환 상태
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
-
-Track survey vessel slowly; fixed transducer relation and credible wake.
+No video submission. Keep final still. For jellyfish, the same-input paid video retry remains prohibited.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Sonar fan is a separate transparent explanatory graphic; bathymetry pixels are actual source data.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-CF06 shoreline mapping and CF07 depth mapping remain distinct.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — Still semantics and every depicted target/graphic remain coherent.
+- result — No implied video or measured-result acceptance.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject luminous underwater light or fake depth values
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Same-shot jellyfish video retry
+- Reuses business five-fish or main AI input
+- Adds meaningless pan/zoom or video-production badge to a final still
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-MODEL — 하천·호소의 수질 분포
 
-- start — `docs/redesign-next/keyframes/CF07-start.png`
-- middle — `docs/redesign-next/keyframes/CF07-middle.png`
-- end — `docs/redesign-next/keyframes/CF07-end.png`
-- candidate — `docs/redesign-next/renders/CF07-take01.mp4`
-- review — `docs/redesign-next/reviews/CF07-take01.json`
+expertise-modelling / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-### 실제 생성하고 검수한 이미지
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+메인 하구와 다른 내륙 수계에서 유동·확산의 시간 변화를 설명
 
-- [CF07](../../dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png) — selected-concept-still
-  - 검수 — 회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지
-  - 다음 모션 — 4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-## CF08 — ADCP와 부이 관측
+### 근거와 원본 상태
 
-편집 32–36초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-수층별 유속과 부이 시계열을 각각의 관측으로 짧게 보여준다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — Distinct inland river entering a lake; compact tracer near the inflow, fitted water-only mesh.
+- 전개 — Tracer follows the inflow path and broadens within the lake circulation.
+- 종료 — Broader diluted lake distribution on the same terrain and mesh.
 
-- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need ADCP data and buoy footage with mooring configuration
-
-### 구도
-
-- 시작 — 실제 관측 해역
-- 중간 — ADCP 수층 유속 도식
-- 종료 — 실제 부이 점검·설치 장면으로 컷
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 실제 관측 해역
-FRAME MIDDLE: ADCP 수층 유속 도식
-FRAME END: 실제 부이 점검·설치 장면으로 컷
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use actual instrument and buoy reference; generation may supply only nontechnical ocean background.
+Create a unique native16:9 inland river/lake modelling concept, not the main estuary. Coherent banks and hills, restrained fitted water-only computational mesh and compact initial teal tracer at the river inflow. No impossible dam/weir. Show the whole connected domain. All graphics native; no calculated-value claims.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-One calm field move, then an explicit cut to the buoy.
+Six-second accelerated model concept: inflow tracer moves into the lake, spreads with coherent circulation and dilutes. Preserve all terrain and mesh; no dry-land spill or teleportation. Camera motion alone is insufficient.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Velocity vectors and buoy observations use separate source-verified legends and dates.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-Keep ADCP separate from CF07 depth soundings.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject invented mooring and confused depth-current graphic
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Reuses main model source or detail AX estuary
+- Tracer crosses dry ground or terrain changes
+- Only camera/colour flicker changes
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-SATELLITE — 위성 수환경 분석
 
-- start — `docs/redesign-next/keyframes/CF08-start.png`
-- middle — `docs/redesign-next/keyframes/CF08-middle.png`
-- end — `docs/redesign-next/keyframes/CF08-end.png`
-- candidate — `docs/redesign-next/renders/CF08-take01.mp4`
-- review — `docs/redesign-next/reviews/CF08-take01.json`
+expertise-satellite / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## CF09 — 채수와 환경화학 분석
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 36–41초 / 5초 / source-composite / evidence-mapped-source-frames-pending
+메인 광역 연안과 다른 호소 위성영상에서 입력 밴드와 수환경 층의 관계를 표현
 
-시료 채취에서 한 가지 분석기로 이어지는 과정을 보여준다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [company-brochure](../../docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need sample/lab releases and analyte-instrument mapping
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 수역 현장의 실제 시료 채취
-- 중간 — 시료 밀봉·준비
-- 종료 — 실제 ICP-MS 또는 영양염 분석기
+- 시작 — Orthographic satellite view of a distinct inland lake with coherent true-colour land and a same-area spectral inset.
+- 전개 — A restrained environmental layer resolves only over valid lake pixels.
+- 종료 — Matched raw and derived views remain legible with cloud/no-data preserved.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 수역 현장의 실제 시료 채취
-FRAME MIDDLE: 시료 밀봉·준비
-FRAME END: 실제 ICP-MS 또는 영양염 분석기
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use documented field and lab footage. Generative footage only when no false GeoSR lab identity is implied.
+New unique native16:9 satellite-data view of an inland lake and catchment. Orthographic raster texture, matching small spectral inset and a restrained incipient water-environment layer. Not a perspective drone image. No spacecraft or scan beam. Do not reuse main coastal satellite input or claim measured values.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Edit three distinct actions; no implausible continuous morph.
+Six seconds: the spectral/true-colour data resolve into a shore-aligned water-environment layer over the lake, then settle into clearly corresponding raw/derived views. Cloud/no-data stays unclassified. Keep geography fixed; no fake numbers or camera-only motion.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Match sample type to assay and remove private sample labels.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-The sample process follows field observation without implying same site if unverified.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject fake lab measurement or incorrect instrument
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generic aerial scenery with no data relationship
+- Shares main satellite source
+- Derived field crosses land or invents cloud-covered observations
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-SPATIAL — 공간정보·측량
 
-- start — `docs/redesign-next/keyframes/CF09-start.png`
-- middle — `docs/redesign-next/keyframes/CF09-middle.png`
-- end — `docs/redesign-next/keyframes/CF09-end.png`
-- candidate — `docs/redesign-next/renders/CF09-take01.mp4`
-- review — `docs/redesign-next/reviews/CF09-take01.json`
+expertise-spatial / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## CF10 — 갯벌 생태와 블루카본 조사
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 41–45초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+Legible shape/elevation product suitable for mapping and spatial review
 
-넓은 실제 갯벌·염습지와 현장 조사구를 연결한다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [company-brochure](../../docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need real field photos and sampling method
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 갯벌·염습지 광역 실사
-- 중간 — 방형구 또는 식생 조사
-- 종료 — 조사 지점 지도로 종료
+- 시작 — One concrete coastal bluff/road object in matched photogrammetry, point-cloud and terrain representations; prepared before the selected action.
+- 전개 — Point cloud densifies on fixed geometry; a continuous surface resolves from it
+- 종료 — Legible shape/elevation product suitable for mapping and spatial review
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 갯벌·염습지 광역 실사
-FRAME MIDDLE: 방형구 또는 식생 조사
-FRAME END: 조사 지점 지도로 종료
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use a real dated intertidal scene. Generated motion may only stabilize a source-led environmental transition.
+Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A surveyed temperate coastal bluff, one ordinary road and modest dry-land structures form a large coherent central terrain object. One side is a complete sparse natural-colour point cloud registered exactly to each feature; the other is a matte terrain surface of that same object. Two small aligned panels show its orthophoto and elevation rendering. Plausible continuous geometry, clean neutral scientific presentation. No floating land slab, spacecraft, laser beam or arbitrary cliff wall. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Slow elevated movement maintaining tide and light continuity.
+Six seconds. The registered natural-colour point cloud gains density on unchanged terrain. Then a connected clean terrain surface resolves from those same points while the matching ortho/elevation panels remain registered. A shallow lateral camera move reveals relief. No terrain morphing, invented buildings, scan beams, numbers or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Do not overlay species, carbon flux or habitat area without source data.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-A clear cut separates laboratory and ecosystem field scenes.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject invented species or carbon number
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Do not substitute satellite water-quality imagery; point cloud, orthophoto and terrain must correspond.
+- Exact source or clip duplicates main/company/AX assets
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-OBSERVATION — 무인선 조사와 탐사 단면
 
-- start — `docs/redesign-next/keyframes/CF10-start.png`
-- middle — `docs/redesign-next/keyframes/CF10-middle.png`
-- end — `docs/redesign-next/keyframes/CF10-end.png`
-- candidate — `docs/redesign-next/renders/CF10-take01.mp4`
-- review — `docs/redesign-next/reviews/CF10-take01.json`
+expertise-observation / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-### 실제 생성하고 검수한 이미지
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+CTD 메인 장면과 구별되는 하천 무인선 자료 취득을 보여줌
 
-- [CF10](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png) — selected-concept-still
-  - 검수 — 사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음
-  - 다음 모션 — 4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업
-- [CF10_END](../../dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png) — selected-alternate-still-not-continuity-pair
-  - 검수 — 별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음
-  - 다음 모션 — wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-## CF11 — 유동과 입자 확산 모델
+### 근거와 원본 상태
 
-편집 45–50초 / 5초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [usv](../../dist/assets/equipment-usv-original.png) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [brochure-review](../../docs/company-audit/brochure-review.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-실제 지형·관측 입력에서 하나의 변수별 모델 결과를 보여준다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — A modest plausible survey USV on a straight river transect; one quiet native acoustic-return panel begins at the current survey position.
+- 전개 — USV advances steadily with a proportional wake while acoustic-return columns accumulate in sequence.
+- 종료 — A readable continuous survey section and vessel progress remain in geographic context.
 
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need releasable model output with variables and timestamps
-
-### 구도
-
-- 시작 — 연안 지형·관측 입력
-- 중간 — 계산 격자와 한 변수의 결과
-- 종료 — 시간 변화가 읽히는 장면
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 연안 지형·관측 입력
-FRAME MIDDLE: 계산 격자와 한 변수의 결과
-FRAME END: 시간 변화가 읽히는 장면
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use an atmospheric real-world coastal plate only. Model grid and result are source composites.
+Unique native16:9 river survey scene with a plausible small USV, ordinary banks and a clear survey route. Use documented company USV/equipment evidence for proportions, not a claimed photograph. A restrained native inset shows qualitative acoustic returns from the same survey, without numerical depth or velocity labels. Whole vessel, wake and inset fit the frame. Do not reuse main CTD image.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Keep camera nearly fixed while verified time steps change.
+Six seconds: the USV advances along one straight survey line, producing a physically proportionate wake; its native acoustic-return section accumulates consecutively with survey progress. Preserve hull and sensor geometry. No emitted visible sonar laser, fabricated measurements or unrelated data panel.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Preserve land mask, time, units, run identity and legend.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-CF10 and CF11 relate through environmental question, not fake direct causality.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject generic glowing particle field as prediction
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Hull/sensor shape changes
+- Wake does not follow vessel motion
+- Acoustic return is mislabeled as velocity or fabricated measured bathymetry
+- Uses CTD source
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-ENVIRONMENT — 환경분석·생태
 
-- start — `docs/redesign-next/keyframes/CF11-start.png`
-- middle — `docs/redesign-next/keyframes/CF11-middle.png`
-- end — `docs/redesign-next/keyframes/CF11-end.png`
-- candidate — `docs/redesign-next/renders/CF11-take01.mp4`
-- review — `docs/redesign-next/reviews/CF11-take01.json`
+expertise-environment / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-### 실제 생성하고 검수한 이미지
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+A concrete environmental/ecological sample in field context
 
-- [CF11_FIX](../../dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png) — selected-concept-still
-  - 검수 — 대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인
-  - 다음 모션 — 4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-## CF12 — 연안재해와 시계열 예측
+### 근거와 원본 상태
 
-편집 50–56초 / 6초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-파랑·해일·강우 조건의 실제 예측/검증 관계를 보여준다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — Saltmarsh survey quadrat and intact sediment core, with separate lab evidence; prepared before the selected action.
+- 전개 — Physical sampling preserves layers; specimen detail connects sediment/roots to investigation
+- 종료 — A concrete environmental/ecological sample in field context
 
-- [data](../../docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json) — 후보 또는 근거이며 최종 합격 아님
-- [source-archive](../../dist/source-archive.json) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need approved scenario and validation plot
-
-### 구도
-
-- 시작 — 실제 해안과 입력 조건
-- 중간 — 검증된 한 시나리오의 범위 변화
-- 종료 — 그래프와 공간 결과가 같이 읽힘
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 실제 해안과 입력 조건
-FRAME MIDDLE: 검증된 한 시나리오의 범위 변화
-FRAME END: 그래프와 공간 결과가 같이 읽힘
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Real coast footage may underpin the scene; all hazard/model information is authentic post-production.
+Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Documentary temperate Korean saltmarsh field scene. A survey quadrat rests naturally over low salt-tolerant plants and wet sediment beside one freshly recovered transparent sediment core held upright in a proper simple support. Core preserves plausible horizontal mud layers and fine roots. Sample and quadrat are large clear subjects, tidal-flat context behind. One small native inset magnifies the SAME core layers. No tropical reef, decorative forest, rainbow strata or laboratory people. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-One slow pull-back reveals temporal result.
+Optional six-second clip only with an extraction-ready native start image: gloved field hands withdraw one intact vertical sediment core smoothly from wet ground, then support it upright without mixing its strata. A little exterior water drains naturally; quadrat and surrounding plants stay stable. Native sample inset retains the same layer order. No duplicated hands, manufactured layers, labels or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Label scenario, forecast time, variable, vertical datum and verification clearly.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-Model prediction is not footage of an occurred disaster.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject false live observation or fabricated inundation
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Do not animate a completed core as if still buried. A strong still is valid; no mandatory video quantity.
+- Exact source or clip duplicates main/company/AX assets
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-HAZARDS — 연안재해·방재
 
-- start — `docs/redesign-next/keyframes/CF12-start.png`
-- middle — `docs/redesign-next/keyframes/CF12-middle.png`
-- end — `docs/redesign-next/keyframes/CF12-end.png`
-- candidate — `docs/redesign-next/renders/CF12-take01.mp4`
-- review — `docs/redesign-next/reviews/CF12-take01.json`
+expertise-hazards / still / 확정 정지 · 영상 길이 미정
 
-### 실제 생성하고 검수한 이미지
+상태 **accepted-still** / generationReady **false** / generationAllowed **false**
 
-이미지 후보 채택은 영상 합격이나 연속 프레임 승인과 다름
+Coastal target and derived monitoring result are visibly linked
 
-- [CF12_WAVE](../../dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png) — selected-concept-still
-  - 검수 — 파랑의 연속된 자유수면과 그 표면을 따르는 국소 격자를 육안 확인 / 네온·가상 항구·허구 지형 없음 / 절단면은 개념적 도식이며 실제 물탱크나 특정 해역을 뜻하지 않음 / 격자는 생성형 설명 요소로 실제 모델 격자·결과·경계조건 검증 자료가 아님
-  - 다음 모션 — 4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체
+- 출처 — native-chatgpt-concept
+- 원본 — [로컬 보존 파일](../../media-source/editorial/coastal-monitoring-native-20260929.png)
+- 검수 웹 이미지 — [WebP](../../dist/assets/editorial/coastal-monitoring-native-20260929.webp)
 
-## CF13 — 광역 연안으로 귀환
+### 근거와 원본 상태
 
-편집 56–60초 / 4초 / source-composite / evidence-mapped-source-frames-pending
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [coastal-monitoring-native-20260929](../../media-source/editorial/coastal-monitoring-native-20260929.png) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — accepted-editorial-concept-still
+- width — 1672
+- height — 941
+- sha256 — 0554d53a0830a93886380253b310bf4a42f77fea0798734635dc6b0bba0f1c62
 
-예측 장면을 정리하고 첫 실제 연안 화면으로 돌아온다
+### 시작·전개·종료
 
-### 참조와 남은 확인
+- 시작 — Continuous gently curving sandy coastline with natural surf, coherent land-water relationship, plausible low-rise town and road on dry land. No impossible breakwaters or offshore structures. Thin blue boundary line tracks the swash edge. All perspective scales plausible at original resolution.
+- 전개 — Retain the accepted complete still; no automatic zoom/shake.
+- 종료 — Same final still; do not imply accepted tracking or a completed video.
 
-- [coastal-hero](../../dist/assets/geosr-brochure-coast-2025.jpg) — 후보 또는 근거이며 최종 합격 아님
-- [company-evidence](../../docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — Need matching opening coastal source and approved CF12 ending frame
-
-### 구도
-
-- 시작 — CF12의 실제 예측 결과가 마무리되는 장면
-- 중간 — 출처가 확인된 광역 연안 영상으로 편집 컷
-- 종료 — CF01과 같은 실제 연안 뷰로 귀환
-
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: CF12의 실제 예측 결과가 마무리되는 장면
-FRAME MIDDLE: 출처가 확인된 광역 연안 영상으로 편집 컷
-FRAME END: CF01과 같은 실제 연안 뷰로 귀환
+### 검수 정지 보존 지시
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
-
-Return to the same documented coastal footage used at opening. No platform UI in the company film.
+Preserve the reviewed native ChatGPT original unchanged. All internal boxes, masks or analysis marks are already in the original. No new generation or postproduction graphics.
 ```
 
-### 모션 지시
+### 영상 전환 상태
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
-
-Use a clean editorial match cut to the opening footage.
+No video submission. Keep final still. For jellyfish, the same-input paid video retry remains prohibited.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Keep forecast data on its source frame and the final title in HTML. AX and GeoDAP UI belong only in their separate films.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-Final geography and direction match CF01 for a true web loop.
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — Still semantics and every depicted target/graphic remain coherent.
+- result — No implied video or measured-result acceptance.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- Reject platform UI collage or inconsistent coast
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Same-shot jellyfish video retry
+- Reuses business five-fish or main AI input
+- Adds meaningless pan/zoom or video-production badge to a final still
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## EXP-SYSTEMS — 데이터·시스템
 
-- start — `docs/redesign-next/keyframes/CF13-start.png`
-- middle — `docs/redesign-next/keyframes/CF13-middle.png`
-- end — `docs/redesign-next/keyframes/CF13-end.png`
-- candidate — `docs/redesign-next/renders/CF13-take01.mp4`
-- review — `docs/redesign-next/reviews/CF13-take01.json`
+expertise-systems / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## AX01 — 실제 해역에서 AX 화면으로
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 0–6초 / 6초 / source-composite / actual-ui-capture-pending
+Data support a specific spatial review task
 
-현실 해역의 규모에서 직원 제작 AX 갤러리의 실제 화면으로 진입한다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [coastal-hero](../../dist/assets/geosr-brochure-coast-2025.jpg) — 후보 또는 근거이며 최종 합격 아님
-- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 첫 해역 원본의 장소·권리·1080p 확인
-- 확인 필요 — 직원 AX 갤러리 1920×1080 실제 녹화
-- 확인 필요 — 제품 화면의 공개 가능 상태 확인
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — not-reviewed
+- requirement — New unique native original required; planned role does not equal approved source.
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 출처를 확인한 실제 광역 해역
-- 중간 — 해역 이미지가 정리되며 실제 AX 제품 화면의 영역이 열림
-- 종료 — 직원 제작 AX 갤러리의 첫 실제 화면이 읽힘
+- 시작 — Physical environmental analysis workstation, logger and a large purposeful map display; prepared before the selected action.
+- 전개 — Observation layer switches to registered model result; relevant review extent becomes focused
+- 종료 — Data support a specific spatial review task
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 출처를 확인한 실제 광역 해역
-FRAME MIDDLE: 해역 이미지가 정리되며 실제 AX 제품 화면의 영역이 열림
-FRAME END: 직원 제작 AX 갤러리의 첫 실제 화면이 읽힘
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use only documented real coastal footage for the opening and direct capture of the employee AX interface. Never generate browser chrome, labels, controls, result pixels or a fictional map.
+Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A precise realistic environmental analysis workstation. Large professional display viewed obliquely but clearly, compact rugged field logger with plausible connected leads beside it. Display shows one coherent river/coast base with two small restrained native panels for observed water coverage and model transport. FIRST state: observation layer selected, model and hypothetical nearshore review region subdued. No person necessary. Screen/bezel/desk/connectors look physical; display60% of frame, logger15%. No fake live timestamps, random charts or purported actual product branding. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Use a restrained editorial transition from the coast to a full-resolution AX screen. Hold the real interface long enough for a viewer to recognize it.
+Six seconds. On the physical display, select the model-result layer in place of the observation layer while retaining identical geography. Then focus one hypothetical nearshore review extent reached by the model field and its matching detail panel, reducing unrelated layers. A short natural camera slide reveals monitor and connected logger. Every screen transition is natively generated and purposeful, not random blinking. No invented metrics, fake branding, new panels or audio.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-The final editor inserts the actual employee-built AX interface as source pixels; any Higgsfield transition is outside the UI boundary. Brand and title remain HTML.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-AX01 종료 화면의 동일한 실제 탐지 화면을 AX02 첫 프레임으로 사용한다
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- 생성된 가짜 UI
-- 지역이나 사업지 오인
-- 제품 첫 화면이 읽히지 않음
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated panels explain concepts only and must not impersonate an actual AX product screen. Detailed product evidence comes from actual provided AX material.
+- Exact source or clip duplicates main/company/AX assets
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## COMPANY-ANALYSIS — 시료 분석의 실제 동작
 
-- start — `docs/redesign-next/keyframes/AX01-start.png`
-- middle — `docs/redesign-next/keyframes/AX01-middle.png`
-- end — `docs/redesign-next/keyframes/AX01-end.png`
-- candidate — `docs/redesign-next/renders/AX01-take01.mp4`
-- review — `docs/redesign-next/reviews/AX01-take01.json`
+company / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## AX02 — 위성영상 탐지 화면
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 6–14초 / 8초 / source-composite / actual-ui-capture-pending
+회사 소개 확장 미디어에 연구 방법이 읽히는 독립적인 실험 장면을 배치
 
-직원 제작 AX의 탐지 기능을 실제 화면 동작과 결과로 보여준다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 탐지 서비스 실제 화면 및 동작 재캡처
-- 확인 필요 — 마스크·시설물 표시의 실제 출처와 공개 여부
-- 확인 필요 — 16:9 글자 가독성 검수
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [brochure-review](../../docs/company-audit/brochure-review.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [equipment](../../docs/redesign-production/equipment-sources/manifest.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 직원 갤러리의 실제 위성영상 탐지 화면
-- 중간 — 실제 슬라이드 또는 레이어 전환을 녹화한 장면
-- 종료 — 검수된 탐지 결과가 화면에 남는 장면
+- 시작 — A realistic automated sample rack and one sampling needle at an environmental-analysis bench, needle raised above a vial.
+- 전개 — Rack settles at one position; needle descends into that same vial.
+- 종료 — Needle retracts and the intact sample rack remains ready for the next sample.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 직원 갤러리의 실제 위성영상 탐지 화면
-FRAME MIDDLE: 실제 슬라이드 또는 레이어 전환을 녹화한 장면
-FRAME END: 검수된 탐지 결과가 화면에 남는 장면
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Record the actual employee-built detection interface at 1920x1080 or higher. Do not synthesize detection masks, facility shapes, labels, confidence or screen controls.
+New native16:9 documentary environmental-analysis bench with a plausible automated liquid sampler, intact sample vials, one connected sampling needle and nearby analytical instrument. No people. Device and sample path read clearly in a complete frame. Neutral light and realistic laboratory materials. No fake results, brand/ownership claim or reuse of the equipment-page laboratory still.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Capture one deliberate real UI interaction and let the resulting screen settle for at least two seconds. Use editorial crop or mask only when the full feature remains understandable.
+Six seconds: the sample rack positions one vial beneath the connected needle; the needle lowers into it, then retracts after sampling. Preserve all vial geometry and physical connections. No floating pipette, extra hands, liquid appearing from nowhere or numeric result display.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Preserve the actual UI pixels and original screen ratio. Higgsfield may provide only an external environmental bridge; do not send the UI frame for regeneration.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-화면 전체가 닫힌 뒤 AX03의 별도 예측 서비스로 컷한다
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- 기존 개념 시설 이미지를 실제 탐지로 오인
-- 생성된 mask·box
-- 화면 일부만 잘라 기능을 알 수 없음
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Device is decorative with no sampling event
+- Needle/vials pass through each other or change shape
+- Repeats equipment lab or main CTD source
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## AX-MAIN-CONCEPT — 같은 공간에 연결되는 자료
 
-- start — `docs/redesign-next/keyframes/AX02-start.png`
-- middle — `docs/redesign-next/keyframes/AX02-middle.png`
-- end — `docs/redesign-next/keyframes/AX02-end.png`
-- candidate — `docs/redesign-next/renders/AX02-take01.mp4`
-- review — `docs/redesign-next/reviews/AX02-take01.json`
+ax-main / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## AX03 — 연안재해 예측 화면
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 14–22초 / 8초 / source-composite / actual-ui-capture-pending
+AX 메인 도입의 공간·자료 관계를 보여주며 실제 제품 갤러리와 역할 구분
 
-직원 제작 AX의 연안재해 예측 화면과 시나리오 전환을 실제 인터페이스로 보여준다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 예측 서비스 실제 화면 및 가능한 조작 확인
-- 확인 필요 — 결과가 시뮬레이션인지 정적 캡처인지 표기
-- 확인 필요 — 지형·범례·시나리오 공개 가능성 확인
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 직원 갤러리의 실제 3D 또는 지도 기반 예측 화면
-- 중간 — 실제 가능한 시나리오·시점 전환의 녹화
-- 종료 — 범례와 결과가 읽히는 정지 프레임
+- 시작 — A unique broad freshwater catchment with registered observation-coverage and model-field concept panels.
+- 전개 — Observation information gives way to a corresponding environmental model layer on the same geography.
+- 종료 — One relevant water-area review region and its linked panel become clear.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 직원 갤러리의 실제 3D 또는 지도 기반 예측 화면
-FRAME MIDDLE: 실제 가능한 시나리오·시점 전환의 녹화
-FRAME END: 범례와 결과가 읽히는 정지 프레임
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Record the real employee-built flood or surge platform screen. Keep its real geography, interface, labels and scenario output unchanged. Generate no replacement water field or Korean text.
+Unique native16:9 broad catchment analysis concept, distinct from main closing terrain and AX detail estuary. Keep the real-looking terrain dominant and fit two restrained native panels showing matching observation coverage and model field. All layers use the same shore/river coordinates. No product controls, fake metrics, branding or claim this is actual AX software.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Show one actual control transition, then hold the result. Keep camera movement outside the screen capture and avoid zooming into unreadable texture.
+Six seconds: switch the same registered catchment from observation coverage to a corresponding environmental model layer, then focus a relevant water-area review extent and matching panel. Preserve terrain and data alignment. No random blinking, floating HUD or postproduction overlay.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Use the captured AX screen as a protected source layer. The film must not imply a validated live forecast if the provided gallery is a static prototype.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-제품 종류가 바뀜을 분명히 한 뒤 AX04 관측 화면으로 편집한다
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- 개념 침수 영상을 실제 예측 결과처럼 사용
-- 가짜 경보 수치
-- 육상 경계가 어긋난 생성 장면
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Copies main or AX detail source
+- Panels do not depict the central geography
+- Generated controls impersonate actual AX UI
+- Only camera zoom changes
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## WAVE-ROCK — 암반 연안의 파쇄와 되밀림
 
-- start — `docs/redesign-next/keyframes/AX03-start.png`
-- middle — `docs/redesign-next/keyframes/AX03-middle.png`
-- end — `docs/redesign-next/keyframes/AX03-end.png`
-- candidate — `docs/redesign-next/renders/AX03-take01.mp4`
-- review — `docs/redesign-next/reviews/AX03-take01.json`
+wave / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## AX04 — 관측 화면
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 22–27초 / 5초 / source-composite / actual-ui-capture-pending
+기술 대표가 아닌 별도 전환 구간에서 물의 움직임을 보여줌
 
-직원 제작 AX의 관측·모니터링 화면을 실제 UI로 보여준다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — 부이·관측 화면 실제 녹화
-- 확인 필요 — 표시된 시간·단위·관측 상태 확인
-- 확인 필요 — 실시간 운영 주장 여부 검토
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — 직원 갤러리의 실제 관측 서비스 화면
-- 중간 — 실제 지점 또는 시간 전환을 녹화한 장면
-- 종료 — 지점과 그래프의 관계가 읽히는 화면
+- 시작 — An unbroken moderate crest approaches a low granite headland, open sea remains broad.
+- 전개 — Crest breaks along fixed rocks and whitewater fans around them.
+- 종료 — Foam drains naturally as the next swell approaches.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: 직원 갤러리의 실제 관측 서비스 화면
-FRAME MIDDLE: 실제 지점 또는 시간 전환을 녹화한 장면
-FRAME END: 지점과 그래프의 관계가 읽히는 화면
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Capture the real monitoring screen from the employee repository. Preserve the displayed map, controls, chart and text exactly; do not fabricate live status or station values.
+New native16:9 wide temperate rocky coast, low granite headland at one side and broad navy open water. A coherent moderate unbroken swell is ready to reach the rocks. Realistic foam/depth/light, no invented structure or disaster spectacle. Unique source, not a main hero or hazards image.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-Use one real pointer or keyboard action to focus a station or time series. Hold the resulting interface without rapid montage.
+Six seconds: the incoming crest reaches the fixed rocky shore, breaks progressively, and the resulting foam spreads then drains back around the same rocks. Natural moderate water movement, no giant storm surge. Keep full coast/wave context visible.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-Source UI remains full-resolution and visually legible. An external transition can be generated but no UI element or value can be regenerated.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-실제 UI의 시각적 연결을 유지하며 AX05의 제품 전체 화면으로 마감한다
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- 가짜 실시간 상태
-- 관측소 위치 단정
-- 그래프 수치 생성
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Only still-image pan or tiny shimmer
+- Water flows through rocks
+- Fake harbour or giant disaster wave
+- Used as a technology explanation
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## WAVE-OPEN — 외해의 이어지는 파면
 
-- start — `docs/redesign-next/keyframes/AX04-start.png`
-- middle — `docs/redesign-next/keyframes/AX04-middle.png`
-- end — `docs/redesign-next/keyframes/AX04-end.png`
-- candidate — `docs/redesign-next/renders/AX04-take01.mp4`
-- review — `docs/redesign-next/reviews/AX04-take01.json`
+wave / video-proposal / 6초 · proposed source seconds, mutable after scene QA
 
-## AX05 — AX 제품 마감
+상태 **original-missing** / generationReady **false** / generationAllowed **false**
 
-편집 27–30초 / 3초 / source-composite / actual-ui-capture-pending
+암반 장면에 연결되는 별도 외해 물성 장면
 
-세 분야의 실제 화면을 정돈해 AX 제품의 별도 영상으로 마무리한다
+- 출처 — planned-native-chatgpt-concept
+- 원본 — **없음 · original-missing**
 
-### 참조와 남은 확인
+### 근거와 원본 상태
 
-- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 후보 또는 근거이며 최종 합격 아님
-- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 후보 또는 근거이며 최종 합격 아님
-- 확인 필요 — AX02–04 합격 FHD 녹화
-- 확인 필요 — 전체 30초 편집과 반복 접합 검토
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [higgsfield-procedure](../../docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
 
-### 구도
+### 시작·전개·종료
 
-- 시작 — AX02–04에서 검수한 실제 화면의 축약된 관계
-- 중간 — 직원 제작 갤러리의 실제 전체 프레임
-- 종료 — 첫 화면과 접합되는 어두운 해역 또는 제품 화면
+- 시작 — Broad open-water swell fronts, coherent horizon and no foreground structure.
+- 전개 — A crest advances and forms sparse wind-driven foam.
+- 종료 — Foam dissipates as the following swell progresses coherently.
 
-### 이미지 또는 원본 합성 지시
-
-아래 공통 지시 뒤에 해당 시작·중간·종료 프레임의 한 줄을 붙여 각각 별도 제작 / 한 이미지에 콘티 격자를 만들지 않음
-
-FRAME START: AX02–04에서 검수한 실제 화면의 축약된 관계
-FRAME MIDDLE: 직원 제작 갤러리의 실제 전체 프레임
-FRAME END: 첫 화면과 접합되는 어두운 해역 또는 제품 화면
+### 원본 이미지 설계 문안 · 접수 승인 아님
 
 ```text
-Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
 
-Use only the three recorded employee-built screens. Do not generate a new unified dashboard or imply automatic data exchange between products.
+New native16:9 open temperate sea with clear moderate navy swell fronts and sparse realistic foam; broad horizon, natural light and no vessel, structure or graphics. Different source and angle from rocky transition shot.
 ```
 
-### 모션 지시
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
 
 ```text
-One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
 
-A calm three-second editorial close with readable actual screen. Match brightness and direction to AX01 for the web loop.
+Six seconds: coherent swell fronts travel across the view, one crest forms sparse foam and that foam dissipates naturally as the next wave advances. Stable horizon and physically consistent wave direction. The water action, not camera movement, carries the scene.
 ```
 
-### 후반 합성과 연결
+### 연결과 의미 검수
 
-All product labels are source UI or editable postproduction layers. Deliver AX as a separate 30-second 1080p file after full-film review.
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
 
-AX05 종료 화면의 밝기와 동작 방향을 AX01 시작 화면에 맞춰 반복 접합을 확인한다
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
 
-### 금지 및 재작업 조건
+### 제외 조건
 
-- No copied Allforland footage or design
-- No invented Korean coastline, city, harbor, beach or implied GeoSR site
-- No laser-like satellite or underwater sonar beams presented as observed light
-- No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI
-- No mixing multibeam depth with ADCP velocity or scenario forecasts with observations
-- No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus
-- No previously rejected coastal-estuary concept poster as an input frame
-- 새 통합 대시보드 발명
-- 세 기능의 자동 연동 암시
-- 루프 점프
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Static photo merely zooms
+- Waves move in contradictory directions
+- Storm/structure added
+- Same source as rocky clip
 
-### 계획 산출물 — 아직 생성된 파일이 아님
+## AX-DETAIL-FLOW — AX 상세 공간분석 도입
 
-- start — `docs/redesign-next/keyframes/AX05-start.png`
-- middle — `docs/redesign-next/keyframes/AX05-middle.png`
-- end — `docs/redesign-next/keyframes/AX05-end.png`
-- candidate — `docs/redesign-next/renders/AX05-take01.mp4`
-- review — `docs/redesign-next/reviews/AX05-take01.json`
+ax-detail / image-to-video / 6초 · one authorized6s derivative attempt; accepted still remains until video passes QA
+
+상태 **source-reviewed-awaiting-reference-upload** / generationReady **false** / generationAllowed **true**
+
+메인 AX 및 메인 모델과 중복하지 않는 검수 정지 소개
+
+- 출처 — native-chatgpt-concept
+- 원본 — [로컬 보존 파일](../../media-source/editorial/ax-estuary-analysis-native-20260929.png)
+- 검수 웹 이미지 — [WebP](../../dist/assets/editorial/ax-estuary-analysis-native-20260929.webp)
+
+### 근거와 원본 상태
+
+- [company-technology-audit](../../docs/company-audit/technology-analysis.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [presentation-direction](../../docs/company-audit/presentation-direction.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [native-handoff](../../media-source/editorial/media-production-handoff.json) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-estuary-analysis-native-20260929](../../media-source/editorial/ax-estuary-analysis-native-20260929.png) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+
+### 시작·전개·종료
+
+- 시작 — Preserve original terrain, native water mesh and compact bright river-mouth plume.
+- 전개 — Continuous plume extends farther offshore from river mouth, remaining connected to inflow.
+- 종료 — Clearly broader offshore footprint and softened diluted margins; terrain and water-only mesh fixed.
+
+### 원본 이미지 설계 문안 · 접수 승인 아님
+
+```text
+Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.
+
+Use the unchanged vetted native AX estuary original with existing water-only mesh and plume. Preserve its original first frame; no new source or postproduction graphics.
+```
+
+### 영상 설계 문안 · 원본과 동작 검수 후 개별 접수
+
+```text
+Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.
+
+Use the supplied original image as the exact first frame. Create one 6-second 16:9 scientific editorial shot of this SAME river estuary and its already visible cyan numerical-model mesh and turquoise concentration field. Subject: an illustrative water-quality plume being advected from the river into the open sea. The terrain, coast, sandbars, bridge, roads, fields and computational mesh stay geometrically fixed and registered to the original throughout; this is an evolving model field on a fixed geographic domain. At 0 seconds preserve the original compact bright plume at the river mouth. From 0 to 3 seconds a continuous supply travels down the existing river channel from upper left, exits the mouth toward the right and smoothly pushes the plume's leading edge farther offshore while the near-mouth core remains connected to the river. From 3 to 6 seconds the offshore plume visibly widens sideways through diffusion, its outer edge softens and becomes less concentrated while the elongated brighter core continues moving seaward. The final plume footprint must be clearly farther offshore and broader than at the start, with a coherent connected gradient rather than flicker or simple opacity pulsing. Keep the analytic color field strictly in water, never over dry land or bridge; keep every existing mesh line stable and readable from first through last frame. Orthographic overhead camera holds this complete domain so the change of the actual field extent and distribution is unmistakable; camera movement cannot substitute for field evolution. Retain the documentary satellite-like texture and restrained natural colors. This is an explanatory simulation concept, not an actual site or measured result. No new objects, text, labels, numeric metrics, controls, extra panels, scan beams or decorative particles. All internal analysis graphics are part of the generated video itself. Silent.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — Existing plume advects offshore, widens and dilutes with connected river supply; inspect every output frame for native-graphics stability.
+- result — Distinct broader, farther-offshore final field. Qualitative illustration, not real simulation output.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Shares source with main film or main AX
+- Concept presented as actual AX screen
+- Only camera motion or opacity pulsing without changing plume extent/distribution
+- Changing terrain, mesh or shoreline
+- Plume or mesh crossing dry land/bridge
+- New numeric metrics, fake product UI or particles
+
+## UI-AX-DISCOVER — ax-discover actual UI
+
+actual-ui / actual-ui-clip / 3.03초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/ax-discover-fast.mp4)
+
+### 근거와 원본 상태
+
+- [actual-ax-discover](../../dist/assets/films/ax-discover-fast.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — approved
+- capturePlans — []
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-AX-DETECT — ax-detect actual UI
+
+actual-ui / actual-ui-clip / 3.03초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/ax-detect-fast.mp4)
+
+### 근거와 원본 상태
+
+- [actual-ax-detect](../../dist/assets/films/ax-detect-fast.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — approved
+- capturePlans — ["satellite"]
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-AX-PREDICT — ax-predict actual UI
+
+actual-ui / actual-ui-clip / 3.03초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/ax-predict-fast.mp4)
+
+### 근거와 원본 상태
+
+- [actual-ax-predict](../../dist/assets/films/ax-predict-fast.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — approved
+- capturePlans — ["flood3d","surge","sealevel"]
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-AX-MONITOR — ax-monitor actual UI
+
+actual-ui / actual-ui-clip / 3.03초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/ax-monitor-fast.mp4)
+
+### 근거와 원본 상태
+
+- [actual-ax-monitor](../../dist/assets/films/ax-monitor-fast.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — approved
+- capturePlans — ["buoy","env","rip"]
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-PLATFORM-SATELLITE — platform-satellite actual UI
+
+actual-ui / actual-ui-clip / 3.8초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/platform-satellite-preview.mp4)
+
+### 근거와 원본 상태
+
+- [actual-platform-satellite](../../dist/assets/films/platform-satellite-preview.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — draft-reviewed
+- capturePlans — []
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-PLATFORM-FLOOD3D — platform-flood3d actual UI
+
+actual-ui / actual-ui-clip / 3.8초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/platform-flood3d-preview.mp4)
+
+### 근거와 원본 상태
+
+- [actual-platform-flood3d](../../dist/assets/films/platform-flood3d-preview.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — draft-reviewed
+- capturePlans — []
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
+
+## UI-PLATFORM-BUOY — platform-buoy actual UI
+
+actual-ui / actual-ui-clip / 3.8초 · Existing runtime clip duration; not a new generation request
+
+상태 **source-not-reviewed** / generationReady **false** / generationAllowed **false**
+
+Preserve authentic product footage in its own product slot
+
+- 출처 — actual-ui
+- 원본 — [로컬 보존 파일](../../dist/assets/films/platform-buoy-preview.mp4)
+
+### 근거와 원본 상태
+
+- [actual-platform-buoy](../../dist/assets/films/platform-buoy-preview.mp4) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [capture-review](../../docs/redesign-production/PLATFORM-CAPTURE-20260920.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- [ax-review](../../docs/redesign-next/11-AX-EMBED-REVIEW.md) — 근거 또는 보존 자료이며 자동 생성 승인이 아님
+- status — existing-file; playback-not-rechecked-in-this-pass
+- runtimeApproval — draft-reviewed
+- capturePlans — []
+
+### 시작·전개·종료
+
+- 시작 — Authentic full16:9 product context from the existing clip.
+- 전개 — Only the actual recorded interaction/result; no AI replacement.
+- 종료 — Authentic result remains legible with its geographic/product context.
+
+### 실제 UI 보존 지시 · 생성 금지
+
+```text
+Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.
+```
+
+### 실제 캡처·편집 지시
+
+```text
+No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.
+```
+
+### 연결과 의미 검수
+
+Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.
+
+- subject — The chosen research subject or data product is recognizable before reading a title.
+- action — The stated physical or analytical event must occur; not camera-only motion.
+- result — End state visibly follows the event without fabricated claims.
+- composition — Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.
+- review — Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video.
+
+### 제외 조건
+
+- Only pan/zoom, particle drift or tiny environmental motion without the planned subject action
+- Internal graphics added in postproduction
+- Generated imagery claimed as an actual place, company project, measurement, owned device or product screen
+- Physically broken equipment, changing terrain or disconnected data representations
+- Essential subjects/panels cut off by the16:9 frame
+- Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD
+- Invented measured values, accuracy, ownership or claimed actual product operation
+- Same-input jellyfish paid retry after tracking failure
+- Generated or repainted product UI
+- Claims archival screen is live data
+- Substitutes one product recording for another
 
 ## 실제 플랫폼 캡처 지시
 
-이 영역은 ImageGen과 영상 생성 모델을 사용하지 않음
+Preserve these9actual-UI capture instructions. They are independent product evidence, never mandatory ingredients of a30-second AX concept film. generationAllowed=false; do not fabricate screens.
+
+아래 제품 캡처 계획은 메인이나 AX 개념 영상의 필수 장면 수·길이가 아닙니다
 
 ### satellite / detect
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 기존 완도 예시의 실제 분석 결과가 로드된16:9화면 / 계정정보 숨김
 - 실제 동작 — 관심 객체 또는 이미 완료된 분석의 레이어 표시를 전환 / 새 유료 분석 실행 금지
 - 결과 — 원본 영상과 대응 탐지 윤곽이 같은 위치에 보임
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/satellite-poster.webp](../../dist/assets/platforms/satellite-poster.webp)
+- 보존 참조 — [dist/assets/films/platform-satellite-preview.mp4](../../dist/assets/films/platform-satellite-preview.mp4)
 - 검수 — 검출 수·정확도 조작 금지
 - 검수 — 일부 메뉴만 잘라 확대 금지
 - 출력 예정 — `dist/assets/films/platform-satellite-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/satellite-feature-poster.webp`
 
 ### news / detect
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 실제 기사 목록과 지도가 함께 보이는 화면
 - 실제 동작 — 기존 검색어 또는 분류를 선택하고 지역 표시나 기사 결과를 보여줌
 - 결과 — 선택한 분류와 실제 기사 결과가 대응
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/news-poster.webp](../../dist/assets/platforms/news-poster.webp)
 - 검수 — 기사 제목·날짜를 생성하지 않음
 - 검수 — 외부 기사 전문을 무단 대량 복제하지 않음
 - 출력 예정 — `dist/assets/films/platform-news-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/news-feature-poster.webp`
 
 ### flood3d / predict
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 기존 로드된2022힌남노 시나리오 등 실제 저장 사례와 지도 범위 확인
 - 실제 동작 — 시간 슬라이더 이동 또는 저장된 시나리오 재생 / 카메라 완만한 이동
 - 결과 — 같은 지형의 침수 범위·수심 변화와 범례 표시
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/flood3d-poster.webp](../../dist/assets/platforms/flood3d-poster.webp)
+- 보존 참조 — [dist/assets/films/platform-flood3d-preview.mp4](../../dist/assets/films/platform-flood3d-preview.mp4)
 - 검수 — 과거 시나리오를 현재 재난으로 표시 금지
 - 검수 — 지형 잘림·표면 누락 확인
 - 출력 예정 — `dist/assets/films/platform-flood3d-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/flood3d-feature-poster.webp`
 
 ### surge / predict
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 실제 태풍 경로와 관측소가 함께 보이는 저장 사례
 - 실제 동작 — 관측소 선택 후 시계열 또는 예측 정보를 열기
 - 결과 — 경로·선택 관측소·시계열의 관계가 읽힘
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/surge-poster.webp](../../dist/assets/platforms/surge-poster.webp)
 - 검수 — 2024산산 같은 예시명은 실제 화면 확인 후 표기
 - 검수 — flood3d영상을 이 서비스에 재사용 금지
 - 출력 예정 — `dist/assets/films/platform-surge-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/surge-feature-poster.webp`
 
 ### sealevel / predict
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 극치해면고 관련 실제 사례와 선택 관측소 표시
 - 실제 동작 — 다른 관측소 또는 시점을 선택해 결과 비교
 - 결과 — 관측소별 해면고와 최고 시점의 차이
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/sealevel-poster.webp](../../dist/assets/platforms/sealevel-poster.webp)
 - 검수 — 2003매미 사례 여부 재확인
 - 검수 — AI해일 플랫폼과 모델 방법을 혼동하지 않음
 - 출력 예정 — `dist/assets/films/platform-sealevel-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/sealevel-feature-poster.webp`
 
 ### buoy / monitor
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 부이 목록·위치·관측 요약이 함께 로드된 전체 화면
 - 실제 동작 — 남해111 등 실제 지점 선택 후 수온·파랑 중 존재하는 시계열 열기
 - 결과 — 선택 지점과 시간 변화가 같은 화면에 보임
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/buoy-poster.webp](../../dist/assets/platforms/buoy-poster.webp)
+- 보존 참조 — [dist/assets/films/platform-buoy-preview.mp4](../../dist/assets/films/platform-buoy-preview.mp4)
 - 검수 — 실제 데이터 시각 기록
 - 검수 — 좌측 목록만 커지고 지도가 사라지는 확대 금지
 - 출력 예정 — `dist/assets/films/platform-buoy-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/buoy-feature-poster.webp`
 
 ### env / monitor
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 현재 확보한SST2026-09-18과SSS2026-09-19 기간 자료는 과거 캡처임 / 재녹화 날짜 재확인
 - 실제 동작 — 수온 또는 염분 중 정상 로드된 한 변수를 선택하고 날짜·레이어 변화 보여주기
 - 결과 — 지도 전체와 해당 변수 범례가 선명함
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/env-full-temperature.jpg](../../dist/assets/platforms/env-full-temperature.jpg)
+- 보존 참조 — [dist/assets/platforms/env-full-salinity.jpg](../../dist/assets/platforms/env-full-salinity.jpg)
 - 검수 — 결측 보존
 - 검수 — chlorophyll 타일 누락·줄무늬 있으면 촬영 보류
 - 검수 — 월·일·8일 합성 기간 혼동 금지
 - 출력 예정 — `dist/assets/films/platform-env-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/env-feature-poster.webp`
 
 ### rip / monitor
 
-상태 recapture-planned
+상태 recapture-planned / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 실제 해수욕장 위치와 공개 가능한CCTV 또는 위험 정보
 - 실제 동작 — 저장·현재 화면에서 지점 선택 후 대응 영상과 위험 정보를 표시
 - 결과 — 해변·영상·선택 지점의 관계 확인
 - 편집 — 실제 전체 화면1초 → 실제 동작1.5초 → 결과1초 → 전체 맥락0.5초 / 기본4초 / 결과 가독성에 따라3–5초
+- 보존 참조 — [dist/assets/platforms/rip-poster.webp](../../dist/assets/platforms/rip-poster.webp)
 - 검수 — 사람 식별 가능한 영상은 공개 적합성 검토
 - 검수 — 위험 수치를 생성하거나 과장하지 않음
 - 출력 예정 — `dist/assets/films/platform-rip-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/rip-feature-poster.webp`
 
 ### flood-xai / predict
 
-상태 development-no-recording
+상태 development-no-recording / generationAllowed false
 
+- 접근 — https://geosr.ai/ 의 실제 서비스 링크로 이동
+- 화면 조건 — 1920x1080 or 2560x1440 CSS pixels; 16:9; document OS scale and browser zoom
 - 시작 — 개발 중 서비스로 표시 / 실제 완성 기능 화면 없음
 - 실제 동작 — 현재는 녹화하지 않음 / 실제 기능이 제공될 때 동작 계약부터 검토
 - 결과 — 개발 상태와 설명 자료만 공개
@@ -1364,3 +1847,49 @@ AX05 종료 화면의 밝기와 동작 방향을 AX01 시작 화면에 맞춰 �
 - 검수 — 생성 UI 금지
 - 검수 — 다른 플랫폼 녹화로 대체 금지
 - 출력 예정 — `dist/assets/films/platform-flood-xai-feature.mp4`
+- 포스터 예정 — `dist/assets/platforms/flood-xai-feature-poster.webp`
+
+## 영상 외 보존 자산
+
+### business-ai-final-still
+
+native-chatgpt-concept / generationAllowed false
+
+Business AI introduction only; keep all5boxes/masks; do not reuse as main video.
+
+- [ai-fish-native-20260929](../../media-source/editorial/ai-fish-native-20260929.png)
+
+### equipment-lab-final-still
+
+native-chatgpt-concept / generationAllowed false
+
+Equipment introduction only; actual inventory photos remain original records.
+
+- [environmental-lab-native-20260929](../../media-source/editorial/environmental-lab-native-20260929.png)
+
+### geodap
+
+actual-ui / generationAllowed false
+
+Preserve full aspect and uncropped actual service screen; external service link.
+
+- [geodap](../../dist/assets/geodap-home-full-20260928.webp)
+
+### technical-records
+
+actual-records / generationAllowed false
+
+Original technical diagrams, equipment photos and records remain unchanged below introductions.
+
+- [migration](../../docs/source-migration/migration-coverage.json)
+- [source-archive](../../dist/source-archive.json)
+- [company-brochure](../../docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf)
+- [equipment](../../docs/redesign-production/equipment-sources/manifest.json)
+
+## 비용과 다음 단계
+
+- 원장에 마지막 기록된 잔액 — 980.75크레딧 · 이번 문서 갱신에서 실시간 재확인 없음
+- 이번 갱신의 신규 유료 접수 — 0건
+- 메인 설정 견적 — 270크레딧 · 5x6s at last quoted54credits; not authorization; exact final-input preflight required.
+
+Parent connected web UI uploads reviewed AX-estuary native original. Media agent obtains confirmed UUID, re-estimates exact input, then submits one6s1080p silent Seedance2.0 job and reviews full playback/continuous frames. CTD8/model9 remain original-missing.

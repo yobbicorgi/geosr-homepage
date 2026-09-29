@@ -1,0 +1,53 @@
+{
+  "id": "ai-fish-native-20260929",
+  "sourceUrl": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "creationMethod": "Native ChatGPT WEB image generation; parent handled browser generation and original download while subagent CUA disconnected",
+  "model": "Native ChatGPT WEB image backend not disclosed in UI",
+  "intendedUniqueSlot": "Business AI introduction only; do not repeat the homepage jellyfish still or use as video input",
+  "companyEvidence": [
+    "GeoSR technology59: computer-vision marine-organism detection including fish, jellyfish and salps; https://www.geosr.com/sub/business/conserve_view.asp?idx=59",
+    "Retain original technical59 and61 evidence below the introduction; this still does not represent spatiotemporal prediction output"
+  ],
+  "prompt": "Create an original high-quality 16:9 photorealistic editorial image using native ChatGPT image generation only. A wide fixed underwater monitoring camera in a temperate Korean coastal environment, gently textured sandy seabed with a few natural dark rocks on the lower right, subtle blue-grey water and natural daylight. Exactly FIVE separate plausible silver-grey temperate coastal fish, each entirely visible and comfortably separated, distributed across the middle/right two thirds. Keep the upper-left third quiet open water for a website heading. Each fish has anatomically correct body, eyes, fins and tail with natural proportions. Exactly FIVE thin restrained blue closed rectangular detection boxes, one tight box around each whole fish including fins and tail. Exactly FIVE faint translucent blue instance segmentation masks, one mask accurately following each fish silhouette including fins/tail, allowing the fish texture to remain visible. Every depicted fish must have its own box AND mask. No unannotated background fish, jellyfish, people, tropical reef, extra targets, labels, text, metrics, scores, dimensions or logos. All analysis graphics must be generated as part of the original image. This is a fictional explanatory concept for marine organism detection, not an actual observation, company project or measured result. Broad documentary composition, realistic restrained colors, highest available original resolution. Produce the image directly, not through Higgsfield or an external app.",
+  "qa": {
+    "reviewedAtOriginalSize": true,
+    "decision": "accepted-editorial-concept-still",
+    "targetCount": 5,
+    "boxCount": 5,
+    "maskCount": 5,
+    "review": "Exactly five separated visible fish. Each complete body, fins and tail is contained by its own rectangular blue box; five faint silhouette masks match those same five subjects. No additional unannotated fish. Broad sandy temperate-water setting, restrained color, open left-side heading space and plausible separate body outlines. Generated lines originate in original PNG. No text, measured values, scores or logos.",
+    "limitations": "Illustrative mixed-fish concept, not a field camera record, species identification, verified marine assemblage or measured detection performance. Not a video or tracking acceptance."
+  },
+  "altKo": "수중 고정카메라의 어류 다섯 개체에 탐지 박스와 분할 마스크를 표시한 AI 분석 콘셉트",
+  "altEn": "Illustrative fixed-camera analysis of five fish with matching detection boxes and silhouette masks",
+  "mediaStatus": "final-still-ready",
+  "video": null,
+  "width": 1672,
+  "height": 941,
+  "source": "media-source/editorial/ai-fish-native-20260929.png",
+  "web": "dist/assets/editorial/ai-fish-native-20260929.webp",
+  "sourceBytes": 2272208,
+  "webBytes": 313086,
+  "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da",
+  "webSha256": "3a680dfbbf885ebe61c8f8dd415e65be2a4b88fbd74791e1cfb469b419170ec6",
+  "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오후 12_00_24.png",
+  "downloadMethod": "Parent clicked original Download in ChatGPT image viewer; same bytes also saved by downloadMedia",
+  "createdAt": "2026-09-29T12:03:05.269896+09:00",
+  "receipt": "media-source/editorial/ai-fish-native-20260929-receipt.json",
+  "downloadCleanup": {
+    "reason": "Accepted original preserved byte-for-byte in media-source before deleting duplicate downloads, per parent direction",
+    "files": [
+      {
+        "fileName": "ChatGPT 이미지 2026년 9월 29일 오후 12_00_24.png",
+        "bytes": 2272208,
+        "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da"
+      },
+      {
+        "fileName": "791d39b3-61d0-4be5-aa96-e2ce1de8a1c6.png",
+        "bytes": 2272208,
+        "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da"
+      }
+    ],
+    "verified": true
+  }
+}

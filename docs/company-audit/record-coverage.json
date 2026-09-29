@@ -1,0 +1,424 @@
+{
+  "checkedAt": "2026-09-28T09:33:34.741750+00:00",
+  "source": "https://www.geosr.com/",
+  "archiveSha256": "47b31d9e328fca0e1d5628833316b765aed1e5d8e10115de66ccc5e4046ac949",
+  "archiveRecordCount": 2024,
+  "archiveCountsByLanguage": {
+    "en": 809,
+    "ko": 1215
+  },
+  "archiveCounts": [
+    {
+      "language": "en",
+      "section": "business",
+      "kind": "conserve",
+      "count": 4
+    },
+    {
+      "language": "en",
+      "section": "business",
+      "kind": "conserve_view",
+      "count": 21
+    },
+    {
+      "language": "en",
+      "section": "career",
+      "kind": "recruit",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "company",
+      "kind": "aboutUs",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "company",
+      "kind": "ci",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "company",
+      "kind": "contactUs",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "company",
+      "kind": "license",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "equipment",
+      "kind": "biological",
+      "count": 2
+    },
+    {
+      "language": "en",
+      "section": "equipment",
+      "kind": "experiment",
+      "count": 10
+    },
+    {
+      "language": "en",
+      "section": "equipment",
+      "kind": "investigation",
+      "count": 21
+    },
+    {
+      "language": "en",
+      "section": "equipment",
+      "kind": "ship",
+      "count": 3
+    },
+    {
+      "language": "en",
+      "section": "equipment",
+      "kind": "surveying",
+      "count": 42
+    },
+    {
+      "language": "en",
+      "section": "home",
+      "kind": "home",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "policy",
+      "kind": "privacy",
+      "count": 1
+    },
+    {
+      "language": "en",
+      "section": "research",
+      "kind": "projects",
+      "count": 406
+    },
+    {
+      "language": "en",
+      "section": "research",
+      "kind": "publications",
+      "count": 231
+    },
+    {
+      "language": "en",
+      "section": "research",
+      "kind": "research",
+      "count": 62
+    },
+    {
+      "language": "ko",
+      "section": "business",
+      "kind": "conserve",
+      "count": 4
+    },
+    {
+      "language": "ko",
+      "section": "business",
+      "kind": "conserve_view",
+      "count": 21
+    },
+    {
+      "language": "ko",
+      "section": "career",
+      "kind": "recruit",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "company",
+      "kind": "aboutUs",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "company",
+      "kind": "ci",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "company",
+      "kind": "contactUs",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "company",
+      "kind": "license",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "equipment",
+      "kind": "biological",
+      "count": 2
+    },
+    {
+      "language": "ko",
+      "section": "equipment",
+      "kind": "experiment",
+      "count": 10
+    },
+    {
+      "language": "ko",
+      "section": "equipment",
+      "kind": "investigation",
+      "count": 21
+    },
+    {
+      "language": "ko",
+      "section": "equipment",
+      "kind": "ship",
+      "count": 3
+    },
+    {
+      "language": "ko",
+      "section": "equipment",
+      "kind": "surveying",
+      "count": 44
+    },
+    {
+      "language": "ko",
+      "section": "home",
+      "kind": "home",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "news",
+      "kind": "notices",
+      "count": 333
+    },
+    {
+      "language": "ko",
+      "section": "news",
+      "kind": "press",
+      "count": 51
+    },
+    {
+      "language": "ko",
+      "section": "policy",
+      "kind": "privacy",
+      "count": 1
+    },
+    {
+      "language": "ko",
+      "section": "research",
+      "kind": "projects",
+      "count": 406
+    },
+    {
+      "language": "ko",
+      "section": "research",
+      "kind": "publications",
+      "count": 231
+    },
+    {
+      "language": "ko",
+      "section": "research",
+      "kind": "research",
+      "count": 82
+    }
+  ],
+  "boards": [
+    {
+      "language": "ko",
+      "path": "/sub/achieve/busines.asp",
+      "pagesObserved": 21,
+      "currentRecordCount": 406,
+      "preservedRecordCount": 406,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/achieve/research.asp",
+      "pagesObserved": 5,
+      "currentRecordCount": 82,
+      "preservedRecordCount": 82,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/achieve/academic.asp",
+      "pagesObserved": 12,
+      "currentRecordCount": 231,
+      "preservedRecordCount": 231,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/equipment/surveying.asp",
+      "pagesObserved": 3,
+      "currentRecordCount": 44,
+      "preservedRecordCount": 44,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/equipment/investigation.asp",
+      "pagesObserved": 2,
+      "currentRecordCount": 21,
+      "preservedRecordCount": 21,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/equipment/biological.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 2,
+      "preservedRecordCount": 2,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/equipment/experiment.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 10,
+      "preservedRecordCount": 10,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/equipment/ship.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 3,
+      "preservedRecordCount": 3,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/news/notice.asp",
+      "pagesObserved": 17,
+      "currentRecordCount": 333,
+      "preservedRecordCount": 333,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "ko",
+      "path": "/sub/news/press.asp",
+      "pagesObserved": 3,
+      "currentRecordCount": 51,
+      "preservedRecordCount": 51,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/achieve/busines.asp",
+      "pagesObserved": 21,
+      "currentRecordCount": 406,
+      "preservedRecordCount": 406,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/achieve/research.asp",
+      "pagesObserved": 4,
+      "currentRecordCount": 62,
+      "preservedRecordCount": 62,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/achieve/academic.asp",
+      "pagesObserved": 12,
+      "currentRecordCount": 231,
+      "preservedRecordCount": 231,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/equipment/surveying.asp",
+      "pagesObserved": 3,
+      "currentRecordCount": 42,
+      "preservedRecordCount": 42,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/equipment/investigation.asp",
+      "pagesObserved": 2,
+      "currentRecordCount": 21,
+      "preservedRecordCount": 21,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/equipment/biological.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 2,
+      "preservedRecordCount": 2,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/equipment/experiment.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 10,
+      "preservedRecordCount": 10,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/equipment/ship.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 3,
+      "preservedRecordCount": 3,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    },
+    {
+      "language": "en",
+      "path": "/en/sub/news/notice.asp",
+      "pagesObserved": 1,
+      "currentRecordCount": 0,
+      "preservedRecordCount": 0,
+      "missingFromArchive": [],
+      "archiveIdsNotInCurrentList": []
+    }
+  ],
+  "observedMenuAndPaginationUrls": 174,
+  "technologyDetailsVisited": {
+    "ko": 21,
+    "en": 21
+  },
+  "credentialCounts": {
+    "certification": 13,
+    "registration": 38,
+    "intellectual-property": 76
+  },
+  "mediaAudit": "docs/source-migration/public-media-mirror-20260928.json",
+  "reviewBoundary": {
+    "menuAndBoardCheckDate": "2026-09-28",
+    "preservedRecordCaptureDates": [
+      "2026-09-20"
+    ],
+    "recordText": "All Korean records reviewed using the preserved body plus current menu and list observations",
+    "recentDetailRefresh": "300 source detail pages with media rechecked separately in the media audit",
+    "papers": "Published bibliographic entries reviewed; full external papers are not all included or read",
+    "historicalScanText": "Original scans retained; every word embedded in images has not been transcribed or translated",
+    "englishPolicy": "Korean content is canonical; missing English titles and bodies are translated in separate files without mutating the original records",
+    "completion": "Content inventory and list comparison only; translation, design and media acceptance are separate work"
+  }
+}

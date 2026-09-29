@@ -25,7 +25,8 @@ function extract(record, lang) {
     const i = tail.indexOf(marker); return i < 0 ? tail.length : i;
   }));
   let uses = tail.slice(0,end).trim().split('\n').map(s=>s.trim()).filter(Boolean);
-  if (uses.length && /상무$|이사$|Managing Director$|Director$/.test(uses.at(-1))) uses = uses.slice(0,-1);
+  // Contact names follow the applications on the source page and are not an application
+  if (uses.length && /(?:전무|상무|이사|선임|수석|책임|Managing Director|Director|Senior Engineer)$/.test(uses.at(-1))) uses = uses.slice(0,-1);
   return { title:record.title, lead, skills, uses, sourceId:record.id };
 }
 
@@ -36,6 +37,15 @@ for (const [koreanId, englishId] of Object.entries(englishIds)) {
     const record = records.find(item => item.lang === lang && item.kind === 'conserve_view' && new RegExp(`-${sourceId}-`).test(item.id));
     if (!record) throw Error(`Missing record: ${lang} ${sourceId}`);
     output[koreanId][lang] = extract(record,lang);
+  }
+}
+const reviewPath = path.join(root, 'dist/technology-translations.en.json');
+if (fs.existsSync(reviewPath)) {
+  const reviews = JSON.parse(fs.readFileSync(reviewPath, 'utf8'));
+  for (const [id, review] of Object.entries(reviews.records)) {
+    const source = records.find(record => record.id === output[id].ko.sourceId);
+    if (review.sourceHash !== source.sourceTextSha256) throw Error(`Stale technology translation: ${id}`);
+    Object.assign(output[id].en, review.fields, {translationSourceId:source.id});
   }
 }
 fs.writeFileSync(path.join(root, 'dist/business-details-data.js'), `window.GeoSRBusinessDetails=${JSON.stringify(output)};\n`);

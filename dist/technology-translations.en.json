@@ -1,0 +1,216 @@
+{
+  "reviewedOn": "2026-09-28",
+  "scope": "Targeted semantic corrections against full Korean technology records",
+  "records": {
+    "15": {
+      "sourceId": "ko-business-conserve_view-15-d9362b68e2",
+      "sourceHash": "d9aa3f363c7d8163c23f03b32cd39f207c77bab3125d397371129bfa52e5d6b9",
+      "fields": {
+        "skills": [
+          "Flow (hydrology), water quality, sediment transport, ecosystem modeling",
+          "Wave deformation modeling, shoreline deformation modeling",
+          "Integrated modeling of atmosphere, watersheds, rivers, and estuaries",
+          "Real-time operation of integrated models / Model improvement and development",
+          "Observation and analysis of hydrology, physical properties, and water quality",
+          "Image analysis using satellite and hyperspectral sensors, distribution of algal blooms and seagrass",
+          "Landform change observation"
+        ],
+        "uses": [
+          "Analysis of material transport and change characterization from land to estuaries",
+          "Analysis of specific issues such as water and sediment pollution, green and red tides",
+          "Guidelines for the development and utilization of rivers and lakes",
+          "Defining standards for legal compliance and related policy frameworks",
+          "Assessment of potential human activity impacts such as development, dredging, etc.",
+          "Jaegab Cho, Managing Director"
+        ]
+      },
+      "reasons": [
+        "잘피 is seagrass and not zooplankton",
+        "하천 호소 refers to rivers and lakes"
+      ]
+    },
+    "46": {
+      "sourceId": "ko-business-conserve_view-46-d9362b68e2",
+      "sourceHash": "8140685d7840564045fdd2dfefbc5fa417f39028e2e5c7442feceabaeb375797",
+      "fields": {
+        "skills": [
+          "Collection and processing of national observation network data and automated coupling between models",
+          "Wave and hydrodynamic modelling together with sediment transport and water quality modelling",
+          "Modelling river saltwater intrusion and the dispersion of thermal effluent and suspended sediment during construction",
+          "Habitat suitability assessment and food-web-based ecosystem modelling"
+        ],
+        "lead": "The water environment is composed of lakes, tributaries, main stem rivers, estuaries, coasts, and offshore waters, and it changes in response to various external forces such as weather, rainfall, topography, and flow. To understand and predict these changes in aquatic environments, we use tools called numerical models. A numerical model is a program that can be computed by expressing complex interactions between environmental elements as physical and mechanical numerical equations to analyze the dynamics of the water environment. Depending on the scope of application, numerical models can be classified into meteorological, watershed, river, marine and ecological models, and an integrated approach is required for accurate analysis and prediction of the water environment. In other words, integrated modeling of the water environment requires integration of models (linking individual models that can be operated independently) and integrated modeling system (computer software that supports a series of modeling processes). Geosystem Research has modeling technology to predict changes in rivers, estuaries, and coastal environments caused by human activities and climate change using integrated aquatic environment modeling, and provides services to agencies and institutions",
+        "uses": [
+          "Analysis of changes in flow, water quality, and harmful cyanobacteria due to changes in river conditions",
+          "Analysis of changes in wave deformation, tides and tidal currents, pollutant dispersion, and depositional environment due to coastal development and port construction",
+          "Analysis of future aquatic environment changes due to climate change",
+          "Jaegab Cho, Managing Director"
+        ]
+      },
+      "reasons": [
+        "국가관측망 does not name a groundwater information centre and construction context is retained",
+        "Remove duplicated ecological model category",
+        "호소 does not add a separate swamp category",
+        "유해남조류 specifically refers to cyanobacteria",
+        "Restore 조류 alongside 조석"
+      ]
+    },
+    "48": {
+      "sourceId": "ko-business-conserve_view-48-d9362b68e2",
+      "sourceHash": "7031cdcbb91f9966698db45b8bc5abbaec290ca65dba777208e04f3b7cf9fd11",
+      "fields": {
+        "lead": "To protect the marine environment and fisheries ecosystems from irresponsible development, to efficiently use marine resources and space, and to minimize social conflicts including those involving fishers, the importance of pre- and post-management policy measures is being emphasized. Currently, the Ministry of Oceans and Fisheries manages the Sea Area Utilization Consultation and Marine Environmental Impact Assessment system under the Marine Environment Management Act as one of the environmental protection policies for activities or projects occurring in the marine space\nGeosystem Research can scientifically predict the impacts of marine development through research and numerical modeling results of marine physics, topography, geology, water quality, and sediment, and proposes ways to minimize the impact on the marine environment with appropriate mitigation measures",
+        "skills": [
+          "Registered sea area utilization impact assessment agent (No. 제평-003)",
+          "Certificate of marine environment measurement and analysis capability for nutrients and trace metals (19 items) in water and heavy metals (13 items) in sediments (Ministry of Oceans and Fisheries, No. 164-1)",
+          "Precise analysis of marine water quality and sediments",
+          "Hydrodynamic numerical modeling",
+          "Wave numerical modeling",
+          "Sediment transport numerical modeling",
+          "Thermal effluent dispersion numerical modeling",
+          "Shoreline deformation numerical modeling",
+          "Suspended sediment dispersion numerical modeling"
+        ]
+      },
+      "reasons": [
+        "어업인을 포함한 사회적 갈등 is not conflict with shareholders",
+        "Retain registration number in Korean source without asserting current validity"
+      ]
+    },
+    "50": {
+      "sourceId": "ko-business-conserve_view-50-d9362b68e2",
+      "sourceHash": "6aa5a38f632d40f01c1c13a7bb928ca34878cc4a0b6ea1838c4489cc773f7847",
+      "fields": {
+        "lead": "Marine debris and microplastics are considered to be one of the major threats to human life and ecosystems. In Korea, about 18,000 tons of marine debris is generated annually, and the amount recovered is less than half of the amount generated. About 70% of the marine debris in Korea is plastic, and medium and large sized plastics become microplasticized through weathering and decomposition in nature, making it difficult to collect them. Therefore, it is necessary to establish a full-cycle management system that considers proactive prevention and eco-friendly resource circulation. GeoSystem Research has developed a particle tracking technology-based marine debris/microplastics transport and distribution prediction model to support government agencies involved in aquatic environment management to help with establishing collection and management plans. Using this model, we provide technical support for the collection of disaster trash spilled during floods by predicting the behavior of marine debris and microplastics, and propose measures for managing floating and deposited and shoreline-attached marine debris and microplastics distributed in the aquatic environment."
+      },
+      "reasons": [
+        "Restore 수변부착 alongside floating and deposited debris"
+      ]
+    },
+    "51": {
+      "sourceId": "ko-business-conserve_view-51-d9362b68e2",
+      "sourceHash": "89e937b9d0b006a57a4bc29b38e652415a7367e7ce6fb8b73fbb6f6dd9318fdc",
+      "fields": {
+        "lead": "As the international community became more aware of the seriousness of climate change, countermeasures against it are emerging as a global priority paradigm. Marine ecosystems are known to absorb carbon faster than terrestrial ecosystems, and to achieve carbon neutrality, blue carbon, a carbon absorption source in the field of marine fisheries, should be expanded more. To actively respond to the climate crisis, it is necessary create more carbon-absorbing and climate-adaptive coasts, or living shorelines, that are suitable for the domestic situation. Based on our extensive experience, GeoSystem Research can find the right areas to create such living shorelines and conduct raising seedlings and planting of marine plants (such as halophytes) for the same purpose. We can detect changes in marine sediments and marine organisms through the creation of living shorelines and calculate the carbon sink coefficient of each sediment or organism types. By doing so, we can verify the living shorelines’ carbon absorption capabilities and effect of improving ecological functions, then make guidelines and suggest future improvements."
+      },
+      "reasons": [
+        "염생식물 are halophytes"
+      ]
+    },
+    "53": {
+      "sourceId": "ko-business-conserve_view-53-d9362b68e2",
+      "sourceHash": "dbf7b89a1f0462efedc9843b64d4716b7e004784bc1fbde1d786a1c263081152",
+      "fields": {
+        "lead": "In recent years, coastal erosions and related damages have been occurring more frequently due to climate change and coastline imbalances caused by indiscriminate development of coastal areas. It is urgent to precisely identify the cause of erosions and develop mitigation measures. We conduct surveys and analyses of the state of coastal erosions to identify characteristics and natural resilience of eroded coasts, and provide information necessary for a long-term, systematic erosion management of coasts nationwide. We are working hard to conserve coastal areas and increase their use value by grading erosion severity based on monitoring results, providing technical support for the establishment of coastal maintenance basic plans, running the Coastal Erosion Management Council of Korea, and improving the coastal erosion grade evaluation methods."
+      },
+      "reasons": [
+        "Repeated page title was included in the extracted introduction"
+      ]
+    },
+    "57": {
+      "sourceId": "ko-business-conserve_view-57-d9362b68e2",
+      "sourceHash": "8f7eb5fb954f9c950782f2c6733a9e037658b919b219cd0f6187377c5592a768",
+      "fields": {
+        "skills": [
+          "Data processing including frequency filtering and gain correction and deconvolution and stacking and migration and inversion",
+          "In-house automated data processing software",
+          "High-resolution numerical modelling for surveys",
+          "Attribute analysis",
+          "Data interpretation including stratigraphy and seabed faults and anomalies"
+        ],
+        "lead": "Seismic survey is a survey method that investigates the structure of mineral deposits or bedrock by generating seismic waves and measuring the transmission time and strength of these sound waves at a number of points. Since processing of seismic data depends on the capabilities of technicians, various methodologies, sound source characteristics, and hydrophone array, and work-flow, a considerable amount of time and money is spent on data processing to obtain high-quality data. At GeoSystem Research, we have developed and are operating an automated data processing program by building a data processing module and an optimal work-flow that takes into account the sound source characteristics and hydrophone array for shallow water environments such as coasts, rivers, and estuaries. Using this program, we can process large amounts of data several to several dozen times faster, saving time and money, and outputs high-quality data that is easy to interpret. Currently, the program has a total of 20 data processing modules and is being continuously updated."
+      },
+      "reasons": [
+        "중합 is stacking in seismic processing and not polymerization and all five Korean bullets are retained",
+        "Repair duplicated clause and retain the geological target"
+      ]
+    },
+    "58": {
+      "sourceId": "ko-business-conserve_view-58-d9362b68e2",
+      "sourceHash": "6c64de7819c9d9eba780f47e311f516ab7a3bd1f3d3a7c6f33af055d35bd7c40",
+      "fields": {
+        "title": "CCTV Image Processing and Analysis"
+      },
+      "reasons": [
+        "Remove repeated CCTV suffix"
+      ]
+    },
+    "59": {
+      "sourceId": "ko-business-conserve_view-59-d9362b68e2",
+      "sourceHash": "ade88d177e8a5e176f6bb5ace7a2213ad1afccf255ec1b8faf39c067f0c6af96",
+      "fields": {
+        "lead": "The Ministry of Oceans and Fisheries has set six strategic priorities including stronger safety and the digital transformation of maritime and fisheries industries with a focus on shipping and ports and fisheries. Growing demand for aquaculture products is driving smart fisheries and the convergence of technologies. Big data and the Internet of Things and artificial intelligence are being applied to develop core technologies.\nGeoSR applies computer vision to footage captured underwater and from land near the water surface to detect marine organisms such as fish and jellyfish and harmful species. We support automatic warning systems for the Ministry and power plants and local governments as well as smart aquaculture monitoring and underwater ecosystem surveys and warnings for harmful organisms such as jellyfish and salps.\nWe continue to update image-based detection and tracking and attribute analysis to support prompt responses when urgent action is required.",
+        "uses": [
+          "Support stable power plant operation through timely responses to harmful marine organisms",
+          "Detect harmful marine organisms around water intakes to support preventive action",
+          "Monitor stock status and commercial value in smart aquaculture facilities",
+          "Support underwater ecosystem surveys of fish stocks around artificial reefs and harmful species and estimate biological resources",
+          "Support jellyfish advisories and prevention of jellyfish stings at beaches"
+        ]
+      },
+      "reasons": [
+        "Full translation from Korean restores six priorities and both camera settings and intended users omitted in legacy English",
+        "Retain all five Korean application statements without substituting ownership or invasive-species claims"
+      ]
+    },
+    "62": {
+      "sourceId": "ko-business-conserve_view-62-d9362b68e2",
+      "sourceHash": "51557150647a032a48272806594fd2b0a19a6cd03b0c56913cb550ebff38b80e",
+      "fields": {
+        "lead": "GeoSR provides scientific information on environmental suitability and stakeholder acceptance for offshore wind development. Site information maps and assessment guidelines support decisions and help address conflicts between developers and local residents and the difficulties faced by local governments in mediating when objective information is lacking.\nWe produce site information maps using nine categories of marine use zones: fisheries protection zones and aggregate and mineral resource development zones and energy development zones and marine tourism zones and environmental and ecological management zones and research and education conservation zones and port and navigation zones and military activity zones and safety management zones. These are combined with marine environmental information including currents and waves and temperature and salinity and wind.",
+        "uses": [
+          "Combine environmental suitability and stakeholder acceptance information to identify offshore wind sites with fewer conflicts",
+          "Provide baseline information and guidelines for offshore wind farm development",
+          "Assess potential impacts of offshore wind development on the marine environment",
+          "Support site selection that limits unplanned development and conserves marine ecosystems"
+        ]
+      },
+      "reasons": [
+        "Full Korean translation restores nine categories and local-government mediation and corrects salinity mistranslated as conductivity",
+        "Retain the four Korean applications separately"
+      ]
+    },
+    "64": {
+      "sourceId": "ko-business-conserve_view-64-d9362b68e2",
+      "sourceHash": "7e220228a13398ef36d7cedd1ef119fca79136421ec2e370410f30af5e7556e5",
+      "fields": {
+        "lead": "Conventional beach profile and topographic surveys require staff to work directly on site and can take considerable time and personnel. Surveys of cliffs and exposed or intertidal rocks also pose safety risks. GeoSR combines unmanned aerial vehicles with current sensors to build precise geospatial information while improving survey efficiency and staff safety.\nThe resulting geospatial data supports models for assessing compound coastal disaster risks and tailored disaster prevention measures. It is also used to document current coastal conditions and changes and to survey exposed and intertidal rocks and establish shoreline datasets.",
+        "skills": [
+          "Three-dimensional PointCloud generation",
+          "Orthophoto production",
+          "DEM (Digital Elevation Model) production",
+          "Base map production"
+        ]
+      },
+      "reasons": [
+        "Translate full Korean description without unsupported national-project claim and restore exposed and intertidal rock surveys",
+        "정사영상 is orthophotography and not orthogonal imagery",
+        "No national qualifier appears in Korean 기본도"
+      ]
+    },
+    "65": {
+      "sourceId": "ko-business-conserve_view-65-d9362b68e2",
+      "sourceHash": "4cf54f56a4d790c035946da11c8cb68d464f9677afb24b0a55a9e9f89f621819",
+      "fields": {
+        "lead": "The real-time ocean forecast system uses observation data and numerical models to predict ocean phenomena, such as water level, flow, water temperature, salinity, waves, surge height, diffusion, etc., in real time. GeoSystem Research has built in-house a real-time ocean forecast system that simulates ocean circulation and waves to produce forecast data for the northwestern Pacific Ocean, Northeast Asia, the Korean Peninsula, and other major coastal areas. This forecast data can be used in various ways, such marine environmental forecast regarding climate change, SAR (search and rescue) and disaster prevention activities in the event of a marine accident, and military operations. We have also built a real-time thermal effluent dispersion prediction system, a red tide movement and diffusion prediction model, and a visualization system, and we are committed to research and development of the latest technologies, such as improving the accuracy of forecast data using the latest data assimilation techniques.",
+        "skills": [
+          "Real-time ocean forecast system for the northwestern Pacific Ocean, Northeast Asia, and the Korean Peninsula",
+          "High-resolution forecast system of major coastal areas",
+          "Wave prediction system around the Korean Peninsula",
+          "Support technology for SAR and disaster prevention in the event of marine accident",
+          "Management and maintenance of real-time ocean forecast systems",
+          "Real-time thermal effluent dispersion prediction system",
+          "Create user interface for visualizing prediction results",
+          "Verification system to evaluate prediction accuracy",
+          "Numerical modeling parallelization technique (OpenMP, MPI)",
+          "Data assimilation technique to improve the accuracy of prediction models (OI, EnOI, EnKF, LETKF, etc.)"
+        ]
+      },
+      "reasons": [
+        "염분 is salinity",
+        "북서태평양 is the ocean region and not the Pacific Northwest of North America",
+        "Correct regional name in capability list"
+      ]
+    }
+  }
+}

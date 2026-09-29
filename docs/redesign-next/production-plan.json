@@ -1,870 +1,1401 @@
 {
-  "schemaVersion": 1,
-  "revision": "company-evidence-and-ax-actual-ui-preflight-r5-20260928",
+  "schemaVersion": 2,
+  "revision": "company-film-scene-system-20260929-v3",
   "baselineCommit": "aea49aa",
-  "status": "1210-credits-confirmed; no-paid-generation; evidence-and-source-frames-pending",
+  "status": "single-reviewed-source-video-preflight",
   "generationReady": false,
   "releaseReady": false,
   "authority": "docs/redesign-next/00-START-HERE.md",
-  "promptVersion": "company-evidence-ax-source-ui-r5-frames-pending",
+  "currentDirection": "docs/redesign-next/CURRENT-DIRECTION.md",
+  "mediaDirection": "docs/redesign-next/02-MEDIA-DIRECTION.md",
+  "storyboardAuthority": "media-source/editorial/media-production-handoff.json",
+  "activeMainFilmDirection": "docs/redesign-next/reviews/20260929-company-film-scene-system.md",
+  "updatedAt": "2026-09-29T13:14:15.557836+09:00",
+  "promptVersion": "subject-led-native-graphics-v2",
+  "planBoundary": "The active main film is the approximately 48-second ten-subject sequence in activeMainFilmDirection. Satellite acquisition and analysis are two four-second clips within one subject. Older MAIN-CTD and MAIN-SPATIAL cards below are retained as historical slot references, not the current main cut or paid job authorization. Only accepted native 1080p clips may be assembled.",
   "sourceRegistry": {
-    "coastal-hero": "dist/assets/geosr-brochure-coast-2025.jpg",
-    "data": "docs/redesign-production/keyframes/sources/corporate-film-c04-v1/gibs-c04-source-manifest.json",
     "equipment": "docs/redesign-production/equipment-sources/manifest.json",
     "usv": "dist/assets/equipment-usv-original.png",
-    "lab": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
-    "ax-detect-start": "dist/assets/concepts/ax-detection-v3/ax-detect-start.png",
-    "ax-detect-end": "dist/assets/concepts/ax-detection-v3/ax-detect-end.png",
-    "technology": "docs/redesign-production/TECHNOLOGY-MAP.md",
     "migration": "docs/source-migration/migration-coverage.json",
-    "opening-review": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md",
     "ax-review": "docs/redesign-next/11-AX-EMBED-REVIEW.md",
     "capture-review": "docs/redesign-production/PLATFORM-CAPTURE-20260920.md",
-    "geodap": "dist/assets/geodap-home-public-preview-20260928.png",
-    "lab-style": "dist/assets/analysis-lab-v1.webp",
-    "microscope": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
-    "rov": "docs/redesign-production/equipment-sources/originals/bluerov2-page-thumbnail.png",
-    "wave-concept": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png",
+    "geodap": "dist/assets/geodap-home-full-20260928.webp",
     "company-brochure": "docs/source-migration/assets/지오시스템_회사소개서_국문_2506.pdf",
     "source-archive": "dist/source-archive.json",
-    "company-evidence": "docs/redesign-next/16-COMPANY-FILM-EVIDENCE-20260928.md"
+    "current-direction": "docs/redesign-next/CURRENT-DIRECTION.md",
+    "media-direction": "docs/redesign-next/02-MEDIA-DIRECTION.md",
+    "company-technology-audit": "docs/company-audit/technology-analysis.md",
+    "presentation-direction": "docs/company-audit/presentation-direction.md",
+    "brochure-review": "docs/company-audit/brochure-review.md",
+    "native-handoff": "media-source/editorial/media-production-handoff.json",
+    "ai-jellyfish-native-20260929": "media-source/editorial/ai-jellyfish-native-20260929.png",
+    "coastal-monitoring-native-20260929": "media-source/editorial/coastal-monitoring-native-20260929.png",
+    "environmental-lab-native-20260929": "media-source/editorial/environmental-lab-native-20260929.png",
+    "ax-estuary-analysis-native-20260929": "media-source/editorial/ax-estuary-analysis-native-20260929.png",
+    "ai-fish-native-20260929": "media-source/editorial/ai-fish-native-20260929.png",
+    "actual-ax-discover": "dist/assets/films/ax-discover-fast.mp4",
+    "actual-ax-detect": "dist/assets/films/ax-detect-fast.mp4",
+    "actual-ax-predict": "dist/assets/films/ax-predict-fast.mp4",
+    "actual-ax-monitor": "dist/assets/films/ax-monitor-fast.mp4",
+    "actual-platform-satellite": "dist/assets/films/platform-satellite-preview.mp4",
+    "actual-platform-flood3d": "dist/assets/films/platform-flood3d-preview.mp4",
+    "actual-platform-buoy": "dist/assets/films/platform-buoy-preview.mp4",
+    "higgsfield-procedure": "docs/redesign-next/10-HIGGSFIELD-PRODUCTION.md"
+  },
+  "sourceRegistryPolicy": "Only current scene evidence, accepted native originals, authentic product media and current process references are registered. Unused legacy candidate entries removed from registry only; underlying source files remain untouched.",
+  "sourceRegistryRoles": {
+    "equipment": "preserved-evidence-not-automatic-generation-input",
+    "usv": "preserved-evidence-not-automatic-generation-input",
+    "migration": "preserved-evidence-not-automatic-generation-input",
+    "ax-review": "preserved-evidence-not-automatic-generation-input",
+    "capture-review": "preserved-evidence-not-automatic-generation-input",
+    "geodap": "preserved-evidence-not-automatic-generation-input",
+    "company-brochure": "preserved-evidence-not-automatic-generation-input",
+    "source-archive": "preserved-evidence-not-automatic-generation-input"
   },
   "commonInstructions": {
-    "image": "Silent 16:9 native 1920x1080 film. Real Korean geography and documented company technologies lead the company film; captured employee-built screens lead the separate AX film. Preserve source landforms, equipment, optics, scale, lighting, water physics and clean title space. Generate only a missing camera or environmental transition when source frames exist. Do not generate map pixels, sensor results, interfaces, readings, text or project locations.",
-    "motion": "One deliberate camera action per cut. Use clean editorial cuts between different places, sensors and times. Real source imagery, georegistered maps, sonar bathymetry, ADCP velocity, laboratory results, model fields and platform UI are separate compositing layers with their own provenance. Verify the full clip and start, middle, end frames.",
+    "image": "Create images only with native ChatGPT WEB and download the original. No Higgsfield image model or Codex image_gen. Choose one concrete research subject and prepared start state. All boxes, masks, mesh, analysis panels and UI-like concept graphics must be generated as part of the original. Compose every essential subject and panel completely within16:9; adjacent website text stays outside the media. Generated concepts are not actual observations, company property or product screens.",
+    "motion": "Seedance2.0 MCP preferred,1080p silent, using vetted native ChatGPT originals. Specify start,2-3causal subject actions and end. The subject/data distribution must actually change; camera motion alone is not acceptance. Preserve physical connections and geographic/annotation registration. Review complete playback plus critical continuous frames.",
+    "editing": "Only join reviewed clips and add transitions. No postproduction boxes, masks, UI, grid, data graphics or other internal overlays. Faithful format export does not create approval.",
     "negative": [
-      "No copied Allforland footage or design",
-      "No invented Korean coastline, city, harbor, beach or implied GeoSR site",
-      "No laser-like satellite or underwater sonar beams presented as observed light",
-      "No fabricated measurements, segmentation masks, bounding boxes, bathymetry, current vectors, model outputs or UI",
-      "No mixing multibeam depth with ADCP velocity or scenario forecasts with observations",
-      "No morphing hulls, vessels, buoy moorings, sensors, terrain or laboratory apparatus",
-      "No previously rejected coastal-estuary concept poster as an input frame"
+      "Only pan/zoom, particle drift or tiny environmental motion without the planned subject action",
+      "Internal graphics added in postproduction",
+      "Generated imagery claimed as an actual place, company project, measurement, owned device or product screen",
+      "Physically broken equipment, changing terrain or disconnected data representations",
+      "Essential subjects/panels cut off by the16:9 frame",
+      "Meaningless neon patterns, spacecraft/underwater scan beams or constellation HUD",
+      "Invented measured values, accuracy, ownership or claimed actual product operation",
+      "Same-input jellyfish paid retry after tracking failure"
     ],
     "gates": [
-      "source identity and permitted context",
-      "start/middle/end still review",
-      "physics and scientific meaning",
-      "web composition and legibility",
-      "adjacent-shot continuity",
-      "full clip review before publication"
+      "Confirm subject and evidence",
+      "Download original and preserve metadata/hash",
+      "Original-resolution geometry and16:9composition QA",
+      "Start/middle/end plus critical-action semantic QA",
+      "Exact live balance/model/input cost before one approved submission",
+      "Complete playback and per-slot provenance before web integration"
     ]
   },
   "films": [
     {
-      "id": "company",
-      "duration": 60,
-      "actualUIAllowed": false,
-      "axConceptAllowed": false
+      "id": "main",
+      "duration": 30,
+      "durationMeaning": "proposed/mutable after scene QA",
+      "shots": [
+        "MAIN-SATELLITE",
+        "MAIN-CTD",
+        "MAIN-AI",
+        "MAIN-MODEL",
+        "MAIN-SPATIAL"
+      ],
+      "actualUIRequired": false
     },
     {
-      "id": "ax",
-      "duration": 30,
-      "actualUIAllowed": true
+      "id": "company",
+      "duration": 6,
+      "durationMeaning": "optional unique scene proposal",
+      "shots": [
+        "COMPANY-ANALYSIS"
+      ]
+    },
+    {
+      "id": "ax-main",
+      "duration": 6,
+      "durationMeaning": "concept proposal; no fixed30s actual-UI film requirement",
+      "shots": [
+        "AX-MAIN-CONCEPT"
+      ]
+    },
+    {
+      "id": "ax-detail",
+      "duration": 6,
+      "durationMeaning": "one authorized derivative attempt; actual gallery remains separate",
+      "shots": [
+        "AX-DETAIL-FLOW"
+      ]
+    },
+    {
+      "id": "wave",
+      "duration": 12,
+      "durationMeaning": "two optional6s water-action scenes; not technology representatives",
+      "shots": [
+        "WAVE-ROCK",
+        "WAVE-OPEN"
+      ]
+    },
+    {
+      "id": "expertise-ai",
+      "duration": 0,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-AI"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-modelling",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-MODEL"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-satellite",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-SATELLITE"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-spatial",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-SPATIAL"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-observation",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-OBSERVATION"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-environment",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-ENVIRONMENT"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-hazards",
+      "duration": 0,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-HAZARDS"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "expertise-systems",
+      "duration": 6,
+      "durationMeaning": "Per-slot proposal or accepted still; not mandatory video quantity",
+      "shots": [
+        "EXP-SYSTEMS"
+      ],
+      "generationAllowed": false
+    },
+    {
+      "id": "actual-ui",
+      "duration": null,
+      "durationMeaning": "Independent preserved product clips; never a combined mandatory film",
+      "shots": [
+        "UI-AX-DISCOVER",
+        "UI-AX-DETECT",
+        "UI-AX-PREDICT",
+        "UI-AX-MONITOR",
+        "UI-PLATFORM-SATELLITE",
+        "UI-PLATFORM-FLOOD3D",
+        "UI-PLATFORM-BUOY"
+      ],
+      "generationAllowed": false
     }
   ],
   "shots": [
     {
-      "id": "CF01",
-      "film": "company",
-      "start": 0,
-      "end": 5,
-      "duration": 5,
-      "title": "실제 연안의 광역 오프닝",
-      "method": "source-composite",
-      "referenceIds": [
-        "coastal-hero",
-        "company-brochure"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "실제 한국 연안에서 도시·해안·외해의 규모를 동시에 보여준다",
-      "frames": {
-        "start": "넓은 실사와 왼쪽 제목 여백",
-        "middle": "카메라가 느리게 측면 전진",
-        "end": "다음 위성 시점으로 올라갈 공간"
-      },
-      "imageInstruction": "Use a source-approved real aerial. Match the real shoreline and leave the left third readable. The brochure photograph is only a temporary poster, not approved film footage.",
-      "motionInstruction": "One slow lateral aerial move. No new coastal geography.",
-      "compositingInstruction": "HTML title only; location label only after footage provenance check.",
-      "rejectIf": [
-        "Reject fabricated or unstable coast"
-      ],
-      "sourceRequirements": [
-        "Need a dated, licensable native-1080p aerial and location identity"
-      ],
-      "continuity": "Different source locations receive editorial cuts.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF01-start.png",
-        "middle": "docs/redesign-next/keyframes/CF01-middle.png",
-        "end": "docs/redesign-next/keyframes/CF01-end.png",
-        "candidate": "docs/redesign-next/renders/CF01-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF01-take01.json"
-      }
-    },
-    {
-      "id": "CF02",
-      "film": "company",
-      "start": 5,
-      "end": 10,
-      "duration": 5,
-      "title": "한반도 위성 관측 범위",
-      "method": "source-composite",
-      "referenceIds": [
-        "data",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "진짜 한반도 지형에서 위성영상의 공간 범위로 시점을 이동한다",
-      "frames": {
-        "start": "실사에서 실제 한반도 지도로 컷",
-        "middle": "센서 범위 도식이 짧게 나타남",
-        "end": "검증된 위성 래스터로 전환"
-      },
-      "imageInstruction": "Use a documented real geography plate. Satellite silhouette can be generated as a separate illustrative layer only.",
-      "motionInstruction": "Controlled upward camera transition; coastline geometry stays fixed.",
-      "compositingInstruction": "Composite source satellite product, date, sensor and swath after generation.",
-      "rejectIf": [
-        "Reject fake peninsula or laser scan"
-      ],
-      "sourceRequirements": [
-        "Need a dated sensor/product and public rights"
-      ],
-      "continuity": "Cut on camera direction from CF01; do not pretend unrelated footage is one shot.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF02-start.png",
-        "middle": "docs/redesign-next/keyframes/CF02-middle.png",
-        "end": "docs/redesign-next/keyframes/CF02-end.png",
-        "candidate": "docs/redesign-next/renders/CF02-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF02-take01.json"
-      }
-    },
-    {
-      "id": "CF03",
-      "film": "company",
-      "start": 10,
-      "end": 14,
-      "duration": 4,
-      "title": "위성 제품과 자료 처리",
-      "method": "source-composite",
-      "referenceIds": [
-        "data",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "하나의 실제 위성 제품에서 분석 가능한 해양 자료로 이어진다",
-      "frames": {
-        "start": "원래 위성영상과 결측 영역",
-        "middle": "한 제품의 검증된 자료층",
-        "end": "분석 대상으로 진입"
-      },
-      "imageInstruction": "Provide subtle ambient motion behind an authentic data plate; no map or raster generation.",
-      "motionInstruction": "Slow push toward a selected real analysis area.",
-      "compositingInstruction": "Keep product pixels, land mask, legend, unit and timestamp exact.",
-      "rejectIf": [
-        "Reject false multisensor simultaneity"
-      ],
-      "sourceRequirements": [
-        "Need matched raw and processed raster with product metadata"
-      ],
-      "continuity": "CF02 and CF03 use the same documented geographic extent or a clear cut.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF03-start.png",
-        "middle": "docs/redesign-next/keyframes/CF03-middle.png",
-        "end": "docs/redesign-next/keyframes/CF03-end.png",
-        "candidate": "docs/redesign-next/renders/CF03-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF03-take01.json"
-      }
-    },
-    {
-      "id": "CF04",
-      "film": "company",
-      "start": 14,
-      "end": 18,
-      "duration": 4,
-      "title": "검증된 AI 영상분석",
-      "method": "source-composite",
-      "referenceIds": [
-        "source-archive",
-        "company-evidence"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "실제 원영상과 실제 모델 출력을 한 사례로 읽게 한다",
-      "frames": {
-        "start": "원영상의 분석 대상",
-        "middle": "원본과 정합된 mask 또는 box",
-        "end": "결과를 1초 이상 유지"
-      },
-      "imageInstruction": "Use the source video as the sole scene. No synthetic detection result.",
-      "motionInstruction": "The camera is stable while the verified output appears.",
-      "compositingInstruction": "Overlay only checked instance segmentation or detection data from the same model and frames.",
-      "rejectIf": [
-        "Reject fabricated predictions or false positives concealed as truth"
-      ],
-      "sourceRequirements": [
-        "Need releasable source video, model output and class definitions"
-      ],
-      "continuity": "Do not merge marine-life boxes with trash masks.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF04-start.png",
-        "middle": "docs/redesign-next/keyframes/CF04-middle.png",
-        "end": "docs/redesign-next/keyframes/CF04-end.png",
-        "candidate": "docs/redesign-next/renders/CF04-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF04-take01.json"
-      }
-    },
-    {
-      "id": "CF05",
-      "film": "company",
-      "start": 18,
-      "end": 22,
-      "duration": 4,
-      "title": "해수욕장 드론 조사",
-      "method": "source-composite",
-      "referenceIds": [
-        "source-archive",
-        "company-brochure"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "현실 해안의 넓은 비행 장면에서 정사영상 제작 맥락을 보여준다",
-      "frames": {
-        "start": "실제 해수욕장·해안 항공 뷰",
-        "middle": "드론 비행방향을 따라 해빈이 보임",
-        "end": "동일 장소 정사영상으로 컷"
-      },
-      "imageInstruction": "Use actual licensed coastal drone footage; generated camera interpolation is a candidate only after reference frames match.",
-      "motionInstruction": "One slow forward drone path at credible height.",
-      "compositingInstruction": "Correct orthophoto and DEM are source overlays, never invented imagery.",
-      "rejectIf": [
-        "Reject drone scanning deep seabed"
-      ],
-      "sourceRequirements": [
-        "Need dated drone source, orthophoto and matching location"
-      ],
-      "continuity": "Different location from CF04 requires an editorial cut.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF05-start.png",
-        "middle": "docs/redesign-next/keyframes/CF05-middle.png",
-        "end": "docs/redesign-next/keyframes/CF05-end.png",
-        "candidate": "docs/redesign-next/renders/CF05-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF05-take01.json"
-      },
-      "selectedStills": [
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf05-usv-wide-v2.png",
-          "attemptId": "CF05_WIDE",
-          "status": "selected-concept-still",
-          "review": "원본의 황색 쌍동선·회색 프레임·장비 배치를 육안 대조 / 전체 선체가 보이는 넓은 프레임 / 배경은 생성형이며 실제 출항지·운용사진으로 주장하지 않음 / 정밀 부속과 로고는 최종 출력 전 원본 대조",
-          "motionNext": "4초 완만한 평행 추적 / 선체·상부 장비를 강체로 유지 / 관측 장비가 새로 생기거나 항적이 선수 앞에 나타나면 탈락 / 무인선은 CF05 하나의 선택지"
-        }
-      ],
-      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
-    },
-    {
-      "id": "CF06",
-      "film": "company",
-      "start": 22,
-      "end": 27,
-      "duration": 5,
-      "title": "해안선 변화와 조사 범위",
-      "method": "source-composite",
-      "referenceIds": [
-        "source-archive",
-        "company-evidence"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "해안선·해빈 단면과 수중 조사 영역의 경계를 분명히 한다",
-      "frames": {
-        "start": "실제 정사영상과 해안선",
-        "middle": "검증된 다른 시기 해안선 또는 단면",
-        "end": "조사선 측선으로 컷"
-      },
-      "imageInstruction": "Do not invent shoreline change or point clouds. Use source maps only.",
-      "motionInstruction": "Measured camera move over actual orthophoto.",
-      "compositingInstruction": "Separate beach DEM from bathymetric survey. Preserve date, datum and units.",
-      "rejectIf": [
-        "Reject morphing unmatched coastlines"
-      ],
-      "sourceRequirements": [
-        "Need matched survey dates and shoreline geometry"
-      ],
-      "continuity": "Use a visible cut to CF07 marine survey.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF06-start.png",
-        "middle": "docs/redesign-next/keyframes/CF06-middle.png",
-        "end": "docs/redesign-next/keyframes/CF06-end.png",
-        "candidate": "docs/redesign-next/renders/CF06-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF06-take01.json"
-      },
-      "sourceAudit": {
-        "date": "2026-09-22",
-        "status": "needs-device-identity",
-        "localReference": "docs/redesign-production/equipment-sources/originals/rbr-solo-tu-page-thumbnail.png",
-        "manufacturer": "https://rbr-global.com/products/compact-loggers/rbrsolo-do-tu-par/",
-        "finding": "제조사 현행 RBRsolo³ Tu는 Seapoint 탁도 센서 계열 / 회사 과거 페이지의 수온계와 동일 제품임을 확인하지 못함 / 명칭만으로 생성 참조를 선택하지 않음"
-      }
-    },
-    {
-      "id": "CF07",
-      "film": "company",
-      "start": 27,
-      "end": 32,
-      "duration": 5,
-      "title": "멀티빔 해저지형 조사",
-      "method": "source-composite",
-      "referenceIds": [
-        "equipment",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "조사선 항해와 멀티빔 수심자료의 관계를 설명한다",
-      "frames": {
-        "start": "넓은 해역 속 실제 조사선",
-        "middle": "선저 음향 부채꼴 설명 도식",
-        "end": "실제 측선·수심점이 지형도로 구성"
-      },
-      "imageInstruction": "Real vessel photo or video and sensor geometry required. Do not generate branded vessel details.",
-      "motionInstruction": "Track survey vessel slowly; fixed transducer relation and credible wake.",
-      "compositingInstruction": "Sonar fan is a separate transparent explanatory graphic; bathymetry pixels are actual source data.",
-      "rejectIf": [
-        "Reject luminous underwater light or fake depth values"
-      ],
-      "sourceRequirements": [
-        "Need vessel footage, sensor mounting and releasable bathymetry"
-      ],
-      "continuity": "CF06 shoreline mapping and CF07 depth mapping remain distinct.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF07-start.png",
-        "middle": "docs/redesign-next/keyframes/CF07-middle.png",
-        "end": "docs/redesign-next/keyframes/CF07-end.png",
-        "candidate": "docs/redesign-next/renders/CF07-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF07-take01.json"
-      },
-      "selectedStills": [
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf07-rov-v1.png",
-          "attemptId": "CF07",
-          "status": "selected-concept-still",
-          "review": "회사 원본의 정면 형상과 부력재·카메라·프레임을 대조 / 테더는 뒤쪽으로 이어짐 / 후면 연결부는 가려져 정확한 결선 미확인 / 실제 운용사진이나 사양 증거로 사용 금지",
-          "motionNext": "4초 정지 관찰에 가까운 완만한 이동 / 테더가 카메라에 붙거나 프레임을 관통하면 탈락 / 배경과 조명의 작은 변화만 허용"
-        }
-      ],
-      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
-    },
-    {
-      "id": "CF08",
-      "film": "company",
-      "start": 32,
-      "end": 36,
-      "duration": 4,
-      "title": "ADCP와 부이 관측",
-      "method": "source-composite",
-      "referenceIds": [
-        "equipment",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "수층별 유속과 부이 시계열을 각각의 관측으로 짧게 보여준다",
-      "frames": {
-        "start": "실제 관측 해역",
-        "middle": "ADCP 수층 유속 도식",
-        "end": "실제 부이 점검·설치 장면으로 컷"
-      },
-      "imageInstruction": "Use actual instrument and buoy reference; generation may supply only nontechnical ocean background.",
-      "motionInstruction": "One calm field move, then an explicit cut to the buoy.",
-      "compositingInstruction": "Velocity vectors and buoy observations use separate source-verified legends and dates.",
-      "rejectIf": [
-        "Reject invented mooring and confused depth-current graphic"
-      ],
-      "sourceRequirements": [
-        "Need ADCP data and buoy footage with mooring configuration"
-      ],
-      "continuity": "Keep ADCP separate from CF07 depth soundings.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF08-start.png",
-        "middle": "docs/redesign-next/keyframes/CF08-middle.png",
-        "end": "docs/redesign-next/keyframes/CF08-end.png",
-        "candidate": "docs/redesign-next/renders/CF08-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF08-take01.json"
-      }
-    },
-    {
-      "id": "CF09",
-      "film": "company",
-      "start": 36,
-      "end": 41,
-      "duration": 5,
-      "title": "채수와 환경화학 분석",
-      "method": "source-composite",
-      "referenceIds": [
-        "company-brochure",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "시료 채취에서 한 가지 분석기로 이어지는 과정을 보여준다",
-      "frames": {
-        "start": "수역 현장의 실제 시료 채취",
-        "middle": "시료 밀봉·준비",
-        "end": "실제 ICP-MS 또는 영양염 분석기"
-      },
-      "imageInstruction": "Use documented field and lab footage. Generative footage only when no false GeoSR lab identity is implied.",
-      "motionInstruction": "Edit three distinct actions; no implausible continuous morph.",
-      "compositingInstruction": "Match sample type to assay and remove private sample labels.",
-      "rejectIf": [
-        "Reject fake lab measurement or incorrect instrument"
-      ],
-      "sourceRequirements": [
-        "Need sample/lab releases and analyte-instrument mapping"
-      ],
-      "continuity": "The sample process follows field observation without implying same site if unverified.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF09-start.png",
-        "middle": "docs/redesign-next/keyframes/CF09-middle.png",
-        "end": "docs/redesign-next/keyframes/CF09-end.png",
-        "candidate": "docs/redesign-next/renders/CF09-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF09-take01.json"
-      }
-    },
-    {
-      "id": "CF10",
-      "film": "company",
-      "start": 41,
-      "end": 45,
-      "duration": 4,
-      "title": "갯벌 생태와 블루카본 조사",
-      "method": "source-composite",
-      "referenceIds": [
-        "company-brochure",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "넓은 실제 갯벌·염습지와 현장 조사구를 연결한다",
-      "frames": {
-        "start": "갯벌·염습지 광역 실사",
-        "middle": "방형구 또는 식생 조사",
-        "end": "조사 지점 지도로 종료"
-      },
-      "imageInstruction": "Use a real dated intertidal scene. Generated motion may only stabilize a source-led environmental transition.",
-      "motionInstruction": "Slow elevated movement maintaining tide and light continuity.",
-      "compositingInstruction": "Do not overlay species, carbon flux or habitat area without source data.",
-      "rejectIf": [
-        "Reject invented species or carbon number"
-      ],
-      "sourceRequirements": [
-        "Need real field photos and sampling method"
-      ],
-      "continuity": "A clear cut separates laboratory and ecosystem field scenes.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF10-start.png",
-        "middle": "docs/redesign-next/keyframes/CF10-middle.png",
-        "end": "docs/redesign-next/keyframes/CF10-end.png",
-        "candidate": "docs/redesign-next/renders/CF10-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF10-take01.json"
-      },
-      "selectedStills": [
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",
-          "attemptId": "CF10",
-          "status": "selected-concept-still",
-          "review": "사람 없음 / 닫힌 용기와 분석기 / 분석 전 시료 준비 장면으로 사용 / 장비 작동이나 실제 GeoSR 시설로 주장하지 않음",
-          "motionNext": "4초의 3–5% 카메라 접근 또는 초점 이동만 허용 / 병 개수와 액면 및 뚜껑 상태 고정 / 소품 변경 시 재작업"
-        },
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf10-chemistry-close-v1.png",
-          "attemptId": "CF10_END",
-          "status": "selected-alternate-still-not-continuity-pair",
-          "review": "별도 클로즈업 컷으로 보존 / 확대하면서 주변 소품·프레이밍이 변하므로 wide의 확정 끝 프레임으로 사용하지 않음",
-          "motionNext": "wide→close 생성 보간 금지 / 별도 인서트 컷 또는 wide 자체의 소폭 접근을 사용"
-        }
-      ],
-      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
-    },
-    {
-      "id": "CF11",
-      "film": "company",
-      "start": 45,
-      "end": 50,
-      "duration": 5,
-      "title": "유동과 입자 확산 모델",
-      "method": "source-composite",
-      "referenceIds": [
-        "data",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "실제 지형·관측 입력에서 하나의 변수별 모델 결과를 보여준다",
-      "frames": {
-        "start": "연안 지형·관측 입력",
-        "middle": "계산 격자와 한 변수의 결과",
-        "end": "시간 변화가 읽히는 장면"
-      },
-      "imageInstruction": "Use an atmospheric real-world coastal plate only. Model grid and result are source composites.",
-      "motionInstruction": "Keep camera nearly fixed while verified time steps change.",
-      "compositingInstruction": "Preserve land mask, time, units, run identity and legend.",
-      "rejectIf": [
-        "Reject generic glowing particle field as prediction"
-      ],
-      "sourceRequirements": [
-        "Need releasable model output with variables and timestamps"
-      ],
-      "continuity": "CF10 and CF11 relate through environmental question, not fake direct causality.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF11-start.png",
-        "middle": "docs/redesign-next/keyframes/CF11-middle.png",
-        "end": "docs/redesign-next/keyframes/CF11-end.png",
-        "candidate": "docs/redesign-next/renders/CF11-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF11-take01.json"
-      },
-      "selectedStills": [
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf11-microscope-v2.png",
-          "attemptId": "CF11_FIX",
-          "status": "selected-concept-still",
-          "review": "대물렌즈 간격과 하부 조명을 수정 / 슬라이드 지지·수직 광축·하부 콘덴서 육안 확인 / 현미경 배율이나 실제 생물 종을 주장하지 않음 / 작은 렌즈 각인은 최종 확대본에서 다시 확인",
-          "motionNext": "4초 미세한 카메라 접근 / 렌즈와 스테이지를 독립적으로 변형하지 않음 / 생물 확대 영상은 실제 원본을 별도 합성하며 생성 생물로 종을 단정하지 않음"
-        }
-      ],
-      "reviewRecord": "docs/redesign-next/05-IMAGE-REBUILD.md"
-    },
-    {
-      "id": "CF12",
-      "film": "company",
-      "start": 50,
-      "end": 56,
+      "id": "MAIN-SATELLITE",
+      "title": "대공간 관측",
+      "purpose": "Large-area observation becomes an aligned environmental product",
       "duration": 6,
-      "title": "연안재해와 시계열 예측",
-      "method": "source-composite",
-      "referenceIds": [
-        "data",
-        "source-archive"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "파랑·해일·강우 조건의 실제 예측/검증 관계를 보여준다",
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Crisp orthographic satellite-data scene of a plausible temperate Korean coast, inland river, fields and hills. Large observation extent and authentic raster texture, not a perspective drone view. FIRST state: two adjacent true-colour tiles already have exactly matching coastlines and roads, with a subtle visible join. A small greyscale spectral inset depicts the SAME area. A faint incipient blue-teal water layer lies only inside valid water; a small cloud area stays visibly unclassified. No spacecraft, scan beam or coordinates. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six seconds. Two already registered satellite tiles settle into a seamless mosaic without changing land or coast. Then a restrained blue-teal environmental layer resolves across valid river/coastal-water pixels, precisely aligned to shore; cloud/no-data areas stay unclassified. Preserve the corresponding spectral inset. The changing data product is the subject, not zooming scenery. No beams, new geography, numbers or audio.",
       "frames": {
-        "start": "실제 해안과 입력 조건",
-        "middle": "검증된 한 시나리오의 범위 변화",
-        "end": "그래프와 공간 결과가 같이 읽힘"
+        "start": "Registered true-colour satellite tiles with subtle seam",
+        "middle": "Tile mosaic settles, then valid-water environmental layer resolves",
+        "end": "One coherent regional environmental image"
       },
-      "imageInstruction": "Real coast footage may underpin the scene; all hazard/model information is authentic post-production.",
-      "motionInstruction": "One slow pull-back reveals temporal result.",
-      "compositingInstruction": "Label scenario, forecast time, variable, vertical datum and verification clearly.",
+      "continuity": "Blue-water match cut to physical field water",
       "rejectIf": [
-        "Reject false live observation or fabricated inundation"
+        "Reject if this constraint is violated: Identical coastline and raster alignment across tiles and spectral inset.",
+        "Reject if this constraint is violated: Derived field only on valid water; cloud/no-data stays unclassified.",
+        "Reject if this constraint is violated: Illustrative environmental product, no acquisition or measurement claim."
       ],
-      "sourceRequirements": [
-        "Need approved scenario and validation plot"
-      ],
-      "continuity": "Model prediction is not footage of an occurred disaster.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF12-start.png",
-        "middle": "docs/redesign-next/keyframes/CF12-middle.png",
-        "end": "docs/redesign-next/keyframes/CF12-end.png",
-        "candidate": "docs/redesign-next/renders/CF12-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF12-take01.json"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
       },
-      "selectedStills": [
-        {
-          "path": "dist/assets/concepts/reviewed-20260922/cf12-wave-model-v1.png",
-          "attemptId": "CF12_WAVE",
-          "status": "selected-concept-still",
-          "review": "파랑의 연속된 자유수면과 그 표면을 따르는 국소 격자를 육안 확인 / 네온·가상 항구·허구 지형 없음 / 절단면은 개념적 도식이며 실제 물탱크나 특정 해역을 뜻하지 않음 / 격자는 생성형 설명 요소로 실제 모델 격자·결과·경계조건 검증 자료가 아님",
-          "motionNext": "4초의 미세한 측방 이동 / 수면과 격자가 함께 변형되어야 함 / 측면 절단면에서 물이 쏟아지거나 격자가 따로 미끄러지면 탈락 / 실제 결과를 제시할 때에는 검증한 원본 자료로 교체"
-        }
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "cameraPath": "Orthographic fixed data view preserves pixel registration; mosaic and environmental-layer changes provide the motion.",
+      "sourceTech": [
+        56
+      ],
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New native satellite-data start/end pair; scenic coast candidate unsuitable"
+      }
+    },
+    {
+      "id": "MAIN-CTD",
+      "title": "현장 취득",
+      "purpose": "Completed water-column instrument deployment",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT original16:9 documentary wide coastal research scene. Keep entire modest research vessel in right third with broad water and distant low Korean coast. One plausible stern A-frame and taut cable connect to the central lifting bail of a compact12-bottle CTD rosette. The entire cage is clear above water with its lower ring just above the surface, ready for complete vertical lowering. Exactly2rear-facing crew in helmets and life jackets remain clear of the load. Preserve realistic boat, cage and cable scale. All intended analysis panels, if any, must be generated natively and must not obscure the load path. No fictional measured values, logos or company ownership claim. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six-second broad field-operation shot. One connected winch cable pays out smoothly, lowering the same rigid CTD rosette vertically from entirely above water. The cage progressively crosses the surface, creates a proportionate brief splash and outward ripples, then its top ring submerges while the connected cable remains visible. A short broad oblique arc keeps the entire vessel and water context in view. Preserve geometry, scale and2safe PPEcrew. No disconnected cables, duplicate gear, unsafe gestures, text or audio.",
+      "frames": {
+        "start": "Whole CTD cage visibly above water, lower ring just above the surface, with a taut connected cable and full vessel/context still visible.",
+        "middle": "Winch pays out cable continuously; the complete rigid cage progressively enters water, produces proportionate ripples, and lowers until the top ring is submerged.",
+        "end": "Top ring submerges; connected cable and causal ripples visible"
+      },
+      "continuity": "Cut from water entry to a fixed underwater camera without claiming same site",
+      "rejectIf": [
+        "Reject if this constraint is violated: One rosette and taut connected hoist; cage rigid and vertical.",
+        "Reject if this constraint is violated: Cable pays out continuously; splash/ripples proportional to cage entry.",
+        "Reject if this constraint is violated: Crew remain clear with life jackets/helmets."
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "cameraPath": "A short broad oblique arc keeps the entire working vessel, load path and water context readable; do not finish in a device close-up. CTD is one6s field shot only.",
+      "sourceTech": [
+        63,
+        57
+      ],
+      "sourceReview": {
+        "status": "parent-browser-observed; local-original-unavailable; reference-only",
+        "candidateNumber": 8,
+        "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+        "localDownload": "original-missing",
+        "pixelReview": "pending",
+        "preserveCandidate": true
+      }
+    },
+    {
+      "id": "MAIN-AI",
+      "title": "AI 분석",
+      "purpose": "Every target stays linked to one box and one silhouette mask",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Fixed temperate underwater camera over sand. Exactly two plausible silver-grey fish, complete bodies visible: A in upper-left-middle facing right; B in lower-centre-right facing left. Both have clear swimming room and stay far from frame edges. Each fish carries exactly one thin complete blue box with modest margin and one faint blue silhouette mask including fins and tail. No other animals. Fish and analyses are prominent, not tiny. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six seconds. Fish A swims rightward one body length in the upper band; fish B swims leftward one body length in the separate lower band, propelled by natural tail beats. Exactly two native boxes and two silhouette masks continuously follow their corresponding fish, including every fin and tail, in every frame including first and last. Keep all subjects in frame and camera fixed. No extra targets, detached/static annotations, text or audio.",
+      "frames": {
+        "start": "Two separated fish with complete boxes and silhouette masks",
+        "middle": "Fish swim one body length in separate bands; annotations follow",
+        "end": "Different fish positions with all corresponding annotations still aligned"
+      },
+      "continuity": "Clear cut from organism analysis to intentional numerical-model CG",
+      "rejectIf": [
+        "Reject if this constraint is violated: Exactly2fish,2boxes,2masks in all frames.",
+        "Reject if this constraint is violated: No target crossing, shape distortion or frame exit.",
+        "Reject if this constraint is violated: No static or detached annotations; reject rather than repair."
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "cameraPath": "Fixed underwater camera is method-appropriate; fish travel and native annotation tracking provide the action.",
+      "sourceTech": [
+        59,
+        61
+      ],
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique TWO-fish pair; business five-fish and homepage jellyfish stay unchanged"
+      }
+    },
+    {
+      "id": "MAIN-MODEL",
+      "title": "수치예측",
+      "purpose": "A changing model-field distribution on unchanged geography",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT original16:9 explanatory numerical-model scene, matching the selected reference direction: a continuous river from upper-right through a natural estuary with coherent marshes and sandbars to the sea on the left. Fine triangular cells near shore and coarser cells offshore are restricted to water. Restrained white flow arrows point consistently downstream and outward. A translucent teal dispersion field is integrated into the water surface. Preserve realistic connected terrain and make every water-domain element readable within the complete frame. No actual place identity, claimed calculation, numerical legend or extra section inset. All analysis graphics must be generated natively. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six-second accelerated explanatory model evolution from the supplied river-estuary-sea image. First the existing upstream teal field advects toward the mouth. Then its front widens and spreads from the estuary into open water. Finally the leading field extends farther toward the left-side sea, becoming broader and more diffuse so its extent and distribution clearly differ from the first frame. Keep terrain, marshes, sandbars, shoreline and water-only mesh fixed. Existing white arrows remain coherently downstream and seaward. Preserve connected water boundaries; no land spill, disconnected tracer, new panels, numbers or sound. Any restrained broad camera move only supports the evolving field; a camera-only result fails. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "frames": {
+        "start": "Use the candidate's existing river-estuary-sea mesh, arrows and teal field as the initial distribution, without substituting a different map or adding a section panel.",
+        "middle": "0-2s the existing upstream portion advects toward the estuary;2-4s the mouth/front widens into the open-water domain;4-6s the leading field extends farther toward the left-side sea and becomes broader and more diffuse. The spatial extent and concentration distribution change visibly.",
+        "end": "A visibly larger and differently distributed coastal/offshore field compared with the first frame, while every shore, sandbar, marsh and mesh location remains fixed."
+      },
+      "continuity": "Cut from intentional model CG to a compatible real-terrain view; spatial point-cloud/surface construction closes the film at broad scale.",
+      "rejectIf": [
+        "Reject if this constraint is violated: Mesh remains confined to water and unchanged in position; shore-fine/offshore-coarse structure is preserved.",
+        "Reject if this constraint is violated: White arrows stay coherently oriented from upstream through the estuary toward open sea.",
+        "Reject if this constraint is violated: Teal field changes smoothly by transport and dispersion within connected wet areas; it never crosses dry land, teleports or appears as disconnected patches.",
+        "Reject if this constraint is violated: This is an accelerated explanatory sequence, not actual calculated output or literal6-second real transport.",
+        "Reject if this constraint is violated: No new section panels, numbers, labels or postproduction graphical additions."
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "cameraPath": "A restrained broad oblique move may support spatial reading, but the entire connected river-estuary-sea domain remains inside frame. Camera motion alone does not satisfy the shot.",
+      "sourceTech": [
+        15,
+        46,
+        52,
+        65
+      ],
+      "sourceReview": {
+        "status": "parent-browser-qa-passed-editorial-model-introduction; original-download-and-pixel-qa-pending",
+        "candidateNumber": 9,
+        "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+        "localDownload": "original-missing",
+        "pixelReview": "pending",
+        "preserveCandidate": true,
+        "currentViewerLabel": "Generated image7"
+      }
+    },
+    {
+      "id": "MAIN-SPATIAL",
+      "title": "공간정보 구축",
+      "purpose": "Legible shape/elevation product suitable for mapping and spatial review",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Create a high-quality original16:9 using native ChatGPT image generation. A broad oblique view of a plausible temperate Korean coast extending inland through a low wooded bluff, a modest road and ordinary low-rise structures. Sea, continuous shoreline and inland extent stay connected in one real-looking landscape. This is the FIRST construction state: most terrain is photographic, with a restrained sparse natural-colour point cloud precisely registered on one central bluff/road area. All points describe actual visible surface features, not decoration. Leave enough broad surrounding land and water for a later wider closing view. No isolated model plinth, floating land slab, scan beam, invented numbers, logos or purported measured result. Generate all analytical graphics natively. Fictional explanatory survey concept; highest available original download.",
+      "motionInstruction": "Six-second geospatial construction sequence on the supplied unchanged landscape. First, a registered natural-colour point cloud becomes denser over the same bluff, road and structures. Then those points resolve into a continuous corresponding surface without changing any terrain or building shape. During the final two seconds ascend and pull back smoothly, revealing a broader connected coastal-and-inland extent while the reconstructed area remains registered and readable. End on the expansive geographic view. The surface construction is the central action, not camera motion alone. No floating terrain, arbitrary particles, scan beams, new buildings, invented values, text or audio.",
+      "frames": {
+        "start": "A broad real-looking coastal and inland terrain view with coherent roads, bluff, low structures and a wide water boundary; a sparse registered point cloud is ready to resolve on the same visible surface.",
+        "middle": "0-2s the fixed real-world features become represented by a denser registered natural-colour point cloud; 2-4s that point cloud resolves into a continuous corresponding surface; 4-6s the camera rises and pulls back to reveal the broader connected land-and-water extent.",
+        "end": "A wide geographic closing view: the constructed surface remains visibly tied to real terrain, roads and coastline, with a readable regional extent rather than a desk or isolated floating model."
+      },
+      "continuity": "Cut from the model-domain scene to a real terrain view with compatible shoreline orientation. Finish wide and use a simple cut or short dissolve back to the opening regional satellite scene.",
+      "rejectIf": [
+        "Reject if this constraint is violated: Natural terrain, roads, roofs and coastline stay in identical coordinates across photographic, point-cloud and surface representations.",
+        "Reject if this constraint is violated: Point density and surface continuity change; physical topography and building shapes do not morph.",
+        "Reject if this constraint is violated: A surface model may follow visible roofs and vegetation; do not claim validated bare-earth DEM or survey accuracy.",
+        "Reject if this constraint is violated: No floating terrain slabs, undersea cliff walls, scan beams or particles unrelated to actual surface points.",
+        "Reject if this constraint is violated: All point-cloud and surface graphics originate inside the generated image/video."
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "cameraPath": "Begin at a broad oblique survey view, hold enough registration to read point-cloud-to-surface construction, then smoothly ascend and pull back to a wider regional framing. Reconstruction is the action; camera widening supplies the ending scale.",
+      "sourceTech": [
+        64,
+        47,
+        62
+      ],
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native start/end pair required. The final wide view must depict the same terrain and features, not invented geometry beyond an unrelated starting image."
+      }
+    },
+    {
+      "id": "EXP-AI",
+      "title": "인공지능",
+      "purpose": "Every target stays linked to one box and one silhouette mask",
+      "duration": 0,
+      "durationMeaning": "final still; no video duration committed",
+      "film": "expertise-ai",
+      "mediaType": "still",
+      "provenance": "native-chatgpt-concept",
+      "imageInstruction": "Preserve the reviewed native ChatGPT original unchanged. All internal boxes, masks or analysis marks are already in the original. No new generation or postproduction graphics.",
+      "motionInstruction": "No video submission. Keep final still. For jellyfish, the same-input paid video retry remains prohibited.",
+      "frames": {
+        "start": "Four distinct moon-jellyfish forms with disk-shaped bells, visible four-lobed gonads and short oral arms. All four boxes enclose the corresponding organism. Blue contours and translucent masks follow all four silhouettes. No unboxed organisms or empty-water boxes. Natural underwater background. Parent independently inspected the original",
+        "middle": "Retain the accepted complete still; no automatic zoom/shake.",
+        "end": "Same final still; do not imply accepted tracking or a completed video."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Same-shot jellyfish video retry",
+        "Reuses business five-fish or main AI input",
+        "Adds meaningless pan/zoom or video-production badge to a final still"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "Still semantics and every depicted target/graphic remain coherent.",
+        "result": "No implied video or measured-result acceptance.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "ai-jellyfish-native-20260929"
+      ],
+      "localOriginal": "media-source/editorial/ai-jellyfish-native-20260929.png",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "accepted-still",
+      "sourceReview": {
+        "status": "accepted-editorial-concept-still",
+        "width": 1672,
+        "height": 941,
+        "sha256": "d748b6ba5cc2239c8413a1245098dbb623e455cc4f23c756f19afc4415f49eb4"
+      },
+      "webAsset": "dist/assets/editorial/ai-jellyfish-native-20260929.webp",
+      "sourceTech": [
+        59,
+        61
       ]
     },
     {
-      "id": "CF13",
-      "film": "company",
-      "start": 56,
-      "end": 60,
-      "duration": 4,
-      "title": "광역 연안으로 귀환",
-      "method": "source-composite",
-      "referenceIds": [
-        "coastal-hero",
-        "company-evidence"
-      ],
-      "referenceStatus": "documented-capability-but-shot-source-pending",
-      "purpose": "예측 장면을 정리하고 첫 실제 연안 화면으로 돌아온다",
-      "frames": {
-        "start": "CF12의 실제 예측 결과가 마무리되는 장면",
-        "middle": "출처가 확인된 광역 연안 영상으로 편집 컷",
-        "end": "CF01과 같은 실제 연안 뷰로 귀환"
-      },
-      "imageInstruction": "Return to the same documented coastal footage used at opening. No platform UI in the company film.",
-      "motionInstruction": "Use a clean editorial match cut to the opening footage.",
-      "compositingInstruction": "Keep forecast data on its source frame and the final title in HTML. AX and GeoDAP UI belong only in their separate films.",
-      "rejectIf": [
-        "Reject platform UI collage or inconsistent coast"
-      ],
-      "sourceRequirements": [
-        "Need matching opening coastal source and approved CF12 ending frame"
-      ],
-      "continuity": "Final geography and direction match CF01 for a true web loop.",
-      "containsActualUI": false,
-      "generationReady": false,
-      "status": "evidence-mapped-source-frames-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/CF13-start.png",
-        "middle": "docs/redesign-next/keyframes/CF13-middle.png",
-        "end": "docs/redesign-next/keyframes/CF13-end.png",
-        "candidate": "docs/redesign-next/renders/CF13-take01.mp4",
-        "review": "docs/redesign-next/reviews/CF13-take01.json"
-      }
-    },
-    {
-      "id": "AX01",
-      "film": "ax",
-      "start": 0,
-      "end": 6,
+      "id": "EXP-MODEL",
+      "title": "하천·호소의 수질 분포",
+      "purpose": "메인 하구와 다른 내륙 수계에서 유동·확산의 시간 변화를 설명",
       "duration": 6,
-      "title": "실제 해역에서 AX 화면으로",
-      "method": "source-composite",
-      "referenceIds": [
-        "coastal-hero",
-        "ax-review",
-        "capture-review"
-      ],
-      "referenceStatus": "actual-employee-ui-recording-pending",
-      "purpose": "현실 해역의 규모에서 직원 제작 AX 갤러리의 실제 화면으로 진입한다",
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-modelling",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Create a unique native16:9 inland river/lake modelling concept, not the main estuary. Coherent banks and hills, restrained fitted water-only computational mesh and compact initial teal tracer at the river inflow. No impossible dam/weir. Show the whole connected domain. All graphics native; no calculated-value claims.",
+      "motionInstruction": "Six-second accelerated model concept: inflow tracer moves into the lake, spreads with coherent circulation and dilutes. Preserve all terrain and mesh; no dry-land spill or teleportation. Camera motion alone is insufficient.",
       "frames": {
-        "start": "출처를 확인한 실제 광역 해역",
-        "middle": "해역 이미지가 정리되며 실제 AX 제품 화면의 영역이 열림",
-        "end": "직원 제작 AX 갤러리의 첫 실제 화면이 읽힘"
+        "start": "Distinct inland river entering a lake; compact tracer near the inflow, fitted water-only mesh.",
+        "middle": "Tracer follows the inflow path and broadens within the lake circulation.",
+        "end": "Broader diluted lake distribution on the same terrain and mesh."
       },
-      "imageInstruction": "Use only documented real coastal footage for the opening and direct capture of the employee AX interface. Never generate browser chrome, labels, controls, result pixels or a fictional map.",
-      "motionInstruction": "Use a restrained editorial transition from the coast to a full-resolution AX screen. Hold the real interface long enough for a viewer to recognize it.",
-      "compositingInstruction": "The final editor inserts the actual employee-built AX interface as source pixels; any Higgsfield transition is outside the UI boundary. Brand and title remain HTML.",
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
       "rejectIf": [
-        "생성된 가짜 UI",
-        "지역이나 사업지 오인",
-        "제품 첫 화면이 읽히지 않음"
+        "Reuses main model source or detail AX estuary",
+        "Tracer crosses dry ground or terrain changes",
+        "Only camera/colour flicker changes"
       ],
-      "sourceRequirements": [
-        "첫 해역 원본의 장소·권리·1080p 확인",
-        "직원 AX 갤러리 1920×1080 실제 녹화",
-        "제품 화면의 공개 가능 상태 확인"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
       ],
-      "continuity": "AX01 종료 화면의 동일한 실제 탐지 화면을 AX02 첫 프레임으로 사용한다",
-      "containsActualUI": true,
+      "localOriginal": null,
+      "generationAllowed": false,
       "generationReady": false,
-      "status": "actual-ui-capture-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/AX01-start.png",
-        "middle": "docs/redesign-next/keyframes/AX01-middle.png",
-        "end": "docs/redesign-next/keyframes/AX01-end.png",
-        "candidate": "docs/redesign-next/renders/AX01-take01.mp4",
-        "review": "docs/redesign-next/reviews/AX01-take01.json"
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        15,
+        46,
+        52,
+        65
+      ]
+    },
+    {
+      "id": "EXP-SATELLITE",
+      "title": "위성 수환경 분석",
+      "purpose": "메인 광역 연안과 다른 호소 위성영상에서 입력 밴드와 수환경 층의 관계를 표현",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-satellite",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "New unique native16:9 satellite-data view of an inland lake and catchment. Orthographic raster texture, matching small spectral inset and a restrained incipient water-environment layer. Not a perspective drone image. No spacecraft or scan beam. Do not reuse main coastal satellite input or claim measured values.",
+      "motionInstruction": "Six seconds: the spectral/true-colour data resolve into a shore-aligned water-environment layer over the lake, then settle into clearly corresponding raw/derived views. Cloud/no-data stays unclassified. Keep geography fixed; no fake numbers or camera-only motion.",
+      "frames": {
+        "start": "Orthographic satellite view of a distinct inland lake with coherent true-colour land and a same-area spectral inset.",
+        "middle": "A restrained environmental layer resolves only over valid lake pixels.",
+        "end": "Matched raw and derived views remain legible with cloud/no-data preserved."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Generic aerial scenery with no data relationship",
+        "Shares main satellite source",
+        "Derived field crosses land or invents cloud-covered observations"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        56
+      ]
+    },
+    {
+      "id": "EXP-SPATIAL",
+      "title": "공간정보·측량",
+      "purpose": "Legible shape/elevation product suitable for mapping and spatial review",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-spatial",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A surveyed temperate coastal bluff, one ordinary road and modest dry-land structures form a large coherent central terrain object. One side is a complete sparse natural-colour point cloud registered exactly to each feature; the other is a matte terrain surface of that same object. Two small aligned panels show its orthophoto and elevation rendering. Plausible continuous geometry, clean neutral scientific presentation. No floating land slab, spacecraft, laser beam or arbitrary cliff wall. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six seconds. The registered natural-colour point cloud gains density on unchanged terrain. Then a connected clean terrain surface resolves from those same points while the matching ortho/elevation panels remain registered. A shallow lateral camera move reveals relief. No terrain morphing, invented buildings, scan beams, numbers or audio.",
+      "frames": {
+        "start": "One concrete coastal bluff/road object in matched photogrammetry, point-cloud and terrain representations; prepared before the selected action.",
+        "middle": "Point cloud densifies on fixed geometry; a continuous surface resolves from it",
+        "end": "Legible shape/elevation product suitable for mapping and spatial review"
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Do not substitute satellite water-quality imagery; point cloud, orthophoto and terrain must correspond.",
+        "Exact source or clip duplicates main/company/AX assets"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        64,
+        47,
+        62
+      ]
+    },
+    {
+      "id": "EXP-OBSERVATION",
+      "title": "무인선 조사와 탐사 단면",
+      "purpose": "CTD 메인 장면과 구별되는 하천 무인선 자료 취득을 보여줌",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-observation",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Unique native16:9 river survey scene with a plausible small USV, ordinary banks and a clear survey route. Use documented company USV/equipment evidence for proportions, not a claimed photograph. A restrained native inset shows qualitative acoustic returns from the same survey, without numerical depth or velocity labels. Whole vessel, wake and inset fit the frame. Do not reuse main CTD image.",
+      "motionInstruction": "Six seconds: the USV advances along one straight survey line, producing a physically proportionate wake; its native acoustic-return section accumulates consecutively with survey progress. Preserve hull and sensor geometry. No emitted visible sonar laser, fabricated measurements or unrelated data panel.",
+      "frames": {
+        "start": "A modest plausible survey USV on a straight river transect; one quiet native acoustic-return panel begins at the current survey position.",
+        "middle": "USV advances steadily with a proportional wake while acoustic-return columns accumulate in sequence.",
+        "end": "A readable continuous survey section and vessel progress remain in geographic context."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Hull/sensor shape changes",
+        "Wake does not follow vessel motion",
+        "Acoustic return is mislabeled as velocity or fabricated measured bathymetry",
+        "Uses CTD source"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "equipment",
+        "usv",
+        "brochure-review",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        63,
+        57
+      ]
+    },
+    {
+      "id": "EXP-ENVIRONMENT",
+      "title": "환경분석·생태",
+      "purpose": "A concrete environmental/ecological sample in field context",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-environment",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Documentary temperate Korean saltmarsh field scene. A survey quadrat rests naturally over low salt-tolerant plants and wet sediment beside one freshly recovered transparent sediment core held upright in a proper simple support. Core preserves plausible horizontal mud layers and fine roots. Sample and quadrat are large clear subjects, tidal-flat context behind. One small native inset magnifies the SAME core layers. No tropical reef, decorative forest, rainbow strata or laboratory people. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Optional six-second clip only with an extraction-ready native start image: gloved field hands withdraw one intact vertical sediment core smoothly from wet ground, then support it upright without mixing its strata. A little exterior water drains naturally; quadrat and surrounding plants stay stable. Native sample inset retains the same layer order. No duplicated hands, manufactured layers, labels or audio.",
+      "frames": {
+        "start": "Saltmarsh survey quadrat and intact sediment core, with separate lab evidence; prepared before the selected action.",
+        "middle": "Physical sampling preserves layers; specimen detail connects sediment/roots to investigation",
+        "end": "A concrete environmental/ecological sample in field context"
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Do not animate a completed core as if still buried. A strong still is valid; no mandatory video quantity.",
+        "Exact source or clip duplicates main/company/AX assets"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        48,
+        84,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "EXP-HAZARDS",
+      "title": "연안재해·방재",
+      "purpose": "Coastal target and derived monitoring result are visibly linked",
+      "duration": 0,
+      "durationMeaning": "final still; no video duration committed",
+      "film": "expertise-hazards",
+      "mediaType": "still",
+      "provenance": "native-chatgpt-concept",
+      "imageInstruction": "Preserve the reviewed native ChatGPT original unchanged. All internal boxes, masks or analysis marks are already in the original. No new generation or postproduction graphics.",
+      "motionInstruction": "No video submission. Keep final still. For jellyfish, the same-input paid video retry remains prohibited.",
+      "frames": {
+        "start": "Continuous gently curving sandy coastline with natural surf, coherent land-water relationship, plausible low-rise town and road on dry land. No impossible breakwaters or offshore structures. Thin blue boundary line tracks the swash edge. All perspective scales plausible at original resolution.",
+        "middle": "Retain the accepted complete still; no automatic zoom/shake.",
+        "end": "Same final still; do not imply accepted tracking or a completed video."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Same-shot jellyfish video retry",
+        "Reuses business five-fish or main AI input",
+        "Adds meaningless pan/zoom or video-production badge to a final still"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "Still semantics and every depicted target/graphic remain coherent.",
+        "result": "No implied video or measured-result acceptance.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "coastal-monitoring-native-20260929"
+      ],
+      "localOriginal": "media-source/editorial/coastal-monitoring-native-20260929.png",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "accepted-still",
+      "sourceReview": {
+        "status": "accepted-editorial-concept-still",
+        "width": 1672,
+        "height": 941,
+        "sha256": "0554d53a0830a93886380253b310bf4a42f77fea0798734635dc6b0bba0f1c62"
+      },
+      "webAsset": "dist/assets/editorial/coastal-monitoring-native-20260929.webp",
+      "sourceTech": [
+        53,
+        54,
+        55,
+        58
+      ]
+    },
+    {
+      "id": "EXP-SYSTEMS",
+      "title": "데이터·시스템",
+      "purpose": "Data support a specific spatial review task",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "expertise-systems",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A precise realistic environmental analysis workstation. Large professional display viewed obliquely but clearly, compact rugged field logger with plausible connected leads beside it. Display shows one coherent river/coast base with two small restrained native panels for observed water coverage and model transport. FIRST state: observation layer selected, model and hypothetical nearshore review region subdued. No person necessary. Screen/bezel/desk/connectors look physical; display60% of frame, logger15%. No fake live timestamps, random charts or purported actual product branding. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+      "motionInstruction": "Six seconds. On the physical display, select the model-result layer in place of the observation layer while retaining identical geography. Then focus one hypothetical nearshore review extent reached by the model field and its matching detail panel, reducing unrelated layers. A short natural camera slide reveals monitor and connected logger. Every screen transition is natively generated and purposeful, not random blinking. No invented metrics, fake branding, new panels or audio.",
+      "frames": {
+        "start": "Physical environmental analysis workstation, logger and a large purposeful map display; prepared before the selected action.",
+        "middle": "Observation layer switches to registered model result; relevant review extent becomes focused",
+        "end": "Data support a specific spatial review task"
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Generated panels explain concepts only and must not impersonate an actual AX product screen. Detailed product evidence comes from actual provided AX material.",
+        "Exact source or clip duplicates main/company/AX assets"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing",
+      "sourceReview": {
+        "status": "not-reviewed",
+        "requirement": "New unique native original required; planned role does not equal approved source."
+      },
+      "sourceTech": [
+        60,
+        47,
+        62
+      ]
+    },
+    {
+      "id": "COMPANY-ANALYSIS",
+      "title": "시료 분석의 실제 동작",
+      "purpose": "회사 소개 확장 미디어에 연구 방법이 읽히는 독립적인 실험 장면을 배치",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "company",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "New native16:9 documentary environmental-analysis bench with a plausible automated liquid sampler, intact sample vials, one connected sampling needle and nearby analytical instrument. No people. Device and sample path read clearly in a complete frame. Neutral light and realistic laboratory materials. No fake results, brand/ownership claim or reuse of the equipment-page laboratory still.",
+      "motionInstruction": "Six seconds: the sample rack positions one vial beneath the connected needle; the needle lowers into it, then retracts after sampling. Preserve all vial geometry and physical connections. No floating pipette, extra hands, liquid appearing from nowhere or numeric result display.",
+      "frames": {
+        "start": "A realistic automated sample rack and one sampling needle at an environmental-analysis bench, needle raised above a vial.",
+        "middle": "Rack settles at one position; needle descends into that same vial.",
+        "end": "Needle retracts and the intact sample rack remains ready for the next sample."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Device is decorative with no sampling event",
+        "Needle/vials pass through each other or change shape",
+        "Repeats equipment lab or main CTD source"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "brochure-review",
+        "equipment",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing"
+    },
+    {
+      "id": "AX-MAIN-CONCEPT",
+      "title": "같은 공간에 연결되는 자료",
+      "purpose": "AX 메인 도입의 공간·자료 관계를 보여주며 실제 제품 갤러리와 역할 구분",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "ax-main",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "Unique native16:9 broad catchment analysis concept, distinct from main closing terrain and AX detail estuary. Keep the real-looking terrain dominant and fit two restrained native panels showing matching observation coverage and model field. All layers use the same shore/river coordinates. No product controls, fake metrics, branding or claim this is actual AX software.",
+      "motionInstruction": "Six seconds: switch the same registered catchment from observation coverage to a corresponding environmental model layer, then focus a relevant water-area review extent and matching panel. Preserve terrain and data alignment. No random blinking, floating HUD or postproduction overlay.",
+      "frames": {
+        "start": "A unique broad freshwater catchment with registered observation-coverage and model-field concept panels.",
+        "middle": "Observation information gives way to a corresponding environmental model layer on the same geography.",
+        "end": "One relevant water-area review region and its linked panel become clear."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Copies main or AX detail source",
+        "Panels do not depict the central geography",
+        "Generated controls impersonate actual AX UI",
+        "Only camera zoom changes"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing"
+    },
+    {
+      "id": "WAVE-ROCK",
+      "title": "암반 연안의 파쇄와 되밀림",
+      "purpose": "기술 대표가 아닌 별도 전환 구간에서 물의 움직임을 보여줌",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "wave",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "New native16:9 wide temperate rocky coast, low granite headland at one side and broad navy open water. A coherent moderate unbroken swell is ready to reach the rocks. Realistic foam/depth/light, no invented structure or disaster spectacle. Unique source, not a main hero or hazards image.",
+      "motionInstruction": "Six seconds: the incoming crest reaches the fixed rocky shore, breaks progressively, and the resulting foam spreads then drains back around the same rocks. Natural moderate water movement, no giant storm surge. Keep full coast/wave context visible.",
+      "frames": {
+        "start": "An unbroken moderate crest approaches a low granite headland, open sea remains broad.",
+        "middle": "Crest breaks along fixed rocks and whitewater fans around them.",
+        "end": "Foam drains naturally as the next swell approaches."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Only still-image pan or tiny shimmer",
+        "Water flows through rocks",
+        "Fake harbour or giant disaster wave",
+        "Used as a technology explanation"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing"
+    },
+    {
+      "id": "WAVE-OPEN",
+      "title": "외해의 이어지는 파면",
+      "purpose": "암반 장면에 연결되는 별도 외해 물성 장면",
+      "duration": 6,
+      "durationMeaning": "proposed source seconds, mutable after scene QA",
+      "film": "wave",
+      "mediaType": "video-proposal",
+      "provenance": "planned-native-chatgpt-concept",
+      "imageInstruction": "New native16:9 open temperate sea with clear moderate navy swell fronts and sparse realistic foam; broad horizon, natural light and no vessel, structure or graphics. Different source and angle from rocky transition shot.",
+      "motionInstruction": "Six seconds: coherent swell fronts travel across the view, one crest forms sparse foam and that foam dissipates naturally as the next wave advances. Stable horizon and physically consistent wave direction. The water action, not camera movement, carries the scene.",
+      "frames": {
+        "start": "Broad open-water swell fronts, coherent horizon and no foreground structure.",
+        "middle": "A crest advances and forms sparse wind-driven foam.",
+        "end": "Foam dissipates as the following swell progresses coherently."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Static photo merely zooms",
+        "Waves move in contradictory directions",
+        "Storm/structure added",
+        "Same source as rocky clip"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "higgsfield-procedure"
+      ],
+      "localOriginal": null,
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "original-missing"
+    },
+    {
+      "id": "AX-DETAIL-FLOW",
+      "title": "AX 상세 공간분석 도입",
+      "purpose": "메인 AX 및 메인 모델과 중복하지 않는 검수 정지 소개",
+      "duration": 6,
+      "durationMeaning": "one authorized6s derivative attempt; accepted still remains until video passes QA",
+      "film": "ax-detail",
+      "mediaType": "image-to-video",
+      "provenance": "native-chatgpt-concept",
+      "imageInstruction": "Use the unchanged vetted native AX estuary original with existing water-only mesh and plume. Preserve its original first frame; no new source or postproduction graphics.",
+      "motionInstruction": "Use the supplied original image as the exact first frame. Create one 6-second 16:9 scientific editorial shot of this SAME river estuary and its already visible cyan numerical-model mesh and turquoise concentration field. Subject: an illustrative water-quality plume being advected from the river into the open sea. The terrain, coast, sandbars, bridge, roads, fields and computational mesh stay geometrically fixed and registered to the original throughout; this is an evolving model field on a fixed geographic domain. At 0 seconds preserve the original compact bright plume at the river mouth. From 0 to 3 seconds a continuous supply travels down the existing river channel from upper left, exits the mouth toward the right and smoothly pushes the plume's leading edge farther offshore while the near-mouth core remains connected to the river. From 3 to 6 seconds the offshore plume visibly widens sideways through diffusion, its outer edge softens and becomes less concentrated while the elongated brighter core continues moving seaward. The final plume footprint must be clearly farther offshore and broader than at the start, with a coherent connected gradient rather than flicker or simple opacity pulsing. Keep the analytic color field strictly in water, never over dry land or bridge; keep every existing mesh line stable and readable from first through last frame. Orthographic overhead camera holds this complete domain so the change of the actual field extent and distribution is unmistakable; camera movement cannot substitute for field evolution. Retain the documentary satellite-like texture and restrained natural colors. This is an explanatory simulation concept, not an actual site or measured result. No new objects, text, labels, numeric metrics, controls, extra panels, scan beams or decorative particles. All internal analysis graphics are part of the generated video itself. Silent.",
+      "frames": {
+        "start": "Preserve original terrain, native water mesh and compact bright river-mouth plume.",
+        "middle": "Continuous plume extends farther offshore from river mouth, remaining connected to inflow.",
+        "end": "Clearly broader offshore footprint and softened diluted margins; terrain and water-only mesh fixed."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Shares source with main film or main AX",
+        "Concept presented as actual AX screen",
+        "Only camera motion or opacity pulsing without changing plume extent/distribution",
+        "Changing terrain, mesh or shoreline",
+        "Plume or mesh crossing dry land/bridge",
+        "New numeric metrics, fake product UI or particles"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "Existing plume advects offshore, widens and dilutes with connected river supply; inspect every output frame for native-graphics stability.",
+        "result": "Distinct broader, farther-offshore final field. Qualitative illustration, not real simulation output.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "company-technology-audit",
+        "presentation-direction",
+        "native-handoff",
+        "ax-estuary-analysis-native-20260929"
+      ],
+      "localOriginal": "media-source/editorial/ax-estuary-analysis-native-20260929.png",
+      "generationAllowed": true,
+      "generationReady": false,
+      "status": "source-reviewed-awaiting-reference-upload",
+      "webAsset": "dist/assets/editorial/ax-estuary-analysis-native-20260929.webp",
+      "videoReceipt": "media-source/editorial/ax-estuary-seedance20-receipt-20260929.json"
+    },
+    {
+      "id": "UI-AX-DISCOVER",
+      "title": "ax-discover actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.03,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
+      "frames": {
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-ax-discover",
+        "capture-review",
+        "ax-review"
+      ],
+      "localOriginal": "dist/assets/films/ax-discover-fast.mp4",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "approved",
+        "capturePlans": []
       }
     },
     {
-      "id": "AX02",
-      "film": "ax",
-      "start": 6,
-      "end": 14,
-      "duration": 8,
-      "title": "위성영상 탐지 화면",
-      "method": "source-composite",
-      "referenceIds": [
-        "ax-review",
-        "capture-review"
-      ],
-      "referenceStatus": "actual-employee-ui-recording-pending",
-      "purpose": "직원 제작 AX의 탐지 기능을 실제 화면 동작과 결과로 보여준다",
+      "id": "UI-AX-DETECT",
+      "title": "ax-detect actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.03,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
       "frames": {
-        "start": "직원 갤러리의 실제 위성영상 탐지 화면",
-        "middle": "실제 슬라이드 또는 레이어 전환을 녹화한 장면",
-        "end": "검수된 탐지 결과가 화면에 남는 장면"
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
       },
-      "imageInstruction": "Record the actual employee-built detection interface at 1920x1080 or higher. Do not synthesize detection masks, facility shapes, labels, confidence or screen controls.",
-      "motionInstruction": "Capture one deliberate real UI interaction and let the resulting screen settle for at least two seconds. Use editorial crop or mask only when the full feature remains understandable.",
-      "compositingInstruction": "Preserve the actual UI pixels and original screen ratio. Higgsfield may provide only an external environmental bridge; do not send the UI frame for regeneration.",
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
       "rejectIf": [
-        "기존 개념 시설 이미지를 실제 탐지로 오인",
-        "생성된 mask·box",
-        "화면 일부만 잘라 기능을 알 수 없음"
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
       ],
-      "sourceRequirements": [
-        "탐지 서비스 실제 화면 및 동작 재캡처",
-        "마스크·시설물 표시의 실제 출처와 공개 여부",
-        "16:9 글자 가독성 검수"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-ax-detect",
+        "capture-review",
+        "ax-review"
       ],
-      "continuity": "화면 전체가 닫힌 뒤 AX03의 별도 예측 서비스로 컷한다",
-      "containsActualUI": true,
+      "localOriginal": "dist/assets/films/ax-detect-fast.mp4",
+      "generationAllowed": false,
       "generationReady": false,
-      "status": "actual-ui-capture-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/AX02-start.png",
-        "middle": "docs/redesign-next/keyframes/AX02-middle.png",
-        "end": "docs/redesign-next/keyframes/AX02-end.png",
-        "candidate": "docs/redesign-next/renders/AX02-take01.mp4",
-        "review": "docs/redesign-next/reviews/AX02-take01.json"
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "approved",
+        "capturePlans": [
+          "satellite"
+        ]
       }
     },
     {
-      "id": "AX03",
-      "film": "ax",
-      "start": 14,
-      "end": 22,
-      "duration": 8,
-      "title": "연안재해 예측 화면",
-      "method": "source-composite",
-      "referenceIds": [
-        "ax-review",
-        "capture-review"
-      ],
-      "referenceStatus": "actual-employee-ui-recording-pending",
-      "purpose": "직원 제작 AX의 연안재해 예측 화면과 시나리오 전환을 실제 인터페이스로 보여준다",
+      "id": "UI-AX-PREDICT",
+      "title": "ax-predict actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.03,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
       "frames": {
-        "start": "직원 갤러리의 실제 3D 또는 지도 기반 예측 화면",
-        "middle": "실제 가능한 시나리오·시점 전환의 녹화",
-        "end": "범례와 결과가 읽히는 정지 프레임"
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
       },
-      "imageInstruction": "Record the real employee-built flood or surge platform screen. Keep its real geography, interface, labels and scenario output unchanged. Generate no replacement water field or Korean text.",
-      "motionInstruction": "Show one actual control transition, then hold the result. Keep camera movement outside the screen capture and avoid zooming into unreadable texture.",
-      "compositingInstruction": "Use the captured AX screen as a protected source layer. The film must not imply a validated live forecast if the provided gallery is a static prototype.",
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
       "rejectIf": [
-        "개념 침수 영상을 실제 예측 결과처럼 사용",
-        "가짜 경보 수치",
-        "육상 경계가 어긋난 생성 장면"
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
       ],
-      "sourceRequirements": [
-        "예측 서비스 실제 화면 및 가능한 조작 확인",
-        "결과가 시뮬레이션인지 정적 캡처인지 표기",
-        "지형·범례·시나리오 공개 가능성 확인"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-ax-predict",
+        "capture-review",
+        "ax-review"
       ],
-      "continuity": "제품 종류가 바뀜을 분명히 한 뒤 AX04 관측 화면으로 편집한다",
-      "containsActualUI": true,
+      "localOriginal": "dist/assets/films/ax-predict-fast.mp4",
+      "generationAllowed": false,
       "generationReady": false,
-      "status": "actual-ui-capture-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/AX03-start.png",
-        "middle": "docs/redesign-next/keyframes/AX03-middle.png",
-        "end": "docs/redesign-next/keyframes/AX03-end.png",
-        "candidate": "docs/redesign-next/renders/AX03-take01.mp4",
-        "review": "docs/redesign-next/reviews/AX03-take01.json"
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "approved",
+        "capturePlans": [
+          "flood3d",
+          "surge",
+          "sealevel"
+        ]
       }
     },
     {
-      "id": "AX04",
-      "film": "ax",
-      "start": 22,
-      "end": 27,
-      "duration": 5,
-      "title": "관측 화면",
-      "method": "source-composite",
-      "referenceIds": [
-        "ax-review",
-        "capture-review"
-      ],
-      "referenceStatus": "actual-employee-ui-recording-pending",
-      "purpose": "직원 제작 AX의 관측·모니터링 화면을 실제 UI로 보여준다",
+      "id": "UI-AX-MONITOR",
+      "title": "ax-monitor actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.03,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
       "frames": {
-        "start": "직원 갤러리의 실제 관측 서비스 화면",
-        "middle": "실제 지점 또는 시간 전환을 녹화한 장면",
-        "end": "지점과 그래프의 관계가 읽히는 화면"
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
       },
-      "imageInstruction": "Capture the real monitoring screen from the employee repository. Preserve the displayed map, controls, chart and text exactly; do not fabricate live status or station values.",
-      "motionInstruction": "Use one real pointer or keyboard action to focus a station or time series. Hold the resulting interface without rapid montage.",
-      "compositingInstruction": "Source UI remains full-resolution and visually legible. An external transition can be generated but no UI element or value can be regenerated.",
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
       "rejectIf": [
-        "가짜 실시간 상태",
-        "관측소 위치 단정",
-        "그래프 수치 생성"
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
       ],
-      "sourceRequirements": [
-        "부이·관측 화면 실제 녹화",
-        "표시된 시간·단위·관측 상태 확인",
-        "실시간 운영 주장 여부 검토"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-ax-monitor",
+        "capture-review",
+        "ax-review"
       ],
-      "continuity": "실제 UI의 시각적 연결을 유지하며 AX05의 제품 전체 화면으로 마감한다",
-      "containsActualUI": true,
+      "localOriginal": "dist/assets/films/ax-monitor-fast.mp4",
+      "generationAllowed": false,
       "generationReady": false,
-      "status": "actual-ui-capture-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/AX04-start.png",
-        "middle": "docs/redesign-next/keyframes/AX04-middle.png",
-        "end": "docs/redesign-next/keyframes/AX04-end.png",
-        "candidate": "docs/redesign-next/renders/AX04-take01.mp4",
-        "review": "docs/redesign-next/reviews/AX04-take01.json"
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "approved",
+        "capturePlans": [
+          "buoy",
+          "env",
+          "rip"
+        ]
       }
     },
     {
-      "id": "AX05",
-      "film": "ax",
-      "start": 27,
-      "end": 30,
-      "duration": 3,
-      "title": "AX 제품 마감",
-      "method": "source-composite",
-      "referenceIds": [
-        "ax-review",
-        "capture-review"
-      ],
-      "referenceStatus": "actual-employee-ui-recording-pending",
-      "purpose": "세 분야의 실제 화면을 정돈해 AX 제품의 별도 영상으로 마무리한다",
+      "id": "UI-PLATFORM-SATELLITE",
+      "title": "platform-satellite actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.8,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
       "frames": {
-        "start": "AX02–04에서 검수한 실제 화면의 축약된 관계",
-        "middle": "직원 제작 갤러리의 실제 전체 프레임",
-        "end": "첫 화면과 접합되는 어두운 해역 또는 제품 화면"
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
       },
-      "imageInstruction": "Use only the three recorded employee-built screens. Do not generate a new unified dashboard or imply automatic data exchange between products.",
-      "motionInstruction": "A calm three-second editorial close with readable actual screen. Match brightness and direction to AX01 for the web loop.",
-      "compositingInstruction": "All product labels are source UI or editable postproduction layers. Deliver AX as a separate 30-second 1080p file after full-film review.",
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
       "rejectIf": [
-        "새 통합 대시보드 발명",
-        "세 기능의 자동 연동 암시",
-        "루프 점프"
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
       ],
-      "sourceRequirements": [
-        "AX02–04 합격 FHD 녹화",
-        "전체 30초 편집과 반복 접합 검토"
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-platform-satellite",
+        "capture-review",
+        "ax-review"
       ],
-      "continuity": "AX05 종료 화면의 밝기와 동작 방향을 AX01 시작 화면에 맞춰 반복 접합을 확인한다",
-      "containsActualUI": true,
+      "localOriginal": "dist/assets/films/platform-satellite-preview.mp4",
+      "generationAllowed": false,
       "generationReady": false,
-      "status": "actual-ui-capture-pending",
-      "plannedOutputs": {
-        "start": "docs/redesign-next/keyframes/AX05-start.png",
-        "middle": "docs/redesign-next/keyframes/AX05-middle.png",
-        "end": "docs/redesign-next/keyframes/AX05-end.png",
-        "candidate": "docs/redesign-next/renders/AX05-take01.mp4",
-        "review": "docs/redesign-next/reviews/AX05-take01.json"
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "draft-reviewed",
+        "capturePlans": []
+      }
+    },
+    {
+      "id": "UI-PLATFORM-FLOOD3D",
+      "title": "platform-flood3d actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.8,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
+      "frames": {
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-platform-flood3d",
+        "capture-review",
+        "ax-review"
+      ],
+      "localOriginal": "dist/assets/films/platform-flood3d-preview.mp4",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "draft-reviewed",
+        "capturePlans": []
+      }
+    },
+    {
+      "id": "UI-PLATFORM-BUOY",
+      "title": "platform-buoy actual UI",
+      "purpose": "Preserve authentic product footage in its own product slot",
+      "duration": 3.8,
+      "durationMeaning": "Existing runtime clip duration; not a new generation request",
+      "film": "actual-ui",
+      "mediaType": "actual-ui-clip",
+      "provenance": "actual-ui",
+      "imageInstruction": "Do not generate or repaint product UI. Use only verified actual captures and the preserved platformCaptures instructions.",
+      "motionInstruction": "No generative model. Retain or recapture authentic interaction; editing only joins/transitions and faithful export, without invented screen elements.",
+      "frames": {
+        "start": "Authentic full16:9 product context from the existing clip.",
+        "middle": "Only the actual recorded interaction/result; no AI replacement.",
+        "end": "Authentic result remains legible with its geographic/product context."
+      },
+      "continuity": "Unique input for this slot. Use only editorial joins/transitions to connect reviewed clips; no internal graphic additions.",
+      "rejectIf": [
+        "Generated or repainted product UI",
+        "Claims archival screen is live data",
+        "Substitutes one product recording for another"
+      ],
+      "semanticQA": {
+        "subject": "The chosen research subject or data product is recognizable before reading a title.",
+        "action": "The stated physical or analytical event must occur; not camera-only motion.",
+        "result": "End state visibly follows the event without fabricated claims.",
+        "composition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "review": "Original-resolution source review, first/middle/end and continuous frames around critical action, then full playback for video."
+      },
+      "referenceIds": [
+        "actual-platform-buoy",
+        "capture-review",
+        "ax-review"
+      ],
+      "localOriginal": "dist/assets/films/platform-buoy-preview.mp4",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "sourceReview": {
+        "status": "existing-file; playback-not-rechecked-in-this-pass",
+        "runtimeApproval": "draft-reviewed",
+        "capturePlans": []
       }
     }
   ],
@@ -1062,203 +1593,294 @@
       "plannedPoster": "dist/assets/platforms/flood-xai-feature-poster.webp"
     }
   ],
+  "platformCapturePolicy": "Preserve these9actual-UI capture instructions. They are independent product evidence, never mandatory ingredients of a30-second AX concept film. generationAllowed=false; do not fabricate screens.",
   "slotPlan": {
     "geosr-hero": {
-      "target": "company60",
       "shots": [
-        "CF01",
-        "CF02",
-        "CF03",
-        "CF04",
-        "CF05",
-        "CF06",
-        "CF07",
-        "CF08",
-        "CF09",
-        "CF10",
-        "CF11",
-        "CF12",
-        "CF13"
+        "MAIN-SATELLITE",
+        "MAIN-CTD",
+        "MAIN-AI",
+        "MAIN-MODEL",
+        "MAIN-SPATIAL"
       ],
-      "action": "60초 합격본으로 교체 전까지 현재8초 초안 표시 유지"
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
     },
     "company-overview": {
-      "target": "company60-reuse",
       "shots": [
-        "CF01",
-        "CF02",
-        "CF03",
-        "CF04",
-        "CF05",
-        "CF06",
-        "CF07",
-        "CF08",
-        "CF09",
-        "CF10",
-        "CF11",
-        "CF12",
-        "CF13"
+        "COMPANY-ANALYSIS"
       ],
-      "action": "동일 회사 본편 재사용 / 별도60초 제작하지 않음"
-    },
-    "expertise-1": {
-      "target": "observation6",
-      "shots": [
-        "CF05",
-        "CF08"
-      ],
-      "action": "하나의 관측 방법을 골라6초 구성 / 장비 몽타주 과밀 금지"
-    },
-    "expertise-2": {
-      "target": "environment6",
-      "shots": [
-        "CF10",
-        "CF11"
-      ],
-      "action": "실험 준비와 분석 맥락6초 / 두 장면은 각3초 정도"
-    },
-    "business-environment": {
-      "target": "environment6-reuse",
-      "shots": [
-        "CF10",
-        "CF11"
-      ],
-      "action": "분야 영상 재사용 / 같은 자료의 별도 유료 생성 금지"
-    },
-    "expertise-3": {
-      "target": "modelling6",
-      "shots": [
-        "CF12"
-      ],
-      "action": "메인 기술 영역은 NASA SVS ECCO2 시각화 24초 발췌를 사용하며 출처를 표시함 회사 본편 CF12 제작 상태와 구분",
-      "currentMedia": "dist/assets/films/ocean-circulation-1080p.mp4",
-      "currentMediaKind": "external-scientific-visualisation",
-      "sourceUrl": "https://svs.gsfc.nasa.gov/5425/"
-    },
-    "expertise-4": {
-      "target": "remote6",
-      "shots": [
-        "CF02",
-        "CF04"
-      ],
-      "action": "위성 관측→자료 층 / 동일 센서 모든 변수 주장 금지"
-    },
-    "ax-concept-film": {
-      "target": "ax30",
-      "shots": [
-        "AX01",
-        "AX02",
-        "AX03",
-        "AX04",
-        "AX05"
-      ],
-      "action": "개념30초 / 실제UI 제외"
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
     },
     "ax-discover": {
-      "target": "legacy-retire-after-reference-audit",
-      "shots": [],
-      "action": "이전 그룹UI슬롯 / 실제 사용처 확인 후 개별 시연으로 대체 / 회사·AXhero 사용 금지"
+      "shots": [
+        "UI-AX-DISCOVER"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/ax-discover-fast.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
     },
     "ax-detect": {
-      "target": "legacy-individual-only",
-      "shots": [],
-      "action": "위성 실제UI로만 사용 검토 / 전 플랫폼 합격 근거 아님"
+      "shots": [
+        "UI-AX-DETECT"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/ax-detect-fast.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
     },
     "ax-predict": {
-      "target": "legacy-retire-after-reference-audit",
-      "shots": [],
-      "action": "한 영상으로3서비스 대체하지 않음 / 개별 캡처 필요"
+      "shots": [
+        "UI-AX-PREDICT"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/ax-predict-fast.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
     },
     "ax-monitor": {
-      "target": "legacy-retire-after-reference-audit",
-      "shots": [],
-      "action": "한 영상으로부이·환경·이안류 대체하지 않음"
+      "shots": [
+        "UI-AX-MONITOR"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/ax-monitor-fast.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
+    },
+    "ax-concept-film": {
+      "shots": [
+        "AX-MAIN-CONCEPT"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
     },
     "platform-satellite": {
-      "target": "capture-satellite",
-      "shots": [],
-      "action": "satellite 실제 시연 검수 후 연결"
+      "shots": [
+        "UI-PLATFORM-SATELLITE"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/platform-satellite-preview.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
     },
     "platform-flood3d": {
-      "target": "capture-flood3d",
-      "shots": [],
-      "action": "flood3d 실제 시연 검수 후 연결"
+      "shots": [
+        "UI-PLATFORM-FLOOD3D"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/platform-flood3d-preview.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
     },
     "platform-buoy": {
-      "target": "capture-buoy",
-      "shots": [],
-      "action": "buoy 실제 시연 검수 후 연결"
+      "shots": [
+        "UI-PLATFORM-BUOY"
+      ],
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "source-not-reviewed",
+      "currentMedia": "dist/assets/films/platform-buoy-preview.mp4",
+      "action": "Preserve actual UI and review authentic playback; never generate product pixels."
+    },
+    "geosr-wave-bridge": {
+      "shots": [
+        "WAVE-ROCK",
+        "WAVE-OPEN"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-ai": {
+      "shots": [
+        "EXP-AI"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "accepted-still",
+      "currentMedia": "dist/assets/editorial/ai-jellyfish-native-20260929.webp",
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-modelling": {
+      "shots": [
+        "EXP-MODEL"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-satellite": {
+      "shots": [
+        "EXP-SATELLITE"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-spatial": {
+      "shots": [
+        "EXP-SPATIAL"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-observation": {
+      "shots": [
+        "EXP-OBSERVATION"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-environment": {
+      "shots": [
+        "EXP-ENVIRONMENT"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-hazards": {
+      "shots": [
+        "EXP-HAZARDS"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "accepted-still",
+      "currentMedia": "dist/assets/editorial/coastal-monitoring-native-20260929.webp",
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "expertise-systems": {
+      "shots": [
+        "EXP-SYSTEMS"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": false,
+      "generationReady": false,
+      "status": "plan-only-originals-pending",
+      "currentMedia": null,
+      "action": "Use accepted stills where available; review distinct originals and subject actions before any individual video generation."
+    },
+    "ax-platform-intro": {
+      "shots": [
+        "AX-DETAIL-FLOW"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "generationAllowed": true,
+      "generationReady": false,
+      "status": "source-reviewed-awaiting-reference-upload",
+      "currentMedia": "dist/assets/editorial/ax-estuary-analysis-native-20260929.webp",
+      "action": "Retain accepted still until one generated derivative passes full semantic/motion QA; unique AX detail use."
     }
   },
   "nonFilmAssets": [
     {
-      "role": "GeoDAP",
+      "id": "business-ai-final-still",
+      "localOriginal": "media-source/editorial/ai-fish-native-20260929.png",
+      "web": "dist/assets/editorial/ai-fish-native-20260929.webp",
+      "referenceIds": [
+        "ai-fish-native-20260929"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "status": "accepted-still",
+      "generationAllowed": false,
+      "rule": "Business AI introduction only; keep all5boxes/masks; do not reuse as main video."
+    },
+    {
+      "id": "equipment-lab-final-still",
+      "localOriginal": "media-source/editorial/environmental-lab-native-20260929.png",
+      "web": "dist/assets/editorial/environmental-lab-native-20260929.webp",
+      "referenceIds": [
+        "environmental-lab-native-20260929"
+      ],
+      "provenance": "native-chatgpt-concept",
+      "status": "accepted-still",
+      "generationAllowed": false,
+      "rule": "Equipment introduction only; actual inventory photos remain original records."
+    },
+    {
+      "id": "geodap",
       "referenceIds": [
         "geodap"
       ],
-      "method": "actual-capture-only",
-      "rule": "16:9원본 전체 표시 / 서비스 비율에 따라contain / 생성UI 금지"
+      "provenance": "actual-ui",
+      "generationAllowed": false,
+      "rule": "Preserve full aspect and uncropped actual service screen; external service link."
     },
     {
-      "role": "인증·면허·지식재산권",
+      "id": "technical-records",
       "referenceIds": [
-        "migration"
+        "migration",
+        "source-archive",
+        "company-brochure",
+        "equipment"
       ],
-      "method": "verified-document-only",
-      "rule": "원본 앞면 / 개인정보 보호 / 만료 여부 확인 / 생성문서 금지"
-    },
-    {
-      "role": "장비 카탈로그",
-      "referenceIds": [
-        "equipment",
-        "migration"
-      ],
-      "method": "source-photo-only",
-      "rule": "실제 모델·형상 / 원본 비율 / 생성사진을 실물 기록으로 대체 금지"
-    },
-    {
-      "role": "연구·소식",
-      "referenceIds": [
-        "technology",
-        "migration"
-      ],
-      "method": "source-record-only",
-      "rule": "실제 제목·날짜·출처 / 없는 본문은 준비 상태 / 허구 실적 금지"
-    },
-    {
-      "role": "홈·회사·분야 보조 이미지",
-      "referenceIds": [
-        "lab",
-        "coastal-hero",
-        "usv"
-      ],
-      "method": "reviewed-film-keyframe-reuse",
-      "rule": "장면별 검수 후파생 / 외관이 좋다는 이유만으로 과학 합격 처리 금지"
+      "provenance": "actual-records",
+      "generationAllowed": false,
+      "rule": "Original technical diagrams, equipment photos and records remain unchanged below introductions."
     }
   ],
   "creditState": {
-    "lastObservedBalance": 1210,
-    "observationSource": "Higgsfield balance tool",
-    "isLive": false,
-    "dailyResetConfirmed": false,
-    "blockedByCreditsNow": false,
-    "blockedByPlanNow": false,
-    "planType": "plus",
-    "nextAction": "콘티와 실제 원본 시안 검수 후 컷별 현재 비용을 확인하고 1080p로 생성",
-    "observationDate": "2026-09-28",
-    "spendingCap": 1200,
-    "spentThisRevision": 0
+    "lastRecordedBalance": 980.75,
+    "liveBalanceCheckedInThisUpdate": true,
+    "newPaidSubmissions": 0,
+    "recordedPaidCreditsByMediaAgent": 84,
+    "source": "media-source/editorial/media-production-handoff.json",
+    "mainSettingsEstimateCredits": 270,
+    "estimateBoundary": "5x6s at last quoted54credits; not authorization; exact final-input preflight required.",
+    "liveBalanceCheckedAt": "2026-09-29T13:14:15.557836+09:00",
+    "activeSingleClipSettingsEstimateCredits": 54,
+    "activeSingleClipSubmitted": false
   },
-  "nextAction": "현실적인 광역 회사 본편의 원본과 시안 준비를 완료한 컷부터 Higgsfield 1080p 생성과 품질 검수 진행",
-  "imageRebuildRegister": "docs/redesign-next/IMAGE-REBUILD-REGISTER.json",
-  "webReview": "docs/redesign-next/06-WEB-REVIEW.md",
-  "creativeDirection": {
-    "reference": "https://www.all4land.com/main.do",
-    "referenceUse": "Camera scale, varied real-world views and editorial rhythm only; do not reuse reference footage, frames, landmarks or graphics.",
-    "companyFilm": "Wide cinematic marine, coastal, estuary and city environments dominate. Strong ocean-blue contrast and tasteful source-backed technical overlays in post. Close laboratory and equipment views are brief supporting shots.",
-    "shotRatio": "65-75 percent wide environments; 15-25 percent field/research; at most 10 percent close apparatus",
-    "higgsfield": "Native 1920x1080 silent 16:9 output; Plus confirmed with 1210 credits; user spending ceiling 1200 credits; submit only source-reviewed and cost-checked shots",
-    "ax": "Retain the homepage AX introduction. Embed only AX gallery, content and assets from the supplied GitHub repository; do not import its company, research, careers or contact pages."
-  },
-  "storyboardAuthority": "docs/redesign-next/14-1080P-FILM-STORYBOARD-20260928.md"
+  "nextAction": "Parent connected web UI uploads reviewed AX-estuary native original. Media agent obtains confirmed UUID, re-estimates exact input, then submits one6s1080p silent Seedance2.0 job and reviews full playback/continuous frames. CTD8/model9 remain original-missing.",
+  "currentApproval": "Latest user instruction resumes immediate Seedance2.0 video from vetted native originals one scene at a time. AX detail six-second single attempt authorized; no bulk generation or same-input jellyfish retry. Actual UI sources remain generationAllowed=false. Overall generationReady/releaseReady remain false until gates pass.",
+  "legacyPlanDisposition": "Previous scene lists and compositing rules fully replaced; version control retains history."
 }

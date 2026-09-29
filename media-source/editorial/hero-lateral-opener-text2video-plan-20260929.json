@@ -1,0 +1,64 @@
+{
+  "status": "completed-rejected-for-main-opening",
+  "priority": "main first-screen opening; 2026-09-30 meeting",
+  "date": "2026-09-29",
+  "publicationBoundary": "Fictional broad Korean-coast hydrographic-survey concept, not actual GeoSR footage, vessel, crew, site, mission or measured data",
+  "previousFailure": "CTD start/end constrained the camera to an excessive forward approach; full six-second result clips vessel and loses coast. Fixed satellite clip is a technical insert, not hero.",
+  "research": [
+    {
+      "source": "https://higgsfield.ai/blog/seedance-prompting-guide",
+      "finding": "Declare one-shot count, total duration, aspect ratio first; timed beats and explicit no-cuts/no-zoom constraints."
+    },
+    {
+      "source": "https://higgsfield.ai/blog/generating-with-seedance-2-0",
+      "finding": "Subject action, setting, camera move, atmosphere; direct camera terms; complete clip QA."
+    },
+    {
+      "source": "https://higgsfield.ai/blog/ai-video-camera-control",
+      "finding": "State path, speed, final framing, focal length; rule out competing zoom when requesting camera travel."
+    },
+    {
+      "source": "https://www.reddit.com/r/ChatGPT/comments/1tgw0px/realistic_results_using_chatgpt_image_20_seedance/",
+      "finding": "Public creator example uses capture imperfections and action-linked micro-motion rather than generic cinematic adjectives; not taken as independent performance proof."
+    }
+  ],
+  "method": "Text-to-video without reference images; prior enlarged end image may have forced too much approach. Wide laterally tracked moving vessel with real boat/wave action and depth parallax.",
+  "exactInput": {
+    "model": "seedance_2_0",
+    "prompt": "ONE continuous documentary drone shot / 6 seconds / 16:9 / silent. A modest unbranded white-and-navy coastal hydrographic survey launch is already moving steadily through the deep-water channel outside a broad temperate Korean river mouth. Two distant crew in orange life jackets and helmets work safely on its aft deck beside a rigid side-mounted survey transducer pole; the instrument stays attached to the boat and in the water. The launch leaves one narrow V-shaped wake that spreads and fades naturally. A low wooded headland, curved natural shoreline, river channel, foamy small waves and open sea show the real scale of coastal observation; no identifiable real site or company vessel is implied. CAMERA: a stabilized documentary drone begins at about 55 m altitude, looking obliquely downward with a wide rectilinear 28 mm view. It physically trucks 40 m sideways parallel to the shoreline over six seconds, with a very gentle 10-degree arc to keep the WHOLE vessel in the right-middle of the frame at roughly the same size and at least 70 m away. Constant focal length, constant approximate height and subject distance; no push-in, no digital zoom. Near shoreline and wave crests slide visibly across frame faster than the far wooded coast, creating unmistakable real parallax. Keep the left 40 percent as calm open water for a separate website heading; do not render any heading. TIMED BEATS: 0-2s establish the wide river-mouth geography and moving complete survey vessel; 2-4s the sideways flight reveals shifting shore/river layers while the boat advances and its wake grows; 4-6s the drone continues its lateral track and eases to a stable wide frame with the entire boat, coast and river mouth still visible. One coherent geography and one vessel for the whole take. Natural bright overcast daylight, restrained blue-grey water, plausible boat speed and wave scale, photoreal documentary cinematography. No cuts, no crossfade, no static-photo pan, no impossible crane or extra sensor, no new boats or islands, no futuristic city, lasers, neon, HUD, analysis graphics, labels, text, logos or invented numbers.",
+    "duration": 6,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1
+  },
+  "cost": {
+    "exactQuoteCredits": 54,
+    "balanceBeforeCredits": 818.75,
+    "chargedCredits": 54,
+    "balanceAfterCredits": 764.75
+  },
+  "submission": {
+    "jobId": "71a6919e-720d-4b4f-b489-3b879f44a8fb",
+    "count": 1,
+    "status": "completed-rejected-after-full-frame-qa",
+    "approval": "Parent approved this exact prompt and one 54-credit job on 2026-09-29"
+  },
+  "qaGate": [
+    "Full six-second playback and sequential contact frames",
+    "Actual lateral shore/wave/vessel parallax rather than digital zoom",
+    "Whole vessel, crew, transducer pole and river-mouth geography remain physically plausible and visible through final frame",
+    "Left 40% open water for Geo Data Intelligence title",
+    "No fictitious labels, logos, numbers, UI, futuristic or duplicated structures"
+  ],
+  "reelSequence": [
+    "0-6s broad lateral coastal survey opener, if QA passes",
+    "Next fixed registered satellite-processing insert",
+    "Next AI detection/segmentation of real subject motion, with all boxes and masks aligned",
+    "Next numerical transport field in connected water only",
+    "Next inland/spatial data scene with active surveying/reconstruction; finish wide environmental context"
+  ],
+  "placement": "No site placement. See hero-lateral-seedance20-receipt-20260929.json for failed river-mouth, active-survey, fabricated-lettering and shallow-water plausibility gates."
+}

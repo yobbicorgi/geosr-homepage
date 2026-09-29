@@ -1,0 +1,736 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "news-review-b",
+  "scope": {
+    "section": "news",
+    "sourceLanguage": "ko",
+    "targetLanguage": "en",
+    "kinds": [
+      "notices",
+      "press"
+    ],
+    "sort": "id ascending",
+    "sliceStart": 192,
+    "sliceEndExclusive": 312,
+    "totalScopeIds": 120,
+    "firstId": "ko-news-notices-343-8372c75064",
+    "lastId": "ko-news-notices-473-8372c75064",
+    "originalRange": {
+      "sliceStart": 192,
+      "sliceEndExclusive": 384,
+      "totalScopeIds": 192
+    },
+    "transferredRange": {
+      "sliceStart": 312,
+      "sliceEndExclusive": 384,
+      "totalScopeIds": 72,
+      "transferredTo": "review A"
+    }
+  },
+  "complete": false,
+  "checkedCount": 98,
+  "totalCount": 120,
+  "checkedIds": [
+    "ko-news-notices-343-8372c75064",
+    "ko-news-notices-344-8372c75064",
+    "ko-news-notices-345-8372c75064",
+    "ko-news-notices-346-8372c75064",
+    "ko-news-notices-347-8372c75064",
+    "ko-news-notices-348-8372c75064",
+    "ko-news-notices-349-8372c75064",
+    "ko-news-notices-350-8372c75064",
+    "ko-news-notices-351-8372c75064",
+    "ko-news-notices-352-8372c75064",
+    "ko-news-notices-353-8372c75064",
+    "ko-news-notices-354-8372c75064",
+    "ko-news-notices-355-8372c75064",
+    "ko-news-notices-356-8372c75064",
+    "ko-news-notices-357-8372c75064",
+    "ko-news-notices-358-8372c75064",
+    "ko-news-notices-359-8372c75064",
+    "ko-news-notices-360-8372c75064",
+    "ko-news-notices-361-8372c75064",
+    "ko-news-notices-362-8372c75064",
+    "ko-news-notices-363-8372c75064",
+    "ko-news-notices-364-8372c75064",
+    "ko-news-notices-365-8372c75064",
+    "ko-news-notices-366-8372c75064",
+    "ko-news-notices-367-8372c75064",
+    "ko-news-notices-368-8372c75064",
+    "ko-news-notices-369-8372c75064",
+    "ko-news-notices-370-8372c75064",
+    "ko-news-notices-371-8372c75064",
+    "ko-news-notices-372-8372c75064",
+    "ko-news-notices-373-8372c75064",
+    "ko-news-notices-374-8372c75064",
+    "ko-news-notices-375-8372c75064",
+    "ko-news-notices-376-8372c75064",
+    "ko-news-notices-377-8372c75064",
+    "ko-news-notices-378-8372c75064",
+    "ko-news-notices-379-8372c75064",
+    "ko-news-notices-380-8372c75064",
+    "ko-news-notices-381-8372c75064",
+    "ko-news-notices-382-8372c75064",
+    "ko-news-notices-383-8372c75064",
+    "ko-news-notices-384-8372c75064",
+    "ko-news-notices-385-8372c75064",
+    "ko-news-notices-386-8372c75064",
+    "ko-news-notices-387-8372c75064",
+    "ko-news-notices-388-8372c75064",
+    "ko-news-notices-389-8372c75064",
+    "ko-news-notices-390-8372c75064",
+    "ko-news-notices-391-8372c75064",
+    "ko-news-notices-392-8372c75064",
+    "ko-news-notices-393-8372c75064",
+    "ko-news-notices-394-8372c75064",
+    "ko-news-notices-395-8372c75064",
+    "ko-news-notices-396-8372c75064",
+    "ko-news-notices-397-8372c75064",
+    "ko-news-notices-398-8372c75064",
+    "ko-news-notices-399-8372c75064",
+    "ko-news-notices-400-8372c75064",
+    "ko-news-notices-401-8372c75064",
+    "ko-news-notices-402-8372c75064",
+    "ko-news-notices-403-8372c75064",
+    "ko-news-notices-404-8372c75064",
+    "ko-news-notices-405-8372c75064",
+    "ko-news-notices-406-8372c75064",
+    "ko-news-notices-407-8372c75064",
+    "ko-news-notices-408-8372c75064",
+    "ko-news-notices-409-8372c75064",
+    "ko-news-notices-410-8372c75064",
+    "ko-news-notices-411-8372c75064",
+    "ko-news-notices-412-8372c75064",
+    "ko-news-notices-413-8372c75064",
+    "ko-news-notices-414-8372c75064",
+    "ko-news-notices-415-8372c75064",
+    "ko-news-notices-416-8372c75064",
+    "ko-news-notices-417-8372c75064",
+    "ko-news-notices-418-8372c75064",
+    "ko-news-notices-419-8372c75064",
+    "ko-news-notices-420-8372c75064",
+    "ko-news-notices-421-8372c75064",
+    "ko-news-notices-422-8372c75064",
+    "ko-news-notices-424-8372c75064",
+    "ko-news-notices-425-8372c75064",
+    "ko-news-notices-426-8372c75064",
+    "ko-news-notices-427-8372c75064",
+    "ko-news-notices-428-8372c75064",
+    "ko-news-notices-429-8372c75064",
+    "ko-news-notices-431-8372c75064",
+    "ko-news-notices-432-8372c75064",
+    "ko-news-notices-435-8372c75064",
+    "ko-news-notices-436-8372c75064",
+    "ko-news-notices-437-8372c75064",
+    "ko-news-notices-438-8372c75064",
+    "ko-news-notices-439-8372c75064",
+    "ko-news-notices-443-8372c75064",
+    "ko-news-notices-444-8372c75064",
+    "ko-news-notices-445-8372c75064",
+    "ko-news-notices-446-8372c75064",
+    "ko-news-notices-447-8372c75064"
+  ],
+  "corrections": [
+    {
+      "id": "ko-news-notices-343-8372c75064",
+      "summary": "Standardized the technical term to Ocean Thermal Energy Conversion (OTEC)."
+    },
+    {
+      "id": "ko-news-notices-344-8372c75064",
+      "summary": "Corrected farmland conversion direction and clarified marina, wellness, holiday lodging, and FDI population wording."
+    },
+    {
+      "id": "ko-news-notices-345-8372c75064",
+      "summary": "Standardized the company name."
+    },
+    {
+      "id": "ko-news-notices-346-8372c75064",
+      "summary": "Corrected agency attribution and DGPS expansion. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-347-8372c75064",
+      "summary": "Corrected sediment terminology and route-planning wording. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-348-8372c75064",
+      "summary": "Corrected headline, development-plan meaning, master-plan typo, and newsroom roles."
+    },
+    {
+      "id": "ko-news-notices-349-8372c75064",
+      "summary": "Corrected dam impoundment, period-appropriate ministry and institute names, researcher role, and low-salinity water terminology."
+    },
+    {
+      "id": "ko-news-notices-351-8372c75064",
+      "summary": "Corrected agency head title and website attribution. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-353-8372c75064",
+      "summary": "Corrected agency title, dispatch wording, and scientist name. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-354-8372c75064",
+      "summary": "Corrected Notices to Mariners, agency, aids-to-navigation, and electronic approval terms. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI). Corrected the historical ministry name to Ministry of Maritime Affairs and Fisheries (MOMAF)."
+    },
+    {
+      "id": "ko-news-notices-356-8372c75064",
+      "summary": "Corrected seabed, low-tide rock, DGPS, and navigational notice terms. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-357-8372c75064",
+      "summary": "Corrected multibeam echo-sounding equipment term. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-358-8372c75064",
+      "summary": "Corrected temperature unit, period-appropriate ministry and institute names, research-group role, and sea-level sentence."
+    },
+    {
+      "id": "ko-news-notices-359-8372c75064",
+      "summary": "Corrected southern-coast title and chart coverage route. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-360-8372c75064",
+      "summary": "Corrected the institution responsible for port base maps. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-361-8372c75064",
+      "summary": "Corrected duplicated agency name, director title, and original-chart term. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-362-8372c75064",
+      "summary": "Corrected title, historical ministry name, land reclamation, and mixed-use port district."
+    },
+    {
+      "id": "ko-news-notices-363-8372c75064",
+      "summary": "Corrected drought wording, missing 400-million unit, and storm description."
+    },
+    {
+      "id": "ko-news-notices-364-8372c75064",
+      "summary": "Corrected desalination and brine-discharge wording."
+    },
+    {
+      "id": "ko-news-notices-365-8372c75064",
+      "summary": "Corrected mixed-use city, historical ministry name, permitting, resettlement, and official titles."
+    },
+    {
+      "id": "ko-news-notices-366-8372c75064",
+      "summary": "Corrected floating wave-dissipating breakwater terminology and comparison."
+    },
+    {
+      "id": "ko-news-notices-367-8372c75064",
+      "summary": "Corrected emissions target language and ambassador name consistency."
+    },
+    {
+      "id": "ko-news-notices-368-8372c75064",
+      "summary": "Corrected Japanese-market/domestic-company wording, company name, offshore distance, and historical institute name."
+    },
+    {
+      "id": "ko-news-notices-369-8372c75064",
+      "summary": "Corrected Beach Adopt Program acronym and historical ministry name."
+    },
+    {
+      "id": "ko-news-notices-370-8372c75064",
+      "summary": "Corrected the historical ministry and marine-research institute names."
+    },
+    {
+      "id": "ko-news-notices-371-8372c75064",
+      "summary": "Corrected ministry naming, military location, seafarer service, government-military wording, titles, and fax label."
+    },
+    {
+      "id": "ko-news-notices-374-8372c75064",
+      "summary": "Corrected SCUFN terminology and officially accepted feature names, translated rescue and naming history accurately, and fixed the official gazetteer term, agency, title, and job titles."
+    },
+    {
+      "id": "ko-news-notices-375-8372c75064",
+      "summary": "Corrected baby-boomer terminology, demographic phrasing, the Chery/Chrysler quotation, and mistranslated education and business-outlook passages while retaining the full historical essay."
+    },
+    {
+      "id": "ko-news-notices-376-8372c75064",
+      "summary": "Corrected the mistranslation of human-caused global warming as a “man-made disaster.”"
+    },
+    {
+      "id": "ko-news-notices-377-8372c75064",
+      "summary": "Corrected the Gyeonggi SME designation title, three-to-one competition wording, benefits across eight institutions and 13 programs, and Industrial Family Company support description."
+    },
+    {
+      "id": "ko-news-notices-379-8372c75064",
+      "summary": "Replaced the garbled headline, clarified the two Arctic passages, and corrected the claim that the route would be shortened to about half its current length."
+    },
+    {
+      "id": "ko-news-notices-380-8372c75064",
+      "summary": "Corrected BOD wording and units, preserved the reported measurements, and repaired the mistranslated explanation of the seven unfinished projects and planned investigation."
+    },
+    {
+      "id": "ko-news-notices-381-8372c75064",
+      "summary": "Corrected the director title, tide table phrasing, and malformed Masan date while retaining all forecast heights, dates, units, and locations. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-382-8372c75064",
+      "summary": "Corrected the single expert’s role and duration, grant-based ODA description, Indonesia’s membership phrasing, and the agency official’s statement. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-383-8372c75064",
+      "summary": "Corrected the quoted agency attribution, artificial-reef and shoal terminology, the measured depth changes, and the chart-update statement. Used the 2007 English institutional name, National Oceanographic Research Institute (NORI)."
+    },
+    {
+      "id": "ko-news-notices-384-8372c75064",
+      "summary": "Corrected the party name, primary-candidate role, dike construction wording, basin description, and sediment term while retaining the article’s historical development argument."
+    },
+    {
+      "id": "ko-news-notices-385-8372c75064",
+      "summary": "Corrected the Zuiderzee comparison, seawall sections and sluice gates, dredged sediment process, water-flow and land-area figures, industrial-land claim, image caption, and economic comparison; retained the duplicated photo description."
+    },
+    {
+      "id": "ko-news-notices-386-8372c75064",
+      "summary": "Corrected the workplace-networking idiom, the anecdote’s point of view and supervisor quote, and the advice on praise and mentoring junior colleagues."
+    },
+    {
+      "id": "ko-news-notices-387-8372c75064",
+      "summary": "Corrected the director’s name consistency and career description, replaced the present-day agency label with its 2007 English name, and clarified the inaugural pledge and family sentence."
+    },
+    {
+      "id": "ko-news-notices-388-8372c75064",
+      "summary": "Corrected MOMAF/KORDI historical names, the vehicle and positioning-system terminology, the single-expert/species distinctions, annual stranding figures, rescue-policy sentence, and staff titles."
+    },
+    {
+      "id": "ko-news-notices-389-8372c75064",
+      "summary": "Corrected Onnuri from a lake to the research vessel, the Clarion–Clipperton Zone and mining area, historic MOMAF name, marine-technology terms, and the Kennedy quotation’s attribution wording."
+    },
+    {
+      "id": "ko-news-notices-390-8372c75064",
+      "summary": "Corrected the 3M quote and initiative terminology, removed a reversal caused by translating ‘덮어놓고 책망’ as covering up mistakes, and clarified the HRI source credit."
+    },
+    {
+      "id": "ko-news-notices-391-8372c75064",
+      "summary": "Corrected the headline and subtitle’s awkward phrasing, distinguished the singular New Port from Mokpo Port, and refined the chart, tide, VTS, and distribution terminology."
+    },
+    {
+      "id": "ko-news-notices-392-8372c75064",
+      "summary": "Corrected the official Act title, the February 4 headline date, the contemporary ministry name, legislative timeline, and the cold-water aquaculture description."
+    },
+    {
+      "id": "ko-news-notices-393-8372c75064",
+      "summary": "Corrected the contemporary ministry name, clarified the task-force roster and statutory threshold, and restored precise oil-spill response and IOPC compensation wording."
+    },
+    {
+      "id": "ko-news-notices-394-8372c75064",
+      "summary": "Corrected the predecessor and successor organizations’ official English names, the Act’s effective date, authorized headcount, and the mistranslation of marine-pollution response as pest control."
+    },
+    {
+      "id": "ko-news-notices-395-8372c75064",
+      "summary": "Corrected the institute director’s title and period English name (NORI), clarified boundary-survey and airborne-laser provisions, and fixed technical wording and contact roles."
+    },
+    {
+      "id": "ko-news-notices-396-8372c75064",
+      "summary": "Corrected the contemporary ministry and office names, fixed the mistranslation of clear mobile reception as a phone exploding, and preserved the seven fatalities, 20 km coverage statement, and full contact details."
+    },
+    {
+      "id": "ko-news-notices-397-8372c75064",
+      "summary": "Corrected the title and registration language and verified the statute’s official English name, preserving the April 14, 2008 date, issuing ministry, and article numbers."
+    },
+    {
+      "id": "ko-news-notices-398-8372c75064",
+      "summary": "Corrected the director’s historic institute name to NORI and a past position’s ministry name, and restored readable punctuation and the full chronology and remarks."
+    },
+    {
+      "id": "ko-news-notices-399-8372c75064",
+      "summary": "Corrected the duplicate/omitted accident-category statistics, ‘engine damage,’ restricted-visibility navigation terminology, and the tribunal-official and schedule guidance wording."
+    },
+    {
+      "id": "ko-news-notices-400-8372c75064",
+      "summary": "Restored the names and relationship of the three integrated surveys, corrected the second coastal-wetland survey and the Haui-do/Sangtae-do place names, and fixed estuary-science terminology while preserving all dates and scope."
+    },
+    {
+      "id": "ko-news-notices-401-8372c75064",
+      "summary": "Restored the names of the presidential regulation and the council’s operating rules, corrected institutional names for the 2008 ministries, and refined the governance structure and funding details without changing historical figures."
+    },
+    {
+      "id": "ko-news-notices-402-8372c75064",
+      "summary": "Corrected job-role terminology, the leader’s sales example and management idioms, and the meaning of tailored support while retaining every section and the full source attribution."
+    },
+    {
+      "id": "ko-news-notices-403-8372c75064",
+      "summary": "Corrected the title and the mistranslations of empowerment, coaching authority, annual appraisal cadence, and handling problem employees; retained all 13 guidance sections and their details."
+    },
+    {
+      "id": "ko-news-notices-404-8372c75064",
+      "summary": "Corrected the core technical mistranslation of storm-surge height as tsunami height, retained every reported temperature/sea-level/surge figure, and used NORI for the 2008 institutional name."
+    },
+    {
+      "id": "ko-news-notices-405-8372c75064",
+      "summary": "Corrected the mean tidal-range mistranslation, sea-dike and flow-change wording, and sediment-body terminology; preserved the chart years and all seafloor, area, distance, and width figures."
+    },
+    {
+      "id": "ko-news-notices-406-8372c75064",
+      "summary": "Replaced duplicate reclamation phrasing, corrected the SNU venue and next-day Gochang site visit, clarified restoration plans and reverse reclamation, and retained all symposium dates, speakers, and project years."
+    },
+    {
+      "id": "ko-news-notices-407-8372c75064",
+      "summary": "Corrected the 2008 Rural Community corporation name, restored accurate water-quality and eutrophication terms, and fixed ‘seawater distribution’ to estuarine seawater exchange while preserving the source’s policy nuance."
+    },
+    {
+      "id": "ko-news-notices-408-8372c75064",
+      "summary": "Corrected Habit 2’s fragment, the Habit 5 heading (listen first, then be understood), and the Goethe quotation; retained the overview’s seven-part structure and all practice examples."
+    },
+    {
+      "id": "ko-news-notices-409-8372c75064",
+      "summary": "Corrected floodway/spillway terminology, stated the 100-year return period clearly, and refined the canal’s operating-day, freight, recreation, and economic-projection wording without changing the source figures."
+    },
+    {
+      "id": "ko-news-notices-410-8372c75064",
+      "summary": "Corrected major technical and numeric errors: suspended sediment, a 90-million-ton 2006 load, 30‰ salinity (not 30%), and the South-to-North Water Diversion Project. Preserved every paragraph and reported value; verified Ulva prolifera and the period KORDI name."
+    },
+    {
+      "id": "ko-news-notices-411-8372c75064",
+      "summary": "Corrected inconsistent translations of the Korean association name to one literal rendering throughout; clarified the founding promoters' meeting, the date and venue, attendee roles, and private-led consultative body's stated plans while retaining the displayed date and original historical source timestamp."
+    },
+    {
+      "id": "ko-news-notices-412-8372c75064",
+      "summary": "Corrected the future completion headline and mistranslated satellite name; restored the intended above-water height description and explicit comparison with the Ieodo base while retaining every construction, dimension, equipment, and date figure."
+    },
+    {
+      "id": "ko-news-notices-413-8372c75064",
+      "summary": "Corrected the ministry's historical English name, the institute's name and director attribution, the KBSI name, formate terminology, and the carbon-monoxide cultivation claim; separated the merged hydrogen description from the research footnote and preserved all scientific, economic, publication, and forecast details."
+    },
+    {
+      "id": "ko-news-notices-414-8372c75064",
+      "summary": "Corrected the role and office names, replaced mistranslated Ministry of Finance and press-center titles with period-appropriate descriptive terms, and clarified the reorganization and appointments without changing the source's sequence or reporter credit."
+    },
+    {
+      "id": "ko-news-notices-415-8372c75064",
+      "summary": "Removed duplicated translation text; corrected the official historical ministry name, ecological district terms, flood-control/water-use evaluation, concrete and flow restrictions, and intended guideline process. Retained all policy details and timeline."
+    },
+    {
+      "id": "ko-news-notices-416-8372c75064",
+      "summary": "Corrected the producer name and several facility/product terms, restored the offshore intake configuration, household delivery and distribution facts, and translated the product name descriptively with its Korean romanization. Retained the historical article's Greenland circulation, age, temperature, depth, mineral and price claims as source assertions."
+    },
+    {
+      "id": "ko-news-notices-417-8372c75064",
+      "summary": "Corrected tidal-current power terminology and project roles while retaining the source's annual figures and their printed unit, MW. The source's use of MW for annual electricity generation and demand may be a unit inconsistency; this is noted separately rather than silently changed."
+    },
+    {
+      "id": "ko-news-notices-418-8372c75064",
+      "summary": "Rewrote the full long report to fix mistranslated and broken survey quotations, the Daecheon-dong site-selection comparison, civilian-government task force, and harbor/port terms. Preserved all competing positions, chronology, legal claims, survey methodology disputes, every budget, date, area, capacity, poll result, source attribution, and the final warning of likely confrontation."
+    },
+    {
+      "id": "ko-news-notices-419-8372c75064",
+      "summary": "Corrected the historical ministry name and environmental-agency name, weir-versus-dam terminology, and algae/BOD relationships; preserved the article's competing forecasts, caveats, all dates/quantities, and historical policy statements. Rendered the title's countercurrent wordplay in natural English."
+    },
+    {
+      "id": "ko-news-notices-420-8372c75064",
+      "summary": "Adjusted the patent title to idiomatic technical English and identified the named patent holder as GeoSystem Research rather than substituting only the GeoSR brand. Preserved the invention title and registration date."
+    },
+    {
+      "id": "ko-news-notices-421-8372c75064",
+      "summary": "Corrected the qualification's established English name to Surveying and Geospatial Information Engineer/Industrial Engineer, clarified that an unspecified number of new hires was shown in the source as a placeholder, and polished the license, military-service, travel, and application requirements while retaining the address, phone, and email."
+    },
+    {
+      "id": "ko-news-notices-422-8372c75064",
+      "summary": "Corrected the visiting Korean agency's name to the National Oceanographic Research Institute and made the schedule, attendees, and purpose of the meeting explicit without adding a year not present in the source."
+    },
+    {
+      "id": "ko-news-notices-424-8372c75064",
+      "summary": "Corrected inclusive age limits, rank range, degree/certificate language, paid holiday-work allowance, and translated the recruitment requirements and company website detail fully. Preserved the source's explicit zero openings, 2009 application window, work location, hours, and contact-free ad content."
+    },
+    {
+      "id": "ko-news-notices-425-8372c75064",
+      "summary": "Changed the venue translation from an amusement park to a recreation area and clarified that the picnic is for all employees and their families; retained the event date, time, and program."
+    },
+    {
+      "id": "ko-news-notices-426-8372c75064",
+      "summary": "Polished the award title and clarified that Money Today selected the company while the two ministries sponsored the recognition; retained the selection date and period ministry names."
+    },
+    {
+      "id": "ko-news-notices-427-8372c75064",
+      "summary": "Corrected the author's surname from ‘Green’ to Anselm Grün, preserved the source's citation date, and smoothed awkward repeated wording without summarizing the essay or changing either quotation's meaning."
+    },
+    {
+      "id": "ko-news-notices-428-8372c75064",
+      "summary": "Corrected the period agency name from today's KHOA to the National Oceanographic Research Institute, fixed the Gyeongin Ara Waterway typo, and retained the distinct April–May project period and 30-day observation dates, maximum current, and original website URL."
+    },
+    {
+      "id": "ko-news-notices-429-8372c75064",
+      "summary": "Corrected the historical ministry name and river-management terms, disentangled the footnote from the body, and preserved all river-system lists, counts, lengths, ministry consultations, Saemangeum linkage, and the December 2010 completion target."
+    },
+    {
+      "id": "ko-news-notices-431-8372c75064",
+      "summary": "Updated the agency to its historical name, corrected turbines/channels and energy-density wording, and preserved all observation period and area-specific MWh/m² figures plus the source website."
+    },
+    {
+      "id": "ko-news-notices-432-8372c75064",
+      "summary": "Corrected the surveying qualification title to the established English form and preserved that the number of new hires is unspecified in the source placeholder; retained all shared application instructions, contact information, and salary terms."
+    },
+    {
+      "id": "ko-news-notices-436-8372c75064",
+      "summary": "Corrected the period agency name, clarified the distribution of four observation sets across three sites, and rendered the shift from testing this week to real-time public provision next week without dropping the current, weather, abnormal-current, or safety details."
+    },
+    {
+      "id": "ko-news-notices-437-8372c75064",
+      "summary": "Clarified the singular name of the award, the two-stage city/provincial selection process, and that designation as a 2011 promising company was a priority benefit rather than an automatic result; preserved all ceremony and incentive details."
+    },
+    {
+      "id": "ko-news-notices-438-8372c75064",
+      "summary": "Polished the handbook title and chapter description while retaining the publication month, the named GeoSR contributor, chapter subject, and both listed attachments."
+    },
+    {
+      "id": "ko-news-notices-443-8372c75064",
+      "summary": "Clarified that the post is a company profile appearing in the January 2012 issue of *Marine Science and Technology*, keeping the source's issue detail."
+    },
+    {
+      "id": "ko-news-notices-444-8372c75064",
+      "summary": "Clarified the formal department names and the sedimentary-environment/seabed-sediment topic in the degree-paper titles; retained both employees' positions, degree types, institutions, expected date, and complete research titles."
+    },
+    {
+      "id": "ko-news-notices-445-8372c75064",
+      "summary": "Corrected ‘inauguration’ to the appropriate appointment language and retained the CEO's full name, academic department, adjunct-professor title, and effective date."
+    },
+    {
+      "id": "ko-news-notices-446-8372c75064",
+      "summary": "Polished the event notice and speaker attribution while retaining the Idronaut company name, presenter, date, time, venue, and seminar topic."
+    },
+    {
+      "id": "ko-news-notices-447-8372c75064",
+      "summary": "Clarified that roughly 200 marine-science participants shared research trends and technology; retained the IEEE/MTS organizers, event dates, booth subject areas, geographic representation, and presenter/topic."
+    }
+  ],
+  "limitations": [
+    "In progress: only checkedIds are source-compared; all remaining scope IDs are not reviewed.",
+    "Historical claims, dates, values, URLs, and names are preserved as publication-period content and were not independently fact-checked for present-day validity.",
+    "The original archive and shared translation file were not modified.",
+    "Record ko-news-notices-375 states that the population share aged 14 and older was projected to fall, then compares it with an under-14 share; this apparent source inconsistency was preserved rather than silently changed.",
+    "Scope reassigned by the coordinating agent: this B handoff now covers the first 120 of the original 192-item B slice ([192:312]); the final 72 IDs ([312:384]) are transferred to reviewer A. None of the transferred 72 IDs was reviewed or corrected in this file."
+  ],
+  "referenceChecks": [
+    {
+      "url": "https://www.energy.gov/cmei/water/marine-energy-glossary",
+      "note": "Official DOE terminology for ocean thermal energy conversion (OTEC).",
+      "recordIds": [
+        "ko-news-notices-343-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.kiost.ac.kr/cop/bbs/BBSMSTR_000000000281/selectBoardArticle.do?nttId=24044",
+      "note": "KIOST history confirms Korea Ocean Research and Development Institute was used from 2000 to 2011.",
+      "recordIds": [
+        "ko-news-notices-349-8372c75064",
+        "ko-news-notices-358-8372c75064",
+        "ko-news-notices-368-8372c75064",
+        "ko-news-notices-370-8372c75064",
+        "ko-news-notices-400-8372c75064",
+        "ko-news-notices-410-8372c75064",
+        "ko-news-notices-413-8372c75064"
+      ]
+    },
+    {
+      "recordIds": [
+        "ko-news-notices-374-8372c75064"
+      ],
+      "url": "https://www.gebco.net/sites/default/files/documents/gebco_scufn_20_report.pdf",
+      "note": "Official SCUFN-20 report confirms the accepted feature names (including Igyuwon Ridge and Kiminu Seamount) and the separately accepted Jeonjaegyu Knoll name and rescue history."
+    },
+    {
+      "url": "https://legacy.iho.int/mtg_docs/com_wg/SCUFN/SCUFN20/SCUFN20_Report_rev1.pdf",
+      "note": "Official 2007 SCUFN report identifies the Korean hydrographic institute as the National Oceanographic Research Institute (NORI) and its director Yeongjin Yeon.",
+      "recordIds": [
+        "ko-news-notices-387-8372c75064",
+        "ko-news-notices-388-8372c75064",
+        "ko-news-notices-393-8372c75064",
+        "ko-news-notices-394-8372c75064",
+        "ko-news-notices-395-8372c75064"
+      ]
+    },
+    {
+      "url": "https://theme.archives.go.kr/next/organ/viewDetailInfo.do?code=OG0005958&isProvince=&mapInfo=mapno1",
+      "note": "Korean National Archives records the contemporaneous English name Ministry of Maritime Affairs and Fisheries and its 1996–2008 period.",
+      "recordIds": [
+        "ko-news-notices-388-8372c75064",
+        "ko-news-notices-389-8372c75064",
+        "ko-news-notices-392-8372c75064",
+        "ko-news-notices-393-8372c75064",
+        "ko-news-notices-394-8372c75064",
+        "ko-news-notices-396-8372c75064",
+        "ko-news-notices-398-8372c75064"
+      ]
+    },
+    {
+      "url": "https://kbr.go.kr/home/bio/bio03002v.do?spc_gbn=marine&tgbn=spc",
+      "note": "The National Biodiversity Center’s official marine-mammal list supplies scientific names matching the Korean species in this article; NOAA Fisheries species profiles confirm standard English names for the Pacific white-sided dolphin, harbor porpoise, spotted seal and related species.",
+      "recordIds": [
+        "ko-news-notices-388-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/species/pacific-white-sided-dolphin",
+      "note": "NOAA Fisheries profile confirms the English common name for Lagenorhynchus obliquidens.",
+      "recordIds": [
+        "ko-news-notices-388-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/species/harbor-porpoise",
+      "note": "NOAA Fisheries profile confirms Phocoena phocoena is the harbor porpoise.",
+      "recordIds": [
+        "ko-news-notices-388-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.fisheries.noaa.gov/species/spotted-seal",
+      "note": "NOAA Fisheries profile confirms Phoca largha is the spotted seal.",
+      "recordIds": [
+        "ko-news-notices-388-8372c75064"
+      ]
+    },
+    {
+      "url": "https://legacy.iho.int/mtg_docs/com_wg/SCUFN/SCUFN20/SCUFN20_Report_rev1.pdf",
+      "note": "Official 2007 IHO/GEBCO report uses the contemporaneous institution name National Oceanographic Research Institute (NORI) and the period ministry name Ministry of Maritime Affairs and Fisheries.",
+      "recordIds": [
+        "ko-news-notices-346-8372c75064",
+        "ko-news-notices-347-8372c75064",
+        "ko-news-notices-351-8372c75064",
+        "ko-news-notices-353-8372c75064",
+        "ko-news-notices-354-8372c75064",
+        "ko-news-notices-356-8372c75064",
+        "ko-news-notices-357-8372c75064",
+        "ko-news-notices-359-8372c75064",
+        "ko-news-notices-360-8372c75064",
+        "ko-news-notices-361-8372c75064",
+        "ko-news-notices-381-8372c75064",
+        "ko-news-notices-382-8372c75064",
+        "ko-news-notices-383-8372c75064",
+        "ko-news-notices-354-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.hri.co.kr/eng/main",
+      "note": "Hyundai Research Institute's official English site confirms its institutional English name.",
+      "recordIds": [
+        "ko-news-notices-390-8372c75064"
+      ]
+    },
+    {
+      "url": "https://elaw.klri.re.kr/kor_mobile/viewer.do?hseq=71693&key=55&type=sogan",
+      "note": "The official English statute uses the title Development and Management of Deep Sea Water Act and records enactment as Act No. 8629 on August 3, 2007.",
+      "recordIds": [
+        "ko-news-notices-392-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.koem.or.kr/site/eng/01/10101030000002019071509.jsp",
+      "note": "KOEM’s official English history confirms Korea Marine Pollution Response Corporation (KMPRC), Korea Marine Environment Management Corporation (KOEM), and its January 2008 launch.",
+      "recordIds": [
+        "ko-news-notices-394-8372c75064"
+      ]
+    },
+    {
+      "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=71673&key=54&type=sogan",
+      "note": "The official English statute confirms the act title and is the legal basis named in the source.",
+      "recordIds": [
+        "ko-news-notices-397-8372c75064"
+      ]
+    },
+    {
+      "url": "https://legacy.iho.int/iho_pubs/IHO-bulletin/2008/ENG/MarAprEng08.pdf",
+      "note": "The contemporary 2008 IHO bulletin uses National Oceanographic Research Institute (NORI) and the new Ministry of Land, Transport and Maritime Affairs name.",
+      "recordIds": [
+        "ko-news-notices-398-8372c75064",
+        "ko-news-notices-404-8372c75064",
+        "ko-news-notices-405-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.molit.go.kr/english/USR/WPGE0201/m_35387/DTL.jsp",
+      "note": "The ministry’s official English history confirms the 2008–2013 name Ministry of Land, Transport and Maritime Affairs.",
+      "recordIds": [
+        "ko-news-notices-400-8372c75064",
+        "ko-news-notices-401-8372c75064",
+        "ko-news-notices-406-8372c75064",
+        "ko-news-notices-407-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.mof.go.kr/page/en/selectPage.do?menuSeq=491&pageSeq=996",
+      "note": "MOF’s official history identifies the 2008 ministry assignments and English names Ministry for Food, Agriculture, Forestry and Fisheries and Ministry of Land, Transport and Maritime Affairs.",
+      "recordIds": [
+        "ko-news-notices-401-8372c75064"
+      ]
+    },
+    {
+      "url": "https://theme.archives.go.kr/next/organ/viewDetailInfo.do?code=OG0027454&isProvince=&mapInfo=mapno1",
+      "note": "Korean National Archives confirms the contemporaneous official English name Ministry of Knowledge Economy and its 2008–2013 period.",
+      "recordIds": [
+        "ko-news-notices-401-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.ekr.or.kr/oekr/images/english/sub/esg_report2024.pdf",
+      "note": "Korea Rural Community Corporation’s official English history distinguishes the 2008 successor name from its prior Korea Rural Community and Agriculture Corporation period.",
+      "recordIds": [
+        "ko-news-notices-407-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.mbris.kr/pub/marine/tsearch/tsearchDetail.do?spcTxnId=270000025775",
+      "note": "The official Marine Biodiversity Information System identifies 가시파래 as Ulva prolifera.",
+      "recordIds": [
+        "ko-news-notices-410-8372c75064"
+      ]
+    },
+    {
+      "url": "https://english.scio.gov.cn/chinaprojects/2018-05/08/content_51532477_0.htm",
+      "note": "China’s State Council Information Office uses the official English name South-to-North Water Diversion Project.",
+      "recordIds": [
+        "ko-news-notices-410-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.molit.go.kr/USR/ETCM0401/m_253/DTL.jsp?month=12&year=2008",
+      "note": "Official Ministry of Land, Transport and Maritime Affairs calendar confirms the 2008 association inaugural meeting event on December 17.",
+      "recordIds": [
+        "ko-news-notices-411-8372c75064"
+      ]
+    },
+    {
+      "url": "https://www.kbsi.re.kr/board?boardId=BOARD00311&menuId=MENU003010200000000",
+      "note": "Korea Basic Science Institute's official English institutional name.",
+      "recordIds": [
+        "ko-news-notices-413-8372c75064"
+      ]
+    },
+    {
+      "url": "https://m.korea.kr/briefing/policyBriefingView.do?endDate=&gubun=&newsId=148661294&pageIndex=&srchType=&srchWord=&startDate=",
+      "note": "Government briefing on the 2009 Cheong Wa Dae appointment and organizational changes used to check appointment relationships and office responsibilities.",
+      "recordIds": [
+        "ko-news-notices-414-8372c75064"
+      ]
+    },
+    {
+      "url": "https://epts.kdi.re.kr/archive/frwdHist/view2?EPIC_NUM=100899",
+      "note": "KDI archive confirms the source terms for conservation/restoration/water-friendly zones and flood-control, water-use, and landscape criteria in the ecological river guidelines.",
+      "recordIds": [
+        "ko-news-notices-415-8372c75064"
+      ]
+    },
+    {
+      "url": "https://english.wsi.ac.kr/page/index.jsp?code=english030504",
+      "note": "Official English college page uses the qualification title Surveying and Geospatial Information Engineer / Industrial Engineer.",
+      "recordIds": [
+        "ko-news-notices-421-8372c75064"
+      ]
+    },
+    {
+      "url": "https://docs.iho.int/mtg_docs/com_wg/SCUFN/SCUFN20/Proposals/NORI_Rep_of_Korea/Summary_for_Submission_Korea.PDF",
+      "note": "IHO international documentation uses National Oceanographic Research Institute (NORI), Republic of Korea.",
+      "recordIds": [
+        "ko-news-notices-422-8372c75064",
+        "ko-news-notices-428-8372c75064",
+        "ko-news-notices-431-8372c75064",
+        "ko-news-notices-436-8372c75064"
+      ]
+    }
+  ],
+  "translatorNotes": [
+    {
+      "id": "ko-news-notices-417-8372c75064",
+      "note": "The Korean source labels both annual electricity generation (613,200) and annual Incheon demand (18,165,000) as MW. The translation preserves MW as printed; the annual context may suggest MWh, but the source unit has not been independently verified."
+    }
+  ]
+}

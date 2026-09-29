@@ -1,0 +1,59 @@
+{
+  "status": "motion-approved-effects-incomplete",
+  "reviewDocument": "chatgpt-fish-review.md",
+  "reviewUrl": "https://chatgpt.com/c/6abb6f01-555c-83ee-a81f-d808af1a71bd",
+  "balanceBefore": 476.75,
+  "quotedCredits": 45,
+  "params": {
+    "model": "seedance_2_0",
+    "duration": 5,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "medias": [
+      {
+        "role": "image",
+        "value": "00d9ab40-4902-4ead-a919-d83426dd16b1"
+      }
+    ],
+    "prompt": "Five-second cinematic underwater technology film, 16:9, silent. Use the supplied image only as a visual reference for realistic fish anatomy, species-like appearance, underwater atmosphere, and restrained blue AI graphics; do not preserve its exact composition or fish positions. Prioritize lifelike, energetic swimming and cinematic camera pursuit. Fish move naturally through three-dimensional water with clear tail-driven propulsion, flexible rear-body motion, subtle pectoral-fin control, independent rhythms, brief acceleration and gliding, and believable changes in depth, heading, and spacing. The camera dynamically tracks alongside and slightly behind the moving group with smooth underwater inertia and gentle forward movement, creating convincing parallax across fish, suspended particles, rocks, and sandy seabed. Fish may naturally reposition within the frame as the camera follows them. Thin blue detection boxes and faint translucent silhouette masks are generated directly within the footage as an explanatory computer-vision effect. Each visible tracked fish should have a corresponding box and softly fitted mask that follows its motion and changing silhouette convincingly. Keep anatomy stable and photorealistic. No rigid sliding, synchronized motion, morphing, detached overlays, empty boxes, text, labels, cuts, or artificial digital zoom."
+  },
+  "submission": {
+    "results": [
+      {
+        "id": "18d7ea2c-8899-4110-a2bf-63031b13bb5c",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "Five-second cinematic underwater technology film, 16:9, silent. Use the supplied image only as a visual reference for realistic fish anatomy, species-like appearance, underwater atmosphere, and restrained blue AI graphics; do not preserve its exact composition or fish positions. Prioritize lifelike, energetic swimming and cinematic camera pursuit. Fish move naturally through three-dimensional water with clear tail-driven propulsion, flexible rear-body motion, subtle pectoral-fin control, independent rhythms, brief acceleration and gliding, and believable changes in depth, heading, and spacing. The camera dynamically tracks alongside and slightly behind the moving group with smooth underwater inertia and gentle forward movement, creating convincing parallax across fish, suspended particles, rocks, and sandy seabed. Fish may naturally reposition within the frame as the camera follows them. Thin blue detection boxes and faint translucent silhouette masks are generated directly within the footage as an explanatory computer-vision effect. Each visible tracked fish should have a corresponding box and softly fitted mask that follows its motion and changing silhouette convincingly. Keep anatomy stable and photorealistic. No rigid sliding, synchronized motion, morphing, detached overlays, empty boxes, text, labels, cuts, or artificial digital zoom.",
+          "aspect_ratio": "16:9",
+          "duration": 5,
+          "reference_images": [
+            "00d9ab40-4902-4ead-a919-d83426dd16b1"
+          ],
+          "resolution": "1080p",
+          "mode": "std",
+          "generate_audio": false
+        }
+      }
+    ],
+    "adjustments": {
+      "medias[0].role": {
+        "requested": "image",
+        "used": "image_references",
+        "reason": "Seedance 2.0 backend expects schema-key media roles"
+      }
+    }
+  },
+  "actualCredits": 45,
+  "balanceAfter": 431.75,
+  "result": {
+    "qa": "User approves swimming/camera motion; AI effects incomplete. Preserve original. No further generation without reviewed instruction.",
+    "sha256": "1AF695E130AEF9E6B32CBB0D9CBF027026788D9AC960444C04F8A777EEEC1182",
+    "path": "media-source/video-production-20260929/fish-reviewed-r2.mp4"
+  }
+}

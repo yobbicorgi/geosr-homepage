@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "ko-company-aboutUs-page-e590a22c61",
+  "sourceTextSha256": "ea4d5f8b7906a4c6e89cce0f1994c3c41556046ace2cbceb53008ab7ec512fe6",
+  "referenceEnglishId": "en-company-aboutUs-page-cc1dbe97e8",
+  "reviewStatus": "source-compared",
+  "history": [
+    {
+      "year": "2026",
+      "month": "01",
+      "sourceTitle": "정보기술방송통신기 등록(중소기업중앙회장)",
+      "title": "Registered as an ICT Service Provider (Korea Federation of SMEs)"
+    },
+    {
+      "year": "2026",
+      "month": "01",
+      "sourceTitle": "청년일자리강소기업 선정(고용노동부)",
+      "title": "Designated as a Youth-Friendly Small Giant Company (Ministry of Employment and Labor)"
+    },
+    {
+      "year": "2025",
+      "month": "11",
+      "sourceTitle": "해양폐기물조사기관 등록 (해양수산부)",
+      "title": "Registered as a Marine Debris Survey Institution (Ministry of Oceans and Fisheries)"
+    },
+    {
+      "year": "2025",
+      "month": "09",
+      "sourceTitle": "경기가족친화 일하기 좋은 기업 선정(경기도)",
+      "title": "Certified as a Family-Friendly Excellent Workplace in Gyeonggi Province (Gyeonggi Province)"
+    },
+    {
+      "year": "2025",
+      "month": "07",
+      "sourceTitle": "해양이용영향평가대행자 등록 (평택지방해양수산청)",
+      "title": "Registered as a marine use impact assessment agency (Pyeongtaek Regional Office of Oceans and Fisheries)"
+    },
+    {
+      "year": "2024",
+      "month": "12",
+      "sourceTitle": "일·생활균형 우수기업 선정(고용노동부)",
+      "title": "Selected as an Excellent Work·Life Balance company (MOEL)"
+    },
+    {
+      "year": "2024",
+      "month": "05",
+      "sourceTitle": "강소기업 7년 연속 선정(고용노동부)",
+      "title": "Selected as a small giant company for 7 consecutive years (MOEL)"
+    },
+    {
+      "year": "2023",
+      "month": "05",
+      "sourceTitle": "강소기업 6년 연속 선정 (고용노동부)",
+      "title": "Selected as a small giant company for 6 consecutive years (MOEL)"
+    },
+    {
+      "year": "2023",
+      "month": "01",
+      "sourceTitle": "청년친화강소기업 4년 연속 선정 (고용노동부)",
+      "title": "Selected as a youth-friendly, small giant company for 4 consecutive years (MOEL)"
+    },
+    {
+      "year": "2022",
+      "month": "12",
+      "sourceTitle": "ISO45001(안전보건경영시스템) 인증 (한국품질인증 표준원)",
+      "title": "ISO 45001 occupational health and safety management system certification (KQCSA)"
+    },
+    {
+      "year": "2022",
+      "month": "06",
+      "sourceTitle": "전문연구사업자 등록 (과학기술정보통신부)",
+      "title": "Registered as a professional research and development business (MSIT)"
+    },
+    {
+      "year": "2021",
+      "month": "12",
+      "sourceTitle": "해양오염퇴적물 조사기관 등록 (해양수산부)",
+      "title": "Registered as a contaminated marine sediment investigation agency (MOF)"
+    },
+    {
+      "year": "2021",
+      "month": "10",
+      "sourceTitle": "통신판매업 등록 (군포시)",
+      "title": "Registered as a mail-order business (Gunpo City)"
+    },
+    {
+      "year": "2021",
+      "month": "09",
+      "sourceTitle": "출판사 등록 (군포시)",
+      "title": "Registered as a publisher (Gunpo City)"
+    },
+    {
+      "year": "2021",
+      "month": "06",
+      "sourceTitle": "우수 기업연구소 지정(과학기술정보통신부)",
+      "title": "Designated as an outstanding corporate research institute (MSIT)"
+    },
+    {
+      "year": "2021",
+      "month": "04",
+      "sourceTitle": "국립해양조사원 해양조사·정보업(해양정보서비스업) 등록",
+      "title": "Registered for marine information services under the marine survey and information business category (Korea Hydrographic and Oceanographic Agency)"
+    },
+    {
+      "year": "2021",
+      "month": "03",
+      "sourceTitle": "국립해양조사원 해양조사·정보업(수로측량) 등록",
+      "title": "Registered for hydrographic surveying under the marine survey and information business category (Korea Hydrographic and Oceanographic Agency)"
+    },
+    {
+      "year": "2021",
+      "month": "03",
+      "sourceTitle": "국립해양조사원 해양조사·정보업(해양관측) 등록",
+      "title": "Registered for marine observation under the marine survey and information business category (Korea Hydrographic and Oceanographic Agency)"
+    },
+    {
+      "year": "2021",
+      "month": "02",
+      "sourceTitle": "일학습병행제 학습기업 선정 (고용노동부)",
+      "title": "Selected as a training company under the work-study programme (Ministry of Employment and Labor)"
+    },
+    {
+      "year": "2020",
+      "month": "11",
+      "sourceTitle": "조달청 벤처창업혁신 조달상품지정(스마트해양관측시스템)",
+      "title": "Smart marine observation system designated as an innovative procurement product from a venture or startup company (Public Procurement Service)"
+    },
+    {
+      "year": "2020",
+      "month": "01",
+      "sourceTitle": "청년친화강소기업 선정(고용노동부)",
+      "title": "Selected as a youth-friendly small giant company (Ministry of Employment and Labor)"
+    },
+    {
+      "year": "2019",
+      "month": "12",
+      "sourceTitle": "가족친화인증(여성가족부)",
+      "title": "Certified as a family-friendly company (MOGEF)"
+    },
+    {
+      "year": "2019",
+      "month": "10",
+      "sourceTitle": "경기가족친화 일하기 좋은 기업 인증(경기도)",
+      "title": "Certified as a family-friendly, great-to-work-for company in Gyeonggi Province (Gyeonggi-do Provincial Government)"
+    },
+    {
+      "year": "2019",
+      "month": "04",
+      "sourceTitle": "공공측량업 등록(국토지리정보원)",
+      "title": "Registered as a public survey provider (NGII)"
+    },
+    {
+      "year": "2019",
+      "month": "01",
+      "sourceTitle": "엔지니어링 전문분야(측량지적) 추가 (한국엔지니어링협회)",
+      "title": "Added surveying and cadastral engineering to registered engineering specialisations (Korea Engineering and Consulting Association)"
+    },
+    {
+      "year": "2018",
+      "month": "12",
+      "sourceTitle": "장보고대상 본상수상(해양수산부장관)",
+      "title": "Received the main prize at the Jang Bogo Awards (Minister of Oceans and Fisheries)"
+    },
+    {
+      "year": "2018",
+      "month": "04",
+      "sourceTitle": "강소기업 선정 (고용노동부)",
+      "title": "Selected as a small giant company (MOEL)"
+    },
+    {
+      "year": "2018",
+      "month": "01",
+      "sourceTitle": "기상컨설팅업 등록(기상청)",
+      "title": "Registered as a weather consulting service provider (KMA)"
+    },
+    {
+      "year": "2017",
+      "month": "09",
+      "sourceTitle": "한국해양 · 수산산업대상 해양엔지니어링부문 수상",
+      "title": "Received the marine engineering award at the Korea Oceans and Fisheries Industry Awards"
+    },
+    {
+      "year": "2017",
+      "month": "04",
+      "sourceTitle": "초경량비행장치사용사업 등록(국토교통부)",
+      "title": "Registered as an ultralight aerial vehicle operator (MOLIT)"
+    },
+    {
+      "year": "2016",
+      "month": "12",
+      "sourceTitle": "2020 VISION 수립",
+      "title": "Established new company vision for 2020"
+    },
+    {
+      "year": "2016",
+      "month": "10",
+      "sourceTitle": "경기도 유망중소기업 인증(경기도)",
+      "title": "Certified as a promising SME in Gyeonggi Province (Gyeonggi Provincial Government)"
+    },
+    {
+      "year": "2016",
+      "month": "04",
+      "sourceTitle": "청년친화 강소기업 선정(고용노동부)",
+      "title": "Selected as a youth-friendly, small giant company (MOEL)"
+    },
+    {
+      "year": "2015",
+      "month": "04",
+      "sourceTitle": "기상예보업 등록(기상청)",
+      "title": "Registered as a weather forecast service provider (KMA)"
+    },
+    {
+      "year": "2014",
+      "month": "08",
+      "sourceTitle": "해역이용영향평가 대행자 등록(평택지방해양수산청)",
+      "title": "Registered as a sea area utilisation impact assessment agency (Pyeongtaek Regional Office of Oceans and Fisheries)"
+    },
+    {
+      "year": "2014",
+      "month": "08",
+      "sourceTitle": "금속구조물, 창호공사업 등록(군포시)",
+      "title": "Registered as a metal structure, doors & windows works provider (Gunpo City)"
+    },
+    {
+      "year": "2014",
+      "month": "03",
+      "sourceTitle": "수중공사업 등록(군포시)",
+      "title": "Registered as an underwater construction provider (Gunpo City)"
+    },
+    {
+      "year": "2014",
+      "month": "02",
+      "sourceTitle": "정보통신공사업 등록(정보통신공사협회)",
+      "title": "Registered as an information and communication construction provider (KICA)"
+    },
+    {
+      "year": "2012",
+      "month": "01",
+      "sourceTitle": "ISO 14001 인증(크레비즈인증원)",
+      "title": "Certified for ISO 14001 (CreBizQM Co., Ltd.)"
+    },
+    {
+      "year": "2011",
+      "month": "05",
+      "sourceTitle": "기상장비업 등록(기상청)",
+      "title": "Registered as a meteorological equipment provider (KMA)"
+    },
+    {
+      "year": "2011",
+      "month": "03",
+      "sourceTitle": "해양 환경 조사기관 측정 · 분석 능력 인증(국토해양부)",
+      "title": "Certified for measurement and analysis capabilities as a marine environmental survey institution (Ministry of Land Transport and Maritime Affairs)"
+    },
+    {
+      "year": "2010",
+      "month": "12",
+      "sourceTitle": "경기중소기업 대상 수상(경기도)",
+      "title": "Received the Gyeonggi SME Award (Gyeonggi Provincial Government)"
+    },
+    {
+      "year": "2009",
+      "month": "07",
+      "sourceTitle": "대한민국 신성장동력 우수기업 선정(지식경제부)",
+      "title": "Selected as an outstanding new growth engine company in Korea (Ministry of Knowledge Economy)"
+    },
+    {
+      "year": "2009",
+      "month": "05",
+      "sourceTitle": "ISO 9001 인증(한국국제규격인증원)",
+      "title": "Certified for ISO 9001 (KIC)"
+    },
+    {
+      "year": "2008",
+      "month": "06",
+      "sourceTitle": "해역이용영향 평가대행자 등록(평택지방해양항만청)",
+      "title": "Registered as a sea area utilisation impact assessment agency (Pyeongtaek Regional Maritime Affairs and Port Office)"
+    },
+    {
+      "year": "2008",
+      "month": "04",
+      "sourceTitle": "연구개발서비스업 신고(교육과학기술부)",
+      "title": "Reported registration as a research and development service business (Ministry of Education Science and Technology)"
+    },
+    {
+      "year": "2008",
+      "month": "02",
+      "sourceTitle": "수로사업 변경 등록(수로조사업)",
+      "title": "Updated hydrographic business registration to hydrographic surveying"
+    },
+    {
+      "year": "2007",
+      "month": "09",
+      "sourceTitle": "측지 측량업 등록(국토지리정보원)",
+      "title": "Registered as a geodetic survey provider (NGII)"
+    },
+    {
+      "year": "2007",
+      "month": "07",
+      "sourceTitle": "우수 중소기업 선정(기업은행)",
+      "title": "Selected as an outstanding SME (IBK)"
+    },
+    {
+      "year": "2007",
+      "month": "07",
+      "sourceTitle": "경기도 유망중소기업 선정(경기도)",
+      "title": "Selected as a promising SME (Gyeonggi-do Provincial Government)"
+    },
+    {
+      "year": "2007",
+      "month": "05",
+      "sourceTitle": "항로표지 위탁관리업 등록(해양수산부)",
+      "title": "Registered as a contracted aids-to-navigation management business (Ministry of Maritime Affairs and Fisheries)"
+    },
+    {
+      "year": "2007",
+      "month": "04",
+      "sourceTitle": "Inno-Biz 기업 등록(중소기업청)",
+      "title": "Registered as an Inno-Biz company (Small and Medium Business Administration)"
+    },
+    {
+      "year": "2006",
+      "month": "11",
+      "sourceTitle": "공장등록(군포시)",
+      "title": "Registered a factory (Gunpo City)"
+    },
+    {
+      "year": "2006",
+      "month": "07",
+      "sourceTitle": "경기산업 패밀리 기업 등록(경기중소기업종합지원센터)",
+      "title": "Registered as a Gyeong-gi Industry Family company (GSBC)"
+    },
+    {
+      "year": "2005",
+      "month": "02",
+      "sourceTitle": "연안 조사 측량업 등록(국토지리정보원)",
+      "title": "Registered as a coastal survey provider (NGII)"
+    },
+    {
+      "year": "2005",
+      "month": "02",
+      "sourceTitle": "수로조사업 등록(국립해양조사원)",
+      "title": "Registered as a hydrographic survey business (National Oceanographic Research Institute)"
+    },
+    {
+      "year": "2004",
+      "month": "10",
+      "sourceTitle": "사무실 확장 이전",
+      "title": "Relocated company office for expansion"
+    },
+    {
+      "year": "2004",
+      "month": "10",
+      "sourceTitle": "우수기술기업 선정(기술신용보증기금)",
+      "title": "Selected as a company with outstanding technology (KOTEC)"
+    },
+    {
+      "year": "2004",
+      "month": "05",
+      "sourceTitle": "엔지니어링 전문분야(항만 및 해양) 추가(엔지니어링진흥협회)",
+      "title": "Added port and marine engineering to registered engineering specialisations (Korea Engineering Promotion Association)"
+    },
+    {
+      "year": "2002",
+      "month": "08",
+      "sourceTitle": "엔지니어링 전문분야(수자원개발) 추가(엔지니어링진흥협회)",
+      "title": "Added water resources development to registered engineering specialisations (Korea Engineering Promotion Association)"
+    },
+    {
+      "year": "2002",
+      "month": "01",
+      "sourceTitle": "병역 특례업체 지정(병무청)",
+      "title": "Designated as a company eligible for alternative military service (Military Manpower Administration)"
+    },
+    {
+      "year": "2001",
+      "month": "10",
+      "sourceTitle": "엔지니어링 전문분야(수산양식) 추가(엔지니어링진흥협회)",
+      "title": "Added aquaculture to registered engineering specialisations (Korea Engineering Promotion Association)"
+    },
+    {
+      "year": "2001",
+      "month": "05",
+      "sourceTitle": "벤처기업 등록(경기지방중소기업청)",
+      "title": "Registered as a venture company (Gyeonggi Regional Small and Medium Business Administration)"
+    },
+    {
+      "year": "2000",
+      "month": "08",
+      "sourceTitle": "엔지니어링 활동 주체(전문분야 : 해양)신고(엔지니어링진흥협회)",
+      "title": "Filed as an engineering business specialising in marine engineering (Korea Engineering Promotion Association)"
+    },
+    {
+      "year": "2000",
+      "month": "08",
+      "sourceTitle": "소프트웨어 사업자 신고(한국소프트웨어진흥협회)",
+      "title": "Filed as a software business (Korea Software Industry Association)"
+    },
+    {
+      "year": "2000",
+      "month": "07",
+      "sourceTitle": "부설 수환경연구소 설립",
+      "title": "Established the affiliated Water Environment Research Institute"
+    },
+    {
+      "year": "2000",
+      "month": "07",
+      "sourceTitle": "(주)지오시스템리서치 창립",
+      "title": "Foundation of GeoSystem Research Corp."
+    }
+  ],
+  "principles": {
+    "mission": "A company leading sustainable geosystem solutions for a better life",
+    "vision": "Sustainable Geosystems\nfor a better Life",
+    "values": [
+      {
+        "title": "Ethical management",
+        "text": "We comply with relevant laws and regulations and act with the interests of the company and the public in mind"
+      },
+      {
+        "title": "Customer satisfaction",
+        "text": "We achieve customer satisfaction by ensuring the quality of our results through suitable technology"
+      },
+      {
+        "title": "Continuous innovation",
+        "text": "We provide differentiated services through continuous innovation"
+      },
+      {
+        "title": "Pursuit of happiness",
+        "text": "We work to improve health safety and quality of life for our employees and their families as well as our customers and partners"
+      },
+      {
+        "title": "Cooperation and communication",
+        "text": "We develop our collective intelligence through cooperation and communication"
+      },
+      {
+        "title": "Thrift",
+        "text": "We conserve the Earth’s environment by practising thrift and reducing waste in everyday life"
+      }
+    ]
+  },
+  "notes": [
+    "Korean chronology is canonical and all 67 events remain separate",
+    "Current Korean mission and vision replace the outdated English statements",
+    "2026 ICT registration wording follows the published English counterpart because the Korean entry has an abbreviated source label",
+    "Historical registrations and awards are dated records and do not establish current validity"
+  ]
+}

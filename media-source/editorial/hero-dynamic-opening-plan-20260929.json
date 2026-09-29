@@ -1,0 +1,73 @@
+{
+  "status": "completed-full-hero-rejected-short-technical-insert-candidate",
+  "priority": "first-screen dynamic opening for 2026-09-30 meeting demo",
+  "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "publicationBoundary": "Fictional representative coastal field-observation concept, not an actual GeoSR-owned vessel, project or measured data",
+  "start": {
+    "path": "media-source/editorial/hero-ctd-native-20260929.png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2475367,
+    "sha256": "5a9d3d988c251bed47befdf91bc1c500d8c1e6fae80f93919e7ade966aa62f0b",
+    "qa": "Full-size original: one modest vessel on right third with continuous low coast behind, one stern A-frame, a taut cable from top sheave to one intact CTD cage near surface, two crew with helmets and orange life jackets clear of load, broad quiet sea on left for heading. No harbor or breakwater. The lower ring nearly touches water so the descent must be modest and end submerged."
+  },
+  "end": {
+    "path": "media-source/editorial/hero-ctd-end-native-20260929.png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2417465,
+    "sha256": "76d9b4eee11c1cac51e5b80c2f44789beae511c59eb95fb17b9765a3414588f6",
+    "prompt": "Edit THIS selected CTD research-vessel image directly with native ChatGPT image editing to make ONE matching END FRAME of a six-second dynamic GeoSR homepage opening. Treat the selected generated image as the exact visual and engineering reference, not a new scene. The same single modest coastal research vessel remains in the right half, with the same navy hull, white cabin, stern A-frame and winch, the same two helmeted orange-life-jacketed crew clear of the suspended load, and the same distant low forested Korean coast and open blue sea. Six seconds later the camera has flown smoothly about 20 metres forward and slightly downward and curved a few degrees around the stern: the vessel is modestly larger (about 15 percent) and viewed from a naturally lower oblique angle, while broad sea, coast and quiet left-side water for a website heading remain visible. Perspective, horizon, shoreline and water parallax should look like one continuous real drone move, not a jump to another place. Meanwhile the winch paid out one straight taut cable from the same A-frame top sheave; the SAME rigid CTD rosette descended vertically from its previous position just above water until its top ring is just beneath the surface. The cage remains connected to the cable, submerges as one intact object and makes only a brief proportionate ring of ripples and a few fading bubbles. Do not leave the cage floating above water or create a second cage. Preserve realistic crane load path, vessel scale, crew positions, bottles, coastline shape, road and rock layout. No new boats, piers, ports, breakwaters, fantastic coastal structures, masks, meshes, screen graphics, numbers, labels, text, logos or fabricated measurements. Photorealistic natural morning documentary footage frame, 16:9, highest downloadable original resolution. This is a fictional illustrative field-observation scene and not a GeoSR-owned vessel or actual survey. Generate the edited image itself, not a prompt or an external-app output.",
+    "qa": "Full-size edited original reviewed. The same navy-hull vessel, white cabin, A-frame, one cable and two orange-life-jacketed crew remain. The vessel is visibly larger and lower in frame, broad left water and distant coast remain. The single CTD cage is submerged with a circular ripple and taut cable. No harbor, extra vessel, text or graphic overlay. Local ORB audit found 1,008 good matches and 325 affine RANSAC inliers, about 1.203x scale with slight rotation and translation; this supports substantial camera reframing but not exact physical pixel correspondence. Video QA must check for parallax rather than digital zoom and for any vessel/coast morph."
+  },
+  "sixSecondCut": {
+    "camera": "One continuous drone travel: forward approximately 20 metres, descend slightly, arc toward stern only a few degrees; vessel grows modestly while coast and foreground water show coherent parallax. Left text-safe sea remains open.",
+    "phase0to1": "Wide coastal context and whole working vessel, same cage held just above sea; natural wind ripple and slight vessel heave.",
+    "phase1to4": "Drone advances and lowers while the A-frame winch continuously pays out one connected taut cable; rigid CTD cage crosses water surface with a proportionate brief splash and concentric ripples.",
+    "phase4to6": "Camera eases into a lower oblique stern view, still showing broad sea and coast. Cage top ring disappears beneath water; bubbles and ripples fade; cable remains straight and connected.",
+    "rejectionConditions": [
+      "Camera movement is just a digital zoom or full-frame morph without coastal/vessel parallax",
+      "Vessel, crane, crew or coast shape changes identity or location",
+      "Cage duplicates, distorts, disconnects from cable or fails to enter water",
+      "Cable attaches to wrong point or does not pay out as cage descends",
+      "Splash/ripple scale is implausible or crew enter suspended-load danger zone",
+      "New harbor, pier, breakwater, vessel, text, labels, fabricated readings or graphic overlay appears",
+      "Left title area becomes obstructed or essential vessel/cage leaves 16:9 frame"
+    ]
+  },
+  "reelOrderProposal": [
+    "0-6s dynamic broad field observation with CTD water entry and camera travel",
+    "6-12s fixed registered satellite-processing technical insert, if layout and transition review pass",
+    "12-18s AI organism movement with matching native boxes/masks",
+    "18-24s water-only numerical field transport/dispersion",
+    "24-30s spatial survey point cloud resolving to surface and widening to geography"
+  ],
+  "videoPlan": {
+    "model": "seedance_2_0",
+    "mode": "std",
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "duration": 6,
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1,
+    "settingsOnlyIndicativeCredits": 54,
+    "balanceBeforePendingJob": 872.75,
+    "referenceMediaIds": {
+      "start_image": "6b1d776e-790f-417e-aaff-676a65ea65d7",
+      "end_image": "15044930-8cde-43d7-96ee-930ef069268e"
+    },
+    "uploadAudit": "Both native originals were uploaded through the Higgsfield file chooser. Downloaded CDN versions compared at 512x288 to local originals: start UUID mean RGB absolute error 0.2805 vs its local original and 15.0 vs end; end UUID 0.3092 vs its local original and 15.0 vs start. UUID roles therefore are not swapped.",
+    "finalPrompt": "Make ONE continuous six-second photorealistic aerial documentary shot, using the uploaded START IMAGE as the first frame and the uploaded END IMAGE as the last frame. This is one fictional Korean coastal field-observation event, not actual GeoSR footage. The same single modest navy-hull research vessel, white cabin, stern A-frame crane, winch, two helmeted crew in orange life jackets, continuous low forested coast and open sea persist through the entire shot. The drone camera genuinely travels forward toward the stern, descends slightly and arcs a few degrees around it. Show coherent parallax between near water waves, vessel and distant coast; the vessel grows modestly as the camera approaches. Do not simulate this with digital zoom, a flat image pan, full-frame crossfade or a jump cut. Keep broad coastal context and clear quiet sea in the left 40 percent for a separate webpage heading. Simultaneously, the SAME rigid CTD sampling rosette is lowered vertically by the winch from just above the water at the start to fully below the surface at the end. The ONE straight taut cable pays out continuously from the A-frame top sheave to the central lifting bail and remains connected as the cage submerges. The cage crosses the surface once, makes a brief small physically proportionate splash, circular ripples and a few fading bubbles. Crew stay in safe positions clear of the load; vessel rocks only subtly. Preserve hull, cabin, crane, cable, cage bottle arrangement, crew count and connected coastline; do not morph or duplicate any of them. No new boat, harbor, pier, breakwater, road, terrain, impossible wave, analysis graphics, mask, mesh, text, number, logo or invented measurement. Natural clear morning light, restrained blue-grey sea, realistic scale and engineering, silent.",
+    "finalInputExactQuote": {
+      "source": "Higgsfield MCP estimate_video_cost using the complete final prompt and both verified UUID roles",
+      "credits": 54,
+      "credits_exact": 54,
+      "balanceBefore": 872.75
+    },
+    "paidSubmitted": true,
+    "jobId": "f3b1c0fd-d97c-4321-ab52-2de612e7f373",
+    "approval": "Parent directly reviewed both local originals and approved one dynamic six-second opening submission after receiving scene plan, prompt and 54-credit exact quote.",
+    "nextGate": "Result was reviewed and rejected as a full hero because of over-approach, vessel clipping and loss of coast. See hero-ctd-seedance20-receipt-20260929.json. No same-prompt retry or site placement."
+  }
+}

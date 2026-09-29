@@ -25,34 +25,30 @@ for(const d of rebuild.deletions){
   check(!exists(d.path),`Rejected image returned: ${d.path}`);
   check(!runtimeText.includes(d.path.replace(/^dist\//,'')),`Rejected image still referenced by runtime: ${d.path}`);
 }
+check(p.schemaVersion===2,'Current subject-led plan must use schema version 2');
 check(p.generationReady===false&&p.releaseReady===false,'A planning package must not claim generation or release approval');
 for(const [id,rel] of Object.entries(p.sourceRegistry)) check(exists(rel),`Missing source ${id}: ${rel}`);
 const ids=new Set();
 for(const s of p.shots){
   check(!ids.has(s.id),`Duplicate shot ${s.id}`);ids.add(s.id);
-  check(s.end-s.start===s.duration&&s.duration>0,`Bad duration ${s.id}`);
-  check(s.containsActualUI===(s.film==='ax'),`Company film cannot include AX UI and AX film must use source UI: ${s.id}`);
+  check(Number.isFinite(s.duration)&&(s.mediaType==='still'?s.duration===0:s.duration>0),`Bad planned duration ${s.id}`);
   check(s.generationReady===false,`Unreviewed shot marked ready ${s.id}`);
-  check(['source-composite','imagegen-reference','higgsfield-concept'].includes(s.method),`Unknown method ${s.id}`);
-  for(const key of ['imageInstruction','motionInstruction','compositingInstruction','continuity']) check(typeof s[key]==='string'&&s[key].length>25,`Missing ${key} ${s.id}`);
+  for(const key of ['imageInstruction','motionInstruction','continuity']) check(typeof s[key]==='string'&&s[key].length>25,`Missing ${key} ${s.id}`);
   for(const key of ['start','middle','end']) check(Boolean(s.frames?.[key]),`Missing frame ${s.id}/${key}`);
-  check(s.sourceRequirements?.length>0&&s.rejectIf?.length>0,`Missing source/rejection gates ${s.id}`);
+  check(s.rejectIf?.length>0&&typeof s.status==='string',`Missing review state/rejection gates ${s.id}`);
   for(const id of s.referenceIds) check(Boolean(p.sourceRegistry[id]),`Unknown source ${s.id}/${id}`);
-  for(const a of s.selectedStills||[]) check(exists(a.path),`Missing shot still ${s.id}: ${a.path}`);
-  for(const rel of Object.values(s.plannedOutputs)) check(rel.startsWith('docs/redesign-next/')&&!rel.includes('..'),`Unsafe planned path ${rel}`);
-}
-for(const [film,total,count] of [['company',60,13],['ax',30,5]]){
-  const shots=p.shots.filter(s=>s.film===film);check(shots.length===count,`Wrong count ${film}`);
-  let cursor=0;for(const s of shots){check(s.start===cursor,`Gap/overlap at ${s.id}`);cursor=s.end;}
-  check(cursor===total,`Wrong total ${film}: ${cursor}`);
+  if(s.localOriginal)check(exists(s.localOriginal),`Missing original ${s.id}: ${s.localOriginal}`);
 }
 for(const slot of runtime.slots){
   const plan=p.slotPlan[slot.id];check(Boolean(plan),`Unplanned runtime slot ${slot.id}`);
   for(const id of plan?.shots||[])check(ids.has(id),`Unknown shot in slot ${slot.id}: ${id}`);
 }
-check(JSON.stringify(p.slotPlan['geosr-hero'].shots)===JSON.stringify(p.shots.filter(s=>s.film==='company').map(s=>s.id)),'Company hero shot boundary mismatch');
-check(p.slotPlan['geosr-hero'].shots.every(id=>id.startsWith('CF')),'AX footage assigned to company hero');
-check(p.slotPlan['ax-concept-film'].shots.every(id=>id.startsWith('AX')),'Company footage assigned to AX concept');
+check(p.slotPlan['geosr-hero'].shots.length>0,'Missing main sequence');
+for(const slot of runtime.slots.filter(s=>s.src)){
+ const entry=p.slotPlan[slot.id];
+ check(entry?.generationAllowed===false&&entry?.provenance==='actual-ui',`Actual UI provenance missing ${slot.id}`);
+ check(exists('dist/'+slot.src),`Missing connected film ${slot.id}`);
+}
 const expected=['satellite','news','flood3d','surge','sealevel','buoy','env','rip','flood-xai'].sort();
 check(JSON.stringify(p.platformCaptures.map(c=>c.id).sort())===JSON.stringify(expected),'Platform coverage mismatch');
 for(const c of p.platformCaptures){
@@ -61,9 +57,9 @@ for(const c of p.platformCaptures){
   for(const key of ['setup','action','result','edit'])check(Boolean(c[key]),`Missing capture step ${c.id}/${key}`);
 }
 check(p.platformCaptures.find(c=>c.id==='flood-xai').status==='development-no-recording','Development service must not masquerade as recorded UI');
-for(const asset of p.nonFilmAssets)for(const id of asset.referenceIds)check(Boolean(p.sourceRegistry[id]),`Unknown non-film source ${id}`);
-const tracked=execFileSync('git',['ls-files','-z','dist/assets'],{cwd:root}).toString().split('\0').filter(Boolean).sort();
-check(JSON.stringify(inventory.assets.map(a=>a.path).sort())===JSON.stringify(tracked),'Inventory does not cover all tracked site assets');
+for(const asset of p.nonFilmAssets||[])for(const id of asset.referenceIds||[])check(Boolean(p.sourceRegistry[id]),`Unknown non-film source ${id}`);
+const currentAssets=fs.readdirSync(path.join(root,'dist/assets'),{recursive:true}).filter(file=>fs.statSync(path.join(root,'dist/assets',file)).isFile()).map(file=>'dist/assets/'+file.replaceAll('\\','/')).sort();
+check(JSON.stringify(inventory.assets.map(a=>a.path).sort())===JSON.stringify(currentAssets),'Inventory does not cover all current site assets');
 check(inventory.runtimeManifestSha256===crypto.createHash('sha256').update(runtimeBytes.toString('utf8').replace(/\r\n/g,'\n')).digest('hex'),'Runtime inventory is stale');
 for(const asset of inventory.assets){
   check(Array.isArray(asset.followUpPlanIds)&&asset.followUpPlanIds.length>0&&Boolean(asset.generationPolicy),`Asset has no continuation action: ${asset.path}`);
@@ -87,4 +83,4 @@ for(const rel of ['00-START-HERE.md','01-DESIGN-SPEC.md','02-MEDIA-DIRECTION.md'
 try {execFileSync(process.execPath,[path.join(root,'scripts/render_continuation_prompts.mjs'),'--check'],{stdio:'pipe'});}
 catch(e){errors.push(String(e.stdout||e.message));}
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
-else console.log(`PASS handoff integrity: ${p.shots.length} shot cards / company60s / AX30s / ${p.platformCaptures.length} services / ${runtime.slots.length} runtime slots / ${inventory.assets.length} asset hashes\nPlanning integrity only; design, scientific and production acceptance remain open`);
+else console.log(`PASS handoff integrity: ${p.shots.length} subject-action shot cards / ${p.platformCaptures.length} actual UI capture plans / ${runtime.slots.length} runtime slots / ${inventory.assets.length} asset hashes\nPlanning integrity only; visual quality and generated film acceptance remain open`);

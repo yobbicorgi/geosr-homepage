@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Observation data network concept</title>
+  <desc id="desc">An original schematic linking water and land observation points with a data analysis system</desc>
+  <defs>
+    <linearGradient id="field" x1="111" y1="91" x2="1541" y2="870" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102d42"/>
+      <stop offset=".56" stop-color="#0a2032"/>
+      <stop offset="1" stop-color="#071722"/>
+    </linearGradient>
+    <linearGradient id="water" x1="185" y1="496" x2="905" y2="895" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153d55"/>
+      <stop offset="1" stop-color="#081c2b"/>
+    </linearGradient>
+    <linearGradient id="land" x1="244" y1="76" x2="1100" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#314c4e" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#142e39" stop-opacity=".92"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(536 0 0 388 1119 452)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55b8d4" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#55b8d4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+      <path d="M72 0H0V72" stroke="#b9deea" stroke-opacity=".035"/>
+    </pattern>
+    <clipPath id="scene"><rect x="0" y="0" width="1672" height="941" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#scene)">
+    <path fill="url(#field)" d="M0 0h1672v941H0z"/>
+    <path fill="url(#glow)" d="M0 0h1672v941H0z"/>
+    <path fill="url(#water)" d="M0 529c199-98 302-44 457-83 168-42 242-159 421-139 170 19 191 155 344 172 131 15 294-64 450-9v471H0V529Z"/>
+    <path fill="url(#land)" d="M0 0h1165c-36 84-96 120-129 197-40 94-46 183-121 232-78 51-160 18-235 50-122 53-137 121-272 123-120 2-235-46-398 20L0 0Z"/>
+    <path fill="url(#grid)" d="M0 0h1672v941H0z"/>
+
+    <g stroke="#9bc5d0" stroke-opacity=".16" stroke-width="2">
+      <path d="M-80 118c167 32 217 4 331-23s224-16 316 18 185 41 293 4 207-31 319 6 196 31 321 2"/>
+      <path d="M-62 178c142 26 222-2 336-25s202-8 289 22 191 40 297 6 220-33 326 4 181 25 293 4"/>
+      <path d="M-44 244c151 18 211-11 323-29s206-5 292 24 177 40 286 9 212-36 317 1 198 27 310 8"/>
+      <path d="M-58 306c132 11 209-14 316-31 108-18 203-7 290 22s171 40 278 13 211-39 317-4 192 28 319 13"/>
+      <path d="M-68 372c138 5 204-18 306-32 101-14 189-8 274 21s164 42 268 17 208-42 316-11 198 31 337 19"/>
+      <path d="M-50 438c120 1 185-17 282-27 91-10 173-3 250 26 79 29 148 43 253 20 100-22 206-42 315-17s203 37 338 30"/>
+    </g>
+    <g stroke="#6da9bd" stroke-opacity=".17" stroke-width="2">
+      <path d="M-50 645c157-59 274-38 391-61 135-26 208-82 339-73s208 62 315 60 206-56 307-41 188 38 293 13"/>
+      <path d="M-36 703c160-55 278-31 393-54 134-27 211-79 336-68 121 10 199 66 311 64 109-2 206-52 309-38s184 41 306 21"/>
+      <path d="M-16 763c154-48 272-27 387-47 133-23 208-73 332-61 126 11 202 68 314 67 113-1 207-45 310-30s184 44 299 30"/>
+      <path d="M8 822c144-40 264-20 380-35 130-18 205-63 326-50 126 13 201 68 312 68 115 0 210-37 313-21s176 44 289 37"/>
+    </g>
+
+    <!-- One continuous catchment path joins inland and coastal observation points. -->
+    <path d="M176 110c100 73 34 148 130 209s111 59 114 145 60 82 166 99 136 47 186 127 95 105 190 125" stroke="#75c4d5" stroke-opacity=".4" stroke-width="3"/>
+    <path d="M176 110c100 73 34 148 130 209s111 59 114 145 60 82 166 99 136 47 186 127 95 105 190 125" stroke="#7ed4e4" stroke-dasharray="2 15" stroke-linecap="round" stroke-width="4" class="data-flow"/>
+
+    <g stroke="#7cc9da" stroke-opacity=".7" stroke-width="2">
+      <path d="M290 322c207 1 310 56 430 133s244 111 395 94"/>
+      <path d="M585 191c52 118 99 192 176 257s180 104 354 101"/>
+      <path d="M440 531c154-7 272 17 398 83s205 71 277 59"/>
+      <path d="M826 321c28 85 105 146 212 192s194 63 299 48"/>
+    </g>
+    <g fill="#d9f3f7" stroke="#7cc9da" stroke-width="3">
+      <circle cx="176" cy="110" r="7"/><circle cx="290" cy="322" r="7"/><circle cx="585" cy="191" r="7"/><circle cx="440" cy="531" r="7"/><circle cx="826" cy="321" r="7"/>
+    </g>
+    <g fill="#5ec7df" opacity=".16" filter="url(#soft)">
+      <circle cx="176" cy="110" r="26"/><circle cx="290" cy="322" r="26"/><circle cx="585" cy="191" r="26"/><circle cx="440" cy="531" r="26"/><circle cx="826" cy="321" r="26"/>
+    </g>
+
+    <path d="M1201 496h104" stroke="#9bdbe5" stroke-opacity=".6" stroke-width="2"/>
+    <circle cx="1195" cy="496" r="28" fill="#0a2030" stroke="#84d4e3" stroke-opacity=".76" stroke-width="2"/>
+    <circle cx="1195" cy="496" r="8" fill="#d8f7fa"/>
+    <circle cx="1195" cy="496" r="42" stroke="#84d4e3" stroke-opacity=".22"/>
+
+    <g stroke="#9bc5d0" stroke-opacity=".44" stroke-width="1.5">
+      <path d="M1341 315l205 72-20 120-207-69 22-123Z" fill="#16364a" fill-opacity=".8"/>
+      <path d="M1326 446l207 69-20 121-208-66 21-124Z" fill="#102f43" fill-opacity=".9"/>
+      <path d="M1312 575l207 66-20 123-208-64 21-125Z" fill="#0c293b" fill-opacity=".95"/>
+      <path d="M1384 354c43 13 78 27 112 39m-123 14c34 12 60 21 95 33M1370 485c35 12 71 24 105 36m-117 12c45 16 83 29 119 40M1356 615c48 14 78 25 110 36m-119 17c35 11 64 20 101 31"/>
+      <path d="M1362 398l-9 47m174-2-9 51m-176 61-10 50"/>
+    </g>
+    <g fill="#a1dce6">
+      <circle cx="1400" cy="392" r="4"/><circle cx="1465" cy="415" r="4"/><circle cx="1510" cy="431" r="4"/>
+      <circle cx="1384" cy="523" r="4"/><circle cx="1453" cy="548" r="4"/><circle cx="1495" cy="562" r="4"/>
+      <circle cx="1373" cy="652" r="4"/><circle cx="1438" cy="674" r="4"/><circle cx="1483" cy="687" r="4"/>
+    </g>
+    <path d="M1242 476c29-46 52-70 97-87m-97 128c25 4 50 12 84 29m-82 1c24 44 47 67 79 89" stroke="#85d1df" stroke-opacity=".48" stroke-width="1.5"/>
+    <circle cx="1342" cy="389" r="4" fill="#c8f0f3"/><circle cx="1328" cy="546" r="4" fill="#c8f0f3"/><circle cx="1323" cy="636" r="4" fill="#c8f0f3"/>
+
+    <path d="M0 906h1672" stroke="#a6ced6" stroke-opacity=".14"/>
+    <path d="M90 906h405m0 0 0-20m0 20h284m0 0 0-20m0 20h294m0 0 0-20m0 20h355" stroke="#8ec9d7" stroke-opacity=".38" stroke-width="1.5"/>
+    <g fill="#d3edf1">
+      <circle cx="90" cy="906" r="4"/><circle cx="495" cy="906" r="4"/><circle cx="779" cy="906" r="4"/><circle cx="1073" cy="906" r="4"/><circle cx="1428" cy="906" r="4"/>
+    </g>
+  </g>
+  <style>
+    .data-flow{animation:flow 18s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-170}}
+    @media(prefers-reduced-motion:reduce){.data-flow{animation:none}}
+  </style>
+</svg>

@@ -52,7 +52,7 @@ for (const route of routes) {
   assert.match(html, /<link rel="icon" type="image\/png" href="assets\/favicon\.png\?v=20260928-r1">/, route + " official logo icon");
   assert.equal(readMeta(html, "name", "twitter:description"), description, route + " Twitter description");
   assert.match(html, /<html lang="ko">/, route + " static language default");
-  assert.match(html, /site\.js\?v=\d{8}-r\d+/, route + " current metadata script");
+  assert.match(html, /site\.js\?v=\d{8}-(?:[rcg])\d+/, route + " versioned metadata script");
   assert.doesNotMatch(html, /rel="canonical"|property="og:image"|name="twitter:image"/i, route + " static HTML must not hard-code a canonical or unverified social image");
   assert.doesNotMatch(html, /(?:localhost|127\.0\.0\.1|192\.168\.\d+\.\d+)/i, route + " must not publish a local origin");
 
@@ -81,13 +81,13 @@ const css = fs.readFileSync(path.join(dist, "design.css"), "utf8");
 if (!css.includes(":focus-visible")) fail("shared focus-visible rule missing");
 if (!css.includes("@media (prefers-reduced-motion: reduce)")) fail("shared reduced-motion fallback missing");
 const homeJs = fs.readFileSync(path.join(dist, "home.js"), "utf8");
-for (const marker of ['id="expertise"', 'id="platforms"', 'id="about"', 'id="news"', 'class="g-field-sequence"', 'class="g-platform-screen ']) {
+for (const marker of ['id="expertise"', 'id="platforms"', 'id="about"', 'id="news"', 'g-expertise-atlas', 'class="g-platform-screen--dap"']) {
   if (!homeJs.includes(marker)) fail("home composition missing: " + marker);
 }
 if (homeJs.includes('SELECTED WORK') || homeJs.includes('g-project-showcase')) fail('removed duplicate selected-work section returned');
 if (homeJs.includes('data-case-deck') || homeJs.includes('data-home-field')) fail("home still hides core sections inside legacy decks or tabs");
-if (!homeJs.includes('assets/ax-embedded/satellite.webp') || !homeJs.includes('assets/geodap-home-public-preview-20260928.png')) fail("independent platform previews missing");
-const mainComposition = homeJs.slice(homeJs.indexOf('function home()'), homeJs.indexOf('function modernFooter()'));
+if (!homeJs.includes('assets/editorial/ax-terrain.webp') || !homeJs.includes('assets/geodap-home-full-20260928.webp')) fail("independent platform previews missing");
+const mainComposition = homeJs.slice(homeJs.indexOf('function home()'), homeJs.indexOf('function credentialGallery()'));
 if (mainComposition.includes('credential-index') || mainComposition.includes('credential-category')) fail("long credential catalogue belongs on company page, not the homepage");
 const companyIndex = fs.readFileSync(path.join(dist, "credentials-index.js"), "utf8");
 if (!companyIndex.includes('credential-index-query') || !companyIndex.includes('credential-gallery-results') || !companyIndex.includes('data-credential-category')) fail("company credential gallery search/filter missing");

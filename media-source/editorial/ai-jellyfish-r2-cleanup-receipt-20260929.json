@@ -1,0 +1,41 @@
+{
+  "recordedAt": "2026-09-29T11:56:17.253793+09:00",
+  "authorization": "Parent relayed user request to remove reviewed rejected outputs while preserving verdicts, receipts and accepted input originals.",
+  "jobId": "bc159dca-1ae7-4eb1-9ea6-66c428386796",
+  "decision": "Rejected: bounding boxes present but static and fail to contain expanding jellyfish at middle/end. No web use. No postproduction overlays or paid retries.",
+  "retained": [
+    "ai-jellyfish-native-20260929.png",
+    "ai-jellyfish-seedance20-retry-receipt-20260929.json",
+    "ai-jellyfish-seedance20-failure-audit-20260929.json"
+  ],
+  "balanceAfter": 980.75,
+  "chargedCredits": 36,
+  "deletedFiles": [
+    {
+      "path": "media-source/editorial/ai-jellyfish-seedance20-native-r2-20260929.mp4",
+      "bytes": 2577116,
+      "sha256": "a45d1087fb1060a464c498bd2e4eaeab44d224dfb0c01f335a2f0f19832a5b97"
+    },
+    {
+      "path": "media-source/editorial/ai-jellyfish-seedance20-r2-contact-20260929.jpg",
+      "bytes": 171668,
+      "sha256": "8576c0e3b4ff639ad4476db0bb01cba787276ca1bcdea7d7f7ddb414def710ce"
+    },
+    {
+      "path": "media-source/editorial/ai-jellyfish-seedance20-r2-frame-01-20260929.png",
+      "bytes": 1061937,
+      "sha256": "05a3c27c14bf19175865db4b0a9e8e17c04bf483bd1ee6e57ef20b85e099c208"
+    },
+    {
+      "path": "media-source/editorial/ai-jellyfish-seedance20-r2-frame-02-20260929.png",
+      "bytes": 1261588,
+      "sha256": "03345f5020816b88b2dba4d670570d8f89a86b0d3818add7cada22c121d09084"
+    },
+    {
+      "path": "media-source/editorial/ai-jellyfish-seedance20-r2-frame-03-20260929.png",
+      "bytes": 1230596,
+      "sha256": "dd30c3b396b473e763cdf091efe517dd3137fc7a0bec8988fe6697af02d4c18b"
+    }
+  ],
+  "deletionVerified": true
+}

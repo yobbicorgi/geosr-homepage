@@ -1,0 +1,56 @@
+{
+  "status": "rejected-after-full-frame-qa",
+  "jobId": "1ed7775c-dd67-41ef-97e4-1ea18c8688a6",
+  "slot": "main-reel-estuary-model-unique-shot",
+  "plan": "media-source/editorial/hero-estuary-model-video-plan-20260929.json",
+  "source": {
+    "path": "media-source/editorial/hero-estuary-model-start-native-20260929.png",
+    "sha256": "03cf5dc38e4701bd036aad8aa909f4ecb7724af53c273e91f43a65cd5be4a617",
+    "uploadedMediaUuid": "62cdd8c1-2a58-4c27-b96c-7ab057f2aead",
+    "kind": "Invented ChatGPT WEB explanatory start frame, not a real model output or measured site"
+  },
+  "request": {
+    "model": "seedance_2_0",
+    "resolution": "1080p",
+    "durationSeconds": 6,
+    "mode": "std",
+    "audio": false,
+    "count": 1,
+    "promptSource": "The exact submitted prompt is preserved in the plan file"
+  },
+  "cost": {
+    "exactQuoteCredits": 54,
+    "balanceBeforeCredits": 656.75,
+    "balanceAfterCredits": 602.75,
+    "chargedCredits": 54
+  },
+  "result": {
+    "providerUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_061444_1ed7775c-dd67-41ef-97e4-1ea18c8688a6.mp4",
+    "preservedRaw": "media-source/editorial/hero-estuary-model-attempt-seedance20-20260929.mp4",
+    "contactSheet": "media-source/editorial/hero-estuary-model-seedance20-qa-contact-20260929.jpg",
+    "keyFrames": "media-source/editorial/hero-estuary-model-qa-keys-20260929.jpg",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 145,
+    "durationSeconds": 6.041667,
+    "bytes": 11342957,
+    "sha256": "6b330e056bcd5e5b2ad4ee9bbde9bedd40b587ea98659cd7830abcdfa24ee7c5",
+    "contactSheetSha256": "90c02846702b3a9fc255595ff4976981390127e1a1eed8509887d29ce78acd67"
+  },
+  "qa": {
+    "method": "Decoded all 145 frames; inspected 24 equally spaced contact frames and full-size samples at 0, 1.5, 3.0, 4.5 and 6.0 seconds",
+    "first": "Connected river, tidal flats and sea with water-attached triangular grid and already prominent cyan channel field",
+    "middle": "Coast and foreground headland translate laterally with visible parallax; grid remains broadly attached to water",
+    "last": "Coast and channel remain coherent, but the cyan tongue stays effectively the same shape relative to the river channel",
+    "pass": [
+      "Continuous river-estuary-sea geography and recognizable foreground parallax",
+      "No large new landmass, broken channel, fictitious values or text"
+    ],
+    "failure": "The requested time-dependent salinity/flow field evolution is not readable. A nearly static cyan tongue follows the channel while the camera slides sideways. This resembles a moving view of a still model illustration rather than a model field advancing and mixing over six seconds.",
+    "mainReelDecision": "reject",
+    "siteUse": false,
+    "reuse": "Do not reuse in the main reel or technology-detail opening. Preserve raw and QA evidence only; do not submit another paid attempt of the same scene."
+  },
+  "nextAction": "Pause paid generation. Prepare a distinct technology57 seismic processing concept still with the original 2D reflection section as a visual reference, then lock a 5-10 second scene plan before a future paid clip."
+}

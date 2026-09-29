@@ -1,18 +1,77 @@
-body.inner-page .company-records>[data-company-history]{grid-column:2}
-body.design-2026 .company-full-history{border-top:1px solid #b4c4ce;border-bottom:1px solid #b4c4ce;margin:0 0 2rem;padding:0}
-body.design-2026 .company-full-history>summary{display:flex;align-items:center;gap:1rem;padding:1.1rem 0;cursor:pointer;list-style:none;color:#1a4359;font-size:1rem;font-weight:600}
-body.design-2026 .company-full-history>summary::-webkit-details-marker{display:none}
-body.design-2026 .company-full-history>summary span{margin-left:auto;color:#688394;font-size:.78rem;font-weight:400}
-body.design-2026 .company-full-history>summary i{font-size:1.5rem;font-style:normal;font-weight:300}
-body.design-2026 .company-full-history[open]>summary i{transform:rotate(45deg)}
-body.design-2026 .company-history-years{max-height:42rem;overflow:auto;padding:1rem 1.2rem;background:#f3f7f8;scrollbar-color:#8eaebb transparent}
-body.design-2026 .company-history-years section{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:2rem;padding:1.1rem 0;border-top:1px solid #d5e0e4}
-body.design-2026 .company-history-years section:first-child{border-top:0}
-body.design-2026 .company-history-years h3{position:sticky;top:1rem;align-self:start;margin:0;color:#255e79;font-size:1.15rem}
-body.design-2026 .company-history-years ol{list-style:none;margin:0;padding:0}
-body.design-2026 .company-history-years li{display:grid;grid-template-columns:1.8rem minmax(0,1fr);gap:1rem;padding:.38rem 0;color:#2e4a5a;font-size:.86rem;line-height:1.55}
-body.design-2026 .company-history-years time{color:#6b8999;font-variant-numeric:tabular-nums}
-body.design-2026 .company-full-history>p{margin:.9rem 0 1.4rem;color:#647c8a;font-size:.74rem;line-height:1.6}
-body.design-2026 .studio-contact-contact-links a{color:#d1e1ee}
-@media(max-width:900px){body.inner-page .company-records>[data-company-history]{grid-column:1}}
-@media(max-width:650px){body.design-2026 .company-full-history>summary{font-size:.9rem}body.design-2026 .company-full-history>summary span{font-size:.65rem}body.design-2026 .company-history-years{padding:.7rem}body.design-2026 .company-history-years section{display:block}body.design-2026 .company-history-years h3{position:static;margin-bottom:.5rem}body.design-2026 .company-history-years li{font-size:.82rem}}
+/* Full chronology with compact year navigation and readable event text */
+body.inner-page.route-company .company-records>[data-company-history]{grid-column:auto}
+.company-history-explorer{max-width:1680px;margin-inline:auto;border-top:1px solid #aebfcc}
+.company-history-context{margin:clamp(24px,2vw,48px) 0 clamp(26px,2vw,48px);padding:0;background:#0d3045;overflow:hidden}
+.company-history-context img{display:block;width:100%;height:clamp(360px,25vw,610px);object-fit:cover;object-position:center 52%}
+.company-history-tools{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:0 0 8px}
+.history-era-controls{display:flex;gap:clamp(18px,2.3vw,62px);overflow-x:auto;scrollbar-width:none}
+.history-era-controls button{flex:none;border:0;border-bottom:2px solid transparent;padding:.75em 0;background:none;color:#7a8892;font-size:clamp(15px,.95vw,25px);font-weight:500;white-space:nowrap;cursor:pointer}
+.history-era-controls button[aria-pressed=true]{color:#155b89;border-bottom-color:#155b89}
+.history-year-strip{display:flex;gap:2em;overflow-x:auto;overflow-y:hidden;padding:0;margin:0;border-top:1px solid #d6e0e6;border-bottom:1px solid #d6e0e6;scrollbar-width:none;min-height:0}
+.history-year-strip button{flex:0 0 auto;position:relative;padding:.8em .1em;border:0;background:none;color:#8394a0;font-size:clamp(15px,.95vw,25px);font-weight:500;line-height:1.3;font-variant-numeric:tabular-nums;cursor:pointer}
+.history-year-strip button[hidden]{display:none}
+.history-year-strip button:after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:transparent}
+.history-year-strip button[aria-current=true]{color:#14567d}
+.history-year-strip button[aria-current=true]:after{background:#14567d}
+body.design-2026 .company-history-years{--history-gap:clamp(64px,6vw,140px);position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--history-gap);max-height:none;overflow:visible;padding:26px 0 24px;background:#fff}
+body.design-2026 .company-history-years:before{content:'';position:absolute;top:26px;bottom:24px;left:calc(50% - .5px);width:1px;background:#c5d3dd}
+body.design-2026 .company-history-years section{position:relative;display:block;grid-column:1;align-self:start;padding:clamp(16px,1.25vw,32px) 0 clamp(38px,3vw,72px);border:0;min-height:0;scroll-margin-top:calc(var(--shell-header,88px) + 64px)}
+body.design-2026 .company-history-years section:nth-of-type(even){grid-column:2}
+body.design-2026 .company-history-years section:before{content:'';position:absolute;top:clamp(27px,2.05vw,52px);right:calc(var(--history-gap) * -.5 - 6px);width:11px;height:11px;border:2px solid #fff;border-radius:50%;background:#28739d;box-shadow:0 0 0 1px #9db8c9}
+body.design-2026 .company-history-years section:nth-of-type(even):before{right:auto;left:calc(var(--history-gap) * -.5 - 6px)}
+body.design-2026 .company-history-years section:nth-of-type(odd){text-align:right}
+body.design-2026 .company-history-years section[hidden]{display:none}
+.company-history-year{position:static;align-self:start}
+body.design-2026 .company-history-years h3{position:static;margin:0;color:#173f59;font-size:clamp(38px,2.2vw,56px);font-weight:400;line-height:1.2;letter-spacing:-.045em}
+body.design-2026 .company-history-years ol{position:relative;list-style:none;margin:clamp(20px,1.6vw,36px) 0 0;padding:0;border:0}
+body.design-2026 .company-history-years li{position:relative;display:grid;grid-template-columns:3em minmax(0,1fr);gap:1em;padding:.55em 0;border-top:1px solid #e0e9ee;color:#405969;font-size:clamp(15px,.78vw,20px);font-weight:400;line-height:1.55}
+body.design-2026 .company-history-years section:nth-of-type(odd) li{grid-template-columns:minmax(0,1fr) 3em}
+body.design-2026 .company-history-years section:nth-of-type(odd) li time{grid-column:2;grid-row:1}
+body.design-2026 .company-history-years section:nth-of-type(odd) li span{grid-column:1;grid-row:1}
+body.design-2026 .company-history-years li:first-child{padding-top:.55em}
+body.design-2026 .company-history-years li:before{display:none}
+body.design-2026 .company-history-years time{color:#4d7890;font-weight:550;font-variant-numeric:tabular-nums}
+.company-history-language{margin:1em 0 0;color:#7e94a1;font-size:14px}
+.company-history-explorer :is(button,[role=tabpanel]):focus-visible{outline:2px solid #3786b1;outline-offset:4px}
+@media(max-width:700px){
+ .company-history-tools{align-items:flex-start;gap:.8rem;flex-direction:column;padding:.7rem 0}
+ .company-history-context{margin:24px 0 42px;padding:0}
+ .company-history-context img{height:clamp(220px,53vw,360px)}
+ .history-era-controls{width:100%;gap:1.2rem}
+ .history-era-controls button{font-size:14px}
+ .history-year-strip{gap:1.5rem}
+ .history-year-strip button{font-size:15px;padding:.75rem 0}
+ body.design-2026 .company-history-years{display:block;padding:12px 0 0 20px}
+ body.design-2026 .company-history-years:before{top:12px;bottom:0;left:4px}
+ body.design-2026 .company-history-years section,body.design-2026 .company-history-years section:nth-of-type(odd),body.design-2026 .company-history-years section:nth-of-type(even){display:block;grid-column:auto;padding:1.55rem 0 1.85rem;text-align:left}
+ body.design-2026 .company-history-years section:before,body.design-2026 .company-history-years section:nth-of-type(even):before{top:2.25rem;left:-21px;right:auto;width:10px;height:10px}
+ .company-history-year{display:block}
+ body.design-2026 .company-history-years h3{font-size:30px}
+ body.design-2026 .company-history-years li,body.design-2026 .company-history-years section:nth-of-type(odd) li{font-size:15px;grid-template-columns:2em 1fr;padding:.7rem 0;gap:.55rem;text-align:left}
+ body.design-2026 .company-history-years section:nth-of-type(odd) li time{grid-column:1;grid-row:1}
+ body.design-2026 .company-history-years section:nth-of-type(odd) li span{grid-column:2;grid-row:1}
+ body.design-2026 .company-history-years ol{margin-left:0}
+}
+
+/* A compact factual lead and one persistent period selector. */
+body.inner-page.route-company main>.company-records{padding-top:0}
+.company-history-explorer{max-width:none;border:0}
+.company-history-cover{position:relative;height:clamp(240px,24svh,380px);margin:0 calc(-1 * var(--company-gutter));overflow:hidden;background:#112e41;color:#fff}
+.company-history-cover:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0a273b99,#0a273b12 66%),linear-gradient(0deg,#09253988,transparent 45%)}
+.company-history-cover>div{position:absolute;z-index:1;left:var(--company-gutter);bottom:clamp(30px,3vw,64px)}
+.company-history-cover span{font-size:clamp(12px,.75vw,17px);letter-spacing:.12em}
+.company-history-cover h2{margin:14px 0 0;font-size:clamp(54px,3.4vw,84px);font-weight:400;line-height:1.16;letter-spacing:-.045em}
+.company-history-cover p{margin:12px 0 0;color:#c8dae3;font-size:clamp(14px,.84vw,18px);line-height:1.5}
+.company-history-tools{position:sticky;top:calc(var(--shell-header) + 50px);z-index:10;margin:0 calc(-1 * var(--company-gutter));padding:0 var(--company-gutter);background:#fffc;border-bottom:1px solid #cbd8df;backdrop-filter:blur(14px)}
+.history-era-controls{width:100%;justify-content:space-between;gap:28px}
+.history-era-controls button{font-size:clamp(15px,.94vw,21px);padding:1.1em 0}
+body.design-2026 .company-history-years{max-width:1680px;margin:0 auto;padding-top:0;scroll-margin-top:calc(var(--shell-header,88px) + 120px)}
+@media(max-width:700px){
+ .company-history-cover{height:30svh;min-height:240px}
+ .company-history-cover>div{bottom:30px}
+ .company-history-cover h2{font-size:48px}
+ .company-history-tools{top:calc(var(--shell-header) + 52px)}
+ .history-era-controls{justify-content:flex-start;gap:24px}
+ .history-era-controls button{font-size:14px;padding:1rem 0}
+ body.design-2026 .company-history-years section[hidden]{display:none!important}
+}

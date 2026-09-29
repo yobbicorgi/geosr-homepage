@@ -8,7 +8,7 @@
  const filters=[['all','전체','All'],['flood','침수 예측','Flood prediction'],['sat','위성 분석','Satellite analysis'],['hazard','해양재해','Marine hazards'],['obs','관측·환경','Observation & environment'],['research','연구 지원','Research support']];
  let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ko',category='all',selected=0,mode='list',position=0,target=0,raf=0,last=0,drag=null,suppressClick=false;
  const t=(ko,en)=>lang==='ko'?ko:en,ids=()=>films.map((_,i)=>i).filter(i=>category==='all'||groups[i]===category),pad=n=>String(n+1).padStart(2,'0');
- root.innerHTML=`<div class="fw-intro"><p class="eyebrow">01 / AX PLATFORM</p><h2></h2><p class="fw-lead"></p></div><div class="fw-tools"><div class="fw-filters" role="group"></div><button class="fw-view" type="button"></button></div><div class="fw-directory" role="group"></div><div class="fw-viewport" tabindex="0" role="region"><div class="fw-track"></div></div><div class="fw-navigation"><button class="fw-prev" type="button">←</button><span class="fw-counter" aria-live="polite"></span><button class="fw-next" type="button">→</button></div><div class="fw-selected"></div><p class="fw-source"></p>`;
+ root.innerHTML=`<div class="fw-intro"><p class="eyebrow">Our platforms</p><h2></h2><p class="fw-lead"></p></div><div class="fw-tools"><div class="fw-filters" role="group"></div><button class="fw-view" type="button"></button></div><div class="fw-directory" role="group"></div><div class="fw-viewport" tabindex="0" role="region"><div class="fw-track"></div></div><div class="fw-navigation"><button class="fw-prev" type="button">←</button><span class="fw-counter" aria-live="polite"></span><button class="fw-next" type="button">→</button></div><div class="fw-selected"></div><p class="fw-source"></p>`;
  const viewport=root.querySelector('.fw-viewport'),track=root.querySelector('.fw-track');
  root.querySelector('.fw-navigation').after(root.querySelector('.fw-directory'));
  const cards=films.map((f,i)=>{
@@ -24,22 +24,22 @@
   viewport.style.maxWidth=mode==='list'&&ids().length<4?`calc((var(--cell-width) + var(--cell-gap)) * ${Math.max(1,ids().length-1)})`:'';
   viewport.style.marginInline='auto';
   root.querySelector('.fw-intro h2').textContent=t('분야별 플랫폼','Explore the platforms');
-  root.querySelector('.fw-lead').textContent=t('화면을 좌우로 움직여 각 플랫폼을 살펴보세요','Drag or scroll sideways to explore each platform');
-  root.querySelector('.fw-source').textContent=t('제공받은 AX 저장소의 정적 화면입니다 · 현재 운영 상태나 실시간 데이터는 표시하지 않습니다','Static screens from the supplied AX repository · No live data or service status is shown');
+  root.querySelector('.fw-lead').textContent=t('분야를 선택하고 각 플랫폼의 주요 화면과 기능을 확인할 수 있습니다','Choose a field to explore platform screens and key capabilities');
+  root.querySelector('.fw-source').textContent=t('플랫폼 화면 미리보기 · 실시간 데이터 아님','Platform screen previews · Not live data');
   root.querySelector('.fw-filters').setAttribute('aria-label',t('플랫폼 카테고리','Platform categories'));
   root.querySelector('.fw-filters').innerHTML=filters.map(f=>`<button type="button" data-filter="${f[0]}" aria-pressed="${category===f[0]}">${f[lang==='ko'?1:2]} <span>${f[0]==='all'?9:groups.filter(g=>g===f[0]).length}</span></button>`).join('');
-  root.querySelector('.fw-view').textContent=mode==='list'?t('카드형 보기 ⊞','Card view ⊞'):t('목록형 보기 ≡','List view ≡');
+  root.querySelector('.fw-view').textContent=mode==='list'?t('모아보기','Grid view'):t('갤러리 보기','Gallery view');
   root.querySelector('.fw-view').setAttribute('aria-pressed',String(mode==='cards'));
   root.querySelector('.fw-directory').setAttribute('aria-label',t('전체 플랫폼 목록','Platform directory'));
   root.querySelector('.fw-directory').innerHTML=ids().map(i=>`<button type="button" data-select="${i}">${pad(i)} <span>${films[i][1]}</span></button>`).join('');
-  cards.forEach((c,i)=>{c.querySelector('h3').textContent=films[i][2][lang];c.querySelector('p').textContent=i===8?t('개발 중','In development'):t('클릭하여 화면 보기 ↗','Click to view screen ↗');c.setAttribute('aria-label',films[i][2][lang]);});
-  viewport.setAttribute('aria-label',t('플랫폼 탐색 · 드래그 또는 좌우 방향키 사용','Explore platforms · Drag or use left and right arrows'));
+  cards.forEach((c,i)=>{c.querySelector('h3').textContent=films[i][2][lang];c.querySelector('p').textContent=i===8?t('개발 중','In development'):t('화면 자세히 보기','View full screen');c.setAttribute('aria-label',films[i][2][lang]);c.setAttribute('role','button');});
+  viewport.setAttribute('aria-label',t('플랫폼 탐색 · 드래그 또는 좌우 방향키 · Shift와 휠로 이동','Explore platforms · Drag, use arrow keys or Shift and mouse wheel'));
   root.querySelector('.fw-prev').setAttribute('aria-label',t('이전 플랫폼','Previous platform'));root.querySelector('.fw-next').setAttribute('aria-label',t('다음 플랫폼','Next platform'));
   details(false);paint();
  }
  function details(animate=true){
   const f=films[selected],box=root.querySelector('.fw-selected');
-  box.innerHTML=`<div class="fw-description"><p class="eyebrow">${pad(selected)} / ${selected===8?t('개발 중','IN DEVELOPMENT'):t('정적 화면','STATIC SCREEN')}</p><h3>${f[2][lang]}</h3><p>${f[3][lang]}</p><ul>${f[4][lang].map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+  box.innerHTML=`<div class="fw-description"><p class="eyebrow">${pad(selected)} / ${selected===8?t('개발 중','IN DEVELOPMENT'):f[1]}</p><h3>${f[2][lang]}</h3><p>${f[3][lang]}</p><ul>${f[4][lang].map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
   if(animate&&!reduced.matches){box.getAnimations().forEach(a=>a.cancel());box.animate([{opacity:.35,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,easing:'cubic-bezier(.16,1,.3,1)'})}
   root.querySelector('.fw-counter').textContent=`${pad(ids().indexOf(selected))} / ${String(ids().length).padStart(2,'0')}`;
   root.querySelectorAll('[data-select]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.select)===selected)));
@@ -70,7 +70,13 @@
  root.querySelector('.fw-directory').onclick=e=>{const b=e.target.closest('[data-select]');if(b)select(Number(b.dataset.select))};
  root.querySelector('.fw-filters').onclick=e=>{const b=e.target.closest('[data-filter]');if(!b)return;category=b.dataset.filter;if(!ids().includes(selected))selected=ids()[0];setMode(mode)};
  viewport.onkeydown=e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}};
- viewport.addEventListener('wheel',e=>{if(mode!=='list'||Math.abs(e.deltaX)<Math.abs(e.deltaY)||Math.abs(e.deltaX)<10)return;e.preventDefault();step(e.deltaX>0?1:-1)},{passive:false});
+ let lastWheel=0;
+ viewport.addEventListener('wheel',e=>{
+  if(mode!=='list'||e.ctrlKey||ids().length<2)return;
+  const delta=e.shiftKey&&Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;
+  if((!e.shiftKey&&Math.abs(e.deltaX)<Math.abs(e.deltaY))||Math.abs(delta)<10)return;
+  e.preventDefault();const now=performance.now();if(now-lastWheel<240)return;lastWheel=now;step(delta>0?1:-1);
+ },{passive:false});
  viewport.addEventListener('pointerdown',e=>{if(mode!=='list'||e.button!==0||ids().length<2)return;drag={id:e.pointerId,x:e.clientX,y:e.clientY,start:position,moved:false};suppressClick=false});
  viewport.addEventListener('pointermove',e=>{
   if(!drag||drag.id!==e.pointerId)return;

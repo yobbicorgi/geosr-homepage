@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "sourceLanguage": "ko",
+  "targetLanguage": "en",
+  "records": {
+    "ko-equipment-surveying-2963-0df806255c": {
+      "sourceTextSha256": "52a0a1a0376e5831c989ccb8b4d1f0e9ab471fc4267e5b8028df3a333d8006c1",
+      "title": "Echosounder",
+      "text": "Echosounder (Sonic 2024V multibeam system)\nAcoustic seabed topographic surveying\nAcquisition of backscatter data\nSeafloor coverage mapping\nManufacturer: R2SONIC\nSurvey/analysis: Multibeam bathymetric surveying",
+      "reviewStatus": "source-compared"
+    },
+    "ko-equipment-surveying-1288-0df806255c": {
+      "sourceTextSha256": "a363d2467911414521ce3004eeaf25fb5c1a557fc4e6890262384efc123ebeb2",
+      "title": "Manual level",
+      "text": "Manual level (G32)\nMeasurement of benchmark elevations\nPrecise measurement of height differences between two points\nManufacturer: Survey One\nSurvey/analysis: Levelling",
+      "reviewStatus": "source-compared"
+    },
+    "ko-equipment-surveying-2966-0df806255c": {
+      "sourceTextSha256": "1dfbe78a37ce111829554d35cf1b13de31517495c1c908dfe3dc33838f184beb",
+      "title": "Magnetometer",
+      "text": "Magnetometer (G-882TVG SYSTEM)\nMagnetic anomaly surveying\nDetection of buried seabed objects and interpretation of geological structures\nManufacturer: Geometrics\nSurvey/analysis: Magnetic surveying",
+      "reviewStatus": "source-compared"
+    },
+    "ko-equipment-surveying-2965-0df806255c": {
+      "sourceTextSha256": "c88ce2c5756a28b4ea09a3d802cbe637ce77883ea9ce6a4a755ecd81caf2220f",
+      "title": "Seismic survey set",
+      "text": "Seismic survey set (UHR 48 channel Geo-Sense 1 m streamer)\nUltra-high-resolution seismic surveying\nAnalysis of shallow stratigraphy and estimation of bedrock depth\nDetection of buried and embedded objects beneath the seabed\nInterpretation of stratigraphic boundaries and sedimentary structures\nManufacturer: Geo Marine Survey Systems\nSurvey/analysis: Seismic surveying",
+      "reviewStatus": "source-compared"
+    },
+    "ko-policy-privacy-page-074158e886": {
+      "sourceTextSha256": "9e498a57bea191b8ce83c272a575f3ac7e7ca9cd29da2cc20f69f792a06d807d",
+      "title": "Privacy Policy",
+      "text": "Privacy Policy\nPrivacy Policy\n1. Personal information collected\nThis website collects the following personal information for website enquiries and service requests\nInformation collected: Name, contact details and email address\nCollection method: Website enquiries and consultations\n2. Purposes of collecting and using personal information\nThis website uses collected personal information for the following purposes\nMember management: Identification, handling complaints and other enquiries, and delivering notices\n3. Retention and use period\nIn principle, personal information is destroyed without delay once the purpose of collection and use has been fulfilled\nHowever, the following information is retained for the period stated below on the specified grounds\nRetained information: Name, contact details and email address\nBasis for retention: Document management regulations\nRetention period: 3 years",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-projects-1969-e3281c5258": {
+      "sourceTextSha256": "87cc512e822a971307ffddb97fd8be4b9ab6b0b0666ef2df53c0dcc6d54ed822",
+      "title": "Development of iterative adaptive coastal erosion management technologies (Phase 1 Year 2)",
+      "text": "Development of iterative adaptive coastal erosion management technologies (Phase 1 Year 2)\n2024-12-09\nClient\nKIMST",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-projects-747-e3281c5258": {
+      "sourceTextSha256": "6e0165eb6f75c71baaf865f898b85cb08951df921dae6291ef38e8b0d9ed3677",
+      "title": "Detailed coastal survey around Jinju Bay",
+      "text": "Detailed coastal survey around Jinju Bay\n2022-03-07\nClient\nKorea Hydrographic and Oceanographic Agency",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-projects-668-e3281c5258": {
+      "sourceTextSha256": "cbae2c08b2e9109fb6ea0f6c318710503304a78f06335cfbbb637dc86046c4a8",
+      "title": "Detailed hydrographic surveys of the waters around Pyeongtaek and Boryeong and Daecheon and Biin ports",
+      "text": "Detailed hydrographic surveys of the waters around Pyeongtaek and Boryeong and Daecheon and Biin ports\n2022-03-07\nClient\nKorea Hydrographic and Oceanographic Agency",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-projects-1988-e3281c5258": {
+      "sourceTextSha256": "5abc64fec45a73061827ccf112c8e3dbce71b0e213d209d42409e020ea4887aa",
+      "title": "Study of the physical and geochemical environmental characteristics of river and lake sediments (III): Focus on heavy metal behaviour",
+      "text": "Study of the physical and geochemical environmental characteristics of river and lake sediments (III): Focus on heavy metal behaviour\n2024-12-09\nClient\nNational Institute of Environmental Research",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-projects-1652-e3281c5258": {
+      "sourceTextSha256": "4c1d40f175b3ab59e1f55018154fa0491c123addbeff98131ba0333d48f133cb",
+      "title": "Study of the physical and geochemical environmental characteristics of river and lake sediments (2)",
+      "text": "Study of the physical and geochemical environmental characteristics of river and lake sediments (2)\n2023-07-19\nClient\nNational Institute of Environmental Research",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-publications-2935-5a9a09d630": {
+      "sourceTextSha256": "0ac12dc6e16de8353fd4fe3d6084a867f8e87cf013172fab996d01713032d7e7",
+      "title": "[Environment International] Integrated assessment of the natural purification capacity of tidal flat for persistent toxic substances and heavy metals in contaminated sediments",
+      "text": "[Environment International] Integrated assessment of the natural purification capacity of tidal flat for persistent toxic substances and heavy metals in contaminated sediments\n2025-04-30\nPublication year\n2024\nThesis\nIntegrated assessment of the natural purification capacity of tidal flat for persistent toxic substances and heavy metals in contaminated sediments\nAuthors\nTaewoo Kim, Changkeun Lee, Inha Kwon, Junghyun Lee, Shin Yeong Park, Dong-U Kim, Jongmin Lee, Gayoung Jin, Mehdi Yousefzadeh, Hanna Bae, Yeonjae Yoo, Jae-Jin Kim, Junsung Noh, Seongjin Hong, Bong-Oh Kwon, Won Keun Chang, Gap Soo Chang, Jong Seong Khim\nJournal\nEnvironment International\nAddress\nhttps://doi.org/10.1016/j.envint.2024.108534",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-publications-1880-5a9a09d630": {
+      "sourceTextSha256": "b2f33feabb83722522ea05ea1c794a635303ee82b8aea3155d7fa96f0395c3f3",
+      "title": "[Frontiers in Marine Science] Anomalously large latent heat fluxes in low to moderate wind conditions within the eddy-rich zone of the Northwestern Pacific",
+      "text": "[Frontiers in Marine Science] Anomalously large latent heat fluxes in low to moderate wind conditions within the eddy-rich zone of the Northwestern Pacific\n2024-02-06\nPublication year\n2024\nThesis\nAnomalously large latent heat fluxes in low to moderate wind conditions within the eddy-rich zone of the Northwestern Pacific\nAuthors\nSok Kuh Kang, Eun Jin Kim, Sunghun Kim, Joseph Cione, Dongkyu Lee, Sebastian Landwehr, Hyoun-Woo Kang, Kyeong-Ok Kim, Chang Su Hong, Min Ho Kwon, Kyung-Hee Oh, Jae Hak Lee, Suyun Noh, Jae Kwi So, Dong-Jin Kang, Dongseon Kim, Jae-Hyoung Park, SungHyun Nam, Yang Ki Cho, Brian Ward, Isaac Ginis\nJournal\nFrontiers in Marine Science\nAddress\nhttps://doi.org/10.3389/fmars.2024.1298641",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-publications-1816-5a9a09d630": {
+      "sourceTextSha256": "81cd3c2b0c5103ebe7578b7bd70d2b1596058010f654c5b89cf7ce88b5d9015b",
+      "title": "[Science of the Total Environment] Large-scale sediment toxicity assessment over the 15,000 km of coastline in the Yellow and Bohai seas, East Asia",
+      "text": "[Science of the Total Environment] Large-scale sediment toxicity assessment over the 15,000 km of coastline in the Yellow and Bohai seas, East Asia\n2024-01-03\nPublication year\n2021\nThesis\nLarge-scale sediment toxicity assessment over the 15,000 km of coastline in the Yellow and Bohai seas, East Asia\nAuthors\nKyuwon Hwang, Junghyun Lee, Inha Kwon, Shin Yeong Park, Seo Joon Yoon, Jongmin Lee, Beomgi Kim, Taewoo Kim, Bong-Oh Kwon, Seongjin Hong, Moo Joon Lee, Wenyou Hu, Tieyu Wang, Kyungsik Choi, Jongseong Ryu, Jong Seong Khim\nJournal\nScience of the Total Environment\nAddress\nhttps://doi.org/10.1016/j.scitotenv.2021.148371",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1918-c873b9536d": {
+      "sourceTextSha256": "3fcc8b23896104ad5a2c988008e8e9046f17c4e5878ba45f2aaf117de68029fb",
+      "title": "Environmental and ecosystem monitoring and change assessment in the coastal and estuarine areas of Korea's four major rivers",
+      "text": "Environmental and ecosystem monitoring and change assessment in the coastal and estuarine areas of Korea's four major rivers\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1911-c873b9536d": {
+      "sourceTextSha256": "dee7ed9cf08631f450ef34b13f6e5a2621bdc5812b92c4072a23c5c9a78b82d8",
+      "title": "Development of an AI-based decision support system for maritime search and rescue",
+      "text": "Development of an AI-based decision support system for maritime search and rescue\n2024-04-11\nClient\nKorea Coast Guard",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3001-c873b9536d": {
+      "sourceTextSha256": "a0c13eb5269b3044c6f6ab6ffa1f288e7dcc53183941561af87aef41b52ba887",
+      "title": "Development of an AI-based decision support system for maritime search and rescue",
+      "text": "Development of an AI-based decision support system for maritime search and rescue\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3045-c873b9536d": {
+      "sourceTextSha256": "a0c13eb5269b3044c6f6ab6ffa1f288e7dcc53183941561af87aef41b52ba887",
+      "title": "Development of an AI-based decision support system for maritime search and rescue",
+      "text": "Development of an AI-based decision support system for maritime search and rescue\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1894-c873b9536d": {
+      "sourceTextSha256": "a710121d06a4b13eb741716ecb6f487d63589965f227858bd7676c0dad5c7c72",
+      "title": "Sea-area-specific marine accident risk assessment and response support using big data analysis (oil-spill sensitivity-based risk assessment and response strategy development)",
+      "text": "Sea-area-specific marine accident risk assessment and response support using big data analysis (oil-spill sensitivity-based risk assessment and response strategy development)\n2024-04-11\nClient\nKorea Coast Guard",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1907-c873b9536d": {
+      "sourceTextSha256": "41c0aa5c3f866116a03935b47e0541a05f24fdc6fef35eab7ab90326dfe15b3f",
+      "title": "Development of an unmanned remotely operated mobile platform for IoT-based three-dimensional water quality and flow monitoring",
+      "text": "Development of an unmanned remotely operated mobile platform for IoT-based three-dimensional water quality and flow monitoring\n2024-04-11\nClient\nMinistry of Environment",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-2997-c873b9536d": {
+      "sourceTextSha256": "96042d535c79a1637b1d8d9fc6d96c67f22501eaef16dd5d7cd53105c6ed6c9a",
+      "title": "Development of an unmanned remotely operated mobile platform for IoT-based three-dimensional water quality and flow monitoring",
+      "text": "Development of an unmanned remotely operated mobile platform for IoT-based three-dimensional water quality and flow monitoring\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3018-c873b9536d": {
+      "sourceTextSha256": "8f0f44fc34e292a50a385f21529df12e0ce5e032e0e1015981034c2f595cfa59",
+      "title": "Assessment of the effects of rising Gulf sea temperatures on the BNPP ultimate heat sink and operational strategies",
+      "text": "Assessment of the effects of rising Gulf sea temperatures on the BNPP ultimate heat sink and operational strategies\n2026-04-08\nClient\nNational Research Foundation of Korea",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3060-c873b9536d": {
+      "sourceTextSha256": "8f0f44fc34e292a50a385f21529df12e0ce5e032e0e1015981034c2f595cfa59",
+      "title": "Assessment of the effects of rising Gulf sea temperatures on the BNPP ultimate heat sink and operational strategies",
+      "text": "Assessment of the effects of rising Gulf sea temperatures on the BNPP ultimate heat sink and operational strategies\n2026-04-08\nClient\nNational Research Foundation of Korea",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3014-c873b9536d": {
+      "sourceTextSha256": "71f5d4a72241eb7fa2bd294519fccad911f5e5ed9561de2114e7b52118ab808f",
+      "title": "Development of a high-quality near-real-time gridded marine data service system",
+      "text": "Development of a high-quality near-real-time gridded marine data service system\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3057-c873b9536d": {
+      "sourceTextSha256": "71f5d4a72241eb7fa2bd294519fccad911f5e5ed9561de2114e7b52118ab808f",
+      "title": "Development of a high-quality near-real-time gridded marine data service system",
+      "text": "Development of a high-quality near-real-time gridded marine data service system\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1908-c873b9536d": {
+      "sourceTextSha256": "d1051bb7c8ce5b70c7475eacb903bf81a8f0d42a72b21ff67a2292d97dbef3d9",
+      "title": "Development of science-based technologies for assessing the impacts of sea area use",
+      "text": "Development of science-based technologies for assessing the impacts of sea area use\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-2998-c873b9536d": {
+      "sourceTextSha256": "90e9150313945160b786647a36b1dc941e6afe39e3c905c26970e933580aad73",
+      "title": "Development of science-based technologies for assessing the impacts of sea area use",
+      "text": "Development of science-based technologies for assessing the impacts of sea area use\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1919-c873b9536d": {
+      "sourceTextSha256": "334f0b096de199253d7de33667aca6c43151773e5449198627fa0ae46e57bb8f",
+      "title": "Development of AI-based marine ecosystem assessment and prediction technologies to respond to and manage drivers of large-scale ecosystem change",
+      "text": "Development of AI-based marine ecosystem assessment and prediction technologies to respond to and manage drivers of large-scale ecosystem change\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1923-c873b9536d": {
+      "sourceTextSha256": "a9590686e9fb47110ba84b140600031860762dcff999986a085ed9ee8c4c94c3",
+      "title": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea",
+      "text": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea\n2024-04-11\nClient\nMinistry of Environment",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3010-c873b9536d": {
+      "sourceTextSha256": "2235bf9974c34cbd91437ea62b80e495e7a28f97b74df69c6556982cd9107d18",
+      "title": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea",
+      "text": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3053-c873b9536d": {
+      "sourceTextSha256": "2235bf9974c34cbd91437ea62b80e495e7a28f97b74df69c6556982cd9107d18",
+      "title": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea",
+      "text": "Development of integrated sediment and aquatic ecosystem risk assessment technologies based on species native to Korea\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1917-c873b9536d": {
+      "sourceTextSha256": "89a38876854d6dcb15b94c3bf281c72d68261d420c952c6bcc45d0dbb8c77db8",
+      "title": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling",
+      "text": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling\n2024-04-11\nClient\nKorea Meteorological Administration",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3006-c873b9536d": {
+      "sourceTextSha256": "6c60ff638a2cabe8c73a951bac7356a3bf908ca2556f32a9a025085d48675390",
+      "title": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling",
+      "text": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3050-c873b9536d": {
+      "sourceTextSha256": "84d58abddb42ce252e4c8413f5dad0d24678eb179fa095cad93957b28b0779f8",
+      "title": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling",
+      "text": "Development of hazardous weather prediction technologies based on atmosphere-ocean coupling\n2026-04-08\nClient\nKorea Meteorological Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1896-c873b9536d": {
+      "sourceTextSha256": "2f49b3281557582d042434ea823035385dc24ac0fc7398e29a1f159ddee1a0c1",
+      "title": "Development of drones with independent power systems for real-time long-term and wide-area marine observation",
+      "text": "Development of drones with independent power systems for real-time long-term and wide-area marine observation\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1914-c873b9536d": {
+      "sourceTextSha256": "e54fb0bb121667eeebaa77b443ac3c8f4a4941382cb0c0e2b00ecd74a0832f99",
+      "title": "Development of beach monitoring and assessment technologies using AI recognition of drone imagery",
+      "text": "Development of beach monitoring and assessment technologies using AI recognition of drone imagery\n2024-04-11\nClient\nMinistry of SMEs and Startups",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1921-c873b9536d": {
+      "sourceTextSha256": "e7575c76f20b751436d76fa1c4fcb58f5a04c040e782b3a48db6e612029ae133",
+      "title": "Expansion of the digital offshore wind site information system",
+      "text": "Expansion of the digital offshore wind site information system\n2024-04-11\nClient\nMinistry of Trade, Industry and Energy",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3008-c873b9536d": {
+      "sourceTextSha256": "636b394eaacab8da30e8ded1b1f94c5991a9f6fb78023bd26c0aaa4f46892623",
+      "title": "Expansion of the digital offshore wind site information system",
+      "text": "Expansion of the digital offshore wind site information system\n2026-04-08\nClient\nKorea Institute of Energy Technology Evaluation and Planning",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3052-c873b9536d": {
+      "sourceTextSha256": "636b394eaacab8da30e8ded1b1f94c5991a9f6fb78023bd26c0aaa4f46892623",
+      "title": "Expansion of the digital offshore wind site information system",
+      "text": "Expansion of the digital offshore wind site information system\n2026-04-08\nClient\nKorea Institute of Energy Technology Evaluation and Planning",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1903-c873b9536d": {
+      "sourceTextSha256": "3e488b025f794ee3036f769d3c57f0ef658bbddfcd2e260654043cffdcfcc650",
+      "title": "Development of digital offshore wind information maps",
+      "text": "Development of digital offshore wind information maps\n2024-04-11\nClient\nMinistry of Trade, Industry and Energy",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1916-c873b9536d": {
+      "sourceTextSha256": "b68f1bfb099363368a433079128ec5f09ed539500b3b33087f9dc99d2e6c9e95",
+      "title": "Development of a service platform for tailored marine forecast information",
+      "text": "Development of a service platform for tailored marine forecast information\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3005-c873b9536d": {
+      "sourceTextSha256": "d6abdb44089cf9148dceca096d6ce353c1beba6e099f7a7010d999955ee56859",
+      "title": "Development of a service platform for tailored marine forecast information",
+      "text": "Development of a service platform for tailored marine forecast information\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3049-c873b9536d": {
+      "sourceTextSha256": "d6abdb44089cf9148dceca096d6ce353c1beba6e099f7a7010d999955ee56859",
+      "title": "Development of a service platform for tailored marine forecast information",
+      "text": "Development of a service platform for tailored marine forecast information\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1909-c873b9536d": {
+      "sourceTextSha256": "93ecfa88dccc2ef0ea0e8ef3d57722cd042658bd7a402c69be28e3d92b084570",
+      "title": "Development of numerical code for assessing the marine dispersion of radioactive substances",
+      "text": "Development of numerical code for assessing the marine dispersion of radioactive substances\n2024-04-11\nClient\nNuclear Safety and Security Commission",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-2996-c873b9536d": {
+      "sourceTextSha256": "62d2c0f19c525abe8e1a21851c6ebdda919b7c474ccf54df55ed0ae61080d870",
+      "title": "Development of numerical code for assessing the marine dispersion of radioactive substances",
+      "text": "Development of numerical code for assessing the marine dispersion of radioactive substances\n2026-04-08\nClient\nKorea Foundation of Nuclear Safety",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3043-c873b9536d": {
+      "sourceTextSha256": "62d2c0f19c525abe8e1a21851c6ebdda919b7c474ccf54df55ed0ae61080d870",
+      "title": "Development of numerical code for assessing the marine dispersion of radioactive substances",
+      "text": "Development of numerical code for assessing the marine dispersion of radioactive substances\n2026-04-08\nClient\nKorea Foundation of Nuclear Safety",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1912-c873b9536d": {
+      "sourceTextSha256": "5f7a148f23f10bf843c1d48d53e8b3d727235cbb5398f51471358103f8b4d47f",
+      "title": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration",
+      "text": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3002-c873b9536d": {
+      "sourceTextSha256": "6424cdb5fc90f94f3bf479be5750958893bb6b3ff2f3894e4adb20f16518a6fd",
+      "title": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration",
+      "text": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3046-c873b9536d": {
+      "sourceTextSha256": "6424cdb5fc90f94f3bf479be5750958893bb6b3ff2f3894e4adb20f16518a6fd",
+      "title": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration",
+      "text": "Development of blue-carbon-based technologies for climate-adaptive coastal restoration\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1948-c873b9536d": {
+      "sourceTextSha256": "02160eb2d74c8e0c7d2e87be0e8caa8eabbe8f3e50b718895ce831981ac5961d",
+      "title": "Development of technologies for producing detailed marine climate change scenarios",
+      "text": "Development of technologies for producing detailed marine climate change scenarios\n2024-09-10\nClient\nKorea Meteorological Administration",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3011-c873b9536d": {
+      "sourceTextSha256": "cdd5b613beaf9c4ca3ca8c8385c35479aa29eec35e67da8517082140ea03f1dd",
+      "title": "Development of technologies for producing detailed marine climate change scenarios",
+      "text": "Development of technologies for producing detailed marine climate change scenarios\n2026-04-08\nClient\nKorea Meteorological Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3054-c873b9536d": {
+      "sourceTextSha256": "cdd5b613beaf9c4ca3ca8c8385c35479aa29eec35e67da8517082140ea03f1dd",
+      "title": "Development of technologies for producing detailed marine climate change scenarios",
+      "text": "Development of technologies for producing detailed marine climate change scenarios\n2026-04-08\nClient\nKorea Meteorological Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1891-c873b9536d": {
+      "sourceTextSha256": "4e038a1858783f58422cfda2ac226353e0b577b6d53f17d8e4914c19efe1be7e",
+      "title": "Research and development for marine environmental and ecosystem management around Saemangeum",
+      "text": "Research and development for marine environmental and ecosystem management around Saemangeum\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1895-c873b9536d": {
+      "sourceTextSha256": "9fdc21f8809f59df8bb74b5320e25756393cd24c49a0ef5aac3d3682c5891294",
+      "title": "Development of ecosystem-based marine spatial analysis and application technologies",
+      "text": "Development of ecosystem-based marine spatial analysis and application technologies\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1910-c873b9536d": {
+      "sourceTextSha256": "ac67ae9d7131ef030fa002a0128de10608105a86cf850735b57546b1d38cde1b",
+      "title": "Development of ship hull biofouling management and assessment technologies",
+      "text": "Development of ship hull biofouling management and assessment technologies\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-2999-c873b9536d": {
+      "sourceTextSha256": "fb3b55da8491a7f78d3e83a45fc3b8970ba5222a039e43edb7d723b079647c59",
+      "title": "Development of ship hull biofouling management and assessment technologies",
+      "text": "Development of ship hull biofouling management and assessment technologies\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3000-c873b9536d": {
+      "sourceTextSha256": "fb3b55da8491a7f78d3e83a45fc3b8970ba5222a039e43edb7d723b079647c59",
+      "title": "Development of ship hull biofouling management and assessment technologies",
+      "text": "Development of ship hull biofouling management and assessment technologies\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3044-c873b9536d": {
+      "sourceTextSha256": "fb3b55da8491a7f78d3e83a45fc3b8970ba5222a039e43edb7d723b079647c59",
+      "title": "Development of ship hull biofouling management and assessment technologies",
+      "text": "Development of ship hull biofouling management and assessment technologies\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1949-c873b9536d": {
+      "sourceTextSha256": "a22d503bfcf379dfd1ac39150094e390c059e550a73dc316fbc280233fac672d",
+      "title": "Development of river monitoring technologies using water quantity and water quality sensors",
+      "text": "Development of river monitoring technologies using water quantity and water quality sensors\n2024-09-10\nClient\nMinistry of Environment",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3012-c873b9536d": {
+      "sourceTextSha256": "752df2cd46bacdc72691912715c9762071b7b179b26aa53157004e7e1e972d59",
+      "title": "Development of integrated river monitoring technologies using water quantity and water quality sensors",
+      "text": "Development of integrated river monitoring technologies using water quantity and water quality sensors\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3055-c873b9536d": {
+      "sourceTextSha256": "752df2cd46bacdc72691912715c9762071b7b179b26aa53157004e7e1e972d59",
+      "title": "Development of integrated river monitoring technologies using water quantity and water quality sensors",
+      "text": "Development of integrated river monitoring technologies using water quantity and water quality sensors\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1901-c873b9536d": {
+      "sourceTextSha256": "35c357fb6d540bc576afb809f239d68ac48d7be3262071d3cb242a92d460b17c",
+      "title": "Development of underwater glider core components and equipment and establishment of an operations centre",
+      "text": "Development of underwater glider core components and equipment and establishment of an operations centre\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1920-c873b9536d": {
+      "sourceTextSha256": "c8125b23265ca1e20f5d343d62dad841acb31bd33921eb94403dfdd3d5127826",
+      "title": "Development of iterative adaptive coastal erosion management technologies",
+      "text": "Development of iterative adaptive coastal erosion management technologies\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3007-c873b9536d": {
+      "sourceTextSha256": "56355d1962c3665bb865af323f55dd1ca8ef1836ea7bf348884976fa7752a297",
+      "title": "Development of iterative adaptive coastal erosion management technologies",
+      "text": "Development of iterative adaptive coastal erosion management technologies\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3051-c873b9536d": {
+      "sourceTextSha256": "56355d1962c3665bb865af323f55dd1ca8ef1836ea7bf348884976fa7752a297",
+      "title": "Development of iterative adaptive coastal erosion management technologies",
+      "text": "Development of iterative adaptive coastal erosion management technologies\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1922-c873b9536d": {
+      "sourceTextSha256": "5396af591194fe6a6e81d9cb3770f1abf1bfc70e939c9e459123f4043f44fbb0",
+      "title": "Development of an information-augmented head-up display to support deep-sea diver operations",
+      "text": "Development of an information-augmented head-up display to support deep-sea diver operations\n2024-04-11\nClient\nMinistry of Trade, Industry and Energy; Defense Acquisition Program Administration",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3009-c873b9536d": {
+      "sourceTextSha256": "a4871e1cfc16012de650bd4a789c1a82a0b2b422078bf9d27f866101a8714475",
+      "title": "Development of an information-augmented head-up display to support deep-sea diver operations",
+      "text": "Development of an information-augmented head-up display to support deep-sea diver operations\n2026-04-08\nClient\nInstitute of Civil-Military Technology Cooperation",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1890-c873b9536d": {
+      "sourceTextSha256": "6e9543cee18d4a4b77df649d18b73d291ac053d2468a25b573f70a586671d3e7",
+      "title": "Identifying the causes of coastal anomalies including abnormal high waves and rip currents and developing a response system",
+      "text": "Identifying the causes of coastal anomalies including abnormal high waves and rip currents and developing a response system\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1898-c873b9536d": {
+      "sourceTextSha256": "5948512b0ee359b90bced1f76d29cf1b26c5d35f5d11894c3c30ae7cd0985d02",
+      "title": "Practical application of coastal erosion management and response technologies",
+      "text": "Practical application of coastal erosion management and response technologies\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1900-c873b9536d": {
+      "sourceTextSha256": "630e274fbc43e6bd611423aad90e7771e1c018c4c68fe30f21b8033f9ee7d105",
+      "title": "Development of AI-based satellite image restoration and prediction technologies",
+      "text": "Development of AI-based satellite image restoration and prediction technologies\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1893-c873b9536d": {
+      "sourceTextSha256": "cf94d977388758090256e2e805951d0fefc2772992af8cfd8bb1d9fe2e24e365",
+      "title": "Establishment and application of integrated ocean research stations (Phase 2)",
+      "text": "Establishment and application of integrated ocean research stations (Phase 2)\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1902-c873b9536d": {
+      "sourceTextSha256": "37392c5eeb3c795a5d97f7c1ebbdc7efeaffb8cd940568344a2c87bb9e721f45",
+      "title": "Development of intelligent technologies to support marine debris collection",
+      "text": "Development of intelligent technologies to support marine debris collection\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1950-c873b9536d": {
+      "sourceTextSha256": "93a4db2aa314b11db07816eb123a7b500b24e515471ba44fa665c4cddb11ed7a",
+      "title": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods",
+      "text": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods\n2024-09-10\nClient\nMinistry of Environment",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3013-c873b9536d": {
+      "sourceTextSha256": "d56f0cd9d86766dd416c229d1f3f6ff4cd19f29c286b07abe2f9c634a9b8c25d",
+      "title": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods",
+      "text": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3056-c873b9536d": {
+      "sourceTextSha256": "d56f0cd9d86766dd416c229d1f3f6ff4cd19f29c286b07abe2f9c634a9b8c25d",
+      "title": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods",
+      "text": "Development of continuous automated river sediment load measurement technologies using ultrasonic and optical methods\n2026-04-08\nClient\nKorea Environmental Industry & Technology Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3019-c873b9536d": {
+      "sourceTextSha256": "d49974cbe68d7a1a77ae0768ebf02f6023ee8054381f7f3e5064624ef39b21c2",
+      "title": "Amphibious equipment for integrated manned and unmanned search and rescue in flood disaster environments including cities and urban rivers",
+      "text": "Amphibious equipment for integrated manned and unmanned search and rescue in flood disaster environments including cities and urban rivers\n2026-04-08\nClient\nKorea Planning & Evaluation Institute of Industrial Technology",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1899-c873b9536d": {
+      "sourceTextSha256": "8dc1689f869f03b8b502546500f8a813df1676890d1c47ec04a42167e195e7bf",
+      "title": "Real-time continuous marine environmental monitoring across water depths using a trawl-resistant seabed mooring system",
+      "text": "Real-time continuous marine environmental monitoring across water depths using a trawl-resistant seabed mooring system\n2024-04-11\nClient\nMinistry of Trade, Industry and Energy; Defense Acquisition Program Administration",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1888-c873b9536d": {
+      "sourceTextSha256": "6d3cefe9fa59fbd19e70feb1c72bb8212ecced5073b5e57d9886064dafc152be",
+      "title": "Research and development of an integrated estuary management system",
+      "text": "Research and development of an integrated estuary management system\n2024-04-11\nClient\nMinistry of Land, Transport and Maritime Affairs",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1889-c873b9536d": {
+      "sourceTextSha256": "b947fe937947550616d2a842c62cda8455ed7af3f4bc8c77fc46c301e8548997",
+      "title": "Research and development of an integrated estuary management system",
+      "text": "Research and development of an integrated estuary management system\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3059-c873b9536d": {
+      "sourceTextSha256": "682763ba0bfcc8902ad41a29a4588a9f4573fb268d9236b6667822847dcdf851",
+      "title": "Development of technologies to predict the drivers of coastal hazards in Korea",
+      "text": "Development of technologies to predict the drivers of coastal hazards in Korea\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3016-c873b9536d": {
+      "sourceTextSha256": "ca3598c4dc543909f69dbde0b3296013e18d0ca3867f697c9d072921af116f56",
+      "title": "Development of high-resolution coastal hazard prediction technologies for Korea",
+      "text": "Development of high-resolution coastal hazard prediction technologies for Korea\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3017-c873b9536d": {
+      "sourceTextSha256": "ca3598c4dc543909f69dbde0b3296013e18d0ca3867f697c9d072921af116f56",
+      "title": "Development of high-resolution coastal hazard prediction technologies for Korea",
+      "text": "Development of high-resolution coastal hazard prediction technologies for Korea\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1904-c873b9536d": {
+      "sourceTextSha256": "9c7e747a782d52bdf6f735b9e4b9006b202b548c2283a5e8d14ae07cdf70c8d5",
+      "title": "Development of automated aviation weather observation technologies",
+      "text": "Development of automated aviation weather observation technologies\n2024-04-11\nClient\nKorea Meteorological Administration",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1897-c873b9536d": {
+      "sourceTextSha256": "216491c56d2b62bbaa6d6793c4bb3eb8a2c5e74519955aa770758f02ad8a79bc",
+      "title": "Development of damage reduction technologies for coastal areas exposed to compound hazards",
+      "text": "Development of damage reduction technologies for coastal areas exposed to compound hazards\n2024-04-11\nClient\nMinistry of the Interior and Safety",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1915-c873b9536d": {
+      "sourceTextSha256": "5a60fdac51d36efbf755cfd0e34df3ffa53f1ad29e37af13270f4590408f6cb7",
+      "title": "Research on enabling technologies for the development and use of marine digital twins",
+      "text": "Research on enabling technologies for the development and use of marine digital twins\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3004-c873b9536d": {
+      "sourceTextSha256": "21dba5c276655d7a27afd38e1f61c2d44596b6faf555fea752933c601bf62614",
+      "title": "Research on enabling technologies for the development and use of marine digital twins",
+      "text": "Research on enabling technologies for the development and use of marine digital twins\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3048-c873b9536d": {
+      "sourceTextSha256": "21dba5c276655d7a27afd38e1f61c2d44596b6faf555fea752933c601bf62614",
+      "title": "Research on enabling technologies for the development and use of marine digital twins",
+      "text": "Research on enabling technologies for the development and use of marine digital twins\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1913-c873b9536d": {
+      "sourceTextSha256": "736a26477d1358c634ae3c3766b8253c8f968282c35831b4a50f301b70e2fe1f",
+      "title": "Development of source tracing methods for hazardous marine pollutants",
+      "text": "Development of source tracing methods for hazardous marine pollutants\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3003-c873b9536d": {
+      "sourceTextSha256": "72790349f553cf7f1e70c56b8beb18fd7055944c09bace424c4b322f339a6bb6",
+      "title": "Development of source tracing methods for hazardous marine pollutants",
+      "text": "Development of source tracing methods for hazardous marine pollutants\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3047-c873b9536d": {
+      "sourceTextSha256": "72790349f553cf7f1e70c56b8beb18fd7055944c09bace424c4b322f339a6bb6",
+      "title": "Development of source tracing methods for hazardous marine pollutants",
+      "text": "Development of source tracing methods for hazardous marine pollutants\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1892-c873b9536d": {
+      "sourceTextSha256": "ac6c84531f66c71567b384807fa59411dae9530e369a3e1d9bbd1c222f4a7d67",
+      "title": "Improving marine forecast accuracy through ocean numerical modelling and intelligent information technology",
+      "text": "Improving marine forecast accuracy through ocean numerical modelling and intelligent information technology\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1906-c873b9536d": {
+      "sourceTextSha256": "24962739ba9551cb440e8d0ecff606191089bff7e6cbd897119655d7b2aeb0cb",
+      "title": "Development of technologies for analysing and applying ocean satellite imagery",
+      "text": "Development of technologies for analysing and applying ocean satellite imagery\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-2995-c873b9536d": {
+      "sourceTextSha256": "ff667a2af044279627c29678a3602814c091e7b4be585c26c0b3e5c1f743ee7a",
+      "title": "Development of technologies for analysing and applying ocean satellite imagery",
+      "text": "Development of technologies for analysing and applying ocean satellite imagery\n2026-04-08\nClient\nKorea Institute of Marine Science & Technology Promotion",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3015-c873b9536d": {
+      "sourceTextSha256": "3eff709684be0c37358faeb8eb9b2d4a061566dcbfe5a4bd70bb1a2527831697",
+      "title": "Research into the mechanisms of hazardous marine weather and development of prediction technologies",
+      "text": "Research into the mechanisms of hazardous marine weather and development of prediction technologies\n2026-04-08\nClient\nKorea Meteorological Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-3058-c873b9536d": {
+      "sourceTextSha256": "3eff709684be0c37358faeb8eb9b2d4a061566dcbfe5a4bd70bb1a2527831697",
+      "title": "Research into the mechanisms of hazardous marine weather and development of prediction technologies",
+      "text": "Research into the mechanisms of hazardous marine weather and development of prediction technologies\n2026-04-08\nClient\nKorea Meteorological Institute",
+      "reviewStatus": "source-compared"
+    },
+    "ko-research-research-1905-c873b9536d": {
+      "sourceTextSha256": "bc911ab055ef8e4ed79d9c1dc23ed8f2c0177db13958b5571b435d6fd1f48326",
+      "title": "Development of three-dimensional tidal and ocean current observation technologies for marine disaster response",
+      "text": "Development of three-dimensional tidal and ocean current observation technologies for marine disaster response\n2024-04-11\nClient\nMinistry of Oceans and Fisheries",
+      "reviewStatus": "source-compared"
+    }
+  }
+}

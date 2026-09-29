@@ -1,0 +1,38 @@
+{
+  "status": "completed-rejected-not-deployed",
+  "jobId": "28187afa-4c87-4753-a155-9a4130c3191f",
+  "balanceBefore": 206.75,
+  "quotedCredits": 45,
+  "reviewUrl": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "review": "ChatGPT reviewed ocean revision; user excluded river. Removed acoustic beams to keep single accumulating profile event.",
+  "params": {
+    "model": "seedance_2_0",
+    "duration": 5,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "prompt": "A single continuous five-second premium photorealistic technical promo shot, 16:9, 1080p, silent. A realistic medium-sized coastal research vessel steadily cruises from left to right across a broad temperate coastal sea under clear natural daylight, with very distant low islands on the horizon. The camera holds a stable oblique side-tracking view, showing both the sea surface and an elegant explanatory cutaway of the water column beneath the vessel. As the vessel moves forward, a vertical underwater ADCP-style current-section progressively builds directly beneath and behind the vessel track: one new narrow profile column appears under the vessel at each moment, while previously formed columns remain fixed in place, so the measured section grows continuously with the vessel’s passage. Inside the translucent water-column section, restrained blue-to-cyan current vectors show qualitative differences in flow direction and relative speed through depth. The vessel creates a realistic modest wake and clearly advances through the scene. Keep the ocean geometry coherent and calm, with no seabed emphasis, no riverbanks, no acoustic beams, no text, no numbers, no logos, no dashboard, no glowing holograms, and no claim of real measured data. This is a scientifically plausible illustrative concept for marine current-profile observation."
+  },
+  "submission": {
+    "results": [
+      {
+        "id": "28187afa-4c87-4753-a155-9a4130c3191f",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "A single continuous five-second premium photorealistic technical promo shot, 16:9, 1080p, silent. A realistic medium-sized coastal research vessel steadily cruises from left to right across a broad temperate coastal sea under clear natural daylight, with very distant low islands on the horizon. The camera holds a stable oblique side-tracking view, showing both the sea surface and an elegant explanatory cutaway of the water column beneath the vessel. As the vessel moves forward, a vertical underwater ADCP-style current-section progressively builds directly beneath and behind the vessel track: one new narrow profile column appears under the vessel at each moment, while previously formed columns remain fixed in place, so the measured section grows continuously with the vessel’s passage. Inside the translucent water-column section, restrained blue-to-cyan current vectors show qualitative differences in flow direction and relative speed through depth. The vessel creates a realistic modest wake and clearly advances through the scene. Keep the ocean geometry coherent and calm, with no seabed emphasis, no riverbanks, no acoustic beams, no text, no numbers, no logos, no dashboard, no glowing holograms, and no claim of real measured data. This is a scientifically plausible illustrative concept for marine current-profile observation.",
+          "aspect_ratio": "16:9",
+          "duration": 5,
+          "resolution": "1080p",
+          "mode": "std",
+          "generate_audio": false
+        }
+      }
+    ]
+  },
+  "reviewDecision": "Boat moves but depth profiles become solid extruded blocks rather than current vectors; not suitable for deployment"
+}

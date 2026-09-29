@@ -1,0 +1,215 @@
+{
+  "conversation": "https://chatgpt.com/c/6aba26a7-29c4-83ee-ac64-c9643d225b8a",
+  "date": "2026-09-29",
+  "prompts": [
+    {
+      "batch": 1,
+      "prompt": "GeoSR 기업 홈페이지용 이미지 제작 전용 채팅으로 사용합니다 앞으로 이 대화에서 모든 장면을 같은 수준의 실사 질감과 자연스러운 색감으로 제작합니다 지금 첫 번째 이미지를 직접 생성해 주세요 가로 16:9 고해상도 항공사진 스타일 대한민국 남해안에서 볼 법한 넓은 해안과 깊은 푸른 바다를 약 800m 상공에서 바라보는 광역 사선 항공 시점 해안선이 화면 오른쪽으로 길게 이어지고 낮은 산지와 소규모 항구가 배경에 자연스럽게 보입니다 화면 왼쪽 45퍼센트와 하단 왼쪽은 파도가 잔잔한 짙은 청색 바다로 열어 두어 홈페이지 제목을 HTML로 얹을 공간을 확보합니다 낮의 맑은 대기와 자연광 섬세한 바다 표면 현실적인 지형 규모 자연스러운 짙은 네이비와 회청색 절제된 채도 해양환경 관측과 연안 연구를 하는 전문 B2B 기업의 화면으로 사용할 단정하고 넓은 구도 실제 촬영으로 오해하게 특정 실적이나 실제 지명을 주장하지 않는 독립적인 시각 콘셉트입니다 타사 홈페이지 사진이나 영상의 특정 장면을 복제하지 마세요 텍스트 로고 워터마크 별자리 네온 데이터 점선 가상 홀로그램 거대한 미래도시 위성 모형은 넣지 마세요 콜라주가 아닌 하나의 자연스럽고 아름다운 항공 장면을 이미지 한 장으로 생성해 주세요"
+    },
+    {
+      "batch": 2,
+      "prompt": "\"첫 해안 이미지와 동일한 실사 질감과 자연스러운 네이비·회청색 색조를 유지하며 홈페이지 슬라이드용 이미지 4장을 한 번에 생성해 주세요 합쳐진 콜라주가 아니라 각각 다운로드할 수 있는 독립 이미지 4장으로 만들어 주세요 공통: 가로 16:9 고해상도 자연광 기업 다큐멘터리 사진 수준 실제적인 구조와 지형 비율 글자 로고 워터마크 네온 그래픽 홀로그램 가상 HUD 금지 2번 파도: 넓은 외해의 부서지는 파도를 거의 수직으로 내려다본 항공사진 짙은 푸른 바다와 섬세한 흰 포말 자연스러운 비대칭 소용돌이 포말은 화면 위와 왼쪽에서 흐르고 오른쪽 아래에는 짙은 물빛 여백 과장된 폭풍 재난 효과 없이 실제 파도의 미세한 질감 3번 해양 관측: 넓은 연안 바다에서 운항하는 현실적인 중소형 해양 조사선의 높은 측면 시점 작업 갑판 뒤 A프레임에서 CTD 로제트 채수기가 수면으로 내려가는 장면 실제 장비 구조와 연결이 일관된 케이블 작은 연구원 2명은 헬멧과 구명조끼 착용 배는 화면의 3분의1 이하 크기로 배경 바다와 먼 낮은 산지가 넓게 보임 4번 연안 공간정보 조사: 넓은 모래 해변과 자연스러운 해안선 위를 비행하는 작고 현실적인 고정익 조사 드론 드론은 오른쪽 위에 작게 배치 해변과 얕은 바다 지형을 넓게 보여주는 항공사진 현실적인 고도와 크기 바다에 가상 격자선을 그리지 않음 5번 해양 시료 분석: 밝고 단정한 실제 환경분석 실험실의 넓은 작업대 맑은 해수 시료병과 피펫과 실제적인 분석 장비 청백색 자연광 유리 금속 플라스틱의 세밀한 질감 배경 장비는 부드럽게 흐리고 전경의 시료가 선명함 사람 손 가짜 문자 라벨을 넣지 않음 모두 특정 지역이나 회사의 실제 시설 사진이라고 주장하지 않는 독립적인 사업 소개용 시각 콘셉트 타사 사진이나 영상 장면을 복제하지 말고 각각 새롭게 제작 설명만 하지 말고 실제 이미지 4장을 생성해 주세요\""
+    },
+    {
+      "batch": 3,
+      "prompt": "다음은 홈페이지의 기술 분야와 AX 소개를 위한 독립 이미지 3장입니다 이전 5장과 자연스러운 광선과 짙은 바다 색감을 맞추되 아래 용도를 정확하게 표현하세요 각각 분리된 이미지로 생성하고 지원 가능한 최고 해상도와 디테일로 출력하세요 가능하면 2048x1536 이상 가로 4:3 텍스트 로고 가짜 숫자 워터마크 네온 별자리 홀로그램은 금지입니다 6번 수환경 수치모델 / 가로 4:3 넓은 하구와 해안 바다를 높은 사선 시점으로 바라본 정교한 해양 공학 시각화 실사에 가까운 낮은 산지와 강 하구 및 바다의 지형을 유지하며 화면 오른쪽 아래 바다의 작은 한 구역만 단정한 과학적 절개 단면으로 표현 수면 아래 지형의 기복과 수심 층을 차분한 짙은 청색에서 밝은 청색의 반투명 면으로 구분하고 아주 가는 낮은 대비의 흐름선을 바다 표면 일부에 배치 데이터 점이나 별자리 연결 그래픽 대신 수면과 해저 사이의 구조를 명료하게 설명하는 전문 해양 수치모델 소개 이미지 범례 문자 숫자 실제 예측 결과 수치처럼 보이는 표시 없이 독립적인 설명용 콘셉트 7번 연안 생태 / 세로 4:5 온대 한국 남해 연안의 바닷속에서 해조류 군락과 암반 저질을 관찰하는 전문 잠수조사원 한 명 맑지만 실제적인 수중 청록광 작은 자연 부유 입자 마스크와호흡기 및 공기통이 사실적인 구조 산호초 열대어 무리와 열대 리조트 분위기는 제외 잠수조사원은 전경 오른쪽 3분의1에 있고 자연 암반과 해조류 서식지가 넓게 보이는 해양 연구 다큐멘터리 사진 8번 AX 플랫폼 소개 / 가로 16:9 가능하면3840x2160 대한민국 해안의 실제 도시에서 볼 법한 해안 도로와 낮은 건물 공원 배후 산지 및 바다를 넓게 포함하는 정교한 공간 분석용 3D 지형 모형 좌측은 자연스러운 항공사진 같은 현실 질감 오른쪽은 동일 지형이 정밀한 무채색 건물 및 지형 메시로 차분하게 이어짐 중앙에서 갑자기 반으로 자른 화면이 아닌 자연스러운 표면 전환 바다와 육지 형태가 맞고 정밀한 지형 메시와 작은 실체적 건물들이 공간정보와 디지털 분석의 관계를 설명 공중에 떠 있는 패널이나 서버랙이나 거대한 기계와 홀로그램은 없고 이미지 자체로 지형 데이터를 다루는 플랫폼임을 보여줄 것 실제 서비스 캡처를 위조하지 않는 독립적인 개념도이며 이후 상세 페이지에서 실제 플랫폼 화면을 보여주는 용도 3장 각각 실제 이미지를 생성해 주세요\nWorked for 1m 22s"
+    },
+    {
+      "batch": 4,
+      "prompt": "\"앞서 만든 7번 수중 생태 조사 장면과 8번 연안 지형/공간데이터 이미지는 사용할 예정입니다 6번 수치모델 시안은 해저가 거대한 절벽과 계곡처럼 잘려 현실적인 하구 환경과 맞지 않아 제외합니다 이제 홈페이지 사업 분야용 대표 이미지 3장을 각각 독립된 파일로 생성해 주세요 콜라주가 아닌 서로 별개 이미지 3장입니다 각 장은 가로 16:9 가능한 가장 높은 출력 해상도로 생성합니다 이전 해안 이미지의 자연광과 바다 색감을 유지하되 모든 분야를 같은 항구 풍경으로 반복하지 않습니다 A 인공지능 연구의 입력 환경: 넓은 한국형 하천 하구를 드론에서 100m 정도 높이의 사선으로 관찰한 현실적인 항공사진 강과 바다가 만나는 완만한 녹색 물 표면에 홍수 이후 흘러온 작은 나뭇가지와 갈대 조각이 길쭉한 띠로 모여 있고 식별 가능한 작은 흰 플라스틱 용기 몇 개가 섞여 있음 화면 아래 오른쪽 1/3에서 이 부유물들을 확인할 수 있고 배후에는 자연적인 둔치와 낮은 수변 식생이 보임 이는 부유물 영상 탐지 연구의 대표 환경을 표현하는 콘셉트이며 재난 쓰레기장이나 과장된 오염 장면이 아님 탐지 박스와 글자나 수치나 가짜 UI를 그리지 말 것 밝고 선명한 현장 조사 사진 질감 B 수환경 통합모델링의 대상: 한국 서해안에 있을 법한 넓고 완만한 하구와 낮은 농경지 유역을 약 800m 높이 사선에서 내려다보는 매우 사실적인 항공사진 화면 위쪽의 강 두 갈래가 중앙에서 만나 넓은 하구를 통해 화면 아래 바다로 이어짐 하구의 자연적인 연갈색 부유사 물빛이 푸른 연안수와 차츰 섞이는 경계가 부드럽게 보임 범람이나 재난이 아닌 평상시 수환경 완만한 조간대와 갯벌 모래톱과 낮은 둑 현실적인 수심 인공적인 절개와 해저 절벽과 원통형 수심벽과 그래프와 화살표와 소용돌이 도식은 절대로 넣지 말 것 목적은 수치모델이 다루는 유역-하천-하구-해역의 연결을 하나의 실제적인 공간으로 보여주는 것 C 무인항공 측량: 길게 뻗은 한국 동해안의 모래 해변과 얕은 청색 바다 및 방사제와 배후 해안 도로를 보는 실제 항공사진 화면 오른쪽 위에는 날개 폭 약 2m의 소형 전동 고정익 매핑 UAV 한 대가 화면 너비의 12% 이하로 보임 사람 탑승석 없음 유리 캐노피 없음 세스나 같은 유인 경비행기 형태 금지 날씬한 흰색 폼 동체와 작은 고정익 및 꼬리 프로펠러에 간단하고 현실적인 구조 주인공은 광역 해빈 지형이고 드론은 조사 맥락을 전달하는 보조 요소 수면의 격자나 빛줄기나 레이저 스캔 없음 공통: 실제 GeoSR 소유 시설 또는 실측 결과를 주장하지 않는 독립적인 사업 소개 콘셉트입니다 타사 사진의 특정 구도를 복제하지 말 것 화면에 텍스트 숫자 로고 워터마크 범례 HUD 데이터 점선 홀로그램은 넣지 말 것 실사에 가까운 자연스러운 환경과 정밀한 표면 질감으로 3장 실제 이미지를 생성해 주세요\"\nWorked for 1m 22s"
+    },
+    {
+      "batch": 5,
+      "generator": "Codex image_gen",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide hero image for a Korean marine and environmental engineering company website, for the detailed page about integrated water-environment modeling\nPrimary request: create a premium documentary-style aerial view of a real-world river basin flowing through a broad tidal estuary and into a coastal sea, visually communicating the connected watershed, river, estuary, and marine environment studied by an integrated environmental model\nScene/backdrop: natural Korean west-coast-like estuary with low forested hills, braided tidal channels, broad mudflats, farmland, and only a few restrained coastal structures far in the distance; realistic geography and scale\nStyle/medium: high-end corporate documentary photography, photorealistic, restrained scientific visualization, technically credible rather than fantasy\nComposition/framing: extra-wide panoramic 16:9 landscape, oblique aerial from high altitude, sweeping river-to-sea flow across the image, strong depth and legible land-water boundaries, darker uncluttered negative space in the left third for white web title copy\nLighting/mood: crisp coastal morning light, atmospheric distance, rich but natural tonal depth, calm and confident\nColor palette: deep ocean blues, estuary teal, muted greens and natural brown tidal flats, subtle cool-blue data accents\nMaterials/textures: realistic surface ripples and sediment plumes; an extremely subtle semi-transparent bathymetric contour trace, a few restrained current-vector marks, and a faint terrain-analysis grid following the real landscape, all low contrast and integrated\nConstraints: no text, labels, numbers, interface panels, graphs, logos or watermark; believable natural river-estuary-coast landscape; scientific overlay must not obscure the scenery\nAvoid: galaxies, stars, planets, fictional cities, neon lines, glowing blue wireframes, generic satellite view, close-up equipment, fabricated research maps, illegible text, dense HUD graphics, exaggerated storms, crowds or identifiable faces"
+    },
+    {
+      "batch": 6,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "satellite-remote-sensing",
+      "prompt": "Create one premium photorealistic editorial image, 16:9 wide, for a Korean marine and environmental engineering research company website section about satellite remote sensing. View: true high-altitude, near-vertical Earth-observation perspective over a believable temperate Korean-style coastline with a broad estuary, tidal flats and coastal sea; natural shoreline geometry, subtle river plume and varied water color visible from above. The image should feel like a real satellite or high-altitude remote-sensing photograph, not a drone or passenger airplane shot; do not show any spacecraft. Deep blue and slate water with restrained natural turquoise near shore, muted green land, cloudy coastal light, rich microtexture, editorial documentary realism, sophisticated and technically credible. Compose with the main land-water boundary and estuary toward the center-right, leaving darker open water on the left for later white website copy. No text, no numbers, no labels, no borders, no fabricated map, no UI, no graphic grid, no neon, no fantasy city, no impossible coastline, no recognizable named site, no people. This is an illustrative concept scene, not a real measurement or named location.",
+      "status": "superseded",
+      "supersededBy": "satellite-remote-sensing-v2"
+    },
+    {
+      "batch": 6,
+      "image": 2,
+      "generationTool": "Codex image_gen",
+      "asset": "aquatic-ai-detection",
+      "prompt": "Create a single high-end photorealistic 16:9 marine research hero photograph for a Korean environmental engineering company technical page about computer-vision detection of aquatic organisms. Wide underwater view in temperate coastal water, with several clearly distinguishable small fish of realistic anatomy moving through a natural rocky kelp habitat; allow three fish silhouettes to have clean uncluttered separation from the background so a web designer can later add small, accurate detection boxes around visible animals. Natural blue-green water with controlled contrast, crisp scientific documentary photography, broad scene rather than macro close-up, no diver, no identifiable people, no aquarium, no tropical reef, no fantasy species, no text or numbers or labels or UI or boxes or logos or watermark. Keep the left third relatively dark and uncluttered for a title overlay. The scene is an illustrative concept, not actual GeoSR footage or validated AI output."
+    },
+    {
+      "batch": 6,
+      "image": 3,
+      "generationTool": "Codex image_gen",
+      "asset": "seabed-acoustic-survey",
+      "prompt": "Create one cinematic but scientifically credible 16:9 documentary photograph for a Korean marine engineering firm sub-bottom acoustic survey technology page. A medium-size realistic coastal survey vessel is moving slowly across a broad calm sea, viewed from a high oblique angle behind and to the side so the full vessel and large water environment are visible. A compact orange acoustic survey towfish is being lowered from a stern A-frame on one clearly continuous taut tow cable, safely separated from the propeller; one or two small crew figures may be visible only from behind, wearing correctly fitted hard hats and life jackets, faces not identifiable. Let the lower right of the frame show a very restrained semi-transparent visual hint of layered seabed sediment below the water, integrated as an understated technical cutaway that follows the real seabed slope, not a dramatic cliff. Natural Korean temperate coastal light, deep navy and slate sea, realistic boat proportions and credible deck equipment, premium high-end research documentary photography, broad scale with detailed water texture, left third darker and clean for title. No text, labels, numbers, fake data, logos, watermark, radar glow, sci-fi HUD, fantasy lights, extra cables, impossible sonar geometry, giant vessel, storm, or tropical reef. This is a conceptual illustration, not GeoSR actual vessel or a real survey result."
+    },
+    {
+      "batch": 6,
+      "image": 4,
+      "generationTool": "Codex image_gen",
+      "asset": "marine-spatial-planning",
+      "prompt": "Create one premium 16:9 photorealistic editorial hero image for a Korean marine engineering and geospatial company marine spatial planning and offshore wind site assessment pages. Show a believable temperate Korean coast from a high oblique aerial angle, with a natural shoreline, harbor, open sea and low hills. The image should communicate spatial planning through precise real terrain and a restrained, transparent three-zone planning overlay that follows the actual coastline: a few fine pale-blue boundary lines and softly tinted non-overlapping marine-use polygons along a plausible sea area, with no legend or text. Make the coast and sea occupy most of the frame; use a strong natural navy, slate and muted green palette, sophisticated documentary realism and clean technical presentation. Keep the upper left relatively calm for web title copy. No satellite spacecraft, no drone, no impossible straight grid, no neon, no generic futuristic city, no dashboard, no labels, no numbers, no logos, no watermark. This overlay is a conceptual planning visualization, not a real zoning map or actual GeoSR result."
+    },
+    {
+      "batch": 6,
+      "image": 5,
+      "generationTool": "Codex image_gen",
+      "asset": "coastal-risk-assessment",
+      "prompt": "Create one photorealistic high-end 16:9 editorial image for a Korean coastal engineering company coastal hazard assessment page. Wide oblique aerial view of a low-lying temperate Korean estuary coast where a broad tidal river mouth, sea wall, narrow coastal road, modest buildings and flat agricultural land meet the sea. Calm everyday conditions near high tide, with the coast and shallow water clearly visible; no catastrophic flooding or storm. Show a subtle concept-only risk interpretation as a translucent pale-blue water-level band following the natural shore and a few muted elevation contour traces over land, no labels, no numbers, no legend, no heatmap. Composition should clearly connect sea level, shoreline and low-lying land, with enough dark navy water on the left for web copy. Premium marine-engineering documentary photography, realistic landforms and infrastructure, natural light and restrained blue-gray colors. No identifiable people, no large city, no disaster damage, no dramatic waves, no fake maps, no UI, no neon, no text, no logos, no watermark. The analytical overlay is illustrative only and must not resemble a validated forecast or actual place."
+    },
+    {
+      "batch": 7,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "ecology-survey-wide",
+      "prompt": "Use case: photorealistic-natural\nAsset type: Wide secondary slide for GeoSR's Korean corporate website, Environment and Ecology field\nPrimary request: Create one photorealistic marine ecology survey scene that fits a wide 16:9 website frame.\nScene/backdrop: Shallow temperate Korean coastal water with a broad natural rocky seabed and dense local seaweed beds. Natural underwater light, believable visibility and quiet field-research atmosphere.\nSubject: One scuba surveyor in a dark hood, mask, regulator and tank, placed in the right third, seen from behind or side so the face cannot be identified. The surveyor is small enough that the surrounding habitat and survey context remain clear.\nComposition/framing: Wide 16:9 landscape image with the full diver and habitat inside a central safe area so modest responsive cropping does not cut off the subject. The seabed and seaweed fill most of the frame.\nStyle/medium: High quality natural-light marine documentary photography with realistic equipment, anatomy, water, rock and seaweed textures. Calm navy and blue-grey palette.\nConstraints: This is an independent concept image, not a GeoSR company photograph, actual field record, or measurement result. No text, numbers, logos, watermarks, UI overlays, scan lines, tropical coral reef, tropical fish schools, resort scenery, or dramatic disaster effects."
+    },
+    {
+      "batch": 8,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "marine-wind-siting",
+      "prompt": "Use case: photorealistic-natural\nAsset type: panoramic inner-page hero for a marine spatial planning company website\nPrimary request: Create a distinct concept image for offshore wind site assessment, visually different from a generic marine zoning map. Show a credible offshore wind farm being studied in relation to a real coastal landscape.\nScene/backdrop: Wide open Korean coastal sea with low wooded islands and a modest shoreline in the far distance, clear horizon and natural water texture. No identifiable real location.\nSubject: Several correctly proportioned offshore wind turbines placed naturally at realistic distances offshore; broad sea area and coastal geography remain the main visual.\nStyle/medium: High-end documentary aerial photography with restrained cinematic color grading, realistic light and atmosphere, refined engineering-company editorial art direction.\nComposition/framing: Very wide panoramic landscape hero, approximately 2.2:1 composition. Keep the turbines and important coastline within a central safe area so the website can crop some edges on mobile. Strong depth from foreground water through the wind farm to distant coast. No text or logos.\nLighting/mood: Natural late-morning coastal light, crisp but calm, confident and technical without a science-fiction look.\nColor palette: Deep slate blue sea, cool blue-gray distance, muted coastal greens, small restrained warm highlights.\nMaterials/textures: Realistic water, soft atmospheric distance, correctly structured turbines.\nConstraints: This is an illustrative concept, not a specific GeoSR project or a real site. Include only a very subtle abstract bathymetric planning overlay in the water: a few fine low-contrast contour strokes with no coordinates, labels, numerical values, boundaries, or color-coded risk zones. Keep the actual coastline and turbines photorealistic. No identifiable people or faces.\nAvoid: space, stars, planets, glowing globes, futuristic city, fictional megastructure, dramatic storm, exaggerated waves, crowded turbines, impossible structures, floating turbines, map text, dashboards, UI panels, grids across the sky, data values, logos, watermark, words, prominent borders."
+    },
+    {
+      "batch": 9,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "ai-detection-wide",
+      "prompt": "Use case: photorealistic website visual\nAsset type: panoramic visual for GeoSR's homepage AI capability slide, displayed in a very wide 2.4:1 landscape frame\nPrimary request: a realistic aerial oblique view of a Korean tidal river estuary where computer vision could identify floating debris, showing how a broad field scene becomes an AI inspection target\nScene/backdrop: a real-feeling temperate Korean estuary with a broad river mouth, tidal flats, low green marsh banks and distant wooded hills; clean natural daylight and calm blue-green water\nSubject: a few clearly visible but naturally scattered mats of drift reeds and small floating debris on the water, with enough surrounding water and shoreline to understand scale; the scene itself is the subject\nStyle/medium: high-end environmental documentary photography, credible field imagery, natural colors and photographic detail\nComposition/framing: extra-wide horizontal 2.4:1 panorama; elevated drone viewpoint with broad water surface across the frame; debris groups are positioned mostly in the center-right and lower third so unobstructed water remains for interface annotation; preserve the full estuary context from shoreline to horizon; no frame, no border\nLighting/mood: bright soft overcast daylight, realistic contrast, calm and technically credible\nColor palette: deep teal-blue water, muted reed greens, neutral coastal sediment, restrained cool palette matching a Korean marine engineering company\nConstraints: no people, no boats, no recognizable landmarks, no invented map or coordinates, no numerical values, no UI, no labels, no text, no logo, no watermark; do not depict a pollution disaster or unrealistic masses of plastic; this is an illustrative concept and not a real GeoSR survey result"
+    },
+    {
+      "batch": 10,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "marine-impact-assessment",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: detail-page hero for marine environmental impact assessment\nPrimary request: a broad, realistic Korean temperate harbor and breakwater scene with a small coastal survey skiff, representing the setting in which port and coastal development effects are assessed\nComposition/framing: wide aerial-oblique coastal view with the shore, breakwater, open water and small vessel legible together; no close crop\nStyle: restrained marine-engineering documentary photography with natural muted light\nConstraints: concept image only, not a GeoSR project or result; no text, labels, logos, fabricated measurements, dramatic disaster, or identifiable faces"
+    },
+    {
+      "batch": 11,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "river-debris-fieldwork",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: detail-page hero for river and marine debris research\nPrimary request: a wide temperate estuary and tidal flat with two small field researchers sampling floating material using a net and sample jar\nComposition/framing: show the larger estuary and its river-to-coast setting; keep people distant and seen from behind so faces are not identifiable\nStyle: natural documentary photography with credible waders and field gear\nConstraints: concept image only; show modest naturally occurring material rather than a pollution disaster; no text, labels, logos, fake data, or recognizable location",
+      "status": "superseded",
+      "supersededBy": "river-debris-fieldwork-v2"
+    },
+    {
+      "batch": 12,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "saltmarsh-research",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: detail-page hero for saltmarsh vegetation and sediment research\nPrimary request: a broad temperate tidal marsh with one researcher collecting vegetation or sediment samples among natural saltmarsh plants\nComposition/framing: show the wetland and coast at useful landscape scale; keep the researcher small and turned away, with no recognizable face\nStyle: high-quality environmental field documentary photography; realistic sampling activity and subdued coastal colors\nConstraints: concept image only, not GeoSR field evidence; no text, labels, logos, dramatic effects, or fabricated scientific results"
+    },
+    {
+      "batch": 13,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "harmful-algae-lab",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: detail-page hero for harmful algae and microbial water-quality research\nPrimary request: a coastal research laboratory scene with a microscope, carefully arranged marine water samples, and a gloved hand examining a sample\nComposition/framing: wide laboratory view with the instrument and sample context both readable; no legible labels\nStyle: natural, precise environmental research photography with soft coastal daylight\nConstraints: concept image only, not an actual GeoSR lab or finding; no text, logos, fake interface, fabricated organisms, or numerical results"
+    },
+    {
+      "batch": 14,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "coastal-overtopping",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: detail-page hero for coastal flooding and wave-overtopping analysis\nPrimary request: a realistic cool blue-gray coast where modest waves overtop a seawall, with homes and infrastructure set safely inland\nComposition/framing: wide view connects the water, seawall, shoreline and low-lying land without making one object dominate\nStyle: restrained coastal-engineering documentary photography under natural overcast light\nConstraints: concept image only; no catastrophic disaster, damaged buildings, invented flood extent, labels, text, logos, or fake prediction graphics"
+    },
+    {
+      "batch": 15,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "shoreline-video-monitoring",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: panoramic concept hero for a corporate website technology detail page about CCTV image processing and shoreline monitoring\nPrimary request: Create a realistic, high-quality documentary photograph that explains how fixed coastal cameras observe beach and shoreline change over time.\nScene/backdrop: A temperate Korean coast with a wide sandy beach, a gently curving shoreline, calm nearshore water, low green headland and distant modest coastal buildings; believable public shoreline infrastructure, no recognizable location.\nSubject: One compact weatherproof fixed coastal monitoring camera mounted on a practical galvanized pole near the edge of the beach, clearly recognizable but secondary to the broad coast it observes. No people in the foreground; any distant beachgoers must be tiny and indistinct.\nStyle/medium: Premium marine-engineering documentary photography with natural water and sand texture, restrained cinematic color grading, realistic coast and equipment.\nComposition/framing: Extra-wide horizontal hero, at least 16:9 in feel. Show a broad view from the fixed camera's elevated vantage toward the full beach and sea. Place the camera structure near the far right edge and leave the center and left dominated by open water, shoreline and landform; preserve the whole coastline within a central safe area for responsive cropping. No added inset frames or split-screen.\nLighting/mood: Soft clear coastal daylight, calm, observational and technically credible.\nColor palette: Deep blue-gray sea, muted sand, natural green headland, subtle cool highlights.\nConstraints: This is an illustrative concept image, not a GeoSR photograph, actual monitoring site, camera installation, or measured result. Keep the camera physically plausible and fixed-facing toward the coast. No text, labels, timestamps, logos, watermark, reticles, bounding boxes, map overlays, fake UI, grids, futuristic light effects, surveillance drama, privacy-intrusive closeups, identifiable faces, giant camera, storm damage, or artificial data."
+    },
+    {
+      "batch": 16,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "wave-coastline",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide transition still for the GeoSR homepage\nPrimary request: a broad temperate rocky coastline opening onto open water, with a low distant coast and natural breaking surf\nComposition/framing: panoramic 16:9 view; coastline stays to the left and the open sea gives the frame breathing room; no identifiable location\nStyle: natural coastal light, premium environmental documentary photography, realistic scale and restrained blue-gray color\nConstraints: illustrative concept only, not a GeoSR field photograph or measured finding; no text, logos, invented data, grids, HUD, or copied reference composition"
+    },
+    {
+      "batch": 17,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "wave-open-sea",
+      "promptRecord": "reconstructed-brief",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide transition still for the GeoSR homepage\nPrimary request: open sea with realistic rolling swells, a distant low coastline on the horizon, and a calm but cinematic marine atmosphere\nComposition/framing: panoramic 16:9 view; dark open water in the lower right leaves clear space for white HTML copy; no identifiable location\nStyle: natural coastal light, premium environmental documentary photography, deep blue-gray water with restrained contrast and realistic wave scale\nConstraints: illustrative concept only, not a GeoSR field photograph, forecast, or measured finding; no text, logos, invented data, grids, HUD, storm damage, or copied reference composition"
+    },
+    {
+      "batch": 18,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "inland-reservoir",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: panoramic 16:9 homepage hero still introducing GeoSR's inland-water research\nPrimary request: a broad, realistic inland reservoir and connected river basin in a temperate Korean landscape\nScene/backdrop: a large calm reservoir feeding a winding river through low green hills and patchwork farmland; a modest water-control weir or low spillway visible at a believable distance; no identifiable place\nStyle/medium: premium environmental engineering documentary photography, realistic terrain and water texture, natural daylight, restrained blue-gray and green color\nComposition/framing: high oblique aerial view from well above the landscape; let the water system and watershed fill the frame; keep the lower-left water broad, quiet, and dark enough for white HTML headline text; place any small water-control structure away from that copy area; preserve a wide safe area for desktop and mobile crops\nLighting/mood: clear soft daylight with natural atmospheric depth, calm and technically credible\nConstraints: concept image only, not an actual GeoSR project photo, dam facility, survey result, or measured observation; no text, logos, watermarks, fake map, grids, data overlays, charts, HUD, bounding boxes, city skyline, giant hydroelectric dam, futuristic structure, disaster, or storm damage"
+    },
+    {
+      "batch": 19,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "coastal-erosion-monitoring",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide hero concept image for GeoSR's coastal erosion monitoring detail page\nInput image: Image 1 is a low-resolution original GeoSR coastal survey photo. Use it only as a composition and subject reference; preserve its recognizable coastal setting, but the result is a clearly labeled illustrative concept, not documentary evidence.\nPrimary request: create a polished, high-resolution, realistic Korean coastal landscape that communicates the terrain examined in shoreline and beach-erosion monitoring.\nScene/backdrop: a real temperate Korean coast with a broad crescent sand beach, wooded low hills and a small low-rise coastal settlement behind it, natural blue-green sea, and a substantial stone breakwater/groyne curving out from the right side of the beach. Show enough shore length and beach width for shoreline change monitoring to be immediately understandable.\nComposition/framing: wide cinematic 16:9 aerial-oblique drone photograph, elevated but not vertical; coastline and distinct waterline lead across the frame; beach occupies a clear central band; breakwater remains visible at the right; no extreme crop and no close-up. Professional corporate website hero, readable at large size.\nLighting/mood: crisp natural daylight with soft marine haze, realistic exposure and gentle contrast.\nStyle/medium: high-end environmental field photography, believable camera optics and shoreline textures; sharp but natural, not overprocessed.\nConstraints: no people, no identifiable location, no claim that this is an actual GeoSR survey result; keep all visual detail photographic and geographically plausible.\nAvoid: text, logos, watermark, map labels, UI, grids, data overlays, neon, fantasy glow, stars, generic empty ocean, dramatic storm, impossible coast geometry, oversaturated cyan, artificial CGI appearance."
+    },
+    {
+      "batch": 20,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "marine-use-planning",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide hero concept image for GeoSR's marine spatial planning technology page\nPrimary request: create a high-end, realistic Korean coastal scene that explains marine spatial planning as the coordination of distinct sea uses and conservation areas, clearly separate from an offshore-wind site assessment.\nScene/backdrop: a temperate Korean island coast with a working harbor and channel, one small fishing vessel near inshore waters, a distant commercial ship following a navigation lane, and a quiet island shoreline with natural coastal habitat. Keep all vessels small and plausible; show a broad sea area and coastline.\nSubject: marine space used in several ways and managed together: navigation, fishing activity, harbor access, and a protected coastal area.\nComposition/framing: wide 16:9 aerial-oblique environmental photograph, broad coastal geography visible from shore to offshore; keep vessels, channel, island, and nearshore waters legible at large hero size. Place the visual emphasis on the sea areas and their relationship, not on one ship.\nVisual analysis cues: add only a few understated, semi-transparent GIS-style boundary strokes and broad translucent zone patches over the sea, using muted blue-gray, pale teal, and very restrained sand tones. Include one thin curved navigation route. Keep the overlays integrated with the water surface and subtle enough that the underlying scene remains photographic. No dense grids or dashboard panels.\nLighting/mood: natural daylight with clear air and soft marine haze; calm, technically credible and visually polished.\nStyle/medium: premium marine-engineering editorial photography with believable Korean coastal morphology and refined restrained color.\nConstraints: illustrative concept only, not an actual GeoSR map, location, surveyed boundary, or marine-use analysis result. No identifiable people or faces.\nAvoid: wind turbines or offshore wind farms, satellite or space imagery, fantasy holograms, glowing neon, star fields, text, labels, legend, numbers, coordinates, logo, watermark, UI panels, bounding boxes, invented measurement results, clutter, storm drama, impossible coast geometry."
+    },
+    {
+      "batch": 21,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "ai-tide-observation",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: 16:9 hero concept image for GeoSR's AI technology detail page, shown before the original technical data gallery.\nPrimary request: create a polished, realistic field-documentary image of the coastal observation environment that supplies measurements for AI time-series forecasting.\nScene/backdrop: a real temperate Korean tidal estuary and broad inlet under soft overcast daylight, distant low hills and shore visible, water flowing through tidal channels.\nSubject: a compact, ordinary water-level monitoring instrument mounted on a low breakwater near the shoreline. The device is a small part of the frame; the observation point, moving water, estuary and surrounding coast are all clearly visible together.\nComposition/framing: wide 16:9 aerial-oblique environmental photograph at a moderate height, no close-up of the device, visually balanced for a large corporate website detail hero.\nLighting/mood: natural soft daylight, restrained slate blue and deep navy water, calm and technically credible.\nStyle/medium: high-end marine research documentary photography with realistic optics, weathering and coastal textures, not commercial stock imagery.\nConstraints: illustrative concept only, not a GeoSR photograph, not a specific site, not an actual instrument model or measurement result. Keep the water-level monitor physically plausible and unbranded.\nAvoid: any text, numbers, logos, watermarks, charts, forecast lines, maps, legends, UI, holograms, scan beams, neon, stars, fictional cities, dramatic disaster, close-up-only framing, artificial CGI appearance."
+    },
+    {
+      "batch": 22,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "regional-ocean-forecast",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: 16:9 hero concept image for GeoSR's real-time ocean forecasting technology detail page, shown before original numerical model maps and validation figures.\nPrimary request: create a premium, realistic marine research documentary image that communicates the regional scale of ocean circulation and forecasting.\nScene/backdrop: broad temperate coastal waters around the Korean peninsula, viewed from a high oblique aerial perspective; a winding coastline, low island groups and the transition from shallower coastal water to dark open sea all visible in one expansive frame.\nSubject: the scale and connected structure of coastal and offshore waters, with subtle natural differences in water color and wave texture suggesting circulation. The sea and coastline, not a close-up wave, are the focus.\nComposition/framing: wide 16:9 panoramic aerial-oblique photograph with deep foreground water, long coastline sweeping across the image and distant headlands; usable as a large website hero on desktop and mobile crops.\nLighting/mood: clear but soft late-afternoon daylight with restrained slate blue, deep navy and cool coastal gray; visually rich and calm with realistic marine haze.\nStyle/medium: high-end environmental field photography, natural camera optics and realistic Korean temperate geography, not stock imagery or CGI.\nConstraints: a general concept only, not a specific forecast map or GeoSR survey result. Do not draw data, current arrows, prediction tracks or temperature contours; the actual model results will be shown separately from source material.\nAvoid: text, numbers, logos, watermarks, UI, maps, legends, coordinate grids, neon, holograms, stars, fictional cities, massive storm, close-up-only waves, artificial blue glow, oversaturated color, impossible coast geometry."
+    },
+    {
+      "batch": 23,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "regional-ocean-forecast-v2",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: widescreen 16:9 landscape still for the first screen of a corporate ocean-forecasting technology detail page\nScene/backdrop: a broad temperate Northwest Pacific coastal sea with a scattered low island chain and open water extending far into the distance, no identifiable real landmark\nSubject: regional ocean environment observed at scale, with subtle natural variations in water color and wave texture that suggest currents without drawing or simulating a specific forecast\nStyle/medium: premium documentary aerial photography, physically plausible and naturally detailed, restrained navy and blue-green palette, soft overcast daylight, realistic haze, crisp but not over-sharpened\nComposition/framing: elevated oblique aerial viewpoint looking across the sea rather than straight down; water fills most of the frame; islands are small but legible and recede toward the horizon; leave calm lower-left water for a small page caption; wide cinematic 16:9 composition designed for responsive cropping\nConstraints: represent only the real-world ocean environment, not a data product or a measured result; natural shoreline and water; no visible faces or people; no dominant vessel\nAvoid: satellite-map top-down view, coastline estuary delta or river mouth, futuristic imagery, fantasy terrain, city skyline, spacecraft, visible satellite, fake bathymetry, current arrows, grids, heatmaps, contours, bounding boxes, UI panels, numbers, text, logos, watermarks."
+    },
+    {
+      "batch": 24,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "satellite-remote-sensing-v2",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide landscape media image for a marine geospatial company's satellite remote-sensing capability page\nPrimary request: create a premium, believable satellite-observation scene that reads clearly as Earth observation from orbit, with the coast and ocean as the main subject\nScene/backdrop: low Earth orbit above a broad Korean west-coast-like estuary, tidal flats, winding river mouth, small islands and continental shelf; no identifiable named location\nSubject: one small but unmistakable optical Earth-observation satellite with deployed solar panels, positioned as a secondary element above the coastal scene; a single very subtle translucent cyan sensor-footprint sweep across part of the sea to suggest remote sensing\nStyle/medium: natural cinematic editorial photography, scientifically plausible optics and geography, restrained navy and blue-green palette, realistic atmospheric haze and sunlight; premium corporate website imagery\nComposition/framing: wide 16:9 panoramic landscape; sweeping Earth surface occupies most of the frame; satellite stays visibly separate and does not dominate; legible natural terrain detail without zoomed-in urban structures\nLighting/mood: crisp daylight at the edge of the atmosphere, calm and technically assured\nConstraints: concept image only; no text, labels, numbers, coordinates, logos, interface panels, invented maps, fabricated results, dramatic laser beams, holograms, fantasy spacecraft, cities, or close-up people; keep colors consistent with a clean navy and teal corporate site"
+    },
+    {
+      "batch": 25,
+      "image": 1,
+      "generationTool": "Codex image_gen",
+      "asset": "river-debris-fieldwork-v2",
+      "promptRecord": "verbatim-generation-prompt",
+      "prompt": "Use case: photorealistic-natural\nAsset type: wide 16:9 concept hero for GeoSR's marine debris and microplastics technology page, before the original particle-transport figures\nPrimary request: show a realistic estuary field survey that immediately reads as floating-debris monitoring and transport assessment\nScene/backdrop: a broad temperate Korean-style river mouth opening into coastal water, with tidal channels and low natural banks visible from a high oblique viewpoint; no identifiable place\nSubject: a small unbranded shallow-draft research boat near the estuary mouth, with two field staff seen only from behind in appropriate life jackets and weather gear, carefully sampling a modest drift line of branches, reeds and a few small pieces of floating plastic using a fine-mesh surface net\nComposition/framing: cinematic wide landscape, expansive river-to-sea environment occupies most of the frame; boat and survey action are legible but small; keep the drift line visible in the water and leave calm water around it; no close-up faces\nStyle/medium: natural marine-research documentary photography, realistic boat and sampling gear, premium editorial finish, cool navy and blue-green palette, crisp but natural detail\nLighting/mood: bright overcast coastal daylight, measured and credible, no disaster spectacle\nConstraints: clearly illustrative concept only, not a GeoSR field photo or actual survey result; original maps and model figures remain separate; show no fabricated labels or numerical output\nAvoid: polluted-water disaster imagery, enormous trash piles, fish deaths, close-up people, visible faces, unsafe boat work, logos, readable text, UI, maps, prediction tracks, fake measurement overlays, neon, holograms, unrealistic equipment, storm waves, identifiable geography"
+    }
+  ]
+}

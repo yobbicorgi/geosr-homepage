@@ -1,0 +1,47 @@
+{
+  "status": "technical-insert-passed-main-opening-rejected",
+  "updatedAt": "2026-09-29T04:54:00Z",
+  "jobId": "454864ca-f6f4-4e9d-bf3f-421b34c79b37",
+  "model": "seedance_2_0",
+  "mode": "std",
+  "resolution": "1080p",
+  "durationRequestedSeconds": 6,
+  "count": 1,
+  "generateAudio": false,
+  "startImage": "media-source/editorial/hero-satellite-mosaic-start-native-20260929.png",
+  "endImage": "media-source/editorial/hero-satellite-mosaic-end-native-20260929.png",
+  "sourcePlanAndExactPrompt": "media-source/editorial/hero-satellite-first-shot-20260929.json",
+  "referenceMediaIds": {
+    "start_image": "16d95335-0005-40be-9390-f601c522d641",
+    "end_image": "e36eee6e-2e4c-4fce-9896-0dd043f5558b"
+  },
+  "cost": {
+    "exactQuoteCredits": 54,
+    "balanceBeforeCredits": 926.75,
+    "balanceAfterCredits": 872.75,
+    "chargedCredits": 54
+  },
+  "result": {
+    "providerUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_044223_454864ca-f6f4-4e9d-bf3f-421b34c79b37.mp4",
+    "preservedRaw": "media-source/editorial/hero-satellite-technical-insert-seedance20-20260929.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 145,
+    "durationSeconds": 6.041667,
+    "bytes": 3587404,
+    "sha256": "2193e91809c4e5891e1a3dccfa9b658d1b80c2a96721c452427dd2f5699cc98d",
+    "audioStreams": 0
+  },
+  "qa": {
+    "contactSheet": "media-source/editorial/hero-satellite-seedance20-qa-contact-20260929.jpg",
+    "contactSheetSha256": "99aaba8c7b4a4a5a9c233758a07efa55c750f15a888af23b81cffdc35547c82e",
+    "visualSamplesSeconds": [0, 1.5, 3, 4.5, 5.8],
+    "sequenceReview": "24 evenly spaced contact frames plus five original-resolution frames. Seam remains fixed in geographic coordinates, visibly balances and disappears by around 3 seconds. Muted teal appears in upstream river by around 3 seconds, advances through the mouth by around 4.5 seconds and broadens into connected coastal water by 5.8 seconds. No obvious land spill, new terrain, text or interface.",
+    "allFrameAudit": "Decoded all 145 frames. Adjacent mean absolute RGB change min 0.1028, median 0.2711, max 0.9615 on a 0-255 channel scale; no hard cut. First-to-last ORB: 3,689 good matches, 3,668 RANSAC inliers, near identity affine (scale 0.999998, translation under 0.05 px), median inlier residual 0.021 px, p95 1.215 px. This supports a fixed geographic view.",
+    "technicalResult": "pass as a six-second illustrative satellite-processing insert or lower-homepage candidate; geography remains registered and data field advances spatially",
+    "mainOpeningResult": "reject for representative first-screen opener under latest direction: camera is completely fixed and lacks the requested cinematic viewpoint and scale change",
+    "publicationBoundary": "Fictional explanatory processing concept only, not an actual satellite acquisition, water-quality measurement, GeoSR result or named place. No site placement completed."
+  },
+  "nextAction": "Design a new dynamic coastal aerial start/end pair and one first-screen clip with credible camera movement and field action. Report complete cut structure, prompt and exact final-input quote to parent before another paid submission. Do not repeat this job."
+}

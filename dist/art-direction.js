@@ -231,28 +231,17 @@
     }
     function renderSelectedMedia(index){
       if(!selectedMedia)return;
-      var examples=[
-        {src:"assets/equipment-usv-original.png",ko:"무인선 이용 관측",en:"Uncrewed surface observation",noteK:"GeoSR 무인선 관측 사진",noteE:"Uncrewed observation photograph from the GeoSR website"},
-        {src:"assets/platforms/env-full-temperature.jpg",ko:"해양환경 플랫폼의 해수면 온도 화면",en:"Sea surface temperature view in Ocean Environment",noteK:"해양환경 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Ocean Environment application example · actual interface capture"},
-        {src:"assets/concepts/reviewed-20260922/cf10-chemistry-wide-v1.png",ko:"사람이 없는 실험대의 생성형 콘셉트 이미지",en:"Generated concept of an unoccupied laboratory bench",noteK:"실험·분석 영상 콘셉트 · 실제 GeoSR 시설이나 분석 결과가 아닙니다",noteE:"Laboratory film concept · not a GeoSR facility or an analytical result"},
-        {src:"assets/platforms/flood3d-poster.webp",ko:"3차원 침수 예측 플랫폼 화면",en:"Flood 3D platform interface",noteK:"침수 예측 플랫폼 적용 예시 · 실제 인터페이스 캡처",noteE:"Flood 3D application example · actual interface capture"},
-        {src:"assets/platforms/satellite-poster.webp",ko:"위성 시설물 탐지 플랫폼 화면",en:"Satellite facility detection platform interface",noteK:"위성영상 분석 적용 예시 · 실제 인터페이스 캡처",noteE:"Satellite imagery application example · actual interface capture"}
-      ];
-      var example=examples[index];
-      var mediaKey=example.src;
+      var area=window.GeoSRBusinessAreas[index];
+      var example=area.visual;
+      var mediaKey=area.id+":"+example.src;
       if(selectedMedia.dataset.mediaKey===mediaKey)return;
       selectedMedia.dataset.mediaKey=mediaKey;
-      selectedMedia.replaceChildren();
-        var image=document.createElement("img");
-        image.src=example.src;
-        image.width=index===0?1771:1920;
-        image.height=index===0?1068:1080;
-        image.loading="eager";
-        image.decoding="async";
-        image.alt=language==="en"?example.en:example.ko;
-        selectedMedia.setAttribute("aria-label",image.alt);
-        selectedMedia.appendChild(image);
-        if(sourceNote)sourceNote.textContent=language==="en"?example.noteE:example.noteK;
+      selectedMedia.innerHTML=window.GeoSRBusinessGallery(area,language);
+      var image=selectedMedia.querySelector("img");
+      selectedMedia.dataset.mediaKind=example.fit==="contain"?"data":"scene";
+      selectedMedia.removeAttribute("role");
+      selectedMedia.removeAttribute("aria-label");
+      if(sourceNote)sourceNote.textContent=language==="en"?"Categories follow published GeoSR technology records.":"공개된 GeoSR 기술 자료를 기준으로 분야를 분류했습니다";
       if(!reduced.matches&&image.animate){
         image.animate([{opacity:.2,transform:"scale(1.035)"},{opacity:1,transform:"scale(1)"}],{duration:760,easing:"cubic-bezier(.16,1,.3,1)"});
       }
@@ -270,7 +259,7 @@
       if(detail)detail.setAttribute("aria-labelledby",axisButtons[index].id);
       if(title)title.textContent=axisButtons[index].querySelector(".capability-axis-name").textContent;
       if(summary)summary.textContent=axisButtons[index].dataset.axisSummary||"";
-      if(number)number.textContent="0"+(index+1)+" / 05";
+      if(number)number.textContent="0"+(index+1)+" / "+String(axisButtons.length).padStart(2,"0");
       var ids=new Set(groupIds[index]||[]);
       if(list)list.querySelectorAll("[data-technology-id]").forEach(function(node){
         var selectedNode=ids.has(node.dataset.technologyId);

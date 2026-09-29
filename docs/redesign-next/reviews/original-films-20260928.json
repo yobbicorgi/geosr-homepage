@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-28",
+  "status": "rejected-before-video-generation",
+  "source": "Earlier Codex image generation attempt; not the selected ChatGPT image workflow",
+  "decision": "Do not use these keyframes or continue this video plan. The current site work uses approved ChatGPT stills and stops before video generation.",
+  "removedAssets": [
+    "dist/assets/concepts/original-20260928/ax-coastal-model.webp",
+    "dist/assets/concepts/original-20260928/ax-spatial-intelligence.png",
+    "dist/assets/concepts/original-20260928/ax-spatial-intelligence.webp",
+    "dist/assets/concepts/original-20260928/ocean-modelling.png",
+    "dist/assets/concepts/original-20260928/ocean-modelling.webp"
+  ],
+  "billingNote": "Previous UI readings were not a verified credit ledger. Recheck the live account and cost before any future paid generation.",
+  "videoGeneratedFromThisPlan": false
+}

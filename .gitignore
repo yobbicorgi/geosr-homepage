@@ -9,3 +9,6 @@ __pycache__/
 media-source/flow-downloads/*.mp4
 .source-review/
 docs/redesign-next/keyframes/flow-review/
+
+# Reproducible working captures and temporary review files
+tmp/

@@ -1,0 +1,146 @@
+{
+  "status": "completed-effects-requirement-failed",
+  "reviewUrl": "https://chatgpt.com/c/6abb6f01-555c-83ee-a81f-d808af1a71bd",
+  "reviewBoundary": "ChatGPT reviewed image and described strategy; it did not inspect R2 video. Root user approved R2 motion and requested native effects improvement",
+  "balanceBefore": 296.75,
+  "quotedCredits": 45,
+  "params": {
+    "model": "seedance_2_0",
+    "duration": 5,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "medias": [
+      {
+        "role": "video",
+        "value": "18d7ea2c-8899-4110-a2bf-63031b13bb5c"
+      },
+      {
+        "role": "image",
+        "value": "00d9ab40-4902-4ead-a919-d83426dd16b1"
+      }
+    ],
+    "prompt": "Five-second cinematic underwater AI-observation film, 16:9, silent. Use @Video 1 as the primary reference for fish locomotion, timing, depth changes, camera tracking, forward drift, underwater inertia and parallax. Preserve its natural energetic swimming and camera behavior; do not simplify, slow, freeze or restrain the fish to accommodate the graphics. Use @Image 1 only as the visual reference for the computer-vision overlay style. Generate the tracking visualization natively within the new footage. Each prominently visible tracked fish has a clearly visible, complete four-sided thin blue rectangular detection box with distinct corners, continuously following its changing screen position and scale. The rectangles must remain more visually prominent than the masks and must not disappear or turn into contour lines. Add a separate soft translucent blue segmentation fill fitted to each tracked fish silhouette, preserving visible fish texture beneath it. Boxes and masks move and reshape with their corresponding fish during natural turns, acceleration and depth changes. No detached or empty boxes, box-to-outline substitution, floating masks, text, labels, rigid fish motion, morphing anatomy, cuts or digital zoom."
+  },
+  "submission": {
+    "results": [
+      {
+        "id": "be3db517-d43b-46bb-ab31-81a805eae095",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "Five-second cinematic underwater AI-observation film, 16:9, silent. Use @Video 1 as the primary reference for fish locomotion, timing, depth changes, camera tracking, forward drift, underwater inertia and parallax. Preserve its natural energetic swimming and camera behavior; do not simplify, slow, freeze or restrain the fish to accommodate the graphics. Use @Image 1 only as the visual reference for the computer-vision overlay style. Generate the tracking visualization natively within the new footage. Each prominently visible tracked fish has a clearly visible, complete four-sided thin blue rectangular detection box with distinct corners, continuously following its changing screen position and scale. The rectangles must remain more visually prominent than the masks and must not disappear or turn into contour lines. Add a separate soft translucent blue segmentation fill fitted to each tracked fish silhouette, preserving visible fish texture beneath it. Boxes and masks move and reshape with their corresponding fish during natural turns, acceleration and depth changes. No detached or empty boxes, box-to-outline substitution, floating masks, text, labels, rigid fish motion, morphing anatomy, cuts or digital zoom.",
+          "aspect_ratio": "16:9",
+          "duration": 5,
+          "reference_images": [
+            "18d7ea2c-8899-4110-a2bf-63031b13bb5c",
+            "00d9ab40-4902-4ead-a919-d83426dd16b1"
+          ],
+          "resolution": "1080p",
+          "mode": "std",
+          "generate_audio": false
+        }
+      }
+    ],
+    "adjustments": {
+      "medias[0].role": {
+        "requested": "video",
+        "used": "video_references",
+        "reason": "Seedance 2.0 backend expects schema-key media roles"
+      },
+      "medias[1].role": {
+        "requested": "image",
+        "used": "image_references",
+        "reason": "Seedance 2.0 backend expects schema-key media roles"
+      }
+    }
+  },
+  "localFile": "C:\\Users\\user\\Documents\\Codex\\Projects\\geosr-homepage\\media-source\\video-production-20260929\\fish-effects-reviewed.mp4",
+  "sha256": "d2c79aa167381e47fc9e81353eb40c6a360dc5a77f67e38695a14b4b27ca01c9",
+  "qa": "No complete rectangular detection boxes visible in contact sheet; faint blue outline/fill only. Native effects objective unmet. No retry authorized by this QA. Motion source R2 preserved.",
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 61952,
+        "duration": "5.041667",
+        "bit_rate": "12089527",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "121",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "fish-effects-reviewed.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "5.041667",
+      "size": "7642896",
+      "bit_rate": "12127569",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.76.100"
+      }
+    }
+  }
+}

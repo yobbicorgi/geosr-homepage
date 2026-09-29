@@ -1,0 +1,38 @@
+{
+  "status": "editorial-still-candidate; parent-placement-review-pending",
+  "slot": "technology56-satellite-remote-sensing-replacement",
+  "generationConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "sourceMethod": "Native ChatGPT WEB image creation and full original Download button; image backend not disclosed by UI",
+  "original": {
+    "path": "media-source/editorial/satellite-optical-native-20260929.png",
+    "downloadName": "ChatGPT 이미지 2026년 9월 29일 오후 03_22_33.png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2714699,
+    "sha256": "ae345bb48cf7ab6a4e008ad5330309d921ecbdfacaa99d1520958de5b8485019"
+  },
+  "webCandidate": {
+    "path": "dist/assets/editorial/satellite-optical-native-20260929.webp",
+    "bytes": 342518,
+    "sha256": "f12aa8039e1f8928922790cf2c964db88911000d90f0502d24c2ee565862a41e",
+    "sourceDimensionsRetained": true,
+    "placement": "Not yet wired into site"
+  },
+  "companyEvidence": [
+    "https://www.geosr.com/sub/business/conserve_view.asp?idx=56",
+    "docs/company-audit/technology-analysis.md:116-123"
+  ],
+  "visualQa": {
+    "reviewedAtOriginalSize": true,
+    "pass": [
+      "Near-vertical single-scale coastal raster rather than a horizon, Earth globe or close aircraft photograph",
+      "Coherent river mouth, tidal flats, coastline, wooded land and parcels",
+      "Straight bounded swath is a subtle image-footprint treatment, with no giant satellite spacecraft, physical beam or laser",
+      "Qualitative teal water-colour field is restricted to wet coastal water and preserves raster texture; left sea offers heading space",
+      "No labels, fake values, logos or calibrated-product claim"
+    ],
+    "limitations": "Generated fictional coast and decorative processing state; not a real satellite acquisition, orthorectified image, hyperspectral product, calibrated temperature or named GeoSR analysis. Original is 1672x941, so a 2560x1440 full-screen placement would upscale it. The band edge and colour field are explanatory visual devices, not sensor geometry validated against an actual orbit.",
+    "decision": "usable as an editorial still candidate after parent checks crop and balance in the page; not a verified science figure or video"
+  },
+  "replaces": "The older satellite-v2 concept with an oversized triangular beam is scientifically misleading and remains excluded from the technology56 representative slot."
+}

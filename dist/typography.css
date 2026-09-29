@@ -1,0 +1,11 @@
+/* Pretendard 1.3.9 by Kil Hyung-jin — SIL OFL 1.1 in assets/fonts/pretendard/LICENSE.txt */
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-weight:45 920;font-display:swap;src:url('assets/fonts/pretendard/PretendardVariable.woff2') format('woff2-variations')}
+:root{--font-corporate:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+body.design-2026{font-family:var(--font-corporate)}
+body.design-2026 :where(h1,h2,h3,h4,h5,h6,p,span,small,strong,em,i,div,section,article,nav,header,footer,figure,figcaption,a,button,input,textarea,select,label,li,dt,dd,time,address,summary){font-family:var(--font-corporate)!important}
+body.design-2026 :is(h1,h2,h3){font-synthesis:none}
+
+/* Interior section headings are reading anchors, not repeated hero headlines */
+body.design-2026.inner-page :is(.company-section-heading,.company-story-heading,.credential-gallery-heading,.company-information-heading) h2{font-size:clamp(28px,1.875vw,42px);font-weight:450;line-height:1.34;letter-spacing:-.035em}
+body.design-2026 .corporate-enquiry h2{font-size:clamp(26px,1.75vw,38px);font-weight:450}
+@media(max-width:700px){body.design-2026.inner-page :is(.company-section-heading,.company-story-heading,.credential-gallery-heading,.company-information-heading) h2{font-size:27px}}

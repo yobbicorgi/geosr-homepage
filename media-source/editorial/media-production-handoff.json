@@ -1,0 +1,1353 @@
+{
+  "updatedAt": "2026-09-29T15:34:30+09:00",
+  "scope": "New native ChatGPT WEB original stills and vetted image-to-video derivatives",
+  "imageMethod": "Native ChatGPT WEB image creation; no Higgsfield image generation; no Codex image_gen",
+  "latestProductionConstraint": "Main reel cut order is now defined in docs/redesign-next/reviews/20260929-company-film-scene-system.md: ten subjects across approximately 48 seconds, with satellite acquisition and analysis as two four-second clips. Technology57 and technology56 concept stills passed editorial QA. Satellite 01A/01B start/end keyframes remain to be produced and reviewed before a paid Seedance 2.0 job. One accepted clip may be reused only in its matching technology detail. Only accepted 1080p video is placed; rejected CTD/boat and estuary-model attempts remain evidence only.",
+  "generationConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+  "modelDisclosure": "ChatGPT WEB native image model; exact backend image model was not disclosed by the UI",
+  "publicationBoundary": "Editorial introduction concepts only; not actual observations, company project photography, measured accuracy, model calculations or product screens",
+  "productionPlan": {
+    "status": "Estuary-model 6s attempt rejected after full-frame QA; source-referenced technology57 seismic curtain and technology56 optical satellite stills passed editorial QA. New 32s main-cut authority is docs/redesign-next/reviews/20260929-company-film-scene-system.md. Satellite 01A/01B keyframes are in preparation; no further paid submissions at this stage.",
+    "sourceAudit": {
+      "filesRead": [
+        "dist/film-manifest.json",
+        "dist/home.js",
+        "dist/business-areas.js",
+        "dist/ax-embedded-gallery.js",
+        "dist/inner-page-experience.js",
+        "media-source/editorial/manifest.json",
+        "media-source/editorial/prompts.json"
+      ],
+      "finding": "Existing source images have mixed provenance. Several used source PNGs are explicitly Codex image_gen. Those are not proposed for new video input under current native-ChatGPT-only instruction. Batch1-4 have ChatGPT conversation record but no per-image backend, so confirm native origin or regenerate.",
+      "placementRule": "No exact source or clip reused between hero, company, main AX, detail AX and expertise slots. Reserve four newly accepted stills to their unique assigned locations. Existing actual AX product screen clips and actual technical evidence remain intact.",
+      "businessAI": "Accepted unique ai-fish-native-20260929 still for business AI introduction. Exactly five generated boxes and masks correspond to five fish. Actual original tech59/61 diagrams remain technical body evidence."
+    },
+    "durationPlan": "Current 48s ten-subject main cut: satellite 8s in two 4s clips / drone mapping 4s / coastal CCTV 4s / seismic survey 5s / CTD or ADCP observation 4s / laboratory analysis 4s / marine-life AI 5s / connected water model 5s / temperate ecology 4s / coastal application 5s. Each clip requires source and frame QA before payment.",
+    "modelDefaults": {
+      "model": "seedance_2_0",
+      "mode": "std",
+      "resolution": "1080p",
+      "aspect_ratio": "16:9",
+      "generate_audio": false,
+      "count": 1
+    },
+    "budget": {
+      "exactVerifiedCostPer4SecondClip": 36,
+      "verification": "Current MCP estimate for full std 1080p4s silent=36; recheck each final input before submission",
+      "balanceBeforePilot": 1016.75,
+      "expectedBalanceAfterPilot": 980.75,
+      "imageGeneration": "Native ChatGPT WEB, no paid Higgsfield images; original downloadable files only.",
+      "latestVerifiedBalance": 602.75,
+      "creditsSpentByThisAgent": 192,
+      "successfulVideoCount": 0,
+      "mandatoryClipCount": null,
+      "currentApproval": "Technology57 still and main reel cut order are reviewed. Before each new paid shot, review its paired start/end frames and exact live quote. Parent-authorized 1200-credit pool remains the spending ceiling; no repeated CTD/boat or model attempt. The satellite 01A/01B keyframe task is image-only at this stage.",
+      "activeDurationQuotes": {
+        "6s1080pStdSilent": 54,
+        "8s1080pStdSilent": 72,
+        "quoteType": "54 credits confirmed for both AX detail and fixed satellite start/end six-second Seedance 2.0 jobs; any new opener needs its own final-input exact quote",
+        "paidSubmitted": true,
+        "main30sFiveClips": 270
+      },
+      "supersededFourSecondScenarioStages": [
+        {
+          "stage": "pilot",
+          "credits": 36,
+          "gate": "One authorized annotated AI video must pass full QA; failure stops same-shot regeneration."
+        },
+        {
+          "stage": "A",
+          "credits": 216,
+          "clips": 6,
+          "content": "hero3 + mainAX1 + wave2",
+          "gate": "Needs parent's authorization after pilot; no bulk requests.",
+          "status": "Six source-image candidates; 216 credits is an optional all-six ceiling, not approved spending or required quantity."
+        },
+        {
+          "stage": "B",
+          "credits": 108,
+          "clips": 3,
+          "content": "company2 + detailAX1",
+          "gate": "Needs reviewed inputs and parent direction after earlier results."
+        },
+        {
+          "stage": "C",
+          "credits": 252,
+          "clips": 7,
+          "content": "Remaining seven expertise fields",
+          "gate": "Needs unique native originals, QA and parent direction; failed generations are not automatically repeated."
+        }
+      ],
+      "stages": [
+        {
+          "stage": "one-reviewed-original-clip",
+          "authorized": true,
+          "scope": "AX-detail6s single attempt; exact reference preflight and full semantic/motion QA",
+          "receipt": "media-source/editorial/ax-estuary-seedance20-receipt-20260929.json"
+        },
+        {
+          "stage": "remaining-media",
+          "authorized": false,
+          "gate": "Review this result and each unique original before further submission; no mandatory clip quota or batch."
+        }
+      ],
+      "latestBalanceVerifiedAt": "2026-09-29T15:30:51+09:00"
+    },
+    "assembly": "Only concatenate clips and add simple transitions; no overlays, drawn boxes, masks, synthetic UI, text or internal graphics after generation. Preserve native source and raw generated clip; encode web copy without altering visual content.",
+    "scenes": [
+      {
+        "slot": "geosr-hero",
+        "sequence": 1,
+        "scene": "Broad temperate Korean coastline",
+        "input": "media-source/editorial/coastal-aerial.png",
+        "inputStatus": "Visually reviewed; inherited ChatGPT batch1 provenance needs confirmation before upload; generate new native original if ambiguous",
+        "seconds": 4,
+        "evidence": [
+          47,
+          53,
+          64
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "geosr-hero",
+        "sequence": 2,
+        "scene": "Wide sea and coast remain dominant; full modest research vessel sits in lower-right, readable CTD deployment at stern. Represents observation without vessel close-up.",
+        "input": "proposed: media-source/editorial/hero-ctd-native-20260929.png",
+        "inputStatus": "new native ChatGPT WEB original required",
+        "seconds": 4,
+        "evidence": [
+          48,
+          65
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "geosr-hero",
+        "sequence": 3,
+        "scene": "Broad connected catchment leads from river upper-right through estuary to sea lower-left. Technical mesh and flow only on water; terrain stays photographic. Distinct oblique connected-domain composition.",
+        "input": "proposed: media-source/editorial/hero-watermodel-native-20260929.png",
+        "inputStatus": "new native ChatGPT WEB original required",
+        "seconds": 4,
+        "evidence": [
+          15,
+          46,
+          56,
+          65
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "company-overview",
+        "sequence": 1,
+        "scene": "Sample analysis bench with glassware",
+        "input": "media-source/editorial/environmental-analysis.png",
+        "inputStatus": "Visually reviewed; inherited ChatGPT batch2 provenance to confirm; reserve solely for homepage About film and remove duplicate assignment from expertise environment, or create a new native lab bench original",
+        "seconds": 4,
+        "evidence": [
+          48,
+          84
+        ],
+        "group": "B",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "company-overview",
+        "sequence": 2,
+        "scene": "Shore sample survey context",
+        "input": "proposed: company-shore-sampling-native.png",
+        "inputStatus": "New unique native original; broad terrain, small PPE-clad researchers rear-facing, sample gear plausible; no reuse of AI or observation close-up",
+        "seconds": 4,
+        "evidence": [
+          48,
+          51,
+          84
+        ],
+        "group": "B",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "ax-concept-film",
+        "sequence": 1,
+        "scene": "Terrain-to-spatial-data concept",
+        "input": "media-source/editorial/ax-terrain.png",
+        "inputStatus": "Visually reviewed; inherited ChatGPT batch3 provenance to confirm; main AX only; no reuse for detail AX",
+        "seconds": 4,
+        "evidence": [
+          64,
+          47,
+          62
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "ax-platform-intro",
+        "sequence": 1,
+        "scene": "Estuarine spatial data layers",
+        "input": "media-source/editorial/ax-estuary-analysis-native-20260929.png",
+        "inputStatus": "Native original already accepted; reserve to AX detail introduction",
+        "seconds": 4,
+        "evidence": [
+          56,
+          15,
+          46,
+          65
+        ],
+        "group": "B",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-ai",
+        "sequence": 1,
+        "scene": "Annotated jellyfish monitoring",
+        "input": "media-source/editorial/ai-jellyfish-native-20260929.png",
+        "inputStatus": "Native original accepted; one corrected Seedance2.0 job currently submitted, no further automatic retry",
+        "seconds": 4,
+        "promptRecord": "media-source/editorial/ai-jellyfish-seedance20-retry-receipt-20260929.json",
+        "evidence": [
+          59
+        ],
+        "group": "pilot",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-modelling",
+        "sequence": 1,
+        "scene": "Coastal numerical grid and flow concept",
+        "input": "proposed: coastal-model-grid-native.png",
+        "inputStatus": "New unique native original; existing estuary-modelling.png is nature-only, unsuitable as the final analytic model scene",
+        "seconds": 4,
+        "evidence": [
+          15,
+          46,
+          65
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-satellite",
+        "sequence": 1,
+        "scene": "Satellite-derived water-quality analysis concept",
+        "input": "proposed: satellite-waterquality-native.png",
+        "inputStatus": "New native original; do not animate satellite-remote-sensing-v2.png because it is a Codex-generated spacecraft/beam scene rather than a water-quality data image",
+        "seconds": 4,
+        "evidence": [
+          56
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-spatial",
+        "sequence": 1,
+        "scene": "Realistic shore surveying equipment and terrain",
+        "input": "proposed: survey-instruments-native.png",
+        "inputStatus": "New native original; avoid inherited UAV scene's repeated groyne geometry and share no hero shot",
+        "seconds": 4,
+        "evidence": [
+          64,
+          47
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-observation",
+        "sequence": 1,
+        "scene": "CTD field observation with broad water context",
+        "input": "media-source/editorial/marine-observation.png",
+        "inputStatus": "Visually reviewed; inherited native provenance to verify before upload; reserve solely here and replace its hero duplicate",
+        "seconds": 4,
+        "evidence": [
+          63,
+          57
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-environment",
+        "sequence": 1,
+        "scene": "Temperate benthic ecology survey",
+        "input": "proposed: temperate-ecology-native.png",
+        "inputStatus": "New native original required; ecology-survey-wide.png is Codex image_gen and also appears in company section; no new video from it",
+        "seconds": 4,
+        "evidence": [
+          84,
+          51
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-hazards",
+        "sequence": 1,
+        "scene": "Fixed coastal camera shoreline analysis",
+        "input": "media-source/editorial/coastal-monitoring-native-20260929.png",
+        "inputStatus": "Native original accepted; coastal hazard intro only",
+        "seconds": 4,
+        "evidence": [
+          53,
+          54,
+          58
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "expertise-systems",
+        "sequence": 1,
+        "scene": "Field sensor and data-acquisition equipment",
+        "input": "proposed: sensor-data-system-native.png",
+        "inputStatus": "New native original required; practical instrument enclosure and laptop-like display with all intended visual elements generated at source, no invented performance or actual product claims",
+        "seconds": 4,
+        "evidence": [
+          58,
+          63,
+          56
+        ],
+        "group": "C",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "geosr-wave-bridge",
+        "sequence": 1,
+        "scene": "Rocky coast and natural surf",
+        "input": "proposed: wave-rock-coast-native.png",
+        "inputStatus": "New native original required; existing wave-coastline is documented Codex image_gen",
+        "seconds": 4,
+        "evidence": [
+          15,
+          53
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      },
+      {
+        "slot": "geosr-wave-bridge",
+        "sequence": 2,
+        "scene": "Open sea and long swell",
+        "input": "proposed: wave-open-water-native.png",
+        "inputStatus": "New native original required; existing wave-open-sea is documented Codex image_gen; keep independent of main hero",
+        "seconds": 4,
+        "evidence": [
+          15
+        ],
+        "group": "A",
+        "status": "Previous four-second plan superseded. No automatic submission. Main scene actions now defined in dynamicMainStoryboard."
+      }
+    ],
+    "browserBlocker": {
+      "state": "Fresh subagent CUA inventory remains empty apps/browsers. Parent connected browser requested for local original upload only.",
+      "scope": "Generation remains MCP; no paid image generation or duplicate browser submission."
+    },
+    "nativeAGroupPacket": {
+      "status": "SUPERSEDED: use eightDomainMediaRoles and subjectLedMainStoryboard. Prior scenic opening and4-shot plan are withdrawn.",
+      "sharedLook": "Three main shots: broad coast / broad CTD field observation / connected river-estuary-sea numerical-model concept. Consistent blue-grey morning tone. Not a nature-only sequence. Six candidate images are not six mandatory videos.",
+      "creationRoute": "Parent browser UI while subagent CUA is disconnected; subagent full-resolution QA/exports/receipts",
+      "costBasis": {
+        "status": "Prior four-second quote superseded. Use dynamicMainStoryboard cost and final per-input preflight. No paid submission."
+      },
+      "candidates": [
+        {
+          "key": "hero-coastal-native-20260929",
+          "slot": "geosr-hero / opening",
+          "priority": 2,
+          "evidence": [
+            47,
+            53,
+            64
+          ],
+          "composition": "Wide coast establishes company scope. Open sea on left 40%; land on right. Same blue-grey morning tone as next two shots.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary photography, restrained blue-grey water and green terrain, clean morning daylight, realistic scale and coherent geography. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. Wide elevated oblique aerial of a temperate Korean coastline: deep blue open sea fills the left half, a continuous gently curving sandy shore leads toward a low forested headland on the right, small inland fields and a modest distant low-rise town remain entirely on dry land. Several natural coves, clear believable water depth gradient, no tropical colors. Keep the upper-left sea spacious and calm for an overlaid website heading. Roads follow the land naturally. No harbour, breakwaters, causeways, offshore roads, bridges, artificial islands, boats, people or analytical graphics. Broad geographic perspective, substantial natural detail and atmospheric depth, no excessive fog.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA."
+        },
+        {
+          "key": "hero-ctd-native-20260929",
+          "slot": "geosr-hero / second",
+          "priority": 3,
+          "evidence": [
+            48,
+            65
+          ],
+          "composition": "Wide sea and coast remain dominant; full modest research vessel sits in lower-right, readable CTD deployment at stern. Represents observation without vessel close-up.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary colors, restrained blue-grey water and green terrain, clear morning daylight, coherent geography and engineering, realistic scale. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. A broad oblique aerial documentary view of environmental monitoring at sea near a distant low forested Korean coastline. Open water fills most of the image and stays spacious across the left half for a website heading. In the lower-right, show the ENTIRE modest approximately 22-metre coastal research vessel at plausible scale, occupying about one third of the image width, with a conventional hull, practical working deck, small forward cabin and a mechanically correct stern A-frame crane. A straight taut hoist cable runs from the crane's top sheave to the central lifting bail of one realistic compact CTD water-sampling rosette just beyond the stern, held vertically a few centimetres above the water. The rosette has a circular metal frame with twelve slender vertical Niskin sampling bottles secured around its perimeter and compact sensors below; it is about 1.2 metres wide, not an enormous object. Two small crew members on the safe deck area wear orange life jackets, white safety helmets and navy work clothes; faces not visible, bodies clear of the suspended load. Cable, crane, rosette, water and vessel must connect physically and convincingly. Calm modest swell, slight working-vessel wake only. No ship close-up, giant industrial ship, disconnected cables, duplicate cranes, floating equipment, extravagant harbour, text, analysis graphics or extra vessels.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA.",
+          "technicalShapeReferences": [
+            {
+              "url": "https://www.seabird.com/products/sbe-32-carousel-water-sampler",
+              "use": "Manufacturer confirms12-bottle compact and full-size rosette arrangements; shape reference only, no exact-product identity claim."
+            },
+            {
+              "url": "https://www.seabird.com/hubfs/Product%20Assets/SBE%2032/Datasheets/datasheet-32-Jul16.pdf?hsLang=en",
+              "use": "12-bottle full-size example about0.991m diameter, supports approximately1m compact cage scale."
+            },
+            {
+              "url": "https://www2.whoi.edu/site/beaufortgyre/expeditions/2020-expedition/2020-dispatches/dispatch-3-dear-ol-rosie-rosette-and-test-cast/",
+              "use": "A-frame block and winch deployment mechanics reference."
+            }
+          ],
+          "companyEvidenceDetail": "docs/company-audit/brochure-review.md page9 explicitly records CTD rosette water sampling; presentation-direction.md observation/equipment context. Generated scene does not claim to show the company own vessel."
+        },
+        {
+          "key": "hero-watermodel-native-20260929",
+          "slot": "geosr-hero / third",
+          "priority": 4,
+          "evidence": [
+            15,
+            46,
+            56,
+            65
+          ],
+          "composition": "Broad connected catchment leads from river upper-right through estuary to sea lower-left. Technical mesh and flow only on water; terrain stays photographic. Distinct oblique connected-domain composition.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary colors, restrained blue-grey water and green terrain, clear morning daylight, coherent geography and engineering, realistic scale. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. A broad elevated OBLIQUE view of a coherent temperate Korean river-to-estuary-to-coastal-bay system, showing a long river entering from the upper-right between low wooded hills and cultivated floodplain, gradually widening through one natural estuary into the open sea at the lower-left. Realistic continuous banks, plausible river width changes, low-rise settlement entirely on dry ground, no artificial dam or harbour. Present a restrained water-environment numerical-modelling concept: ONLY the connected river, estuary and coastal WATER surface carries a fine fitted triangular computational mesh, finer near bends and shoreline and coarser offshore. Every mesh cell must stay inside wet areas and conform to the banks; no lines on land. Beneath this mesh, a subtle transparent blue-to-teal transport plume starts inside the river, passes through the estuary and spreads gradually into the nearshore sea, respecting the channel and coast. A few small thin white flow-direction arrows lie on the water surface, point coherently downstream toward the sea, and then gently along the adjacent coast. All native mesh, plume and arrows share the water perspective and remain integrated with the photographic scene. Land, roads and hills retain their realistic textures. This is a qualitative explanatory concept with no real calculation, numerical scale or measured forecast. No text, legend, values, floating HUD, satellite, constellation, globe, neon beams, elevated grid plane or duplicated terrain. Keep left-side open water visually calm enough for a short website heading. Generate all analytical graphics directly inside the original image.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA."
+        },
+        {
+          "key": "wave-rocky-native-20260929",
+          "slot": "geosr-wave-bridge / first",
+          "priority": 5,
+          "evidence": [
+            53,
+            54,
+            55
+          ],
+          "composition": "Transition clip: rocky headland on left, broad sea on right; normal moderate swell, no disaster scene.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary photography, restrained blue-grey water and green terrain, clean morning daylight, realistic scale and coherent geography. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. A wide elevated coastal view of a low dark granite headland occupying the lower-left quarter, with a little temperate coastal pine vegetation farther inland. Deep navy-blue sea occupies the remaining frame and leads toward a clean distant horizon. Two or three natural parallel moderate swell fronts approach the rocky shore and form physically plausible white foam only where water meets the rocks. Detailed wet stone texture and restrained silver morning highlights. Broad flowing wave composition suitable as a calm transition in a research company site. No buildings, breakwaters, ships, roads, people, storm, giant surf, tropical reef, analytical graphics or text.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA."
+        },
+        {
+          "key": "wave-open-native-20260929",
+          "slot": "geosr-wave-bridge / second",
+          "priority": 6,
+          "evidence": [
+            55,
+            65
+          ],
+          "composition": "Continue outward from rocky shore to open water; clean horizon near top fifth and continuous normal swells.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary photography, restrained blue-grey water and green terrain, clean morning daylight, realistic scale and coherent geography. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. A broad low aerial documentary view across open temperate sea, with the horizon near the upper fifth and a faint naturally hazy distant coastline on the far right only. Coherent moderate navy-blue swells and small wind ripples cross the frame, with sparse realistic pale foam crests, natural subtle sunlight reflections, and no giant waves. Plenty of uninterrupted ocean scale and depth. Match calm morning blue-grey color and photographic realism, showing a different view from a rocky coast. No foreground land, structures, vessels, buoys, people, storms, dramatic sunset, overlays or analytical graphics.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA."
+        },
+        {
+          "key": "ax-catchment-native-20260929",
+          "slot": "ax-concept-film / MAIN AX only",
+          "priority": 7,
+          "evidence": [
+            15,
+            46,
+            56,
+            65
+          ],
+          "composition": "Distinct from top-down detailed AX estuary. One coherent oblique catchment surface, centre/right land partly rendered as restrained analysis mesh, open water left.",
+          "imagePrompt": "Create one original high-quality photorealistic 16:9 editorial image using native ChatGPT image generation only, at the highest available downloadable original resolution. This is an invented representative Korean environmental-research scene, not a named real site or company project. Natural documentary photography, restrained blue-grey water and green terrain, clean morning daylight, realistic scale and coherent geography. No written text, logos, fabricated readings, numbers or performance claims. Do not use an external app. A premium restrained geographic analysis concept based on a plausible connected Korean river catchment and low wooded hills, viewed from a broad oblique aerial perspective. A wide calm blue-grey water body occupies the left third; a single coherent terrain surface occupies the centre and right. Natural detailed photographic land on the centre-left gradually transitions into the SAME aligned terrain rendered as a fine matte light-grey triangular surface mesh on the far-right third. The mesh lies precisely on the hills and valleys, sharing their perspective and elevations, with no floating plane, duplicated landscape, exploded layers or invented roads. The transition is subtle and analytical; water remains photographic. Preserve coherent connected riverbanks and ordinary terrain scale. No actual place identity, claims of real simulation, labels, values, charts, satellite, globe, constellations, neon beams, city skyscrapers, harbour or breakwaters. All terrain mesh graphics must be generated natively inside this original image.",
+          "motionStatus": "Old minimal-motion prompt withdrawn. Refer to dynamicMainStoryboard; image is reference keyframe only until action-readiness QA."
+        }
+      ]
+    },
+    "dynamicMainStoryboard": {
+      "version": "dynamic-main-26s-v1",
+      "status": "WITHDRAWN: scenic wave/CTD/model/platform draft omitted satellite and AI and overweighted water backgrounds. Do not generate.",
+      "directive": "Meaningful subject actions and changing analytical states drive each shot. Prior minimal-motion/locked-camera video prompts are withdrawn. Static imagery remains a reference keyframe, not automatic video-ready input.",
+      "totalDurationSeconds": 26,
+      "clipCount": 4,
+      "model": {
+        "model": "seedance_2_0",
+        "mode": "std",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard",
+        "count": 1,
+        "use_unlim": false
+      },
+      "cost": {
+        "quoteSource": "Live Higgsfield estimate_video_cost; no media supplied yet and no job submitted",
+        "sixSecondsExactCredits": 54,
+        "eightSecondsExactCredits": 72,
+        "sequence": [
+          54,
+          54,
+          72,
+          54
+        ],
+        "totalExactSettingsCredits": 234,
+        "latestBalance": 980.75,
+        "expectedBalanceIfAllFourApproved": 746.75,
+        "remainingPercentOfCurrent": 76.14,
+        "submissionGate": "Re-estimate canonical start/end-image inputs per clip after native-source QA. Submit only one approved pilot, review its full action before later clips. No automatic retry and no bulk paid queue."
+      },
+      "productionOrder": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "shots": [
+        {
+          "number": 1,
+          "title": "Coastal observation: wave approach, breaking and return flow",
+          "duration": 6,
+          "cost": 54,
+          "start0s": "A broad natural coastal image with two coherent incoming wave fronts, a clear shallow-water strip and dry beach/forested headland. The leading crest is visibly offshore, before breaking.",
+          "development": "0-2s the camera approaches the first crest while it advances shoreward. 2-4s it steepens and breaks sequentially along the shallows; foam reaches the beach. 4-6s whitewater spreads then starts drawing back while the following front approaches.",
+          "end": "Visible curved foam edge and returning water carry the eye toward open water on the right, ready for the field-measurement cut.",
+          "camera": "A short, controlled low-oblique aerial track diagonally parallel to the crest, descending slightly. The moving wave remains the subject; camera travel reveals shallow depth and the breaking sequence.",
+          "scientificConstraints": [
+            "Wave propagation, shoaling, break and backwash have coherent directions.",
+            "Water never floods abruptly across high dry terrain; headland and coastline remain fixed.",
+            "No claims of real location, measured wave height or actual event."
+          ],
+          "transitions": "Opening from the website title. End on the foam pattern; a short dissolve or direct visual match cut connects to foam beside the survey vessel. No overlays added in edit.",
+          "sourceGate": "Current wide coast is only a reference until a distinct incoming crest, unbroken start state and adequate shallow-water detail are visible. If it is uniformly calm, create a native motion-ready version.",
+          "videoPrompt": "Animate the supplied natural coast through one clear six-second observation event. At the start the leading swell is offshore and unbroken. During seconds 0-2 it advances into the shallows. During seconds 2-4 the crest steepens and breaks progressively along the shoreline. During seconds 4-6 the whitewater spreads across the wet beach and begins a coherent gentle return flow as a following wave approaches. Track diagonally along the leading crest with a controlled short aerial move and slight descent so the physical sequence reads clearly. Keep coastline, headland, town scale and all dry terrain unchanged. Realistic moderate waves, water volume, foam and depth; no giant storm wave, arbitrary flooding, structures, text or graphic additions. One continuous shot, silent."
+        },
+        {
+          "number": 2,
+          "title": "Field measurement: CTD rosette enters the water",
+          "duration": 6,
+          "cost": 54,
+          "start0s": "Entire research vessel remains within a broad coastal seascape. CTD rosette hangs vertically 0.8-1m above the water, immediately outside stern; tensioned cable reaches central lifting bail. Two PPE crew stand clear on deck.",
+          "development": "0-1s winch tension is established and the cage steadies. 1-4s cable pays out continuously and the intact rosette lowers through the surface; a modest splash and circular ripples form around the cage. 4-6s the top ring sinks just under the surface while the cable continues into water; bubbles and wake fade.",
+          "end": "Water surface closes above the cage, with cable still vertical and connected. The viewer has seen a complete sampling-deployment event.",
+          "camera": "Begin as a broad oblique view of entire vessel; short smooth arc toward the stern at a respectful distance makes the line-to-cage connection and water entry readable. The vessel remains a working platform in the wider environment.",
+          "scientificConstraints": [
+            "Exactly one connected taut cable and one intact compact rosette; cage stays rigid and vertical.",
+            "A-frame supports the cable at its sheave; no floating/disconnected hoist or disappearing load before submergence.",
+            "Human scale, twelve-bottle circular arrangement and vessel geometry remain plausible.",
+            "Crew stay outside the suspended-load path wearing helmets/life jackets; no frantic unsafe reaching.",
+            "Cable length increases smoothly; surface splash is commensurate with the cage."
+          ],
+          "transitions": "Foam match from shot1; hard cut after water entry to the same blue-grey field becoming the model input view, or a short 0.25s dissolve. No simulated measurement numbers added.",
+          "sourceGate": "The prior few-centimetres-above-water prompt is not sufficient for a readable six-second lowering event. Native start frame should place the rosette about 0.8-1m above water, show full suspension chain and leave water visible below it. Consider one native end frame with cage submerged and cable retained to constrain final state.",
+          "videoPrompt": "Create one continuous six-second CTD deployment event from the supplied image. At second 0 one intact compact rosette hangs vertically about one metre above water outside the stern, suspended from a straight taut cable connected to its central lifting bail through the A-frame sheave. Over seconds 0-1 the cage steadies. Over seconds 1-4 the winch smoothly pays out cable and lowers the same rigid rosette through the water surface. The cage makes a proportionate brief splash and expanding ripples, then keeps descending vertically. Over seconds 4-6 its top ring passes just under the surface; water closes above it, small bubbles disperse, and the still-connected cable extends into the water. Make a short smooth oblique camera arc toward the stern so the connected equipment and complete water-entry action remain readable while the entire research vessel and broad setting stay in frame. Preserve vessel, A-frame, bottle arrangement, crew count, safe positions and fitted life jackets/helmets. No morphing cage, duplicate cables, floating gear, jumping vessel, unsafe crew gestures, graphics or text. Silent."
+        },
+        {
+          "number": 3,
+          "title": "Model time evolution: river pulse enters estuary and disperses alongshore",
+          "duration": 8,
+          "cost": 72,
+          "start0s": "Coherent oblique river-catchment-to-sea domain. A fixed fitted computational mesh lies only on water. A narrow transparent blue-teal qualitative tracer pulse is confined to the upstream/river reach at the start; coastal water is initially low-contrast.",
+          "development": "0-2s the pulse advances down the river bends while spreading slightly across the channel. 2-5s the leading plume reaches the wider estuary and fans outward without crossing the banks. 5-8s its front bends along the adjacent nearshore current and becomes broader and less intense as it disperses; fixed-land geometry and computational mesh remain constant.",
+          "end": "A clear difference from the first state: broader, diluted nearshore plume and a continuous transport path from river to coast.",
+          "camera": "Begin high enough to understand the connected domain, then make a controlled shallow lateral glide following the pulse from the river mouth toward the coast. Camera movement supports the evolving process; it is not the content itself.",
+          "scientificConstraints": [
+            "This is an illustrative accelerated model sequence, not literal eight-second real-world transport or an actual simulation output.",
+            "Tracer stays in the connected wet domain, spreads/dilutes downstream and never teleports or crosses dry land.",
+            "Mesh remains fitted and stationary on the same water domain; no lines crawl onto land.",
+            "Native flow arrows update coherently with the river-to-mouth-to-alongshore direction; no contradictory motions or invented numbers."
+          ],
+          "transitions": "Blue-water match from CTD event, then end on the model's nearshore state and cut to an aligned analysis view that shows how the result becomes a selected information layer.",
+          "sourceGate": "Current image is only a middle-state reference if plume already fills the estuary. Request native first/last state pair on the SAME geography: initial river pulse versus dispersed coastal state. Both images include all intended mesh/graphics natively.",
+          "videoPrompt": "Create an eight-second illustrative accelerated water-model time sequence, using the supplied connected river-estuary-coastal domain. At the start a narrow transparent blue-teal tracer pulse is confined to the river reach, with the sea at low tracer intensity. During seconds 0-2 the pulse advects downstream through the river bends and spreads modestly within the channel. During seconds 2-5 its leading front reaches the estuary and fans into wider water. During seconds 5-8 it curves coherently along the adjacent nearshore flow, becomes broader and less intense, and visibly disperses. This is accelerated conceptual model time, not literal real-time physical transport. Preserve the same dry terrain, riverbanks, shoreline and computational mesh. Every plume pixel, mesh cell and native flow arrow stays within the connected wet domain. The mesh remains stationary; existing arrows change only consistently with the transport path. A restrained oblique lateral camera glide follows the evolving plume from mouth toward coast while keeping the domain legible. The changing plume is the central action. No teleporting tracer, land spill, new mesh, labels, numerical legends, extra graphics, fake live-data UI, cuts or sound."
+        },
+        {
+          "number": 4,
+          "title": "Analysis use: observation layer, model layer and review extent",
+          "duration": 6,
+          "cost": 54,
+          "start0s": "An aligned broad geographic-analysis concept using the same catchment orientation, beginning with the photographic observation/base layer. It is a clean generated concept, not a reproduction of actual AX software.",
+          "development": "0-2s the observed/base imagery is spatially aligned and a defined water-area data layer is revealed. 2-4s the temporal model state from shot3 replaces that layer while terrain remains registered. 4-6s a restrained semi-transparent review extent appears only over the relevant nearshore water region, reducing emphasis on unrelated surroundings so the viewer understands how the result identifies a focused area for review.",
+          "end": "The data stack resolves into one legible selected region and a coherent geographic context. Hold the final analytical state briefly before looping back to the broad real-world coast.",
+          "camera": "Start from a shallow oblique analytical view, ease to a slightly more overhead perspective as layers change. Land geometry remains registered. No floating dashboards, spacecraft, neon or arbitrary orbit.",
+          "scientificConstraints": [
+            "Every layer must use exactly the same coastline, map registration and perspective.",
+            "Layer changes represent different information roles, not unlabeled random colors blinking.",
+            "The selected extent is a qualitative hypothetical review region, not a claimed legal boundary, measured risk or operational decision.",
+            "All analysis graphics/layer states are generated in the native video; no postproduction overlays.",
+            "Do not impersonate the actual AX product UI or invent operational metrics."
+          ],
+          "transitions": "Continue model geography from shot3 with a simple cut/dissolve. End frame returns toward a clean photographic coastal layer for a gentle loop into shot1. Only clip joins/transitions added in edit.",
+          "sourceGate": "Needs a NEW native start/end layer pair. Existing mainAX static half-mesh terrain is insufficient for the observation-to-model-to-review process. Preserve accepted detailAX source for its unique page and do not duplicate it here.",
+          "videoPrompt": "Create one continuous six-second geographic-analysis concept showing a meaningful data-layer workflow on the supplied single coherent river-to-coast geography. During seconds 0-2 show the photographic observation base and reveal its registered water-area information layer. During seconds 2-4 transition that layer into the same coherent blue-teal model transport field continuing from the preceding model scene, while all land and shoreline remain exactly registered. During seconds 4-6 reveal one restrained semi-transparent hypothetical review extent over the nearshore water actually reached by that field, and gently reduce emphasis on unrelated surroundings so the selected information becomes clear. The changes are deliberate map-layer selections, not random color flashes. Ease the camera slightly from oblique toward overhead as the data states change; keep the geography stable. Produce every layer and extent natively inside the video. This is a conceptual analysis workflow, not actual AX software or measured output. No numerical metrics, textual labels, counterfeit controls, floating HUDs, satellite, constellation, extra objects or sound. Hold the final useful analytical state briefly."
+        }
+      ],
+      "keyframeActions": "Current three native images are references only until checked against each start state. Do not submit minimal-motion prompts. For CTD, model and layer workflow, request native start/end images where needed; model catalog supports canonical start_image and end_image.",
+      "qaGate": "Inspect start/development/end and complete playback for the specified action, plus all frames near equipment water entry, wet/dry boundaries and layer transition. Reject a clip that only moves camera or particles, deforms engineering, breaks geographic registration or omits the planned state change. Do not repair internal graphics in post.",
+      "editorialRisk": "This draft may overemphasize water scenery and duplicate modelling/analysis while leaving AI, satellite and spatial survey unrepresented. Do not treat observation-measurement-analysis diagram as sufficient editorial concept.",
+      "productionOrderStatus": "Suspended until reference review; proposed CTD-first order not an authorization."
+    },
+    "eightDomainMediaRoles": [
+      {
+        "id": "ai",
+        "title": "인공지능",
+        "tech": [
+          59,
+          61
+        ],
+        "subject": "Fixed underwater-camera fish with native detection and silhouette segmentation",
+        "action": "Two fish swim in separated bands; boxes and masks track the corresponding subjects",
+        "result": "Every target stays linked to one box and one silhouette mask",
+        "frameShare": "Subject and annotations60%, underwater context40%; all targets and graphics complete within16:9, without a large heading void.",
+        "medium": "Current homepage jellyfish and business five-fish remain final stills. New main AI input would be a unique TWO-fish start/end pair, conditional on tracking QA.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Fixed temperate underwater camera over sand. Exactly two plausible silver-grey fish, complete bodies visible: A in upper-left-middle facing right; B in lower-centre-right facing left. Both have clear swimming room and stay far from frame edges. Each fish carries exactly one thin complete blue box with modest margin and one faint blue silhouette mask including fins and tail. No other animals. Fish and analyses are prominent, not tiny. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six seconds. Fish A swims rightward one body length in the upper band; fish B swims leftward one body length in the separate lower band, propelled by natural tail beats. Exactly two native boxes and two silhouette masks continuously follow their corresponding fish, including every fin and tail, in every frame including first and last. Keep all subjects in frame and camera fixed. No extra targets, detached/static annotations, text or audio.",
+        "guard": "New subject proposal only; no jellyfish retry, no postproduction graphics, no claim native tracking will succeed.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=59",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=61"
+        ],
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "model",
+        "title": "수치모델·예측",
+        "tech": [
+          15,
+          46,
+          52,
+          65
+        ],
+        "subject": "Continuous river-estuary-open-sea domain with natural marsh/sandbar geometry, fitted water-only mesh, coherent arrows and integrated teal field",
+        "action": "Existing field advects, broadens and disperses toward open sea with visibly changing extent and distribution",
+        "result": "A changing model-field distribution on unchanged geography",
+        "frameShare": "Entire connected terrain and water domain fits16:9; analytical field and mesh remain legible. No mandatory separate section panel.",
+        "medium": "Preserve browser-approved candidate9 for introduction; original download/pixel QA still pending. Proposed6s model evolution only after later source/cost approval.",
+        "imagePrompt": "Native ChatGPT original16:9 explanatory numerical-model scene, matching the selected reference direction: a continuous river from upper-right through a natural estuary with coherent marshes and sandbars to the sea on the left. Fine triangular cells near shore and coarser cells offshore are restricted to water. Restrained white flow arrows point consistently downstream and outward. A translucent teal dispersion field is integrated into the water surface. Preserve realistic connected terrain and make every water-domain element readable within the complete frame. No actual place identity, claimed calculation, numerical legend or extra section inset. All analysis graphics must be generated natively. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six-second accelerated explanatory model evolution from the supplied river-estuary-sea image. First the existing upstream teal field advects toward the mouth. Then its front widens and spreads from the estuary into open water. Finally the leading field extends farther toward the left-side sea, becoming broader and more diffuse so its extent and distribution clearly differ from the first frame. Keep terrain, marshes, sandbars, shoreline and water-only mesh fixed. Existing white arrows remain coherently downstream and seaward. Preserve connected water boundaries; no land spill, disconnected tracer, new panels, numbers or sound. Any restrained broad camera move only supports the evolving field; a camera-only result fails.",
+        "guard": "Browser-level concept acceptance only. Not local-original QA, actual calculation, real place or video acceptance.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=15",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=46",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=52",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=65"
+        ],
+        "imagePromptStatus": "Design brief only, not the exact generation transcript for candidate9. No regeneration requested; preserve existing candidate.",
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "satellite",
+        "title": "위성·원격탐사",
+        "tech": [
+          56
+        ],
+        "subject": "Satellite raster imagery and a registered environmental data field",
+        "action": "Registered tiles form mosaic; water-quality information resolves over valid water pixels",
+        "result": "Large-area observation becomes an aligned environmental product",
+        "frameShare": "Data image80%, matching spectral inset10%, margin10%",
+        "medium": "New native satellite-data start/end pair and six-second processing transition. No spacecraft or aircraft hero.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Crisp orthographic satellite-data scene of a plausible temperate Korean coast, inland river, fields and hills. Large observation extent and authentic raster texture, not a perspective drone view. FIRST state: two adjacent true-colour tiles already have exactly matching coastlines and roads, with a subtle visible join. A small greyscale spectral inset depicts the SAME area. A faint incipient blue-teal water layer lies only inside valid water; a small cloud area stays visibly unclassified. No spacecraft, scan beam or coordinates. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six seconds. Two already registered satellite tiles settle into a seamless mosaic without changing land or coast. Then a restrained blue-teal environmental layer resolves across valid river/coastal-water pixels, precisely aligned to shore; cloud/no-data areas stay unclassified. Preserve the corresponding spectral inset. The changing data product is the subject, not zooming scenery. No beams, new geography, numbers or audio.",
+        "guard": "Generic aerial scenery does not represent satellite processing. No claim of a measured variable, acquisition date or actual place.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=56"
+        ],
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "spatial",
+        "title": "공간정보·측량",
+        "tech": [
+          64,
+          47,
+          62
+        ],
+        "subject": "One concrete coastal bluff/road object in matched photogrammetry, point-cloud and terrain representations",
+        "action": "Point cloud densifies on fixed geometry; a continuous surface resolves from it",
+        "result": "Legible shape/elevation product suitable for mapping and spatial review",
+        "frameShare": "Main: broad connected terrain and region dominate, ending wider. Field detail: a concrete surveyed object plus aligned panels may be closer.",
+        "medium": "Unique native still or optional six-second point-cloud processing clip; original DEM/GIS figures retained.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A surveyed temperate coastal bluff, one ordinary road and modest dry-land structures form a large coherent central terrain object. One side is a complete sparse natural-colour point cloud registered exactly to each feature; the other is a matte terrain surface of that same object. Two small aligned panels show its orthophoto and elevation rendering. Plausible continuous geometry, clean neutral scientific presentation. No floating land slab, spacecraft, laser beam or arbitrary cliff wall. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six seconds. The registered natural-colour point cloud gains density on unchanged terrain. Then a connected clean terrain surface resolves from those same points while the matching ortho/elevation panels remain registered. A shallow lateral camera move reveals relief. No terrain morphing, invented buildings, scan beams, numbers or audio.",
+        "guard": "Do not substitute satellite water-quality imagery; point cloud, orthophoto and terrain must correspond.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=64",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=47",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=62"
+        ],
+        "mainVariant": {
+          "order": 5,
+          "seconds": 6,
+          "role": "spatial",
+          "title": "공간정보 구축",
+          "start": "A broad real-looking coastal and inland terrain view with coherent roads, bluff, low structures and a wide water boundary; a sparse registered point cloud is ready to resolve on the same visible surface.",
+          "development": "0-2s the fixed real-world features become represented by a denser registered natural-colour point cloud; 2-4s that point cloud resolves into a continuous corresponding surface; 4-6s the camera rises and pulls back to reveal the broader connected land-and-water extent.",
+          "end": "A wide geographic closing view: the constructed surface remains visibly tied to real terrain, roads and coastline, with a readable regional extent rather than a desk or isolated floating model.",
+          "transition": "Cut from the model-domain scene to a real terrain view with compatible shoreline orientation. Finish wide and use a simple cut or short dissolve back to the opening regional satellite scene.",
+          "input": "New unique native start/end pair required. The final wide view must depict the same terrain and features, not invented geometry beyond an unrelated starting image.",
+          "cameraPath": "Begin at a broad oblique survey view, hold enough registration to read point-cloud-to-surface construction, then smoothly ascend and pull back to a wider regional framing. Reconstruction is the action; camera widening supplies the ending scale.",
+          "scientificConstraints": [
+            "Natural terrain, roads, roofs and coastline stay in identical coordinates across photographic, point-cloud and surface representations.",
+            "Point density and surface continuity change; physical topography and building shapes do not morph.",
+            "A surface model may follow visible roofs and vegetation; do not claim validated bare-earth DEM or survey accuracy.",
+            "No floating terrain slabs, undersea cliff walls, scan beams or particles unrelated to actual surface points.",
+            "All point-cloud and surface graphics originate inside the generated image/video."
+          ],
+          "imagePrompt": "Create a high-quality original16:9 using native ChatGPT image generation. A broad oblique view of a plausible temperate Korean coast extending inland through a low wooded bluff, a modest road and ordinary low-rise structures. Sea, continuous shoreline and inland extent stay connected in one real-looking landscape. This is the FIRST construction state: most terrain is photographic, with a restrained sparse natural-colour point cloud precisely registered on one central bluff/road area. All points describe actual visible surface features, not decoration. Leave enough broad surrounding land and water for a later wider closing view. No isolated model plinth, floating land slab, scan beam, invented numbers, logos or purported measured result. Generate all analytical graphics natively. Fictional explanatory survey concept; highest available original download.",
+          "videoPrompt": "Six-second geospatial construction sequence on the supplied unchanged landscape. First, a registered natural-colour point cloud becomes denser over the same bluff, road and structures. Then those points resolve into a continuous corresponding surface without changing any terrain or building shape. During the final two seconds ascend and pull back smoothly, revealing a broader connected coastal-and-inland extent while the reconstructed area remains registered and readable. End on the expansive geographic view. The surface construction is the central action, not camera motion alone. No floating terrain, arbitrary particles, scan beams, new buildings, invented values, text or audio."
+        },
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "observation",
+        "title": "관측·조사",
+        "tech": [
+          63,
+          57
+        ],
+        "extraEvidence": "Brochure PDF9 CTD rosette; equipment/observation-system records",
+        "subject": "The CTD sampler, its connected hoist and actual water entry",
+        "action": "Winch lowers cage; cage enters water and produces proportionate splash/ripples",
+        "result": "Completed water-column instrument deployment",
+        "frameShare": "Main: complete working vessel approximately right third with broad sea/coast context; CTD load path must remain readable. Close device emphasis is reserved for a separate detailed field image.",
+        "medium": "Motion-ready native medium-wide field input and six-second action; inland USV/acoustic sections get separate detail media.",
+        "imagePrompt": "Native ChatGPT original16:9 documentary wide coastal research scene. Keep entire modest research vessel in right third with broad water and distant low Korean coast. One plausible stern A-frame and taut cable connect to the central lifting bail of a compact12-bottle CTD rosette. The entire cage is clear above water with its lower ring just above the surface, ready for complete vertical lowering. Exactly2rear-facing crew in helmets and life jackets remain clear of the load. Preserve realistic boat, cage and cable scale. All intended analysis panels, if any, must be generated natively and must not obscure the load path. No fictional measured values, logos or company ownership claim. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six-second broad field-operation shot. One connected winch cable pays out smoothly, lowering the same rigid CTD rosette vertically from entirely above water. The cage progressively crosses the surface, creates a proportionate brief splash and outward ripples, then its top ring submerges while the connected cable remains visible. A short broad oblique arc keeps the entire vessel and water context in view. Preserve geometry, scale and2safe PPEcrew. No disconnected cables, duplicate gear, unsafe gestures, text or audio.",
+        "guard": "CTD is one6s main cut only. The sampling event must be legible without narrowing the whole main film to equipment. Candidate8 remains reference-only until original download and QA.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=63",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=57"
+        ],
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "environment",
+        "title": "환경분석·생태",
+        "tech": [
+          48,
+          84,
+          50,
+          51
+        ],
+        "subject": "Saltmarsh survey quadrat and intact sediment core, with separate lab evidence",
+        "action": "Physical sampling preserves layers; specimen detail connects sediment/roots to investigation",
+        "result": "A concrete environmental/ecological sample in field context",
+        "frameShare": "Core/quadrat/substrate60%, field context30%, specimen inset10%",
+        "medium": "Unique final still preferred; optional sampling clip only from a physically suitable starting state. Accepted lab remains equipment intro.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Documentary temperate Korean saltmarsh field scene. A survey quadrat rests naturally over low salt-tolerant plants and wet sediment beside one freshly recovered transparent sediment core held upright in a proper simple support. Core preserves plausible horizontal mud layers and fine roots. Sample and quadrat are large clear subjects, tidal-flat context behind. One small native inset magnifies the SAME core layers. No tropical reef, decorative forest, rainbow strata or laboratory people. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Optional six-second clip only with an extraction-ready native start image: gloved field hands withdraw one intact vertical sediment core smoothly from wet ground, then support it upright without mixing its strata. A little exterior water drains naturally; quadrat and surrounding plants stay stable. Native sample inset retains the same layer order. No duplicated hands, manufactured layers, labels or audio.",
+        "guard": "Do not animate a completed core as if still buried. A strong still is valid; no mandatory video quantity.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=48",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=84",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=50",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=51"
+        ],
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "hazards",
+        "title": "연안재해·방재",
+        "tech": [
+          53,
+          54,
+          55,
+          58
+        ],
+        "subject": "Fixed beach-camera image and its directly matching shoreline/width analysis",
+        "action": "Moving swash becomes time-averaged band; shoreline contour resolves along it",
+        "result": "Coastal target and derived monitoring result are visibly linked",
+        "frameShare": "Coast/settled context65%, matching analysis panel25%, margin10%",
+        "medium": "Accepted coastal-monitoring still remains unique hazard intro; optional native processing clip, no wave-only substitute.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. Fixed coastal monitoring-camera view of a natural continuous Korean sandy beach and low settled terrain behind. Ordinary waves reach the wet beach. One clean inset uses EXACTLY the same perspective as a time-averaged image, with smooth bright swash band. A restrained blue shoreline contour follows that band and a narrow corresponding beach-width region links to the inland beach edge. No invented breakwater, false inundation, top-down map substitution, dates or measured widths. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six-second processing concept. Natural waves approach and recede in the main view. Their swash traces accumulate into a smooth time-averaged band in the matching native inset; then the shoreline contour and corresponding beach-width region resolve along the band. All camera geometry and features remain registered. This is analysis, not instantaneous erosion. No structures, disaster escalation, numerical claims or audio.",
+        "guard": "Storm-wave spectacle does not explain the method. Perspective camera and map geometry cannot be conflated.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=53",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=54",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=55",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=58"
+        ],
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      },
+      {
+        "id": "systems",
+        "title": "데이터·시스템",
+        "tech": [
+          60,
+          47,
+          62
+        ],
+        "extraEvidence": "Brochure PDF20 integrated water management/digital twin and actual platform materials",
+        "subject": "Physical environmental analysis workstation, logger and a large purposeful map display",
+        "action": "Observation layer switches to registered model result; relevant review extent becomes focused",
+        "result": "Data support a specific spatial review task",
+        "frameShare": "Readable display60%, physical logger15%, workstation context25%",
+        "medium": "New native concept input/6s clip; actual AX gallery/screens preserved as separate product evidence.",
+        "imagePrompt": "Native ChatGPT image creation only. High-quality original16:9 at maximum downloadable resolution. All panels and graphics generated inside the original. Realistic restrained materials and light. No logo, fabricated readings, scores, dates or numerical legends. Fictional editorial method concept, not an actual observation, company site, computation or product screen. A precise realistic environmental analysis workstation. Large professional display viewed obliquely but clearly, compact rugged field logger with plausible connected leads beside it. Display shows one coherent river/coast base with two small restrained native panels for observed water coverage and model transport. FIRST state: observation layer selected, model and hypothetical nearshore review region subdued. No person necessary. Screen/bezel/desk/connectors look physical; display60% of frame, logger15%. No fake live timestamps, random charts or purported actual product branding. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+        "videoPrompt": "Six seconds. On the physical display, select the model-result layer in place of the observation layer while retaining identical geography. Then focus one hypothetical nearshore review extent reached by the model field and its matching detail panel, reducing unrelated layers. A short natural camera slide reveals monitor and connected logger. Every screen transition is natively generated and purposeful, not random blinking. No invented metrics, fake branding, new panels or audio.",
+        "guard": "Generated panels explain concepts only and must not impersonate an actual AX product screen. Detailed product evidence comes from actual provided AX material.",
+        "sourceDocuments": [
+          "docs/company-audit/technology-analysis.md",
+          "docs/company-audit/presentation-direction.md"
+        ],
+        "sourceUrls": [
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=60",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=47",
+          "https://www.geosr.com/sub/business/conserve_view.asp?idx=62"
+        ],
+        "placement": "Company introduction or data-and-systems area only; not main-film ending. One unique finished file per assigned slot.",
+        "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+      }
+    ],
+    "subjectLedMainStoryboard": {
+      "version": "subject-led-main-30s-v3-wide-ending",
+      "status": "PROPOSAL ONLY; ending revised to spatial construction and broad geography. No browser retry, new image-model call or paid submission by media agent.",
+      "thesis": "Regional satellite raster data / one6s connected field operation / organism analysis / intentional numerical-model CG / real terrain becoming point cloud and surface, ending at broad geographic scale. Main hero never closes on a desktop.",
+      "referencePrinciples": [
+        "Alternate real-looking work/action with clearly intentional scientific CG.",
+        "Each frame's large subject must identify what GeoSR does before reading the title.",
+        "Use small relevant native panels only when they show that subject's input, sensor, section or result.",
+        "Vary subject scale and environment across field, data, organisms, models, sample/lab and workspace."
+      ],
+      "sequence": [
+        {
+          "order": 1,
+          "seconds": 6,
+          "role": "satellite",
+          "title": "대공간 관측",
+          "start": "Registered true-colour satellite tiles with subtle seam",
+          "development": "Tile mosaic settles, then valid-water environmental layer resolves",
+          "end": "One coherent regional environmental image",
+          "transition": "Blue-water match cut to physical field water",
+          "input": "New native satellite-data start/end pair; scenic coast candidate unsuitable",
+          "cameraPath": "Orthographic fixed data view preserves pixel registration; mosaic and environmental-layer changes provide the motion.",
+          "scientificConstraints": [
+            "Identical coastline and raster alignment across tiles and spectral inset.",
+            "Derived field only on valid water; cloud/no-data stays unclassified.",
+            "Illustrative environmental product, no acquisition or measurement claim."
+          ],
+          "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+        },
+        {
+          "order": 2,
+          "seconds": 6,
+          "role": "observation",
+          "title": "현장 취득",
+          "start": "Whole CTD cage visibly above water, lower ring just above the surface, with a taut connected cable and full vessel/context still visible.",
+          "development": "Winch pays out cable continuously; the complete rigid cage progressively enters water, produces proportionate ripples, and lowers until the top ring is submerged.",
+          "end": "Top ring submerges; connected cable and causal ripples visible",
+          "transition": "Cut from water entry to a fixed underwater camera without claiming same site",
+          "input": "media-source/editorial/hero-ctd-native-20260929.png (1672x941 original, SHA256 5a9d3d988c251bed47befdf91bc1c500d8c1e6fae80f93919e7ade966aa62f0b). Full-size source shows one connected crane cable and cage at surface; video end state and prompt still require review.",
+          "cameraPath": "A short broad oblique arc keeps the entire working vessel, load path and water context readable; do not finish in a device close-up. CTD is one6s field shot only.",
+          "scientificConstraints": [
+            "One rosette and taut connected hoist; cage rigid and vertical.",
+            "Cable pays out continuously; splash/ripples proportional to cage entry.",
+            "Crew remain clear with life jackets/helmets."
+          ],
+          "screenScale": "Whole working vessel around the right third of frame with wider geographic water/coast context. Verify the sampling operation remains legible; never enlarge it into the whole film subject.",
+          "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+        },
+        {
+          "order": 3,
+          "seconds": 6,
+          "role": "ai",
+          "title": "AI 분석",
+          "start": "Two separated fish with complete boxes and silhouette masks",
+          "development": "Fish swim one body length in separate bands; annotations follow",
+          "end": "Different fish positions with all corresponding annotations still aligned",
+          "transition": "Clear cut from organism analysis to intentional numerical-model CG",
+          "input": "New unique TWO-fish pair; business five-fish and homepage jellyfish stay unchanged",
+          "cameraPath": "Fixed underwater camera is method-appropriate; fish travel and native annotation tracking provide the action.",
+          "scientificConstraints": [
+            "Exactly2fish,2boxes,2masks in all frames.",
+            "No target crossing, shape distortion or frame exit.",
+            "No static or detached annotations; reject rather than repair."
+          ],
+          "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+        },
+        {
+          "order": 4,
+          "seconds": 6,
+          "role": "model",
+          "title": "수치예측",
+          "start": "Use the candidate's existing river-estuary-sea mesh, arrows and teal field as the initial distribution, without substituting a different map or adding a section panel.",
+          "development": "0-2s the existing upstream portion advects toward the estuary;2-4s the mouth/front widens into the open-water domain;4-6s the leading field extends farther toward the left-side sea and becomes broader and more diffuse. The spatial extent and concentration distribution change visibly.",
+          "end": "A visibly larger and differently distributed coastal/offshore field compared with the first frame, while every shore, sandbar, marsh and mesh location remains fixed.",
+          "transition": "Cut from intentional model CG to a compatible real-terrain view; spatial point-cloud/surface construction closes the film at broad scale.",
+          "input": "media-source/editorial/hero-watermodel-native-20260929.png (1672x941 original, SHA256 a093efc7db8f4dd7f1722ff0014e8a673d4bbe798f77bda9a519830690551f5e). Full-size source reviewed as an illustrative connected river-estuary-sea model; changing-field start/end and paid-input checks remain unfinished.",
+          "cameraPath": "A restrained broad oblique move may support spatial reading, but the entire connected river-estuary-sea domain remains inside frame. Camera motion alone does not satisfy the shot.",
+          "scientificConstraints": [
+            "Mesh remains confined to water and unchanged in position; shore-fine/offshore-coarse structure is preserved.",
+            "White arrows stay coherently oriented from upstream through the estuary toward open sea.",
+            "Teal field changes smoothly by transport and dispersion within connected wet areas; it never crosses dry land, teleports or appears as disconnected patches.",
+            "This is an accelerated explanatory sequence, not actual calculated output or literal6-second real transport.",
+            "No new section panels, numbers, labels or postproduction graphical additions."
+          ],
+          "imagePrompt": "Native ChatGPT original16:9 explanatory numerical-model scene, matching the selected reference direction: a continuous river from upper-right through a natural estuary with coherent marshes and sandbars to the sea on the left. Fine triangular cells near shore and coarser cells offshore are restricted to water. Restrained white flow arrows point consistently downstream and outward. A translucent teal dispersion field is integrated into the water surface. Preserve realistic connected terrain and make every water-domain element readable within the complete frame. No actual place identity, claimed calculation, numerical legend or extra section inset. All analysis graphics must be generated natively. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+          "videoPrompt": "Six-second accelerated explanatory model evolution from the supplied river-estuary-sea image. First the existing upstream teal field advects toward the mouth. Then its front widens and spreads from the estuary into open water. Finally the leading field extends farther toward the left-side sea, becoming broader and more diffuse so its extent and distribution clearly differ from the first frame. Keep terrain, marshes, sandbars, shoreline and water-only mesh fixed. Existing white arrows remain coherently downstream and seaward. Preserve connected water boundaries; no land spill, disconnected tracer, new panels, numbers or sound. Any restrained broad camera move only supports the evolving field; a camera-only result fails. Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+          "imagePromptStatus": "Reference design brief only; no regeneration or original-transfer retry requested.",
+          "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+        },
+        {
+          "order": 5,
+          "seconds": 6,
+          "role": "spatial",
+          "title": "공간정보 구축",
+          "start": "A broad real-looking coastal and inland terrain view with coherent roads, bluff, low structures and a wide water boundary; a sparse registered point cloud is ready to resolve on the same visible surface.",
+          "development": "0-2s the fixed real-world features become represented by a denser registered natural-colour point cloud; 2-4s that point cloud resolves into a continuous corresponding surface; 4-6s the camera rises and pulls back to reveal the broader connected land-and-water extent.",
+          "end": "A wide geographic closing view: the constructed surface remains visibly tied to real terrain, roads and coastline, with a readable regional extent rather than a desk or isolated floating model.",
+          "transition": "Cut from the model-domain scene to a real terrain view with compatible shoreline orientation. Finish wide and use a simple cut or short dissolve back to the opening regional satellite scene.",
+          "input": "New unique native start/end pair required. The final wide view must depict the same terrain and features, not invented geometry beyond an unrelated starting image.",
+          "cameraPath": "Begin at a broad oblique survey view, hold enough registration to read point-cloud-to-surface construction, then smoothly ascend and pull back to a wider regional framing. Reconstruction is the action; camera widening supplies the ending scale.",
+          "scientificConstraints": [
+            "Natural terrain, roads, roofs and coastline stay in identical coordinates across photographic, point-cloud and surface representations.",
+            "Point density and surface continuity change; physical topography and building shapes do not morph.",
+            "A surface model may follow visible roofs and vegetation; do not claim validated bare-earth DEM or survey accuracy.",
+            "No floating terrain slabs, undersea cliff walls, scan beams or particles unrelated to actual surface points.",
+            "All point-cloud and surface graphics originate inside the generated image/video."
+          ],
+          "imagePrompt": "Create a high-quality original16:9 using native ChatGPT image generation. A broad oblique view of a plausible temperate Korean coast extending inland through a low wooded bluff, a modest road and ordinary low-rise structures. Sea, continuous shoreline and inland extent stay connected in one real-looking landscape. This is the FIRST construction state: most terrain is photographic, with a restrained sparse natural-colour point cloud precisely registered on one central bluff/road area. All points describe actual visible surface features, not decoration. Leave enough broad surrounding land and water for a later wider closing view. No isolated model plinth, floating land slab, scan beam, invented numbers, logos or purported measured result. Generate all analytical graphics natively. Fictional explanatory survey concept; highest available original download.",
+          "videoPrompt": "Six-second geospatial construction sequence on the supplied unchanged landscape. First, a registered natural-colour point cloud becomes denser over the same bluff, road and structures. Then those points resolve into a continuous corresponding surface without changing any terrain or building shape. During the final two seconds ascend and pull back smoothly, revealing a broader connected coastal-and-inland extent while the reconstructed area remains registered and readable. End on the expansive geographic view. The surface construction is the central action, not camera motion alone. No floating terrain, arbitrary particles, scan beams, new buildings, invented values, text or audio.",
+          "compositionRule": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading."
+        }
+      ],
+      "totalSeconds": 30,
+      "cost": {
+        "model": "seedance_2_0",
+        "mode": "std",
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard",
+        "count": 1,
+        "lastVerifiedSixSecondCredits": 54,
+        "proposedFiveClipCredits": 270,
+        "lastVerifiedBalance": 926.75,
+        "estimatedBalanceAfterAllFive": 656.75,
+        "approval": "NONE. Confirm subjects and source states, then per-input exact quote and one approved job; no batch."
+      },
+      "sourceReadiness": "Fixed satellite start/end originals and one generated technical clip are preserved but not main-opening-ready. CTD candidate8 and numerical-model candidate9 original PNGs are locally preserved and visually reviewed at full size. Neither CTD nor model video start/end motion pair has been approved. A new dynamic coastal opening original is being generated.",
+      "eightDomainCoverage": "Main samples satellite, observation, AI, numerical modelling and spatial survey. Environment/ecology, coastal hazards and data/systems get distinct field sections. Workstation concept is relocated to company/systems, not the main ending.",
+      "noReuse": "Business fish, homepage jellyfish, equipment laboratory and detail AX estuary stay in existing unique slots; main-film inputs remain unique.",
+      "trackingBoundary": "New two-fish shot is only a proposal, not an approved jellyfish retry. Native tracking must pass every frame; no overlays, hidden static boxes or automatic paid repeats.",
+      "qaGate": "Approve subject and start/end states before expense. Full playback must show the stated causal action, preserve physical/data registration and contain no unexplained geometry change. Joins/transitions are the only postproduction additions.",
+      "coverageAudit": {
+        "sourceTechnologies": [
+          15,
+          46,
+          47,
+          48,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          84
+        ],
+        "mappedUniqueTechnologies": 21,
+        "missing": [],
+        "note": "All21original technologies represented across8domains, with cross-links allowed. Main film is a deliberate sample, not a compressed list of21."
+      },
+      "scaleConstraint": "Main opening and ending preserve broad connected geography. CTD appears for one6s cut; do not magnify this method into a company-wide visual identity."
+    },
+    "relocatedConcepts": [
+      {
+        "from": "Main-film ending",
+        "to": "Company introduction or data-and-systems area; assign one unique slot per finished asset",
+        "concept": {
+          "order": 5,
+          "seconds": 6,
+          "role": "systems",
+          "title": "분석 활용",
+          "start": "Observation layer on large display beside physical logger",
+          "development": "Model layer selected; relevant review region/detail focused",
+          "end": "Specific analysis task and its hardware context are legible",
+          "transition": "Short dissolve or clean cut back to regional imagery",
+          "input": "New native workstation pair; do not impersonate actual AX product",
+          "cameraPath": "Short natural camera slide reveals physical monitor and connected logger; deliberate data-layer selections carry the action.",
+          "scientificConstraints": [
+            "All selected layers and review region share same geography.",
+            "Review extent is hypothetical and corresponds to model field.",
+            "Generated screen is not actual AX operation or measured performance."
+          ]
+        },
+        "status": "Relocated proposal only; no generated asset or paid approval",
+        "reason": "A physical desktop workstation narrows the main ending; broad geographic scale takes priority in main hero."
+      }
+    ],
+    "pendingNativeCandidates": [
+      {
+        "candidateNumber": 7,
+        "subject": "New natural-coast image",
+        "status": "excluded-main-opening",
+        "reason": "Visually pleasant but no explicit research subject/action; not selected for main hero.",
+        "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+        "localOriginal": null
+      },
+      {
+        "candidateNumber": 8,
+        "subject": "Wide research-vessel CTD operation",
+        "status": "local-original-downloaded-and-full-size-reviewed; video-pair-unapproved",
+        "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+        "reportedDimensions": [
+          1672,
+          941
+        ],
+        "reportedBy": "root",
+        "parentObservation": "Entire vessel occupies roughly right third; plausible A-frame, taut cable,12sampling bottles,2PPEcrew and rosette just above water.",
+        "localOriginal": "media-source/editorial/hero-ctd-native-20260929.png",
+        "localSha256": "5a9d3d988c251bed47befdf91bc1c500d8c1e6fae80f93919e7ade966aa62f0b",
+        "sourceBytes": 2475367,
+        "downloadStatus": "Native ChatGPT viewer original Download succeeded on 2026-09-29; byte-identical PNG copied to media-source.",
+        "acceptanceBoundary": "Full-size source shows one connected hoist cable, plausible CTD rosette and two PPE crew. It is a fictional field-observation concept; no approved video end frame or paid submission yet.",
+        "preserveCandidate": true,
+        "originalDownloadStatus": "Complete; local original available."
+      },
+      {
+        "candidateNumber": 9,
+        "subject": "Water-environment model",
+        "status": "local-original-downloaded-and-full-size-reviewed; video-pair-unapproved",
+        "sourceConversation": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+        "localOriginal": "media-source/editorial/hero-watermodel-native-20260929.png",
+        "creationBatch": 3,
+        "batchImageOrder": 3,
+        "originalCandidateNumber": 9,
+        "currentViewerLabel": "Generated image7",
+        "reportedBy": "root",
+        "parentObservation": "Expanded browser review: continuous upper-right river to estuary to left-side sea, natural-looking marsh and sandbar geometry; triangular mesh restricted to water, visibly finer near shore and coarser offshore; white flow arrows consistently point from upstream through mouth toward open sea; translucent teal dispersion field is integrated with the water domain.",
+        "browserDecision": "Pass as explanatory numerical-model introduction candidate, not a named real place or actual calculation result.",
+        "localSha256": "a093efc7db8f4dd7f1722ff0014e8a673d4bbe798f77bda9a519830690551f5e",
+        "sourceBytes": 2674123,
+        "webExport": null,
+        "originalDownloadStatus": "Complete; native ChatGPT viewer original Download succeeded, byte-identical PNG copied to media-source.",
+        "pixelReviewStatus": "Full-size 1672x941 source reviewed. Connected river, estuary and sea, mesh and arrows stay predominantly on water. The existing plume already extends into the open sea, so it is likely a mid-state; a suitable earlier start and later end frame must be designed.",
+        "videoInputStatus": "Not accepted for submission until an evolving-field start/end pair and exact final-input quote are reviewed.",
+        "preserveCandidate": true
+      }
+    ],
+    "workingAuthority": {
+      "currentDocuments": [
+        "docs/redesign-next/02-MEDIA-DIRECTION.md",
+        "docs/redesign-next/CURRENT-DIRECTION.md"
+      ],
+      "latestParentDirection": "Prioritize a dynamic first-screen opening with credible viewpoint travel and scale change, then field/AI/model follow-on scenes. Preserve fixed satellite clip for technical insert only. Before another 54-credit video job, report the complete cut, source pair, exact prompt and live final-input quote.",
+      "browserActionByMediaAgent": "Native ChatGPT source creation and visual review authorized after root completed a temporary IAB pause.",
+      "paidSubmission": "No additional paid submission until new opening source pair and quote are reported to parent."
+    },
+    "fullFrameComposition": "Compose every essential subject, instrument connection, geographic domain and analytical panel completely inside a16:9 frame with modest safe margins. The business layout puts its description beside the full media; do not reserve a large empty area for baked-in headings or crop panels at image edges. No text needs to be embedded for the website heading.",
+    "activeSingleVideo": {
+      "id": "hero-estuary-model-seedance20-20260929",
+      "slot": "main-reel-estuary-model-unique-shot",
+      "source": "media-source/editorial/hero-estuary-model-start-native-20260929.png",
+      "status": "completed-rejected-static-field",
+      "receipt": "media-source/editorial/hero-estuary-model-seedance20-receipt-20260929.json",
+      "jobId": "1ed7775c-dd67-41ef-97e4-1ea18c8688a6",
+      "chargedCredits": 54,
+      "balanceAfter": 602.75,
+      "siteUse": false
+    },
+    "currentUniqueMedia": {
+      "satelliteReplacementStill": "media-source/editorial/satellite-optical-native-20260929-receipt.json",
+      "seismicTechnology57Plan": "media-source/editorial/technology57-seismic-concept-plan-20260929.json",
+      "modelAttempt": "media-source/editorial/hero-estuary-model-seedance20-receipt-20260929.json",
+      "fishCorrectedStill": "media-source/editorial/ai-fish-corrected-native-20260929-receipt.json",
+      "seismicTechnology57Receipt": "media-source/editorial/technology57-seismic-curtain-native-20260929-receipt.json"
+    }
+  },
+  "records": [
+    {
+      "id": "ai-jellyfish-native-20260929",
+      "source": "media-source/editorial/ai-jellyfish-native-20260929.png",
+      "web": "dist/assets/editorial/ai-jellyfish-native-20260929.webp",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 1721793,
+      "webBytes": 133952,
+      "sha256": "d748b6ba5cc2239c8413a1245098dbb623e455cc4f23c756f19afc4415f49eb4",
+      "webSha256": "e1ae8a62682635eac01cad267234ab95ea5247bfdd019f548e641858e60c1c89",
+      "downloadMethod": "ChatGPT image viewer Download button; actual PNG saved to Downloads; same original also saved by locator.downloadMedia. Browser download event timed out despite successful file save",
+      "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오전 11_02_38.png",
+      "intendedUniqueSlot": "AI overview introduction; not broad corporate hero",
+      "companyEvidence": [
+        "docs/company-audit/technology-analysis.md: technology 59",
+        "https://www.geosr.com/sub/business/conserve_view.asp?idx=59"
+      ],
+      "promptSummary": "Photorealistic fixed underwater monitoring camera in temperate Korean waters; exactly four anatomically plausible moon jellyfish; each has one tight thin blue bounding box and one faint blue silhouette-aligned instance mask; no additional animals, text, accuracy figures, UI, logos or equipment",
+      "qa": {
+        "reviewedAtOriginalSize": true,
+        "decision": "accepted-editorial-concept-still",
+        "review": "Four distinct moon-jellyfish forms with disk-shaped bells, visible four-lobed gonads and short oral arms. All four boxes enclose the corresponding organism. Blue contours and translucent masks follow all four silhouettes. No unboxed organisms or empty-water boxes. Natural underwater background. Parent independently inspected the original",
+        "limitations": "Generated editorial concept; no biological measurement or real computer-vision performance claim. Fine translucent tentacles are an artistic approximation"
+      },
+      "altKo": "해파리 네 개체에 탐지 박스와 분할 마스크를 함께 표시한 수중 영상 분석 콘셉트",
+      "altEn": "AI analysis concept showing four jellyfish with aligned detection boxes and segmentation contours in an underwater camera view",
+      "mediaStatus": "still-ready; two Seedance2.0 videos rejected (first missing boxes, corrected retry static-box tracking mismatch); no final video",
+      "video": {
+        "plannedModel": "seedance_2_5",
+        "plannedDurationSeconds": 4,
+        "plannedResolution": "480p",
+        "draft": true,
+        "generateAudio": false,
+        "count": 1,
+        "estimateCreditsExact": 12,
+        "estimateWasSubmitted": true,
+        "balanceBefore": 1064.75,
+        "jobId": "9d51a712-bc39-4031-9842-5ddedeebb0fa",
+        "status": "completed-unused-user-model-change; local-video-removed-after-cleanup-authorization",
+        "cleanupReceipt": "media-source/editorial/ai-jellyfish-cleanup-receipt-20260929.json",
+        "method": "Higgsfield MCP generate_video; local original uploaded through authorized web UI",
+        "sourceMediaId": "ca12fd56-aa22-4752-8307-aa68f71a1276",
+        "projectId": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+        "balanceAfter": 1052.75,
+        "observedCreditDelta": 12,
+        "source": "media-source/editorial/ai-jellyfish-seedance25-draft-20260929.mp4",
+        "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_021127_9d51a712-bc39-4031-9842-5ddedeebb0fa.mp4",
+        "sha256": "f22b92b792a045a129c368a084fcfb5cc3166d20694c932e55bb76592492115e",
+        "final1080p": false,
+        "concept": "Locked underwater camera; four jellyfish pulse and drift very slightly; boxes and masks remain aligned; no zoom, pan, added creatures or camera movement",
+        "uploadConsent": "User explicitly approved Terms and automated content review at action time; accepted before upload",
+        "disposition": "Already completed when latest user instruction changed to Seedance 2.0. No cancellation available for completed job. No finalization or additional Seedance 2.5 job submitted. Not released to website.",
+        "replacementEstimate": {
+          "model": "seedance_2_0",
+          "mode": "std",
+          "duration": 4,
+          "resolution": "1080p",
+          "generate_audio": false,
+          "count": 1,
+          "credits_exact": 36,
+          "submitted": true,
+          "jobId": "399925f7-4256-4610-b9d8-7c88e7c58f5f",
+          "status": "completed-rejected-no-bounding-boxes; local-video-and-postproduction-temporaries-removed-after-cleanup-authorization",
+          "cleanupReceipt": "media-source/editorial/ai-jellyfish-cleanup-receipt-20260929.json",
+          "source": "media-source/editorial/ai-jellyfish-seedance20-1080p-20260929.mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationActual": 4.041667,
+          "fps": 24,
+          "frames": 97,
+          "sha256": "02fce69e4fe45d9e389ffe40437506ea82a1a1707b1d9b1a3805cf70dd4ca655",
+          "qa": "Four jellyfish and faint contour appearance maintained, but all four rectangular boxes removed from first frame. Rejected for AI introduction use. No web video export.",
+          "failureAudit": "media-source/editorial/ai-jellyfish-seedance20-failure-audit-20260929.json",
+          "postProduction": "A local 97-frame tracked annotation experiment was made under parent authorization, then halted before web export when user explicitly prohibited separate postproduction boxes. It must not be published.",
+          "balanceBefore": 1052.75,
+          "balanceAfterSubmission": 1016.75,
+          "observedCreditDelta": 36,
+          "note": "User model change to Seedance 2.0; parent approved direct 1080p 4 seconds 36 credits. Same vetted ChatGPT image as start_image. No additional 480p generation."
+        },
+        "correctedRetry": {
+          "jobId": "bc159dca-1ae7-4eb1-9ea6-66c428386796",
+          "model": "seedance_2_0",
+          "mode": "std",
+          "source": "media-source/editorial/ai-jellyfish-seedance20-native-r2-20260929.mp4",
+          "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JRJWth79cZgAU8A17jxmMPPiHN/hf_20260929_024020_bc159dca-1ae7-4eb1-9ea6-66c428386796.mp4",
+          "width": 1920,
+          "height": 1080,
+          "fps": 24,
+          "frames": 97,
+          "duration": 4.041667,
+          "audioStreams": 0,
+          "bytes": 2577116,
+          "sha256": "a45d1087fb1060a464c498bd2e4eaeab44d224dfb0c01f335a2f0f19832a5b97",
+          "estimateCreditsExact": 36,
+          "balanceBefore": 1016.75,
+          "balanceAfter": 980.75,
+          "status": "completed-rejected-tracking-mismatch",
+          "webExport": null,
+          "sourceInputUnchanged": true,
+          "internalGraphicsMethod": "Entirely generated by Seedance2.0; no postproduction overlay",
+          "receipt": "media-source/editorial/ai-jellyfish-seedance20-retry-receipt-20260929.json",
+          "qa": {
+            "decision": "rejected",
+            "firstFrame": "All four boxes and silhouette contours present and aligned.",
+            "midFrame": "At 2s the central jellyfish bell crosses its left and right box edges; upper-right subject grazes its box edge.",
+            "lastFrame": "At 4s portions of all four bodies protrude outside their corresponding boxes. Central box is visibly static while body widens.",
+            "targetCount": 4,
+            "boxCount": 4,
+            "failure": "Box presence solved, dynamic box-object containment not solved. Input role contract supported; model tracking fidelity is now the limiting factor.",
+            "reviewScope": "Full-resolution frames0,48,96 and 16-point motion contact sheet. These already conclusively fail the required all-frame alignment condition; no full-playback acceptance claimed."
+          },
+          "automaticRetryAllowed": false,
+          "alternativeReview": [
+            "Keep accepted native still for AI and actual source59/61 for business evidence while retaining the no-overlays rule.",
+            "Prioritize a low-risk broad landscape I2V pilot before committing the rest of the paid film plan. Requires parent direction because current pilot failed.",
+            "If a later AI-specific generation is authorized, first create a native source with generous box margins and smaller body deformation; or depict an intentionally paused annotated analysis frame in a physical research setting. Neither is a guaranteed tracking fix. Do not automatically retry."
+          ],
+          "sourceStatus": "deleted after conclusive failure QA; URL/hash and receipt retained",
+          "cleanupReceipt": "media-source/editorial/ai-jellyfish-r2-cleanup-receipt-20260929.json"
+        }
+      }
+    },
+    {
+      "id": "coastal-monitoring-native-20260929",
+      "source": "media-source/editorial/coastal-monitoring-native-20260929.png",
+      "web": "dist/assets/editorial/coastal-monitoring-native-20260929.webp",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2483379,
+      "webBytes": 438512,
+      "sha256": "0554d53a0830a93886380253b310bf4a42f77fea0798734635dc6b0bba0f1c62",
+      "webSha256": "09ca8b957915cb1df581a05d5e87ce36887cef8fa5604553fcb53fcb4a0825f0",
+      "downloadMethod": "ChatGPT image viewer Download button; full original PNG saved locally",
+      "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오전 11_08_52.png",
+      "intendedUniqueSlot": "Coastal hazards overview replacement",
+      "companyEvidence": [
+        "docs/company-audit/technology-analysis.md: technologies 53, 54, 58",
+        "https://www.geosr.com/sub/business/conserve_view.asp?idx=58"
+      ],
+      "promptSummary": "Wide fixed coastal-camera view of plausible Korean east-coast beach with natural waves and low-rise town behind continuous sandy shore; road entirely inland; no breakwater, pier, bridge or artificial islands; one shoreline-analysis line follows water-sand boundary",
+      "qa": {
+        "reviewedAtOriginalSize": true,
+        "decision": "accepted-editorial-concept-still",
+        "review": "Continuous gently curving sandy coastline with natural surf, coherent land-water relationship, plausible low-rise town and road on dry land. No impossible breakwaters or offshore structures. Thin blue boundary line tracks the swash edge. All perspective scales plausible at original resolution.",
+        "limitations": "Generated site and illustrative boundary, not actual CCTV observation, surveyed shoreline, flood scenario or validated hazard map"
+      },
+      "altKo": "자연 해안선의 변화 관측을 설명하는 고정카메라 연안 모니터링 콘셉트",
+      "altEn": "Coastal monitoring concept with a broad view of a sandy beach and coastal town and an illustrative shoreline boundary",
+      "mediaStatus": "final-still-ready",
+      "video": null
+    },
+    {
+      "id": "environmental-lab-native-20260929",
+      "source": "media-source/editorial/environmental-lab-native-20260929.png",
+      "web": "dist/assets/editorial/environmental-lab-native-20260929.webp",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 1777498,
+      "webBytes": 180390,
+      "sha256": "e8d8fc6de16ffa3ad3f22a0f787de364250b02f2f5f61b5eb0aa92dc0ce0c4b3",
+      "webSha256": "bc10b9bd8451a8f31d632a7e93e7a43aa0edffa12a9c5c22d49e496713fb394f",
+      "downloadMethod": "ChatGPT image viewer Download button; full original PNG saved locally",
+      "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오전 11_16_33.png",
+      "intendedUniqueSlot": "One laboratory or research introduction only; parent to choose company, research or equipment location without repeating",
+      "companyEvidence": [
+        "docs/company-audit/technology-analysis.md: technologies 48 and 84; environmental-analysis work",
+        "https://www.geosr.com/sub/business/conserve_view.asp?idx=48"
+      ],
+      "promptSummary": "Photorealistic contemporary Korean environmental laboratory: coherent binocular stereomicroscope, wet sediment dishes and sorting forceps, water sample bottles, three pipettes and compact benchtop spectrophotometer; no people, branding, performance charts or readable text",
+      "qa": {
+        "reviewedAtOriginalSize": true,
+        "decision": "accepted-editorial-concept-still",
+        "review": "Two coherent eyepieces, plausible stereomicroscope optical head, vertical stand and stage; separate sediment dishes, realistic bottles, volumetric glassware, pipettes and laboratory benches. No merged specimens, impossible tube paths, fake operational display or malformed people. Left side offers calm space for restrained heading.",
+        "limitations": "Generated representative laboratory, not actual GeoSR premises or evidence of particular owned instrument models. Use original technical sources for specific equipment claims."
+      },
+      "altKo": "수질과 퇴적물 시료 분석에 사용되는 환경 연구실 장비 콘셉트",
+      "altEn": "Environmental laboratory concept with a stereomicroscope, sediment dishes and water samples",
+      "mediaStatus": "final-still-ready",
+      "video": null
+    },
+    {
+      "id": "ax-estuary-analysis-native-20260929",
+      "source": "media-source/editorial/ax-estuary-analysis-native-20260929.png",
+      "web": "dist/assets/editorial/ax-estuary-analysis-native-20260929.webp",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3272845,
+      "webBytes": 736744,
+      "sha256": "d0ee88dfbeae6fcd2b1ac1b9ce911ca8fb3dc24f25a5c1a5d067fced3aa08ad5",
+      "webSha256": "3789f643be4caf366c5ef1865ce6a67ddf9166b0b8d290201a2744e4d0dee716",
+      "downloadMethod": "ChatGPT image viewer Download button; full original PNG saved locally",
+      "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오전 11_28_13.png",
+      "intendedUniqueSlot": "AX introduction only; do not repeat in satellite, modelling and company sections",
+      "companyEvidence": [
+        "docs/company-audit/technology-analysis.md: technology 56 satellite water quality; technologies 15, 46 and 65 numerical environmental modelling",
+        "docs/company-audit/presentation-direction.md: distinguish source observation, spatial processing and model applications"
+      ],
+      "promptSummary": "One top-down true-colour satellite-style invented Korean river-estuary catchment, plausible foothills and field parcels, low-rise settlement on land and connected road bridge; subtle cyan hydrodynamic mesh and smooth water-quality concentration field restricted to water. All internal analysis graphics generated natively with the image; no postproduction overlays.",
+      "qa": {
+        "reviewedAtOriginalSize": true,
+        "decision": "accepted-editorial-concept-still",
+        "review": "Continuous river to estuary and sea, geographically coherent agricultural and wooded land, modest settlement scale and connected roads. Water analysis mesh is visibly restricted to the river and bay; conceptual plume disperses from the river mouth. No impossible breakwaters, offshore roads, floating displays or logos. Native generated imagery is distinct from other three new slots.",
+        "limitations": "Invented geography and illustrative model mesh/concentration field. Not an actual satellite acquisition, study site, measurement, simulation output or GeoSR software screenshot. The mesh termination represents illustration composition, not a validated computational boundary."
+      },
+      "altKo": "하천과 하구 공간에 수환경 분석 레이어를 함께 보여주는 AX 플랫폼 콘셉트",
+      "altEn": "AX spatial-data concept combining an invented estuary with illustrative water-analysis layers",
+      "mediaStatus": "accepted-still; AX-detail video derivative rejected after semantic QA; keep still",
+      "video": {
+        "status": "rejected-after-frame-qa",
+        "receipt": "media-source/editorial/ax-estuary-seedance20-receipt-20260929.json",
+        "intendedUniqueSlot": "ax-platform-intro",
+        "paidSubmitted": true,
+        "jobId": "5880996e-6f0b-444b-8458-82112dd1dc3d",
+        "chargedCredits": 54,
+        "siteUse": false
+      }
+    },
+    {
+      "id": "ai-fish-native-20260929",
+      "sourceUrl": "https://chatgpt.com/c/6abb1735-33cc-83e9-be90-b98861543611",
+      "creationMethod": "Native ChatGPT WEB image generation; parent handled browser generation and original download while subagent CUA disconnected",
+      "model": "Native ChatGPT WEB image backend not disclosed in UI",
+      "intendedUniqueSlot": "Business AI introduction only; do not repeat the homepage jellyfish still or use as video input",
+      "companyEvidence": [
+        "GeoSR technology59: computer-vision marine-organism detection including fish, jellyfish and salps; https://www.geosr.com/sub/business/conserve_view.asp?idx=59",
+        "Retain original technical59 and61 evidence below the introduction; this still does not represent spatiotemporal prediction output"
+      ],
+      "prompt": "Create an original high-quality 16:9 photorealistic editorial image using native ChatGPT image generation only. A wide fixed underwater monitoring camera in a temperate Korean coastal environment, gently textured sandy seabed with a few natural dark rocks on the lower right, subtle blue-grey water and natural daylight. Exactly FIVE separate plausible silver-grey temperate coastal fish, each entirely visible and comfortably separated, distributed across the middle/right two thirds. Keep the upper-left third quiet open water for a website heading. Each fish has anatomically correct body, eyes, fins and tail with natural proportions. Exactly FIVE thin restrained blue closed rectangular detection boxes, one tight box around each whole fish including fins and tail. Exactly FIVE faint translucent blue instance segmentation masks, one mask accurately following each fish silhouette including fins/tail, allowing the fish texture to remain visible. Every depicted fish must have its own box AND mask. No unannotated background fish, jellyfish, people, tropical reef, extra targets, labels, text, metrics, scores, dimensions or logos. All analysis graphics must be generated as part of the original image. This is a fictional explanatory concept for marine organism detection, not an actual observation, company project or measured result. Broad documentary composition, realistic restrained colors, highest available original resolution. Produce the image directly, not through Higgsfield or an external app.",
+      "qa": {
+        "reviewedAtOriginalSize": true,
+        "decision": "accepted-editorial-concept-still",
+        "targetCount": 5,
+        "boxCount": 5,
+        "maskCount": 5,
+        "review": "Exactly five separated visible fish. Each complete body, fins and tail is contained by its own rectangular blue box; five faint silhouette masks match those same five subjects. No additional unannotated fish. Broad sandy temperate-water setting, restrained color, open left-side heading space and plausible separate body outlines. Generated lines originate in original PNG. No text, measured values, scores or logos.",
+        "limitations": "Illustrative mixed-fish concept, not a field camera record, species identification, verified marine assemblage or measured detection performance. Not a video or tracking acceptance."
+      },
+      "altKo": "수중 고정카메라의 어류 다섯 개체에 탐지 박스와 분할 마스크를 표시한 AI 분석 콘셉트",
+      "altEn": "Illustrative fixed-camera analysis of five fish with matching detection boxes and silhouette masks",
+      "mediaStatus": "final-still-ready",
+      "video": null,
+      "width": 1672,
+      "height": 941,
+      "source": "media-source/editorial/ai-fish-native-20260929.png",
+      "web": "dist/assets/editorial/ai-fish-native-20260929.webp",
+      "sourceBytes": 2272208,
+      "webBytes": 313086,
+      "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da",
+      "webSha256": "3a680dfbbf885ebe61c8f8dd415e65be2a4b88fbd74791e1cfb469b419170ec6",
+      "sourceFileName": "ChatGPT 이미지 2026년 9월 29일 오후 12_00_24.png",
+      "downloadMethod": "Parent clicked original Download in ChatGPT image viewer; same bytes also saved by downloadMedia",
+      "createdAt": "2026-09-29T12:03:05.269896+09:00",
+      "receipt": "media-source/editorial/ai-fish-native-20260929-receipt.json",
+      "downloadCleanup": {
+        "reason": "Accepted original preserved byte-for-byte in media-source before deleting duplicate downloads, per parent direction",
+        "files": [
+          {
+            "fileName": "ChatGPT 이미지 2026년 9월 29일 오후 12_00_24.png",
+            "bytes": 2272208,
+            "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da"
+          },
+          {
+            "fileName": "791d39b3-61d0-4be5-aa96-e2ce1de8a1c6.png",
+            "bytes": 2272208,
+            "sha256": "4dd97b35cda505af4e6428aabd08447ece93d88cc1cba5ea35636e2c18ad92da"
+          }
+        ],
+        "verified": true
+      }
+    }
+  ]
+}

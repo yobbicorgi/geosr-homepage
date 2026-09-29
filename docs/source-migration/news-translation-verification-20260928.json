@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-28T14:03:57.100124+00:00",
+  "expected": 384,
+  "translated": 384,
+  "koreanCharacters": 261745,
+  "englishCharacters": 694424,
+  "reviewStatusCounts": {
+    "machine_draft_structural_checks_passed": 276,
+    "source_checked_editorial_translation": 101,
+    "key_facts_and_targeted_terms_checked": 7
+  },
+  "sourceCheckedTitleCount": 22,
+  "institutionNameCheckedCount": 64,
+  "errors": [],
+  "scope": "Completeness and source-hash binding, original registration dates, explicit URLs/emails, year tokens and untranslated Hangul. Source hash is the preserved canonical original hash field rather than a new hash of normalized display text.",
+  "limits": "Structural success does not certify every sentence. Full direct editorial review covers source_checked_editorial_translation records. Other records retain the machine draft with targeted terminology/title corrections and structural checks. Numerical-token differences include English number words, month names and KRW unit conversions and remain diagnostic in the per-record review audit."
+}

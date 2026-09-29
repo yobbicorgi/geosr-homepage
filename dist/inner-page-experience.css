@@ -1,0 +1,231 @@
+/* A shared corporate page rhythm built with GeoSR content and original assets */
+.corporate-intro{--scene-progress:0;position:relative;height:114svh;background:#fff;color:#172d3c;isolation:isolate}
+.corporate-intro-sticky{position:sticky;top:var(--shell-header);height:calc(100svh - var(--shell-header));min-height:500px;overflow:hidden}
+body.inner-page .corporate-intro-heading{position:absolute;z-index:3;inset:0 0 auto;display:block;width:100%;height:auto;min-height:0;padding:clamp(38px,3.75vw,82px) 6.25vw 0;margin:0;border:0;background:none;color:#172d3c;pointer-events:none;transition:color .25s}
+body.inner-page .corporate-intro-heading>p{margin:0 0 1em;font-size:clamp(14px,.9vw,18px);line-height:1.4;font-weight:500;letter-spacing:-.025em;color:inherit}
+body.inner-page .corporate-intro-heading>h1{margin:0;font-size:clamp(38px,3.1vw,64px);line-height:1.24;font-weight:450;letter-spacing:-.045em;color:inherit;max-width:70%;word-break:keep-all;text-wrap:balance}
+.corporate-intro.is-immersed .corporate-intro-heading{color:#fff}
+.corporate-intro-visual{position:absolute;z-index:1;left:calc(6.25vw * (1 - var(--scene-progress)));right:calc(6.25vw * (1 - var(--scene-progress)));top:calc(max(23svh,320px) * (1 - var(--scene-progress)));bottom:calc(3svh * (1 - var(--scene-progress)));overflow:hidden;background:#102f43;will-change:inset}
+body.design-2026.inner-page .corporate-intro .corporate-intro-visual>:is(.company-overview-image,.ax-hero-stage,.inner-visual-stage){position:absolute;inset:0;margin:0;width:100%;height:100%;min-height:0;max-height:none;transform:none}
+body.inner-page .corporate-intro-visual img{object-fit:cover;object-position:center;width:100%;height:100%}
+.corporate-intro-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#051e32b8,transparent 78%),linear-gradient(0deg,#041a2c75,transparent 35%);opacity:var(--scene-progress)}
+body.inner-page .corporate-intro-visual :is(figcaption,.film-inline-toggle,.film-pending-badge){z-index:4}
+body.inner-page .corporate-intro-visual .film-pending-badge{inset:auto 6.5vw 7.5rem auto}
+body.inner-page .corporate-intro-visual .company-overview-image:after{z-index:1}
+body.inner-page .corporate-intro-visual .inner-visual-shade{background:linear-gradient(0deg,#061824a6,transparent 45%)}
+.corporate-intro-summary{display:grid;grid-template-columns:28% 1fr;gap:4vw;padding:clamp(48px,4vw,96px) 6.25vw;border-bottom:1px solid #dce3e8;background:#fff;color:#172d3c}
+body.inner-page .corporate-intro-summary>h2{margin:0;font-size:clamp(26px,1.875vw,42px);line-height:1.35;font-weight:550;letter-spacing:-.035em}
+body.inner-page .corporate-intro-summary p{margin:0;color:#576670;font-size:clamp(15px,.94vw,18px);line-height:1.75;font-weight:400;max-width:66ch}
+body.inner-page .corporate-intro-summary .ax-hero-link{color:#245675;border-color:#7394a8;margin-top:1.4em}
+@media(max-width:700px){
+ .corporate-intro{height:auto}
+ .corporate-intro-sticky{position:relative;top:auto;height:auto;min-height:0;padding-bottom:0}
+ body.inner-page .corporate-intro-heading{position:relative;padding:48px 6.5vw 42px;color:#172d3c!important}
+ body.inner-page .corporate-intro-heading>p{font-size:14px;margin-bottom:20px}
+ body.inner-page .corporate-intro-heading>h1{font-size:32px;line-height:1.38;max-width:100%;letter-spacing:-.045em}
+ .corporate-intro-visual{position:relative;inset:auto;margin:0;height:52svh;min-height:300px;max-height:540px;will-change:auto}
+ .corporate-intro-scrim{opacity:0}
+ .corporate-intro-summary{grid-template-columns:1fr;gap:22px;padding:42px 6.5vw}
+ body.inner-page .corporate-intro-summary>h2{font-size:24px}
+ body.inner-page .corporate-intro-summary p{font-size:16px}
+ body.inner-page .corporate-intro-visual .film-pending-badge{inset:auto 20px 76px auto}
+}
+@media(prefers-reduced-motion:reduce){
+ .corporate-intro{height:auto}
+ .corporate-intro-sticky{position:relative;top:auto;height:auto;min-height:0}
+ body.inner-page .corporate-intro-heading{position:relative;padding-bottom:5vw;transition:none}
+ .corporate-intro-visual{position:relative;inset:auto;height:60svh;min-height:300px;will-change:auto}
+ .corporate-intro-scrim{opacity:0}
+}
+@media(min-width:901px){
+ body.inner-page:is(.route-careers,.route-equipment) .corporate-intro{height:103svh}
+ body.inner-page.route-careers .company-information-page{padding-top:clamp(28px,2.5vw,54px)!important}
+ body.inner-page.route-equipment .source-archive{padding-top:clamp(30px,2.5vw,54px)}
+}
+body.inner-page .inner-visual-story{
+  position:relative;width:100vw;margin:clamp(22px,3vw,78px) 0 clamp(48px,6vw,144px) calc(50% - 50vw);padding:0;overflow:visible;background:#fff;color:#173246
+}
+body.inner-page .inner-visual-stage{
+  position:relative;width:auto;height:var(--inner-visual-height,58svh);min-height:300px;max-height:76svh;margin:0 var(--inner-visual-inset,6.5vw);overflow:hidden;background:#0c2a3a;color:#fff;isolation:isolate
+}
+.inner-visual-frame,.inner-visual-frame img{position:absolute;inset:0;width:100%;height:100%}
+.inner-visual-frame img{display:block;object-fit:cover;object-position:center;opacity:0;transform:scale(1.035);transition:opacity 900ms ease,transform 5s ease}
+.inner-visual-frame img.is-active{opacity:1;transform:scale(1)}
+.inner-visual-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#071c2acc 0%,#0a243b66 46%,#0a243b08 100%),linear-gradient(0deg,#061824a6 0%,transparent 42%);pointer-events:none}
+.inner-visual-overlay{position:absolute;z-index:2;left:clamp(24px,6.2vw,150px);bottom:clamp(76px,11vh,170px);display:grid;gap:.75rem;max-width:min(62vw,920px);opacity:var(--inner-visual-title-opacity,0);transform:translateY(var(--inner-visual-title-shift,12px));transition:opacity .2s linear,transform .2s linear;pointer-events:none}
+.inner-visual-overlay>span,.tech-feature-overlay>span{color:#d8e8f1;font-size:clamp(11px,.74vw,15px);font-weight:550;letter-spacing:.12em;text-transform:uppercase}
+.inner-visual-overlay>strong,.tech-feature-overlay>strong{color:#fff;font-size:clamp(30px,4vw,76px);line-height:1.16;font-weight:550;letter-spacing:-.055em;word-break:keep-all;text-wrap:balance;text-shadow:0 2px 24px #071c2a55}
+.inner-visual-caption{position:absolute;z-index:4;inset:auto clamp(20px,3vw,72px) clamp(18px,2.2vw,52px);display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;color:#fff}
+.inner-visual-caption-copy{display:grid;gap:.5rem;min-width:0}
+.inner-visual-caption-copy>span{font-size:clamp(15px,1.05vw,21px);line-height:1.4;font-weight:500;letter-spacing:-.02em}
+.inner-visual-caption-copy>small{color:#d5e1e8;font-size:10px;line-height:1.4;letter-spacing:.1em}
+.inner-visual-controls{display:flex;align-items:center;gap:clamp(9px,1vw,22px);flex-shrink:0}
+.inner-visual-controls button{display:grid;place-items:center;width:clamp(38px,2.55vw,54px);height:clamp(38px,2.55vw,54px);padding:0;border:1px solid #ffffff8a;border-radius:50%;background:#061f2c3b;color:#fff;font-size:18px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.inner-visual-controls button:hover{background:#fff2;border-color:#fff;transform:translateY(-2px)}
+.inner-visual-controls [data-inner-visual-count]{min-width:3.7rem;text-align:center;font-variant-numeric:tabular-nums;font-size:13px;font-weight:550;white-space:nowrap}
+.inner-visual-controls [data-inner-visual-count] i{font-style:normal;color:#ffffffa0;margin-left:.4em}
+.inner-visual-controls [data-inner-visual-toggle]{border-color:transparent;background:transparent}
+.inner-visual-controls :focus-visible{outline:2px solid #bde5ff;outline-offset:4px}
+
+/* Business index: page title, horizontal categories, wide media, then technical links */
+body.design-2026.route-business .business-atlas{background:#fff}
+body.design-2026.inner-page.route-business .business-atlas .capability-intro{display:block;padding:clamp(52px,4.166667vw,80px) 6.25vw 28px;margin:0;background:#fff}
+body.design-2026.inner-page.route-business .business-atlas .capability-intro>.eyebrow{display:none}
+body.design-2026.inner-page.route-business .business-atlas .capability-intro h1{font-size:clamp(36px,2.7vw,58px);font-weight:450;line-height:1.25;margin:0;letter-spacing:-.045em}
+body.design-2026.inner-page.route-business .business-atlas .capability-intro>p:last-child{max-width:54em;font-size:clamp(15px,.94vw,18px);line-height:1.7;margin:16px 0 0}
+body.design-2026.inner-page.route-business .business-atlas .capability-workspace{display:flex;flex-direction:column;gap:22px;padding:0 6.25vw 58px;background:#fff;color:#203d4e}
+body.design-2026.inner-page.route-business .business-atlas .capability-axis-rail{gap:28px;width:100%;border-bottom:1px solid #d5dde2;overflow-x:auto;scrollbar-width:none;justify-content:space-between}
+body.design-2026.inner-page.route-business .business-atlas .capability-axis{display:flex;flex:none;width:auto;min-width:0;min-height:56px;padding:12px 0;color:#83939c;border-color:transparent;white-space:nowrap}
+body.design-2026.inner-page.route-business .business-atlas .capability-axis-number{display:none}
+body.design-2026.inner-page.route-business .business-atlas .capability-axis-name{font-size:clamp(15px,.94vw,18px);font-weight:450}
+body.design-2026.inner-page.route-business .business-atlas .capability-axis[aria-selected=true]{color:#164e70;border-color:#164e70;box-shadow:inset 0 -1px #164e70}
+body.design-2026.inner-page.route-business .business-atlas .capability-selected-media{height:58svh;min-height:360px;max-height:860px;aspect-ratio:auto;align-self:stretch;background:#f5f7f8}
+body.design-2026.inner-page.route-business .business-atlas .capability-detail{display:grid;grid-template-columns:30% minmax(0,1fr);gap:18px 6%;align-items:start;padding:12px 0 0}
+body.design-2026.inner-page.route-business .business-atlas .capability-detail-number{display:none}
+body.design-2026.inner-page.route-business .business-atlas .capability-detail h2{grid-column:1;grid-row:1/3;color:#193f56;font-size:clamp(28px,1.875vw,40px);font-weight:450;line-height:1.35}
+body.design-2026.inner-page.route-business .business-atlas .capability-detail>p:not(.capability-source-note){grid-column:2;color:#617682;font-size:clamp(15px,.94vw,18px);max-width:58ch}
+body.design-2026.inner-page.route-business .business-atlas .capability-related-links{grid-column:2;margin:0;gap:0 32px}
+body.design-2026.inner-page.route-business .business-atlas .capability-related-links a{color:#254b64;border-color:#cbd7df;font-size:clamp(14px,.84vw,17px)}
+body.design-2026.inner-page.route-business .business-atlas .capability-source-note{display:none}
+body.route-business .business-visual-frame{background:#f3f6f7}
+body.route-business .business-visual-frame[data-slide-kind=record] img{background:#f3f6f7;padding:24px}
+body.route-business .business-visual-caption{background:#f1f5f7;color:#627d8e}
+body.route-business .business-visual-controls button{border-color:#a4bac8;background:transparent;color:#294e65}
+body.route-business .business-visual-controls>[data-gallery-count]{color:#637e8f}
+body.route-business .business-visual-frame .film-pending-badge{position:absolute;top:20px;right:20px;left:auto;bottom:auto}
+@media(max-width:700px){
+ body.design-2026.inner-page.route-business .business-atlas .capability-intro{padding:44px 6.25vw 26px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-intro h1{font-size:32px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-intro>p:last-child{font-size:15px;margin-top:18px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-workspace{gap:22px;padding-bottom:44px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-selected-media{height:42svh;min-height:260px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-detail{display:block}
+ body.design-2026.inner-page.route-business .business-atlas .capability-detail h2{font-size:26px;margin-bottom:18px}
+ body.design-2026.inner-page.route-business .business-atlas .capability-related-links{display:block;margin-top:22px}
+}
+
+/* Technical detail pages use a text-first lead and a wide scroll-expanding image. */
+body.inner-page.route-business .tech-story-top{width:calc(100% - 12vw);max-width:1600px;margin:0 auto;padding:2.4rem 0 0;color:#61798a;font-size:13px}
+body.inner-page.route-business .tech-story-header{display:block;margin:0;padding:clamp(42px,4vw,92px) 6vw 0;background:#fff;color:#173246}
+body.inner-page.route-business .tech-story-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);grid-template-rows:auto auto;align-items:end;gap:1.2rem 6vw;max-width:1600px;margin:0 auto;padding:0 0 clamp(32px,3vw,70px)}
+body.inner-page.route-business .tech-story-heading>.eyebrow{grid-column:1/-1;grid-row:1;margin:0}
+body.inner-page.route-business .tech-story-heading h1{grid-column:1;grid-row:2;align-self:center;margin:0}
+body.inner-page.route-business .tech-story-heading .tech-story-summary{grid-column:2;grid-row:2;margin:0}
+body.inner-page.route-business .tech-story-header .tech-story-jumps{grid-column:2;grid-row:3;margin-top:0}
+body.inner-page.route-business .tech-story-hero{position:relative;width:auto;max-width:none;height:var(--inner-visual-height,58svh);min-height:300px;max-height:76svh;margin:0 var(--inner-visual-inset,6.5vw);overflow:hidden;background:#0c2a3a;color:#fff;isolation:isolate}
+body.inner-page.route-business .tech-story-hero .tech-image-open{position:absolute;inset:0;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;text-align:left}
+body.inner-page.route-business .tech-story-hero .tech-image-open img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;transform:scale(1.025);transition:transform .8s ease}
+body.inner-page.route-business .tech-story-hero .tech-image-open:hover img{transform:scale(1.06)}
+body.inner-page.route-business .tech-story-hero .tech-image-open>span{position:absolute;right:20px;top:20px;display:grid;place-items:center;width:42px;height:42px;border:1px solid #fff8;border-radius:50%;background:#071c2a50;color:#fff;font-size:20px}
+.tech-feature-overlay{position:absolute;z-index:2;left:clamp(24px,6.2vw,150px);bottom:clamp(74px,10vh,150px);display:grid;gap:.7rem;max-width:min(62vw,900px);opacity:var(--inner-visual-title-opacity,0);transform:translateY(var(--inner-visual-title-shift,12px));transition:opacity .2s linear,transform .2s linear;pointer-events:none}
+body.inner-page.route-business .tech-story-hero figcaption{position:absolute;z-index:3;inset:auto clamp(20px,3vw,72px) clamp(18px,2.2vw,52px);display:flex;align-items:center;gap:12px;color:#fff;font-size:clamp(12px,.9vw,17px);text-shadow:0 1px 12px #061824}
+body.inner-page.route-business .tech-story-hero figcaption .tech-image-index{margin-right:.9em;color:#d1e2eb;font-variant-numeric:tabular-nums}
+body.inner-page.route-business .tech-concept-badge,body.inner-page.route-business .tech-source-badge{flex:none;padding:6px 8px;border:1px solid #d9edf56e;background:#081c2ac4;color:#eaf5fa;font-size:9px;line-height:1.2;font-weight:650;letter-spacing:.08em;text-shadow:none;backdrop-filter:blur(8px)}
+body.inner-page.route-business .tech-story-hero--record{background:#fff}
+body.inner-page.route-business .tech-story-hero--record .tech-image-open img{object-fit:contain;transform:none;background:#fff}
+body.inner-page.route-business .tech-story-hero--organism{width:min(87vw,128svh);height:auto;aspect-ratio:1672/941;min-height:0;max-height:72svh;margin-inline:auto}
+body.inner-page.route-business .tech-story-hero--organism .tech-image-open img{object-fit:contain;transform:none}
+body.inner-page.route-business .tech-story-hero .tech-motion-control{margin-left:1rem;padding:.5rem .75rem;border:1px solid #ffffff8a;background:#0b263a44;color:#fff}
+body.inner-page.route-business .tech-overview,body.inner-page.route-business .tech-capabilities,body.inner-page.route-business .tech-evidence{width:88%;max-width:1520px;margin:0 auto;padding:clamp(55px,6vw,132px) 0;scroll-margin-top:6rem}
+body.inner-page.route-business .tech-overview{border-bottom:1px solid #cbd7df}
+body.inner-page.route-business .tech-overview-copy{max-width:96ch;margin-left:8%;color:#3c5868;font-size:clamp(16px,1.05vw,21px);line-height:1.9;word-break:keep-all}
+body.inner-page.route-business .tech-overview-copy p{margin:0}
+body.inner-page.route-business .tech-capabilities{border-bottom:1px solid #cbd7df}
+
+/* Technical introductions keep their landscape composition on narrow screens */
+body.inner-page.route-business .tech-story-hero{margin:0;width:100%;max-width:none}
+body.inner-page.route-business .tech-story-hero--concept figcaption{display:none}
+body.inner-page.route-business .tech-story-hero>.film-video{z-index:1;object-fit:cover;background:#061b29}
+body.inner-page.route-business .tech-story-hero.film-loaded>.tech-image-open{visibility:hidden}
+body.inner-page.route-business .tech-story-hero.film-loaded>figcaption{visibility:hidden}
+@media(max-width:700px){body.inner-page.route-business .tech-story-hero>.film-video{object-fit:contain}}
+body.inner-page.route-business .tech-story-header{padding-bottom:0}
+body.inner-page.route-business .tech-story-top{width:87.5%;padding-top:26px}
+@media(max-width:700px){
+ body.inner-page.route-business .tech-story-header{padding:32px 6.25vw 0}
+ body.inner-page.route-business .tech-story-heading{padding-bottom:26px}
+ body.inner-page.route-business .tech-story-top{font-size:11px;padding-top:22px}
+ body.inner-page.route-business .tech-story-hero{height:auto;aspect-ratio:16/10;min-height:0;max-height:none}
+ body.inner-page.route-business .tech-story-hero .tech-image-open img{object-fit:contain;background:#f4f6f7}
+ body.inner-page.route-business .tech-story-hero figcaption{font-size:10px;bottom:8px;left:8px;right:8px}
+}
+
+/* The company, history, credentials and location chapters keep their distinct information patterns. */
+body.inner-page.route-company .company-overview-image{max-height:76svh}
+body.inner-page.route-company .company-overview-image>img{transition:opacity 1s ease,transform 7s ease}
+body.inner-page.route-company .company-overview-image>img.is-active{transform:scale(1)}
+body.inner-page.route-company .company-anchor-nav{scrollbar-width:none}
+body.inner-page.route-company .company-anchor-nav::-webkit-scrollbar{display:none}
+
+/* Contact uses the same heading scale and readable form labels as other interior pages. */
+body.inner-page.route-contact .contact-hero{padding:clamp(52px,6.25vw,160px) 6.25vw clamp(36px,3.75vw,96px);min-height:0;background:#fff;color:#172d3c}
+body.inner-page.route-contact .contact-hero .eyebrow{display:none}
+body.inner-page.route-contact .contact-hero h1{font-size:clamp(36px,3.333333vw,96px);font-weight:450;line-height:1.25;margin:0 0 .45em;letter-spacing:-.04em}
+body.inner-page.route-contact .contact-hero>div>p:last-child{font-size:clamp(16px,1.041667vw,28px);line-height:1.7;color:#63727d}
+body.inner-page.route-contact .contact-main{padding:0 6.25vw clamp(70px,6vw,160px);gap:8vw}
+body.inner-page.route-contact .contact-form{padding-top:0}
+body.inner-page.route-contact .contact-form-heading h2{font-size:clamp(24px,1.5625vw,42px);font-weight:450;line-height:1.5}
+body.inner-page.route-contact .contact-form label,body.inner-page.route-contact .contact-form-heading>p:last-child,body.inner-page.route-contact .contact-office address{font-size:clamp(15px,.9375vw,26px);line-height:1.7}
+body.inner-page.route-contact .contact-form :is(input,select,textarea){font-size:clamp(16px,.9375vw,26px);padding:.85em 1em}
+body.inner-page.route-contact .contact-form button{font-size:clamp(16px,.9375vw,26px);min-height:48px}
+body.inner-page.route-contact .contact-office-card>a{font-size:clamp(14px,.833333vw,24px)}
+@media(max-width:700px){body.inner-page.route-contact .contact-main{grid-template-columns:1fr;gap:42px}body.inner-page.route-contact .contact-form{padding:0}body.inner-page.route-contact .contact-hero h1{font-size:34px}}
+
+/* Policy text remains editorial and easy to scan instead of being treated as a promo page. */
+body.inner-page.route-privacy .company-policy-sections{display:grid;grid-template-columns:1fr;max-width:1500px;margin:0 auto}
+body.inner-page.route-privacy .company-policy-sections>section{display:grid;grid-template-columns:minmax(190px,.42fr) minmax(0,1.58fr);column-gap:5vw;align-items:start;padding:2rem 0 2.5rem}
+body.inner-page.route-privacy .company-policy-sections h2{grid-column:1;margin:0;color:#173f5a;font-size:clamp(18px,1.2vw,28px);line-height:1.5}
+body.inner-page.route-privacy .company-policy-sections>section>*:not(h2){grid-column:2;margin-top:0}
+body.inner-page.route-privacy .company-policy-sections p{max-width:95ch;color:#425c6b;font-size:clamp(14px,.95vw,18px);line-height:1.9}
+
+@media(max-width:900px){
+  body.inner-page.route-business .capability-intro{grid-template-columns:1fr;gap:.7rem}
+  body.inner-page.route-business .capability-intro .eyebrow{grid-column:1;grid-row:1}
+  body.inner-page.route-business .capability-intro h1{grid-column:1;grid-row:2}
+  body.inner-page.route-business .capability-intro>p:last-child{grid-column:1;grid-row:3;max-width:46rem}
+  body.inner-page.route-business .tech-story-heading{grid-template-columns:1fr;gap:.9rem}
+  body.inner-page.route-business .tech-story-heading>.eyebrow{grid-column:1;grid-row:1}
+  body.inner-page.route-business .tech-story-heading h1{grid-column:1;grid-row:2}
+  body.inner-page.route-business .tech-story-heading .tech-story-summary{grid-column:1;grid-row:3}
+  body.inner-page.route-business .tech-story-header .tech-story-jumps{grid-column:1;grid-row:4}
+  body.inner-page.route-business .tech-overview,body.inner-page.route-business .tech-capabilities,body.inner-page.route-business .tech-evidence{width:88%}
+}
+@media(max-width:700px){
+  body.inner-page .inner-visual-story{margin-top:22px;margin-bottom:52px}
+  body.inner-page .inner-visual-stage{min-height:280px;max-height:60svh}
+  .inner-visual-overlay,.tech-feature-overlay{left:22px;bottom:82px;max-width:calc(100% - 44px)}
+  .inner-visual-overlay>strong,.tech-feature-overlay>strong{font-size:clamp(30px,9vw,42px)}
+  .inner-visual-caption{inset:auto 16px 14px;gap:10px;align-items:flex-end}
+  .inner-visual-caption-copy{gap:3px}
+  .inner-visual-caption-copy>span{font-size:13px}
+  .inner-visual-caption-copy>small{font-size:8px;letter-spacing:.05em}
+  .inner-visual-controls{gap:5px}
+  .inner-visual-controls button{width:36px;height:36px;font-size:16px}
+  .inner-visual-controls [data-inner-visual-count]{min-width:2.8rem;font-size:11px}
+  body.inner-page.route-business .tech-story-top{width:auto;padding:1.2rem 0 0}
+  body.inner-page.route-business .tech-story-header{padding:34px 6vw 0}
+  body.inner-page.route-business .tech-story-heading{padding-bottom:26px}
+  body.inner-page.route-business .tech-story-hero--debris-sampling .tech-image-open img,body.inner-page.route-business .tech-story-hero--shoreline-camera .tech-image-open img{object-position:right center}
+  body.inner-page.route-business .tech-story-hero--saltmarsh-sampling .tech-image-open img{object-position:82% center}
+  body.inner-page.route-business .tech-story-hero figcaption{gap:7px}
+  body.inner-page.route-business .tech-concept-badge,body.inner-page.route-business .tech-source-badge{font-size:8px;padding:5px 6px}
+  body.inner-page.route-business .tech-overview,body.inner-page.route-business .tech-capabilities,body.inner-page.route-business .tech-evidence{width:88%;padding:50px 0}
+  body.inner-page.route-business .tech-overview-copy{margin-left:0;font-size:15px}
+  body.inner-page.route-company .company-overview-image{height:50svh;min-height:290px}
+  body.inner-page.route-privacy .company-policy-sections>section{grid-template-columns:1fr;gap:.6rem;padding:1.4rem 0}
+  body.inner-page.route-privacy .company-policy-sections>section>*:not(h2){grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){
+  .inner-visual-frame img,.inner-visual-overlay,.inner-visual-controls button,body.inner-page.route-business .tech-story-hero .tech-image-open img{transition:none!important;animation:none!important}
+}
+@media(min-width:901px){
+ body.inner-page.route-business .tech-story-header{min-height:130svh;padding-left:0;padding-right:0}
+ body.inner-page.route-business .tech-story-heading{width:88%;max-width:1600px;margin-inline:auto}
+ body.inner-page.route-business .tech-story-hero{position:sticky;top:var(--shell-header);width:calc(76% + 24% * var(--tech-reveal,0));height:calc(65svh + 18svh * var(--tech-reveal,0));max-height:none;margin-inline:auto}
+}
+.tech-story-scene-copy{position:absolute;z-index:3;left:6.25vw;bottom:7%;display:grid;gap:12px;max-width:700px;color:#fff;opacity:clamp(0,(var(--tech-reveal,0) - .55) * 2.2,1);pointer-events:none;text-shadow:0 2px 24px #061b29d9}
+.tech-story-scene-copy strong{font-size:clamp(30px,2.45vw,60px);font-weight:450;line-height:1.2;letter-spacing:-.04em}
+.tech-story-scene-copy span{font-size:clamp(15px,.9vw,20px);line-height:1.5}
+body.inner-page.route-business .tech-story-hero--concept:has(.tech-story-scene-copy):after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#061c2a9c,transparent 50%);opacity:var(--tech-reveal,0);pointer-events:none}
+@media(max-width:900px){.tech-story-scene-copy{display:none}}
+@media(prefers-reduced-motion:reduce){body.inner-page.route-business .tech-story-hero{height:75svh}.tech-story-scene-copy{opacity:1}}

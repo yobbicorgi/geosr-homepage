@@ -1,0 +1,1776 @@
+
+## PDF 1
+A group of earth science 
+and technology experts, 
+we provide the best solutions 
+for customer satisfaction.
+
+
+## PDF 2
+A company of world-class earth science 
+and technology experts who values 
+the conservation of human and nature. 
+GeoSystem Research Corporation.
+Our experts in earth science and 
+technology will provide the best solution 
+to fulfill customer satisfaction.
+CONTENTS
+INTRODUCTION
+What We Do at a Glance
+Greetings from the CEO
+Mission / Vision / Core Values
+History
+Main Business Areas
+CONSERVATION AND RESTORATION 
+OF AQUATIC ENVIRONMENTS
+Understanding and Integrated Numerical Modeling 
+of Aquatic Environments
+Consulting for Sea Area Utilization 
+and Marine Environmental Impact Assessment
+Conservation and Monitoring of Ecosystems
+Marine Debris and Microplastics Solution
+CLIMATE CHANGE AND COASTAL DISASTERS
+Coastal Erosion Survey, Cause Identification, and Solution
+Coastal Disaster Assessment and Mitigation
+Coastal Inundation Prediction Map and Countermeasures
+Marine Forecast in Response to Climate Change
+SMART TECHNOLOGY
+Marine and Water Environment Survey with Unmanned 
+Observation Platforms
+Computer Vision based Image Analysis
+Digital Twin
+Monitoring, Diagnosis, Assessment with Advanced Sensing 
+Technologies
+RENEWABLE ENERGY AND BLUE CARBON
+Offshore Wind Farm Site Assessment 
+and Digital Information Map
+Living Shoreline
+CAREERS AT GEOSYSTEM RESEARCH
+04
+06
+07
+08
+10
+
+14
+16
+18
+20
+24
+26
+28
+30
+34
+36
+38
+40
+44
+46
+48
+
+
+## PDF 3
+2
+4
+7
+22
+6
+5
+5
+4
+7
+8
+21
+23
+9
+14
+11
+10
+14
+16
+19
+18
+17
+15
+20
+12
+13
+3
+1
+Our Technology & Service
+We provide the best service to you through continuous R&D 
+and accumulation of differentiated key competencies in various fields.
+What We Do at a Glance
+1
+6
+4
+2
+7
+5
+3
+8
+9
+10
+11
+12
+15
+18
+19
+20
+23
+22
+21
+16
+17
+13
+14
+Coastal Management
+● Coastal erosion and disaster 
+management
+● Coastal environment and coastline 
+video monitoring
+● Wave-induced current and rip 
+current monitoring
+● Hyperspectral imaging analysis
+Carbon Reduction Source 
+Examination
+● Carbon sink capacity assessment 
+of marine ecosystems
+Ecosystem Conservation 
+and Monitoring
+● Marine ecosystem structure 
+and function study
+● Marine ecosystem impact assessment
+River·Lake·Estuary Monitoring
+● Realtime water environment 
+monitoring
+● Ecosystem·water quality 
+monitoring and laboratory
+● Water-sediment matter cycle study 
+(in-situ)
+Marine Water Quality and 
+Sediment Examination
+● Pollution emission source tracing
+● Contaminated sediment 
+management
+● Marine environmental impact 
+assessment and consultation
+Environmental Prediction
+● Flow·wave·water quality·
+sedimentation prediction
+● Ecosystem prediction
+● Marine debris and particle 
+transport prediction
+● Climate change impact prediction
+● AI-based global environment 
+prediction
+Seafloor Topography
+● Precision detection 
+of subsea blockages
+● Precision topography survey 
+for navigation safety 
+Sonar Image Analysis
+● Seafloor object (shipwrecks, 
+structures, etc.) detection
+Sub-bottom Profiling
+● Thickness and bedrock analysis
+● Sand abundance analysis
+Underwater Acoustic Survey
+● Acoustic-based marine life 
+monitoring
+● Marine soundscape composition 
+research
+Object Detection Using 
+Multiple Types of Imaging
+● AI-based aquatic life 
+and object detection
+● Image-based fishery resource 
+survey
+● Realtime marine life observation
+Satellite Utilization
+● Satellite-based detection of high and 
+low water temperature·red tide·turbidity
+● Coastline change monitoring
+Aids-to-Navigation
+● Equipment and product manufacture
+● Installation and maintenance
+● Remotely controllable operating 
+system establishment
+Unmanned Observation 
+Development and Monitoring
+● USV (Unmanned Surface Vehicle) 
+development and production
+● USV-based water environment 
+survey and topography
+● Underwater and subsea survey 
+using mini ROVs
+● Unmanned monitoring of water 
+environments
+Unmanned Aerial Vehicle 
+Monitoring
+● Coastal zone sediment particle 
+distribution survey
+● Precision survey of structures
+● Suspended sediment dispersion 
+monitoring
+● Coastline and coastal landform survey
+● Green tide and red tide monitoring
+Ocean Observation Buoys
+● Development·creation·operation of 
+observation equipment and system
+● Realtime weather·water quality·
+wave height observation 
+Automatic Meteorological 
+Observation System
+● Weather and sea fog observation 
+(visibility and imaging)
+Drifting Buoys
+● Drifting buoy development
+● Water temperature, wave, 
+meteorological observation 
+(typhoon observation)
+Marine Rescue Assistance
+● Marine accident rescue operation 
+assistance
+● Missing person drift trajectory 
+prediction
+Offshore Windfarm
+● Substructure 2D, 3D UHR seismic survey
+● UXO survey
+● Environmental impact assessment 
+and consultation
+● Ship traffic monitoring system
+● Ship collision warning system
+● Conservation of ecosystems near 
+offshore windfarm
+Automatic Continuous Water 
+Column Survey
+● Continuous water column 
+oceanographic observation system 
+(PTRBM: Profiling Trawl-Resistant 
+Bottom Mount) development
+● Realtime monitoring using PTRBM
+Marine Life Ingression 
+Prevention Facility Installation 
+and Maintenance
+Underwater Work
+● Shipwreck salvage and oil removal 
+supervision
+● Submarine pipeline installation
+● Underwater/seafloor structure 
+installation
+● Coastal area maintenance
+
+
+## PDF 4
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Greetings from the CEO / Mission / Vision / Core Values
+We will provide the 
+best service to you 
+through continuous 
+R&D and accumulation 
+of differentiated 
+key competencies
+Since our foundation in 2000, we have been working hard to realize 
+our customer’s needs through sustainable environment management. 
+To realize this value, we’ve been providing honest service by pursuing 
+technological excellence in science and engineering, from monitoring 
+to modeling, for areas including the ocean, rivers, and estuaries. 
+With over 20 years of accumulated experience, we are keeping a keen 
+eye on innovative changes currently taking place in related fields of 
+science and industrial technology. We will continue to place our value 
+on saving the water environment, and now we want to get closer to 
+fulfilling the values we are pursuing by taking on new challenges.
+Based on this spirit of challenge and our most valuable asset, our 
+human resources, we will strive to gain more trust from our customers 
+and contribute to enriching the lives of the public through better 
+services.
+We look forward to your continued support, encouragement, and love. 
+I and the entire staff would like to thank you all with one accord.
+CEO  Kim, Kiyeon
+Greetings from the CEO
+Mission & Vision
+Contribute to conservation and sustainable development 
+of the global environment by bringing together leading competencies 
+in earth science and technology
+MISSION
+A leading group of world class experts in earth science and technology
+VISION
+We abide by relevant laws 
+and regulations and act in the best 
+interests of the company 
+and the public.
+Ethical Management
+We work hard for customer satisfaction 
+by ensuring quality results through 
+optimal technology.
+Customer Satisfaction
+We provide differentiated 
+customer service through 
+continuous innovation.
+Continuous Innovation
+We value the happiness of our 
+employees, their families, customers and 
+partners, and we strive to improve their 
+health, safety, and quality of life.
+Pursuit of Happiness
+We maximize our collective 
+intelligence through active 
+cooperation and communication.
+Cooperation and Communication
+We practice thrift and only use 
+what is necessary to preserve 
+the global environment.
+Thrift
+CORE VALUES
+06
+07
+
+
+## PDF 5
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+History of GeoSystem Research
+HISTORY
+GeoSystem Research Corporation is an earth environmental engineering service company founded in July 
+2000. We continue to devote ourselves to the development of earth science and technology. To take the steps 
+to become a world-class earth science and technology expert group, we declared our vision in 2016 and have 
+been striving for continuous innovation, customer satisfaction, and ethical management. All the employees 
+and executives of GeoSystem Research Corporation are working hard in unison to achieve our vision.
+Foundation, a New Start
+Advancement and Growth
+Endeavor for Innovation
+Challenge towards a New Vision
+2000.07 
+● Foundation of GeoSystem Research Corp.
+ 
+● Establishment of auxiliary research institute.
+2000.08 
+● Registered as a software service provider (KOSTA)
+ 
+● Registered as an engineering service provider 
+specialized in oceanography (KENCA)
+2001.05 
+● Registered as a Venture Company (MSS)
+2001.10 
+● Registered as an engineering service provider 
+specialized in aquaculture (KENCA)
+2002.01 
+● Designated as an military duty alternative 
+company (MMA)
+2002.08 
+● Registered as an engineering service provider 
+specialized in water resource development (KENCA)
+2004.05 
+● Registered as an engineering service provider 
+specialized in port and coastal engineering (KENCA)
+2004.10 
+● Selected as a company with outstanding 
+technology (KOTEC)
+ 
+● Relocated company office for expansion
+2005.02 
+● Registered as a hydrographic survey provider 
+(KHOA)
+ 
+● Registered as a coastal survey provider (NGII)
+2011.03 
+● Accreditation of measurement and analysis 
+capabilities as a marine environmental 
+investigation agency (MOF)
+2011.05 
+● Registered as a meteorological equipment 
+provider (KMA)
+2012.01 
+● Certified for ISO 14001 (CreBizQM Co., Ltd.)
+2014.02 
+● Registered as an information and 
+communication construction provider (KICA)
+2014.03 
+● Registered as an underwater construction 
+provider (Gunpo City)
+2014.08 
+● Registered as a metal structure, doors & 
+windows works provider (Gunpo City)
+ 
+● Registered as a marine environmental impact 
+assessment provider (MOF)
+2015.04 
+● Registered as a weather forecast service 
+provider (KMA)
+2016.04 
+● Selected as a youth-friendly, small giant 
+company (MOEL)
+2016.10 
+● Certified as a promising SME 
+of Gyeonggi Province 
+(Gyeonggi-do Provincial Government)
+2016.12 
+● Established new company vision for 2020
+2006.07 
+● Registered as a Gyeong-gi Industry Family company
+2006.11 
+● Establishment of company factory (Gunpo City)
+2007.04 
+● Qualified as an Inno-Biz company (MSS)
+2007.05 
+● Registered as an aids to navigation management 
+provider (MOF)
+2007.07 
+● Selected as a promising SME 
+(Gyeonggi-do Provincial Government)
+ 
+● Selected as an outstanding SME (IBK)
+2007.09 
+● Registered as a geodetic survey provider (NGII)
+2008.02 
+● Changed to hydrographic service provider from 
+hydrographic survey provider
+2008.04 
+● Registered as a research and development service 
+provider (MSI)
+2008.05 
+● Registered as a marine environmental impact 
+assessment provider (MOF)
+2009.05 
+● Certified for ISO 9001 (KIC)
+2009.07 
+● Selected as an outstanding new growth engine 
+company in Korea (MOTIE)
+2010.12 
+● Received the grand prize in Gyeonggi Province SME 
+awards (Gyeonggi-do Provincial Government)
+2017.04 
+● Registered as an ultralight aerial vehicle operator (MOLIT)
+2017.09 
+● Received the grand prize in the field of marine engineering 
+at the Korea Oceans & Fisheries Industry Awards (KMI)
+2018.01 
+● Registered as a weather consulting service provider (KMA)
+2018.04 
+● Selected as a small giant company (MOEL)
+2018.12 
+● Received the main prize at the Jang Bogo Awards 
+(Minister of Oceans and Fisheries)
+2019.01 
+● Accreditation of cadastral survey specialization (KENCA)
+2019.04 
+● Registered as a public survey provider (NGII)
+2019.10 
+● Certified as a family-friendly, great-to-work-for company 
+in Gyeonggi Province (Gyeonggi-do Provincial Government)
+2019.12 
+● Certified as a family-friendly company (MOGEF)
+2020.11 
+● GeoSR’s Smart Marine CAM designated as an Excellent 
+Quality Product by the Public Procurement Service (PPS)
+2021.02 
+● Certified as a work-study-friendly company (MOEL)
+2021.03 
+● Registered as a KHOA certified ocean observation 
+and hydrographic survey company 
+2021.04 
+● Registered as a KHOA certified marine information service 
+company 
+2021.06 
+● Designated as an outstanding corporate research institute 
+(MSIT)
+2021.09 
+● Registered as a publisher (Gunpo City)
+2021.10 
+● Registered as a mail-order business (Gunpo City)
+2021.12 
+● Registered as a contaminated marine sediment investigation 
+agency (MOF)
+2022.06 
+● Registered as a professional research and development 
+company (MSIT)
+2022.12 
+● Certified for ISO 45001, standard for management systems 
+of occupational health and safety (KQCSA)
+2023.01 
+● Selected as a youth-friendly, small giant company for 4 
+consecutive years (MOEL)
+2023.05 
+● Selected as a small giant company (MOEL)
+2000~2005
+2006~2010
+2011~2016
+2017~
+History
+08
+09
+
+
+## PDF 6
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+MAIN BUSINESS AREAS
+Conservation 
+and Restoration 
+of Aquatic 
+Environments
+Climate Change 
+and Coastal 
+Disasters
+Renewable Energy 
+and Blue Carbon
+Smart 
+Technology
+We provide optimal technology 
+and the best service 
+in the field of earth science
+The experts of GeoSystem Research can provide marine environmental engineering services in 13 major 
+fields, including physical oceanography and hydrodynamics survey, coastal erosion survey, coastal disaster 
+survey and vulnerability assessment, marine information analysis and marine forecast, numerical modeling, 
+establishment and operation of real-time ocean forecast systems, AI and big data technologies, AI based 
+object detection, ecosystem survey and restoration. 
+Through continuous R&D and accumulation of differentiated core competencies, we will provide optimal 
+technology and the best service as a world-class earth science expert group and an innovation leader in 
+science and technology.
+● Understanding and Integrated Numerical 
+Modeling of Aquatic Environments
+● Consulting for Sea Area Utilization 
+and Marine Environmental Impact Assessment
+● Conservation and Monitoring of Ecosystems
+● Marine Debris and Microplastics Solution
+● Coastal Erosion Survey, Cause Identification, 
+and Solution
+● Coastal Disaster Assessment and Mitigation
+● Coastal Inundation Prediction Map 
+and Countermeasures
+● Marine Forecast in Response to Climate Change
+● Marine and Aquatic Environment Survey 
+with Unmanned Observational Platforms
+● Computer Vision based Image Analysis
+● Digital Twin
+● Monitoring, Diagnosis, Assessment with 
+Advanced Sensing Technologies
+● Offshore Wind Farm Site Assessment 
+and Digital Information Map
+● Living Shoreline
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Main Business Areas
+11
+10
+
+
+## PDF 7
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Conservation and Restoration 
+of Aquatic Environments
+Pressure on the environment and ecosystem is increasing due to various 
+factors such as climate change, land development, economic growth, 
+and changes to the social structure. In response, the government is 
+making a lot of effort for the conservation of  aquatic environments, and 
+demands for relevant technology have been increasing as well. Also, 
+efforts are being made domestically and internationally to create an 
+abundant and sustainable system by improving and restoring aquatic 
+environments, such as mudflats, coasts, rivers, and lakes, damaged by 
+environmental changes and artificial impacts.
+GeoSystem Research provides technical services for policymakers, 
+administrators, and users based on knowledge and technology acquired 
+from our extensive experience in the fields shown below, and we can 
+review any irreversible approaches and provide various alternative 
+solutions.
+1. Understanding and Integrated Numerical Modeling of Aquatic 
+Environments
+2. Consulting for Sea Area Utilization and Marine Environmental 
+Impact Assessment
+3. Conservation and Monitoring of Ecosystems
+4. Marine Debris and Microplastics Solution
+Conservation and Restoration of Aquatic Environments
+13
+12
+
+
+## PDF 8
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Model
+Modeling Items
+Delft3D
+(The Netherlands)
+Hydrodynamic, sediment 
+transport, water quality, 
+ecology, oil spill, storm surge
+MOHID (Portugal)
+Hydrodynamic, sediment 
+transport, water quality, oil spill
+EFDC (USA)
+Hydrodynamic, sediment 
+transport, water quality
+TELEMAC (France)
+Hydrodynamic, sediment 
+transport, water quality
+SWAN
+(The Netherlands)
+Wave deformation
+SWASH
+(The Netherlands)
+Wave deformation
+ADCIRC (USA)
+Hydrodynamic, storm surge
+CADMAS-Surf (Japan)
+Numerical wave channel
+X-Beach
+(The Netherlands)
+2D nearshore bed level 
+changes
+GENESIS (USA)
+Shoreline changes
+SBEACH (USA)
+Beach profile change
+SWAN-Shorecirc 
+(The Netherlands, USA)
+Wave-induced current
+Flow-3D (USA)
+Fine-structure flow, local 
+scouring
+Open FOAM (UK)
+Fine-structure flow
+Owned Equipment
+Aquatic environments are constantly changing due to the interactions 
+between weather, river flow, tides, currents, sediments, and various 
+organisms. Numerical modeling is the process of writing dynamical 
+processes and physical, chemical, and ecological laws that govern such 
+complex environments into mathematical equations and calculating them 
+using a computer. 
+We utilize globally recognized numerical models and possess outstanding 
+technical prowess in the fields of numerical modeling regarding flow, waves, 
+sedimentation, water quality, and ecology.
+We can proudly say that we are currently the best Korean company in 
+the fields of environmental diagnosis, environmental prediction based on 
+changes in policies and development conditions, and practical numerical 
+forecasting.
+● Hydrodynamics
+● Thermal effluent
+● Shallow-water design waves
+● Shoreline deformation
+● Sediment transport
+● Suspended sediment dispersion
+● Harbor tranquility
+● Wave-induced current
+● Water quality
+● Pollutant dispersion
+● Numerical wave channel
+● Harbor operating ratio
+● Ecological modeling
+● 3D local flow and scouring
+● Ship wave
+Main Content
+Understanding and Integrated Modeling 
+of Aquatic Environments
+Conservation and Restoration of Aquatic Environments
+1
+Korea Institute of Marine Science & 
+Technology Promotion
+● Saemangeum area marine environment 
+and ecosystem management R&D
+● Ecosystem-based marine spatial 
+analysis and practical technology 
+development 
+National Institute of Fisheries Science
+● Establishment of marine resource 
+prediction system based on marine 
+ecosystem changes
+● Sanitary survey of shellfish growing 
+areas and study on pollutant dispersion 
+prediction model
+Ministry of Oceans and Fisheries
+● Study on establishment of restoration 
+criteria for marine aggregate extraction 
+sites
+● Study on hydraulic characteristic survey
+National Institute of Environmental 
+Research
+● Feasibility study on basin water 
+management using digital twin
+Korea Marine Environment Management 
+Corporation
+● Planning for Yubu-do mudflat ecosystem 
+restoration project
+● General study and feasibility study on 
+Ung-do mudflat ecosystem restoration 
+project
+Korea Institute of Ocean Science and 
+Technology
+● Study on establishment of OpenFOAM-
+based movable seawall numerical 
+model and construction of its 
+visualization system
+● Evaluation of wave CFD model’s 
+applicability and improving the tidal 
+wave program
+Ministry of Environment
+● Study on water quality prediction 
+methodology for weir evaluation
+● Study on improving the water quality 
+prediction modeling of Han River and 
+Nakdong River
+Major Projects and Clients
+Conservation and Restoration of Aquatic Environments
+14
+15
+
+
+## PDF 9
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+● ICP-MS (iCAP-RQ) : Heavy metal 
+analysis of water and sediment
+● seaFAST SP3 : Heavy metal 
+pretreatment of water
+● Nutrients AutoAnalyzer (Quaatro) 
+: TN, TP and nutrient analysis
+● Organic carbon analyzer (TOC-Vcph) 
+: TOC and DOC analysis 
+● Particle size analyzer
+(Mastersizer 2000) 
+: Particle size analysis
+● Oxygen microelectrode sensor 
+: Water and sediment oxygen 
+measurements 
+● Centrifuge
+● GC-MSD (8890 GC / 5977B MSD)
+● Benthic Lander 
+: Benthic flux measurement
+Owned Equipment
+Major Projects and Clients
+Ministry of Oceans and Fisheries 
+● Research and development of an 
+integrated estuary management 
+system
+Korea Marine Environment 
+Management Corporation
+● Joint study on the Korea’s marine 
+ecosystem
+● Environmental impact assessment 
+of marine aggregate extraction sites 
+in EEZ, south sea of Korea
+National Institute of Environmental 
+Research
+● Surveying and assessment of sediment 
+emission from weirs of the 4 major 
+rivers of Korea
+National Marine Biodiversity Institute 
+of Korea
+● Analysis of mudflat material cycles 
+and calculation of mineralization rate 
+of mudflat organic matters
+Korea Energy Agency
+● Government-led site suitability study 
+for offshore wind farms
+Our work area includes identifying biogeochemistry characteristics 
+of aquatic environments, determining variables and coefficients for 
+water quality modeling, consulting for sea area utilization, and marine 
+environmental impact assessment. After collecting water and sediment 
+samples through field surveys, we analyze the samples according to 
+domestically and internationally certified testing methods, and we use 
+CRM (certified reference materials) for each analysis to insure data quality 
+control.
+We hold the certificate from the Ministry of Oceans and Fisheries for 
+marine environment measurement and analysis capabilities, and we are a 
+designated specialized agency of marine sediment pollution survey.
+We also own environment analysis facilities for water quality and sediment 
+analysis, and use  inductively coupled plasma mass spectrometry (ICP-MS) 
+and nutrient autoanalyzer (AA) for trace element analysis.
+● Water and sediment sampling
+● Water and sediment quality 
+analysis 
+● Consulting for sea area utilization 
+and marine environmental impact 
+assessment
+● Oil spill & land-based pollution 
+source investigation  
+● Impact assessment of pollutant
+● SOD and geochemical processes
+● Measurement and determination 
+of parameters or coefficients for 
+water quality modeling
+Main Content
+Consulting for Sea Area Utilization and 
+Marine Environmental Impact Assessment
+2
+Conservation and Restoration of Aquatic Environments
+Conservation and Restoration of Aquatic Environments
+16
+17
+
+
+## PDF 10
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+● Dissecting microscopes : Biological analysis
+● Optical microscopes : Biological analysis
+● Mesocosms : Measurement of oxygen 
+consumption rate
+● Artificial ecosystems : Cultivation of 
+vegetation and fishes   
+● Chlorophyll fluorometer : Measurement of 
+primary production
+● Quadrats, grab sampler, etc. : Equipment 
+for biological field (quantitative) survey
+Owned Equipment
+Ministry of Oceans and Fisheries
+● Development of blue carbon based climate 
+change adaptive coastal construction 
+technology
+Korea Marine Environment Management 
+Corporation 
+● Study on the selection and utilization of 
+climate-sensitive biological indicator species 
+from marine ecosystems
+Major Projects and Clients
+Our professionals in taxonomy and ecology can accurately ascertain the status 
+of aquatic ecosystems and identify their characteristics. We can also quickly 
+diagnose and assess environmental impact of various human activities and 
+specialize in projects related to climate change. We are contributing to carbon 
+neutrality by monitoring changes in the ecosystem due to climate change and 
+by improving and assessing blue carbon capability of ecosystems.
+For the sustainable use of marine organisms and mudflats, we actively 
+participate in nationwide mudflat conservation and restoration projects. 
+Our diverse knowledge and experience with marine organisms will vastly 
+contribute to protecting mudflat organisms and enhancing their diversity.
+● Monitoring of aquatic ecosystems
+● Environmental impact assessment
+● Conservation and restoration 
+of ecosystems
+● Assessment on benefits 
+of eco-friendly development 
+● Climate change monitoring
+● Measurement of carbon uptake 
+ratio
+Main Content
+Conservation and Restoration of Aquatic Environments
+Conservation and Monitoring of Ecosystems
+3
+Conservation and Restoration of Aquatic Environments
+18
+19
+
+
+## PDF 11
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+To support the process of establishing management policies by government 
+agencies related to aquatic environments, we developed a behavior 
+prediction technique for marine debris and micro-plastics and have been 
+applying it to real sea conditions to derive prediction results necessary for 
+establishing management policies. Additionally, we possess specialized 
+microplastic survey technologies suitable for various environmental 
+characteristics such as rivers, sea waters, sediments, and are participating in 
+the task of evaluating the amount of micro-plastics entering the ocean.
+● Movement·distribution behavior 
+model of marine debris and 
+microplastic based on particle 
+tracking method
+● Production of microplastic survey 
+equipment
+● Field survey of microplastics in 
+rivers and lakes
+Main Content
+Marine Debris and Microplastics Solution
+Owned Equipment
+● High performance computers for numerical 
+model computation and numerical modeling 
+software (EFDC, Delft3D, SCHISM, MOHID) 
+● In-house developed marine debris behavior 
+prediction model (In-house developed using 
+Fortran)
+● Field sampling and filtration system
+Korea Institute of Marine Science & 
+Technology Promotion
+● Development of smart technology to 
+support the collection of marine debris
+Incheon National University
+● River surveying to evaluate the amount of 
+micro-plastics entering the ocean
+Major Projects and Clients
+Conservation and Restoration of Aquatic Environments
+4
+Conservation and Restoration of Aquatic Environments
+20
+21
+
+
+## PDF 12
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Climate Change 
+and Coastal Disasters
+Today, coastal disasters are occurring more frequently and the extent of 
+damage from them are rapidly increasing due to reckless development 
+of the coastal space and climate change factors, such as rising sea levels 
+and sea water temperatures. In the event of a coastal disaster, not 
+only does it endanger human lives and cause simple property damage, 
+but can also cause significant social and economic damage due to the 
+destruction of coastal ecosystems and coastal spaces.
+Through proposing various solutions based on accurate scientific 
+evaluations and developing eco-friendly coastal protection technologies, 
+GeoSystem Research Corporation strives to conserve human-coast 
+coexistence and to create a solid foundation for a sustainable coastal 
+environment.
+1. Coastal Erosion Survey, Cause Identification, and Solution 
+2. Coastal Disaster Assessment and Mitigation 
+3. Coastal Inundation Prediction Map and Countermeasures 
+4. Marine Forecast in Response to Climate Change 
+Climate Change and COastal Disasters
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+23
+22
+
+
+## PDF 13
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+● Investigation of erosion history
+● Erosion class evaluation
+● Real-time video monitoring of 
+coastline
+● Surface sediment analysis
+● Identification of causes of erosion and 
+establishment of counter-measures
+● Long-term video image acquisition
+● Analysis of aerial and satellite images 
+● Analysis of coasts’ natural resiliency
+● Characterization of long-term 
+coastline changes
+● Analysis of coasts’ natural resiliency
+● Characterization of short-term 
+coastline changes
+● Wave monitoring
+● Real-time continuous video image 
+surveying
+● Analysis of changes to beach area
+● UAV monitoring
+● Analysis of tide data and acquisition 
+of shoreline information at different 
+tide levels
+● Observation of visibility distance 
+during sea fog
+Main Content
+In recent years, the extent of damage from coastal erosion has increased due 
+to reckless development of artificial structures and rising sea levels caused 
+by climate change. Not only does coastal erosion cause sand loss, but it also 
+destroys coastal ecosystems and threatens our safety and property. 
+With such context, it is necessary to accumulate quantitative data through 
+continuous monitoring to identify the causes of coastal erosion and establish 
+erosion prevention plans. 
+We can provide optimal solutions for coastal erosion prevention measures 
+based on our accumulated experience from many years of conducting coastal 
+erosion surveys and our advanced technologies, including the nation’s 
+only video monitoring analysis technology and various in-house developed 
+software.
+Coastal Erosion Survey, 
+Cause Identification, and Solution 
+Climate Change and Coastal Disasters
+1
+Owned Equipment
+● GNSS (GX1230, LEICA) / 
+GNSS (S82T, SOUTH)
+● Wave gauge (AWAC, NORTEK) / 
+Wave gauge (SIGNATURE, NORTEK)
+● UAV (PHANTOM, DJI) / 
+UAV (MAVIC, DJI)
+In-house Developed Software
+● Camera Scheduler (Video settings)
+● Imagemaker (Creation of analysis images)
+● Real File Management (Image processing)  
+● Image Processing (Image analysis)
+Ministry of Oceans and Fisheries
+● Coastal Erosion Monitoring System Project 
+I ~ V
+● Coastal erosion monitoring 2013 ~ 2019
+● Coastal erosion survey
+Korea Hydrographic and Oceanographic 
+Agency
+● Coastal Erosion Monitoring System Project 
+VI ~ VII
+● Coastal erosion monitoring 2010
+● Expansion and operation of real-time rip 
+current monitoring system
+Provincial Government of 
+Gyeongsangbuk-do 
+● Coastal erosion monitoring and survey 
+in the province of Gyeongsangbuk-do 
+2010~2019
+Major Projects and Clients
+Climate Change and Coastal Disasters
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+25
+24
+
+
+## PDF 14
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+2
+● GNSS (GX1230, Leica;S82T, South)
+● Wave gauge (AWAC/SIGNATURE, Nortek)
+● Intel XEON E5-2650v3, 512 / 
+200core HPC cluster
+Owned Equipment
+● ADCIRC (ADvanced CIRCulation Model)
+● EFDC (Environmental Fluid Dynamics Code)
+● ROMS (Regional Ocean Modelling System)
+Software
+Korea Hydrographic and Oceanographic 
+Agency 
+● Coastal disaster vulnerability assessment
+● Construction of coastal inundation 
+prediction map
+Rural Development Administration
+● Assessment of storm surge inundation 
+in farmlands
+National Emergency Management Agency
+● Development of countermeasure techniques 
+for swell waves
+Ministry of Oceans and Fisheries
+● Identification of the cause of damage from 
+Typhoon Chaba
+Major Projects and Clients
+We have developed the coastal disaster assessment system and coastal 
+inundation prediction map technology to proactively respond to coastal 
+disaster risks, such as sea level rise and climate change.
+The coastal disaster assessment system (CDAS) is a GIS system that integrates 
+various coastal information to quantitatively assess disaster vulnerability based 
+on causes of disasters and is used by 72 local governments in 218 locations for 
+national disaster response and coastal management. The coastal inundation 
+prediction map utilizes the storm surge scenario database to provide forecast 
+information such as storm surge height, inundation extent, and inundation 
+depth along the coast, and is used by 39 local governments in 160 locations.
+The coastal disaster vulnerability assessment is a GIS system that integrates 
+various coast information to quantitatively assess disaster vulnerability 
+according to the cause of the disaster. The coastal inundation prediction map 
+utilizes the storm surge scenario database to provide forecast information, 
+such as storm surge height, inundation area, and depth.
+Recently, we have developed and implemented real-time technologies for 
+vulnerability assessment and storm surge prediction.
+● Establishment of 3D geospatial 
+information database and GIS 
+system
+● Virtual scenario simulation for 
+future and current typhoons
+● Forecast of coastal inundation 
+frequency
+● Establishment of storm and 
+inundation damage reduction 
+plans
+● Assessment and index 
+development of coastal 
+vulnerability
+● Real-time forecasting of storm 
+surge and inundation  
+● Prediction of complex disaster 
+impact
+● Establishment of climate change 
+adaptation measures
+● Assessment of climate change 
+risks
+● Establishment of vulnerable 
+coastal areas and disaster 
+information map
+● Prediction of impacts caused by 
+climate change and development 
+projects
+● Disaster environmental impact 
+assessment
+Main Content
+Coastal Disaster Assessment and Mitigation
+Climate Change and Coastal Disasters
+Climate Change and Coastal Disasters
+26
+27
+
+
+## PDF 15
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Coastal inundation caused by typhoons can cause substantial damage to 
+coastal lowlands in a short period, so various studies are being conducted at 
+the national level to minimize the damage caused by typhoon inundation and 
+to establish countermeasures against it.
+The coastal inundation prediction map developed by our company used the 
+storm surge scenario database to provide forecast information, such as storm 
+surge height, inundation area, and inundation depth at 50-year intervals to 39 
+local governments in 179 locations. Our prediction map was used as a basis to 
+establish long-term measures for managing the safety of coastal structures and 
+lands.
+In recent years, we have applied various methods like combining 
+heterogeneous models to predict inundation caused by complex factors, 
+such as tsunamis, wind waves, wave overtopping, sea level rise, rainfalls, and 
+structure geometries that may occur in coastal areas. We are continuously 
+researching to improve the accuracy of inundation prediction.
+Coastal Inundation Prediction Map and 
+Countermeasures
+Climate Change and Coastal Disasters
+3
+● Establishment of storm surge 
+inundation frequency map
+● Forecast of complex disaster 
+inundation
+● Application of virtual scenario 
+simulation of future and current 
+typhoon 
+● Real-time forecasting of storm 
+surge and  inundation 
+● Forecast of complex disaster (wave 
+overtopping, tsunami, heavy rain, 
+sea level rise, etc.) inundation
+Main Content
+● Intel Xeon ES-2650v3, 200 core HPC cluster
+● AMD EPYC 7543, 2.8GHz, 512 core HPC cluster
+Owned Equipment
+● ADCIRC (Advanced CIRCulation Model)
+● SWAN (Simulating WAves Nearshore)
+● FLOW-3D
+Software
+Korea Hydrographic and Oceanographic 
+Agency
+● Establishment and distribution of the 
+coastal inundation prediction map
+National Disaster Management Research 
+Institute
+● Assessment of inundation caused by 
+complex disasters
+Rural Development Administration
+● Assessment of storm surge inundation in 
+farmlands
+Ministry of Oceans and Fisheries
+● Identification of the cause of damage from 
+Typhoon Chaba
+Major Projects and Clients
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Climate Change and Coastal Disasters
+28
+29
+
+
+## PDF 16
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+고해상도 이미지 요청
+고해상도 이미지 요청
+31
+30
+● Real-time ocean forecast system of 
+the Pacific Northwest
+● Maintenance and operation technique 
+of real-time ocean forecast system
+● Verification and evaluation system for 
+prediction accuracy
+● Ocean forecast system of Northeast 
+Asia and seas surrounding the Korean 
+Peninsula
+● Real-time prediction system for 
+dispersion of thermal effluents
+● Parallelization techniques for 
+numerical modeling (OpenMP, MPI, 
+GPGPU-based parallelization)
+● High-resolution forecast system of 
+major coastal areas 
+● Real-time prediction system for ocean 
+environmental changes, such as red 
+tide, etc.
+● Real-time wave prediction system 
+of the seas surrounding the Korean 
+Peninsula
+● Real-time ocean forecast system for 
+naval operations
+● Data assimilation techniques for 
+better accuracy
+● Aiding search and rescue activity and 
+disaster prevention activity during 
+marine accidents by providing data
+● User support system for the 
+visualization of forecast results
+Main Content
+The Real-Time Ocean Forecast System (RTOFS) is a system that forecasts 
+various ocean phenomena, such as water level, flow, water temperature, 
+salinity, waves, etc., using observation data and numerical modeling.
+We have built our own real-time ocean forecast system that simulates ocean 
+circulation and waves, and it produces predictive data for the Northwest 
+Pacific, Northeast Asia, the Korean Peninsula, and its major coastal areas. 
+These data are used to predict changes to the marine environment caused 
+by climate change, to support search and rescue and disaster prevention 
+activities in the event of marine accidents, and to support military operations. 
+As the largest and best simulation expert group in Korea, we are continuously 
+researching and developing innovative technologies to improve the accuracy 
+of our forecast data.
+Marine Forecast in Response to Climate Change 
+Climate Change and Coastal Disasters
+4
+Software
+● EFDC (Environmental Fluid Dynamics Code)
+● ROMS (Regional Ocean Model System)
+● ADCIRC (ADvanced CIRCulation Model)
+● RIAMOM (RIAM Ocean Model)
+● SWAN (Simulating WAve Nearshore) 
+Hardware
+● Intel Xeon E5-2650v3, 256 / 200 core HPC 
+cluster
+Korea Hydrographic and Oceanographic 
+Agency
+● Establishment of a real-time ocean 
+forecast system for military operation 
+support
+Korea Hydro & Nuclear Power Co., Ltd.
+● Establishment and operation of 
+a real-time thermal effluent dispersion 
+prediction system
+● Development of a technique to improve 
+the accuracy of ocean forecast system
+Major Projects and Clients
+Climate Change and Coastal Disasters
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+
+
+## PDF 17
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Smart Technology
+With the advent of the 4th Industrial Revolution, new smart technologies 
+such as big data, AI, metaverse, and digital twin are being introduced in 
+the marine and water environment sector. Especially, the demand for 
+monitoring, prediction, diagnosis, and evaluation technologies based on 
+remote sensing, unmanned, real-time, fully automatic, and Internet of 
+Things (IoT) platforms is rapidly increasing.
+GeoSystem Research Corporation has been transitioning labor-
+intensive traditional technologies into smart technologies such as 
+multi-beam, LiDAR-hyperspectral-based drones, unmanned surface 
+vehicles (USV) based ocean observation systems, stereo camera-based 
+3D image analysis technology, and computer vision (CV) based artificial 
+intelligence image analysis technology.
+Through continuous research and development, we are advancing 
+our capabilities in climate change measures, disaster monitoring, 
+forecasting, diagnosis, and assessment in the field of marine and water 
+environments.
+1. Marine and Water Environment Survey with Unmanned 
+Observation Platforms 
+2. Computer Vision based Image Analysis 
+3. Digital Twin
+4. Monitoring, Diagnosis, Assessment with Advanced Sensing 
+Technologies 
+Smart Technology
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+33
+32
+
+
+## PDF 18
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+National Institute of Fisheries Science 
+● Maintenance of real-time information 
+system for aquaculture environment
+Korea Hydrographic and Oceanographic 
+Agency
+● Installation and maintenance of real-time 
+seawater flow monitoring equipment
+Korea Meteorological Institute 
+● Maintenance of marine weather observation 
+equipment on weather ships
+Korea Institute of Marine Science & 
+Technology Promotion 
+● Development of long-range, wide-area 
+ocean observation drones
+Regional Office of Oceans and Fisheries 
+● Establishment and management of marine 
+weather signal system
+● Establishment of aids to navigation 
+management system in Ulsan region
+● Purchase, manufacture, installation of tidal 
+current signal system in Jindo sea area
+Korea Institute of Ocean Science and 
+Technology
+● Study on the surface current of Indian 
+Ocean using satellite-tracked drifting buoys
+Korea Hydro & Nuclear Power Co., Ltd. 
+● Operation of marine environment 
+management system near nuclear power 
+plants in the coast of the East Sea
+Korea Gas Corporation 
+● Construction and maintenance of marine 
+environment observation buoy near 
+Tongyeong LNG Terminal
+● Management of private aids to navigation
+Provincial Government of Gyeonggi-do
+● Underwater construction, metal structure 
+and doors, windows construction
+Korea Water Resources Corporation Sihwa 
+Business Division
+● Maintenance service of maritime safety 
+equipment in Sihwa lake tidal power plant
+Korea Midland Power Co., Ltd. Boryeong 
+Power Generation Site Division 
+● Management and repair of aids to 
+navigation system
+● Construction and installation of lighthouses 
+during the construction of Daepo Geunpo 
+Port 
+Major Projects and Clients
+We conduct the entire process of development, establishment, and 
+maintenance of observation systems as well as the design, manufacture, and 
+R&D of marine weather observation and aids-to-navigation equipment.
+We have developed various marine weather observation equipment and 
+have been building and operating real-time remote monitoring systems for 
+public institutions, such as the Korea Meteorological Administration, Ministry 
+of Oceans and Fisheries, Ministry of Environment, Korea Hydrographic and 
+Oceanographic Agency, National Institute of Fisheries Science, and Korea 
+Institute of Ocean Science and Technology. We aim to provide integrated 
+marine weather solutions through continuous research and development of 
+marine weather observation systems and software.
+We are also capable of providing aids to navigation (AtoN) related services and 
+equipment. We design, manufacture, install, and manage AtoN facilities, such 
+as lighthouses, light beacons, and buoys, and supply major AtoN equipment 
+supplies. We also manufacture, establish, and operate remote management 
+systems that enable real-time remote management and control of AtoN 
+facilities using WCDMA, LTE, and AIS-based communication networks, and 
+provide real time maritime safety information to vessels through our tidal 
+current signal systems.
+Marine and Water Environment Survey with 
+Unmanned Observation Platforms
+Smart Technology
+1
+● Real-time marine & weather 
+monitoring system
+● ROV monitoring
+● Development of real-time 
+monitoring software
+● Seawater flow (tide) monitoring 
+system
+● Autonomous sea drone system
+● Development of ocean 
+observation equipment
+● Development and operation of 
+drifting buoys 
+● Special-purpose ocean observation 
+buoys and equipment
+● Establishment and management 
+of aids to navigation system
+● Establishment and management 
+of tidal current signal system
+● Aids to navigation equipment 
+(lighthouse lantern, etc.)
+● Remote control system of aids to 
+navigation
+Main Content
+Smart Technology
+34
+35
+
+
+## PDF 19
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Computer vision is a technology that uses artificial intelligence (visual 
+intelligence) techniques to extract features. We can use computer vision to 
+detect and classify marine life (fish, jellyfish, invasive species, etc.), occurrences 
+of oceanographic phenomena, such as rip currents, and aquatic trash 
+distribution.
+We expect this technology to be used in various ways, like warning systems 
+for quick disaster response, smart fish farm monitoring, and underwater 
+ecosystem surveying, in the field of ocean and fisheries.
+Computer Vision based Image Analysis
+Smart Technology
+2
+Technology that analyzes marine 
+life prevalence characteristics, 
+rip current occurrence, etc., from 
+images or videos of underwater 
+and coastal environments via 
+detecting, counting population, 
+and calculating the size of objects 
+and distance from the camera 
+using artificial intelligence 
+algorithms.
+Main Content
+Software
+● YOLO
+Korea Fisheries Resources Agency
+● Development of method to study the impact of fishing using deep 
+learning and computer vision
+Korea Hydro & Nuclear Power Co., Ltd.
+● Development of method to study the impact of fishing using deep 
+learning and computer vision
+Major Projects and Clients
+Smart Technology
+36
+37
+
+
+## PDF 20
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Owned Equipment
+● High performance computer for numerical 
+model computation
+● Numerical modeling software (EFDC-NIER, 
+Delft3D, SCHISM)
+National Institute of Environmental Research
+● Research and development of digital 
+twin technology for an integrated water 
+management
+Monitoring data
+Actual data
+Model output
+Intake water
+Water release
+Major Projects and Clients
+Pollutant load 
+from natural flow
+Underground 
+water flow
+Watershed 
+runoff
+Water quantity, quality, 
+and ecological status
+Evaporation and 
+transpiration
+Agricultural 
+water
+Drainage
+Dam 
+release
+Farm 
+land
+Industrial 
+complex
+Analysis
+Virtual space
+Real-time data 
+collection
+Application on 
+real space
+Real space
+Prediction
+Visualization
+Simulation
+Industrial 
+water
+Wastewater 
+disposal
+Residential 
+water
+Wastewater 
+treatment
+Pollutant load 
+from natural flow
+Radiation energy
+Precipitation
+Water management system
+Executable 
+outcomes
+Optimization
+Information-based 
+decision
+Digital twin
+User Experience
+Real-time status
+Warnings
+Simulation-based 
+prediction
+Measurement / Control
+Sensor
+Water depth, flow rate, 
+water temperature, water 
+quality, …
+Operating system
+LIMS, GIS, …
+Process-based 
+modeling
+Indicators, 
+water supply, 
+hydraulics, 
+water quality, 
+ecosystem, …
+Data management
+Data collection / integration
+Simulation result 
+analysis, 
+Decision support
+Data-driven 
+modeling
+Machine learning, 
+AI, …
+Controllers
+Electric signal, 
+mechanical systems, 
+floodgates, …
+Automation system
+SCADA, 
+remote measurement, …
+Advanced monitoring
+loT, automatic 
+metering, edge devices, 
+…
+Data attribute
+Space, time, …
+Data collection
+Data integration
+Analysis
+Visualization
+By rendering a virtual model that reflects the physical characteristics of a 
+real object and then running simulations synchronized with real space and 
+time, we can use the digital twin to monitor, diagnose, predict, and help with 
+decision-making.
+Digital Twin
+Smart Technology
+3
+Digital Twin for Water and 
+Environment Management
+Considering the factors that 
+affect water management, water 
+quantity, water quality, and aquatic 
+ecosystem environment, which 
+were individually managed in the 
+past, are integrated and managed 
+more intelligently.
+Main Content
+38
+39
+Smart Technology
+
+
+## PDF 21
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+● Multibeam echosounders 
+(Seabat7125, Sonic2024, T-50)
+● Singlebeam echosounders 
+(Odom Hydrotrac, Aquaruler)
+● Side-scan sonars (S-150A, S-150i)
+● Sub-bottom profilers (Z-TAM Ⅱ,Ⅲ)
+● Unmanned aerial vehicles 
+(Matrice 300 RTK, Matrice 600PRO) 
+● Mobile LiDAR (Pandar-XT)
+● Hyperspectral imaging sensor 
+(microHSI 410Shark)
+● Spectroradiometer (FieldSpec4)
+● Magnetometer (Explorer)
+● GNSS (GX10)
+Owned Equipment
+Pix4D, Envi 5.6, CARIS HIPS & SIPS, 
+HYPACK, QINCY, PDS2000
+Software
+Korea Hydrographic and Oceanographic 
+Agency
+● Monitoring of seafloor topography in 
+marine aggregate extraction sites
+● Sub-bottom mapping and analysis
+● In-depth survey of coastal waters
+● In-depth hydrographic survey of waters in 
+Incheon Port and Gyeongin Port
+● Coastline survey
+Korea Marine Environment Management 
+Corporation
+● Marine environmental impact assessment 
+of the West Sea EEZ aggregate extraction 
+area
+Korea Fisheries Infrastructure Public 
+Agency
+● Inspection of facilities and substructures in 
+national fishing ports of the West Sea
+
+Gunsan Regional Office of Oceans and 
+Fisheries
+● Research on the change of hydraulic 
+conditions in the Geum River estuary
+Korea Fisheries Resources Agency
+● Hydrographic survey and facility inspection 
+of the ocean afforestation area in the East 
+Sea 
+Korea Environmental Industry & 
+Technology Institute
+● Unmanned remote controlled mobile 
+object based 3D water quality and flow rate 
+monitoring technology development
+Major Projects and Clients
+We conduct various water environment surveys and analyses with state-of-the-
+art sensors. We provide baseline data needed for the establishment of various 
+national marine policies by surveying and analyzing water depth, geological 
+structure, coastline shape, and reef information. We can also conduct water 
+quality analysis and three-dimensional monitoring and analysis of the physical 
+environment and using unmanned surface vehicles combined with state-of-
+the-art sensors.
+Our main businesses include detailed topographic and geological surveys 
+of coastal waters and harbors to support safe navigation, marine aggregate 
+extraction site monitoring, coastline surveys using unmanned aerial vehicles 
+to provide analysis and current extent of scouring and accretion of the 
+coastline, development of USV observation platforms, and water environment 
+monitoring using such platforms.
+Monitoring, Diagnosis, Assessment with 
+Advanced Sensing Technologies
+● Multibeam bathymetric survey, 
+seafloor survey, and analysis 
+of erosion and deposition on 
+beaches
+● High-resolution seismic survey 
+for sub-bottom profiling, anomaly 
+detection, sunken relics, etc.
+● Photogrammetry, LiDAR survey, 
+hyperspectral imaging using 
+unmanned aerial vehicle
+● Ground control point survey
+● Survey for a suitable site for 
+artificial reefs
+● Structure condition survey and 
+underwater survey
+Main Content
+Smart Technology
+4
+Smart Technology
+40
+41
+
+
+## PDF 22
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Renewable Energy 
+and Blue Carbon
+With the Korean government joining the Carbon Neutrality 2050 mission 
+to respond to the climate change crisis, the transition to renewable 
+energy and the discovery of new carbon absorption sources such as blue 
+carbon have become a national interest.
+The importance of offshore wind farms among renewable energies 
+is emerging globally, but the development of offshore wind farms is 
+difficult in reality. Reaching an agreement for development is difficult 
+due to how the coastal areas are highly utilized and many livelihood 
+are dependent on them, so developers are required to consider both 
+the environmental impact and acceptability of offshore wind farms. 
+Blue carbon is internationally recognized by the IPCC and is an essential 
+source of carbon reduction in Korea, given the country’s limited carbon 
+reduction capacity of forest resources. Therefore, it is urgent to discover 
+more sources of blue carbon, including salt marshes, seagrasses, 
+mangroves, etc.
+GeoSystem Research Corporation is contributing to the national effort to 
+achieve Korea’s 2050 carbon neutrality goal through the development of 
+digital offshore wind farm site information map and consulting services 
+such as offshore wind farm site identification and suitability assessment, 
+as well as blue carbon-based living shoreline research.
+1. Offshore Wind Farm Site Assessment and Digital Information Map
+2. Living Shoreline
+Renewable Energy and Blue Carbon
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+42
+43
+
+
+## PDF 23
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+Offshore Wind Farm Site Assessment 
+and Digital Information Map
+Renewable Energy and Blue Carbon
+1
+● Marine environmental survey 
+(physical, water quality, 
+biological, sediment quality, etc.) 
+for wind farm sites
+● Feasibility study and gathering 
+marine information using GIS
+● Analysis of local fishing business 
+to gain acceptability of offshore 
+wind farms
+● Consulting and guidance for 
+selecting an optimal site for 
+offshore wind farms
+Main Content
+We provide optimal wind farm site information maps and site suitability 
+assessment guidelines and present scientific data regarding environmental 
+and acceptability issues with offshore wind farm development. We also resolve 
+conflicts between wind farm developers and locals and difficulties reaching an 
+agreement with the local governments by providing objective and scientific 
+information and filling the informational gap between the involved parties.
+Owned Equipment
+● ArcGis, Qgis
+● Data processing servers for big data
+● Web visualization server
+● ICP-MS (iCAP RQ, Thermo)
+● seaFAST (SP3, ESI)
+● Nutrient auto-analyzer 
+(Quaatro, Seal Analytical)
+● Total organic carbon analyzer 
+(TOC-VCPH, Shimadzu)
+Korea Institute of Energy Technology 
+Evaluation and Planning
+● Development of a digital wind farm site 
+information map
+Korea Energy Agency
+● Government-led wind farm site discovery 
+project 
+Major Projects and Clients
+Renewable Energy and Blue Carbon
+44
+45
+
+
+## PDF 24
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+● Site selection for living shoreline
+● Analysis of shoreline’s blue 
+carbon potential
+● Restoration of blue carbon based 
+marine ecosystems
+Main Content
+We create carbon-absorbing and climate change adaptive shorelines, or living 
+shorelines, to expand and promote blue carbon, a key to realizing marine 
+carbon neutrality. Also, we analyze and evaluate the carbon absorption 
+capacity of living shorelines.
+Owned Equipment
+● Dissecting microscope, optical microscope : 
+Biological analysis
+● Quadrats, etc : Field study equipment
+● Chlorophyll fluorometer : Measurement of 
+primary production
+● Nutrient auto-analyzer: Environmental 
+analysis
+Ministry of Oceans and Fisheries
+● Development of Climate Change Adapting, 
+Blue Carbon based Coastline Creation 
+Technique
+Major Projects and Clients
+Renewable Energy and Blue Carbon
+Renewable Energy and Blue Carbon
+Living Shoreline
+2
+46
+47
+
+
+## PDF 25
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY
+[15807] Rm. 306 Hanlim Human Tower, 172, LS-ro, 
+Gunpo-si, Gyeonggi-do, Republic of Korea 
+T.031-5180-5700 F.031-5180-5800
+www.GeoSR.com
+Copyright of this brochure is owned by GeoSystem 
+Research Corporation. Replication and reprinting 
+without permission is prohibited.
+Copyright©GeoSystem Research Coporation
+H O M E P A G E
+Recruitment 
+Information
+Recruitment Information 
+As our business scale and area expand and the need for talent 
+acquisition rises, we are regularly recruiting for talents to work 
+with us. If you are interested in joining GeoSystem Research, 
+please check our website link below for updates on available 
+positions. Regardless of the job postings, applicants with 
+a major in our main field of work (physical oceanography, 
+coastal management, marine geology, coastal engineering, 
+marine environment monitoring, marine ecology, marine 
+survey, geophysical survey) are welcome to apply at any time.
+Careers at GeoSystem Research
+Careers at GeoSystem Research
+49
+48
+GeoSystem Research Corporation
+LEADING EXPERTS IN EARTH SCIENCE AND TECHNOLOGY

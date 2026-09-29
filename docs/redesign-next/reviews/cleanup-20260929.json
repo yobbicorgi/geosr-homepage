@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-29",
+  "actions": [
+    {
+      "path": "media-source\\editorial\\coastal-risk-assessment.png",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "media-source\\editorial\\ai-detection-wide.png",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "dist\\assets\\editorial\\coastal-risk-assessment.webp",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "dist\\assets\\editorial\\ai-detection-wide.webp",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\edge-profile-check",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\edge-profile-mobile",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\edge-profile-qhd",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\edge-profile-test",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\edge-test.png",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    },
+    {
+      "path": "tmp\\editorial-contact-sheet.jpg",
+      "action": "RecycleBin",
+      "reason": "Rejected unused visual or abandoned verification cache"
+    }
+  ],
+  "retiredAssets": [
+    {
+      "id": "coastal-risk-assessment",
+      "promptBatch": 6,
+      "imageInBatch": 5,
+      "generator": "Codex image_gen",
+      "source": "media-source/editorial/coastal-risk-assessment.png",
+      "web": "assets/editorial/coastal-risk-assessment.webp",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8333d317a95c0b16c8276f2d2b71dfae407f72e846ce75d2c0465e3c83adf39d",
+      "webSha256": "6e97447c73482baee06b044825436bae6dc2f88b69128f951435ac3a27b3efb7",
+      "decision": "selected-concept-still",
+      "review": "연안 저지대와 침수 위험 평가 소개",
+      "usage": "Coastal hazard and flood assessment category and technical detail pages",
+      "actualCompanyPhoto": false,
+      "actualModelResult": false,
+      "filmApproval": false
+    },
+    {
+      "id": "ai-detection-wide",
+      "promptBatch": 9,
+      "imageInBatch": 1,
+      "generator": "Codex image_gen",
+      "source": "media-source/editorial/ai-detection-wide.png",
+      "web": "dist/assets/editorial/ai-detection-wide.webp",
+      "width": 1942,
+      "height": 809,
+      "sha256": "eceb951494f24a6f595c1656fda2c6a3a4bc9e477c5d06000eb0e35843b83159",
+      "webSha256": "bd845e8ae8a08c065c686ff0b5993bb8b902d6a80152bae4b744467b0c59acc0",
+      "decision": "selected-homepage-concept-still",
+      "review": "인공지능 메인 분야용 파노라마 하구 부유물 탐지 콘셉트",
+      "usage": "메인 인공지능 분야 슬라이드 전용. 첫 화면과 기술 상세의 기존 원본 이미지는 유지.",
+      "actualCompanyPhoto": false,
+      "actualModelResult": false,
+      "filmApproval": false
+    }
+  ]
+}

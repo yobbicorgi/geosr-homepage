@@ -1,0 +1,108 @@
+{
+  "jobId": "399925f7-4256-4610-b9d8-7c88e7c58f5f",
+  "decision": "rejected-no-bounding-boxes; paid regeneration paused",
+  "userInstruction": "Do not add separate boxes in postproduction; generate them correctly within the video model. Next prompt needs parent review before submission.",
+  "actualRequest": {
+    "model": "seedance_2_0",
+    "mode": "std",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "ca12fd56-aa22-4752-8307-aa68f71a1276"
+      }
+    ],
+    "duration": 4,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1,
+    "use_unlim": false,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "prompt": "Use the supplied original image as the exact first frame and preserve its scene. A locked fixed underwater scientific monitoring camera, with exactly four moon jellyfish in a temperate blue-grey sea. Create one continuous quiet 4-second shot. The camera and seafloor are completely stationary: no zoom, pan, dolly, cut, reframing, lens change or new objects. All four jellyfish remain inside the frame, separated, with their original scale and positions nearly unchanged. Their translucent bells pulse extremely gently once and short oral arms move softly. Sparse suspended particles drift slowly and natural surface light subtly shimmers. Preserve anatomically plausible disk-shaped bells, four internal gonad structures, transparency and short oral arms. Preserve exactly one thin blue bounding box and one faint silhouette-aligned blue instance segmentation mask for EACH of the four jellyfish; each box and mask must continuously follow only its own animal, tightly and correctly, never detached, swimming in empty water, flickering or becoming a filled rectangular patch. No extra jellyfish, fish, text, numbers, labels, metrics, UI, logos, watermarks or sci-fi effects. Restrained photorealistic underwater observation concept for a Korean environmental research company. Silent."
+  },
+  "actualNormalizedSubmission": {
+    "results": [
+      {
+        "id": "399925f7-4256-4610-b9d8-7c88e7c58f5f",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "Use the supplied original image as the exact first frame and preserve its scene. A locked fixed underwater scientific monitoring camera, with exactly four moon jellyfish in a temperate blue-grey sea. Create one continuous quiet 4-second shot. The camera and seafloor are completely stationary: no zoom, pan, dolly, cut, reframing, lens change or new objects. All four jellyfish remain inside the frame, separated, with their original scale and positions nearly unchanged. Their translucent bells pulse extremely gently once and short oral arms move softly. Sparse suspended particles drift slowly and natural surface light subtly shimmers. Preserve anatomically plausible disk-shaped bells, four internal gonad structures, transparency and short oral arms. Preserve exactly one thin blue bounding box and one faint silhouette-aligned blue instance segmentation mask for EACH of the four jellyfish; each box and mask must continuously follow only its own animal, tightly and correctly, never detached, swimming in empty water, flickering or becoming a filled rectangular patch. No extra jellyfish, fish, text, numbers, labels, metrics, UI, logos, watermarks or sci-fi effects. Restrained photorealistic underwater observation concept for a Korean environmental research company. Silent.",
+          "aspect_ratio": "16:9",
+          "duration": 4,
+          "reference_images": [
+            "ca12fd56-aa22-4752-8307-aa68f71a1276"
+          ],
+          "mode": "std",
+          "resolution": "1080p",
+          "generate_audio": false,
+          "bitrate_mode": "standard"
+        }
+      }
+    ]
+  },
+  "inputAudit": {
+    "local": "media-source/editorial/ai-jellyfish-native-20260929.png",
+    "reDownloaded": "media-source/editorial/ai-jellyfish-higgsfield-upload-verified-20260929.png",
+    "mediaId": "ca12fd56-aa22-4752-8307-aa68f71a1276",
+    "width": 1672,
+    "height": 941,
+    "allFourBoxesAndMasksPresent": true,
+    "meanRGBAbsolutePixelDifference": 0.4137408539220721,
+    "originalSha256": "d748b6ba5cc2239c8413a1245098dbb623e455cc4f23c756f19afc4415f49eb4",
+    "uploadedSha256": "db7ca129ee5c8de3abaef33d3abd651e381e7d4a7bc0c75d2264aa9b5687b0cb"
+  },
+  "outputAudit": {
+    "raw": "media-source/editorial/ai-jellyfish-seedance20-1080p-20260929.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 97,
+    "duration": 4.041667,
+    "audioStreams": 0,
+    "objects": 4,
+    "boundingBoxes": 0,
+    "reviewedFrames": [
+      0,
+      48,
+      96
+    ],
+    "motionContact": "media-source/editorial/ai-jellyfish-seedance20-motion-contact-20260929.jpg",
+    "decision": "Not eligible for website; model removed boxes from first frame. Geometry and four-organism identity largely stable."
+  },
+  "rootCauseAssessment": {
+    "confirmed": "Upload retains annotations; output removes boxes immediately.",
+    "hypotheses": [
+      "Conflicting negative phrase 'No ... labels, metrics, UI ...' may have caused requested tracking graphics to be removed.",
+      "MCP returned normalized params as reference_images, despite requested start_image role. This alone does not prove first-frame control was lost."
+    ],
+    "notProven": "Backend decision or actual provider-side role mapping is not visible."
+  },
+  "postProductionExperiment": {
+    "status": "stopped-and-prohibited-for-publication-after-user-correction",
+    "output": "media-source/editorial/ai-jellyfish-seedance20-annotated-20260929.mp4",
+    "webExport": null,
+    "additionalCredits": 0
+  },
+  "proposedPrompt": "Create a moving annotated marine-organism analysis video from the supplied annotated image. The four existing cyan rectangular bounding boxes and four translucent cyan instance masks are essential visible subjects of this video. Preserve all four complete rectangles and all four silhouette masks in EVERY frame, including the exact first frame and the last frame. Each of the four jellyfish has exactly one closed thin cyan rectangle fully enclosing its own body and short oral arms, and exactly one faint cyan mask following that same jellyfish silhouette. Keep these analysis graphics visibly present and correctly attached throughout the shot; their edges adjust gently with the corresponding animal's motion. The sea camera and composition stay locked. The four jellyfish remain separated at almost unchanged positions and scales; their bells pulse only very slightly. Natural surface light and sparse particles move subtly. Deliver one continuous silent four-second shot. Preserve the blue-grey water, seabed, jellyfish anatomy and transparency from the input. No added organisms, written text, numerical scores, logos, cuts or camera movement.",
+  "proposedParams": {
+    "model": "seedance_2_0",
+    "mode": "std",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "ca12fd56-aa22-4752-8307-aa68f71a1276"
+      }
+    ],
+    "duration": 4,
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1
+  },
+  "submitted": false,
+  "localOutputDisposition": "All failed MP4s and prohibited postproduction experiment files removed. Native ChatGPT source PNG retained. Hashes and judgments retained in ai-jellyfish-cleanup-receipt-20260929.json.",
+  "latestProductionConstraint": "All boxes, masks, analysis UI and graphics must originate inside image/video generation. Postproduction overlays prohibited. Only clip concatenation and transitions allowed for video editing. Additional paid generation paused."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "file": "dist/assets/technology/aquatic-modelling.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 8,
+    "xref": 1054,
+    "width": 749,
+    "height": 433,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/estuary-modelling.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 8,
+    "xref": 1050,
+    "width": 751,
+    "height": 433,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/ecological-survey.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 10,
+    "xref": 1079,
+    "width": 830,
+    "height": 476,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/coastal-monitoring.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 13,
+    "xref": 1158,
+    "width": 1657,
+    "height": 629,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/coastal-hazard.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 14,
+    "xref": 1183,
+    "width": 751,
+    "height": 459,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/uav-survey.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 21,
+    "xref": 1287,
+    "width": 830,
+    "height": 483,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  },
+  {
+    "file": "dist/assets/technology/bathymetric-survey.jpeg",
+    "source": "dist/assets/company/geosr-profile-ko-2025.pdf",
+    "pdfPage": 21,
+    "xref": 1289,
+    "width": 829,
+    "height": 484,
+    "use": "company-published illustration or photograph; no claim of current measured output"
+  }
+]

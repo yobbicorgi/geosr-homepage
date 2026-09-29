@@ -1,0 +1,136 @@
+{
+  "status": "completed-root-review-pending",
+  "reviewUrl": "https://chatgpt.com/c/6abb6f01-555c-83ee-a81f-d808af1a71bd",
+  "reviewEvidence": "Root matched Library 위성 관측 해안과 하구 풍경 to satellite-optical-native-20260929.png after rejecting wrong estuary-grid reference",
+  "balanceBefore": 341.75,
+  "quotedCredits": 45,
+  "params": {
+    "model": "seedance_2_0",
+    "duration": 5,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+    "medias": [
+      {
+        "role": "image",
+        "value": "https://myrtle-contribute-advertiser-vernon.trycloudflare.com/assets/editorial/satellite-optical-native-20260929.webp"
+      }
+    ],
+    "prompt": "Five-second cinematic optical satellite observation film, 16:9, silent. Use the reference image for its realistic coastal remote-sensing appearance: open ocean on the left, land and estuary on the right, and a broad diagonal acquisition swath crossing the sea. Do not lock the shot to the exact still composition. Maintain a stable near-nadir satellite perspective while the observed coastline drifts smoothly through frame as the imaging pass progresses. The leading edge of the acquisition swath advances diagonally across the water, progressively revealing a restrained ocean-colour analysis treatment within its footprint. The revealed colour patterns remain geographically registered to the real estuary plume, coastal water and underlying sea texture. Keep terrain, shoreline and water geometry stable and photographic. The swath is a flat remote-sensing acquisition footprint, never a volumetric spotlight or glowing beam. No fictitious interface panels, text, labels, grids, warped coastline, dramatic zoom, low-altitude flight, or detached analysis graphics."
+  },
+  "submission": {
+    "results": [
+      {
+        "id": "bed9f422-2a2d-4cf7-b558-b2f195e0d349",
+        "type": "video",
+        "status": "pending",
+        "model": "seedance_2_0",
+        "params": {
+          "prompt": "Five-second cinematic optical satellite observation film, 16:9, silent. Use the reference image for its realistic coastal remote-sensing appearance: open ocean on the left, land and estuary on the right, and a broad diagonal acquisition swath crossing the sea. Do not lock the shot to the exact still composition. Maintain a stable near-nadir satellite perspective while the observed coastline drifts smoothly through frame as the imaging pass progresses. The leading edge of the acquisition swath advances diagonally across the water, progressively revealing a restrained ocean-colour analysis treatment within its footprint. The revealed colour patterns remain geographically registered to the real estuary plume, coastal water and underlying sea texture. Keep terrain, shoreline and water geometry stable and photographic. The swath is a flat remote-sensing acquisition footprint, never a volumetric spotlight or glowing beam. No fictitious interface panels, text, labels, grids, warped coastline, dramatic zoom, low-altitude flight, or detached analysis graphics.",
+          "aspect_ratio": "16:9",
+          "duration": 5,
+          "reference_images": [
+            "7c82c1d8-c60a-4ab5-815d-8d1fac459e81"
+          ],
+          "resolution": "1080p",
+          "mode": "std",
+          "generate_audio": false
+        }
+      }
+    ],
+    "adjustments": {
+      "medias[0].role": {
+        "requested": "image",
+        "used": "image_references",
+        "reason": "Seedance 2.0 backend expects schema-key media roles"
+      }
+    }
+  },
+  "localFile": "C:\\Users\\user\\Documents\\Codex\\Projects\\geosr-homepage\\media-source\\video-production-20260929\\sat-reviewed.mp4",
+  "sha256": "668545aa07bc58803d23e2adec4b11e2c36269804543324cb83c06045cece5bd",
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 61952,
+        "duration": "5.041667",
+        "bit_rate": "12566415",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "121",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "sat-reviewed.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "5.041667",
+      "size": "7943511",
+      "bit_rate": "12604578",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.76.100"
+      }
+    }
+  },
+  "qa": "Stable coast drift and acquisition strip movement; restrained action"
+}

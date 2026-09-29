@@ -1,0 +1,53 @@
+{
+  "status": "completed-technical-insert-candidate-main-hero-rejected",
+  "date": "2026-09-29",
+  "priority": "dynamic six-second first-screen opener",
+  "startSource": {
+    "path": "media-source/editorial/hero-ctd-native-20260929.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "5a9d3d988c251bed47befdf91bc1c500d8c1e6fae80f93919e7ade966aa62f0b",
+    "verifiedMediaUuid": "6b1d776e-790f-417e-aaff-676a65ea65d7",
+    "qa": "Full-size original has continuous wooded low coast, open left sea, complete single navy-and-white workboat on right, two orange-PPE crew, A-frame top sheave, one taut cable and one rigid CTD cage nearly at water surface. Fictional representative coastal observation, not actual GeoSR mission or vessel."
+  },
+  "endSource": null,
+  "reasonForSingleFrame": "The prior start/end pair enlarged the vessel and the output rushed toward it, clipping the vessel. Text-only alternative failed to preserve survey action and deep-water river mouth. This start-only pass anchors real-looking geometry without compelling an enlarged end.",
+  "exactInput": {
+    "model": "seedance_2_0",
+    "prompt": "ONE continuous photoreal documentary drone shot / 6 seconds / 16:9 / silent. Use the supplied START IMAGE as the exact first frame. The same modest navy-and-white coastal research vessel holds station in deep water off the same low wooded Korean coast. Keep its entire hull, wheelhouse, stern A-frame, winch, the two helmeted crew in orange life jackets, and the ONE rigid CTD sampling cage recognizable throughout. ONE action only: the winch slowly pays out its single straight cable from the A-frame top sheave; the connected cage descends vertically about one metre from just touching the water to just under the surface. The cage stays rigid and on the cable; a small proportional ripple forms and fades, without a bright splash. The crew remain clear of the suspended load. CAMERA: from the start-frame view, the real drone trucks 12-15 metres sideways parallel to the vessel over six seconds, at nearly constant height and distance. The shore and nearer wave texture shift at different rates, showing lateral parallax. Maintain the same wide 28-35 mm lens, approximately the same vessel scale, the full vessel in the right half, and broad quiet open sea in the left 45 percent for a separate website title. The boat does not speed away and the camera does not approach it. 0-2s wide coast and boat with the cage at surface; 2-4s smooth lateral drone movement while the connected cage descends; 4-6s the cage slips just beneath the surface, ripple fades, drone settles with the full boat and coastline still visible. One take, one site, one cage, natural daylight and plausible sea motion. No cut, zoom, push-in, pan of a flat photo, morph, duplicated crew or equipment, new harbor or boats, oversized splash, graphics, logo, writing, numbers or fictional readings.",
+    "duration": 6,
+    "resolution": "1080p",
+    "mode": "std",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1,
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "6b1d776e-790f-417e-aaff-676a65ea65d7"
+      }
+    ]
+  },
+  "cost": {
+    "exactQuoteCredits": 54,
+    "balanceBeforeCredits": 764.75,
+    "balanceAfterCredits": 710.75,
+    "chargedCredits": 54
+  },
+  "submission": {
+    "jobId": "f623144a-0328-4247-851d-9299b0c46e2c",
+    "count": 1,
+    "status": "completed-reviewed",
+    "approval": "Parent approved exact start-only source, prompt and 54-credit quote before submission."
+  },
+  "qaGate": [
+    "Complete vessel stays inside frame and approximately same scale through 6 seconds",
+    "Actual lateral camera parallax between waves, boat and coast rather than zoom or flat-photo pan",
+    "One rigid CTD cage lowers about one metre, remains on one taut cable from same A-frame top sheave",
+    "Two crew remain in helmet and orange life jacket away from suspended load",
+    "No invented labels/numbers, extra vessel or new geography",
+    "Subtle physically plausible entry ripple, no oversized splash"
+  ],
+  "placement": "No site placement. See hero-ctd-startonly-seedance20-receipt-20260929.json: camera stayed fixed despite physically plausible CTD descent."
+}

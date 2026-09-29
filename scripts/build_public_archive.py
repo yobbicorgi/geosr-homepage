@@ -44,9 +44,13 @@ def clean_title(title: str, path: str, idx: str | None) -> str:
 
 def main_text(source: str, title: str, detail: bool, *, start_at: int | None = None, section: str = "") -> str:
     lines = source.splitlines()
-    copyright_at = next((i for i, line in enumerate(lines) if "Copyright by 2021. GeoSR" in line), None)
-    if copyright_at is not None:
-        lines = lines[:max(0, copyright_at - 3)]
+    footer_at = next((i for i, line in enumerate(lines) if line.strip() in {"회사소개개인정보 처리방침", "About usPrivacy policy"}), None)
+    if footer_at is not None:
+        lines = lines[:footer_at]
+    else:
+        copyright_at = next((i for i, line in enumerate(lines) if re.search(r"Copyright by 20\d{2}\. GeoSR", line)), None)
+        if copyright_at is not None:
+            lines = lines[:max(0, copyright_at - 3)]
     if not detail:
         # The common ASP header occupies the first 32 visible-text lines. The
         # final copyright block is page chrome, not part of each source record.
@@ -121,6 +125,13 @@ with SOURCE.open(encoding="utf-8") as handle:
             "retrievedAt": page["retrieved_at"],
             "attachments": page.get("attachment_urls") or [],
             "imageReferences": [item["url"] for item in page.get("images") or [] if item.get("url")],
+            "externalLinks": [
+                {"url": link["url"], "label": link.get("text", "")}
+                for link in page.get("links") or []
+                if urlparse(link.get("url", "")).scheme in {"http", "https"}
+                and urlparse(link["url"]).hostname not in {"geosr.com", "www.geosr.com"}
+                and link.get("text", "").strip()
+            ],
             "detail": detail,
         }
         if key not in records or len(record["text"]) > len(records[key]["text"]):

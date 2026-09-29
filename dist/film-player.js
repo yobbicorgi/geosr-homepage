@@ -43,6 +43,12 @@
    let button=document.querySelector(`[data-film-toggle="${plan.id}"]`);
    const draft=plan.approval==='draft-reviewed';
    const allowed=(plan.approval==='approved'||draft)&&localMedia(plan.src);
+   if(!allowed&&plan.approval==='pending'&&plan.mediaType!=='still'){
+    const badge=document.createElement('span');
+    badge.className='film-pending-badge';
+    badge.textContent=english?'FILM TO FOLLOW':'영상 대체 예정';
+    host.append(badge);
+   }
    if(allowed&&draft){host.classList.add('film-draft');const badge=document.createElement('span');badge.className='film-draft-badge';badge.textContent=(english?plan.labelEn:plan.labelKo)||(plan.id.startsWith('platform-')?(english?'ACTUAL UI · EDITED PREVIEW':'실제 UI · 편집 초안'):(english?'720p CONCEPT DRAFT':'720p 콘셉트 초안'));host.append(badge)}
    if(allowed&&!button){button=document.createElement('button');button.type='button';button.className='film-inline-toggle';button.dataset.filmToggle=plan.id;host.setAttribute('role','group');host.append(button)}
    const r={plan,host,button,allowed,visible:!observer,manual:false,explicit:false,failed:false,video:null,progress:0};

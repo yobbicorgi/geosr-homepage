@@ -1,8 +1,10 @@
 # GeoSR 미디어 방향
 
-2026-09-29 갱신 · 장면 재설계 중 · 추가 유료 영상 접수 전
+2026-09-29 장면 설계 기록 · 실제 배치 파일과 길이는 [현재 인계](../handoff/CURRENT-STATE.md)를 우선한다
 
-[통합 기준](CURRENT-DIRECTION.md) · [회사 기술 근거](../company-audit/technology-analysis.md) · [제작 원장](../../media-source/editorial/media-production-handoff.json)
+이 문서의 제작 대기 상태와 장면 확장은 작성 시점의 설계 기록이며 현재 파일의 제작 완료를 뜻하지 않는다
+
+[통합 기준](CURRENT-DIRECTION.md) · [회사 기술 근거](../company-audit/technology-analysis.md) · [현재 사용 미디어 기록](../media/CURRENT-MEDIA.md)
 
 [회사 영상 장면 설계와 위성 2단계 콘티](reviews/20260929-company-film-scene-system.md)에는 실제 관찰한 기업·기술 영상과 메인 10개 주제 약 48초 편집 순서 및 각 분야의 입력·분석·활용 관계를 기록했다. 위성은 궤도 통과와 영상 분석을 별도 4초 장면으로 나눠 제작한다.
 

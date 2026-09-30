@@ -1,6 +1,5 @@
-/* AX Platform is an independent GeoSR introduction; service endpoints stay out of this page. */
+/* Local service descriptions consumed by ax-embedded-gallery.js */
 (()=>{
-const axCategories=[['all','전체','All platforms'],['flood','침수 예측','Flood'],['marine','해양 재해','Marine hazards'],['satellite','위성 분석','Satellite'],['environment','관측·환경','Environment'],['research','정보 분석','Research support']];
 const axServices=[
  {id:'flood3d',type:'flood',name:'Flood 3D',k:'3차원 침수범람 예측',e:'3D flood scenario analysis',dk:'태풍 시나리오에 따른 연안 침수 범위를 3차원 지형에서 살펴봅니다',de:'Explore coastal inundation scenarios in the context of three-dimensional terrain',features:[['태풍 시나리오','Typhoon scenarios'],['3차원 침수 분포','3D inundation'],['시간별 변화','Change over time']],nk:'2022년 힌남노 연구 시나리오',ne:'2022 Hinnamnor research scenario'},
  {id:'satellite',type:'satellite',name:'Satellite Facility Detection',k:'위성 시설물 탐지',e:'Satellite facility detection',dk:'위성 영상에서 시설물 위치를 탐지하고 지역별 분포와 변화를 살펴봅니다',de:'Detect facilities in satellite imagery and explore their distribution and change',features:[['위성영상 탐색','Image exploration'],['시설물 탐지','Facility detection'],['지역별 현황','Regional summaries']],nk:'완도 해역의 시설물 탐지 대표 화면',ne:'Representative facility detection view around Wando'},
@@ -12,38 +11,5 @@ const axServices=[
  {id:'news',type:'research',name:'Natural Phenomena News',k:'자연현상 뉴스',e:'Natural phenomena news',dk:'자연 현상 관련 보도를 지도에서 찾고, 지역과 현상에 따라 정리합니다',de:'Discover reports of natural phenomena on a map and explore regional and thematic summaries',features:[['공간 기반 탐색','Spatial discovery'],['현상별 통계','Thematic summaries'],['뉴스 검색','News search']],nk:'연안침식 보도 검색과 현상별 통계 화면',ne:'Coastal erosion news search and thematic statistics'},
  {id:'flood-xai',type:'flood',name:'Integrated Flood XAI',k:'통합 침수 예측·분석',e:'Integrated flood prediction and analysis',dk:'침수 예측과 분석 과정을 함께 살펴보는 플랫폼을 준비하고 있습니다',de:'A platform concept for exploring flood predictions alongside their analysis',development:true,features:[['개발 중','In development'],['기능 소개 예정','Features to follow'],['화면 미제공','Screen not available']],nk:'아직 개발 중인 서비스입니다. 이 페이지에는 실제 화면이 없습니다.',ne:'A reserved introduction for a platform in development, not an actual service screen'},
 ];
-const axPrinciples=[
- {id:'discover',name:'Discover',ko:'탐지',titleK:'현상을 찾고 구분합니다',titleE:'Find and classify change',bodyK:'위성 영상과 공간 정보를 바탕으로 시설물과 자연 현상의 위치와 분포를 파악합니다',bodyE:'Explore the location and distribution of facilities and natural phenomena in imagery and spatial data',services:['satellite','news']},
- {id:'predict',name:'Predict',ko:'예측',titleK:'가능한 변화를 살핍니다',titleE:'Explore what may follow',bodyK:'지형과 관측 자료를 바탕으로 침수와 해양 재해 시나리오를 비교합니다',bodyE:'Compare inundation and marine-hazard scenarios using terrain and observation data',services:['flood3d','surge','sealevel','flood-xai']},
- {id:'monitor',name:'Monitor',ko:'모니터링',titleK:'상태와 변화를 지속적으로 살핍니다',titleE:'Follow conditions over time',bodyK:'해양부이 관측 자료와 해양환경 정보를 시기와 위치에 따라 살펴봅니다',bodyE:'Follow buoy observations and marine environmental information across time and space',services:['buoy','env','rip']}
-];
-function principleMedia(p){
- const previews={predict:'assets/platforms/flood3d-poster.webp',monitor:'assets/platforms/buoy-poster.webp'};
- if(p.id==='discover')return `<figure class="platform-preview platform-preview--pending" role="img" aria-label="${T('위성 시설물 탐지 화면을 준비 중입니다. 검증된 16:9 캡처를 확보한 뒤 연결합니다.','Satellite facility detection preview in preparation. A verified 16:9 capture will be connected when available.')}" ><div class="platform-preview-pending-copy"><span>${T('화면 캡처 준비 중','SCREEN CAPTURE IN PREPARATION')}</span><strong>${T('위성 시설물 탐지','Satellite facility detection')}</strong></div><figcaption>${T('검증된 화면을 확보한 뒤 공개합니다','A verified screen capture will be added when available')}</figcaption></figure>`;
- return `<figure class="platform-preview"><img src="${previews[p.id]}" width="1280" height="720" alt="${E(T(p.titleK,p.titleE))}" loading="lazy"><figcaption>${T('대표 인터페이스 미리보기','REPRESENTATIVE INTERFACE PREVIEW')}<small>${T('화면 버전·사용 권리 확인 중','Interface version and usage rights under review')}</small></figcaption></figure>`
-}
-function principleApplications(p){
- const names=p.services.map(id=>{const service=axServices.find(item=>item.id===id);return `${E(service.name)}${service.development?` (${T('개발 중','in development')})`:''}`});
- return `<div class="ax-principle-applications"><span>${T('관련 플랫폼','RELATED PLATFORMS')}</span><p>${names.join(' · ')}</p></div>`
-}
-
-
-const axModes=[
- {id:'detect',name:'Detect',copyK:'위성·영상·센서에서 변화를 포착합니다',copyE:'Detect change in satellite, video and sensor data',services:['satellite','news']},
- {id:'predict',name:'Predict',copyK:'AI와 수치모델로 환경 변화와 위험을 예측합니다',copyE:'Forecast environmental change and risk with AI and numerical models',services:['flood3d','surge','sealevel','flood-xai']},
- {id:'monitor',name:'Monitor',copyK:'관측 상태와 분석 결과를 살펴봅니다',copyE:'Review observation status and analysis results',services:['buoy','env','rip']}
-];
-
-function axPage(){
- const modeTabs=axModes.map((mode,index)=>`<button type="button" role="tab" id="ax-mode-${mode.id}" aria-controls="ax-platform-capture" aria-selected="${index===0}" tabindex="${index===0?0:-1}" data-ax-mode-select="${index}">${mode.name}</button>`).join('');
- const modeTriggers=axModes.map((mode,index)=>`<span data-ax-trigger="${index}"></span>`).join('');
- const serviceLinks=mode=>mode.services.map(id=>{const service=axServices.find(item=>item.id===id);return `<a href="#platform-${service.id}">${E(service.name)} <span aria-hidden="true">→</span></a>`}).join('');
- const serviceRows=axServices.map((service,index)=>`<li class="ax-service-row" id="platform-${service.id}"><span class="ax-service-number">0${index+1}</span><div class="ax-service-copy"><h3>${E(service.name)}</h3><h4>${T(service.k,service.e)}</h4><p>${T(service.dk,service.de)}</p><ul>${service.features.map(([ko,en])=>`<li>${T(ko,en)}</li>`).join('')}</ul>${service.development?`<small class="ax-service-status">${T('개발 중 · 실제 화면 없음','IN DEVELOPMENT · NO LIVE SCREEN')}</small>`:''}</div></li>`).join('');
- return `<section class="ax-concept-hero" aria-labelledby="ax-title"><div class="ax-concept-hero-copy"><p class="ax-concept-kicker">GEOSR / APPLIED INTELLIGENCE</p><h1 id="ax-title">AX Platform</h1><p class="ax-concept-heading">${T('해양·환경 분야의 탐지와 예측을 지원하는 전문 플랫폼','A specialist platform for detection and forecasting in marine and environmental work')}</p><p class="ax-concept-support">${T('탐지·예측·모니터링 기능과 관련 서비스를 소개합니다','Explore detection, forecasting and monitoring services for marine and environmental work')}</p></div><div class="ax-concept-film-stage" data-production-slot="ax-concept-film" role="group" aria-label="${T('AX 플랫폼 콘셉트 영상 준비 중','AX platform concept film in preparation')}"><span class="ax-concept-film-meta">AX PLATFORM / CONCEPT FILM</span><span class="ax-concept-film-pending">${T('콘셉트 영상 준비 중','CONCEPT FILM IN PREPARATION')}</span></div></section><section class="ax-platform-scroll" id="ax-platform-stage" aria-label="${T('AX Platform 기능 흐름','AX Platform capabilities')}" data-ax-platform-flow><div class="ax-platform-sticky"><nav class="ax-mode-tabs" role="tablist" aria-label="${T('Detect, Predict, Monitor 선택','Select Detect, Predict or Monitor')}">${modeTabs}</nav><div class="ax-platform-capture" id="ax-platform-capture" role="img" aria-label="${T('화면 촬영 준비 중','Screen capture in preparation')}"><span>${T('화면 촬영 준비 중','SCREEN CAPTURE IN PREPARATION')}</span></div><aside class="ax-mode-detail" aria-live="polite"><span data-ax-mode-name>Detect</span><p data-ax-mode-copy>${T(axModes[0].copyK,axModes[0].copyE)}</p><nav data-ax-mode-services aria-label="${T('관련 플랫폼','Related platforms')}">${serviceLinks(axModes[0])}</nav></aside><div class="ax-mode-progress" aria-hidden="true"><span data-ax-progress-fill></span></div></div><div class="ax-platform-triggers" aria-hidden="true">${modeTriggers}</div><div class="ax-platform-static" aria-label="${T('AX 기능 흐름 전체','All AX capabilities')}">${axModes.map(mode=>`<article><div class="ax-platform-static-capture" role="img" aria-label="${T('화면 촬영 준비 중','Screen capture in preparation')}"><span>${T('화면 촬영 준비 중','SCREEN CAPTURE IN PREPARATION')}</span></div><div><span>${mode.name}</span><p>${T(mode.copyK,mode.copyE)}</p><nav aria-label="${T('관련 플랫폼','Related platforms')}">${serviceLinks(mode)}</nav></div></article>`).join('')}</div></section><section class="ax-service-index" id="ax-services"><div class="ax-service-index-heading"><p class="ax-service-index-label">GEOSR / AX PLATFORM</p><h2>${T('9개 플랫폼','Nine platforms')}</h2><p>${T('해양·환경 업무 흐름에 맞춘 실제 서비스 목록입니다.','Services shaped around marine and environmental workflows.')}</p></div><ol class="ax-service-list">${serviceRows}</ol></section>`;
-}
-
-function initAxStages(){}
-window.axPage=axPage;
-window.GeoSRAxV2=Object.freeze({services:axServices,translate:(...args)=>T(...args),escapeHtml:(...args)=>E(...args)});
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initAxStages,{once:true});else initAxStages();
+window.GeoSRAxV2=Object.freeze({services:axServices});
 })();

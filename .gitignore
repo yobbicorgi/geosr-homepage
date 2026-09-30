@@ -12,3 +12,18 @@ docs/redesign-next/keyframes/flow-review/
 
 # Reproducible working captures and temporary review files
 tmp/
+
+# Raw sources and historical review packages live outside this repository
+media-source/
+archives/
+downloads/
+rejected-assets/
+docs/redesign-plan/
+docs/redesign-production/
+docs/redesign-next/qa/
+docs/redesign-next/keyframes/
+docs/source-migration/assets/
+docs/source-migration/pages.jsonl
+docs/source-migration/request-log.jsonl
+docs/source-migration/inventory.*
+docs/source-migration/ui-copy-provenance.*

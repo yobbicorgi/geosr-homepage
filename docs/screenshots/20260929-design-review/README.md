@@ -10,7 +10,7 @@
 | 회사 소개 | [QHD](company-qhd-ko.jpg) |
 | 연혁 | [QHD](company-history-qhd-ko.jpg) · [모바일](company-history-mobile-ko.jpg) |
 | 사업 분야 | [전체 QHD](business-qhd-ko.jpg) · [공간정보 QHD](business-spatial-qhd-ko.jpg) |
-| 기술 상세 | [무인항공 QHD](technology-uav-qhd-ko.jpg) · [수환경 모델 QHD](technology-water-model-qhd-ko.jpg) · [수환경 모델 모바일](technology-water-model-mobile-ko.jpg) · [연안감시 QHD](technology-coastal-monitoring-qhd-ko.jpg) · [위성분석 QHD](technology-satellite-qhd-ko.jpg) · [탄성파 QHD](technology-seismic-qhd-ko.jpg) · [환경분석 QHD](technology-lab-qhd-ko.jpg) |
+| 기술 상세 | [무인항공 QHD](technology-uav-qhd-ko.jpg) · [수환경 모델 QHD](technology-water-model-qhd-ko.jpg) · [수환경 모델 모바일](technology-water-model-mobile-ko.jpg) · [연안감시 QHD](technology-coastal-monitoring-qhd-ko.jpg) · [위성분석 QHD](technology-satellite-qhd-ko.jpg) · [탄성파 QHD](technology-seismic-qhd-ko.jpg) |
 | AX Platform | [국문 QHD](ax-platform-qhd-ko.jpg) · [영문 QHD](ax-platform-qhd-en.jpg) · [국문 모바일](ax-platform-mobile-ko.jpg) · [곡면 갤러리](ax-gallery-qhd-ko.jpg) |
 | 연구개발 | [QHD](research-qhd-ko.jpg) · [모바일](research-mobile-ko.jpg) |
 | 소식 | [공지 게시판 QHD](news-qhd-ko.jpg) · [보도자료 QHD](news-press-qhd-ko.jpg) · [보도자료 모바일](news-press-mobile-ko.jpg) |

@@ -20,10 +20,10 @@ GeoSR는 해양 풍경이나 무인선 하나로 설명할 수 있는 회사가 
 - [전체 보관 자료 및 현재 목록 대조](record-coverage.json) — 본문 보관과 이미지 이관을 구분
 - [21개 기술별 분석과 원분류](technology-analysis.md)
 - [분야·이미지 표현 설계](presentation-direction.md)
-- [회사·장비 80건 조사](../source-migration/company-equipment-brief-20260928.md)
+- [회사·장비 원문 자료](../../dist/source-archive.json)
 - [UI 이관 감사](../source-migration/interface-migration-audit-20260928.md)
 
-원문 보관 위치는 `dist/source-archive.json`과 `docs/source-migration/pages.jsonl`이다
+홈페이지에서 사용하는 원문은 `dist/source-archive.json`이다 수집 원본 `docs/source-migration/pages.jsonl`은 [별도 로컬 보관소](../handoff/REPOSITORY-POLICY.md)에 있다
 이 문서는 원문을 대체하지 않으며 원문 표기와 홈페이지 편집 제안을 구분한다
 
 ## 1 회사 정보

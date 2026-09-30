@@ -43,12 +43,12 @@ AX Platform은 [직원 제작 저장소](https://github.com/123choigem-tech/geos
 <p>
   <img src="docs/screenshots/20260929-design-review/home-mobile-ko.jpg" alt="모바일 메인" width="220">
   <img src="docs/screenshots/20260929/menu-mobile.png" alt="모바일 전체 메뉴" width="220">
-  <img src="docs/screenshots/20260928-current/technology-mobile-en.png" alt="모바일 영문 기술 상세" width="220">
+  <img src="docs/screenshots/20260929-design-review/technology-water-model-mobile-ko.jpg" alt="모바일 기술 상세" width="220">
 </p>
 
 최신 페이지별 캡처 조건과 검수 결과는 [2026년 9월 29일 화면 기록](docs/screenshots/20260929-design-review/README.md)에 보관합니다
 스크린샷은 진행 상태를 보여주며 전체 페이지의 최종 디자인 승인을 뜻하지 않습니다
-최근 상세 화면 점검은 [2026년 9월 29일 기록](docs/screenshots/20260929-detail-review/README.md)에서 확인할 수 있습니다
+현재 버전의 파일과 유지보수 절차는 [인계 시작점](docs/handoff/CURRENT-STATE.md)에서 확인할 수 있습니다
 
 분야별 이미지 선택과 원문 자료의 위치는 [미디어 배치표](docs/redesign-next/reviews/media-placement-matrix-20260929.md)에서 확인할 수 있습니다
 해상풍력 입지정보 페이지에는 전용 콘셉트 장면을 두고 원본 입지 지도와 해양 이용 자료는 기술 자료 영역에 보존합니다
@@ -85,42 +85,39 @@ python -m http.server 18102 --directory dist
 웹 배포 대상은 `dist/`이며 Python 서버는 로컬 미리보기 용도입니다
 문의 화면은 메일 작성 방식이며 서버에서 전송 완료를 보증하지 않습니다
 
-## 폴더 안내
+## 저장소와 인계
+
+현재 버전을 실행하고 유지보수하는 데 필요한 파일만 관리합니다
+사용 에셋과 원문·번역·첨부자료 및 코드와 현재 설계·제작 기록을 보존합니다
+원본 다운로드와 미채택 생성 결과 및 과거 캡처와 수집 로그는 저장소 밖의 로컬 보관소에 분리했습니다
 
 ```text
-dist/                  웹 페이지와 런타임 데이터 및 웹용 에셋
-media-source/company-profile/ 회사소개서 원본에서 추출한 자료와 출처 기록
-media-source/editorial/ 생성 이미지 원본과 프롬프트 및 검토 기록
-media-source/editorial/unselected/ 미채택 이미지 원본
-media-source/video-production-20260929/ 영상 원본과 제작 기록
-docs/company-audit/     회사 원사이트와 소개서 조사 기록
-docs/screenshots/      페이지별 실제 브라우저 화면
-docs/source-migration/ 원문 이관과 번역 감수 및 미디어 대조 기록
-docs/redesign-next/    현재 작업 방향과 제작 관리
-scripts/               자료 구축과 검증 도구
+dist/                   현재 웹 코드와 사용 에셋 및 원문·번역 데이터
+docs/handoff/           현재 상태와 코드 안내 및 저장소 관리 기준
+docs/media/             사용 이미지·영상의 출처와 프롬프트 및 구간표
+docs/company-audit/     현재 회사 정보와 기술 분류의 근거
+docs/redesign-next/     현행 설계 방향과 관련 검토
+docs/source-migration/  현재 이관·번역 검토 기록
+docs/screenshots/       현재 화면 설명에 필요한 캡처
+scripts/                현행 유지보수와 검증 도구
 ```
+
+[인계 시작점](docs/handoff/CURRENT-STATE.md) · [코드 안내](docs/handoff/CODE-GUIDE.md) · [Git 관리 기준과 원본 보관 위치](docs/handoff/REPOSITORY-POLICY.md) · [사용 미디어 기록](docs/media/CURRENT-MEDIA.md)
 
 ## 검증
 
 ```powershell
-node scripts/build_business_details.mjs
-python -X utf8 scripts/build_technology_media.py
-python -X utf8 scripts/build_business_areas.py
-python -X utf8 scripts/build_technology_relations.py
+python -X utf8 scripts/verify_repository_package.py
 node scripts/verify_redesign_routes.mjs
 node scripts/verify_metadata_accessibility.mjs
 node scripts/verify_film_lifecycle.mjs
-python -X utf8 scripts/verify_public_archive.py
-node scripts/build_continuation_inventory.mjs
-node scripts/verify_continuation_package.mjs
+python -X utf8 scripts/verify_news_translations.py
 ```
 
 자동 검증과 실제 화면 검수는 구분합니다
-현재 재생 영상과 정지 이미지의 구분은 `dist/film-manifest.json`으로 관리합니다. 설명용 장면은 관측값이나 검증된 예측 결과로 표시하지 않습니다
+현재 재생 영상과 정지 이미지의 구분은 `dist/film-manifest.json`으로 관리합니다
+설명용 장면은 관측값이나 검증된 예측 결과로 표시하지 않습니다
+원문 충실성 검사는 별도 보관소의 수집 원본을 지정하며 [인계문](docs/handoff/CURRENT-STATE.md)에 실행법을 기록합니다
+자료 재구축 도구는 현재 정적 버전을 임의로 다시 생성하는 용도로 실행하지 않습니다
 
-[현재 디자인 기준](docs/redesign-next/CURRENT-DIRECTION.md) · [회사 조사](docs/company-audit/README.md) · [기술과 적용 분야](docs/company-audit/presentation-direction.md) · [이미지 제작 원장](media-source/editorial/manifest.json)
-
-## 에셋 정리 기록
-
-Downloads의 관련 에셋 20개를 대조해 원본이 보관된 중복 17개를 정리하고 신규 3개를 미채택 원본 폴더로 이동했습니다
-파일별 SHA256과 이동 위치는 [에셋 정리 기록](docs/redesign-next/reviews/downloads-asset-cleanup-20260929.json)에 보관합니다
+[현재 디자인 기준](docs/redesign-next/CURRENT-DIRECTION.md) · [회사 조사](docs/company-audit/README.md) · [기술과 적용 분야](docs/company-audit/presentation-direction.md)

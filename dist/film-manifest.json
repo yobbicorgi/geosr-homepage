@@ -9,87 +9,10 @@
       "delivery": "assets/films/geosr-hero-20260929-v4.mp4",
       "duration": 27.5,
       "stage": "reviewed-existing-clips-montage",
-      "review": "media-source/video-production-20260929/montage-handoff.md",
+      "review": "docs/media/CURRENT-MEDIA.md",
       "reviewNote": "Seven concept scenes including satellite observation; jellyfish and rejected ADCP excluded",
       "labelKo": "기술 소개 영상",
       "labelEn": "Technology film"
-    },
-    {
-      "id": "ax-discover",
-      "mode": "sequence",
-      "src": "assets/films/ax-discover-fast.mp4",
-      "approval": "approved",
-      "duration": 3.03,
-      "delivery": "assets/films/ax-discover.mp4",
-      "purpose": "Discover / 탐지 — satellite and observation evidence for locating and classifying change Actual 16:9 platform capture accelerated from its approved source for a concise product sequence",
-      "recommendedMedia": [
-        "mp4",
-        "gif"
-      ]
-    },
-    {
-      "id": "ax-detect",
-      "mode": "sequence",
-      "src": "assets/films/ax-detect-fast.mp4",
-      "approval": "approved",
-      "duration": 3.03,
-      "delivery": "assets/films/ax-detect.mp4",
-      "platforms": [
-        "satellite"
-      ],
-      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
-    },
-    {
-      "id": "ax-predict",
-      "mode": "sequence",
-      "src": "assets/films/ax-predict-fast.mp4",
-      "approval": "approved",
-      "duration": 3.03,
-      "delivery": "assets/films/ax-predict.mp4",
-      "platforms": [
-        "flood3d",
-        "surge",
-        "sealevel"
-      ],
-      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
-    },
-    {
-      "id": "ax-monitor",
-      "mode": "sequence",
-      "src": "assets/films/ax-monitor-fast.mp4",
-      "approval": "approved",
-      "duration": 3.03,
-      "delivery": "assets/films/ax-monitor.mp4",
-      "platforms": [
-        "buoy",
-        "env",
-        "rip"
-      ],
-      "purpose": "Actual 16:9 platform capture accelerated from its approved source for a concise product sequence"
-    },
-    {
-      "id": "platform-satellite",
-      "src": "assets/films/platform-satellite-preview.mp4",
-      "approval": "draft-reviewed",
-      "mode": "loop",
-      "duration": 3.8,
-      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
-    },
-    {
-      "id": "platform-flood3d",
-      "src": "assets/films/platform-flood3d-preview.mp4",
-      "approval": "draft-reviewed",
-      "mode": "loop",
-      "duration": 3.8,
-      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
-    },
-    {
-      "id": "platform-buoy",
-      "src": "assets/films/platform-buoy-preview.mp4",
-      "approval": "draft-reviewed",
-      "mode": "loop",
-      "duration": 3.8,
-      "purpose": "Archival actual UI preview, narrow menu crops excluded, not live data"
     },
     {
       "id": "geosr-wave-bridge",
@@ -201,6 +124,3 @@
     }
   ]
 }
-
-
-

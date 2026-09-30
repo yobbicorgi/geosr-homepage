@@ -1,0 +1,201 @@
+{
+  "date": "2026-09-30",
+  "boundary": "Current web files and historical generation parameters. This is a handoff snapshot, not a new scientific/video/design approval. Old upload URLs must not be reused. Full raw clips and excluded takes stay outside Git. Runtime attachment state remains dist/film-manifest.json.",
+  "mainMontage": {
+    "duration": 27.5,
+    "transition": "0.25s dissolve",
+    "graphicsAdded": false,
+    "colorGrading": false,
+    "cuts": [
+      {
+        "id": "bed9f422-2a2d-4cf7-b558-b2f195e0d349",
+        "title": "Satellite observation",
+        "sourceStart": 0.5,
+        "sourceDuration": 3,
+        "timelineStart": 0,
+        "sourceArchiveRelativePath": "media-source/video-production-20260929/sat-reviewed.mp4"
+      },
+      {
+        "id": "7128a0e7-e8a0-46b6-80c6-4085bea8f2c9",
+        "title": "UAV flight",
+        "sourceStart": 0.5,
+        "sourceDuration": 4,
+        "timelineStart": 2.75,
+        "sourceArchiveRelativePath": "media-source/video-production-20260929/uav-seedance20-5s.mp4"
+      },
+      {
+        "id": "1b5e3ea6-16ba-4a9d-a588-a07fe282c7cd",
+        "title": "CTD observation",
+        "sourceStart": 0,
+        "sourceDuration": 3,
+        "timelineStart": 6.5,
+        "sourceArchiveRelativePath": "media-source/editorial/hero-ctd-motionref-attempt-seedance20-20260929.mp4"
+      },
+      {
+        "id": "be16f288-63c4-4207-9027-31f5a2673347",
+        "title": "Seismic section",
+        "sourceStart": 0.5,
+        "sourceDuration": 4,
+        "timelineStart": 9.25,
+        "sourceArchiveRelativePath": "media-source/video-production-20260929/seismic-seedance20-5s.mp4"
+      },
+      {
+        "id": "1ed7775c-dd67-41ef-97e4-1ea18c8688a6",
+        "title": "Model mesh",
+        "sourceStart": 0.5,
+        "sourceDuration": 5,
+        "timelineStart": 13.0,
+        "sourceArchiveRelativePath": "media-source/editorial/hero-estuary-model-attempt-seedance20-20260929.mp4"
+      },
+      {
+        "id": "5880996e-6f0b-444b-8458-82112dd1dc3d",
+        "title": "Diffusion concept",
+        "sourceStart": 0.5,
+        "sourceDuration": 5,
+        "timelineStart": 17.75,
+        "sourceArchiveRelativePath": "media-source/video-production-20260929/diffusion-recovered.mp4"
+      },
+      {
+        "id": "4ba035ad-fb8d-4e36-a230-8e0498dd4386",
+        "title": "Ocean flow",
+        "sourceStart": 0,
+        "sourceDuration": 5,
+        "timelineStart": 22.5,
+        "sourceArchiveRelativePath": "media-source/video-production-20260929/ocean-flow-recovered.mp4"
+      }
+    ]
+  },
+  "records": [
+    {
+      "web": "dist/assets/films/geosr-hero-20260929-v4.mp4",
+      "sha256": "007465da82f5fa9a3f3cf593ee5ce77df204993bcdd9c1a2122fad737e1b15e6",
+      "bytes": 44239206
+    },
+    {
+      "web": "dist/assets/films/technology-estuary.mp4",
+      "sha256": "432bf82483a958f88a12bc3bae769c9fc7110d90d5359d7d32973c81b8de65a7",
+      "bytes": 4911995
+    },
+    {
+      "web": "dist/assets/films/technology-ocean-forecast.mp4",
+      "sha256": "9db60c9f6be30f8990aa37e84bceac414b7e564470c099eb18f8d907f77360dd",
+      "bytes": 39055767
+    },
+    {
+      "web": "dist/assets/films/technology-satellite.mp4",
+      "sha256": "668545aa07bc58803d23e2adec4b11e2c36269804543324cb83c06045cece5bd",
+      "bytes": 7943511,
+      "sourceReceiptArchiveRelativePath": "media-source/video-production-20260929/sat-reviewed-receipt.json",
+      "status": "completed-root-review-pending",
+      "params": {
+        "model": "seedance_2_0",
+        "duration": 5,
+        "resolution": "1080p",
+        "mode": "std",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+        "medias": [
+          {
+            "role": "image",
+            "value": "https://myrtle-contribute-advertiser-vernon.trycloudflare.com/assets/editorial/satellite-optical-native-20260929.webp"
+          }
+        ],
+        "prompt": "Five-second cinematic optical satellite observation film, 16:9, silent. Use the reference image for its realistic coastal remote-sensing appearance: open ocean on the left, land and estuary on the right, and a broad diagonal acquisition swath crossing the sea. Do not lock the shot to the exact still composition. Maintain a stable near-nadir satellite perspective while the observed coastline drifts smoothly through frame as the imaging pass progresses. The leading edge of the acquisition swath advances diagonally across the water, progressively revealing a restrained ocean-colour analysis treatment within its footprint. The revealed colour patterns remain geographically registered to the real estuary plume, coastal water and underlying sea texture. Keep terrain, shoreline and water geometry stable and photographic. The swath is a flat remote-sensing acquisition footprint, never a volumetric spotlight or glowing beam. No fictitious interface panels, text, labels, grids, warped coastline, dramatic zoom, low-altitude flight, or detached analysis graphics."
+      },
+      "qa": "Stable coast drift and acquisition strip movement; restrained action",
+      "reviewEvidence": "Root matched Library 위성 관측 해안과 하구 풍경 to satellite-optical-native-20260929.png after rejecting wrong estuary-grid reference"
+    },
+    {
+      "web": "dist/assets/films/technology-seismic.mp4",
+      "sha256": "7d4b11d5784c510044f29118f24303cc7140ded7f13cf0eeab4ac756466d1750",
+      "bytes": 7744187,
+      "sourceReceiptArchiveRelativePath": "media-source/video-production-20260929/seismic-receipt.json",
+      "status": "user-accepted-concept-main-edit-review",
+      "params": {
+        "model": "seedance_2_0",
+        "duration": 5,
+        "resolution": "1080p",
+        "mode": "std",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+        "medias": [
+          {
+            "role": "image",
+            "value": "https://myrtle-contribute-advertiser-vernon.trycloudflare.com/assets/editorial/technology57-seismic-curtain-native-20260929.webp"
+          }
+        ],
+        "prompt": "Create one continuous five-second photoreal corporate marine geophysics film. Use the supplied image as the vessel, temperate coastline, muted navy daylight and SINGLE grayscale seismic-section reference. This is an explanatory data visualization, not a physical wall. Wide oblique aerial camera; the whole modest survey vessel stays visible. The bow points LEFT, stern and wake RIGHT, throughout. 0-1s: vessel actively advances left along a straight survey line with a growing foamy wake and natural moving waves. Only a short translucent grayscale vertical data strip is initially visible below the track behind the stern. 1-4s: camera trucks smoothly left slightly slower than the vessel, creating visible vessel movement and real parallax against the distant coast. As the vessel advances, adjacent narrow grayscale seismic traces progressively append at the LEFT leading edge of the one flat section; acquired traces behind it remain spatially stable. A strong gently undulating seabed reflector with faint lower shallow reflectors becomes clearer as each adjacent trace is acquired. 4-5s: retain steady vessel movement, wake and camera tracking; finish showing the vessel plus a longer coherent acquired 2D section beneath its past track. The distant land geometry and vessel construction stay unchanged. Restrained elegant scientific visualization fully generated within this video. No cuts, no crossfade, no static photograph zoom, no physical solid curtain, no laser beam, no neon, no 3D geological volume, no extra planes, no text, no numbers, no logos. Keep the scene physically plausible, cinematic and readable silently."
+      },
+      "qa": {
+        "repeatSubmission": false,
+        "reviewSheets": [
+          "seismic-contact.jpg",
+          "seismic-motion-contact.jpg"
+        ],
+        "decision": "rejected-for-main",
+        "reason": "The growing section extends ahead of the vessel; camera and vessel displacement are too weak for the intended acquisition narrative",
+        "userReview": "User said vessel beam is OK; earlier acquisition-position limitation retained as conceptual boundary"
+      }
+    },
+    {
+      "web": "dist/assets/films/technology-uav.mp4",
+      "sha256": "9b55e8b90c6b4df0f3420073a9853d55d7763adc8cef62631e70be94a625f2e8",
+      "bytes": 10553670,
+      "sourceReceiptArchiveRelativePath": "media-source/video-production-20260929/uav-receipt.json",
+      "status": "reopened-user-approved-aesthetic-candidate",
+      "params": {
+        "model": "seedance_2_0",
+        "duration": 5,
+        "resolution": "1080p",
+        "mode": "std",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "5a7f66a0-9482-4f47-b9c9-68767f548f34",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "https://myrtle-contribute-advertiser-vernon.trycloudflare.com/assets/editorial/uav-coastal-native-20260929.webp"
+          }
+        ],
+        "prompt": "One continuous photoreal five-second aerial coastal photogrammetry shot beginning exactly from this reference frame. The ONE six-rotor survey drone is a real modest-sized unmanned aircraft close to the camera, with the broad temperate coastline far below. It actively flies along the beach toward the distant upper-center bay, traveling diagonally away from its initial right foreground position. In the first second the six rotors spin rapidly and the drone gently pitches into forward flight. Through seconds 1-5 it travels steadily several body lengths away, gradually becoming smaller, with the underslung survey camera stabilized downward toward the beach. Preserve the same six arms, landing legs, body and camera throughout. The filming camera advances smoothly forward on a parallel path at a slower speed; nearby dune vegetation and sand move downward out of frame while distant headlands change slowly, producing strong natural spatial parallax. Small waves roll onto the shore and white foam advances and retreats naturally. Wide landscape scale remains dominant and the drone remains fully inside frame. Smooth confident cinematic motion and realistic daylight, natural blue sea, sharp terrain texture. No cuts or dissolves, no fixed-image zoom, no hovering in place, no sudden yaw, no extra aircraft, no changing coastline, no laser, no floating grid, no labels or graphics. This is actual-looking survey flight, not a diagram or an abstract animation."
+      },
+      "qa": {
+        "decision": "reopened-user-approved-aesthetic-candidate",
+        "limit": "Illustrative flight only; actual photo capture or orthomosaic is not shown",
+        "evidence": "uav-contact.jpg and uav-motion-contact.jpg",
+        "userReview": "User rejected simple flight without acquisition/analysis and fish translation without real swimming; no new generation authorized now",
+        "siteUse": false,
+        "parentPlacementPending": true,
+        "finalDisposition": "Latest user permits reuse as promotional flight scene; does not depict actual mapping output"
+      },
+      "companyEvidence": "https://www.geosr.com/sub/business/conserve_view.asp?idx=64",
+      "boundary": "Generated illustrative photogrammetry flight, not an actual GeoSR acquisition or location"
+    },
+    {
+      "web": "dist/assets/films/technology-water-model.mp4",
+      "sha256": "6b330e056bcd5e5b2ad4ee9bbde9bedd40b587ea98659cd7830abcdfa24ee7c5",
+      "bytes": 11342957,
+      "sourceReceiptArchiveRelativePath": "media-source/editorial/hero-estuary-model-seedance20-receipt-20260929.json",
+      "status": "rejected-after-full-frame-qa",
+      "qa": {
+        "method": "Decoded all 145 frames; inspected 24 equally spaced contact frames and full-size samples at 0, 1.5, 3.0, 4.5 and 6.0 seconds",
+        "first": "Connected river, tidal flats and sea with water-attached triangular grid and already prominent cyan channel field",
+        "middle": "Coast and foreground headland translate laterally with visible parallax; grid remains broadly attached to water",
+        "last": "Coast and channel remain coherent, but the cyan tongue stays effectively the same shape relative to the river channel",
+        "pass": [
+          "Continuous river-estuary-sea geography and recognizable foreground parallax",
+          "No large new landmass, broken channel, fictitious values or text"
+        ],
+        "failure": "The requested time-dependent salinity/flow field evolution is not readable. A nearly static cyan tongue follows the channel while the camera slides sideways. This resembles a moving view of a still model illustration rather than a model field advancing and mixing over six seconds.",
+        "mainReelDecision": "reject",
+        "siteUse": false,
+        "reuse": "Do not reuse in the main reel or technology-detail opening. Preserve raw and QA evidence only; do not submit another paid attempt of the same scene."
+      }
+    }
+  ]
+}

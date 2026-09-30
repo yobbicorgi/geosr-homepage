@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-editorial = json.loads((ROOT/'media-source/editorial/manifest.json').read_text(encoding='utf8'))
+editorial = json.loads((ROOT/'docs/media/current-image-provenance.json').read_text(encoding='utf8'))
 editorial_by_id = {record['id']: record for record in editorial['records']}
 spec = {
  '15': ('하구와 하천의 흐름 및 수질 변화를 관측과 모델로 분석합니다', 'We study river and estuary flows and water quality through observations and modelling', 2,

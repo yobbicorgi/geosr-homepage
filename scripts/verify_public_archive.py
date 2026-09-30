@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import json
+import argparse
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CAPTURE = ROOT / "docs/source-migration/pages.jsonl"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--capture', type=Path, required=True, help='External archived pages.jsonl capture')
+CAPTURE = parser.parse_args().capture
 ARCHIVE = ROOT / "dist/source-archive.json"
 
 source_by_url: dict[str, list[str]] = defaultdict(list)

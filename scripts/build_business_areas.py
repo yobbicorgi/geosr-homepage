@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 media = json.loads((ROOT / 'dist/technology-media.js').read_text(encoding='utf8').split('=', 1)[1].rstrip(';\n'))
-editorial = json.loads((ROOT / 'media-source/editorial/manifest.json').read_text(encoding='utf8'))
+editorial = json.loads((ROOT / 'docs/media/current-image-provenance.json').read_text(encoding='utf8'))
 editorial_by_id = {record['id']: record for record in editorial['records']}
 areas = [
     ('ai', '인공지능', 'Artificial intelligence', [61, 59], '영상에서 대상을 식별하고 계측하며 시계열 예측과 자료 복원 기술을 연구합니다', 'We develop AI methods for image detection and measurement as well as time-series forecasting and data restoration', '59', 2, 'contain'),

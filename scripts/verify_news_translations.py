@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the Korean-canonical news overlay without modifying source records."""
 import collections
+import argparse
 import datetime as dt
 import json
 import re
@@ -14,6 +15,9 @@ def urls(text):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--report', type=Path, help='Optional JSON output path outside tracked audit evidence')
+    args = parser.parse_args()
     source = json.loads((ROOT / 'dist/source-archive.json').read_text(encoding='utf-8'))['records']
     news = [r for r in source if r['lang'] == 'ko' and r['section'] == 'news']
     target = json.loads((ROOT / 'dist/source-translations-news.en.json').read_text(encoding='utf-8'))['records']
@@ -51,7 +55,9 @@ def main():
         'scope': 'Completeness and source-hash binding, original registration dates, explicit URLs/emails, year tokens and untranslated Hangul. Source hash is the preserved canonical original hash field rather than a new hash of normalized display text.',
         'limits': 'Structural success does not certify every sentence. Full direct editorial review covers source_checked_editorial_translation records. Other records retain the machine draft with targeted terminology/title corrections and structural checks. Numerical-token differences include English number words, month names and KRW unit conversions and remain diagnostic in the per-record review audit.'
     }
-    (ROOT / 'docs/source-migration/news-translation-verification-20260928.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    if args.report:
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
     raise SystemExit(bool(errors))
 

@@ -1,9 +1,13 @@
 """Preserve explicit geosr.com technology-to-record links without keyword inference."""
 import json
+import argparse
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 
 ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--capture', type=Path, required=True, help='External archived pages.jsonl capture')
+args = parser.parse_args()
 records = json.loads((ROOT / 'dist/source-archive.json').read_text(encoding='utf8'))['records']
 by_source = {}
 for record in records:
@@ -15,7 +19,7 @@ for record in records:
 details = json.loads((ROOT / 'dist/business-details-data.js').read_text(encoding='utf8').split('=', 1)[1].rstrip(';\r\n'))
 result = {key: {'titleKo': value['ko']['title'], 'titleEn': value['en']['title'], 'recordIds': [], 'sourcePages': []} for key, value in details.items()}
 missing = []
-for line in (ROOT / 'docs/source-migration/pages.jsonl').read_text(encoding='utf8').splitlines():
+for line in args.capture.read_text(encoding='utf8').splitlines():
     page = json.loads(line)
     url = urlparse(page['url'])
     query = parse_qs(url.query)

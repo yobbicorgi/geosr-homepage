@@ -11,6 +11,7 @@
 - `C:\Users\user\Downloads\GeoSR_Homepage`는 위 저장소를 가리키는 junction이다 별도 복사본이나 `_v2` 작업본을 만들지 않는다
 - 작업 시작 시 현재 브랜치와 미커밋 변경을 확인하고 사용자 변경을 보존한다 GitHub 작업은 Git 및 GitHub CLI를 사용한다
 - 내부 미리보기는 `http://127.0.0.1:18102/`이다 공식 geosr.com 배포와 구분한다
+- 2026-09-30 요청에 따라 18102 홈페이지 서버와 현재 Cloudflare 터널은 사용자가 종료를 요청할 때까지 유지한다 작업 종료나 Git 갱신을 이유로 종료하지 않는다 실행 상태와 주소는 `.openai/local/preview/preview-state.json`과 현재 프로세스로 확인한다
 
 ## 작업 기준
 

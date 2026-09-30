@@ -27,8 +27,10 @@
 ## 미리보기
 
 로컬 http://127.0.0.1:18102/
-임시 공개 https://myrtle-contribute-advertiser-vernon.trycloudflare.com/
-2026-09-28 임시 공개 메인 HEAD 응답 200 확인
+임시 공개 https://sea-truth-hopes-barbara.trycloudflare.com/
+2026-09-30 로컬 서버를 백그라운드로 복구하고 실행 중인 터널의 현재 주소에서 메인·AX·주요 JS·CSS 응답200 확인
+이전에 기록된 myrtle-contribute-advertiser-vernon 주소는 현재 DNS에서 조회되지 않음
+서버 상태와 로그는 Git에서 제외된 `.openai/local/preview/`에 저장
 공식 도메인 배포는 아직 아닙니다
 
 ## 완료 판단

@@ -74,3 +74,5 @@ python -X utf8 scripts/verify_public_archive.py --capture C:/Users/user/Document
 문의는 mailto 방식이며 서버 전송 기능이 아니다
 
 정리와 검증 결과는 [저장소 정리 기록](CLEANUP-20260930.md)에 기록한다
+추가 로컬 정리로 임시 파일 4523개와 빈 폴더 63개를 삭제했다 현재 웹 파일과 외부 원본 보관소는 유지한다
+`tmp/`는 보존 자료가 없는 임시 출력 경로이며 이후 검사에서 필요하면 새로 생성할 수 있다
